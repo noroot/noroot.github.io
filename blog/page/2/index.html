@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="en">
+    <head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="/assets/main.css">
+	<link rel="stylesheet" href="/assets/highlight.css">
+	<title>False!True - page 2 | False!True</title>
+        
+        
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28956735-2"></script>
+	<script>
+	 window.dataLayer = window.dataLayer || [];
+	 function gtag(){dataLayer.push(arguments);}
+	 gtag('js', new Date());
+
+	 gtag('config', 'UA-28956735-2');
+	</script>
+    </head>
+    <body>
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top mb-5">
+	    <div class="container">
+		<a class="navbar-brand" href="/"><span style="color:lightgreen"> False!</span><span style="color:cyan">True</span></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsEx" aria-controls="navbarsEx" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarsEx">
+		    <ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+			    <a class="nav-link" href="#">Home</a>
+			</li>
+			<li class="nav-item">
+			    <a class="nav-link" href="/archive/">Archive</a>
+			</li>
+			<li class="nav-item">
+			    <a class="nav-link" href="/categories/books/">Bookshelf</a>
+			</li>
+			<li class="nav-item">
+			    <a class="nav-link" href="https://slides.falsetrue.io">Slides</a>
+			</li>
+			<li class="nav-item">
+			    <a class="nav-link" href="/about/">About</a>
+			</li>
+		    </ul>
+		    <ul class="nav navbar-nav navbar-right">
+			<li>
+		            <a href="http://feeds.feedburner.com/OvermindsHive" class="om-rss-link">Subscirbe <img src="/images/rss.png" /> RSS</a>
+			</li>
+                    </ul>
+		</div>
+	    </div>
+	</nav>
+	
+	<div class="container mt-3 pt-5">
+            <div class="row">
+    <div class="col-12 col-lg-8 col-md-10 col-xs-12 col-md-12">
+	
+	<article class="om-article-item mb-5" style="padding-left: 30px;border-left: 4px solid lightgray;">
+	    <time datetime="2017-10-20 01:56:00 +0300">October 20, 2017</time>    
+	    <h1 class="post-title"><a href="/tips/linux/2017/10/20/sudoers-syntax-error/">Что делать если в /etc/sudoers syntax error</a></h1>
+	    <p class="author">
+	    <p class="meta"></p>
+	    </p>
+	    <div class="post-categories mt-3 mb-3">
+		Категории:
+		
+		<a href="/categories/tips/" class="badge badge-success">tips</a>
+		
+		<a href="/categories/linux/" class="badge badge-success">linux</a>
+		
+	    </div>
+	    <div class="content">
+		
+		<p>Иногда бывает так:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; /etc/sudoers: syntax error near line 16 &lt;&lt;&lt;
+sudo: parse error in /etc/sudoers near line 16
+sudo: no valid sudoers sources found, quitting
+sudo: unable to initialize policy plugin
+</code></pre></div></div>
+
+<p>Если ошибиться в синтаксисе /etc/sudoers то sudo небудет работать, и постоянно выдавать ошибку синтаксиса в конфиге. Что делать в таком случае ?</p>
+
+<p>Первый вариант это использовать <a href="https://en.wikipedia.org/wiki/Polkit">PolKit</a> и утилиту pkexec которая позволяет запускать привилегированный процесс и при этом просит ввести пароль от текущего пользователя.</p>
+
+<p>А что делать если это произошло на Amazon EC2 и пароль от пользователя неивзестен или pkexec неработает ?</p>
+
+<ul>
+  <li>Выключить машину</li>
+  <li>Отмонтировать диск</li>
+  <li>Создать другую EC2 машину и вырубить ее</li>
+  <li>Примонтировать диск от сломанной машины к новой</li>
+  <li>Включить новую машину и исправить файл</li>
+  <li>Выключить все, примонтировать диск обратно на нужную машину</li>
+</ul>
+
+<p>А чтобы не ошибаться в синтаксисе /etc/sudoers, нужно его всегда редактировать через visudo который предупредит если ошибка и даст ее исправить.</p>
+
+<p>EOF</p>
+
+		
+		<div>
+		    <a href="/tips/linux/2017/10/20/sudoers-syntax-error/">More</a>
+		</div>
+	    </div>
+	</article>
+	
+	<article class="om-article-item mb-5" style="padding-left: 30px;border-left: 4px solid lightgray;">
+	    <time datetime="2017-09-12 09:15:00 +0300">September 12, 2017</time>    
+	    <h1 class="post-title"><a href="/books/2017/09/12/extreme-ownership/">Книга: Extreme Ownership: How U.S. Navy SEALs Lead and Win</a></h1>
+	    <p class="author">
+	    <p class="meta"></p>
+	    </p>
+	    <div class="post-categories mt-3 mb-3">
+		Категории:
+		
+		<a href="/categories/books/" class="badge badge-success">books</a>
+		
+	    </div>
+	    <div class="content">
+		
+		<ul>
+  <li>Название: Extreme Ownership: How U.S. Navy SEALs Lead and Win</li>
+  <li>Автор: Jocko Willink, Leif Babin</li>
+  <li>Год: 2015</li>
+</ul>
+
+<p>Довольно необычная книга, написанная военными Navy SEALs (Jocko Willink, Leif Babin), - в книге рассказываются реальные военные истории спец операций, и эти рассказы накладываются на примеры из гражданской жизни в бизнес сфере, управлении людьми. Книга состоит их нескольких таких историй. Самое интересное что читают книгу сами авторы, это сделано специально чтобы недать сторонним чтецам нарушить атмосферу спец операций которую создают оригинальные авторы. Авторы пытаются на примерах обьяснить важность небольших решений любых людей учавствующих в проектах, а не только high command. Книгу стоит почитать, а лучше послушать в оригинале, эти охриплые голоса военных их спецподразделений возможно знакомые вам по фильмам и играм, представлены тут в оригинале от первого лица, и одни только военные истории заслуживают внмания. Рекомендую читать, а точнее лушать только оригинал.</p>
+
+<p>“И что у тебя за имя такое дурацкое Соуп” (с) Call of Duty: MW2</p>
+
+<p>Картинка обложки и ссылка под катом.</p>
+
+
+		
+		<div>
+		    <a href="/books/2017/09/12/extreme-ownership/">More</a>
+		</div>
+	    </div>
+	</article>
+	
+	<article class="om-article-item mb-5" style="padding-left: 30px;border-left: 4px solid lightgray;">
+	    <time datetime="2017-07-31 15:40:00 +0300">July 31, 2017</time>    
+	    <h1 class="post-title"><a href="/dev/php/2017/07/31/roem-wordpress/">Roem на Wordpress</a></h1>
+	    <p class="author">
+	    <p class="meta"></p>
+	    </p>
+	    <div class="post-categories mt-3 mb-3">
+		Категории:
+		
+		<a href="/categories/dev/" class="badge badge-success">dev</a>
+		
+		<a href="/categories/php/" class="badge badge-success">php</a>
+		
+	    </div>
+	    <div class="content">
+		
+		<p>Прошло уже примено года 3 с момента как мы переделали <a href="https://roem.ru">Roem.ru</a> на wordpress. Как мы это сделали будет описано в этой небольшой заметке.</p>
+
+<p>Преджде всего надо было выбрать систему на которую переходить, и условия были такие что это должна быть дружелюбная прежде всего к редакторам система, 
+и система на суппорт которой ненужно было бы тратить много ресурсов в будущем, система которая уже была на рынке и имела репутацию именно как система для крупных новостных изданий. Так выбор пал на wordpress, это было да и остается разумным коллективным решением.</p>
+
+<p>Под катом немного подробностей о том какие были проблемы и интересная визуализация вконце.</p>
+
+
+		
+		<div>
+		    <a href="/dev/php/2017/07/31/roem-wordpress/">More</a>
+		</div>
+	    </div>
+	</article>
+	
+	<article class="om-article-item mb-5" style="padding-left: 30px;border-left: 4px solid lightgray;">
+	    <time datetime="2017-06-05 15:15:00 +0300">June 5, 2017</time>    
+	    <h1 class="post-title"><a href="/books/2017/06/05/not-giving-a-fuck/">Книга: The Subtle Art of Not Giving A Fuck</a></h1>
+	    <p class="author">
+	    <p class="meta"></p>
+	    </p>
+	    <div class="post-categories mt-3 mb-3">
+		Категории:
+		
+		<a href="/categories/books/" class="badge badge-success">books</a>
+		
+	    </div>
+	    <div class="content">
+		
+		<ul>
+  <li>Название: The Subtle Art of Not Giving A Fuck: A Counterintuitive Approach to Living a Good Life</li>
+  <li>Автор: Mark Manson</li>
+  <li>Год: 2016</li>
+</ul>
+
+<p>Книга о том почему нестоит обращать внимание на все подряд, и беспокоится только о важных для себя вещах. Это не просто книга по мотивации это скорее такая большая статья с реальными примерами которые приводит автор из жизни разных людей. Нестоит относится к этой книге как к “очередной” книге по мотивации, это скорее наоборот книга написанная с другой стороны.</p>
+
+<p>Картинка и ссылка под катом.</p>
+
+
+		
+		<div>
+		    <a href="/books/2017/06/05/not-giving-a-fuck/">More</a>
+		</div>
+	    </div>
+	</article>
+	
+	<article class="om-article-item mb-5" style="padding-left: 30px;border-left: 4px solid lightgray;">
+	    <time datetime="2017-05-31 14:30:00 +0300">May 31, 2017</time>    
+	    <h1 class="post-title"><a href="/osx/2017/05/31/keychain-broken/">What to do if OSX Keychain broken</a></h1>
+	    <p class="author">
+	    <p class="meta"></p>
+	    </p>
+	    <div class="post-categories mt-3 mb-3">
+		Категории:
+		
+		<a href="/categories/osx/" class="badge badge-success">osx</a>
+		
+	    </div>
+	    <div class="content">
+		
+		<p>Если на вашем SSD кончилось место, файловая система неисправна, то иногда это приводит к сломанному <em>Keychain.db</em> в котором в OSX хранятся сохраненные пароли и сертификаты.
+Нерабочий кейчейн вызвыает массу проблем, поэтому нужно обязательно делать бекап. Как минмум с помощью встроенного TimeMachine, обычного этого достаточно.</p>
+
+<p>Если бекап есть, все что нужно сделать это открыть в <em>Finder</em></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~/Library/Keychains/
+</code></pre></div></div>
+
+<p>После чего запустить <em>TimeMachine</em> и восстановить эту директорию. Перезагрузится. Если бекап старый, то потребуется вспомнить старый пароль от пользователя которому принадлжеит кейчейн.
+Ссылки под катом.</p>
+
+
+		
+		<div>
+		    <a href="/osx/2017/05/31/keychain-broken/">More</a>
+		</div>
+	    </div>
+	</article>
+	
+	<article class="om-article-item mb-5" style="padding-left: 30px;border-left: 4px solid lightgray;">
+	    <time datetime="2016-11-09 03:16:00 +0300">November 9, 2016</time>    
+	    <h1 class="post-title"><a href="/dev/mac/2016/11/09/brew-git/">Brew update OSX 10.12</a></h1>
+	    <p class="author">
+	    <p class="meta"></p>
+	    </p>
+	    <div class="post-categories mt-3 mb-3">
+		Категории:
+		
+		<a href="/categories/dev/" class="badge badge-success">dev</a>
+		
+		<a href="/categories/mac/" class="badge badge-success">mac</a>
+		
+	    </div>
+	    <div class="content">
+		
+		<p>Если при обновлении <em>brew</em> призошла такая ошибка</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ brew update
+/usr/local/Library/brew.sh: line 32: /usr/local/Library/ENV/scm/git: No such file or directory
+</code></pre></div></div>
+
+<p>Необходимо выполнить следующее</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd "$(brew --repository)" &amp;&amp; git fetch &amp;&amp; git reset --hard origin/master
+</code></pre></div></div>
+
+<p>Этот набор команда скачает последнюю версию brew из master ветки</p>
+
+
+		
+		<div>
+		    <a href="/dev/mac/2016/11/09/brew-git/">More</a>
+		</div>
+	    </div>
+	</article>
+	
+	<article class="om-article-item mb-5" style="padding-left: 30px;border-left: 4px solid lightgray;">
+	    <time datetime="2016-10-31 01:16:00 +0300">October 31, 2016</time>    
+	    <h1 class="post-title"><a href="/dev/ruby/2016/10/31/bundle-ssl/">Bundle could not verify the SSL certificate</a></h1>
+	    <p class="author">
+	    <p class="meta"></p>
+	    </p>
+	    <div class="post-categories mt-3 mb-3">
+		Категории:
+		
+		<a href="/categories/dev/" class="badge badge-success">dev</a>
+		
+		<a href="/categories/ruby/" class="badge badge-success">ruby</a>
+		
+	    </div>
+	    <div class="content">
+		
+		<p>Если при <em>bundle install</em> bundle неможет верифицтировать сертификат и выдает ошибку</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Fetching source index from https://rubygems.org/
+Could not verify the SSL certificate for https://rubygems.org/.
+There is a chance you are experiencing a man-in-the-middle attack, but most likely your system doesn't have the CA
+certificates needed for verification. For information about OpenSSL certificates, see bit.ly/ruby-ssl. To connect without
+using SSL, edit your Gemfile sources and change 'https' to 'http'.
+</code></pre></div></div>
+<p>Необходимо выполнить</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rvm osx-ssl-certs update
+</code></pre></div></div>
+
+<p>Подробнее <a href="https://rvm.io/support/fixing-broken-ssl-certificates">тут</a></p>
+
+<!--more-->
+
+		
+		<div>
+		    <a href="/dev/ruby/2016/10/31/bundle-ssl/">More</a>
+		</div>
+	    </div>
+	</article>
+	
+	<article class="om-article-item mb-5" style="padding-left: 30px;border-left: 4px solid lightgray;">
+	    <time datetime="2016-10-30 02:18:00 +0300">October 30, 2016</time>    
+	    <h1 class="post-title"><a href="/books/2016/10/30/lean-startup/">Книга: Lean Startup</a></h1>
+	    <p class="author">
+	    <p class="meta"></p>
+	    </p>
+	    <div class="post-categories mt-3 mb-3">
+		Категории:
+		
+		<a href="/categories/books/" class="badge badge-success">books</a>
+		
+	    </div>
+	    <div class="content">
+		
+		<ul>
+  <li>Название: Lean startup</li>
+  <li>Автор: Eric Ries</li>
+  <li>Год: 2011</li>
+</ul>
+
+<p>Пожалуй самая полезная книга про стартапы и процессы. Позовляет понять какие процесс происходит при разработке продуктов и какие ошибки случаются в этих процессах. Книга наполнена конкретными примерами и изьяснениями, именно поэтому она полезна и довольно легко войдет в человека знакомого с software разработкой или менеджментом софтверных продуктов. Именно <a href="https://en.wikipedia.org/wiki/Eric_Ries">Eric Ries</a> придумал принцип <a href="https://en.wikipedia.org/wiki/Lean_startup">Lean Startup</a>, термины и методологии (MVP, Continuous integration, Pivot, Split testing, Bussines Model Canvas) которого стали так широко использоваться очень многими людьми.</p>
+
+<p>Ссылки под катом.</p>
+
+
+		
+		<div>
+		    <a href="/books/2016/10/30/lean-startup/">More</a>
+		</div>
+	    </div>
+	</article>
+	
+	<article class="om-article-item mb-5" style="padding-left: 30px;border-left: 4px solid lightgray;">
+	    <time datetime="2016-10-27 00:00:00 +0300">October 27, 2016</time>    
+	    <h1 class="post-title"><a href="/books/2016/10/27/money-master-of-the-game/">Книга: Money master the game</a></h1>
+	    <p class="author">
+	    <p class="meta"></p>
+	    </p>
+	    <div class="post-categories mt-3 mb-3">
+		Категории:
+		
+		<a href="/categories/books/" class="badge badge-success">books</a>
+		
+	    </div>
+	    <div class="content">
+		
+		<p>Книга такого очень известного спикера как Тони Роббинс, о деньгах, финансах, бюджетах, инвестициях.
+Не смотря на это книга довольно интересная и рассказывает основные принципы управления деньгами и инвестициями, и наполнена специфичными для США примерами.</p>
+
+<p>Основной посыл книги это то что нужно инвестировать деньги, а не тратить их бездумно. Как именно инвестировать и перестать безумно тратить предлагается понять читая эту книгу.</p>
+
+<p>Длительность 21 час 3 минуты, половина из этого вода, но кто умеет плавать тем норм ;-)</p>
+
+<p>Русификацию не искал так что незнаю есть ли она на русском, и вероятно не нужна.</p>
+
+<p>Ссылка под катом</p>
+
+
+		
+		<div>
+		    <a href="/books/2016/10/27/money-master-of-the-game/">More</a>
+		</div>
+	    </div>
+	</article>
+	
+	<article class="om-article-item mb-5" style="padding-left: 30px;border-left: 4px solid lightgray;">
+	    <time datetime="2016-09-28 22:34:00 +0300">September 28, 2016</time>    
+	    <h1 class="post-title"><a href="/hardware/mac/2016/09/28/mac-smc-controller-util/">Macbook без батареи и управление кулером</a></h1>
+	    <p class="author">
+	    <p class="meta"></p>
+	    </p>
+	    <div class="post-categories mt-3 mb-3">
+		Категории:
+		
+		<a href="/categories/hardware/" class="badge badge-success">hardware</a>
+		
+		<a href="/categories/mac/" class="badge badge-success">mac</a>
+		
+	    </div>
+	    <div class="content">
+		
+		<p>Умерла очередная батарея <em>Macbook Pro</em>, а замена еще не пришла. Батарея умерал полностью, то есть она тепреь неопределяется и ссистема пишет что она не подключена, при этом она перодически активируется что приводит систему в ступор, так как она пытается брать оттуда питание, а там его нет, - система выключавется или впадает в sleep mode.</p>
+
+<p>В Macbook Pro все устроено так если вынуть батарею и использовать только <em>A/C</em> питание то <em>EFI</em> уменьшает частоту считая что система работает в некоем “Безопасном режиме” Таким образом пользоваться с полной нагрузкой комьютером нельзя, он просто начинает торомозить из за недостатка производительсности. Смотреть ютуб и писать тексты конечно можно, но запускать более производительный софт неполучится.</p>
+
+<p>Решения этой проблемы несуществует и все что мне удалось найти это выключения модуля ядра который управляет частотой в зависимости от нагрузки, но в случае отказа батареи уменьшение частоты происходит на более низком уровне (<em>EFI</em>).</p>
+
+<p>В процессе “гугления” я в очередной раз нашел <a href="https://www.eidac.de">smcFanControl</a> Внутри которого есть утилита <strong>smc</strong> который позволяет выставлять различные флаги SMC (System Management Controller) там ~380 ключей или правильнее сказать регистров в которые могут быть записны разные параметры. Несколько параметров управляют частотой вращений кулера.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>To read data from each fan:
+
+F0Ac - Fan actual speed
+F0Mn - Fan minimum speed
+F0Mx - Fan maximum speed
+F0Sf - Fan safe speed
+F0Tg - Fan target speed
+FS!  - See if fans are in automatic or forced mode
+
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>To set a fan to a specific speed:
+
+FS!  - Sets "force mode" to fan.  Bit 0 (right to left) is fan 0, bit 1
+       is fan 1, etc
+F0Tg - Sets target speed, make sure you fp78 encode it (left shift by 2)
+
+For example, to force both fans to 3500 RPM:
+# python -c "print hex(3500 &lt;&lt; 2)"
+0x36b0
+# smc -k "FS! " -w 0003
+# smc -k F0Tg -w 36b0
+# smc -k F1Tg -w 36b0
+
+..to force fan 0 to 4000 RPM and leave fan 1 in automatic mode:
+# smc -k "FS! " -w 0001
+# smc -k F0Tg -w 3e80
+
+..to return both fans to automatic mode:
+# smc -k "FS! " -w 0000
+
+
+</code></pre></div></div>
+<p>Полный список флагов и описание найти для долго не искал, но за то нашел хороший guide по Apple SMC и как с ним работаьт на Objective C <a href="https://jrw01.github.io/Articles/smc.html">https://jrw01.github.io/Articles/smc.html</a> С помошью утилиты smc можно получать много интересных показателей и использовать их например для построения виджета с этой информацией внутри.</p>
+
+<p>Под катом список всех регистров SMC.</p>
+
+
+		
+		<div>
+		    <a href="/hardware/mac/2016/09/28/mac-smc-controller-util/">More</a>
+		</div>
+	    </div>
+	</article>
+	
+	
+	<ul class="pagination">
+	    
+	    <li class="page-item"><a class="page-link" href="/index.html">&laquo; Prev</a></li>
+	    
+	    
+	    
+	    
+	    <li class="page-item">
+		<a class="page-link" href="/index.html">1</a>
+	    </li>
+	    
+	    
+	    
+	    <li class="active page-item">
+		<a href="" class="page-link">2</a>
+	    </li>
+	    
+	    
+	    
+	    <li class="page-item">
+		<a class="page-link" href="/page/3/">3</a>
+	    </li>
+	    
+	    
+	    
+	    <li class="page-item">
+		<a class="page-link" href="/page/4/">4</a>
+	    </li>
+	    
+	    
+	    
+	    <li class="page-item">
+		<a class="page-link" href="/page/5/">5</a>
+	    </li>
+	    
+	    
+	    
+	    <li class="page-item">
+		<a class="page-link" href="/page/6/">6</a>
+	    </li>
+	    
+	    
+	    
+	    
+	    <li class="page-item"> <a class="page-link" href="/page/3/index.html">Next &raquo;</a></li>
+	    
+	</ul>
+	
+    </div>
+    <div class="col-3 col-md-4 d-none d-sm-block">
+      <aside class="om-aside">
+          <h4>New posts</h4>
+          <ul>
+                
+              <li>  
+                  <a href="/humanity/2019/04/21/memory-result-chart/">Память о действиях и результате</a>  
+              </li>  
+                
+              <li>  
+                  <a href="/howto/2019/02/22/wowcube/">Brief look into WowCube SDK</a>  
+              </li>  
+                
+              <li>  
+                  <a href="/history/2019/02/02/netiquette/">Netiquette RFC1855</a>  
+              </li>  
+                
+              <li>  
+                  <a href="/dev/2019/01/26/rails-webpack-stimulus/">Rails + Webpack + Stimulus + Bootstrap 4</a>  
+              </li>  
+                
+              <li>  
+                  <a href="/books/2018/12/21/bullshit-jobs/">Книга: Bullshit Jobs: A Theory</a>  
+              </li>  
+                
+              <li>  
+                  <a href="/tips/linux/2018/11/27/mknod-network/">Сеть с помощью mknod</a>  
+              </li>  
+                
+              <li>  
+                  <a href="/security/2018/11/24/wallarm-quest/">CTF Квест</a>  
+              </li>  
+                
+              <li>  
+                  <a href="/jekyll/2018/09/22/welcome-to-jekyll/">Обновил Jekyll</a>  
+              </li>  
+                
+              <li>  
+                  <a href="/books/2018/06/23/unfuck-yourself/">Книга: Unfuck yourself</a>  
+              </li>  
+                
+              <li>  
+                  <a href="/tips/linux/2017/11/02/git-out-of-memory/">Что делать на если нехватает памяти для git</a>  
+              </li>  
+              
+          </ul>
+      </aside>
+    </div>
+</div>
+
+	</div>
+	<footer class="footer">
+	    Dmitry Rodichev &copy; 2003 - 2019 <br>
+	    Копирование и распрастрнение страницы разрешено только в оригинальном не изменном виде, включая это сообщение..<br>
+	    Verbatim copying and redistribution of this entire page are permitted provided this notice is preserved. <br>
+	    Verbatim copying and redistribution of any of the photos in the photos subdirectory is permitted under the <a href="http://creativecommons.org/licenses/by-nd/3.0/" rel="nofollow"> Creative Commons Noderivs license version 3.0</a> or later.
+	</footer>
+	
+	<script src="/assets/vendor/jquery.min.js"></script>
+	<script src="/assets/vendor/popper.min.js"></script>
+	<script src="/assets/vendor/bootstrap.min.js"></script>
+    </body>
+</html>

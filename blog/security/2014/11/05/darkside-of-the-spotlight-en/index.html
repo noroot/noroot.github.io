@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+    <head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="/assets/main.css">
+	<link rel="stylesheet" href="/assets/highlight.css">
+	<title>Darkside of the Spotlight (English version) | False!True</title>
+        
+        
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28956735-2"></script>
+	<script>
+	 window.dataLayer = window.dataLayer || [];
+	 function gtag(){dataLayer.push(arguments);}
+	 gtag('js', new Date());
+
+	 gtag('config', 'UA-28956735-2');
+	</script>
+    </head>
+    <body>
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top mb-5">
+	    <div class="container">
+		<a class="navbar-brand" href="/"><span style="color:lightgreen"> False!</span><span style="color:cyan">True</span></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsEx" aria-controls="navbarsEx" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarsEx">
+		    <ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+			    <a class="nav-link" href="#">Home</a>
+			</li>
+			<li class="nav-item">
+			    <a class="nav-link" href="/archive/">Archive</a>
+			</li>
+			<li class="nav-item">
+			    <a class="nav-link" href="/categories/books/">Bookshelf</a>
+			</li>
+			<li class="nav-item">
+			    <a class="nav-link" href="https://slides.falsetrue.io">Slides</a>
+			</li>
+			<li class="nav-item">
+			    <a class="nav-link" href="/about/">About</a>
+			</li>
+		    </ul>
+		    <ul class="nav navbar-nav navbar-right">
+			<li>
+		            <a href="http://feeds.feedburner.com/OvermindsHive" class="om-rss-link">Subscirbe <img src="/images/rss.png" /> RSS</a>
+			</li>
+                    </ul>
+		</div>
+	    </div>
+	</nav>
+	
+	<div class="container mt-3 pt-5">
+            <div class="row mb-5" style="border-left: 4px solid lightgray">
+    <div class="col">
+	<time datetime="2014-11-05 18:50:00 +0300">November 5, 2014</time>    
+	<h1>Darkside of the Spotlight (English version)</h1>
+	<p class="meta">
+	    
+	</p>
+	<div class="post-categories pb-3">
+	    Categories:
+	    
+	    <a href="/categories/security/" class="badge badge-success">security</a>
+	    
+	</div>
+	<div class="content">
+	    <p>One of the new features you can get with new OSX Yosemite is enhanced spotlight.
+What exactly Spotlight doing ? Indexing all of your content, except you’re not excluded something in settings.
+Also Apple tell us “Safety. Built right in.” So does it true ?</p>
+
+<p>Spotlight always knows everything about your old and new files, it indexing not only files, 
+but calendar records, bookmarks, browser history, contacts and emails. 
+Spotlight knows everything about your files and you.</p>
+
+<p>What it does when you’re typing something in a search field
+Spotlight search everywhere and everything and even loading webpages from your bookmarks and history, questions ?, follow next:</p>
+
+<p>I am take Wireshark sniffer, turn off all other programs and start to watch what exactly Spotlight did when i am type something.</p>
+
+<!-- more -->
+
+<p>Let’s start with simple query “weather”, take a look at this:</p>
+
+<p><img src="http://s.overmind.ws.s3.amazonaws.com/darkspotlight/weather-packet.png" alt="http://s.overmind.ws.s3.amazonaws.com/darkspotlight/weather-packet.png" /></p>
+
+<p>another one more interesting “porn”:</p>
+
+<p><img src="http://s.overmind.ws.s3.amazonaws.com/darkspotlight/porno-packet.png" alt="http://s.overmind.ws.s3.amazonaws.com/darkspotlight/porno-packet.png" /></p>
+
+<p>For more handy view leave only DNS queries</p>
+
+<p><img src="http://s.overmind.ws.s3.amazonaws.com/darkspotlight/dns-requests-packet.png" alt="http://s.overmind.ws.s3.amazonaws.com/darkspotlight/dns-requests-packet.png" /></p>
+
+<p>Spotlight fully load web page with safari in background</p>
+
+<p><img src="http://s.overmind.ws.s3.amazonaws.com/darkspotlight/porno-packet-full-site-loading.png" alt="http://s.overmind.ws.s3.amazonaws.com/darkspotlight/porno-packet-full-site-loading.png" /></p>
+
+<p>query “buy phone”</p>
+
+<p><img src="http://s.overmind.ws.s3.amazonaws.com/darkspotlight/buy-phone.png" alt="http://s.overmind.ws.s3.amazonaws.com/darkspotlight/buy-phone.png" /></p>
+
+<p>another one query and spotlight load page from browser history</p>
+
+<p><img src="http://s.overmind.ws.s3.amazonaws.com/darkspotlight/sleep-packet.png" alt="http://s.overmind.ws.s3.amazonaws.com/darkspotlight/sleep-packet.png" /></p>
+
+<p>Very intersting that even if those pages are loaded they haven’t any effect on spotlight search results, nothing related at all. That is very suspicious fact.</p>
+
+<h2 id="aftermath-">Aftermath ?</h2>
+
+<p>Such hidden queries and behavior can provoke sensitive data leak, and obviously that kind of leak can be very dangerous.
+At least you’re send your IP address to 3d party resources, furthermore query related web pages will be opened in hidden mode, and suddenly spotlight can open some exploit that use some vulnerability of safar engine.</p>
+
+<h2 id="how-to-avoid-hidden-and-dangerous-spotlight-queries">How to avoid hidden and dangerous Spotlight queries</h2>
+
+<p>By default Spotlight settings looks like this:</p>
+
+<p><img src="http://s.overmind.ws.s3.amazonaws.com/darkspotlight/spotlight-settings.png" alt="http://s.overmind.ws.s3.amazonaws.com/darkspotlight/spotlight-settings.png" /></p>
+
+<p>Take a look at “Other” item what can it be ? I don’t known maybe you know ?</p>
+
+<p><img src="http://s.overmind.ws.s3.amazonaws.com/darkspotlight/spotlight-settings-other.png" alt="http://s.overmind.ws.s3.amazonaws.com/darkspotlight/spotlight-settings.png" /></p>
+
+<p>I am turn off all that potentially can uses 3d party services: Bing Web Searches, Spotlight suggestions, Bookamarks &amp; History and of course Other.</p>
+
+<p>Second screen of settings with exceptions:</p>
+
+<p><strong>WARNING: When you’re updating operating system for example to Yosemite, settings of exception will be restored to default values (YES FUCK APPLE)</strong></p>
+
+<p>Very intersting that tab which called “Privacy” contains nothing! And even if you’re setup something here there is no warranty that after next operating system update settings will be there.</p>
+
+<p><img src="http://s.overmind.ws.s3.amazonaws.com/darkspotlight/spotlight-empty-exception.png" alt="http://s.overmind.ws.s3.amazonaws.com/darkspotlight/spotlight-empty-exception.png" /></p>
+
+<p>Also I am recommend you to add all of your sensitive data to exception for indexing by Spotlight. 
+By the way there are project called <a href="http://fix-macosx.com">https://fix-macosx.com/</a> which allows you disable all bad things in Spotlight by launch small python program in a terminal. (Also this is my version of it, with a bit more disabled items <a href="https://github.com/noroot/fix-macosx">https://github.com/noroot/fix-macosx</a> )</p>
+
+<p>If you’re want to completly disable Spotlight from your OSX you can do it like this:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo su
+  
+chmod 0000 /Library/Spotlight
+
+chmod 0000 /System/Library/Spotlight
+
+chmod 0000 /System/Library/CoreServices/Search.bundle
+
+chmod 0000 /System/Library/PreferencePanes/Spotlight.prefPane
+
+chmod 0000 /System/Library/Services/Spotlight.service
+
+chmod 0000 /System/Library/Contextual Menu Items/SpotlightCM.plugin
+
+chmod 0000 /System/Library/StartupItems/Metadata
+
+chmod 0000 /usr/bin/mdimport
+
+chmod 0000 /usr/bin/mdcheckschema
+
+chmod 0000 /usr/bin/mdfind
+
+chmod 0000 /usr/bin/mdls
+
+chmod 0000 /usr/bin/mdutil
+
+chmod 0000 /usr/bin/md
+</code></pre></div></div>
+
+<p>chmod using in this hack for backup puproses, if you want to turn on spotlight just chmod files to normal permissions.</p>
+
+<p>After reboot you should run this commands to completly remove old index files.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rm -r /.Spotlight-V100
+
+rm -r /private/var/tmp/mds
+
+exit
+</code></pre></div></div>
+
+<p>Another one screenshot with apple spotlight terms of use:</p>
+
+<p><img src="http://s.overmind.ws.s3.amazonaws.com/darkspotlight/apple-spotlight-license.png" alt="http://s.overmind.ws.s3.amazonaws.com/darkspotlight/apple-spotlight-license.png" /></p>
+
+<p>That’s all. Welcome to comments and discus this weird stuff.</p>
+
+
+	</div>
+	<section>
+	    <h2>Comments</h2>
+	    <div id="disqus_thread"></div>
+	</section>
+	<script type="text/javascript">
+         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+         var disqus_shortname = 'om6'; // required: replace example with your forum shortname
+
+         /* * * DON'T EDIT BELOW THIS LINE * * */
+         (function() {
+             var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+             dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+         })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>    	
+    </div>
+</div>
+
+	</div>
+	<footer class="footer">
+	    Dmitry Rodichev &copy; 2003 - 2019 <br>
+	    Копирование и распрастрнение страницы разрешено только в оригинальном не изменном виде, включая это сообщение..<br>
+	    Verbatim copying and redistribution of this entire page are permitted provided this notice is preserved. <br>
+	    Verbatim copying and redistribution of any of the photos in the photos subdirectory is permitted under the <a href="http://creativecommons.org/licenses/by-nd/3.0/" rel="nofollow"> Creative Commons Noderivs license version 3.0</a> or later.
+	</footer>
+	
+	<script src="/assets/vendor/jquery.min.js"></script>
+	<script src="/assets/vendor/popper.min.js"></script>
+	<script src="/assets/vendor/bootstrap.min.js"></script>
+    </body>
+</html>
