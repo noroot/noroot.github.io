@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+    <head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="/assets/main.css">
+	<link rel="stylesheet" href="/assets/highlight.css">
+	<title>Brief look into WowCube SDK | False!True</title>
+        
+        
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28956735-2"></script>
+	<script>
+	 window.dataLayer = window.dataLayer || [];
+	 function gtag(){dataLayer.push(arguments);}
+	 gtag('js', new Date());
+
+	 gtag('config', 'UA-28956735-2');
+	</script>
+    </head>
+    <body>
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top mb-5">
+	    <div class="container">
+		<a class="navbar-brand" href="/"><span style="color:lightgreen"> False!</span><span style="color:cyan">True</span></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsEx" aria-controls="navbarsEx" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarsEx">
+		    <ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+			    <a class="nav-link" href="#">Home</a>
+			</li>
+			<li class="nav-item">
+			    <a class="nav-link" href="/archive/">Archive</a>
+			</li>
+			<li class="nav-item">
+			    <a class="nav-link" href="/categories/books/">Bookshelf</a>
+			</li>
+			<li class="nav-item">
+			    <a class="nav-link" href="https://slides.falsetrue.io">Slides</a>
+			</li>
+			<li class="nav-item">
+			    <a class="nav-link" href="/about/">About</a>
+			</li>
+		    </ul>
+		    <ul class="nav navbar-nav navbar-right">
+			<li>
+		            <a href="http://feeds.feedburner.com/OvermindsHive" class="om-rss-link">Subscirbe <img src="/images/rss.png" /> RSS</a>
+			</li>
+                    </ul>
+		</div>
+	    </div>
+	</nav>
+	
+	<div class="container mt-3 pt-5">
+            <div class="row mb-5" style="border-left: 4px solid lightgray">
+    <div class="col">
+	<time datetime="2019-02-22 23:00:00 +0300">February 22, 2019</time>    
+	<h1>Brief look into WowCube SDK</h1>
+	<p class="meta">
+	    
+	</p>
+	<div class="post-categories pb-3">
+	    Categories:
+	    
+	    <a href="/categories/howto/" class="badge badge-success">howto</a>
+	    
+	</div>
+	<div class="content">
+	    <p>Very brief look into WowCube software SDK.</p>
+
+<p>What is WowCube ? Gaming or kind of puzzle platform, based on Rubik’s cube principle. 
+It uses 8 mini cubes conntected to each other with special magnet locks.
+Each of mini cube is STM32 bit microcontroller with firmware written with Pawn <a href="https://github.com/compuphase/pawn">https://github.com/compuphase/pawn</a></p>
+
+<p>There are 8 micro computers connected to each other. Imagine how to develop any kind of program to interact between them, its complicated. <a href="https://wowcube.com/sdk">Official SDK</a> is very weak, only what they offer is small repository <a href="https://github.com/wowcube/WOWCube_Emulator_MacOS">https://github.com/wowcube/WOWCube_Emulator_MacOS</a> which contains everthing even commited VCcode and Processing inside for some reason, so I decide to make new one clean version to make simplier.</p>
+
+<!-- more -->
+
+<p>Lets go step by step:</p>
+
+<p>You need to have installed:</p>
+
+<ul>
+  <li>Pawn language compiler</li>
+  <li>Processing language compiler (they uses it as an cube emulator during development process)</li>
+  <li>Additional UDP library <a href="http://ubaa.net/shared/processing/udp/udp.zip">http://ubaa.net/shared/processing/udp/udp.zip</a> can be also found inside data direcotry in repository.</li>
+</ul>
+
+<p>Since firmware used to be launched on each of 8 microcomputers we need toolchain to do it automatically, Makefile will suits here perfectly.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">compile:
+	pawncc pipes.pwn <span class="nt">-ogame</span>
+
+
+dev:
+	<span class="k">for </span>i <span class="k">in </span>0 1 2 3 4 5 6 7 8 <span class="p">;</span> <span class="k">do</span> <span class="se">\</span>
+		pawnrun game.amx <span class="nv">$$</span>i &amp; <span class="p">;</span> <span class="se">\</span>
+	<span class="k">done</span>		</code></pre></figure>
+
+<p>Next step is you have to open ProcessingUI, and start Cube Emulator. Cube emulator interacts with firmware via UDP proto, so you will have to see results of interaction inside emulator, like this:</p>
+
+<p><img src="/images/wowcube/1.png" alt="/images/wowcube/1.png" /></p>
+
+<p>In dynamic:</p>
+
+<iframe width="860" height="615" src="https://www.youtube.com/embed/VOig1XyQ5PE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<p>Main disadvantage is that you have to write on two langauges, one for developer emulator and graphics interactions, and another for hardware interactions itself. WowCube uses Pawn as a scripting language for microcontrollers, I believe they do something like this inside their core loader:</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="cp">#include "pawn.h"
+</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+
+  <span class="n">FATFS</span> <span class="n">Fatfs</span><span class="p">;</span>
+  
+  <span class="p">...</span> <span class="c1">// here you need to do a platform initialization</span>
+
+  <span class="c1">//Mount filesystem</span>
+  <span class="n">f_mount</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">Fatfs</span><span class="p">);</span>
+  
+  <span class="c1">// Execute test script</span>
+  <span class="n">PawnExec</span><span class="p">(</span><span class="s">"GAME.AMX"</span><span class="p">);</span>
+  
+  <span class="c1">// Endless loop</span>
+  <span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+
+  <span class="p">}</span>
+
+<span class="p">}</span></code></pre></figure>
+
+<p>Summary.</p>
+
+<p>WowCube is definitely interesting prototype, and worth to look into it, but until it have more simple to start SDK it will be hard to attract developers. SDK it self contains Pipes game demo. You can start it with Processing and ofcourse you don’t need WowCube it self, to understand development process.</p>
+
+<p>My unofficial SDK package, <a href="https://github.com/noroot/wowcube-sdk-unofficial">https://github.com/noroot/wowcube-sdk-unofficial</a></p>
+
+<p>Official Site: <a href="http://wowcube.com/">http://wowcube.com/</a></p>
+
+	</div>
+	<section>
+	    <h2>Comments</h2>
+	    <div id="disqus_thread"></div>
+	</section>
+	<script type="text/javascript">
+         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+         var disqus_shortname = 'om6'; // required: replace example with your forum shortname
+
+         /* * * DON'T EDIT BELOW THIS LINE * * */
+         (function() {
+             var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+             dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+         })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>    	
+    </div>
+</div>
+
+	</div>
+	<footer class="footer">
+	    Dmitry Rodichev &copy; 2003 - 2019 <br>
+	    Копирование и распрастрнение страницы разрешено только в оригинальном не изменном виде, включая это сообщение..<br>
+	    Verbatim copying and redistribution of this entire page are permitted provided this notice is preserved. <br>
+	    Verbatim copying and redistribution of any of the photos in the photos subdirectory is permitted under the <a href="http://creativecommons.org/licenses/by-nd/3.0/" rel="nofollow"> Creative Commons Noderivs license version 3.0</a> or later.
+	</footer>
+	
+	<script src="/assets/vendor/jquery.min.js"></script>
+	<script src="/assets/vendor/popper.min.js"></script>
+	<script src="/assets/vendor/bootstrap.min.js"></script>
+    </body>
+</html>
