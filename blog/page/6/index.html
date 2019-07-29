@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
 	<!-- Required meta tags -->
@@ -58,6 +58,30 @@
 	<div class="container mt-3 pt-5">
             <div class="row">
     <div class="col-12 col-lg-8 col-md-10 col-xs-12 col-md-12">
+	
+	<article class="om-article-item mb-5" style="padding-left: 30px;border-left: 4px solid lightgray;">
+	    <time datetime="2010-06-01 21:00:00 +0400">June 1, 2010</time>    
+	    <h1 class="post-title"><a href="/python/math/2010/06/01/python-differential/">Python differential</a></h1>
+	    <p class="author">
+	    <p class="meta"></p>
+	    </p>
+	    <div class="post-categories mt-3 mb-3">
+		Категории:
+		
+		<a href="/categories/python/" class="badge badge-success">python</a>
+		
+		<a href="/categories/math/" class="badge badge-success">math</a>
+		
+	    </div>
+	    <div class="content">
+		
+		<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c">#!/usr/bin/python</span> <span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">linspace</span><span class="p">,</span> <span class="n">array</span> <span class="kn">from</span> <span class="nn">scipy.integrate</span> <span class="kn">import</span> <span class="n">odeint</span><span class="p">,</span><span class="n">ode</span> <span class="kn">from</span> <span class="nn">pylab</span> <span class="kn">import</span> <span class="n">plot</span><span class="p">,</span> <span class="n">show</span> <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span> <span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="n">arange</span> <span class="kn">import</span> <span class="nn">random</span> <span class="k">as</span> <span class="n">rand</span> <span class="k">def</span> <span class="nf">dotu</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">t0</span><span class="p">):</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="n">r</span> <span class="n">d</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span> <span class="n">d</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">y</span> <span class="n">d</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">x</span><span class="o">-</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="n">y</span> <span class="k">return</span> <span class="n">d</span> <span class="k">def</span> <span class="nf">dplot</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s">"green"</span><span class="p">):</span> <span class="n">t</span> <span class="o">=</span> <span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">55</span><span class="p">,</span> <span class="mi">700</span><span class="p">)</span> <span class="k">print</span> <span class="n">t</span> <span class="n">u</span><span class="o">=</span><span class="n">odeint</span><span class="p">(</span><span class="n">dotu</span><span class="p">,</span><span class="n">s</span><span class="p">,</span><span class="n">t</span><span class="p">)</span> <span class="n">u</span><span class="o">=</span><span class="n">array</span><span class="p">(</span><span class="n">u</span><span class="p">)</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span> <span class="n">plot</span><span class="p">(</span><span class="n">u</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">u</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">color</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mf">1.52</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">):</span> <span class="k">print</span> <span class="n">x</span> <span class="n">dplot</span><span class="p">([</span><span class="n">x</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span> <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="bp">True</span><span class="p">)</span> <span class="n">show</span><span class="p">()</span></code></pre></figure> <h2 id="дифференциальные-исчесления-в-python-реализовываются-с-помощью-библиотек">Дифференциальные исчесления в python реализовываются с помощью библиотек:</h2> <p><a href="http://www.scipy.org/" rel="nofollow">http://www.scipy.org/</a><br /> <a href="http://ru.wikipedia.org/wiki/SciPy" rel="nofollow">http://ru.wikipedia.org/wiki/SciPy</a><br /></p> <p><a href="http://numpy.scipy.org/" rel="nofollow">http://numpy.scipy.org/</a><br /> <a href="http://ru.wikipedia.org/wiki/NumPy" rel="nofollow">http://ru.wikipedia.org/wiki/NumPy</a><br /></p> <p>Графки рисуются с помощью http://matplotlib.sourceforge.net/</p> <p>Но не всё так гладко, возможно в новых версиях уже поправлены выявленные баги, но в том ч то использовалось в примере были ошибки вычисления ODE решателей которые приводили к остановке программы и соотвественно нелзя было нарисовать график, из за этого пришлось использовать другие платформы.</p> <p>Все баги к этому моменту починили...
+		
+		<div>
+		    <a href="/python/math/2010/06/01/python-differential/">More</a>
+		</div>
+	    </div>
+	</article>
 	
 	<article class="om-article-item mb-5" style="padding-left: 30px;border-left: 4px solid lightgray;">
 	    <time datetime="2008-04-12 00:59:00 +0400">April 12, 2008</time>    
@@ -337,6 +361,10 @@
           <ul>
                 
               <li>  
+                  <a href="/books/2019/07/29/12-rules-of-life/">Книга: 12 Rules of Life: An Antidote to Chaos</a>  
+              </li>  
+                
+              <li>  
                   <a href="/humanity/2019/04/21/memory-result-chart/">Память о действиях и результате</a>  
               </li>  
                 
@@ -371,10 +399,6 @@
               <li>  
                   <a href="/books/2018/06/23/unfuck-yourself/">Книга: Unfuck yourself</a>  
               </li>  
-                
-              <li>  
-                  <a href="/tips/linux/2017/11/02/git-out-of-memory/">Что делать на если нехватает памяти для git</a>  
-              </li>  
               
           </ul>
       </aside>
@@ -384,7 +408,7 @@
 	</div>
 	<footer class="footer">
 	    Dmitry Rodichev &copy; 2003 - 2019 <br>
-	    Копирование и распрастрнение страницы разрешено только в оригинальном не изменном виде, включая это сообщение..<br>
+	    Копирование и распрастранение страницы разрешено только в оригинальном не изменном виде, включая это сообщение..<br>
 	    Verbatim copying and redistribution of this entire page are permitted provided this notice is preserved. <br>
 	    Verbatim copying and redistribution of any of the photos in the photos subdirectory is permitted under the <a href="http://creativecommons.org/licenses/by-nd/3.0/" rel="nofollow"> Creative Commons Noderivs license version 3.0</a> or later.
 	</footer>

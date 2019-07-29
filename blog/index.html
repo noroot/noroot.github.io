@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
 	<!-- Required meta tags -->
@@ -58,6 +58,54 @@
 	<div class="container mt-3 pt-5">
             <div class="row">
     <div class="col-12 col-lg-8 col-md-10 col-xs-12 col-md-12">
+	
+	<article class="om-article-item mb-5" style="padding-left: 30px;border-left: 4px solid lightgray;">
+	    <time datetime="2019-07-29 15:00:00 +0300">July 29, 2019</time>    
+	    <h1 class="post-title"><a href="/books/2019/07/29/12-rules-of-life/">Книга: 12 Rules of Life: An Antidote to Chaos</a></h1>
+	    <p class="author">
+	    <p class="meta"></p>
+	    </p>
+	    <div class="post-categories mt-3 mb-3">
+		Категории:
+		
+		<a href="/categories/books/" class="badge badge-success">books</a>
+		
+	    </div>
+	    <div class="content">
+		
+		<ul>
+  <li>Название: 12 Rules of Life: An Antidote to Chaos</li>
+  <li>Автор: Jordan Peterson</li>
+  <li>Год: 2018</li>
+</ul>
+
+<p>Одна из лучших книг на все времена, Доктор Jordan Peterson (о котором напишу отдельный пост), однажды задал себе вопрос, “What are the most valueable things everyone should know ?” (Какие самые ценные вещи должен знать каждый ?), и в ответ на собственный вопрос он придумал, 40 правил жизни которые оформил в виде этой книги. Книгу читает сам доктор Петерсон, что придает ей дополнительную ценность.</p>
+
+<p>Кратко:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* Stand up straight with your shoulders back
+* Treat yourself like someone you are responsible for helping
+* Make friends with people who want the best for you
+* Compare yourself to who you were yesterday, not to who someone else is today
+* Do not let your children do anything that makes you dislike them
+* Set your house in perfect order before you criticize the world
+* Pursue what is meaningful (not what is expedient)
+* Tell the truth – or, at least, don't lie
+* Assume that the person you are listening to might know something you don't
+* Be precise in your speech
+* Do not bother children when they are skateboarding
+* Pet a cat when you encounter one on the street
+</code></pre></div></div>
+
+<p>Картинка обложки и ссылка под катом.</p>
+
+
+		
+		<div>
+		    <a href="/books/2019/07/29/12-rules-of-life/">More</a>
+		</div>
+	    </div>
+	</article>
 	
 	<article class="om-article-item mb-5" style="padding-left: 30px;border-left: 4px solid lightgray;">
 	    <time datetime="2019-04-21 08:00:00 +0300">April 21, 2019</time>    
@@ -359,63 +407,6 @@ Turbolinks в комплекте, подключается отдельно в <
 	    </div>
 	</article>
 	
-	<article class="om-article-item mb-5" style="padding-left: 30px;border-left: 4px solid lightgray;">
-	    <time datetime="2017-11-02 00:24:00 +0300">November 2, 2017</time>    
-	    <h1 class="post-title"><a href="/tips/linux/2017/11/02/git-out-of-memory/">Что делать на если нехватает памяти для git</a></h1>
-	    <p class="author">
-	    <p class="meta"></p>
-	    </p>
-	    <div class="post-categories mt-3 mb-3">
-		Категории:
-		
-		<a href="/categories/tips/" class="badge badge-success">tips</a>
-		
-		<a href="/categories/linux/" class="badge badge-success">linux</a>
-		
-	    </div>
-	    <div class="content">
-		
-		<p>Однажды случилась такая история, на слабом инстансе Digital Ocean и большом количестве файлов запушенном в одном коммите, git’у нехватило свободной памяти при git pull, и автоматизированный деплой с помошью capistrano отвалился с ошибкой о том что нехватает памяти</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fatal: Out of memory, malloc failed (tried to allocate 493791736 bytes)
-fatal: index-pack failed
-error: Could not fetch origin
-git stderr: Nothing written
-</code></pre></div></div>
-
-<p>И простой способо обойти ограничение по памяти это уменьшить размеры буферов, добавив в рабочую директорию в конфиг <em>.git/config</em> следующие настройки:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[pack] 
-        windowMemory = 1m 
-        packSizeLimit = 1m 
-        deltaCacheSize = 1m 
-        deltaCacheLimit = 10 
-        packSizeLimit = 1m 
-        threads = 1 
-[core] 
-        packedGitWindowSize = 1m 
-        packedGitLimit = 1m 
-        deltaBaseCacheLimit = 1m 
-        compression = 0 
-        loosecompression = 0 
-        bigFileThreshold = 10m 
-[http] 
-        sslVerify = false ;; !!!
-[transfer] 
-        unpackLimit = 10 
-</code></pre></div></div>
-
-<p>После этого все будет работать. Незаюывайте что это нужно прописывать в конфиг той машины на которой происходить запуск <em>git pull</em>, в случае capistrano это будет диреткория <em>repo/.git</em></p>
-
-<p>EOF
-
-		
-		<div>
-		    <a href="/tips/linux/2017/11/02/git-out-of-memory/">More</a>
-		</div>
-	    </div>
-	</article>
-	
 	
 	<ul class="pagination">
 	    
@@ -472,6 +463,10 @@ git stderr: Nothing written
           <ul>
                 
               <li>  
+                  <a href="/books/2019/07/29/12-rules-of-life/">Книга: 12 Rules of Life: An Antidote to Chaos</a>  
+              </li>  
+                
+              <li>  
                   <a href="/humanity/2019/04/21/memory-result-chart/">Память о действиях и результате</a>  
               </li>  
                 
@@ -506,10 +501,6 @@ git stderr: Nothing written
               <li>  
                   <a href="/books/2018/06/23/unfuck-yourself/">Книга: Unfuck yourself</a>  
               </li>  
-                
-              <li>  
-                  <a href="/tips/linux/2017/11/02/git-out-of-memory/">Что делать на если нехватает памяти для git</a>  
-              </li>  
               
           </ul>
       </aside>
@@ -519,7 +510,7 @@ git stderr: Nothing written
 	</div>
 	<footer class="footer">
 	    Dmitry Rodichev &copy; 2003 - 2019 <br>
-	    Копирование и распрастрнение страницы разрешено только в оригинальном не изменном виде, включая это сообщение..<br>
+	    Копирование и распрастранение страницы разрешено только в оригинальном не изменном виде, включая это сообщение..<br>
 	    Verbatim copying and redistribution of this entire page are permitted provided this notice is preserved. <br>
 	    Verbatim copying and redistribution of any of the photos in the photos subdirectory is permitted under the <a href="http://creativecommons.org/licenses/by-nd/3.0/" rel="nofollow"> Creative Commons Noderivs license version 3.0</a> or later.
 	</footer>

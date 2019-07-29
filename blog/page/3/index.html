@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
 	<!-- Required meta tags -->
@@ -58,6 +58,75 @@
 	<div class="container mt-3 pt-5">
             <div class="row">
     <div class="col-12 col-lg-8 col-md-10 col-xs-12 col-md-12">
+	
+	<article class="om-article-item mb-5" style="padding-left: 30px;border-left: 4px solid lightgray;">
+	    <time datetime="2016-09-28 22:34:00 +0300">September 28, 2016</time>    
+	    <h1 class="post-title"><a href="/hardware/mac/2016/09/28/mac-smc-controller-util/">Macbook без батареи и управление кулером</a></h1>
+	    <p class="author">
+	    <p class="meta"></p>
+	    </p>
+	    <div class="post-categories mt-3 mb-3">
+		Категории:
+		
+		<a href="/categories/hardware/" class="badge badge-success">hardware</a>
+		
+		<a href="/categories/mac/" class="badge badge-success">mac</a>
+		
+	    </div>
+	    <div class="content">
+		
+		<p>Умерла очередная батарея <em>Macbook Pro</em>, а замена еще не пришла. Батарея умерал полностью, то есть она тепреь неопределяется и ссистема пишет что она не подключена, при этом она перодически активируется что приводит систему в ступор, так как она пытается брать оттуда питание, а там его нет, - система выключавется или впадает в sleep mode.</p>
+
+<p>В Macbook Pro все устроено так если вынуть батарею и использовать только <em>A/C</em> питание то <em>EFI</em> уменьшает частоту считая что система работает в некоем “Безопасном режиме” Таким образом пользоваться с полной нагрузкой комьютером нельзя, он просто начинает торомозить из за недостатка производительсности. Смотреть ютуб и писать тексты конечно можно, но запускать более производительный софт неполучится.</p>
+
+<p>Решения этой проблемы несуществует и все что мне удалось найти это выключения модуля ядра который управляет частотой в зависимости от нагрузки, но в случае отказа батареи уменьшение частоты происходит на более низком уровне (<em>EFI</em>).</p>
+
+<p>В процессе “гугления” я в очередной раз нашел <a href="https://www.eidac.de">smcFanControl</a> Внутри которого есть утилита <strong>smc</strong> который позволяет выставлять различные флаги SMC (System Management Controller) там ~380 ключей или правильнее сказать регистров в которые могут быть записны разные параметры. Несколько параметров управляют частотой вращений кулера.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>To read data from each fan:
+
+F0Ac - Fan actual speed
+F0Mn - Fan minimum speed
+F0Mx - Fan maximum speed
+F0Sf - Fan safe speed
+F0Tg - Fan target speed
+FS!  - See if fans are in automatic or forced mode
+
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>To set a fan to a specific speed:
+
+FS!  - Sets "force mode" to fan.  Bit 0 (right to left) is fan 0, bit 1
+       is fan 1, etc
+F0Tg - Sets target speed, make sure you fp78 encode it (left shift by 2)
+
+For example, to force both fans to 3500 RPM:
+# python -c "print hex(3500 &lt;&lt; 2)"
+0x36b0
+# smc -k "FS! " -w 0003
+# smc -k F0Tg -w 36b0
+# smc -k F1Tg -w 36b0
+
+..to force fan 0 to 4000 RPM and leave fan 1 in automatic mode:
+# smc -k "FS! " -w 0001
+# smc -k F0Tg -w 3e80
+
+..to return both fans to automatic mode:
+# smc -k "FS! " -w 0000
+
+
+</code></pre></div></div>
+<p>Полный список флагов и описание найти для долго не искал, но за то нашел хороший guide по Apple SMC и как с ним работаьт на Objective C <a href="https://jrw01.github.io/Articles/smc.html">https://jrw01.github.io/Articles/smc.html</a> С помошью утилиты smc можно получать много интересных показателей и использовать их например для построения виджета с этой информацией внутри.</p>
+
+<p>Под катом список всех регистров SMC.</p>
+
+
+		
+		<div>
+		    <a href="/hardware/mac/2016/09/28/mac-smc-controller-util/">More</a>
+		</div>
+	    </div>
+	</article>
 	
 	<article class="om-article-item mb-5" style="padding-left: 30px;border-left: 4px solid lightgray;">
 	    <time datetime="2016-03-15 00:59:00 +0300">March 15, 2016</time>    
@@ -466,28 +535,6 @@ So let’s go to router network settings:</p>
 	    </div>
 	</article>
 	
-	<article class="om-article-item mb-5" style="padding-left: 30px;border-left: 4px solid lightgray;">
-	    <time datetime="2014-02-22 12:01:00 +0400">February 22, 2014</time>    
-	    <h1 class="post-title"><a href="/news/2014/02/22/digital-artist-digest-probe/">Очередной дайджест за неделю</a></h1>
-	    <p class="author">
-	    <p class="meta"></p>
-	    </p>
-	    <div class="post-categories mt-3 mb-3">
-		Категории:
-		
-		<a href="/categories/news/" class="badge badge-success">news</a>
-		
-	    </div>
-	    <div class="content">
-		
-		<p>Подошло время к следующему дайджесту всего интересного за неделю. Начнем с ANSI арта</p> <p><img src="/images/ansi-bat.png" /></p> <p>Все остальное под катом</p> <!--more--> <h2 id="node-js">Node JS</h2> <p>Начнем с nodejs, а точнее с одного очень полезного пакета для него, - <b>forever</b> <a href="https://github.com/nodejitsu/forever" rel="nofollow">https://github.com/nodejitsu/forever</a> Позволяет запсукать node приложения в background, пишет output в лог. Небольшой пример для быстрого понимания.</p> <figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>forever start app <span class="nv">$ </span>forever stop 0 // где 0 это идентификатор запушенного процесса внутри forever</code></pre></figure> <p><a href="http://yeoman.io/index.html">http://yeoman.io/index.html</a> - это такой пакет для NodeJS который менеджер других менеджеров :) подругому и нескажешь, который использую Bower и Grunt упрощает создание и менеджмент приложения.</p> <p><a href="https://github.com/jigish/slate">Slate - Keyboard driven window managment</a> - из названия понятно что это клавиатурное упралвение окнами в OSX Любители и профессионалы Wmii, Awesome, xmonad оценят, и как выше упомянутые систему slate тоже требует нехилой настройки, свой конфигу думаю напишу попозже, а если вы уже пользуетесь отпишите в комментариях.</p> <h2 id="objective-c-and-ios-dev">Objective C and iOS dev</h2> <p><a href="http://www.doubleencore.com/2013/04/unique-identifiers/" rel="nofollow">http://www.doubleencore.com/2013/04/unique-identifiers/</a> - большой guide по уникальным идентификаторм в iOS</p> <p><a href="http://appicontemplate.com/ios7" rel="nofollow"> http://appicontemplate.com/ios7</a> - PSD шаблон для иконок iOS приложения</p> <p><a href="http://makeappicon.com/" rel="nofollow">http://makeappicon.com/</a> - очень полезный ресуры, генерирует весь набор форматов иконка для ios, все подходит для того чтобы запушить приложение в appstore.</p> <h2 id="osx">OSX</h2> <p><a href="https://github.com/jigish/slate">Slate - Keyboard driven window managment</a> - из названия понятно что это клавиатурное упралвение окнами в OSX Любители и профессионалы Wmii, Awesome, xmonad оценят, и как выше упомянутые систему slate тоже требует нехилой настройки, свой конфигу думаю напишу попозже, а если вы уже пользуетесь отпишите в комментариях.</p> <p>OSX хранит все ссылки на ваши все ваши закачки которые вы сдедали через браузер, хотите знать больше открывайте ваш терминал и набирайте</p> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'select LSQuarantineDataURLString from LSQuarantineEvent' </code></pre></div></div> <p>Если у вас когда нибудь было такое что OpenOffice зависал в состоянии Reopen Documents, -...
-		
-		<div>
-		    <a href="/news/2014/02/22/digital-artist-digest-probe/">More</a>
-		</div>
-	    </div>
-	</article>
-	
 	
 	<ul class="pagination">
 	    
@@ -544,6 +591,10 @@ So let’s go to router network settings:</p>
           <ul>
                 
               <li>  
+                  <a href="/books/2019/07/29/12-rules-of-life/">Книга: 12 Rules of Life: An Antidote to Chaos</a>  
+              </li>  
+                
+              <li>  
                   <a href="/humanity/2019/04/21/memory-result-chart/">Память о действиях и результате</a>  
               </li>  
                 
@@ -578,10 +629,6 @@ So let’s go to router network settings:</p>
               <li>  
                   <a href="/books/2018/06/23/unfuck-yourself/">Книга: Unfuck yourself</a>  
               </li>  
-                
-              <li>  
-                  <a href="/tips/linux/2017/11/02/git-out-of-memory/">Что делать на если нехватает памяти для git</a>  
-              </li>  
               
           </ul>
       </aside>
@@ -591,7 +638,7 @@ So let’s go to router network settings:</p>
 	</div>
 	<footer class="footer">
 	    Dmitry Rodichev &copy; 2003 - 2019 <br>
-	    Копирование и распрастрнение страницы разрешено только в оригинальном не изменном виде, включая это сообщение..<br>
+	    Копирование и распрастранение страницы разрешено только в оригинальном не изменном виде, включая это сообщение..<br>
 	    Verbatim copying and redistribution of this entire page are permitted provided this notice is preserved. <br>
 	    Verbatim copying and redistribution of any of the photos in the photos subdirectory is permitted under the <a href="http://creativecommons.org/licenses/by-nd/3.0/" rel="nofollow"> Creative Commons Noderivs license version 3.0</a> or later.
 	</footer>
