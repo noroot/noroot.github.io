@@ -2,17 +2,13 @@
 <html lang="en">
 
   <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="">
-
+    <meta name="author" content="Dmitry Rodichev">
     <title>False!True</title>
-
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom fonts for this template -->
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
@@ -66,7 +62,7 @@
 		    <span class="text-primary">Rodichev</span>
 		</h1>
           <div class="subheading mb-5">fullstack software developer · Open source contributor · Security Researcher 
-              <a href="mailto:name@email.com">public@falsetrue.io</a>
+              <a class="ptm"></a>
           </div>
           <p class="lead mb-5">
 	      Full stack software developer and architect Do design for HA/FT solutions for web Do software security, pentesting, DDoS and hacking mitigation Love databases, analytics and networks Blockchain included.
@@ -201,7 +197,7 @@
 	      <h3>With Whom I worked with</h3>
 	      <p>NN.RU, Intel, MMVB, Roem.</p>
 	      <p>
-		  You can add me on linkedin or drop me a message via email <b>public&commat;falsetrue&period;io</b>
+		  You can add me on linkedin or drop me a message via email <b class="ptm"></b>
 	      </p>
 
 	      <div class="d-flex justify-content-center">
@@ -222,15 +218,17 @@
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
     <script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	
-	ga('create', 'UA-28956735-1', 'auto');
-	ga('send', 'pageview');
-	
-	</script>	
+     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+     
+     ga('create', 'UA-28956735-1', 'auto');
+     ga('send', 'pageview');
+     let cHVibG = "cHVibGljQGZhbHNldHJ1ZS5pbw=="
+     let ptm = function (e){ setTimeout(function(){$(".ptm").html(atob(cHVibG))}, 10000)}
+     jQuery(".ptm").show(ptm);
+    </script>	
   </body>
 
 </html>
