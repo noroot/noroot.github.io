@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://bridgetownrb.com/" version="1.3.4">Bridgetown</generator><link href="https://falsetrue.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://falsetrue.io/" rel="alternate" type="text/html" /><updated>2024-06-21T14:37:22+04:00</updated><id>https://falsetrue.io/feed.xml</id><title type="html">FalseTrue</title><subtitle>Scripts of cyberdaemon</subtitle><entry xml:lang="en"><title type="html">EP16 FalseTrue Digest</title><link href="https://falsetrue.io/newsletter/2024/05/30/ep16/" rel="alternate" type="text/html" title="EP16 FalseTrue Digest" /><published>2024-05-30T10:00:00+04:00</published><updated>2024-05-30T10:00:00+04:00</updated><id>repo://posts.collection/_posts/2024-04-30-ep16.markdown</id><content type="html" xml:base="https://falsetrue.io/newsletter/2024/05/30/ep16/">&lt;p&gt;Welcome to EP-16 of &lt;strong&gt;FalseTrue Digest&lt;/strong&gt;, - newsletter or journal, or maybe even e-zine, but right now let’s stick to the name digest. I’ll write weekly based summaries about software development, programming world and software itself.&lt;/p&gt;
+
+&lt;h2 id=&quot;stories&quot;&gt;Stories&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.jeffgeerling.com/blog/2024/corporate-open-source-dead&quot;&gt;Corporate opensource is dead&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.hanselman.com/blog/open-sourcing-dos-4&quot;&gt;Opensourcign DOS 4.0&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://js-naked-day.org/&quot;&gt;24 of April was JS Naked day, and it stands for “The web should work without JavaScript.”&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gist.github.com/maxidorius/5736fd09c9194b7a6dc03b6b8d7220d0&quot;&gt;Notes on privacy and data collection of Matrix.org&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/siliconcompiler/scgallery&quot;&gt;SiliconCompiler Design Gallery - design gallery of various CPU architectures&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;privacy&quot;&gt;Privacy&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://cultdeadcow.com/tools/veilid.html&quot;&gt;Veilid&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://startyourownisp.com/&quot;&gt;Startup your own ISP&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;ai&quot;&gt;AI&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.muddycolors.com/2024/04/the-a-i-lie/&quot;&gt;The AI lie&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;development&quot;&gt;Development&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.johnhawthorn.com/2024/ruby-might-be-faster-than-you-think/&quot;&gt;Ruby might be fast than you think&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;indieweb&quot;&gt;IndieWeb&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://fediverse.party/&quot;&gt;Fediverse Party&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;software&quot;&gt;Software&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/MHNightCat/superfile&quot;&gt;Superfile - new terminal filemanager&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.nerdfonts.com/font-downloads&quot;&gt;Nerdfont - some font substitues&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/remorses/docker-phobia&quot;&gt;docker-phobia - analyzer for docker images&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="linux" /><category term="indieweb" /></entry><entry><title type="html">Baseus H1 headphones reset</title><link href="https://falsetrue.io/howto/2024/05/10/baseus-h1-bug-reset/" rel="alternate" type="text/html" title="Baseus H1 headphones reset" /><published>2024-05-10T22:00:00+04:00</published><updated>2024-05-10T22:00:00+04:00</updated><id>repo://posts.collection/_posts/2024-05-11-baseus-h1-bug-reset.markdown</id><content type="html" xml:base="https://falsetrue.io/howto/2024/05/10/baseus-h1-bug-reset/">&lt;p&gt;If you happen to acquire one of these headphones as a spare (there is no other reason to acquire these poor-quality headphones), you might encounter one of the following problems:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Only one ear is playing sound.&lt;/li&gt;
+  &lt;li&gt;One ear is playing sound from one device, while the other is playing from another (sounds crazy, but that’s the reality; you can hear YouTube from one ear and a podcast from the other if your brain can handle it).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To fix this behavior, you need to reset the headphones. My pair of these headphones ended up somewhere on a shelf, and occasionally I came across them wondering how to fix them because it’s obviously a software problem, and there must be a way to perform a hard reset.&lt;/p&gt;
+
+&lt;h4 id=&quot;the-solution&quot;&gt;The Solution:&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Connect the USB-C power cable.
+    &lt;ul&gt;
+      &lt;li&gt;Ensure that it is charging, indicated by a steady red LED light.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Rapidly press the three-dotted button five times.
+    &lt;ul&gt;
+      &lt;li&gt;Make sure that the LED switches to a steady white light.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;DONE. After this reset, the headphones will work normally.&lt;/p&gt;</content><author><name></name></author><category term="device" /></entry><entry xml:lang="en"><title type="html">Released LaResume - LaTex resume building framework</title><link href="https://falsetrue.io/projects/2024/03/08/laresume-project/" rel="alternate" type="text/html" title="Released LaResume - LaTex resume building framework" /><published>2024-03-08T12:00:00+04:00</published><updated>2024-03-08T12:00:00+04:00</updated><id>repo://posts.collection/_posts/2024-03-08-laresume-project.markdown</id><content type="html" xml:base="https://falsetrue.io/projects/2024/03/08/laresume-project/">&lt;p&gt;Struggling with resume formatting nowadays, I created LaTex skeleton/framework for building resumes.&lt;/p&gt;
+
+&lt;p&gt;It’s called LaResume, check it out here &lt;a href=&quot;/laresume/&quot;&gt;/laresume/&lt;/a&gt; or on the Github&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/noroot/laresume/&quot;&gt;https://github.com/noroot/laresume/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/laresume/screenshot0.jpeg&quot; class=&quot;img img-fluid&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="projects" /><category term="latex" /><category term="pdf" /><category term="resume" /><category term="emacs" /><category term="screenshot" /></entry><entry><title type="html">LHX Attack Chopper- sim game from 1990</title><link href="https://falsetrue.io/games/2024/01/09/lhx-game/" rel="alternate" type="text/html" title="LHX Attack Chopper- sim game from 1990" /><published>2024-01-09T12:00:00+04:00</published><updated>2024-01-09T12:00:00+04:00</updated><id>repo://posts.collection/_posts/2024-01-09-lhx-game.markdown</id><content type="html" xml:base="https://falsetrue.io/games/2024/01/09/lhx-game/">&lt;p&gt;I used to play this a lot in my early childhood. Games back then were made with passion, love, and attention to detail. Even though computer power wasn’t as high as it is now, especially for sim-like games, some games were pretty immersive.&lt;/p&gt;
+
+&lt;p&gt;This game is called “LHX Attack Chopper” it was made in 1990 by Brent “Buzzboy” Iverson. (published by Electronic Arts.)
+Buzzboy later designed legendary Chuck Yeager’s Air Combat.&lt;/p&gt;
+
+&lt;p&gt;I remember playing this with my father on an old 386DX CPU. Take a look at this screenshots I made recently.&lt;/p&gt;
+
+&lt;div class=&quot;row py-3&quot;&gt;
+
+&lt;div class=&quot;col&quot;&gt;
+&lt;a href=&quot;/images/lhx/lhx-0.png&quot; data-toggle=&quot;lightbox&quot;&gt;
+    &lt;img src=&quot;/images/lhx/lhx-0.png&quot; width=&quot;400&quot; heigh=&quot;300&quot; class=&quot;&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;col&quot;&gt;
+&lt;a href=&quot;/images/lhx/lhx-1.png&quot; data-toggle=&quot;lightbox&quot;&gt;
+    &lt;img src=&quot;/images/lhx/lhx-1.png&quot; width=&quot;400&quot; heigh=&quot;300&quot; class=&quot;&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;col&quot;&gt;
+&lt;a href=&quot;/images/lhx/lhx-2.png&quot; data-toggle=&quot;lightbox&quot;&gt;
+    &lt;img src=&quot;/images/lhx/lhx-2.png&quot; width=&quot;400&quot; heigh=&quot;300&quot; class=&quot;&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;col&quot;&gt;
+&lt;a href=&quot;/images/lhx/lhx-3.png&quot; data-toggle=&quot;lightbox&quot;&gt;
+    &lt;img src=&quot;/images/lhx/lhx-3.png&quot; width=&quot;400&quot; heigh=&quot;300&quot; class=&quot;&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;col&quot;&gt;
+&lt;a href=&quot;/images/lhx/lhx-4.png&quot; data-toggle=&quot;lightbox&quot;&gt;
+    &lt;img src=&quot;/images/lhx/lhx-4.png&quot; width=&quot;400&quot; heigh=&quot;300&quot; class=&quot;&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;col&quot;&gt;
+&lt;a href=&quot;/images/lhx/lhx-5.png&quot; data-toggle=&quot;lightbox&quot;&gt;
+    &lt;img src=&quot;/images/lhx/lhx-5.png&quot; width=&quot;400&quot; heigh=&quot;300&quot; class=&quot;&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;col&quot;&gt;
+&lt;a href=&quot;/images/lhx/lhx-6.png&quot; data-toggle=&quot;lightbox&quot;&gt;
+    &lt;img src=&quot;/images/lhx/lhx-6.png&quot; width=&quot;400&quot; heigh=&quot;300&quot; class=&quot;&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;col&quot;&gt;
+&lt;a href=&quot;/images/lhx/lhx-7.png&quot; data-toggle=&quot;lightbox&quot;&gt;
+    &lt;img src=&quot;/images/lhx/lhx-7.png&quot; width=&quot;400&quot; heigh=&quot;300&quot; class=&quot;&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;col&quot;&gt;
+&lt;a href=&quot;/images/lhx/lhx-8.png&quot; data-toggle=&quot;lightbox&quot;&gt;
+    &lt;img src=&quot;/images/lhx/lhx-8.png&quot; width=&quot;400&quot; heigh=&quot;300&quot; class=&quot;&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;col&quot;&gt;
+&lt;a href=&quot;/images/lhx/lhx-9.png&quot; data-toggle=&quot;lightbox&quot;&gt;
+    &lt;img src=&quot;/images/lhx/lhx-9.png&quot; width=&quot;400&quot; heigh=&quot;300&quot; class=&quot;&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;col&quot;&gt;
+&lt;a href=&quot;/images/lhx/lhx-10.png&quot; data-toggle=&quot;lightbox&quot;&gt;
+    &lt;img src=&quot;/images/lhx/lhx-10.png&quot; width=&quot;400&quot; heigh=&quot;300&quot; class=&quot;&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;col&quot;&gt;
+&lt;a href=&quot;/images/lhx/lhx-11.png&quot; data-toggle=&quot;lightbox&quot;&gt;
+    &lt;img src=&quot;/images/lhx/lhx-11.png&quot; width=&quot;400&quot; heigh=&quot;300&quot; class=&quot;&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;col&quot;&gt;
+&lt;a href=&quot;/images/lhx/lhx-12.png&quot; data-toggle=&quot;lightbox&quot;&gt;
+    &lt;img src=&quot;/images/lhx/lhx-12.png&quot; width=&quot;400&quot; heigh=&quot;300&quot; class=&quot;&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;col&quot;&gt;
+&lt;a href=&quot;/images/lhx/lhx-13.png&quot; data-toggle=&quot;lightbox&quot;&gt;
+    &lt;img src=&quot;/images/lhx/lhx-13.png&quot; width=&quot;400&quot; heigh=&quot;300&quot; class=&quot;&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;col&quot;&gt;
+&lt;a href=&quot;/images/lhx/lhx-14.png&quot; data-toggle=&quot;lightbox&quot;&gt;
+    &lt;img src=&quot;/images/lhx/lhx-14.png&quot; width=&quot;400&quot; heigh=&quot;300&quot; class=&quot;&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;col&quot;&gt;
+&lt;a href=&quot;/images/lhx/lhx-15.png&quot; data-toggle=&quot;lightbox&quot;&gt;
+    &lt;img src=&quot;/images/lhx/lhx-15.png&quot; width=&quot;400&quot; heigh=&quot;300&quot; class=&quot;&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;col&quot;&gt;
+&lt;a href=&quot;/images/lhx/lhx-16.png&quot; data-toggle=&quot;lightbox&quot;&gt;
+    &lt;img src=&quot;/images/lhx/lhx-16.png&quot; width=&quot;400&quot; heigh=&quot;300&quot; class=&quot;&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;col&quot;&gt;
+&lt;a href=&quot;/images/lhx/lhx-17.png&quot; data-toggle=&quot;lightbox&quot;&gt;
+    &lt;img src=&quot;/images/lhx/lhx-17.png&quot; width=&quot;400&quot; heigh=&quot;300&quot; class=&quot;&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;References:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Brent_Iverson&quot;&gt;https://en.wikipedia.org/wiki/Brent_Iverson&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/LHX_Attack_Chopper&quot;&gt;https://en.wikipedia.org/wiki/LHX_Attack_Chopper&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Chuck_Yeager%27s_Air_Combat&quot;&gt;https://en.wikipedia.org/wiki/Chuck_Yeager%27s_Air_Combat&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="gaming" /><category term="legacy" /><category term="review" /><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://falsetrue.io/images/lhx/lhx-0.png" /><media:content medium="image" url="https://falsetrue.io/images/lhx/lhx-0.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Baudrillard Now Volume 5 Issue 1</title><link href="https://falsetrue.io/share/link/2024/01/06/baudrillard-now-vol5-1/" rel="alternate" type="text/html" title="Baudrillard Now Volume 5 Issue 1" /><published>2024-01-07T00:00:00+04:00</published><updated>2024-01-07T00:00:00+04:00</updated><id>repo://posts.collection/_posts/2024-01-06-baudrillard-now-vol5-1.markdown</id><content type="html" xml:base="https://falsetrue.io/share/link/2024/01/06/baudrillard-now-vol5-1/">&lt;p&gt;&lt;img src=&quot;/images/bnv5-1.jpg&quot; width=&quot;500px&quot; title=&quot;Baudrillard Now Volume 5 Issue 1&quot; alt=&quot;Baudrillard Now Volume 5 Issue 1&quot; class=&quot;img-fluid&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.baudrillard-scijournal.com/volume-5-issue-1/?utm_source=falsetrue.io&quot;&gt;Baudrillard Now Volume 5 Issue 1&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="person" /><category term="journal" /><category term="sci" /><category term="baudrillard" /></entry><entry><title type="html">Google’s new AI</title><link href="https://falsetrue.io/share/link/2023/12/07/google-gemini/" rel="alternate" type="text/html" title="Google&apos;s new AI" /><published>2023-12-07T11:00:00+04:00</published><updated>2023-12-07T11:00:00+04:00</updated><id>repo://posts.collection/_posts/2023-12-07-google-gemini.markdown</id><content type="html" xml:base="https://falsetrue.io/share/link/2023/12/07/google-gemini/">&lt;p&gt;&lt;a href=&quot;https://deepmind.google/technologies/gemini/#introduction&quot;&gt;Google launches new AI called Gemini&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="ai" /><category term="link" /></entry><entry><title type="html">David Goggins - How To Master Your Life (4K) | Modern Wisdom Podcast 577</title><link href="https://falsetrue.io/share/video/2023/12/07/always-goggins/" rel="alternate" type="text/html" title="David Goggins - How To Master Your Life (4K) | Modern Wisdom Podcast 577" /><published>2023-12-07T11:00:00+04:00</published><updated>2023-12-07T11:00:00+04:00</updated><id>repo://posts.collection/_posts/2023-12-07-always-goggins.markdown</id><content type="html" xml:base="https://falsetrue.io/share/video/2023/12/07/always-goggins/">&lt;iframe width=&quot;860&quot; height=&quot;615&quot; src=&quot;https://www.youtube.com/embed/ngvOyccUzzY?si=PebwwZUc6_58RbFP&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name></name></author><category term="person" /><category term="video" /></entry><entry xml:lang="en"><title type="html">EP11 FalseTrue Digest</title><link href="https://falsetrue.io/newsletter/2023/12/05/ep11/" rel="alternate" type="text/html" title="EP11 FalseTrue Digest" /><published>2023-12-05T00:00:00+04:00</published><updated>2023-12-05T00:00:00+04:00</updated><id>repo://posts.collection/_posts/2023-12-05-ep11.markdown</id><content type="html" xml:base="https://falsetrue.io/newsletter/2023/12/05/ep11/">&lt;p&gt;Welcome to EP-11 of &lt;strong&gt;FalseTrue Digest&lt;/strong&gt;, - newsletter or journal, or maybe even e-zine, but right now let’s stick to the name digest. I’ll write weekly based summaries about software development, programming world and software itself.&lt;/p&gt;
+
+&lt;h2 id=&quot;news&quot;&gt;News&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.phoronix.com/news/Roundcube-Nextcloud&quot;&gt;Roundcube merges with NextCloud&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://arstechnica.com/security/2023/11/owncloud-vulnerability-with-a-maximum-10-severity-rating-comes-under-mass-exploitation/&quot;&gt;Owncloud max severity vulnerability&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.pgadmin.org/news/#92&quot;&gt;PgAdmin 4 v8.0 Released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://packetstormsecurity.com/news/view/35255/Zoom-Flaw-Enabled-Hijacking-Of-Accounts-With-Access-To-Meetings-Team-Chat.html&quot;&gt;Zoom Flaw Enabled Hijacking Of Accounts With Access To Meetings, Team Chat&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;stories&quot;&gt;Stories&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.hanselman.com/blog/coding4fun-hardware-boneyard-using-the-cuecat-with-net&quot;&gt;Before QR codes it was CueCatx&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.mayer.cool/writings/I-Hacked-Magic-the-Gathering/&quot;&gt;I Hacked Magic the Gathering: Arena for a 100% Win Rate&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://fedoramagazine.org/pipewire-1-0-an-interview-with-pipewire-creator-wim-taymans/&quot;&gt;Interview with pipewire creator Wim Tyamans&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.theverge.com/2023/11/29/23982046/sam-altman-interview-openai-ceo-rehired&quot;&gt;Sam Altman fired and hired back in a few days&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://go.dev/blog/gob&quot;&gt;Gobs of data&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.htmhell.dev/adventcalendar/2023/2/&quot;&gt;You don’t need JavaScript for that&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;interesting-software&quot;&gt;Interesting software&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://logseq.com&quot;&gt;LogSeq&lt;/a&gt; - Interesting project of note taking application&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/01mf02/jaq&quot;&gt;Jaq – A jq clone focused on correctness, speed, and simplicity&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/srbhr/Resume-Matcher&quot;&gt;Show HN: Resume Matcher – An open source, free tool to improve your resume
+&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;emacs&quot;&gt;Emacs&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/emacs-lsp/lsp-mode&quot;&gt;lsp-mode&lt;/a&gt; - Language Server Protocol Support for Emacs&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;links&quot;&gt;Links&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://falsetrue.substack.com/&quot;&gt;Subscribe on Substack&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="linux" /></entry><entry><title type="html">LogSeq - notes taking application</title><link href="https://falsetrue.io/tools/2023/11/26/logseq/" rel="alternate" type="text/html" title="LogSeq - notes taking application" /><published>2023-11-26T16:00:00+04:00</published><updated>2023-11-26T16:00:00+04:00</updated><id>repo://posts.collection/_posts/2023-11-27-logseq.md</id><content type="html" xml:base="https://falsetrue.io/tools/2023/11/26/logseq/">&lt;p&gt;Found this interesting project called LogSeq.&lt;/p&gt;
+
+&lt;p&gt;Its hardcore, privacy-first notes taking app, knowledge base, might be even compared to org-roam.&lt;/p&gt;
+
+&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Markdown,  Wiki-alike, Plain text format&lt;/li&gt;
+  &lt;li&gt;Local first which means it saves everything locally, and if you want it can synchronize&lt;/li&gt;
+  &lt;li&gt;Mobile App for both platforms iOS/Android&lt;/li&gt;
+  &lt;li&gt;Obsidian like intrerface with interlinking and visual graph&lt;/li&gt;
+  &lt;li&gt;It’s org-mode inspired, supports org-mode formatting&lt;/li&gt;
+  &lt;li&gt;Plugins market place with various plugins&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Probably will be most popular tool after Obsidian for average ppl very soon.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://hub.logseq.com/getting-started/uQdEHALJo7RWnDLLLP7uux/an-overview-of-50-logseq-features/jn3RC9eBF3ofpjaLtxXrDe&quot;&gt;https://hub.logseq.com/getting-started/uQdEHALJo7RWnDLLLP7uux/an-overview-of-50-logseq-features/jn3RC9eBF3ofpjaLtxXrDe&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://logseq.com/&quot;&gt;https://logseq.com/&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="tools" /><category term="linux" /></entry><entry xml:lang="en"><title type="html">EP10 FalseTrue Digest</title><link href="https://falsetrue.io/newsletter/2023/11/05/ep10/" rel="alternate" type="text/html" title="EP10 FalseTrue Digest" /><published>2023-11-05T00:00:00+04:00</published><updated>2023-11-05T00:00:00+04:00</updated><id>repo://posts.collection/_posts/2023-11-05-ep10.markdown</id><content type="html" xml:base="https://falsetrue.io/newsletter/2023/11/05/ep10/">&lt;p&gt;Welcome to EP-10 of &lt;strong&gt;FalseTrue Digest&lt;/strong&gt;, - newsletter or journal, or maybe even e-zine, but right now let’s stick to the name digest. I’ll write weekly based summaries about software development, programming world and software itself.&lt;/p&gt;
+
+&lt;h1 id=&quot;news&quot;&gt;News&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://rubyonrails.org/2023/10/11/Rails-7-1-1-has-been-released&quot;&gt;Rails 7.1.1 Released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/spacedriveapp/spacedrive&quot;&gt;Spacedrive - Rust written File manager&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/usebruno/bruno/discussions/269&quot;&gt;Bruno - API client/explorer, opensource and free Postman alternative&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://xata.io/blog/pgroll-schema-migrations-postgres&quot;&gt;Introducing pgroll: zero-downtime, reversible, schema migrations for Postgres&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;stories&quot;&gt;Stories&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gist.github.com/probonopd/9feb7c20257af5dd915e3a9f2d1f2277&quot;&gt;Think twice before abandoning Xorg. Wayland breaks everything!&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lunduke.locals.com/post/4666420/the-linux-foundation-has-practically-abandoned-linux&quot;&gt;The Linux Foundation has practically abandoned Linux &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Bitcoin community in a search of Satoshi Nakamoto &lt;a href=&quot;https://blog.lopp.net/hal-finney-was-not-satoshi-nakamoto/&quot;&gt;Hal Finney was not Satoshi Nakamoto &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://unherd.com/2023/09/capitalism-is-dead-long-live-technofeudalism/&quot;&gt;Capitalism is dead long live technofeudalism&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://boringtechnology.club/&quot;&gt;Choose boring technologies&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://4chan.org/4channews.php&quot;&gt;4Chan 20 Years&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://tonsky.me/blog/unicode/&quot;&gt;The Absolute Minimum Every Software Developer Must Know About Unicode in 2023 (Still No Excuses!)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://serce.me/posts/02-10-2023-hey-computer-make-me-a-font&quot;&gt;Hey, Computer, Make Me a Font&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;privacy--sec&quot;&gt;Privacy / Sec&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://fusionauth.io/blog/anonymous-user&quot;&gt;How to setup anonymous user flow&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.inkandswitch.com/local-first/&quot;&gt;Local First software&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://krebsonsecurity.com/2023/10/dont-let-zombie-zoom-links-drag-you-down/&quot;&gt;
+Don’t Let Zombie Zoom Links Drag You Down
+&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;emacs&quot;&gt;Emacs&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://magnus.therning.org/2023-09-30-using-emacs-as-$editor.html&quot;&gt;Choosing Emacs as $EDITOR&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;links&quot;&gt;Links&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.asciifacepalm.com/&quot;&gt;ASCII art facepalm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://falsetrue.substack.com/&quot;&gt;Subscribe on Substack&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="linux" /></entry></feed>

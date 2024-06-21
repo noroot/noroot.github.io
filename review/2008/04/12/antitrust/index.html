@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Antitrust - спецэффекты в фильмах про программистов | FalseTrue</title>
+
+<!-- Begin Bridgetown SEO tag v6.0.0 -->
+<title>Antitrust - спецэффекты в фильмах про программистов | FalseTrue</title>
+<meta property="og:title" content="Antitrust - спецэффекты в фильмах про программистов" />
+<meta property="og:locale" content="ru" />
+<meta name="description" content="Scripts of cyberdaemon" />
+<meta property="og:description" content="Scripts of cyberdaemon" />
+<link rel="canonical" href="https://falsetrue.io/review/2008/04/12/antitrust/" />
+<meta property="og:url" content="https://falsetrue.io/review/2008/04/12/antitrust/" />
+<meta property="og:site_name" content="FalseTrue" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2008-04-12T00:59:00+05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Antitrust - спецэффекты в фильмах про программистов" />
+<!-- End Bridgetown SEO tag -->
+
+
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/_bridgetown/static/index.LHQE3ZKU.css" />
+<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+<script src="/_bridgetown/static/index.42K5JGTD.js" defer></script>
+
+<link type="application/atom+xml" rel="alternate" href="https://falsetrue.io/feed.xml" title="FalseTrue" />
+
+  </head>
+  <body class="post ">
+    <!-- <header>
+     <img src="/images/logo.svg" alt="Logo" />
+     </header>
+-->
+<nav class="nav bg-black py-2">
+  <ul>
+    <li><a href="/"><span class="text-green-400">False!</span><span class="text-cyan-300">True</span></a></li>
+    <li><a href="/">Home</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/feed">Feed</a></li>
+    <li><a href="/archive">Archive</a></li>
+    <li><a href="/bookshelf">Bookshelf</a></li>
+    <li><a href="/photography">Photography</a></li>
+    <li><a href="/halloffame">Hall of fame</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/feed.xml"><i class="fa fa-rss text-[orange]"></i>&nbsp;RSS</a></li>
+  </ul>
+</nav>
+
+
+    <main>
+      <article class="prose prose-slate prose-pre:bg-gray-100 prose-pre:text-gray-500 max-w-full">
+    <span>12 Apr 2008</span>
+    <div class="mb-8">
+        <h1>Antitrust - спецэффекты в фильмах про программистов</h1>
+        <div class="category-block">
+            <span>Category</span>
+            
+                <a href="/categories/review" class="badge-category">review</a>
+            
+        </div>
+        <div class="tags-block mt-8">
+            <span>Tags</span>
+            
+        </div>
+    </div>
+    <p>Все наверно смотрели этот фильм Antitrust, в русской локализации "Программист", дык вот в этом фильме главный герой Майло Хоффман (Milo Hoffman) со своими друзьями по сюжету весь фильм пытается скомпилировать пример из документации по Java на сайте Sun : <strong>WebServer.java</strong> именно этот файл фигурирует в сценах с монитором. Снимки и продолжение под катом...</p>
+<p>Скриншоты кода - три разных сцены</p>
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kt">void</span> <span class="nf">listDirectory</span><span class="o">(</span><span class="nc">File</span> <span class="n">dir</span><span class="o">,</span> <span class="nc">PrintStream</span> <span class="n">ps</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">IOException</span> <span class="o">{</span>
+        <span class="n">ps</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"
+\n"</span><span class="o">);</span>
+        <span class="n">ps</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Parent Directory
+\n"</span><span class="o">);</span>
+        <span class="nc">String</span><span class="o">[]</span> <span class="n">list</span> <span class="o">=</span> <span class="n">dir</span><span class="o">.</span><span class="na">list</span><span class="o">();</span>
+        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">list</span> <span class="o">!=</span> <span class="kc">null</span> <span class="o">&amp;</span><span class="n">amp</span><span class="o">;&amp;</span><span class="n">amp</span><span class="o">;</span> <span class="n">i</span> <span class="o">&amp;</span><span class="n">lt</span><span class="o">;</span> <span class="n">list</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+            <span class="nc">File</span> <span class="n">f</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">File</span><span class="o">(</span><span class="n">dir</span><span class="o">,</span> <span class="n">list</span><span class="o">[</span><span class="n">i</span><span class="o">]);</span>
+            <span class="k">if</span> <span class="o">(</span><span class="n">f</span><span class="o">.</span><span class="na">isDirectory</span><span class="o">())</span> <span class="o">{</span>
+                <span class="n">ps</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">""</span><span class="o">+</span><span class="n">list</span><span class="o">[</span><span class="n">i</span><span class="o">]+</span><span class="s">"/
+"</span><span class="o">);</span>
+            <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+                <span class="n">ps</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">""</span><span class="o">+</span><span class="n">list</span><span class="o">[</span><span class="n">i</span><span class="o">]+</span><span class="s">"
+
+
+"</span> <span class="o">+</span> <span class="o">(</span><span class="k">new</span> <span class="nc">Date</span><span class="o">())</span> <span class="o">+</span> <span class="s">""</span><span class="o">);</span>
+    <span class="o">}</span>
+
+
+
+ <span class="cm">/* are we doing a GET or just a HEAD */</span>
+            <span class="kt">boolean</span> <span class="n">doingGet</span><span class="o">;</span>
+            <span class="cm">/* beginning of file name */</span>
+            <span class="kt">int</span> <span class="n">index</span><span class="o">;</span>
+            <span class="k">if</span> <span class="o">(</span><span class="n">buf</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span> <span class="o">==</span> <span class="o">(</span><span class="kt">byte</span><span class="o">)</span><span class="sc">'G'</span> <span class="o">&amp;</span><span class="n">amp</span><span class="o">;&amp;</span><span class="n">amp</span><span class="o">;</span>
+                <span class="n">buf</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span> <span class="o">==</span> <span class="o">(</span><span class="kt">byte</span><span class="o">)</span><span class="sc">'E'</span> <span class="o">&amp;</span><span class="n">amp</span><span class="o">;&amp;</span><span class="n">amp</span><span class="o">;</span>
+                <span class="n">buf</span><span class="o">[</span><span class="mi">2</span><span class="o">]</span> <span class="o">==</span> <span class="o">(</span><span class="kt">byte</span><span class="o">)</span><span class="sc">'T'</span> <span class="o">&amp;</span><span class="n">amp</span><span class="o">;&amp;</span><span class="n">amp</span><span class="o">;</span>
+                <span class="n">buf</span><span class="o">[</span><span class="mi">3</span><span class="o">]</span> <span class="o">==</span> <span class="o">(</span><span class="kt">byte</span><span class="o">)</span><span class="sc">' '</span><span class="o">)</span> <span class="o">{</span>
+                <span class="n">doingGet</span> <span class="o">=</span> <span class="kc">true</span><span class="o">;</span>
+                <span class="n">index</span> <span class="o">=</span> <span class="mi">4</span><span class="o">;</span>
+            <span class="o">}</span> <span class="k">else</span> <span class="k">if</span> <span class="o">(</span><span class="n">buf</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span> <span class="o">==</span> <span class="o">(</span><span class="kt">byte</span><span class="o">)</span><span class="sc">'H'</span> <span class="o">&amp;</span><span class="n">amp</span><span class="o">;&amp;</span><span class="n">amp</span><span class="o">;</span>
+                       <span class="n">buf</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span> <span class="o">==</span> <span class="o">(</span><span class="kt">byte</span><span class="o">)</span><span class="sc">'E'</span> <span class="o">&amp;</span><span class="n">amp</span><span class="o">;&amp;</span><span class="n">amp</span><span class="o">;</span>
+                       <span class="n">buf</span><span class="o">[</span><span class="mi">2</span><span class="o">]</span> <span class="o">==</span> <span class="o">(</span><span class="kt">byte</span><span class="o">)</span><span class="sc">'A'</span> <span class="o">&amp;</span><span class="n">amp</span><span class="o">;&amp;</span><span class="n">amp</span><span class="o">;</span>
+                       <span class="n">buf</span><span class="o">[</span><span class="mi">3</span><span class="o">]</span> <span class="o">==</span> <span class="o">(</span><span class="kt">byte</span><span class="o">)</span><span class="sc">'D'</span> <span class="o">&amp;</span><span class="n">amp</span><span class="o">;&amp;</span><span class="n">amp</span><span class="o">;</span>
+                       <span class="n">buf</span><span class="o">[</span><span class="mi">4</span><span class="o">]</span> <span class="o">==</span> <span class="o">(</span><span class="kt">byte</span><span class="o">)</span><span class="sc">' '</span><span class="o">)</span> <span class="o">{</span>
+                <span class="n">doingGet</span> <span class="o">=</span> <span class="kc">false</span><span class="o">;</span>
+                <span class="n">index</span> <span class="o">=</span> <span class="mi">5</span><span class="o">;</span>
+            <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+                <span class="cm">/* we don't support this method */</span>
+                <span class="n">ps</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">"HTTP/1.0 "</span> <span class="o">+</span> <span class="no">HTTP_BAD_METHOD</span> <span class="o">+</span>
+                           <span class="s">" unsupported method type: "</span><span class="o">);</span>
+                <span class="n">ps</span><span class="o">.</span><span class="na">write</span><span class="o">(</span><span class="n">buf</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="mi">5</span><span class="o">);</span>
+                <span class="n">ps</span><span class="o">.</span><span class="na">write</span><span class="o">(</span><span class="no">EOL</span><span class="o">);</span>
+                <span class="n">ps</span><span class="o">.</span><span class="na">flush</span><span class="o">();</span>
+                <span class="n">s</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+                <span class="k">return</span><span class="o">;</span>
+            <span class="o">}</span></code></pre></figure>
+
+<p><br />
+<br /></p>
+
+<p>Обьяснения под катом
+<!-- more --></p>
+
+<p>
+
+Как мы видим это именно тот файл разработчики фильма позаботились только о том чтобы убрать комментарии На этом кадре где товарищь Майло пробрался в какую детскую психо комнату мы видим бешенно настроенный GDM/XDM ?</p>
+
+<p>
+По скольку Майло изрядно обкурен и в упор не видит надписи Touch Screen, он за долю секунды подбирает пароль в самое секретное место компании, и тутже перед ним открывается нечто вроде Xterm Далее в этом терминале он наберает Что вызывает видео проигрыватель судя по всему show это symlink на mplayer.
+<br />
+
+<br />
+</p>
+
+<p><br /></p>
+<p> Далее ближе к концу фильма сцена где два сотрудника компании NURV следят за какими то фрилансерами и копипастят их код себе, вот что было на их экранах:</p>
+
+<p> а это нечто иное как Lnx4Win - позволяет ставить linux в раздел Windows, и вот этот кусок кода:<br />
+
+</p>
+
+<p><br /></p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"> <span class="n">available</span> <span class="o">=</span> <span class="o">(</span><span class="kt">long</span><span class="o">)</span> <span class="n">free</span><span class="o">.</span><span class="na">avail_clusters</span> <span class="o">*</span> <span class="o">(</span><span class="kt">long</span><span class="o">)</span> <span class="n">free</span><span class="o">.</span><span class="na">bytes_per_sector</span> <span class="o">*</span> <span class="o">(</span><span class="kt">long</span><span class="o">)</span>       
+
+  <span class="n">free</span><span class="o">.</span><span class="na">sectors_per_cluster</span><span class="o">;</span> 
+  <span class="nc">GetDlgItemText</span><span class="o">(</span><span class="n">hDlg</span><span class="o">,</span> <span class="no">IDC_LINUXSIZE</span> <span class="o">,</span> <span class="n">buf</span><span class="o">,</span> <span class="mi">5</span><span class="o">);</span> 
+  <span class="n">size</span> <span class="o">=</span> <span class="n">atoi</span><span class="o">(</span><span class="n">buf</span><span class="o">);</span> 
+  <span class="nc">GetDlgItemText</span><span class="o">(</span><span class="n">hDlg</span><span class="o">,</span> <span class="no">IDC_SWAPSIZE</span> <span class="o">,</span> <span class="n">buf</span><span class="o">,</span> <span class="mi">5</span><span class="o">);</span> 
+  <span class="n">swapsize</span> <span class="o">=</span> <span class="n">atoi</span><span class="o">(</span><span class="n">buf</span><span class="o">);</span> 
+  <span class="k">if</span><span class="o">((</span><span class="n">size</span> <span class="o">+</span> <span class="n">swapsize</span><span class="o">)</span> <span class="o">&amp;</span><span class="n">gt</span><span class="o">;</span> <span class="o">(</span><span class="n">available</span><span class="o">/</span><span class="mi">1000000</span><span class="o">))</span> 
+  <span class="o">{</span> <span class="nc">MessageBox</span><span class="o">(</span><span class="n">hDlg</span><span class="o">,</span> <span class="s">"You've not enough space on disk"</span><span class="o">,</span> <span class="s">"Invalid size"</span><span class="o">,</span> <span class="no">MB_APPLMODAL</span><span class="o">|</span><span class="no">MB_ICONEXCLAMATION</span><span class="o">|</span><span class="no">MB_OK</span><span class="o">);</span> <span class="k">return</span> <span class="mi">0</span><span class="o">;</span> 
+  <span class="o">}</span> 
+  <span class="n">sprintf</span><span class="o">(</span><span class="n">path</span><span class="o">,</span> <span class="s">"%c:\\lnx4win\\size.txt"</span><span class="o">,</span> <span class="n">hd</span><span class="o">[</span><span class="n">getdisk</span><span class="o">()]);</span> <span class="k">if</span><span class="o">((</span><span class="n">f</span> <span class="o">=</span> <span class="n">fopen</span><span class="o">(</span><span class="n">path</span><span class="o">,</span> <span class="s">"w"</span><span class="o">))</span> <span class="o">==</span> <span class="no">NULL</span><span class="o">)</span> 
+  <span class="o">{</span> <span class="nc">MessageBox</span><span class="o">(</span><span class="n">hDlg</span><span class="o">,</span> <span class="s">"Can't save configuration file."</span><span class="o">,</span> <span class="s">"File error!"</span><span class="o">,</span>
+     <span class="no">MB_APPLMODAL</span><span class="o">|</span><span class="no">MB_ICONEXCLAMATION</span><span class="o">|</span><span class="no">MB_OK</span><span class="o">);</span> <span class="k">return</span> <span class="mi">0</span><span class="o">;</span> 
+  <span class="o">}</span> </code></pre></figure>
+
+<p>
+Непонятно каким образом это связано с системой спутникового обмена сообщениями Synapse, а директор компании Nurv сюда по всему очень сильно не любил java и заставлял подчинённых убивать людей и отнимать у них код причём код как оказалось из примеров документации по функциям. Если конечно всего этого не знать то фильм может показаться интересным.</p>
+
+
+</article>
+
+<div class="my-8 ">
+    <h2 class="text-2xl mb-2">Comments</h2>
+
+    <script data-isso="https://comments.falsetrue.io/"
+            src="https://comments.falsetrue.io/js/embed.min.js"></script>
+
+    <section id="isso-thread">
+        <noscript>Javascript needs to be activated to view comments.</noscript>
+    </section>
+
+</div>
+
+    </main>
+
+    <!-- <footer class="mt-8">
+     Contact me at <a href="mailto:public@falsetrue.io">public@falsetrue.io</a>
+     </footer>
+-->
+<footer class="text-xs mt-8 px-8">
+    <div class="">
+        <div>
+            Dmitry Ro © 2003 - 2024<br>
+            Копирование и распрастранение страницы разрешено только в оригинальном не изменном виде, включая это сообщение.
+            Verbatim copying and redistribution of this entire page are permitted provided this notice is preserved.
+            Verbatim copying and redistribution of any of the photos in the photos subdirectory is permitted under the <a href="http://creativecommons.org/licenses/by-nd/3.0/" rel="nofollow"> Creative Commons Noderivs license version 3.0</a> or later.
+            <div><a href="/pgp.key.txt" rel="pgpkey authn">PGP Key</a></div>
+        </div>
+        <div class="flex mx-auto my-3 items-center justify-center gap-1">
+            <div><a href="https://webmentions.io" target="_blank" class="inline"><img src="/images/webmention.png" alt="Webmentions"></a></div>
+            <div><a href="https://indieweb.org" target="_blank"><img src="/images/indieweb.png" alt="indieweb"></a></div>
+            <div><a href="https://microformats.org" target="_blank"><img src="/images/microformats.png" alt="microformats"></a></div>
+            <div><a href="https://creativecommons.org/licenses/by/3.0/" target="_blank"><img src="/images/cc-commons.png" alt="cc-commons"></a></div>
+            <div><img src="/images/w3c-valid-html.png" alt="valid w3c"></div>
+        </div>
+        <div class="mt-1">
+            <a href="https://xn--sr8hvo.ws/previous">←</a>
+            An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
+            <a href="https://xn--sr8hvo.ws/next">→</a>
+        </div>
+    </div>
+</footer>
+
+  </body>
+</html>

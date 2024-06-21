@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../frontend/javascript/index.js"],
+  "sourcesContent": ["import \"$styles/index.css\"\nimport \"$styles/syntax-highlighting.css\"\n\n// Import all JavaScript & CSS files from src/_components\nimport components from \"$components/**/*.{js,jsx,js.rb,css}\"\n\n// console.info(\"Bridgetown is loaded!\")\n\ndocument.addEventListener('DOMContentLoaded', function () {\n     var e = \"cHVibGljQGZhbHNldHJ1ZS5pbwo=\";\n     const ee = ['em_s'];\n     var f = \"\";\n     for (i = 0; i<= ee.length-1;i++) {\n         v = ee[i];\n         els = document.getElementsByClassName(v);\n         for (y = 0; y <= els.length - 1; y++) {\n             els[y].setAttribute(\"href\", \"mailto:\".concat(atob(e)));\n         }\n     }\n });\n"],
+  "mappings": ";;AAQA,WAAS,iBAAiB,oBAAoB,WAAY;AACrD,QAAI,IAAI;AACR,UAAM,KAAK,CAAC,MAAM;AAClB,QAAI,IAAI;AACR,SAAK,IAAI,GAAG,KAAI,GAAG,SAAO,GAAE,KAAK;AAC7B,UAAI,GAAG,CAAC;AACR,YAAM,SAAS,uBAAuB,CAAC;AACvC,WAAK,IAAI,GAAG,KAAK,IAAI,SAAS,GAAG,KAAK;AAClC,YAAI,CAAC,EAAE,aAAa,QAAQ,UAAU,OAAO,KAAK,CAAC,CAAC,CAAC;AAAA,MACzD;AAAA,IACJ;AAAA,EACJ,CAAC;",
+  "names": []
+}

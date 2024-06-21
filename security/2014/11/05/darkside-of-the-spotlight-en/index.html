@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Darkside of the Spotlight (English version) | FalseTrue</title>
+
+<!-- Begin Bridgetown SEO tag v6.0.0 -->
+<title>Darkside of the Spotlight (English version) | FalseTrue</title>
+<meta property="og:title" content="Darkside of the Spotlight (English version)" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="Scripts of cyberdaemon" />
+<meta property="og:description" content="Scripts of cyberdaemon" />
+<link rel="canonical" href="https://falsetrue.io/security/2014/11/05/darkside-of-the-spotlight-en/" />
+<meta property="og:url" content="https://falsetrue.io/security/2014/11/05/darkside-of-the-spotlight-en/" />
+<meta property="og:site_name" content="FalseTrue" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2014-11-05T19:50:00+04:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Darkside of the Spotlight (English version)" />
+<!-- End Bridgetown SEO tag -->
+
+
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/_bridgetown/static/index.LHQE3ZKU.css" />
+<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+<script src="/_bridgetown/static/index.42K5JGTD.js" defer></script>
+
+<link type="application/atom+xml" rel="alternate" href="https://falsetrue.io/feed.xml" title="FalseTrue" />
+
+  </head>
+  <body class="post ">
+    <!-- <header>
+     <img src="/images/logo.svg" alt="Logo" />
+     </header>
+-->
+<nav class="nav bg-black py-2">
+  <ul>
+    <li><a href="/"><span class="text-green-400">False!</span><span class="text-cyan-300">True</span></a></li>
+    <li><a href="/">Home</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/feed">Feed</a></li>
+    <li><a href="/archive">Archive</a></li>
+    <li><a href="/bookshelf">Bookshelf</a></li>
+    <li><a href="/photography">Photography</a></li>
+    <li><a href="/halloffame">Hall of fame</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/feed.xml"><i class="fa fa-rss text-[orange]"></i>&nbsp;RSS</a></li>
+  </ul>
+</nav>
+
+
+    <main>
+      <article class="prose prose-slate prose-pre:bg-gray-100 prose-pre:text-gray-500 max-w-full">
+    <span>05 Nov 2014</span>
+    <div class="mb-8">
+        <h1>Darkside of the Spotlight (English version)</h1>
+        <div class="category-block">
+            <span>Category</span>
+            
+                <a href="/categories/security" class="badge-category">security</a>
+            
+        </div>
+        <div class="tags-block mt-8">
+            <span>Tags</span>
+            
+                <a href="/tags/sec" class="badge-tag">#sec</a>
+            
+                <a href="/tags/mac" class="badge-tag">#mac</a>
+            
+        </div>
+    </div>
+    <p>One of the new features you can get with new OSX Yosemite is enhanced spotlight.
+What exactly Spotlight doing ? Indexing all of your content, except you’re not excluded something in settings.
+Also Apple tell us “Safety. Built right in.” So does it true ?</p>
+
+<p>Spotlight always knows everything about your old and new files, it indexing not only files, 
+but calendar records, bookmarks, browser history, contacts and emails. 
+Spotlight knows everything about your files and you.</p>
+
+<p>What it does when you’re typing something in a search field
+Spotlight search everywhere and everything and even loading webpages from your bookmarks and history, questions ?, follow next:</p>
+
+<p>I am take Wireshark sniffer, turn off all other programs and start to watch what exactly Spotlight did when i am type something.</p>
+
+<!-- more -->
+
+<p>Let’s start with simple query “weather”, take a look at this:</p>
+
+<p><img src="https://s.overmind.ws.s3.amazonaws.com/darkspotlight/weather-packet.png" alt="https://s.overmind.ws.s3.amazonaws.com/darkspotlight/weather-packet.png" /></p>
+
+<p>another one more interesting “porn”:</p>
+
+<p><img src="https://s.overmind.ws.s3.amazonaws.com/darkspotlight/porno-packet.png" alt="https://s.overmind.ws.s3.amazonaws.com/darkspotlight/porno-packet.png" /></p>
+
+<p>For more handy view leave only DNS queries</p>
+
+<p><img src="https://s.overmind.ws.s3.amazonaws.com/darkspotlight/dns-requests-packet.png" alt="https://s.overmind.ws.s3.amazonaws.com/darkspotlight/dns-requests-packet.png" /></p>
+
+<p>Spotlight fully load web page with safari in background</p>
+
+<p><img src="https://s.overmind.ws.s3.amazonaws.com/darkspotlight/porno-packet-full-site-loading.png" alt="https://s.overmind.ws.s3.amazonaws.com/darkspotlight/porno-packet-full-site-loading.png" /></p>
+
+<p>query “buy phone”</p>
+
+<p><img src="https://s.overmind.ws.s3.amazonaws.com/darkspotlight/buy-phone.png" alt="https://s.overmind.ws.s3.amazonaws.com/darkspotlight/buy-phone.png" /></p>
+
+<p>another one query and spotlight load page from browser history</p>
+
+<p><img src="https://s.overmind.ws.s3.amazonaws.com/darkspotlight/sleep-packet.png" alt="https://s.overmind.ws.s3.amazonaws.com/darkspotlight/sleep-packet.png" /></p>
+
+<p>Very intersting that even if those pages are loaded they haven’t any effect on spotlight search results, nothing related at all. That is very suspicious fact.</p>
+
+<h2 id="aftermath-">Aftermath ?</h2>
+
+<p>Such hidden queries and behavior can provoke sensitive data leak, and obviously that kind of leak can be very dangerous.
+At least you’re send your IP address to 3d party resources, furthermore query related web pages will be opened in hidden mode, and suddenly spotlight can open some exploit that use some vulnerability of safar engine.</p>
+
+<h2 id="how-to-avoid-hidden-and-dangerous-spotlight-queries">How to avoid hidden and dangerous Spotlight queries</h2>
+
+<p>By default Spotlight settings looks like this:</p>
+
+<p><img src="https://s.overmind.ws.s3.amazonaws.com/darkspotlight/spotlight-settings.png" alt="https://s.overmind.ws.s3.amazonaws.com/darkspotlight/spotlight-settings.png" /></p>
+
+<p>Take a look at “Other” item what can it be ? I don’t known maybe you know ?</p>
+
+<p><img src="https://s.overmind.ws.s3.amazonaws.com/darkspotlight/spotlight-settings-other.png" alt="https://s.overmind.ws.s3.amazonaws.com/darkspotlight/spotlight-settings.png" /></p>
+
+<p>I am turn off all that potentially can uses 3d party services: Bing Web Searches, Spotlight suggestions, Bookamarks &amp; History and of course Other.</p>
+
+<p>Second screen of settings with exceptions:</p>
+
+<p><strong>WARNING: When you’re updating operating system for example to Yosemite, settings of exception will be restored to default values (YES FUCK APPLE)</strong></p>
+
+<p>Very intersting that tab which called “Privacy” contains nothing! And even if you’re setup something here there is no warranty that after next operating system update settings will be there.</p>
+
+<p><img src="https://s.overmind.ws.s3.amazonaws.com/darkspotlight/spotlight-empty-exception.png" alt="https://s.overmind.ws.s3.amazonaws.com/darkspotlight/spotlight-empty-exception.png" /></p>
+
+<p>Also I am recommend you to add all of your sensitive data to exception for indexing by Spotlight. 
+By the way there are project called <a href="http://fix-macosx.com">https://fix-macosx.com/</a> which allows you disable all bad things in Spotlight by launch small python program in a terminal. (Also this is my version of it, with a bit more disabled items <a href="https://github.com/noroot/fix-macosx">https://github.com/noroot/fix-macosx</a> )</p>
+
+<p>If you’re want to completly disable Spotlight from your OSX you can do it like this:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo su
+  
+chmod 0000 /Library/Spotlight
+
+chmod 0000 /System/Library/Spotlight
+
+chmod 0000 /System/Library/CoreServices/Search.bundle
+
+chmod 0000 /System/Library/PreferencePanes/Spotlight.prefPane
+
+chmod 0000 /System/Library/Services/Spotlight.service
+
+chmod 0000 /System/Library/Contextual Menu Items/SpotlightCM.plugin
+
+chmod 0000 /System/Library/StartupItems/Metadata
+
+chmod 0000 /usr/bin/mdimport
+
+chmod 0000 /usr/bin/mdcheckschema
+
+chmod 0000 /usr/bin/mdfind
+
+chmod 0000 /usr/bin/mdls
+
+chmod 0000 /usr/bin/mdutil
+
+chmod 0000 /usr/bin/md
+</code></pre></div></div>
+
+<p>chmod using in this hack for backup puproses, if you want to turn on spotlight just chmod files to normal permissions.</p>
+
+<p>After reboot you should run this commands to completly remove old index files.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rm -r /.Spotlight-V100
+
+rm -r /private/var/tmp/mds
+
+exit
+</code></pre></div></div>
+
+<p>Another one screenshot with apple spotlight terms of use:</p>
+
+<p><img src="https://s.overmind.ws.s3.amazonaws.com/darkspotlight/apple-spotlight-license.png" alt="https://s.overmind.ws.s3.amazonaws.com/darkspotlight/apple-spotlight-license.png" /></p>
+
+<p>That’s all. Welcome to comments and discus this weird stuff.</p>
+
+
+</article>
+
+<div class="my-8 ">
+    <h2 class="text-2xl mb-2">Comments</h2>
+
+    <script data-isso="https://comments.falsetrue.io/"
+            src="https://comments.falsetrue.io/js/embed.min.js"></script>
+
+    <section id="isso-thread">
+        <noscript>Javascript needs to be activated to view comments.</noscript>
+    </section>
+
+</div>
+
+    </main>
+
+    <!-- <footer class="mt-8">
+     Contact me at <a href="mailto:public@falsetrue.io">public@falsetrue.io</a>
+     </footer>
+-->
+<footer class="text-xs mt-8 px-8">
+    <div class="">
+        <div>
+            Dmitry Ro © 2003 - 2024<br>
+            Копирование и распрастранение страницы разрешено только в оригинальном не изменном виде, включая это сообщение.
+            Verbatim copying and redistribution of this entire page are permitted provided this notice is preserved.
+            Verbatim copying and redistribution of any of the photos in the photos subdirectory is permitted under the <a href="http://creativecommons.org/licenses/by-nd/3.0/" rel="nofollow"> Creative Commons Noderivs license version 3.0</a> or later.
+            <div><a href="/pgp.key.txt" rel="pgpkey authn">PGP Key</a></div>
+        </div>
+        <div class="flex mx-auto my-3 items-center justify-center gap-1">
+            <div><a href="https://webmentions.io" target="_blank" class="inline"><img src="/images/webmention.png" alt="Webmentions"></a></div>
+            <div><a href="https://indieweb.org" target="_blank"><img src="/images/indieweb.png" alt="indieweb"></a></div>
+            <div><a href="https://microformats.org" target="_blank"><img src="/images/microformats.png" alt="microformats"></a></div>
+            <div><a href="https://creativecommons.org/licenses/by/3.0/" target="_blank"><img src="/images/cc-commons.png" alt="cc-commons"></a></div>
+            <div><img src="/images/w3c-valid-html.png" alt="valid w3c"></div>
+        </div>
+        <div class="mt-1">
+            <a href="https://xn--sr8hvo.ws/previous">←</a>
+            An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
+            <a href="https://xn--sr8hvo.ws/next">→</a>
+        </div>
+    </div>
+</footer>
+
+  </body>
+</html>

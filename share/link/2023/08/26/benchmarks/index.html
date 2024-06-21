@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Benchmarks code for CPU testing | FalseTrue</title>
+
+<!-- Begin Bridgetown SEO tag v6.0.0 -->
+<title>Benchmarks code for CPU testing | FalseTrue</title>
+<meta property="og:title" content="Benchmarks code for CPU testing" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Scripts of cyberdaemon" />
+<meta property="og:description" content="Scripts of cyberdaemon" />
+<link rel="canonical" href="https://falsetrue.io/share/link/2023/08/26/benchmarks/" />
+<meta property="og:url" content="https://falsetrue.io/share/link/2023/08/26/benchmarks/" />
+<meta property="og:site_name" content="FalseTrue" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-08-26T16:00:00+04:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Benchmarks code for CPU testing" />
+<!-- End Bridgetown SEO tag -->
+
+
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/_bridgetown/static/index.LHQE3ZKU.css" />
+<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+<script src="/_bridgetown/static/index.42K5JGTD.js" defer></script>
+
+<link type="application/atom+xml" rel="alternate" href="https://falsetrue.io/feed.xml" title="FalseTrue" />
+
+  </head>
+  <body class="post ">
+    <!-- <header>
+     <img src="/images/logo.svg" alt="Logo" />
+     </header>
+-->
+<nav class="nav bg-black py-2">
+  <ul>
+    <li><a href="/"><span class="text-green-400">False!</span><span class="text-cyan-300">True</span></a></li>
+    <li><a href="/">Home</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/feed">Feed</a></li>
+    <li><a href="/archive">Archive</a></li>
+    <li><a href="/bookshelf">Bookshelf</a></li>
+    <li><a href="/photography">Photography</a></li>
+    <li><a href="/halloffame">Hall of fame</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/feed.xml"><i class="fa fa-rss text-[orange]"></i>&nbsp;RSS</a></li>
+  </ul>
+</nav>
+
+
+    <main>
+      <article class="prose prose-slate prose-pre:bg-gray-100 prose-pre:text-gray-500 max-w-full">
+    <span>26 Aug 2023</span>
+    <div class="mb-8">
+        <h1>Benchmarks code for CPU testing</h1>
+        <div class="category-block">
+            <span>Category</span>
+            
+                <a href="/categories/share" class="badge-category">share</a>
+            
+                <a href="/categories/link" class="badge-category">link</a>
+            
+        </div>
+        <div class="tags-block mt-8">
+            <span>Tags</span>
+            
+                <a href="/tags/dev" class="badge-tag">#dev</a>
+            
+                <a href="/tags/utils" class="badge-tag">#utils</a>
+            
+                <a href="/tags/code" class="badge-tag">#code</a>
+            
+        </div>
+    </div>
+    <p>Various benchmarks to launch to load CPU</p>
+
+<p><a href="https://benchmarksgame-team.pages.debian.net/benchmarksgame/">https://benchmarksgame-team.pages.debian.net/benchmarksgame/</a></p>
+
+<p>Ruby Example:</p>
+
+<!-- more -->
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1"># The Computer Language Benchmarks Game</span>
+<span class="c1"># https://salsa.debian.org/benchmarksgame-team/benchmarksgame/</span>
+<span class="c1"># Contributed by Wesley Moxam</span>
+<span class="c1"># Modified by Sokolov Yura aka funny_falcon</span>
+<span class="c1"># Parallelised by Scott Leggett</span>
+<span class="c1"># Thread.exclusive deprecated</span>
+
+<span class="nb">require</span> <span class="s1">'thread'</span>
+
+<span class="k">module</span> <span class="nn">MiniParallel</span>
+    <span class="k">class</span> <span class="nc">Worker</span>
+        <span class="k">def</span> <span class="nf">initialize</span><span class="p">(</span><span class="n">read</span><span class="p">,</span> <span class="n">write</span><span class="p">)</span>
+            <span class="vi">@read</span><span class="p">,</span> <span class="vi">@write</span> <span class="o">=</span> <span class="n">read</span><span class="p">,</span> <span class="n">write</span>
+        <span class="k">end</span>
+
+        <span class="k">def</span> <span class="nf">close_pipes</span>
+            <span class="vi">@read</span><span class="p">.</span><span class="nf">close</span>
+            <span class="vi">@write</span><span class="p">.</span><span class="nf">close</span>
+        <span class="k">end</span>
+
+        <span class="k">def</span> <span class="nf">work</span><span class="p">(</span><span class="n">index</span><span class="p">)</span>
+            <span class="no">Marshal</span><span class="p">.</span><span class="nf">dump</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="vi">@write</span><span class="p">)</span>
+            <span class="no">Marshal</span><span class="p">.</span><span class="nf">load</span><span class="p">(</span><span class="vi">@read</span><span class="p">)</span>
+        <span class="k">end</span>
+    <span class="k">end</span>
+
+    <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">map</span><span class="p">(</span><span class="n">array</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">block</span><span class="p">)</span>
+        <span class="n">work_in_processes</span><span class="p">(</span>
+            <span class="n">array</span><span class="p">,</span>
+            <span class="p">[</span><span class="n">array</span><span class="p">.</span><span class="nf">size</span><span class="p">,</span> <span class="n">core_count</span><span class="p">].</span><span class="nf">min</span><span class="p">,</span>
+            <span class="o">&amp;</span><span class="n">block</span>
+        <span class="p">)</span>
+    <span class="k">end</span>
+
+    <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">core_count</span>
+        <span class="vc">@@core_count</span> <span class="o">||=</span> <span class="no">IO</span><span class="p">.</span><span class="nf">read</span><span class="p">(</span><span class="s2">"/proc/cpuinfo"</span><span class="p">).</span><span class="nf">scan</span><span class="p">(</span><span class="sr">/^processor/</span><span class="p">).</span><span class="nf">size</span>
+    <span class="k">end</span>
+
+    <span class="kp">private</span>
+
+    <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">work_in_processes</span><span class="p">(</span><span class="n">array</span><span class="p">,</span> <span class="n">count</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">block</span><span class="p">)</span>
+        <span class="n">index</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+        <span class="n">results</span><span class="p">,</span> <span class="n">threads</span> <span class="o">=</span> <span class="p">[],</span> <span class="p">[]</span>
+        <span class="n">mx</span> <span class="o">=</span> <span class="no">Mutex</span><span class="p">.</span><span class="nf">new</span>        
+
+        <span class="n">workers</span> <span class="o">=</span> <span class="n">create_workers</span><span class="p">(</span><span class="n">array</span><span class="p">,</span> <span class="n">count</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">block</span><span class="p">)</span>
+
+        <span class="n">workers</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">worker</span><span class="o">|</span>
+            <span class="n">threads</span> <span class="o">&lt;&lt;</span> <span class="no">Thread</span><span class="p">.</span><span class="nf">new</span> <span class="k">do</span>
+                <span class="kp">loop</span> <span class="k">do</span>
+                    <span class="n">mx</span><span class="p">.</span><span class="nf">synchronize</span> <span class="k">do</span> <span class="n">index</span> <span class="o">+=</span> <span class="mi">1</span> <span class="k">end</span>
+                    <span class="k">break</span> <span class="k">if</span> <span class="n">index</span> <span class="o">&gt;=</span> <span class="n">array</span><span class="p">.</span><span class="nf">size</span>
+                    <span class="n">results</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">=</span> <span class="n">worker</span><span class="p">.</span><span class="nf">work</span><span class="p">(</span><span class="n">index</span><span class="p">)</span>
+                <span class="k">end</span>
+                <span class="n">worker</span><span class="p">.</span><span class="nf">close_pipes</span>
+            <span class="k">end</span>
+        <span class="k">end</span>
+
+        <span class="n">threads</span><span class="p">.</span><span class="nf">each</span><span class="p">(</span><span class="o">&amp;</span><span class="ss">:join</span><span class="p">)</span>
+        <span class="no">Process</span><span class="p">.</span><span class="nf">waitall</span>
+
+        <span class="n">results</span>
+    <span class="k">end</span>
+
+    <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">create_workers</span><span class="p">(</span><span class="n">array</span><span class="p">,</span> <span class="n">count</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">block</span><span class="p">)</span>
+        <span class="n">workers</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">count</span><span class="p">.</span><span class="nf">times</span> <span class="k">do</span>
+            <span class="n">workers</span> <span class="o">&lt;&lt;</span> <span class="n">create_worker</span><span class="p">(</span><span class="n">array</span><span class="p">,</span> <span class="n">workers</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">block</span><span class="p">)</span>
+        <span class="k">end</span>
+        <span class="n">workers</span>
+    <span class="k">end</span>
+
+    <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">create_worker</span><span class="p">(</span><span class="n">array</span><span class="p">,</span> <span class="n">started_workers</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">block</span><span class="p">)</span>
+        <span class="n">child_read</span><span class="p">,</span> <span class="n">parent_write</span> <span class="o">=</span> <span class="no">IO</span><span class="p">.</span><span class="nf">pipe</span>
+        <span class="n">parent_read</span><span class="p">,</span> <span class="n">child_write</span> <span class="o">=</span> <span class="no">IO</span><span class="p">.</span><span class="nf">pipe</span>
+
+        <span class="no">Process</span><span class="p">.</span><span class="nf">fork</span> <span class="k">do</span>
+            <span class="n">started_workers</span><span class="p">.</span><span class="nf">each</span><span class="p">(</span><span class="o">&amp;</span><span class="ss">:close_pipes</span><span class="p">)</span>
+
+            <span class="n">parent_write</span><span class="p">.</span><span class="nf">close</span>
+            <span class="n">parent_read</span><span class="p">.</span><span class="nf">close</span>
+
+            <span class="n">process_incoming_jobs</span><span class="p">(</span><span class="n">child_read</span><span class="p">,</span> <span class="n">child_write</span><span class="p">,</span> <span class="n">array</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">block</span><span class="p">)</span>
+
+            <span class="n">child_read</span><span class="p">.</span><span class="nf">close</span>
+            <span class="n">child_write</span><span class="p">.</span><span class="nf">close</span>
+        <span class="k">end</span>
+
+        <span class="n">child_read</span><span class="p">.</span><span class="nf">close</span>
+        <span class="n">child_write</span><span class="p">.</span><span class="nf">close</span>
+
+        <span class="no">Worker</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="n">parent_read</span><span class="p">,</span> <span class="n">parent_write</span><span class="p">)</span>
+    <span class="k">end</span>
+
+    <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">process_incoming_jobs</span><span class="p">(</span><span class="n">read</span><span class="p">,</span> <span class="n">write</span><span class="p">,</span> <span class="n">array</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">block</span><span class="p">)</span>
+        <span class="k">until</span> <span class="n">read</span><span class="p">.</span><span class="nf">eof?</span>
+            <span class="n">index</span> <span class="o">=</span> <span class="no">Marshal</span><span class="p">.</span><span class="nf">load</span><span class="p">(</span><span class="n">read</span><span class="p">)</span>
+            <span class="no">Marshal</span><span class="p">.</span><span class="nf">dump</span><span class="p">(</span><span class="n">block</span><span class="p">.</span><span class="nf">call</span><span class="p">(</span><span class="n">array</span><span class="p">[</span><span class="n">index</span><span class="p">]),</span> <span class="n">write</span><span class="p">)</span>
+        <span class="k">end</span>
+    <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="k">class</span> <span class="nc">Fannkuch</span>
+
+    <span class="k">def</span> <span class="nf">initialize</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">start</span><span class="p">,</span> <span class="n">max_perms</span><span class="p">)</span>
+        <span class="vi">@n</span> <span class="o">=</span> <span class="n">n</span>
+        <span class="vi">@p</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="o">..</span><span class="n">n</span><span class="p">).</span><span class="nf">to_a</span>
+        <span class="vi">@s</span> <span class="o">=</span> <span class="vi">@p</span><span class="p">.</span><span class="nf">dup</span>
+        <span class="vi">@q</span> <span class="o">=</span> <span class="vi">@p</span><span class="p">.</span><span class="nf">dup</span>
+        <span class="vi">@sign</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="vi">@sum</span> <span class="o">=</span> <span class="vi">@maxflips</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="vi">@max_perms</span> <span class="o">=</span> <span class="n">max_perms</span>
+        <span class="vi">@perm_count</span> <span class="o">=</span> <span class="o">-</span><span class="n">start</span>
+        <span class="n">start</span><span class="p">.</span><span class="nf">times</span><span class="p">{</span><span class="n">permute</span><span class="p">}</span>
+    <span class="k">end</span>
+
+    <span class="k">def</span> <span class="nf">flip</span>
+        <span class="kp">loop</span> <span class="k">do</span>
+            <span class="k">if</span> <span class="vi">@perm_count</span> <span class="o">==</span> <span class="vi">@max_perms</span>
+                <span class="k">return</span> <span class="p">[</span><span class="vi">@sum</span><span class="p">,</span> <span class="vi">@maxflips</span><span class="p">]</span>
+            <span class="k">end</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">q1</span> <span class="o">=</span> <span class="vi">@p</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="o">!=</span> <span class="mi">1</span>
+                <span class="vi">@q</span><span class="p">[</span><span class="mi">0</span><span class="o">..-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="vi">@p</span>
+                <span class="n">flips</span> <span class="o">=</span> <span class="mi">1</span>
+                <span class="k">until</span> <span class="p">(</span><span class="n">qq</span> <span class="o">=</span> <span class="vi">@q</span><span class="p">[</span><span class="n">q1</span><span class="p">])</span> <span class="o">==</span> <span class="mi">1</span>
+                    <span class="vi">@q</span><span class="p">[</span><span class="n">q1</span><span class="p">]</span> <span class="o">=</span> <span class="n">q1</span>
+                    <span class="k">if</span> <span class="n">q1</span> <span class="o">&gt;=</span> <span class="mi">4</span>
+                        <span class="n">i</span><span class="p">,</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="n">q1</span> <span class="o">-</span> <span class="mi">1</span>
+                        <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">j</span>
+                            <span class="vi">@q</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="vi">@q</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="vi">@q</span><span class="p">[</span><span class="n">j</span><span class="p">],</span> <span class="vi">@q</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+                            <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+                            <span class="n">j</span> <span class="o">-=</span> <span class="mi">1</span>
+                        <span class="k">end</span>
+                    <span class="k">end</span>
+                    <span class="n">q1</span> <span class="o">=</span> <span class="n">qq</span>
+                    <span class="n">flips</span> <span class="o">+=</span> <span class="mi">1</span>
+                <span class="k">end</span>
+                <span class="vi">@sum</span> <span class="o">+=</span> <span class="vi">@sign</span> <span class="o">*</span> <span class="n">flips</span>
+                <span class="vi">@maxflips</span> <span class="o">=</span> <span class="n">flips</span> <span class="k">if</span> <span class="n">flips</span> <span class="o">&gt;</span> <span class="vi">@maxflips</span> <span class="c1"># New maximum?</span>
+            <span class="k">end</span>
+            <span class="n">permute</span>
+        <span class="k">end</span>
+    <span class="k">end</span>
+
+    <span class="k">def</span> <span class="nf">permute</span>
+        <span class="vi">@perm_count</span> <span class="o">+=</span> <span class="mi">1</span>
+
+        <span class="k">if</span> <span class="vi">@sign</span> <span class="o">==</span> <span class="mi">1</span>
+            <span class="c1"># Rotate 1&lt;-2.</span>
+
+            <span class="vi">@p</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="vi">@p</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="vi">@p</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="vi">@p</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+            <span class="vi">@sign</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+        <span class="k">else</span>
+            <span class="c1"># Rotate 1&lt;-2 and 1&lt;-2&lt;-3.</span>
+
+            <span class="vi">@p</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="vi">@p</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="vi">@p</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="vi">@p</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+            <span class="vi">@sign</span> <span class="o">=</span> <span class="mi">1</span>
+            <span class="n">i</span> <span class="o">=</span> <span class="mi">3</span>
+            <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="vi">@n</span> <span class="o">&amp;&amp;</span> <span class="vi">@s</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span>
+                <span class="vi">@s</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">i</span>
+                <span class="c1"># Rotate 1&lt;-...&lt;-i+1.</span>
+
+                <span class="n">t</span> <span class="o">=</span> <span class="vi">@p</span><span class="p">.</span><span class="nf">delete_at</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+                <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+                <span class="vi">@p</span><span class="p">.</span><span class="nf">insert</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">t</span><span class="p">)</span>
+            <span class="k">end</span>
+            <span class="vi">@s</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-=</span> <span class="mi">1</span>  <span class="k">if</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="vi">@n</span>
+        <span class="k">end</span>
+    <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="nb">abort</span> <span class="s2">"Usage: </span><span class="si">#{</span><span class="kp">__FILE__</span><span class="si">}</span><span class="s2"> n</span><span class="se">\n</span><span class="s2">(n &gt; 6)"</span> <span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">=</span> <span class="no">ARGV</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nf">to_i</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">6</span>
+
+<span class="n">core_count</span> <span class="o">=</span> <span class="no">MiniParallel</span><span class="p">.</span><span class="nf">core_count</span>
+<span class="n">chunk_size</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">..</span><span class="n">n</span><span class="p">).</span><span class="nf">reduce</span><span class="p">(:</span><span class="o">*</span><span class="p">)</span> <span class="o">/</span> <span class="n">core_count</span>
+
+<span class="n">sum</span><span class="p">,</span> <span class="n">flips</span> <span class="o">=</span>
+    <span class="k">if</span> <span class="n">core_count</span> <span class="o">&gt;</span> <span class="mi">1</span>
+        <span class="c1"># adjust job sizes to even out workload</span>
+        <span class="n">weights</span> <span class="o">=</span> <span class="k">if</span> <span class="n">core_count</span> <span class="o">&gt;</span> <span class="mi">1</span>
+                      <span class="n">weights</span> <span class="o">=</span> <span class="p">[]</span>
+                      <span class="p">(</span><span class="n">core_count</span><span class="o">/</span><span class="mi">2</span><span class="p">).</span><span class="nf">times</span> <span class="k">do</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span>
+                          <span class="n">weights</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">*</span> <span class="mf">0.1</span> <span class="o">+</span> <span class="mf">0.05</span>
+                      <span class="k">end</span>
+                      <span class="n">weights</span> <span class="o">=</span> <span class="n">weights</span><span class="p">.</span><span class="nf">reverse</span> <span class="o">+</span> <span class="n">weights</span><span class="p">.</span><span class="nf">map</span><span class="p">{</span><span class="o">|</span><span class="n">i</span><span class="o">|-</span><span class="n">i</span><span class="p">}</span>
+                  <span class="k">else</span>
+                      <span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+                  <span class="k">end</span>
+
+        <span class="c1"># Generate start position for each chunk</span>
+        <span class="n">chunks</span> <span class="o">=</span> <span class="n">core_count</span><span class="p">.</span><span class="nf">times</span><span class="p">.</span><span class="nf">zip</span><span class="p">(</span><span class="n">weights</span><span class="p">).</span><span class="nf">map</span> <span class="k">do</span> <span class="o">|</span><span class="n">count</span><span class="p">,</span> <span class="n">weight</span><span class="o">|</span>
+            <span class="p">[</span><span class="n">count</span> <span class="o">*</span> <span class="n">chunk_size</span> <span class="o">+</span>
+             <span class="p">(</span><span class="n">count</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="p">?</span> <span class="p">(</span><span class="n">weights</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="n">count</span><span class="p">].</span><span class="nf">reduce</span><span class="p">(:</span><span class="o">+</span><span class="p">)</span> <span class="o">*</span> <span class="n">chunk_size</span><span class="p">).</span><span class="nf">round</span> <span class="p">:</span> <span class="mi">0</span><span class="p">),</span>
+             <span class="n">chunk_size</span> <span class="o">+</span> <span class="p">(</span><span class="n">weight</span> <span class="o">*</span> <span class="n">chunk_size</span><span class="p">).</span><span class="nf">round</span><span class="p">]</span>
+        <span class="k">end</span>
+
+        <span class="n">chunk_results</span> <span class="o">=</span>
+            <span class="k">if</span> <span class="p">(</span><span class="no">RUBY_PLATFORM</span> <span class="o">==</span> <span class="s1">'java'</span><span class="p">)</span>
+                <span class="n">chunk_collector</span> <span class="o">=</span> <span class="p">[]</span>
+                <span class="n">threads</span> <span class="o">=</span> <span class="p">[]</span>
+                <span class="n">chunks</span><span class="p">.</span><span class="nf">each</span><span class="p">.</span><span class="nf">with_index</span> <span class="k">do</span> <span class="o">|</span><span class="p">(</span><span class="n">start</span><span class="p">,</span><span class="n">weighted_size</span><span class="p">),</span><span class="n">i</span><span class="o">|</span>
+                    <span class="n">threads</span> <span class="o">&lt;&lt;</span> <span class="no">Thread</span><span class="p">.</span><span class="nf">new</span> <span class="k">do</span>
+                        <span class="n">chunk_collector</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="no">Fannkuch</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">start</span><span class="p">,</span><span class="n">weighted_size</span><span class="p">).</span><span class="nf">flip</span>
+                    <span class="k">end</span>
+                <span class="k">end</span>
+                <span class="n">threads</span><span class="p">.</span><span class="nf">all?</span><span class="p">(</span><span class="o">&amp;</span><span class="ss">:join</span><span class="p">)</span>
+                <span class="n">chunk_collector</span>
+            <span class="k">else</span>
+                <span class="no">MiniParallel</span><span class="p">.</span><span class="nf">map</span><span class="p">(</span><span class="n">chunks</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">start</span><span class="p">,</span> <span class="n">weighted_size</span><span class="o">|</span>
+                    <span class="no">Fannkuch</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">start</span><span class="p">,</span><span class="n">weighted_size</span><span class="p">).</span><span class="nf">flip</span>
+                <span class="k">end</span>
+            <span class="k">end</span>
+
+        <span class="n">chunk_results</span><span class="p">.</span><span class="nf">reduce</span> <span class="k">do</span> <span class="o">|</span><span class="n">memo</span><span class="p">,</span> <span class="p">(</span><span class="n">cksum</span><span class="p">,</span> <span class="n">fmax</span><span class="p">)</span><span class="o">|</span>
+            <span class="p">[</span><span class="n">memo</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">cksum</span><span class="p">,</span> <span class="p">[</span><span class="n">memo</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">fmax</span><span class="p">].</span><span class="nf">max</span><span class="p">]</span>
+        <span class="k">end</span>
+    <span class="k">else</span>
+        <span class="no">Fannkuch</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n">chunk_size</span><span class="p">).</span><span class="nf">flip</span>
+    <span class="k">end</span>
+
+<span class="nb">printf</span> <span class="s2">"%d</span><span class="se">\n</span><span class="s2">Pfannkuchen(%d) = %d</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="n">sum</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">flips</span></code></pre></figure>
+
+</article>
+
+<div class="my-8 ">
+    <h2 class="text-2xl mb-2">Comments</h2>
+
+    <script data-isso="https://comments.falsetrue.io/"
+            src="https://comments.falsetrue.io/js/embed.min.js"></script>
+
+    <section id="isso-thread">
+        <noscript>Javascript needs to be activated to view comments.</noscript>
+    </section>
+
+</div>
+
+    </main>
+
+    <!-- <footer class="mt-8">
+     Contact me at <a href="mailto:public@falsetrue.io">public@falsetrue.io</a>
+     </footer>
+-->
+<footer class="text-xs mt-8 px-8">
+    <div class="">
+        <div>
+            Dmitry Ro © 2003 - 2024<br>
+            Копирование и распрастранение страницы разрешено только в оригинальном не изменном виде, включая это сообщение.
+            Verbatim copying and redistribution of this entire page are permitted provided this notice is preserved.
+            Verbatim copying and redistribution of any of the photos in the photos subdirectory is permitted under the <a href="http://creativecommons.org/licenses/by-nd/3.0/" rel="nofollow"> Creative Commons Noderivs license version 3.0</a> or later.
+            <div><a href="/pgp.key.txt" rel="pgpkey authn">PGP Key</a></div>
+        </div>
+        <div class="flex mx-auto my-3 items-center justify-center gap-1">
+            <div><a href="https://webmentions.io" target="_blank" class="inline"><img src="/images/webmention.png" alt="Webmentions"></a></div>
+            <div><a href="https://indieweb.org" target="_blank"><img src="/images/indieweb.png" alt="indieweb"></a></div>
+            <div><a href="https://microformats.org" target="_blank"><img src="/images/microformats.png" alt="microformats"></a></div>
+            <div><a href="https://creativecommons.org/licenses/by/3.0/" target="_blank"><img src="/images/cc-commons.png" alt="cc-commons"></a></div>
+            <div><img src="/images/w3c-valid-html.png" alt="valid w3c"></div>
+        </div>
+        <div class="mt-1">
+            <a href="https://xn--sr8hvo.ws/previous">←</a>
+            An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
+            <a href="https://xn--sr8hvo.ws/next">→</a>
+        </div>
+    </div>
+</footer>
+
+  </body>
+</html>

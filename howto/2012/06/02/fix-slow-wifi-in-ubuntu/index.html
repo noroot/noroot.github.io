@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Решение проблемы медленого wifi на Ubuntu | FalseTrue</title>
+
+<!-- Begin Bridgetown SEO tag v6.0.0 -->
+<title>Решение проблемы медленого wifi на Ubuntu | FalseTrue</title>
+<meta property="og:title" content="Решение проблемы медленого wifi на Ubuntu" />
+<meta property="og:locale" content="ru" />
+<meta name="description" content="Scripts of cyberdaemon" />
+<meta property="og:description" content="Scripts of cyberdaemon" />
+<link rel="canonical" href="https://falsetrue.io/howto/2012/06/02/fix-slow-wifi-in-ubuntu/" />
+<meta property="og:url" content="https://falsetrue.io/howto/2012/06/02/fix-slow-wifi-in-ubuntu/" />
+<meta property="og:site_name" content="FalseTrue" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2012-06-02T12:01:00+04:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Решение проблемы медленого wifi на Ubuntu" />
+<!-- End Bridgetown SEO tag -->
+
+
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/_bridgetown/static/index.LHQE3ZKU.css" />
+<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+<script src="/_bridgetown/static/index.42K5JGTD.js" defer></script>
+
+<link type="application/atom+xml" rel="alternate" href="https://falsetrue.io/feed.xml" title="FalseTrue" />
+
+  </head>
+  <body class="post ">
+    <!-- <header>
+     <img src="/images/logo.svg" alt="Logo" />
+     </header>
+-->
+<nav class="nav bg-black py-2">
+  <ul>
+    <li><a href="/"><span class="text-green-400">False!</span><span class="text-cyan-300">True</span></a></li>
+    <li><a href="/">Home</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/feed">Feed</a></li>
+    <li><a href="/archive">Archive</a></li>
+    <li><a href="/bookshelf">Bookshelf</a></li>
+    <li><a href="/photography">Photography</a></li>
+    <li><a href="/halloffame">Hall of fame</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/feed.xml"><i class="fa fa-rss text-[orange]"></i>&nbsp;RSS</a></li>
+  </ul>
+</nav>
+
+
+    <main>
+      <article class="prose prose-slate prose-pre:bg-gray-100 prose-pre:text-gray-500 max-w-full">
+    <span>02 Jun 2012</span>
+    <div class="mb-8">
+        <h1>Решение проблемы медленого wifi на Ubuntu</h1>
+        <div class="category-block">
+            <span>Category</span>
+            
+                <a href="/categories/howto" class="badge-category">howto</a>
+            
+        </div>
+        <div class="tags-block mt-8">
+            <span>Tags</span>
+            
+                <a href="/tags/linux" class="badge-tag">#linux</a>
+            
+                <a href="/tags/wifi" class="badge-tag">#wifi</a>
+            
+        </div>
+    </div>
+    <p>Симптомы проблемы: в 11.04 При подключении к инетернету медленно или вообше не работает соединение, при этом выделяется IP и с виду все должно быть нормально и без ошибок.</p>
+
+<p>Решение: Убрать режим 11n</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>modprobe iwlagn <span class="nv">11n_disable</span><span class="o">=</span>1
+
+gksudo gedit /etc/modprobe.d/iwlagn-disable11n.conf
+
+options iwlagn <span class="nv">11n_disable</span><span class="o">=</span>1</code></pre></figure>
+
+<p>в 12.04 после обновления модуль стал называтся iwlwifi соотвественно решение будет выглядить так</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>modprobe iwlwifi <span class="nv">11n_disable</span><span class="o">=</span>1
+
+gksudo gedit /etc/modprobe.d/iwlagn-disable11n.conf
+
+options iwlwifi <span class="nv">11n_disable</span><span class="o">=</span>1</code></pre></figure>
+
+<p>Кроме того для некоторых срабатывает решение:</p>
+
+<p>в файле /etc/nsswitch.conf</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">hosts:          files mdns4_minimal <span class="o">[</span><span class="nv">NOTFOUND</span><span class="o">=</span><span class="k">return</span><span class="o">]</span> dns mdns4</code></pre></figure>
+
+<p>заменить на</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">hosts:          files dns</code></pre></figure>
+
+</article>
+
+<div class="my-8 ">
+    <h2 class="text-2xl mb-2">Comments</h2>
+
+    <script data-isso="https://comments.falsetrue.io/"
+            src="https://comments.falsetrue.io/js/embed.min.js"></script>
+
+    <section id="isso-thread">
+        <noscript>Javascript needs to be activated to view comments.</noscript>
+    </section>
+
+</div>
+
+    </main>
+
+    <!-- <footer class="mt-8">
+     Contact me at <a href="mailto:public@falsetrue.io">public@falsetrue.io</a>
+     </footer>
+-->
+<footer class="text-xs mt-8 px-8">
+    <div class="">
+        <div>
+            Dmitry Ro © 2003 - 2024<br>
+            Копирование и распрастранение страницы разрешено только в оригинальном не изменном виде, включая это сообщение.
+            Verbatim copying and redistribution of this entire page are permitted provided this notice is preserved.
+            Verbatim copying and redistribution of any of the photos in the photos subdirectory is permitted under the <a href="http://creativecommons.org/licenses/by-nd/3.0/" rel="nofollow"> Creative Commons Noderivs license version 3.0</a> or later.
+            <div><a href="/pgp.key.txt" rel="pgpkey authn">PGP Key</a></div>
+        </div>
+        <div class="flex mx-auto my-3 items-center justify-center gap-1">
+            <div><a href="https://webmentions.io" target="_blank" class="inline"><img src="/images/webmention.png" alt="Webmentions"></a></div>
+            <div><a href="https://indieweb.org" target="_blank"><img src="/images/indieweb.png" alt="indieweb"></a></div>
+            <div><a href="https://microformats.org" target="_blank"><img src="/images/microformats.png" alt="microformats"></a></div>
+            <div><a href="https://creativecommons.org/licenses/by/3.0/" target="_blank"><img src="/images/cc-commons.png" alt="cc-commons"></a></div>
+            <div><img src="/images/w3c-valid-html.png" alt="valid w3c"></div>
+        </div>
+        <div class="mt-1">
+            <a href="https://xn--sr8hvo.ws/previous">←</a>
+            An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
+            <a href="https://xn--sr8hvo.ws/next">→</a>
+        </div>
+    </div>
+</footer>
+
+  </body>
+</html>

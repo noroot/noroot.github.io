@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>2048 game bot | FalseTrue</title>
+
+<!-- Begin Bridgetown SEO tag v6.0.0 -->
+<title>2048 game bot | FalseTrue</title>
+<meta property="og:title" content="2048 game bot" />
+<meta property="og:locale" content="ru" />
+<meta name="description" content="Scripts of cyberdaemon" />
+<meta property="og:description" content="Scripts of cyberdaemon" />
+<link rel="canonical" href="https://falsetrue.io/howto/2014/04/05/2048gamebot/" />
+<meta property="og:url" content="https://falsetrue.io/howto/2014/04/05/2048gamebot/" />
+<meta property="og:site_name" content="FalseTrue" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2014-04-05T09:59:00+04:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="2048 game bot" />
+<!-- End Bridgetown SEO tag -->
+
+
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/_bridgetown/static/index.LHQE3ZKU.css" />
+<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+<script src="/_bridgetown/static/index.42K5JGTD.js" defer></script>
+
+<link type="application/atom+xml" rel="alternate" href="https://falsetrue.io/feed.xml" title="FalseTrue" />
+
+  </head>
+  <body class="post ">
+    <!-- <header>
+     <img src="/images/logo.svg" alt="Logo" />
+     </header>
+-->
+<nav class="nav bg-black py-2">
+  <ul>
+    <li><a href="/"><span class="text-green-400">False!</span><span class="text-cyan-300">True</span></a></li>
+    <li><a href="/">Home</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/feed">Feed</a></li>
+    <li><a href="/archive">Archive</a></li>
+    <li><a href="/bookshelf">Bookshelf</a></li>
+    <li><a href="/photography">Photography</a></li>
+    <li><a href="/halloffame">Hall of fame</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/feed.xml"><i class="fa fa-rss text-[orange]"></i>&nbsp;RSS</a></li>
+  </ul>
+</nav>
+
+
+    <main>
+      <article class="prose prose-slate prose-pre:bg-gray-100 prose-pre:text-gray-500 max-w-full">
+    <span>05 Apr 2014</span>
+    <div class="mb-8">
+        <h1>2048 game bot</h1>
+        <div class="category-block">
+            <span>Category</span>
+            
+                <a href="/categories/howto" class="badge-category">howto</a>
+            
+        </div>
+        <div class="tags-block mt-8">
+            <span>Tags</span>
+            
+                <a href="/tags/dev" class="badge-tag">#dev</a>
+            
+                <a href="/tags/javascript" class="badge-tag">#javascript</a>
+            
+        </div>
+    </div>
+    <p>Есть такая <a href="http://gabrielecirulli.github.io/2048/" rel="nofollow">игра 2048</a>, суть ее в том чтобы собрать квадрат 2048 из других меньших квадратов, складываются квадраты только с одинаковой цифрой 2+2, 4+4, 8+8 и т.д</p>
+
+<p>Игра написана на Javascript и HTML, а это значит можно попробовать написать бота. Открыв инспектор я сразу посмотрел на структуру этих квадратов, все оказалось очень просто об этом ниже под катом.</p>
+
+<!-- more -->
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tile tile-8 tile-position-3-3"</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">"tile-inner"</span><span class="nt">&gt;</span>8<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<p>как видно это это обычный div с классами tile-8 например означало что это “8”, чтобы распарсить все квадраты достаточно было сделать следующее:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">tiles</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nf">getElementsByClassName</span><span class="p">(</span><span class="dl">'</span><span class="s1">tile</span><span class="dl">'</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>После чего получив все элементы div с классом tile можно было легко с ними работать. Заморчиватся с умным алгоритмом нехотелось поэтому простой рандом из 4 типов ходов (влево, вверх, вправо, вниз) вполне подходил.</p>
+
+<p>Чтобы реализовать эмуляцию нажатия кнопки в браузере нужно сделать следюющее</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nf">keyDown</span><span class="p">(</span><span class="nx">evt</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">key</span><span class="p">;</span>
+    <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nx">evt</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="nx">evt</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">event</span><span class="p">;</span>
+        <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nx">evt</span><span class="p">.</span><span class="nx">which</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="nx">key</span>  <span class="o">=</span>  <span class="nx">evt</span><span class="p">.</span><span class="nx">keyCode</span><span class="p">;</span>   
+        <span class="p">}</span>
+    <span class="p">}</span>
+	<span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="nx">evt</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="nx">key</span> <span class="o">=</span> <span class="nx">evt</span><span class="p">.</span><span class="nx">which</span><span class="p">;</span>   
+    <span class="p">}</span>	
+<span class="p">}</span>
+
+
+<span class="kd">function</span> <span class="nf">fireKey</span><span class="p">(</span><span class="nx">el</span><span class="p">,</span> <span class="nx">key</span><span class="p">)</span>
+<span class="p">{</span>
+	
+    <span class="k">if</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">createEventObject</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">eventObj</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nf">createEventObject</span><span class="p">();</span>
+        <span class="nx">eventObj</span><span class="p">.</span><span class="nx">keyCode</span> <span class="o">=</span> <span class="nx">key</span><span class="p">;</span>
+        <span class="nx">el</span><span class="p">.</span><span class="nf">fireEvent</span><span class="p">(</span><span class="dl">"</span><span class="s2">onkeydown</span><span class="dl">"</span><span class="p">,</span> <span class="nx">eventObj</span><span class="p">);</span>   
+    <span class="p">}</span>
+	<span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">createEvent</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">eventObj</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nf">createEvent</span><span class="p">(</span><span class="dl">"</span><span class="s2">Events</span><span class="dl">"</span><span class="p">);</span>
+        <span class="nx">eventObj</span><span class="p">.</span><span class="nf">initEvent</span><span class="p">(</span><span class="dl">"</span><span class="s2">keydown</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+        <span class="nx">eventObj</span><span class="p">.</span><span class="nx">which</span> <span class="o">=</span> <span class="nx">key</span><span class="p">;</span>
+        <span class="nx">el</span><span class="p">.</span><span class="nf">dispatchEvent</span><span class="p">(</span><span class="nx">eventObj</span><span class="p">);</span>
+    <span class="p">}</span> 
+<span class="p">}</span>
+
+
+<span class="nf">fireKey</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nf">getElementByClassName</span><span class="p">(</span><span class="dl">'</span><span class="s1">game-container</span><span class="dl">'</span><span class="p">)[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">40</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Нужно создать обьект события нажатия кнопки, и присовать нужные свойства, в данном случае это keycode нужной кнопки. 
+В параметрах которые передаются в метод fireKey разберетесь сами.</p>
+
+<p>Еще один момент, когда просиходит проигрышь, надо перезапускать игру, для этого надо отслеживать специальный div который становится видимым, и после этого надо нажимать кнопку New Game. Для этого надо просто отследить его свойство display.</p>
+
+<p>На этом собствтенно все, в коде заложена возможность сделать бота более интелектуальным, можете попробовать сами.</p>
+
+<p>Github:
+<a href="https://github.com/noroot/2048-bot" target="_blank">https://github.com/noroot/2048-bot</a></p>
+
+<p>Результат работы на видео:</p>
+
+<iframe width="854" height="510" src="//www.youtube.com/embed/rx9M_7bLsaE" frameborder="0" allowfullscreen=""></iframe>
+
+<p>Ну и для удобства код целиком здесь, чтобы его запустить надо скопировать, открыть игру и открыть консоль, и вставить туда этот код целиком, он сразу начнет работать.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="cm">/**
+ * 2048 game bot
+ * usage: startgame and paste code to browser development console
+ */</span>
+
+<span class="kd">function</span> <span class="nf">explode</span><span class="p">(</span> <span class="nx">delimiter</span><span class="p">,</span> <span class="nx">string</span> <span class="p">)</span> <span class="p">{</span>	<span class="c1">// Split a string by string</span>
+	<span class="c1">// </span>
+	<span class="c1">// +   original by: Kevin van Zonneveld (http://kevin.vanzonneveld.net)</span>
+	<span class="c1">// +   improved by: kenneth</span>
+	<span class="c1">// +   improved by: Kevin van Zonneveld (http://kevin.vanzonneveld.net)</span>
+
+	<span class="kd">var</span> <span class="nx">emptyArray</span> <span class="o">=</span> <span class="p">{</span> <span class="mi">0</span><span class="p">:</span> <span class="dl">''</span> <span class="p">};</span>
+
+	<span class="k">if </span><span class="p">(</span> <span class="nx">arguments</span><span class="p">.</span><span class="nx">length</span> <span class="o">!=</span> <span class="mi">2</span>
+		<span class="o">||</span> <span class="k">typeof</span> <span class="nx">arguments</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="dl">'</span><span class="s1">undefined</span><span class="dl">'</span>
+		<span class="o">||</span> <span class="k">typeof</span> <span class="nx">arguments</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="dl">'</span><span class="s1">undefined</span><span class="dl">'</span> <span class="p">)</span>
+	<span class="p">{</span>
+		<span class="k">return</span> <span class="kc">null</span><span class="p">;</span>
+	<span class="p">}</span>
+
+	<span class="k">if </span><span class="p">(</span> <span class="nx">delimiter</span> <span class="o">===</span> <span class="dl">''</span>
+		<span class="o">||</span> <span class="nx">delimiter</span> <span class="o">===</span> <span class="kc">false</span>
+		<span class="o">||</span> <span class="nx">delimiter</span> <span class="o">===</span> <span class="kc">null</span> <span class="p">)</span>
+	<span class="p">{</span>
+		<span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+	<span class="p">}</span>
+
+	<span class="k">if </span><span class="p">(</span> <span class="k">typeof</span> <span class="nx">delimiter</span> <span class="o">==</span> <span class="dl">'</span><span class="s1">function</span><span class="dl">'</span>
+		<span class="o">||</span> <span class="k">typeof</span> <span class="nx">delimiter</span> <span class="o">==</span> <span class="dl">'</span><span class="s1">object</span><span class="dl">'</span>
+		<span class="o">||</span> <span class="k">typeof</span> <span class="nx">string</span> <span class="o">==</span> <span class="dl">'</span><span class="s1">function</span><span class="dl">'</span>
+		<span class="o">||</span> <span class="k">typeof</span> <span class="nx">string</span> <span class="o">==</span> <span class="dl">'</span><span class="s1">object</span><span class="dl">'</span> <span class="p">)</span>
+	<span class="p">{</span>
+		<span class="k">return</span> <span class="nx">emptyArray</span><span class="p">;</span>
+	<span class="p">}</span>
+
+	<span class="k">if </span><span class="p">(</span> <span class="nx">delimiter</span> <span class="o">===</span> <span class="kc">true</span> <span class="p">)</span> <span class="p">{</span>
+		<span class="nx">delimiter</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">1</span><span class="dl">'</span><span class="p">;</span>
+	<span class="p">}</span>
+
+	<span class="k">return</span> <span class="nx">string</span><span class="p">.</span><span class="nf">toString</span><span class="p">().</span><span class="nf">split </span><span class="p">(</span> <span class="nx">delimiter</span><span class="p">.</span><span class="nf">toString</span><span class="p">()</span> <span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nf">keyDown</span><span class="p">(</span><span class="nx">evt</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">key</span><span class="p">;</span>
+    <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nx">evt</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="nx">evt</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">event</span><span class="p">;</span>
+        <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nx">evt</span><span class="p">.</span><span class="nx">which</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="nx">key</span>  <span class="o">=</span>  <span class="nx">evt</span><span class="p">.</span><span class="nx">keyCode</span><span class="p">;</span>   
+        <span class="p">}</span>
+    <span class="p">}</span>
+	<span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="nx">evt</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="nx">key</span> <span class="o">=</span> <span class="nx">evt</span><span class="p">.</span><span class="nx">which</span><span class="p">;</span>   
+    <span class="p">}</span>	
+<span class="p">}</span>
+
+
+<span class="kd">function</span> <span class="nf">fireKey</span><span class="p">(</span><span class="nx">el</span><span class="p">,</span> <span class="nx">key</span><span class="p">)</span>
+<span class="p">{</span>
+	
+    <span class="k">if</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">createEventObject</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">eventObj</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nf">createEventObject</span><span class="p">();</span>
+        <span class="nx">eventObj</span><span class="p">.</span><span class="nx">keyCode</span> <span class="o">=</span> <span class="nx">key</span><span class="p">;</span>
+        <span class="nx">el</span><span class="p">.</span><span class="nf">fireEvent</span><span class="p">(</span><span class="dl">"</span><span class="s2">onkeydown</span><span class="dl">"</span><span class="p">,</span> <span class="nx">eventObj</span><span class="p">);</span>   
+    <span class="p">}</span>
+	<span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">createEvent</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">eventObj</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nf">createEvent</span><span class="p">(</span><span class="dl">"</span><span class="s2">Events</span><span class="dl">"</span><span class="p">);</span>
+        <span class="nx">eventObj</span><span class="p">.</span><span class="nf">initEvent</span><span class="p">(</span><span class="dl">"</span><span class="s2">keydown</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+        <span class="nx">eventObj</span><span class="p">.</span><span class="nx">which</span> <span class="o">=</span> <span class="nx">key</span><span class="p">;</span>
+        <span class="nx">el</span><span class="p">.</span><span class="nf">dispatchEvent</span><span class="p">(</span><span class="nx">eventObj</span><span class="p">);</span>
+    <span class="p">}</span> 
+<span class="p">}</span>
+
+
+<span class="kd">function</span> <span class="nf">logscore</span><span class="p">()</span> 
+<span class="p">{</span>
+	<span class="kd">var</span> <span class="nx">tiles</span> <span class="o">=</span> <span class="p">[</span><span class="mi">128</span><span class="p">,</span> <span class="mi">256</span><span class="p">,</span> <span class="mi">512</span><span class="p">,</span> <span class="mi">1024</span><span class="p">,</span> <span class="mi">2048</span><span class="p">];</span>
+	<span class="kd">var</span> <span class="nx">arlen</span> <span class="o">=</span> <span class="nx">tiles</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span>
+	<span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;=</span> <span class="nx">arlen</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">)</span> 
+	<span class="p">{</span>
+		<span class="nx">score</span> <span class="o">=</span> <span class="nx">tiles</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
+		<span class="k">if </span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nf">getElementsByClassName</span><span class="p">(</span><span class="dl">"</span><span class="s2">tile-</span><span class="dl">"</span> <span class="o">+</span> <span class="nx">score</span><span class="p">).</span><span class="nx">length</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span>
+		<span class="p">{</span>
+			<span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">MAX SCORE=</span><span class="dl">"</span> <span class="o">+</span> <span class="nx">score</span><span class="p">);</span>
+		<span class="p">}</span>
+		<span class="k">else</span>
+		<span class="p">{</span>
+			<span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">FAIL</span><span class="dl">"</span><span class="p">);</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// define key codes</span>
+
+<span class="kd">var</span> <span class="nx">left</span> <span class="o">=</span> <span class="mi">37</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">up</span> <span class="o">=</span> <span class="mi">38</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">right</span> <span class="o">=</span> <span class="mi">39</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">down</span> <span class="o">=</span> <span class="mi">40</span><span class="p">;</span>
+
+<span class="kd">var</span> <span class="nx">clicks</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">tries</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+
+<span class="nb">document</span><span class="p">.</span><span class="nx">documentElement</span><span class="p">.</span><span class="nf">focus</span><span class="p">();</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">onkeydown</span> <span class="o">=</span> <span class="nx">keyDown</span><span class="p">;</span>
+
+
+<span class="c1">//var fired = 0;</span>
+<span class="kd">var</span> <span class="nx">matrix_object</span> <span class="o">=</span> <span class="p">[];</span>
+<span class="kd">var</span> <span class="nx">matrix</span> <span class="o">=</span> <span class="p">[];</span>
+<span class="kd">var</span> <span class="nx">selected_turn</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="kd">var</span>	<span class="nx">prefered_turn</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+
+<span class="kd">var</span> <span class="nx">gamebox</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nf">getElementsByClassName</span><span class="p">(</span><span class="dl">"</span><span class="s2">game-container</span><span class="dl">"</span><span class="p">)[</span><span class="mi">0</span><span class="p">];</span>
+
+
+<span class="kd">function</span> <span class="nf">calculate_turn</span><span class="p">()</span>
+<span class="p">{</span>
+	<span class="kd">var</span> <span class="nx">fired</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+	
+	<span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nf">getElementsByClassName</span><span class="p">(</span><span class="dl">'</span><span class="s1">tile</span><span class="dl">'</span><span class="p">);</span>
+	<span class="nx">selected_turn</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+	<span class="nx">prefered_turn</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+	<span class="kd">var</span> <span class="nx">turns</span> <span class="o">=</span> <span class="p">[];</span>	
+	<span class="nx">matrix_object</span> <span class="o">=</span> <span class="p">[];</span>
+
+	<span class="c1">// prepare object for more smart solving (not used in future)</span>
+	<span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="kd">var</span> <span class="nx">el</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
+		<span class="k">if </span><span class="p">(</span><span class="nx">el</span><span class="p">)</span>
+		<span class="p">{</span>
+			<span class="kd">var</span> <span class="nx">t</span> <span class="o">=</span> <span class="nf">explode</span><span class="p">(</span><span class="dl">"</span><span class="s2">-</span><span class="dl">"</span><span class="p">,</span> <span class="nx">el</span><span class="p">.</span><span class="nx">classList</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+			<span class="kd">var</span> <span class="nx">tilescore</span> <span class="o">=</span> <span class="nx">t</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
+			<span class="kd">var</span> <span class="nx">t</span> <span class="o">=</span> <span class="nf">explode</span><span class="p">(</span><span class="dl">"</span><span class="s2">-</span><span class="dl">"</span><span class="p">,</span> <span class="nx">el</span><span class="p">.</span><span class="nx">classList</span><span class="p">[</span><span class="mi">2</span><span class="p">]);</span>
+			<span class="kd">var</span> <span class="nx">tp</span> <span class="o">=</span> <span class="p">{</span><span class="dl">'</span><span class="s1">score</span><span class="dl">'</span><span class="p">:</span> <span class="nx">tilescore</span><span class="p">,</span> <span class="dl">'</span><span class="s1">x</span><span class="dl">'</span><span class="p">:</span><span class="nx">t</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="dl">'</span><span class="s1">y</span><span class="dl">'</span><span class="p">:</span><span class="nx">t</span><span class="p">[</span><span class="mi">3</span><span class="p">]};</span>
+			<span class="k">if </span><span class="p">(</span><span class="nx">tp</span><span class="p">.</span><span class="nx">x</span><span class="o">!==</span><span class="dl">'</span><span class="s1">undefined</span><span class="dl">'</span><span class="p">)</span>
+			<span class="p">{</span>
+				<span class="nx">matrix_object</span><span class="p">.</span><span class="nf">push</span><span class="p">(</span><span class="nx">tp</span><span class="p">);</span>
+			<span class="p">}</span>
+		<span class="p">}</span>
+		
+	<span class="p">}</span>
+	
+	<span class="c1">// TODO:</span>
+	<span class="c1">// make clever work here</span>
+	
+
+	<span class="c1">// until clever work done just go random</span>
+	<span class="k">if </span><span class="p">(</span><span class="nx">prefered_turn</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">||</span> <span class="nx">selected_turn</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="kd">var</span> <span class="nx">keys</span> <span class="o">=</span> <span class="p">[</span><span class="nx">up</span><span class="p">,</span><span class="nx">right</span><span class="p">,</span><span class="nx">down</span><span class="p">];</span> <span class="c1">// tricky turns, without left turn in case of win</span>
+		<span class="kd">var</span> <span class="nx">key</span> <span class="o">=</span> <span class="nx">keys</span><span class="p">[</span><span class="nb">Math</span><span class="p">.</span><span class="nf">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nf">random</span><span class="p">()</span> <span class="o">*</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">length</span><span class="p">)];</span>
+		<span class="nx">selected_turn</span> <span class="o">=</span> <span class="nx">key</span><span class="p">;</span>
+	<span class="p">}</span>
+	<span class="k">return</span> <span class="nx">selected_turn</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nf">make_turn</span><span class="p">()</span>
+<span class="p">{</span>
+	
+	<span class="k">if </span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nf">getElementsByClassName</span><span class="p">(</span><span class="dl">"</span><span class="s2">game-over</span><span class="dl">"</span><span class="p">).</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="nx">console</span><span class="p">.</span><span class="nf">clear</span><span class="p">();</span>
+		<span class="nf">logscore</span><span class="p">();</span>
+		<span class="nx">tries</span><span class="o">++</span><span class="p">;</span>
+		<span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Restart (</span><span class="dl">"</span> <span class="o">+</span> <span class="nx">tries</span> <span class="o">+</span> <span class="dl">"</span><span class="s2">, </span><span class="dl">"</span><span class="o">+</span><span class="nx">clicks</span><span class="o">+</span><span class="dl">"</span><span class="s2">)</span><span class="dl">"</span><span class="p">);</span>
+		<span class="nx">clicks</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+		<span class="nb">document</span><span class="p">.</span><span class="nf">getElementsByClassName</span><span class="p">(</span><span class="dl">"</span><span class="s2">restart-button</span><span class="dl">"</span><span class="p">)[</span><span class="mi">0</span><span class="p">].</span><span class="nf">click</span><span class="p">();</span>
+		
+	<span class="p">}</span>
+	<span class="k">else</span> <span class="k">if </span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nf">getElementsByClassName</span><span class="p">(</span><span class="dl">"</span><span class="s2">game-won</span><span class="dl">"</span><span class="p">).</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="nf">clearInterval</span><span class="p">(</span><span class="nx">interval</span><span class="p">);</span>
+		<span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">win</span><span class="dl">"</span><span class="p">);</span>
+	<span class="p">}</span>
+	<span class="k">else</span>
+	<span class="p">{</span>
+		<span class="nx">clicks</span><span class="o">++</span><span class="p">;</span>
+		<span class="kd">var</span> <span class="nx">turn</span> <span class="o">=</span> <span class="nf">calculate_turn</span><span class="p">();</span>
+		<span class="nf">fireKey</span><span class="p">(</span><span class="nx">gamebox</span><span class="p">,</span> <span class="nx">turn</span><span class="p">);</span>
+		
+	<span class="p">}</span>
+	
+<span class="p">}</span>
+
+<span class="kd">var</span> <span class="nx">interval</span> <span class="o">=</span> <span class="nf">setInterval</span><span class="p">(</span><span class="nx">make_turn</span><span class="p">,</span> <span class="mi">500</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="nx">matrix_object</span><span class="p">);</span>
+
+</code></pre></div></div>
+
+</article>
+
+<div class="my-8 ">
+    <h2 class="text-2xl mb-2">Comments</h2>
+
+    <script data-isso="https://comments.falsetrue.io/"
+            src="https://comments.falsetrue.io/js/embed.min.js"></script>
+
+    <section id="isso-thread">
+        <noscript>Javascript needs to be activated to view comments.</noscript>
+    </section>
+
+</div>
+
+    </main>
+
+    <!-- <footer class="mt-8">
+     Contact me at <a href="mailto:public@falsetrue.io">public@falsetrue.io</a>
+     </footer>
+-->
+<footer class="text-xs mt-8 px-8">
+    <div class="">
+        <div>
+            Dmitry Ro © 2003 - 2024<br>
+            Копирование и распрастранение страницы разрешено только в оригинальном не изменном виде, включая это сообщение.
+            Verbatim copying and redistribution of this entire page are permitted provided this notice is preserved.
+            Verbatim copying and redistribution of any of the photos in the photos subdirectory is permitted under the <a href="http://creativecommons.org/licenses/by-nd/3.0/" rel="nofollow"> Creative Commons Noderivs license version 3.0</a> or later.
+            <div><a href="/pgp.key.txt" rel="pgpkey authn">PGP Key</a></div>
+        </div>
+        <div class="flex mx-auto my-3 items-center justify-center gap-1">
+            <div><a href="https://webmentions.io" target="_blank" class="inline"><img src="/images/webmention.png" alt="Webmentions"></a></div>
+            <div><a href="https://indieweb.org" target="_blank"><img src="/images/indieweb.png" alt="indieweb"></a></div>
+            <div><a href="https://microformats.org" target="_blank"><img src="/images/microformats.png" alt="microformats"></a></div>
+            <div><a href="https://creativecommons.org/licenses/by/3.0/" target="_blank"><img src="/images/cc-commons.png" alt="cc-commons"></a></div>
+            <div><img src="/images/w3c-valid-html.png" alt="valid w3c"></div>
+        </div>
+        <div class="mt-1">
+            <a href="https://xn--sr8hvo.ws/previous">←</a>
+            An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
+            <a href="https://xn--sr8hvo.ws/next">→</a>
+        </div>
+    </div>
+</footer>
+
+  </body>
+</html>

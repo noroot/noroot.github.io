@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Arduino music - проигрывание музыки на платформе Ардиуно | FalseTrue</title>
+
+<!-- Begin Bridgetown SEO tag v6.0.0 -->
+<title>Arduino music - проигрывание музыки на платформе Ардиуно | FalseTrue</title>
+<meta property="og:title" content="Arduino music - проигрывание музыки на платформе Ардиуно" />
+<meta property="og:locale" content="ru" />
+<meta name="description" content="Scripts of cyberdaemon" />
+<meta property="og:description" content="Scripts of cyberdaemon" />
+<link rel="canonical" href="https://falsetrue.io/howto/2013/09/05/arduino-music/" />
+<meta property="og:url" content="https://falsetrue.io/howto/2013/09/05/arduino-music/" />
+<meta property="og:site_name" content="FalseTrue" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2013-09-05T18:37:00+04:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Arduino music - проигрывание музыки на платформе Ардиуно" />
+<!-- End Bridgetown SEO tag -->
+
+
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/_bridgetown/static/index.LHQE3ZKU.css" />
+<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+<script src="/_bridgetown/static/index.42K5JGTD.js" defer></script>
+
+<link type="application/atom+xml" rel="alternate" href="https://falsetrue.io/feed.xml" title="FalseTrue" />
+
+  </head>
+  <body class="post ">
+    <!-- <header>
+     <img src="/images/logo.svg" alt="Logo" />
+     </header>
+-->
+<nav class="nav bg-black py-2">
+  <ul>
+    <li><a href="/"><span class="text-green-400">False!</span><span class="text-cyan-300">True</span></a></li>
+    <li><a href="/">Home</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/feed">Feed</a></li>
+    <li><a href="/archive">Archive</a></li>
+    <li><a href="/bookshelf">Bookshelf</a></li>
+    <li><a href="/photography">Photography</a></li>
+    <li><a href="/halloffame">Hall of fame</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/feed.xml"><i class="fa fa-rss text-[orange]"></i>&nbsp;RSS</a></li>
+  </ul>
+</nav>
+
+
+    <main>
+      <article class="prose prose-slate prose-pre:bg-gray-100 prose-pre:text-gray-500 max-w-full">
+    <span>05 Sep 2013</span>
+    <div class="mb-8">
+        <h1>Arduino music - проигрывание музыки на платформе Ардиуно</h1>
+        <div class="category-block">
+            <span>Category</span>
+            
+                <a href="/categories/howto" class="badge-category">howto</a>
+            
+        </div>
+        <div class="tags-block mt-8">
+            <span>Tags</span>
+            
+                <a href="/tags/dev" class="badge-tag">#dev</a>
+            
+                <a href="/tags/hardware" class="badge-tag">#hardware</a>
+            
+        </div>
+    </div>
+    <p>Долго лежала в тумбочке моя Arduino, преждем чем я достал ее и решил хоть что нибудь попробовать, ну и попробовал издавать с помощью нее какие нибудь звуки.
+Для этого я нашел какуюто старую пьезо пищалку и срочно прикрепил ее на breadboard, подключил ее к arduino написал немного кода, и вот что получилось:</p>
+
+<iframe width="640" height="360" src="http://www.youtube.com/embed/g4tLQjLBRqM?feature=player_detailpage" frameborder="0" allowfullscreen=""></iframe>
+
+<p>В планах наверное подключить туда клавиатуру, чтобы сделать синтезатор, чтобы можно было делать <a href="http://en.wikipedia.org/wiki/Chiptune" rel="nofollow" target="_blank">chiptune</a></p>
+
+<p>Исходники под катом и на гитхабе <a href="https://github.com/noroot/arduinostuff">https://github.com/noroot/arduinostuff</a>, код не мой, взял с гугла источник уже непомню, но код немного исправил.</p>
+
+<p>Для тех кто не знает что такое <a href="http://arduino.cc" rel="nofoloow" target="_blank">Arduino</a>, - это такая opensource hardware платформа для программирования микроконтроллеров, выглядит она так:</p>
+
+<p>Файл pitches.h можно взять здесь <a href="https://github.com/noroot/arduinostuff/blob/master/lib/pitches.h">https://github.com/noroot/arduinostuff/blob/master/lib/pitches.h</a></p>
+
+<!-- more -->
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="cp">#include</span> <span class="cpf">&lt;pitches.h&gt;</span><span class="cp">
+</span>
+
+<span class="cp">#define melodyPin 3
+</span><span class="c1">//Mario main theme melody</span>
+<span class="kt">int</span> <span class="n">melody</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="n">NOTE_E7</span><span class="p">,</span> <span class="n">NOTE_E7</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">NOTE_E7</span><span class="p">,</span> 
+  <span class="mi">0</span><span class="p">,</span> <span class="n">NOTE_C7</span><span class="p">,</span> <span class="n">NOTE_E7</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="n">NOTE_G7</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>
+  <span class="n">NOTE_G6</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> 
+
+  <span class="n">NOTE_C7</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">NOTE_G6</span><span class="p">,</span> 
+  <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">NOTE_E6</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> 
+  <span class="mi">0</span><span class="p">,</span> <span class="n">NOTE_A6</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">NOTE_B6</span><span class="p">,</span> 
+  <span class="mi">0</span><span class="p">,</span> <span class="n">NOTE_AS6</span><span class="p">,</span> <span class="n">NOTE_A6</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> 
+
+  <span class="n">NOTE_G6</span><span class="p">,</span> <span class="n">NOTE_E7</span><span class="p">,</span> <span class="n">NOTE_G7</span><span class="p">,</span> 
+  <span class="n">NOTE_A7</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">NOTE_F7</span><span class="p">,</span> <span class="n">NOTE_G7</span><span class="p">,</span> 
+  <span class="mi">0</span><span class="p">,</span> <span class="n">NOTE_E7</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span><span class="n">NOTE_C7</span><span class="p">,</span> 
+  <span class="n">NOTE_D7</span><span class="p">,</span> <span class="n">NOTE_B6</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span>
+
+  <span class="n">NOTE_C7</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">NOTE_G6</span><span class="p">,</span> 
+  <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">NOTE_E6</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> 
+  <span class="mi">0</span><span class="p">,</span> <span class="n">NOTE_A6</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">NOTE_B6</span><span class="p">,</span> 
+  <span class="mi">0</span><span class="p">,</span> <span class="n">NOTE_AS6</span><span class="p">,</span> <span class="n">NOTE_A6</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> 
+
+  <span class="n">NOTE_G6</span><span class="p">,</span> <span class="n">NOTE_E7</span><span class="p">,</span> <span class="n">NOTE_G7</span><span class="p">,</span> 
+  <span class="n">NOTE_A7</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">NOTE_F7</span><span class="p">,</span> <span class="n">NOTE_G7</span><span class="p">,</span> 
+  <span class="mi">0</span><span class="p">,</span> <span class="n">NOTE_E7</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span><span class="n">NOTE_C7</span><span class="p">,</span> 
+  <span class="n">NOTE_D7</span><span class="p">,</span> <span class="n">NOTE_B6</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span>
+<span class="p">};</span>
+<span class="c1">//Mario main them tempo</span>
+<span class="kt">int</span> <span class="n">tempo</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> 
+  <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span>
+  <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span>
+  <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> 
+
+  <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span>
+  <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> 
+  <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> 
+  <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> 
+
+  <span class="mi">9</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span>
+  <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span>
+  <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span>
+  <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span>
+
+  <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span>
+  <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span>
+  <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span>
+  <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span>
+
+  <span class="mi">9</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span>
+  <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span>
+  <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span>
+  <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span>
+<span class="p">};</span>
+
+<span class="c1">//</span>
+<span class="c1">//Underworld melody</span>
+<span class="kt">int</span> <span class="n">underworld_melody</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>  
+  <span class="n">NOTE_C4</span><span class="p">,</span> <span class="n">NOTE_C5</span><span class="p">,</span> <span class="n">NOTE_A3</span><span class="p">,</span> <span class="n">NOTE_A4</span><span class="p">,</span> 
+  <span class="n">NOTE_AS3</span><span class="p">,</span> <span class="n">NOTE_AS4</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="mi">0</span><span class="p">,</span>
+  <span class="n">NOTE_C4</span><span class="p">,</span> <span class="n">NOTE_C5</span><span class="p">,</span> <span class="n">NOTE_A3</span><span class="p">,</span> <span class="n">NOTE_A4</span><span class="p">,</span> 
+  <span class="n">NOTE_AS3</span><span class="p">,</span> <span class="n">NOTE_AS4</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="mi">0</span><span class="p">,</span>
+  <span class="n">NOTE_F3</span><span class="p">,</span> <span class="n">NOTE_F4</span><span class="p">,</span> <span class="n">NOTE_D3</span><span class="p">,</span> <span class="n">NOTE_D4</span><span class="p">,</span>
+  <span class="n">NOTE_DS3</span><span class="p">,</span> <span class="n">NOTE_DS4</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="mi">0</span><span class="p">,</span>
+  <span class="n">NOTE_F3</span><span class="p">,</span> <span class="n">NOTE_F4</span><span class="p">,</span> <span class="n">NOTE_D3</span><span class="p">,</span> <span class="n">NOTE_D4</span><span class="p">,</span>
+  <span class="n">NOTE_DS3</span><span class="p">,</span> <span class="n">NOTE_DS4</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="mi">0</span><span class="p">,</span> <span class="n">NOTE_DS4</span><span class="p">,</span> <span class="n">NOTE_CS4</span><span class="p">,</span> <span class="n">NOTE_D4</span><span class="p">,</span>
+  <span class="n">NOTE_CS4</span><span class="p">,</span> <span class="n">NOTE_DS4</span><span class="p">,</span> 
+  <span class="n">NOTE_DS4</span><span class="p">,</span> <span class="n">NOTE_GS3</span><span class="p">,</span>
+  <span class="n">NOTE_G3</span><span class="p">,</span> <span class="n">NOTE_CS4</span><span class="p">,</span>
+  <span class="n">NOTE_C4</span><span class="p">,</span> <span class="n">NOTE_FS4</span><span class="p">,</span><span class="n">NOTE_F4</span><span class="p">,</span> <span class="n">NOTE_E3</span><span class="p">,</span> <span class="n">NOTE_AS4</span><span class="p">,</span> <span class="n">NOTE_A4</span><span class="p">,</span>
+  <span class="n">NOTE_GS4</span><span class="p">,</span> <span class="n">NOTE_DS4</span><span class="p">,</span> <span class="n">NOTE_B3</span><span class="p">,</span>
+  <span class="n">NOTE_AS3</span><span class="p">,</span> <span class="n">NOTE_A3</span><span class="p">,</span> <span class="n">NOTE_GS3</span><span class="p">,</span>
+  <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span>
+<span class="p">};</span>
+<span class="c1">//Underwolrd tempo</span>
+<span class="kt">int</span> <span class="n">underworld_tempo</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> 
+  <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span>
+  <span class="mi">3</span><span class="p">,</span>
+  <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> 
+  <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span>
+  <span class="mi">3</span><span class="p">,</span>
+  <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> 
+  <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span>
+  <span class="mi">3</span><span class="p">,</span>
+  <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> 
+  <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span>
+  <span class="mi">6</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span>
+  <span class="mi">6</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span>
+  <span class="mi">6</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span>
+  <span class="mi">6</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span>
+  <span class="mi">18</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span><span class="mi">18</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span>
+  <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span>
+  <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span>
+  <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span>
+<span class="p">};</span>
+
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+   <span class="n">pinMode</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span><span class="c1">//buzzer</span>
+   <span class="n">pinMode</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span><span class="c1">//led indicator when singing a note</span>
+
+<span class="p">}</span>
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="c1">//sing the tunes</span>
+<span class="c1">//  sing(1);</span>
+<span class="c1">//  sing(1);</span>
+  <span class="n">sing</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">song</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+<span class="kt">void</span> <span class="nf">sing</span><span class="p">(</span><span class="kt">int</span> <span class="n">s</span><span class="p">){</span>      
+   <span class="c1">// iterate over the notes of the melody:</span>
+   <span class="n">song</span> <span class="o">=</span> <span class="n">s</span><span class="p">;</span>
+   <span class="k">if</span><span class="p">(</span><span class="n">song</span><span class="o">==</span><span class="mi">2</span><span class="p">){</span>
+     <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">" 'Underworld Theme'"</span><span class="p">);</span>
+     <span class="kt">int</span> <span class="n">size</span> <span class="o">=</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">underworld_melody</span><span class="p">)</span> <span class="o">/</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">);</span>
+     <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">thisNote</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">thisNote</span> <span class="o">&lt;</span> <span class="n">size</span><span class="p">;</span> <span class="n">thisNote</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+
+       <span class="c1">// to calculate the note duration, take one second</span>
+       <span class="c1">// divided by the note type.</span>
+       <span class="c1">//e.g. quarter note = 1000 / 4, eighth note = 1000/8, etc.</span>
+       <span class="kt">int</span> <span class="n">noteDuration</span> <span class="o">=</span> <span class="mi">1000</span><span class="o">/</span><span class="mi">10</span><span class="p">;</span>
+       <span class="c1">//underworld_tempo[thisNote];</span>
+
+       <span class="n">buzz</span><span class="p">(</span><span class="n">melodyPin</span><span class="p">,</span> <span class="n">underworld_tempo</span><span class="p">[</span><span class="n">thisNote</span><span class="p">],</span><span class="n">noteDuration</span><span class="p">);</span>
+
+       <span class="c1">// to distinguish the notes, set a minimum time between them.</span>
+       <span class="c1">// the note's duration + 30% seems to work well:</span>
+       <span class="kt">int</span> <span class="n">pauseBetweenNotes</span> <span class="o">=</span> <span class="n">noteDuration</span> <span class="o">*</span> <span class="mi">1</span><span class="p">.</span><span class="mi">30</span><span class="p">;</span>
+       <span class="n">delay</span><span class="p">(</span><span class="n">pauseBetweenNotes</span><span class="p">);</span>
+
+       <span class="c1">// stop the tone playing:</span>
+       <span class="n">buzz</span><span class="p">(</span><span class="n">melodyPin</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span><span class="n">noteDuration</span><span class="p">);</span>
+
+    <span class="p">}</span>
+
+   <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+
+     <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">" 'Mario Theme'"</span><span class="p">);</span>
+     <span class="kt">int</span> <span class="n">size</span> <span class="o">=</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">melody</span><span class="p">)</span> <span class="o">/</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">);</span>
+     <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">thisNote</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">thisNote</span> <span class="o">&lt;</span> <span class="n">size</span><span class="p">;</span> <span class="n">thisNote</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+
+       <span class="c1">// to calculate the note duration, take one second</span>
+       <span class="c1">// divided by the note type.</span>
+       <span class="c1">//e.g. quarter note = 1000 / 4, eighth note = 1000/8, etc.</span>
+       <span class="kt">int</span> <span class="n">noteDuration</span> <span class="o">=</span> <span class="mi">1000</span><span class="o">/</span><span class="n">tempo</span><span class="p">[</span><span class="n">thisNote</span><span class="p">];</span>
+
+       <span class="n">buzz</span><span class="p">(</span><span class="n">melodyPin</span><span class="p">,</span> <span class="n">melody</span><span class="p">[</span><span class="n">thisNote</span><span class="p">],</span><span class="n">noteDuration</span><span class="p">);</span>
+
+       <span class="c1">// to distinguish the notes, set a minimum time between them.</span>
+       <span class="c1">// the note's duration + 30% seems to work well:</span>
+       <span class="kt">int</span> <span class="n">pauseBetweenNotes</span> <span class="o">=</span> <span class="n">noteDuration</span> <span class="o">*</span> <span class="mi">1</span><span class="p">.</span><span class="mi">30</span><span class="p">;</span>
+       <span class="n">delay</span><span class="p">(</span><span class="n">pauseBetweenNotes</span><span class="p">);</span>
+
+       <span class="c1">// stop the tone playing:</span>
+       <span class="n">buzz</span><span class="p">(</span><span class="n">melodyPin</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span><span class="n">noteDuration</span><span class="p">);</span>
+
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">buzz</span><span class="p">(</span><span class="kt">int</span> <span class="n">targetPin</span><span class="p">,</span> <span class="kt">long</span> <span class="n">frequency</span><span class="p">,</span> <span class="kt">long</span> <span class="n">length</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">digitalWrite</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="n">HIGH</span><span class="p">);</span>
+  <span class="kt">long</span> <span class="n">delayValue</span> <span class="o">=</span> <span class="mi">1000000</span><span class="o">/</span><span class="n">frequency</span><span class="o">/</span><span class="mi">2</span><span class="p">;</span> <span class="c1">// calculate the delay value between transitions</span>
+  <span class="c1">//// 1 second's worth of microseconds, divided by the frequency, then split in half since</span>
+  <span class="c1">//// there are two phases to each cycle</span>
+  <span class="kt">long</span> <span class="n">numCycles</span> <span class="o">=</span> <span class="n">frequency</span> <span class="o">*</span> <span class="n">length</span><span class="o">/</span> <span class="mi">1000</span><span class="p">;</span> <span class="c1">// calculate the number of cycles for proper timing</span>
+  <span class="c1">//// multiply frequency, which is really cycles per second, by the number of seconds to </span>
+  <span class="c1">//// get the total number of cycles to produce</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kt">long</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">numCycles</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span> <span class="c1">// for the calculated length of time...</span>
+    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">targetPin</span><span class="p">,</span><span class="n">HIGH</span><span class="p">);</span> <span class="c1">// write the buzzer pin high to push out the diaphram</span>
+    <span class="n">delayMicroseconds</span><span class="p">(</span><span class="n">delayValue</span><span class="p">);</span> <span class="c1">// wait for the calculated delay value</span>
+    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">targetPin</span><span class="p">,</span><span class="n">LOW</span><span class="p">);</span> <span class="c1">// write the buzzer pin low to pull back the diaphram</span>
+    <span class="n">delayMicroseconds</span><span class="p">(</span><span class="n">delayValue</span><span class="p">);</span> <span class="c1">// wait again or the calculated delay value</span>
+  <span class="p">}</span>
+  <span class="n">digitalWrite</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="n">LOW</span><span class="p">);</span>
+
+<span class="p">}</span></code></pre></figure>
+
+</article>
+
+<div class="my-8 ">
+    <h2 class="text-2xl mb-2">Comments</h2>
+
+    <script data-isso="https://comments.falsetrue.io/"
+            src="https://comments.falsetrue.io/js/embed.min.js"></script>
+
+    <section id="isso-thread">
+        <noscript>Javascript needs to be activated to view comments.</noscript>
+    </section>
+
+</div>
+
+    </main>
+
+    <!-- <footer class="mt-8">
+     Contact me at <a href="mailto:public@falsetrue.io">public@falsetrue.io</a>
+     </footer>
+-->
+<footer class="text-xs mt-8 px-8">
+    <div class="">
+        <div>
+            Dmitry Ro © 2003 - 2024<br>
+            Копирование и распрастранение страницы разрешено только в оригинальном не изменном виде, включая это сообщение.
+            Verbatim copying and redistribution of this entire page are permitted provided this notice is preserved.
+            Verbatim copying and redistribution of any of the photos in the photos subdirectory is permitted under the <a href="http://creativecommons.org/licenses/by-nd/3.0/" rel="nofollow"> Creative Commons Noderivs license version 3.0</a> or later.
+            <div><a href="/pgp.key.txt" rel="pgpkey authn">PGP Key</a></div>
+        </div>
+        <div class="flex mx-auto my-3 items-center justify-center gap-1">
+            <div><a href="https://webmentions.io" target="_blank" class="inline"><img src="/images/webmention.png" alt="Webmentions"></a></div>
+            <div><a href="https://indieweb.org" target="_blank"><img src="/images/indieweb.png" alt="indieweb"></a></div>
+            <div><a href="https://microformats.org" target="_blank"><img src="/images/microformats.png" alt="microformats"></a></div>
+            <div><a href="https://creativecommons.org/licenses/by/3.0/" target="_blank"><img src="/images/cc-commons.png" alt="cc-commons"></a></div>
+            <div><img src="/images/w3c-valid-html.png" alt="valid w3c"></div>
+        </div>
+        <div class="mt-1">
+            <a href="https://xn--sr8hvo.ws/previous">←</a>
+            An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
+            <a href="https://xn--sr8hvo.ws/next">→</a>
+        </div>
+    </div>
+</footer>
+
+  </body>
+</html>

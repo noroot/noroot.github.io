@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Установока linux на Palm LD(Life Drive) | FalseTrue</title>
+
+<!-- Begin Bridgetown SEO tag v6.0.0 -->
+<title>Установока linux на Palm LD(Life Drive) | FalseTrue</title>
+<meta property="og:title" content="Установока linux на Palm LD(Life Drive)" />
+<meta property="og:locale" content="ru" />
+<meta name="description" content="Scripts of cyberdaemon" />
+<meta property="og:description" content="Scripts of cyberdaemon" />
+<link rel="canonical" href="https://falsetrue.io/howto/2006/06/13/install-linux-on-palm-lifedrive/" />
+<meta property="og:url" content="https://falsetrue.io/howto/2006/06/13/install-linux-on-palm-lifedrive/" />
+<meta property="og:site_name" content="FalseTrue" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2006-06-13T16:36:00+05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Установока linux на Palm LD(Life Drive)" />
+<!-- End Bridgetown SEO tag -->
+
+
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/_bridgetown/static/index.LHQE3ZKU.css" />
+<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+<script src="/_bridgetown/static/index.42K5JGTD.js" defer></script>
+
+<link type="application/atom+xml" rel="alternate" href="https://falsetrue.io/feed.xml" title="FalseTrue" />
+
+  </head>
+  <body class="post ">
+    <!-- <header>
+     <img src="/images/logo.svg" alt="Logo" />
+     </header>
+-->
+<nav class="nav bg-black py-2">
+  <ul>
+    <li><a href="/"><span class="text-green-400">False!</span><span class="text-cyan-300">True</span></a></li>
+    <li><a href="/">Home</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/feed">Feed</a></li>
+    <li><a href="/archive">Archive</a></li>
+    <li><a href="/bookshelf">Bookshelf</a></li>
+    <li><a href="/photography">Photography</a></li>
+    <li><a href="/halloffame">Hall of fame</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/feed.xml"><i class="fa fa-rss text-[orange]"></i>&nbsp;RSS</a></li>
+  </ul>
+</nav>
+
+
+    <main>
+      <article class="prose prose-slate prose-pre:bg-gray-100 prose-pre:text-gray-500 max-w-full">
+    <span>13 Jun 2006</span>
+    <div class="mb-8">
+        <h1>Установока linux на Palm LD(Life Drive)</h1>
+        <div class="category-block">
+            <span>Category</span>
+            
+                <a href="/categories/howto" class="badge-category">howto</a>
+            
+        </div>
+        <div class="tags-block mt-8">
+            <span>Tags</span>
+            
+                <a href="/tags/linux" class="badge-tag">#linux</a>
+            
+                <a href="/tags/hack" class="badge-tag">#hack</a>
+            
+                <a href="/tags/palm" class="badge-tag">#palm</a>
+            
+                <a href="/tags/legacy" class="badge-tag">#legacy</a>
+            
+        </div>
+    </div>
+    <h2 id="необходимые-файлы">Необходимые файлы</h2>
+
+<p>Загрузчик <a href="http://web.archive.org/web/20080915045039/http://git.hackndev.com/releases/20061002-insomnia/cocoboot/cocoboot.prc">CocoBoot</a></p>
+
+<p><a href="http://web.archive.org/web/20080915045039/http://git.hackndev.com/releases/20061002-insomnia/palmld-familiar/opie-image-v0.8.4-palmld.rootfs.ext2.gz">Образ rootfs с OPIE</a></p>
+
+<h3 id="замечание">Замечание</h3>
+<p>
+На выбор предлагается ещё GPE - будет медленно работать на LifeDrive и устройствами с небольшой помятью, а также просто загружаемая система без оболочки
+</p>
+
+<p><a href="http://web.archive.org/web/20080915045039/http://git.hackndev.com/releases/20061002-insomnia/swap.gz">Swap file</a></p>
+<p>
+Важно
+Чтобы не качать пустой swap файл размером 90 мегобайт, почему бы не сделать его самомy
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># dd if=/dev/zero of=swap bs=1k count=96k</span>
+<span class="c"># mkswap swap</span></code></pre></figure>
+</p>
+
+<h3 id="конфиг-ядра">Конфиг ядра</h3>
+
+<p>
+Там две строчки:
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">SWAP_DEV</span><span class="o">=</span><span class="nv">$FILES_MNT</span>/swap
+<span class="nv">ROOT_DEV</span><span class="o">=</span><span class="nv">$FILES_MNT</span>/opie-image-v0.8.4-palmld.rootfs.ext2</code></pre></figure>
+
+Расположение swap файла и rootfs соответсвенно, от корневой директории.
+</p>
+
+<h2 id="процесс-установки">Процесс установки</h2>
+<p>1)Включаем на Palm’e Drive Mode, и монтируем диск,</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># mount /dev/sda1 /mnt/palm</span></code></pre></figure>
+
+<p>Копируем файлы swap, linux.boot.cfg, и opie-image-v0.8.4-palmld.rootfs.ext2 в корень palm диска, демонтируем
+устройство и запускаем CocoBoot на palm’e.
+Жмём естественно Boot.</p>
+
+<p><img src="/images/palm/toaol.png" alt="" /></p>
+
+<p>Получаем следущую картину:
+<br />
+<img src="/images/palm/raVLm.png" alt="" /></p>
+
+<p><br />
+Загружается ядро… и далее графическая оболочка OPIE:<br />
+<img src="/images/palm/gbsUB.png" alt="" />
+<br />
+Всё установлено и готово к использованию, на момент написания статьи доступна новая сборка linux для Palm LD</p>
+
+<p><a href="http://builds.hackndev.com/builds/Marex/TP1-20070717.tar.bz2">http://builds.hackndev.com/builds/Marex/TP1-20070717.tar.bz2</a>
+<br />
+<a href="http://opie.handhelds.org/cgi-bin/moin.cgi/News">Подробнее о OPIE http://opie.handhelds.org/cgi-bin/moin.cgi/News</a></p>
+
+<p><br />
+<b>cat /proc/cpuinfo</b><br />
+<img src="/images/palm/luALh.png" alt="" />
+<br />
+<b>Модули ядра</b><br />
+<img src="/images/palm/kQ2FN.png" alt="" /></p>
+
+<p><b>PIM</b><br />
+<img src="/images/palm/ligOW.png" alt="" /></p>
+
+<p><b>Тесты системы</b><br />
+<img src="/images/palm/WlJsE.png" alt="" /></p>
+
+<p><b>Рабочий стол настроек</b><br />
+<img src="/images/palm/483Xp.png" alt="" /></p>
+
+<p><b>OpieMediaPlayer</b><br /> - музыка так и незаиграла
+<br />
+<img src="/images/palm/d0df3.png" alt="" /></p>
+
+<p><b>root shell</b><br />
+<img src="/images/palm/CFmLi.png" alt="" />
+<br /></p>
+
+<h2 id="итоги">Итоги</h2>
+
+<p>
+Итоги видны
+табличке номер один на в начале статьи
+Система работает стабильно - непадает, segfault'ов ненаблюдалось. Собственно есть всё тоже самое что
+и в стандартной PalmOS, единственную проблему которую я вижу это мало софта, во остальном всё готово к
+употреблению.
+</p>
+<p><br /></p>
+
+<p>Ссылки по теме:<br />
+<a href="http://web.archive.org/web/20080915045039/http://www.handhelds.org/moin/moin.cgi/PalmLifeDriveHowTo">Handhelds.org LifeDrive HowTo</a><br />
+<a href="http://web.archive.org/web/20080915045039/http://hackndev.com/node/852">Hackndev Palm Life Drive</a><br />
+<a href="http://web.archive.org/web/20080915045039/http://www.access-company.com/products/linux/alp.html">Access Linux Platform</a><br /></p>
+
+
+</article>
+
+<div class="my-8 ">
+    <h2 class="text-2xl mb-2">Comments</h2>
+
+    <script data-isso="https://comments.falsetrue.io/"
+            src="https://comments.falsetrue.io/js/embed.min.js"></script>
+
+    <section id="isso-thread">
+        <noscript>Javascript needs to be activated to view comments.</noscript>
+    </section>
+
+</div>
+
+    </main>
+
+    <!-- <footer class="mt-8">
+     Contact me at <a href="mailto:public@falsetrue.io">public@falsetrue.io</a>
+     </footer>
+-->
+<footer class="text-xs mt-8 px-8">
+    <div class="">
+        <div>
+            Dmitry Ro © 2003 - 2024<br>
+            Копирование и распрастранение страницы разрешено только в оригинальном не изменном виде, включая это сообщение.
+            Verbatim copying and redistribution of this entire page are permitted provided this notice is preserved.
+            Verbatim copying and redistribution of any of the photos in the photos subdirectory is permitted under the <a href="http://creativecommons.org/licenses/by-nd/3.0/" rel="nofollow"> Creative Commons Noderivs license version 3.0</a> or later.
+            <div><a href="/pgp.key.txt" rel="pgpkey authn">PGP Key</a></div>
+        </div>
+        <div class="flex mx-auto my-3 items-center justify-center gap-1">
+            <div><a href="https://webmentions.io" target="_blank" class="inline"><img src="/images/webmention.png" alt="Webmentions"></a></div>
+            <div><a href="https://indieweb.org" target="_blank"><img src="/images/indieweb.png" alt="indieweb"></a></div>
+            <div><a href="https://microformats.org" target="_blank"><img src="/images/microformats.png" alt="microformats"></a></div>
+            <div><a href="https://creativecommons.org/licenses/by/3.0/" target="_blank"><img src="/images/cc-commons.png" alt="cc-commons"></a></div>
+            <div><img src="/images/w3c-valid-html.png" alt="valid w3c"></div>
+        </div>
+        <div class="mt-1">
+            <a href="https://xn--sr8hvo.ws/previous">←</a>
+            An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
+            <a href="https://xn--sr8hvo.ws/next">→</a>
+        </div>
+    </div>
+</footer>
+
+  </body>
+</html>

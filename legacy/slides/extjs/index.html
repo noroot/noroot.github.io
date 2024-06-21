@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>ExtJS 5 Intro</title>
+    <meta name="description" content="ExtJS 5 introduction">
+    <meta name="author" content="Dmitry Rodichev">
+    
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/solarized.css" id="theme">
+    <link rel="stylesheet" href="css/over.css">
+    
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/solarized_light.css">
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+    
+    <!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+  </head>
+
+  <body>
+    <div class="reveal">
+      
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+	<section>
+	  <h1>ExtJS</h1>
+	  <h3>Rich Javascript framework</h3>
+	  <p>
+	    <small><a href="http://overmind.be">Dmitry
+	    Rodichev</a> / <a href="http://dudes.io">Dudes.io</a> / <a href="http://twitter.com/noroot">@noroot</a></small>
+	  </p></title>
+</section>
+
+	<section>
+
+	  <section data-background="./images/back.jpg" style="color:white;">
+	  <h2 style="color:white;">В недалеком прошлом</h2>
+
+	  Административный интерфейс состоял из обычный таблицы 
+
+	  <pre>
+	    <code class="hljs html" data-trim contenteditable style="font-size: 30px;">
+<table>
+<tbody>
+  <tr>
+    <td> ID </td>
+    <td> Title </td>
+    <td> </td>
+    <td> Edit </td>
+    <td> Delete </td>
+  </tr>
+  </tbody>
+</table>
+
+	    </code>
+	  </pre>
+
+
+	  и ajax запроса, зачастую только на DELETE и
+	  зачастую это даже не REST.
+
+	  (пример внешнего вида ниже.)
+
+	  </section>
+
+
+	  <section style="background-color:white;color:black;">
+	    <h2 style="color:black;">Внешний вид</h2>
+
+	    <table>
+	      <tr>
+		<th># ID </th>
+		<th> Title </th>
+		<th></th>
+		<th></th>
+	      </tr>
+	      <tr>
+		<td>1 </td>
+		<td> My descent title </td>
+		<td> <a href="">Edit</a></td>
+		<td> <a href="">Delete</a></td>
+	      </tr>
+	      <tr>
+		<td>2 </td>
+		<td> Another title </td>
+		<td> <a href="">Edit</a></td>
+		<td> <a href="">Delete</a></td>
+	      </tr>		   
+
+	    </table>
+	    <a href="">< 1</a>
+	    <a href="">2</a>
+	    <a href="">3 ></a>
+	    	    
+	  </section>
+
+	  <section>
+	    <h2>Проблемы ?</h2>
+	    <p>
+	      <ul>
+		<li>Code reuse</li>
+		<li>Javascript</li>
+		<li>Design convention</li>
+	    </p>
+	  </section>
+	  
+	  <section>
+	    <h2>Решения</h2>
+	    <p>
+	      <ul>
+		<li>Ничего не менять</li>
+		<li>Писать свое ?</li>
+		<li><b>Найти готовое</b></li>
+	    </p>
+	  </section>
+	</section>
+
+	<section>
+	  <h2>Задачи которые решает современный front-end</h2>
+
+	  <p>
+	    <ul>
+	      <li> Reusable custom element library </li>
+	      <li> Dynamic layout </li>
+	      <li> Responsive with screens </li>
+	      <li> Localization, RTL </li>
+	      <li> Animantion </li>
+	      <li> Update screen when data changes </li>
+	      <li> Application state, undo/redo navigation </li>
+	      <li> Search / Sort / Filter / Group and validate
+		data</li>
+	      <li> Handle asynchronous calls to the server-side </li>
+	      <li> Call out server-side code </li> 
+	  </p>
+	</section>
+
+	
+	<section>
+	      <section>
+	      <h2>Sencha ExtJS</h2>
+	      <div>
+		<img src="./images/sencha-black.png" style="border:0px;" width="182"/>
+		<img src="http://cdn.sencha.io/img/extjs/logo.png" style="border:0px;" />
+	      </div>
+	      <p>
+	      Sencha Ext JS is the leading standard for business-grade
+	      web application development.
+	      </p>
+	      </section>
+	      <section>
+	      <h2>What the fuck are these?</h2>
+	      <img src="./images/wtf.jpg" />
+	      </section>
+	      <section>
+	      <h2>Extjs background</h2>
+	      <p>
+	      ExtJS 1.0 add-on library which extends YUI Jack Slocum
+	      (Yahoo)
+	      Also support jQuery, Prototype.
+	      ExtJS 1.1 has no 3dparty dependecies 
+	      </p>
+	      <p>
+	      ExtJS 2.0 (2007) first UI framework provide
+	      interface features similar to desktop applications (GUI controls)
+	      </p>
+	      <p>
+	      ExtJS 3.0 (2009) REST support, and Ext.Direct server
+	      side platform
+	      </p>
+	      <p>
+	      ExtJS 4.0 (2011) New class structure + MVC scafolding 
+	      </p>
+	      <p>
+	      <b>ExtJS 5.0 (2014) Touch devices, MVVM, two-way data
+	      binding, responsive layouts and other modern dev features.</b>
+	      </p>
+	      </section>
+	      <section>
+	      <h2>Browser support</h2>
+	      <p>
+	      Ext JS 5 supports modern and legacy browsers including:
+	      Safari 6+, Firefox, IE8+, Chrome, and Opera 12+. On the
+	      mobile platform, Ext JS 5 supports Safari on iOS 6 and
+	      7, Chrome on Android 4.1+, and Windows 8 touch-screen
+	      devices (such as Surface and touch-screen laptops)
+	      running IE10+.
+	      <br>
+	      <img src="./images/browser.png" />
+	      </p>
+	      </section>
+	      <section>
+	      <h2>License</h2>
+	      <ul>
+		<li>GPL v3 or FLOSS <a
+		href="http://www.sencha.com/products/extjs/download/ext-js-5.1.0/3301">
+	      download
+		</a>
+		</li>
+		<li>
+		Commercial Software and OEM <a
+	      href="https://www.sencha.com/store/extjs/"> Sencha Store</a>
+		</li>
+	      </ul>
+	      </section>
+	</section>
+
+
+
+	<!-- Example of nested vertical slides -->
+	<section>
+	  <section>
+	      <h2>Class system</h2>
+	      <p>
+	      <ul>
+		<li>Dot notation (".")</li>
+	      </ul>
+	      </p>
+	      MyApp.utils.Base64  => /MyApp/util/Base64.js
+	  </section>
+	  <section>
+	    <h2>Components</h2>
+	    <p>
+	      <img src="./images/component_heirarchy_5.png" style="border:0px;" />
+	    </p>
+	  </section>
+	  <section>
+	    <h2>Layouts and containers</h2>
+	    <img src="./images/component_architecture.png"
+	    style="border:0px;" />
+	  </section>
+
+
+	  <section>
+	    <h2>Data package</h2>
+	    <img src="./images/data-model.png" style=""/>
+	    <img src="./images/model-breakdown.png" />
+	  </section>
+	  <section>
+	    <h2>Events</h2>
+	    <p>Standard event binding</p>
+	  </section>
+
+	  <section>
+	    <h2>Tablet and touch screens and mobile</h2>
+	    <p>
+	      <a href="http://docs.sencha.com/extjs/5.1/core_concepts/tablet_support.html"
+		 target="_blank">docs</a>
+	      <ul>
+		<li>Cordova</li>
+		<li>PhoneGap</li>
+	      </ul>
+	    </p>
+	  </section>
+
+	  <section>
+	    <h2>Lifecycle</h2>
+	    <p>
+	      <img src="./images/lifecycle.png" />
+	    </p>
+	  </section>
+</section>
+
+
+	<section>
+	  <section>
+	    <h2>New Features extjs 5</h2>
+	    <ul>
+	      <li> 2 way data binding </li>
+	      <li> MVVW Architecture </li>
+	      <li>Routing</li>
+	      <li>Tablet support</li>
+	      <li>Themes (Metro UI, Material design, etc)</li>
+	      <li>Widgets</li>
+	      <li>Responsive layouts</li>
+	    </ul>
+	  </section>
+
+	  <section>
+	    <h2>MVVM</h2>
+	    <p>
+	      <img src="./images/mvvm.png" />
+	    </p>
+	  </section>
+	  
+	  <section>
+	    <h2>2 way data binding</h2>
+	    <p>
+	      <img src="./images/2way.png" />
+	    </p>
+	  </section>
+	</section>
+	
+
+
+<section>
+  <section>
+	  <h2>Hello World</h2>
+	  <pre>
+	    <code class="hljs javascript">
+
+Ext.application({
+    name   : 'MyApp',
+
+    launch : function() {
+
+	Ext.create('Ext.Panel', {
+            renderTo     : Ext.getBody(),
+            width        : 200,
+            height       : 150,
+            bodyPadding  : 5,
+            title        : 'Hello World',
+            html         : 'Hello <b>World</b>...'
+    });
+});
+
+	    </code>
+	  </pre>
+
+	  <a href="http://docs.sencha.com/extjs/5.1/getting_started/welcome_to_extjs.html"> See example </a>
+	</section>
+
+	<section>
+	  <h2>Examples</h2>	  
+	  <a href="http://dev.sencha.com/ext/5.0.1/examples/index.html">See all</a>
+	</section>
+</section>
+
+
+	
+	<section data-background="./images/extjs-back.jpg"
+		 style="color:white;">
+	  <section>
+	    <h2 style="color:white;">Summary</h2>
+	    <p>
+	      <ul>
+		<li>Productivity</li>
+		<li>Scalability</li>
+		<li>Community</li>
+		<li>Compatibility</li>		     
+	      </ul>
+	    </p>
+	  </section>
+
+	  <section>
+	    <h2 style="color:white;">Конкретно</h2>
+	    <p>
+	      <ul>
+		<li>Готовые элементы из коробки</li>
+		<li>Стандарт дефакто в бизнес приложениях и
+		соотвественно соотвественно готовая архитектра и
+		методы разработки, описанные правила и продуманные
+		решения стандартных проблем.</li>
+		<li>Лучшая документация</li>
+	      </ul>
+
+	      <a href="http://www.techferry.com/articles/ExtJS-vs-AngularJS.html#components">ExtJS
+		vs AngularJS </a>
+	      <br>
+	      <a href="http://whatisextjs.com/extjs/extjs-vs-meteor-react">
+		What is ExtJS</a>
+	      <br>
+	      <a href="https://news.ycombinator.com/item?id=7953577">
+	      dream or nightmare (Ycombinator)</a>
+	    </p>
+	  </section>
+	  
+	</section>	
+
+	<section>
+	  <h2>Questions ?</h2>
+	  <p>
+	    <img src="http://www.gravatar.com/avatar/8796fd43a3429bc3893c39e8b3376813?rating=PG&amp;size=218&amp;default="
+		 alt="Dmitry Rodichev">
+	    <br>
+	    Author: Dmitry Rodichev<br>
+	    twitter: <a href="http://twitter.com/noroot">@noroot</a>
+
+	  </p>
+	  <p>
+	    <a href="http://dudes.io">DUDES.IO - dudes driven development</a>
+	  </p>
+	</section>
+
+	<section>
+	  <h2>SPOCK RIP</h2>
+	  <p>
+	    <img src="http://images2.fanpop.com/image/photos/10800000/Mr-Spock-mr-spock-10874060-1036-730.jpg"
+	    />
+	  </p>
+	</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+
+		<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+		ga('create', 'UA-60234191-1', 'auto');
+		ga('send', 'pageview');
+
+		</script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Life simulation | FalseTrue</title>
+
+<!-- Begin Bridgetown SEO tag v6.0.0 -->
+<title>Life simulation | FalseTrue</title>
+<meta property="og:title" content="Life simulation" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="Life simulation" />
+<meta property="og:description" content="Life simulation" />
+<link rel="canonical" href="https://falsetrue.io/howto/2023/06/04/life-simulation/" />
+<meta property="og:url" content="https://falsetrue.io/howto/2023/06/04/life-simulation/" />
+<meta property="og:site_name" content="FalseTrue" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-06-04T12:00:00+04:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Life simulation" />
+<!-- End Bridgetown SEO tag -->
+
+
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/_bridgetown/static/index.LHQE3ZKU.css" />
+<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+<script src="/_bridgetown/static/index.42K5JGTD.js" defer></script>
+
+<link type="application/atom+xml" rel="alternate" href="https://falsetrue.io/feed.xml" title="FalseTrue" />
+
+  </head>
+  <body class="post ">
+    <!-- <header>
+     <img src="/images/logo.svg" alt="Logo" />
+     </header>
+-->
+<nav class="nav bg-black py-2">
+  <ul>
+    <li><a href="/"><span class="text-green-400">False!</span><span class="text-cyan-300">True</span></a></li>
+    <li><a href="/">Home</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/feed">Feed</a></li>
+    <li><a href="/archive">Archive</a></li>
+    <li><a href="/bookshelf">Bookshelf</a></li>
+    <li><a href="/photography">Photography</a></li>
+    <li><a href="/halloffame">Hall of fame</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/feed.xml"><i class="fa fa-rss text-[orange]"></i>&nbsp;RSS</a></li>
+  </ul>
+</nav>
+
+
+    <main>
+      <article class="prose prose-slate prose-pre:bg-gray-100 prose-pre:text-gray-500 max-w-full">
+    <span>04 Jun 2023</span>
+    <div class="mb-8">
+        <h1>Life simulation</h1>
+        <div class="category-block">
+            <span>Category</span>
+            
+                <a href="/categories/howto" class="badge-category">howto</a>
+            
+        </div>
+        <div class="tags-block mt-8">
+            <span>Tags</span>
+            
+                <a href="/tags/javascript" class="badge-tag">#javascript</a>
+            
+                <a href="/tags/algorithms" class="badge-tag">#algorithms</a>
+            
+        </div>
+    </div>
+    <p>How to make a little life simulation in javascript in browser, found easy to learn repo with various life patterns by <a href="https://github.com/hunar4321/particle-life">@brainxyz</a></p>
+
+<p>This kind of code is ideal for education of javascript canvas using, its easy to understands and works in browser.</p>
+
+<p>I’ve modified code a little, and achieve some stability with virus like structures which consume other particles.</p>
+
+<p>Here is a gist for that code: <a href="https://gist.github.com/noroot/a3a5d4ae2d367530c8d5a0c13ca2ee75">https://gist.github.com/noroot/a3a5d4ae2d367530c8d5a0c13ca2ee75</a></p>
+
+<p>How it works:</p>
+
+<ul>
+  <li>There is a js canvas where all drawing is happening</li>
+  <li>There is an atom entity which is structure of position(x,y), velocity(x,y), color</li>
+  <li>Threr is a <strong>rule</strong> function which defines relations between particles</li>
+  <li>There is a configuration object that defines relation between particles using <strong>rule</strong> method</li>
+  <li>There is infinity loop of animation</li>
+  <li>Before animation starts it creates arrays of different types of particles</li>
+</ul>
+
+<p>References:</p>
+
+<ul>
+  <li><a href="https://playgameoflife.com/">https://playgameoflife.com/</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life</a></li>
+  <li><a href="https://github.com/hunar4321/particle-life">https://github.com/hunar4321/particle-life</a></li>
+  <li><a href="https://particles.js.org/">https://particles.js.org/</a></li>
+</ul>
+
+<p>Interactive example in details below</p>
+
+<!-- more -->
+
+<p><button id="reset" class="btn" onclick="pageReload()">Reset</button>
+<button id="stop_btn" onclick="pause()" class="btn">Pause</button>
+<button id="start_btn" onclick="unpause()" class="btn">Resume</button>
+<button id="addrandom_btn" onclick="addRandom()" class="btn">Add Random</button>
+<br />
+<br /></p>
+<canvas id="life" width="750" height="750" style="background-color: black;"></canvas>
+<script>
+ m = document.getElementById("life").getContext("2d");
+ draw = (x, y, c, s) => {
+     m.fillStyle = c;
+     m.fillRect(x, y, s, s);
+ };
+
+function pageReload() {
+     window.location.reload(true);
+ };
+
+ atoms = [];
+ atom = (x, y, c) => {
+     return { x: x, y: y, vx: 0, vy: 0, color: c };
+ };
+ random = () => {
+     return Math.random() * 750 + 50;
+ };
+ create = (number, color) => {
+     group = [];
+     for (let i = 0; i < number; i++) {
+         a = atom(random(), random(), color);
+         group.push(a);
+         atoms.push(group[i]);
+     }
+     return group;
+ };
+ rule = (atoms1, atoms2, g) => {
+     for (let i = 0; i < atoms1.length; i++) {
+         fx = 0;
+         fy = 0;
+         for (let j = 0; j < atoms2.length; j++) {
+             a = atoms1[i];
+             b = atoms2[j];
+             dx = a.x - b.x;
+             dy = a.y - b.y;
+             d = Math.sqrt(dx * dx + dy * dy);
+             if (d > 0 && d < 80) {
+                 F = (g * 1) / d;
+                 fx += F * dx;
+                 fy += F * dy;
+             }
+         }
+         a.vx = (a.vx + fx) * 0.5;
+         a.vy = (a.vy + fy) * 0.5;
+         a.x += a.vx;
+         a.y += a.vy;
+         if (a.x <= 0 || a.x >= 750) { a.vx *= -1; }
+         if (a.y <= 0 || a.y >= 750) { a.vy *= -1; }
+     }
+ };
+
+ reset = () => {
+     m.clearRect(0, 0, 750, 750);
+ };
+
+
+ addRandom = () => {
+     create(300, "purple");
+ };
+
+ yellow = create(300, "yellow");
+ green = create(150, "green");
+ white = create(100, "white");
+ red = create(150, "red");
+ blue = create(250, "blue");
+
+ let matrix = [
+     ["white", "white", 1],
+     ["blue", "blue", -1],
+     ["blue", "red", -0.5],
+     ["blue", "white", -0.4],
+     ["red", "red", -5],
+     ["red", "white", 0.5],
+     ["red", "blue", -0.3],
+     ["white", "yellow", 1],
+     ["yellow", "white", 1],
+     ["blue", "yellow", 1],
+     ["yellow", "blue", 1]
+ ];
+
+ var paused = false;
+
+ pause = () => {
+     paused = true;
+ };
+
+
+ unpause = () => {
+     paused = false;
+     requestAnimationFrame(update);
+ };
+
+ update = () => {
+
+     if(paused){return;}
+
+     for (i = 0; i < matrix.length; i++) {
+         c = matrix[i];
+         rule(eval(c[0]), eval(c[1]), c[2]);
+     }
+
+     m.clearRect(0, 0, 750, 750);
+     draw(0, 0, "black", 750);
+     for (i = 0; i < atoms.length; i++) {
+         draw(atoms[i].x, atoms[i].y, atoms[i].color, 5);
+     }
+     requestAnimationFrame(update);
+ };
+ update();
+
+</script>
+
+
+</article>
+
+<div class="my-8 ">
+    <h2 class="text-2xl mb-2">Comments</h2>
+
+    <script data-isso="https://comments.falsetrue.io/"
+            src="https://comments.falsetrue.io/js/embed.min.js"></script>
+
+    <section id="isso-thread">
+        <noscript>Javascript needs to be activated to view comments.</noscript>
+    </section>
+
+</div>
+
+    </main>
+
+    <!-- <footer class="mt-8">
+     Contact me at <a href="mailto:public@falsetrue.io">public@falsetrue.io</a>
+     </footer>
+-->
+<footer class="text-xs mt-8 px-8">
+    <div class="">
+        <div>
+            Dmitry Ro © 2003 - 2024<br>
+            Копирование и распрастранение страницы разрешено только в оригинальном не изменном виде, включая это сообщение.
+            Verbatim copying and redistribution of this entire page are permitted provided this notice is preserved.
+            Verbatim copying and redistribution of any of the photos in the photos subdirectory is permitted under the <a href="http://creativecommons.org/licenses/by-nd/3.0/" rel="nofollow"> Creative Commons Noderivs license version 3.0</a> or later.
+            <div><a href="/pgp.key.txt" rel="pgpkey authn">PGP Key</a></div>
+        </div>
+        <div class="flex mx-auto my-3 items-center justify-center gap-1">
+            <div><a href="https://webmentions.io" target="_blank" class="inline"><img src="/images/webmention.png" alt="Webmentions"></a></div>
+            <div><a href="https://indieweb.org" target="_blank"><img src="/images/indieweb.png" alt="indieweb"></a></div>
+            <div><a href="https://microformats.org" target="_blank"><img src="/images/microformats.png" alt="microformats"></a></div>
+            <div><a href="https://creativecommons.org/licenses/by/3.0/" target="_blank"><img src="/images/cc-commons.png" alt="cc-commons"></a></div>
+            <div><img src="/images/w3c-valid-html.png" alt="valid w3c"></div>
+        </div>
+        <div class="mt-1">
+            <a href="https://xn--sr8hvo.ws/previous">←</a>
+            An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
+            <a href="https://xn--sr8hvo.ws/next">→</a>
+        </div>
+    </div>
+</footer>
+
+  </body>
+</html>

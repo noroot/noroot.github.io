@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Память о действиях и результате | FalseTrue</title>
+
+<!-- Begin Bridgetown SEO tag v6.0.0 -->
+<title>Память о действиях и результате | FalseTrue</title>
+<meta property="og:title" content="Память о действиях и результате" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Scripts of cyberdaemon" />
+<meta property="og:description" content="Scripts of cyberdaemon" />
+<link rel="canonical" href="https://falsetrue.io/research/2019/04/21/memory-result-chart/" />
+<meta property="og:url" content="https://falsetrue.io/research/2019/04/21/memory-result-chart/" />
+<meta property="og:site_name" content="FalseTrue" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-04-21T09:00:00+04:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Память о действиях и результате" />
+<!-- End Bridgetown SEO tag -->
+
+
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/_bridgetown/static/index.LHQE3ZKU.css" />
+<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+<script src="/_bridgetown/static/index.42K5JGTD.js" defer></script>
+
+<link type="application/atom+xml" rel="alternate" href="https://falsetrue.io/feed.xml" title="FalseTrue" />
+
+  </head>
+  <body class="post ">
+    <!-- <header>
+     <img src="/images/logo.svg" alt="Logo" />
+     </header>
+-->
+<nav class="nav bg-black py-2">
+  <ul>
+    <li><a href="/"><span class="text-green-400">False!</span><span class="text-cyan-300">True</span></a></li>
+    <li><a href="/">Home</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/feed">Feed</a></li>
+    <li><a href="/archive">Archive</a></li>
+    <li><a href="/bookshelf">Bookshelf</a></li>
+    <li><a href="/photography">Photography</a></li>
+    <li><a href="/halloffame">Hall of fame</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/feed.xml"><i class="fa fa-rss text-[orange]"></i>&nbsp;RSS</a></li>
+  </ul>
+</nav>
+
+
+    <main>
+      <article class="prose prose-slate prose-pre:bg-gray-100 prose-pre:text-gray-500 max-w-full">
+    <span>21 Apr 2019</span>
+    <div class="mb-8">
+        <h1>Память о действиях и результате</h1>
+        <div class="category-block">
+            <span>Category</span>
+            
+                <a href="/categories/research" class="badge-category">research</a>
+            
+        </div>
+        <div class="tags-block mt-8">
+            <span>Tags</span>
+            
+                <a href="/tags/report" class="badge-tag">#report</a>
+            
+        </div>
+    </div>
+    <p>График показывает как забывюатся дела которые привели к результату. Почти всегда что-то ценное не появляется сразу, а требует последовательсти дел, которая при определенном успехе приведет к ценному результату, как видно из графика, дела которые были сделаны и которые привели к результату забываеются вплоть до нуля, другими словами вы можете достигнуть желаемого, но к моменту достижения совсем забыть что к ему привело. 
+Простой пример это диета, вы сьели здоровую пищу и сразу результата нет, к тому времени как от диету будет ощутимый результат, вы скорее всего забудете что именно вы ели несколько месяцев назад, и что именно это и последовательность этих дел, привела вас к желаемому ощутимому результату. Из такого временного разрыва между видимым результатом и приложенным усилием, возникает ощущение бесполезности дела, ведь результат не виден сразу, а иногда может быть не видна длительный период. 
+Таким образом если вам кажется что какое-то дело является бесполезным или незначительным, - так как сразу невиден результат, то следует понимать, что результат может быть виден только как совакупный кумулятивный эффект через длительное время, и к этому времени вы скорее всего забудете что конкретно привело к этому результату.</p>
+
+<p><img src="/images/memory-result-chart.png" alt="Memory result chart" /></p>
+
+<p>Под катом код на python для этого графика и ссылки по теме.
+<!-- more --></p>
+
+<p>Ссылки:</p>
+
+<p><a href="https://en.wikipedia.org/wiki/Forgetting_curve">Forgetting_curve</a></p>
+
+<p><a href="https://www.csustan.edu/sites/default/files/groups/Writing%20Program/forgetting_curve.pdf">The Forgetting Curve, Dr.John Wittmann, CSU Stanislaus</a></p>
+
+<p>Код:</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="n">numpy</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="n">matplotlib.pyplot</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">t</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="nf">exp</span><span class="p">(</span><span class="n">t</span><span class="o">**</span><span class="mf">0.4</span><span class="p">)</span>
+
+<span class="n">t</span> <span class="o">=</span> <span class="nf">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">51</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="nf">zeros</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">t</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">xrange</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">t</span><span class="p">)):</span>
+    <span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="nf">f</span><span class="p">(</span><span class="n">t</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+
+<span class="n">y1</span> <span class="o">=</span> <span class="n">y</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="nf">title</span><span class="p">(</span><span class="sh">"</span><span class="s">Life plot</span><span class="sh">"</span><span class="p">)</span>
+<span class="nf">xlabel</span><span class="p">(</span><span class="sh">"</span><span class="s">Time</span><span class="sh">"</span><span class="p">)</span>
+<span class="nf">ylabel</span><span class="p">(</span><span class="sh">"</span><span class="s">Memory</span><span class="sh">"</span><span class="p">)</span>
+<span class="nf">grid</span><span class="p">()</span>
+<span class="nf">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">y1</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="sh">'</span><span class="s">r</span><span class="sh">'</span><span class="p">)</span>
+<span class="nf">annotate</span><span class="p">(</span><span class="sh">"</span><span class="s">Less memory remains about cause of result</span><span class="sh">"</span><span class="p">,</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span><span class="mi">35</span><span class="p">])</span>
+<span class="nf">twinx</span><span class="p">()</span>
+<span class="nf">ylabel</span><span class="p">(</span><span class="sh">"</span><span class="s">Result</span><span class="sh">"</span><span class="p">)</span>
+<span class="nf">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="nf">show</span><span class="p">()</span></code></pre></figure>
+
+
+</article>
+
+<div class="my-8 ">
+    <h2 class="text-2xl mb-2">Comments</h2>
+
+    <script data-isso="https://comments.falsetrue.io/"
+            src="https://comments.falsetrue.io/js/embed.min.js"></script>
+
+    <section id="isso-thread">
+        <noscript>Javascript needs to be activated to view comments.</noscript>
+    </section>
+
+</div>
+
+    </main>
+
+    <!-- <footer class="mt-8">
+     Contact me at <a href="mailto:public@falsetrue.io">public@falsetrue.io</a>
+     </footer>
+-->
+<footer class="text-xs mt-8 px-8">
+    <div class="">
+        <div>
+            Dmitry Ro © 2003 - 2024<br>
+            Копирование и распрастранение страницы разрешено только в оригинальном не изменном виде, включая это сообщение.
+            Verbatim copying and redistribution of this entire page are permitted provided this notice is preserved.
+            Verbatim copying and redistribution of any of the photos in the photos subdirectory is permitted under the <a href="http://creativecommons.org/licenses/by-nd/3.0/" rel="nofollow"> Creative Commons Noderivs license version 3.0</a> or later.
+            <div><a href="/pgp.key.txt" rel="pgpkey authn">PGP Key</a></div>
+        </div>
+        <div class="flex mx-auto my-3 items-center justify-center gap-1">
+            <div><a href="https://webmentions.io" target="_blank" class="inline"><img src="/images/webmention.png" alt="Webmentions"></a></div>
+            <div><a href="https://indieweb.org" target="_blank"><img src="/images/indieweb.png" alt="indieweb"></a></div>
+            <div><a href="https://microformats.org" target="_blank"><img src="/images/microformats.png" alt="microformats"></a></div>
+            <div><a href="https://creativecommons.org/licenses/by/3.0/" target="_blank"><img src="/images/cc-commons.png" alt="cc-commons"></a></div>
+            <div><img src="/images/w3c-valid-html.png" alt="valid w3c"></div>
+        </div>
+        <div class="mt-1">
+            <a href="https://xn--sr8hvo.ws/previous">←</a>
+            An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
+            <a href="https://xn--sr8hvo.ws/next">→</a>
+        </div>
+    </div>
+</footer>
+
+  </body>
+</html>

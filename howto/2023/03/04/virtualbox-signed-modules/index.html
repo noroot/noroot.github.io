@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>How to sign VirtualBox kernel modules when you&#39;re on secure boot | FalseTrue</title>
+
+<!-- Begin Bridgetown SEO tag v6.0.0 -->
+<title>How to sign VirtualBox kernel modules when you’re on secure boot | FalseTrue</title>
+<meta property="og:title" content="How to sign VirtualBox kernel modules when you’re on secure boot" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Scripts of cyberdaemon" />
+<meta property="og:description" content="Scripts of cyberdaemon" />
+<link rel="canonical" href="https://falsetrue.io/howto/2023/03/04/virtualbox-signed-modules/" />
+<meta property="og:url" content="https://falsetrue.io/howto/2023/03/04/virtualbox-signed-modules/" />
+<meta property="og:site_name" content="FalseTrue" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-03-04T04:00:00+04:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="How to sign VirtualBox kernel modules when you’re on secure boot" />
+<!-- End Bridgetown SEO tag -->
+
+
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/_bridgetown/static/index.LHQE3ZKU.css" />
+<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+<script src="/_bridgetown/static/index.42K5JGTD.js" defer></script>
+
+<link type="application/atom+xml" rel="alternate" href="https://falsetrue.io/feed.xml" title="FalseTrue" />
+
+  </head>
+  <body class="post ">
+    <!-- <header>
+     <img src="/images/logo.svg" alt="Logo" />
+     </header>
+-->
+<nav class="nav bg-black py-2">
+  <ul>
+    <li><a href="/"><span class="text-green-400">False!</span><span class="text-cyan-300">True</span></a></li>
+    <li><a href="/">Home</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/feed">Feed</a></li>
+    <li><a href="/archive">Archive</a></li>
+    <li><a href="/bookshelf">Bookshelf</a></li>
+    <li><a href="/photography">Photography</a></li>
+    <li><a href="/halloffame">Hall of fame</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/feed.xml"><i class="fa fa-rss text-[orange]"></i>&nbsp;RSS</a></li>
+  </ul>
+</nav>
+
+
+    <main>
+      <article class="prose prose-slate prose-pre:bg-gray-100 prose-pre:text-gray-500 max-w-full">
+    <span>04 Mar 2023</span>
+    <div class="mb-8">
+        <h1>How to sign VirtualBox kernel modules when you're on secure boot</h1>
+        <div class="category-block">
+            <span>Category</span>
+            
+                <a href="/categories/howto" class="badge-category">howto</a>
+            
+        </div>
+        <div class="tags-block mt-8">
+            <span>Tags</span>
+            
+                <a href="/tags/linux" class="badge-tag">#linux</a>
+            
+                <a href="/tags/vm" class="badge-tag">#vm</a>
+            
+                <a href="/tags/virtualbox" class="badge-tag">#virtualbox</a>
+            
+                <a href="/tags/kernel" class="badge-tag">#kernel</a>
+            
+        </div>
+    </div>
+    <p>When you’re installing VirtualBox on a system with Secure Boot enabled, the installation process requires kernel modules to be loaded that are not signed by the system’s Secure Boot key. In this situation, you have two options:</p>
+
+<ol>
+  <li>
+    <p>Disable Secure Boot in BIOS: This option involves going into the system’s BIOS settings and disabling Secure Boot. This will allow the installation process to proceed without any further intervention.</p>
+  </li>
+  <li>
+    <p>Sign the kernel modules: If you prefer to keep Secure Boot enabled, you can sign the required kernel modules with a key that is trusted by the system’s Secure Boot infrastructure. This involves generating a new key pair, importing the public key into the system’s key store, and using the private key to sign the kernel modules.</p>
+  </li>
+</ol>
+
+<p>Create new key and enroll it with MOK</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo mkdir -p /var/lib/shim-signed/mok
+sudo openssl req -nodes -new -x509 -newkey rsa:2048 -outform DER -addext "extendedKeyUsage=codeSigning" -keyout /var/lib/shim-signed/mok/MOK.priv -out /var/lib/shim-signed/mok/MOK.der
+sudo mokutil --import /var/lib/shim-signed/mok/MOK.der
+sudo reboot
+</code></pre></div></div>
+
+<p>Sign modules with new Key</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash </span>
+<span class="k">for </span>modfile <span class="k">in</span> <span class="si">$(</span><span class="nb">dirname</span> <span class="si">$(</span>modinfo <span class="nt">-n</span> vboxdrv<span class="si">))</span>/<span class="k">*</span>.ko.xz<span class="p">;</span> <span class="k">do
+     </span><span class="nb">echo</span> <span class="s2">"Signing </span><span class="nv">$modfile</span><span class="s2">"</span>
+     /usr/src/kernels/<span class="si">$(</span><span class="nb">uname</span> <span class="nt">-r</span><span class="si">)</span>/scripts/sign-file sha256 <span class="se">\</span>
+             /root/signed-modules/MOK.priv <span class="se">\</span>
+             /root/signed-modules/MOK.der <span class="s2">"</span><span class="nv">$modfile</span><span class="s2">"</span>
+<span class="k">done</span>
+</code></pre></div></div>
+
+<p>The steps you’ve outlined above describe how to perform the second option. The script you’ve provided will sign all the VirtualBox kernel modules that are present on the system. Once the modules have been signed, they will be allowed to load by the system’s Secure Boot infrastructure.</p>
+
+<p>It’s worth noting that signing kernel modules is a security-sensitive operation, and you should take appropriate precautions to protect the key material. Also, the exact steps for signing kernel modules may vary depending on the distribution and version of Linux you’re using.</p>
+
+<p>Done.</p>
+
+</article>
+
+<div class="my-8 ">
+    <h2 class="text-2xl mb-2">Comments</h2>
+
+    <script data-isso="https://comments.falsetrue.io/"
+            src="https://comments.falsetrue.io/js/embed.min.js"></script>
+
+    <section id="isso-thread">
+        <noscript>Javascript needs to be activated to view comments.</noscript>
+    </section>
+
+</div>
+
+    </main>
+
+    <!-- <footer class="mt-8">
+     Contact me at <a href="mailto:public@falsetrue.io">public@falsetrue.io</a>
+     </footer>
+-->
+<footer class="text-xs mt-8 px-8">
+    <div class="">
+        <div>
+            Dmitry Ro © 2003 - 2024<br>
+            Копирование и распрастранение страницы разрешено только в оригинальном не изменном виде, включая это сообщение.
+            Verbatim copying and redistribution of this entire page are permitted provided this notice is preserved.
+            Verbatim copying and redistribution of any of the photos in the photos subdirectory is permitted under the <a href="http://creativecommons.org/licenses/by-nd/3.0/" rel="nofollow"> Creative Commons Noderivs license version 3.0</a> or later.
+            <div><a href="/pgp.key.txt" rel="pgpkey authn">PGP Key</a></div>
+        </div>
+        <div class="flex mx-auto my-3 items-center justify-center gap-1">
+            <div><a href="https://webmentions.io" target="_blank" class="inline"><img src="/images/webmention.png" alt="Webmentions"></a></div>
+            <div><a href="https://indieweb.org" target="_blank"><img src="/images/indieweb.png" alt="indieweb"></a></div>
+            <div><a href="https://microformats.org" target="_blank"><img src="/images/microformats.png" alt="microformats"></a></div>
+            <div><a href="https://creativecommons.org/licenses/by/3.0/" target="_blank"><img src="/images/cc-commons.png" alt="cc-commons"></a></div>
+            <div><img src="/images/w3c-valid-html.png" alt="valid w3c"></div>
+        </div>
+        <div class="mt-1">
+            <a href="https://xn--sr8hvo.ws/previous">←</a>
+            An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
+            <a href="https://xn--sr8hvo.ws/next">→</a>
+        </div>
+    </div>
+</footer>
+
+  </body>
+</html>

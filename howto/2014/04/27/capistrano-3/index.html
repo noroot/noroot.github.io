@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Capistrano 3 &amp; Rails 4 | FalseTrue</title>
+
+<!-- Begin Bridgetown SEO tag v6.0.0 -->
+<title>Capistrano 3 &amp; Rails 4 | FalseTrue</title>
+<meta property="og:title" content="Capistrano 3 &amp; Rails 4" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="Scripts of cyberdaemon" />
+<meta property="og:description" content="Scripts of cyberdaemon" />
+<link rel="canonical" href="https://falsetrue.io/howto/2014/04/27/capistrano-3/" />
+<meta property="og:url" content="https://falsetrue.io/howto/2014/04/27/capistrano-3/" />
+<meta property="og:site_name" content="FalseTrue" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2014-04-27T22:55:00+04:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Capistrano 3 &amp; Rails 4" />
+<!-- End Bridgetown SEO tag -->
+
+
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/_bridgetown/static/index.LHQE3ZKU.css" />
+<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+<script src="/_bridgetown/static/index.42K5JGTD.js" defer></script>
+
+<link type="application/atom+xml" rel="alternate" href="https://falsetrue.io/feed.xml" title="FalseTrue" />
+
+  </head>
+  <body class="post ">
+    <!-- <header>
+     <img src="/images/logo.svg" alt="Logo" />
+     </header>
+-->
+<nav class="nav bg-black py-2">
+  <ul>
+    <li><a href="/"><span class="text-green-400">False!</span><span class="text-cyan-300">True</span></a></li>
+    <li><a href="/">Home</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/feed">Feed</a></li>
+    <li><a href="/archive">Archive</a></li>
+    <li><a href="/bookshelf">Bookshelf</a></li>
+    <li><a href="/photography">Photography</a></li>
+    <li><a href="/halloffame">Hall of fame</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/feed.xml"><i class="fa fa-rss text-[orange]"></i>&nbsp;RSS</a></li>
+  </ul>
+</nav>
+
+
+    <main>
+      <article class="prose prose-slate prose-pre:bg-gray-100 prose-pre:text-gray-500 max-w-full">
+    <span>27 Apr 2014</span>
+    <div class="mb-8">
+        <h1>Capistrano 3 & Rails 4</h1>
+        <div class="category-block">
+            <span>Category</span>
+            
+                <a href="/categories/howto" class="badge-category">howto</a>
+            
+        </div>
+        <div class="tags-block mt-8">
+            <span>Tags</span>
+            
+                <a href="/tags/dev" class="badge-tag">#dev</a>
+            
+                <a href="/tags/ruby" class="badge-tag">#ruby</a>
+            
+        </div>
+    </div>
+    <p>Hello, today i am tell you about <a href="http://capistranorb.com/" rel="nofollow" target="_blank">Capistrano 3</a> and Rails 4 setup.
+ For those who never heard about Capistrano, this is deployment library which can be scripted on ruby, in any ways.</p>
+
+<p>First of all Gemfile:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">gem</span> <span class="s1">'unicorn'</span>
+
+<span class="n">gem</span> <span class="s1">'capistrano'</span>
+<span class="n">gem</span> <span class="s1">'capistrano-rvm'</span>
+<span class="n">gem</span> <span class="s1">'capistrano-bundler'</span>
+<span class="n">gem</span> <span class="s1">'capistrano-rails'</span></code></pre></figure>
+
+<p>After that add into Capfile some require string to previous install gems:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="nb">require</span> <span class="s1">'capistrano/rvm'</span>
+<span class="nb">require</span> <span class="s1">'capistrano/bundler'</span>
+<span class="nb">require</span> <span class="s1">'capistrano/rails'</span></code></pre></figure>
+
+<p>Next to deploy.rb:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">set</span> <span class="ss">:application</span> <span class="s2">"your_app_name"</span>
+<span class="n">set</span> <span class="ss">:repo_url</span> <span class="s2">"your repository url"</span>
+<span class="n">set</span> <span class="ss">:branch</span> </code></pre></figure>
+
+<p>Also you need to edit <b>deploy/production.rb</b> to setup production server hostname . Read full article to understain the key problem and solution for it …</p>
+
+<!-- more -->
+
+<p>Some rude code for task to unicorn managemnt in <b>deploy.rb</b>:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"> <span class="n">desc</span> <span class="s1">'Start application'</span>
+  <span class="n">task</span> <span class="ss">:start</span> <span class="k">do</span>
+    <span class="n">on</span> <span class="n">roles</span><span class="p">(</span><span class="ss">:app</span><span class="p">),</span> <span class="ss">in: :sequence</span><span class="p">,</span> <span class="ss">wait: </span><span class="mi">5</span> <span class="k">do</span>
+      <span class="n">within</span> <span class="n">release_path</span> <span class="k">do</span> 
+        <span class="n">execute</span> <span class="ss">:bundle</span><span class="p">,</span> <span class="s2">"exec unicorn_rails -p 8801 -E production -D"</span>
+      <span class="k">end</span> 
+    <span class="k">end</span> 
+  <span class="k">end</span>
+
+  <span class="n">desc</span> <span class="s1">'Stop application'</span>
+  <span class="n">task</span> <span class="ss">:stop</span> <span class="k">do</span> 
+    <span class="n">on</span> <span class="n">roles</span><span class="p">(</span><span class="ss">:app</span><span class="p">)</span> <span class="p">,</span> <span class="ss">in: :sequence</span><span class="p">,</span> <span class="ss">wait: </span><span class="mi">5</span> <span class="k">do</span>
+       <span class="n">within</span> <span class="n">release_path</span> <span class="k">do</span>
+         <span class="n">execute</span> <span class="s2">"cd </span><span class="si">#{</span><span class="n">fetch</span><span class="p">(</span><span class="ss">:deploy_to</span><span class="p">)</span><span class="si">}</span><span class="s2">/current &amp;&amp; cat tmp/pids/unicorn.pid | xargs kill "</span>
+       <span class="k">end</span>
+    <span class="k">end</span>
+  <span class="k">end</span></code></pre></figure>
+
+<p>After that you probably think that everything should go nice and smooth, but something goes painfull…</p>
+
+<p>After trying to <em>make cap production deploy:start</em> your likely get message that says you don’t set <strong>SECRET_KEY_BASE</strong> into environment variable. And if you add it to .bashrc .bash_profile or .profile files everything goes the same way with message.</p>
+
+<p>After several tests i am explain that <em>SSHKit</em> starts shell with <em>non-interactive</em> and <em>non-login</em> options. That is exaclty the reason why nothing goes load with dotfiles. The thing is that when shell starts with non-interactive and non-login options, no one dotfiles is going to load, and everyting you have is <em>$BASH_ENV</em>.</p>
+
+<p>To more expose this situation you must see this picture:</p>
+
+<p><img src="http://capistranorb.com/images/BashStartupFiles1.png" alt="bash strartup scheme" /></p>
+
+<p>So what should you do next ?</p>
+
+<p><strong>sshd</strong> have a special option for this situation, - <strong>PermitUserEnvironment yes</strong>, you must set it in /etc/ssh/sshd_config</p>
+
+<p>After that you can create ~/.ssh/environment and put into:</p>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">SECRET_KEY_BASE</span><span class="o">=</span>66a2caf0d57e376cae89a297656c1ff68a7d9abac9ee61b13652e97a4983ac00c2cb468e30181ae224e5951609591374f9ba0a31a77ba36c4f6587c2afcafd2f</code></pre></figure>
+
+<p>After that when you run <strong>cap production deploy:start</strong> to strart unicorn server, everything will be fine because SECRET_KEY_BASE will be loaded from ~/.ssh/environment file</p>
+
+<p>Have fun with it.</p>
+
+
+</article>
+
+<div class="my-8 ">
+    <h2 class="text-2xl mb-2">Comments</h2>
+
+    <script data-isso="https://comments.falsetrue.io/"
+            src="https://comments.falsetrue.io/js/embed.min.js"></script>
+
+    <section id="isso-thread">
+        <noscript>Javascript needs to be activated to view comments.</noscript>
+    </section>
+
+</div>
+
+    </main>
+
+    <!-- <footer class="mt-8">
+     Contact me at <a href="mailto:public@falsetrue.io">public@falsetrue.io</a>
+     </footer>
+-->
+<footer class="text-xs mt-8 px-8">
+    <div class="">
+        <div>
+            Dmitry Ro © 2003 - 2024<br>
+            Копирование и распрастранение страницы разрешено только в оригинальном не изменном виде, включая это сообщение.
+            Verbatim copying and redistribution of this entire page are permitted provided this notice is preserved.
+            Verbatim copying and redistribution of any of the photos in the photos subdirectory is permitted under the <a href="http://creativecommons.org/licenses/by-nd/3.0/" rel="nofollow"> Creative Commons Noderivs license version 3.0</a> or later.
+            <div><a href="/pgp.key.txt" rel="pgpkey authn">PGP Key</a></div>
+        </div>
+        <div class="flex mx-auto my-3 items-center justify-center gap-1">
+            <div><a href="https://webmentions.io" target="_blank" class="inline"><img src="/images/webmention.png" alt="Webmentions"></a></div>
+            <div><a href="https://indieweb.org" target="_blank"><img src="/images/indieweb.png" alt="indieweb"></a></div>
+            <div><a href="https://microformats.org" target="_blank"><img src="/images/microformats.png" alt="microformats"></a></div>
+            <div><a href="https://creativecommons.org/licenses/by/3.0/" target="_blank"><img src="/images/cc-commons.png" alt="cc-commons"></a></div>
+            <div><img src="/images/w3c-valid-html.png" alt="valid w3c"></div>
+        </div>
+        <div class="mt-1">
+            <a href="https://xn--sr8hvo.ws/previous">←</a>
+            An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
+            <a href="https://xn--sr8hvo.ws/next">→</a>
+        </div>
+    </div>
+</footer>
+
+  </body>
+</html>

@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>LaResume - LaTex resume building framework | FalseTrue</title>
+
+<!-- Begin Bridgetown SEO tag v6.0.0 -->
+<title>LaResume - LaTex resume building framework | FalseTrue</title>
+<meta property="og:title" content="LaResume - LaTex resume building framework" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Scripts of cyberdaemon" />
+<meta property="og:description" content="Scripts of cyberdaemon" />
+<link rel="canonical" href="https://falsetrue.io/laresume/" />
+<meta property="og:url" content="https://falsetrue.io/laresume/" />
+<meta property="og:site_name" content="FalseTrue" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-03-08T19:00:00+04:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="LaResume - LaTex resume building framework" />
+<!-- End Bridgetown SEO tag -->
+
+
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/_bridgetown/static/index.LHQE3ZKU.css" />
+<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+<script src="/_bridgetown/static/index.42K5JGTD.js" defer></script>
+
+<link type="application/atom+xml" rel="alternate" href="https://falsetrue.io/feed.xml" title="FalseTrue" />
+
+  </head>
+  <body class="post ">
+    <!-- <header>
+     <img src="/images/logo.svg" alt="Logo" />
+     </header>
+-->
+<nav class="nav bg-black py-2">
+  <ul>
+    <li><a href="/"><span class="text-green-400">False!</span><span class="text-cyan-300">True</span></a></li>
+    <li><a href="/">Home</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/feed">Feed</a></li>
+    <li><a href="/archive">Archive</a></li>
+    <li><a href="/bookshelf">Bookshelf</a></li>
+    <li><a href="/photography">Photography</a></li>
+    <li><a href="/halloffame">Hall of fame</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/feed.xml"><i class="fa fa-rss text-[orange]"></i>&nbsp;RSS</a></li>
+  </ul>
+</nav>
+
+
+    <main>
+      <article class="prose prose-slate prose-pre:bg-gray-100 prose-pre:text-gray-500 max-w-full">
+    <span>08 Mar 2024</span>
+    <div class="mb-8">
+        <h1>LaResume - LaTex resume building framework</h1>
+        <div class="category-block">
+            <span>Category</span>
+            
+                <a href="/categories/projects" class="badge-category">projects</a>
+            
+        </div>
+        <div class="tags-block mt-8">
+            <span>Tags</span>
+            
+                <a href="/tags/dev," class="badge-tag">#dev,</a>
+            
+                <a href="/tags/latex" class="badge-tag">#latex</a>
+            
+        </div>
+    </div>
+    <p>LaResume is LaTex resume building framework.</p>
+
+<h2 id="features">Features</h2>
+
+<ul>
+  <li>Designed resume template optimized for ATS</li>
+  <li>Generate pdf file</li>
+  <li>Signing resume file with a hash to track resume leaks</li>
+</ul>
+
+<h2 id="setup">Setup</h2>
+<h3 id="install-dependencies">Install dependencies</h3>
+
+<h4 id="linux">Linux</h4>
+<ul>
+  <li>Install pdflatex <code class="highlighter-rouge">apt-get install pdflatex</code></li>
+</ul>
+
+<h4 id="mac">Mac</h4>
+<ul>
+  <li>Install pdflatex with brew <code class="highlighter-rouge">brew cask install mactex</code></li>
+</ul>
+
+<h4 id="windows">Windows</h4>
+
+<p>I don’t know.</p>
+
+<h2 id="usage">Usage</h2>
+
+<h3 id="build">Build</h3>
+<ul>
+  <li>Copy configuration template <code class="highlighter-rouge">cp example.config.tex config.tex</code></li>
+  <li>Edit configuration and set your info <code class="highlighter-rouge">emacs config.tex</code></li>
+  <li><code class="highlighter-rouge">make build</code></li>
+  <li>open <code class="highlighter-rouge">_build/default.pdf</code></li>
+</ul>
+
+<h3 id="configuration">Configuration</h3>
+
+<p>There are 3 files to edit</p>
+<ul>
+  <li><code class="highlighter-rouge">config.tex</code> - configuration strings</li>
+  <li><code class="highlighter-rouge">includes/skill.tex</code> - skills which is dynamically generated depending on role</li>
+  <li><code class="highlighter-rouge">default.tex</code> - Main file with the experiences</li>
+</ul>
+
+<p>Inside <code class="highlighter-rouge">config.tex</code> you will find variables you can change</p>
+
+<div class="language-tex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\def\role</span><span class="p">{</span>ruby<span class="p">}</span> <span class="c">% Role which case switch different skills from includes/skills.tex</span>
+<span class="k">\def\name</span><span class="p">{</span>Dmitry Ro<span class="p">}</span>
+<span class="k">\def\email</span><span class="p">{</span>public [at] falsetrue.io<span class="p">}</span>
+<span class="k">\def\site</span><span class="p">{</span>https://github.com/noroot<span class="p">}</span>
+<span class="k">\def\linkedin</span><span class="p">{</span>https://linkedin.com/in/noroot/<span class="p">}</span>
+<span class="k">\def\telephone</span><span class="p">{</span>+###-###-##-###<span class="p">}</span>
+<span class="k">\def\roletitle</span><span class="p">{</span>Lead software development manager, Lead software developer.<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Inside <code class="highlighter-rouge">includes/skills.tex</code> you’ll find list of skills and keywords which can be conditioned with the role variable, so you can generate different skill set for different role in a more convenient manner.</p>
+
+<p>Inside <code class="highlighter-rouge">default.tex</code> you’ll find main body of resume with professional experiences and other sections.</p>
+
+<h3 id="sign">Sign</h3>
+<p>The signature mechanism involves hashing a keyword you enter and inserting it into the document. This enables tracking back to identify who leaked your resume.</p>
+
+<ul>
+  <li><code class="highlighter-rouge">make sign</code></li>
+  <li>Enter signature string for hash generation</li>
+  <li>Every sign logged into signatures.txt which is added into <code class="highlighter-rouge">.gitignore</code></li>
+</ul>
+
+<h3 id="all">All</h3>
+<ul>
+  <li>Make everthing together <code class="highlighter-rouge">make all</code> with default values</li>
+  <li>Open <strong>_build</strong>* there will be generated pdf file with the resume</li>
+</ul>
+
+<h2 id="example">Example</h2>
+
+<p><img src="/images/laresume/screenshot0.jpeg" class="img img-fluid" />
+<br /><br />
+<img src="/images/laresume/screenshot1.png" class="img img-fluid" /></p>
+
+<h2 id="credits">Credits</h2>
+
+<ul>
+  <li><a href="https://github.com/noroot/laresume">https://github.com/noroot/laresume</a></li>
+  <li><a href="https://catwatchdog.com">https://catwatchdog.com</a></li>
+</ul>
+
+<h2 id="license">License</h2>
+
+<ul>
+  <li>GPLv3</li>
+</ul>
+
+
+</article>
+
+<div class="my-8 ">
+    <h2 class="text-2xl mb-2">Comments</h2>
+
+    <script data-isso="https://comments.falsetrue.io/"
+            src="https://comments.falsetrue.io/js/embed.min.js"></script>
+
+    <section id="isso-thread">
+        <noscript>Javascript needs to be activated to view comments.</noscript>
+    </section>
+
+</div>
+
+    </main>
+
+    <!-- <footer class="mt-8">
+     Contact me at <a href="mailto:public@falsetrue.io">public@falsetrue.io</a>
+     </footer>
+-->
+<footer class="text-xs mt-8 px-8">
+    <div class="">
+        <div>
+            Dmitry Ro © 2003 - 2024<br>
+            Копирование и распрастранение страницы разрешено только в оригинальном не изменном виде, включая это сообщение.
+            Verbatim copying and redistribution of this entire page are permitted provided this notice is preserved.
+            Verbatim copying and redistribution of any of the photos in the photos subdirectory is permitted under the <a href="http://creativecommons.org/licenses/by-nd/3.0/" rel="nofollow"> Creative Commons Noderivs license version 3.0</a> or later.
+            <div><a href="/pgp.key.txt" rel="pgpkey authn">PGP Key</a></div>
+        </div>
+        <div class="flex mx-auto my-3 items-center justify-center gap-1">
+            <div><a href="https://webmentions.io" target="_blank" class="inline"><img src="/images/webmention.png" alt="Webmentions"></a></div>
+            <div><a href="https://indieweb.org" target="_blank"><img src="/images/indieweb.png" alt="indieweb"></a></div>
+            <div><a href="https://microformats.org" target="_blank"><img src="/images/microformats.png" alt="microformats"></a></div>
+            <div><a href="https://creativecommons.org/licenses/by/3.0/" target="_blank"><img src="/images/cc-commons.png" alt="cc-commons"></a></div>
+            <div><img src="/images/w3c-valid-html.png" alt="valid w3c"></div>
+        </div>
+        <div class="mt-1">
+            <a href="https://xn--sr8hvo.ws/previous">←</a>
+            An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
+            <a href="https://xn--sr8hvo.ws/next">→</a>
+        </div>
+    </div>
+</footer>
+
+  </body>
+</html>
