@@ -1,4 +1,59 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://bridgetownrb.com/" version="1.3.4">Bridgetown</generator><link href="https://falsetrue.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://falsetrue.io/" rel="alternate" type="text/html" /><updated>2024-06-21T15:40:53+04:00</updated><id>https://falsetrue.io/feed.xml</id><title type="html">FalseTrue</title><subtitle>Scripts of cyberdaemon</subtitle><entry><title type="html">Baseus H1 headphones reset</title><link href="https://falsetrue.io/howto/2024/05/10/baseus-h1-bug-reset/" rel="alternate" type="text/html" title="Baseus H1 headphones reset" /><published>2024-05-10T22:00:00+04:00</published><updated>2024-05-10T22:00:00+04:00</updated><id>repo://posts.collection/_posts/2024-05-11-baseus-h1-bug-reset.markdown</id><content type="html" xml:base="https://falsetrue.io/howto/2024/05/10/baseus-h1-bug-reset/">&lt;p&gt;If you happen to acquire one of these headphones as a spare (there is no other reason to acquire these poor-quality headphones), you might encounter one of the following problems:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://bridgetownrb.com/" version="1.3.4">Bridgetown</generator><link href="https://falsetrue.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://falsetrue.io/" rel="alternate" type="text/html" /><updated>2024-06-22T22:24:54+04:00</updated><id>https://falsetrue.io/feed.xml</id><title type="html">FalseTrue</title><subtitle>Scripts of cyberdaemon</subtitle><entry><title type="html">Switched from Jekyll to Bridgetown</title><link href="https://falsetrue.io/updates/2024/06/22/switched-to-bridgetown/" rel="alternate" type="text/html" title="Switched from Jekyll to Bridgetown" /><published>2024-06-22T16:00:00+04:00</published><updated>2024-06-22T16:00:00+04:00</updated><id>repo://posts.collection/_posts/2024-06-22-switched-to-bridgetown.markdown</id><content type="html" xml:base="https://falsetrue.io/updates/2024/06/22/switched-to-bridgetown/">&lt;p&gt;Long story short, - I’ve decided to switch from Jekyll to Bridgetown. 
+First of all I have enough with Jekyll, I am using it for about 10 years, and its became stiff to change. 
+Last time I’ve tried to do something new with Jekyll I got struggle with simple tasks, maybe I do something wrongway (highly unlikely) but I have no patience to continue with Jekyll and research too much to solve simple things which can be written from scratch in about hour.&lt;/p&gt;
+
+&lt;p&gt;I’ve started to looking for substituion and came across &lt;strong&gt;Bridgetown.rb&lt;/strong&gt; in about 2 minutes of searching.&lt;/p&gt;
+
+&lt;p&gt;So here it is &lt;a href=&quot;https://bridgetownrb.com&quot;&gt;Bridgetown.rb&lt;/a&gt; - So it is not only static site generator, its feature rich lightweight framework, which allow you to generate your site statically. It uses Puma as sever, Roda as main routing library. It is also utilizes tools like Rake, and it has integrated deployment feature. All of it makes bridgetownrb highly customizable, friendly to programmers solution for “fast and hacky” projects.&lt;/p&gt;
+
+&lt;p&gt;Features:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Template engine (erb, liquid, serbea)&lt;/li&gt;
+  &lt;li&gt;FrontMatter&lt;/li&gt;
+  &lt;li&gt;Layouts&lt;/li&gt;
+  &lt;li&gt;Components&lt;/li&gt;
+  &lt;li&gt;Collections&lt;/li&gt;
+  &lt;li&gt;Categories&lt;/li&gt;
+  &lt;li&gt;Tags&lt;/li&gt;
+  &lt;li&gt;Assets building&lt;/li&gt;
+  &lt;li&gt;Dynamic sites&lt;/li&gt;
+  &lt;li&gt;Static generated sites&lt;/li&gt;
+  &lt;li&gt;Deployment&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;how-to-migrate-from-jekyll&quot;&gt;How to migrate from Jekyll&lt;/h2&gt;
+
+&lt;p&gt;So how to migrate ? &lt;strong&gt;FrontMatter&lt;/strong&gt; is a small YAML snippet with metadata for each post on top of the post. It is the same format as Jekyll, Hugo, and many others. All you need to do is copy all posts into the &lt;strong&gt;_posts&lt;/strong&gt; directory.&lt;/p&gt;
+
+&lt;p&gt;And because of this YAML snippet on top of the post file, Bridgetown generator will understand everthing and generate same structure as I have in Jekyll&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;---
+layout: post
+title: &quot;Switched from Jekyll to Bridgetown&quot;
+categories: howto
+tags: [dev]
+date:   2024-06-22 12:00:00 +0000
+---
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;As you might have noticed earlier, I have a &lt;a href=&quot;/photography/&quot;&gt;photography&lt;/a&gt; gallery on the site, so I have to migrate it from Jekyll too. Previously, I utilized gallery generation code that I wrote (which I may share if you want to). Migrating the gallery to Bridgetown took about an hour to implement using plain Ruby, similar to what I had in Jekyll.&lt;/p&gt;
+
+&lt;p&gt;Bridgetown even have &lt;a href=&quot;https://www.bridgetownrb.com/docs/migrating/jekyll&quot;&gt;more detailed guide to migraion from Jekyll&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;For the comments I am still using &lt;a href=&quot;https://github.com/isso-comments/isso&quot;&gt;isso-comments&lt;/a&gt;. 
+I had &lt;a href=&quot;https://github.com/noroot/jekyll-mail-comments&quot;&gt;jekyll-mail-comments&lt;/a&gt;, but didn’t migrate it yet, will rewrite it for &lt;strong&gt;bridgetownrb&lt;/strong&gt; soon.&lt;/p&gt;
+
+&lt;p&gt;I also love Makefile so I do a little file for working with &lt;code class=&quot;highlighter-rouge&quot;&gt;bridgetown&lt;/code&gt; commands and deployment to gh-pages without github actions as it offers official Bridgetown way of deployment to gh-pages.&lt;/p&gt;
+
+&lt;p&gt;Thats it for now, if you’re interested in details let me know in the comment section below.&lt;/p&gt;
+
+&lt;h3 id=&quot;references&quot;&gt;References&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://bridgetownrb.com&quot;&gt;Bridgetown.rb&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jekyllrb.com/docs/front-matter/&quot;&gt;https://jekyllrb.com/docs/front-matter/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gohugo.io/content-management/front-matter/&quot;&gt;https://gohugo.io/content-management/front-matter/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="dev" /><category term="tools" /></entry><entry><title type="html">Baseus H1 headphones reset</title><link href="https://falsetrue.io/howto/2024/05/10/baseus-h1-bug-reset/" rel="alternate" type="text/html" title="Baseus H1 headphones reset" /><published>2024-05-10T22:00:00+04:00</published><updated>2024-05-10T22:00:00+04:00</updated><id>repo://posts.collection/_posts/2024-05-11-baseus-h1-bug-reset.markdown</id><content type="html" xml:base="https://falsetrue.io/howto/2024/05/10/baseus-h1-bug-reset/">&lt;p&gt;If you happen to acquire one of these headphones as a spare (there is no other reason to acquire these poor-quality headphones), you might encounter one of the following problems:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Only one ear is playing sound.&lt;/li&gt;
@@ -252,57 +307,6 @@ Don’t Let Zombie Zoom Links Drag You Down
 &lt;h1 id=&quot;links&quot;&gt;Links&lt;/h1&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;http://www.asciifacepalm.com/&quot;&gt;ASCII art facepalm&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://falsetrue.substack.com/&quot;&gt;Subscribe on Substack&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="linux" /></entry><entry xml:lang="en"><title type="html">EP9 FalseTrue Digest</title><link href="https://falsetrue.io/newsletter/2023/10/05/ep9/" rel="alternate" type="text/html" title="EP9 FalseTrue Digest" /><published>2023-10-05T00:00:00+04:00</published><updated>2023-10-05T00:00:00+04:00</updated><id>repo://posts.collection/_posts/2023-10-05-ep9.markdown</id><content type="html" xml:base="https://falsetrue.io/newsletter/2023/10/05/ep9/">&lt;p&gt;Welcome to EP-9 of &lt;strong&gt;FalseTrue Digest&lt;/strong&gt;, - newsletter or journal, or maybe even e-zine, but right now let’s stick to the name digest. I’ll write weekly based summaries about software development, programming world and software itself.&lt;/p&gt;
-
-&lt;h1 id=&quot;news&quot;&gt;News&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.reddit.com/r/linux/comments/16v3mhs/richard_stallman_reveals_he_has_cancer_gnu_40/&quot;&gt;Richard Stallman reveals he has cancer&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;He has blood cancer, and he has already cut his beard and hair off. Let’s wish health and freedom to the legend RMS. 🙏🏼&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;A nearly hairless Stallman pulls down his mask briefly to reveal that his beard has gone, too.&lt;/em&gt;
-&lt;img src=&quot;/images/digest/Richard-Stallman-without-hair-and-beard.webp&quot; alt=&quot;Richard Stallman without hair and beard due to cancer treatment&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://world.hey.com/dhh/turbo-8-is-dropping-typescript-70165c01&quot;&gt;DHH Wants to get rid of TypeScript from Turbo 8&lt;/a&gt;
-There is a good PR thread to read &lt;a href=&quot;https://github.com/hotwired/turbo/pull/971&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Fully recognize that TypeScript offers some people some advantages, but to my eyes, the benefits are evident in this PR. The code not only reads much better, it’s also freed of the type wrangling and gymnastics needed to please the TS compiler. // DHH&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://bun.sh/&quot;&gt;Bun is a new JavaScript runtime&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Bun is a new JavaScript runtime written in Zig, a new system language. It’s extremely fast, and beats any other runtime. Despite it existing for years, it only became known in this September.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://signal.org/blog/pqxdh/&quot;&gt;Signals goes quantum cryptography&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Signal said that it goes to Post Quantum Extended Diffie-Hellman (PQXDH).&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://signal.org/docs/specifications/pqxdh/&quot;&gt;Whitepaper on PQXDH&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.schneier.com/blog/archives/2023/09/signal-will-leave-the-uk-rather-than-add-a-backdoor.html&quot;&gt;Also, according to Bruce Schneier, Signal might not agree to put a backdoor and would rather leave the UK&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://kamal-deploy.org/&quot;&gt;Kamal - New deployment system on Ruby from DHH&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;stories&quot;&gt;Stories&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://jameshaydon.github.io/nats-fail/&quot;&gt;UK air traffic control meltdown - an interesting and very detailed article&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=pHIh3dYfoGk&quot;&gt;More about TypeScript drama&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;links&quot;&gt;Links&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://layoffs.fyi/&quot;&gt;Layoffs dataset - data about layoffs, just interesting to know what is happening in the IT industry right now&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://opentf.org/&quot;&gt;Terraform community goes opensource to keep shared effort free.&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://falsetrue.substack.com/&quot;&gt;Subscribe on Substack&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="linux" /></entry></feed>
