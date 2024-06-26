@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://bridgetownrb.com/" version="1.3.4">Bridgetown</generator><link href="https://falsetrue.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://falsetrue.io/" rel="alternate" type="text/html" /><updated>2024-06-23T21:48:45+04:00</updated><id>https://falsetrue.io/feed.xml</id><title type="html">FalseTrue</title><subtitle>Scripts of cyberdaemon</subtitle><entry><title type="html">Humor: Add comma’s to your passwords</title><link href="https://falsetrue.io/share/pic/2024/06/23/csv-breach/" rel="alternate" type="text/html" title="Humor: Add comma&apos;s to your passwords" /><published>2024-06-23T16:00:00+04:00</published><updated>2024-06-23T16:00:00+04:00</updated><id>repo://posts.collection/_posts/2024-06-23-csv-breach.markdown</id><content type="html" xml:base="https://falsetrue.io/share/pic/2024/06/23/csv-breach/">&lt;p&gt;&lt;img src=&quot;/images/posts/csv-breach.jpg&quot; class=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="sec" /><category term="humor" /><category term="meme" /></entry><entry><title type="html">Switched from Jekyll to Bridgetown</title><link href="https://falsetrue.io/updates/2024/06/22/switched-to-bridgetown/" rel="alternate" type="text/html" title="Switched from Jekyll to Bridgetown" /><published>2024-06-22T16:00:00+04:00</published><updated>2024-06-22T16:00:00+04:00</updated><id>repo://posts.collection/_posts/2024-06-22-switched-to-bridgetown.markdown</id><content type="html" xml:base="https://falsetrue.io/updates/2024/06/22/switched-to-bridgetown/">&lt;p&gt;Long story short, - I’ve decided to switch from Jekyll to Bridgetown. 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://bridgetownrb.com/" version="1.3.4">Bridgetown</generator><link href="https://falsetrue.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://falsetrue.io/" rel="alternate" type="text/html" /><updated>2024-06-26T11:49:20+04:00</updated><id>https://falsetrue.io/feed.xml</id><title type="html">FalseTrue</title><subtitle>Scripts of cyberdaemon</subtitle><entry><title type="html">Julian Assange is free</title><link href="https://falsetrue.io/share/news/2024/06/24/assange-is-free/" rel="alternate" type="text/html" title="Julian Assange is free" /><published>2024-06-24T16:00:00+04:00</published><updated>2024-06-24T16:00:00+04:00</updated><id>repo://posts.collection/_posts/2024-06-24-assange-is-free.markdown</id><content type="html" xml:base="https://falsetrue.io/share/news/2024/06/24/assange-is-free/">&lt;h1 id=&quot;julian-assange-is-free&quot;&gt;Julian Assange is free&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/persons/JulianAssange.png&quot; alt=&quot;Julian Assange&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Julian_Assange&quot;&gt;https://en.wikipedia.org/wiki/Julian_Assange&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.theguardian.com/media/live/2024/jun/26/julian-assange-live-news-wikileaks-founder-lands-on-us-island-of-saipan-for-district-court-sentencing&quot;&gt;https://www.theguardian.com/media/live/2024/jun/26/julian-assange-live-news-wikileaks-founder-lands-on-us-island-of-saipan-for-district-court-sentencing&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="person" /><category term="hacker" /><category term="scene" /></entry><entry><title type="html">Humor: Add comma’s to your passwords</title><link href="https://falsetrue.io/share/pic/2024/06/23/csv-breach/" rel="alternate" type="text/html" title="Humor: Add comma&apos;s to your passwords" /><published>2024-06-23T16:00:00+04:00</published><updated>2024-06-23T16:00:00+04:00</updated><id>repo://posts.collection/_posts/2024-06-23-csv-breach.markdown</id><content type="html" xml:base="https://falsetrue.io/share/pic/2024/06/23/csv-breach/">&lt;p&gt;&lt;img src=&quot;/images/posts/csv-breach.jpg&quot; class=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="sec" /><category term="humor" /><category term="meme" /></entry><entry><title type="html">Switched from Jekyll to Bridgetown</title><link href="https://falsetrue.io/updates/2024/06/22/switched-to-bridgetown/" rel="alternate" type="text/html" title="Switched from Jekyll to Bridgetown" /><published>2024-06-22T16:00:00+04:00</published><updated>2024-06-22T16:00:00+04:00</updated><id>repo://posts.collection/_posts/2024-06-22-switched-to-bridgetown.markdown</id><content type="html" xml:base="https://falsetrue.io/updates/2024/06/22/switched-to-bridgetown/">&lt;p&gt;Long story short, - I’ve decided to switch from Jekyll to Bridgetown. 
 First of all I have enough with Jekyll, I am using it for about 10 years, and its became stiff to change. 
 Last time I’ve tried to do something new with Jekyll I got struggle with simple tasks, maybe I do something wrongway (highly unlikely) but I have no patience to continue with Jekyll and research too much to solve simple things which can be written from scratch in about hour.&lt;/p&gt;
 
@@ -249,23 +258,4 @@ Buzzboy later designed legendary Chuck Yeager’s Air Combat.&lt;/p&gt;
 
 &lt;h2 id=&quot;links&quot;&gt;Links&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://falsetrue.substack.com/&quot;&gt;Subscribe on Substack&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="linux" /></entry><entry><title type="html">LogSeq - notes taking application</title><link href="https://falsetrue.io/tools/2023/11/26/logseq/" rel="alternate" type="text/html" title="LogSeq - notes taking application" /><published>2023-11-26T16:00:00+04:00</published><updated>2023-11-26T16:00:00+04:00</updated><id>repo://posts.collection/_posts/2023-11-27-logseq.md</id><content type="html" xml:base="https://falsetrue.io/tools/2023/11/26/logseq/">&lt;p&gt;Found this interesting project called LogSeq.&lt;/p&gt;
-
-&lt;p&gt;Its hardcore, privacy-first notes taking app, knowledge base, might be even compared to org-roam.&lt;/p&gt;
-
-&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Markdown,  Wiki-alike, Plain text format&lt;/li&gt;
-  &lt;li&gt;Local first which means it saves everything locally, and if you want it can synchronize&lt;/li&gt;
-  &lt;li&gt;Mobile App for both platforms iOS/Android&lt;/li&gt;
-  &lt;li&gt;Obsidian like intrerface with interlinking and visual graph&lt;/li&gt;
-  &lt;li&gt;It’s org-mode inspired, supports org-mode formatting&lt;/li&gt;
-  &lt;li&gt;Plugins market place with various plugins&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Probably will be most popular tool after Obsidian for average ppl very soon.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://hub.logseq.com/getting-started/uQdEHALJo7RWnDLLLP7uux/an-overview-of-50-logseq-features/jn3RC9eBF3ofpjaLtxXrDe&quot;&gt;https://hub.logseq.com/getting-started/uQdEHALJo7RWnDLLLP7uux/an-overview-of-50-logseq-features/jn3RC9eBF3ofpjaLtxXrDe&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://logseq.com/&quot;&gt;https://logseq.com/&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="tools" /><category term="linux" /></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://falsetrue.substack.com/&quot;&gt;Subscribe on Substack&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="linux" /></entry></feed>
