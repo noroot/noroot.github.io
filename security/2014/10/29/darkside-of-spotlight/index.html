@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Darkside of the Spotlight | FalseTrue</title>
+
+<!-- Begin Bridgetown SEO tag v6.0.0 -->
+<title>Darkside of the Spotlight | FalseTrue</title>
+<meta property="og:title" content="Darkside of the Spotlight" />
+<meta property="og:locale" content="ru" />
+<meta name="description" content="Scripts of cyberdaemon" />
+<meta property="og:description" content="Scripts of cyberdaemon" />
+<link rel="canonical" href="https://falsetrue.io/security/2014/10/29/darkside-of-spotlight/" />
+<meta property="og:url" content="https://falsetrue.io/security/2014/10/29/darkside-of-spotlight/" />
+<meta property="og:site_name" content="FalseTrue" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2014-10-29T21:44:13+01:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Darkside of the Spotlight" />
+<!-- End Bridgetown SEO tag -->
+
+
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/_bridgetown/static/index.UHCQY7CT.css" />
+<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+<script src="/_bridgetown/static/index.42K5JGTD.js" defer></script>
+
+<link type="application/atom+xml" rel="alternate" href="https://falsetrue.io/feed.xml" title="FalseTrue" />
+
+  </head>
+  <body class="post ">
+    <!-- <header>
+     <img src="/images/logo.svg" alt="Logo" />
+     </header>
+-->
+<nav class="nav bg-black py-2">
+  <ul>
+    <li><a href="/"><span class="text-green-400">False!</span><span class="text-cyan-300">True</span></a></li>
+    <li><a href="/">Home</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/feed">Feed</a></li>
+    <li><a href="/archive">Archive</a></li>
+    <li><a href="/bookshelf">Bookshelf</a></li>
+    <li><a href="/photography">Photography</a></li>
+    <li><a href="/halloffame">Hall of fame</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/feed.xml"><i class="fa fa-rss text-[orange]"></i>&nbsp;RSS</a></li>
+  </ul>
+</nav>
+
+
+    <main>
+      <article class="prose prose-slate prose-pre:bg-gray-100 prose-pre:text-gray-500 max-w-full prose-h1:leading-relaxed">
+    <span>29 Oct 2014</span>
+    <div class="mb-8">
+        <h1 class="leading-relaxed">Darkside of the Spotlight</h1>
+        <div class="category-block">
+            <span>Category</span>
+            
+                <a href="/categories/security" class="badge-category">security</a>
+            
+        </div>
+        <div class="tags-block mt-8">
+            <span>Tags</span>
+            
+                <a href="/tags/mac" class="badge-tag">#mac</a>
+            
+                <a href="/tags/sec" class="badge-tag">#sec</a>
+            
+        </div>
+    </div>
+    <p>Одно из новшеств которое вы получили вместе со своей новой OSX это
+улучшеный <strong>Spotlight</strong>, - универсальный поисквый движок и поисквая
+строка с дополнительным функционалом.</p>
+
+<p>Что делает Spotlight ? Индескирует ваш контент, - весь если вы не
+указали исключения в настройках. А еще Apple говорит “Safety. Built right in.” Так ли это на самом деле ?</p>
+
+<p>Также spotlight Периодически переиндексирует контент.
+Spotlight всегда знает о ваших новых файлах в системе, и spotlight
+всегда знает о всех файлах в вашей системе, если вы не указали
+исключения в настройках.</p>
+
+<p>Он индексирует не только файлы, но и записи в календаре, закладки,
+историю и ваши поисковы фразы, контакты и письма из почты.
+Таким образом Spotlight пожалуй самая информированная о вас программа.</p>
+
+<p>Что происходит когда вы что-то набираете в строке поиска,
+spotlight ищет везде и всё и даже заходит на ваши закладки или записи из хистори браузера, не верите ? смотрите сами:</p>
+
+<p>Я взял wireshark, выключил все что может слать трафик и начал смотреть
+что происходит при вводе различных поисковых фраз, читайте далее что
+из этого вышло.</p>
+
+<!-- more -->
+
+<p>Начнем с простого примера, я ввел “weather” в поисковую строку
+spotlight:</p>
+
+<p><img src="http://s.overmind.ws.s3.amazonaws.com/darkspotlight/weather-packet.png" alt="http://s.overmind.ws.s3.amazonaws.com/darkspotlight/weather-packet.png" /></p>
+
+<p>запрос “porn”:</p>
+
+<p><img src="http://s.overmind.ws.s3.amazonaws.com/darkspotlight/porno-packet.png" alt="http://s.overmind.ws.s3.amazonaws.com/darkspotlight/porno-packet.png" /></p>
+
+<p>Для более удобного просмотра оставил только DNS запросы:</p>
+
+<p><img src="http://s.overmind.ws.s3.amazonaws.com/darkspotlight/dns-requests-packet.png" alt="http://s.overmind.ws.s3.amazonaws.com/darkspotlight/dns-requests-packet.png" /></p>
+
+<p>Spotlight полностью загружает сайты в background’е</p>
+
+<p><img src="http://s.overmind.ws.s3.amazonaws.com/darkspotlight/porno-packet-full-site-loading.png" alt="http://s.overmind.ws.s3.amazonaws.com/darkspotlight/porno-packet-full-site-loading.png" /></p>
+
+<p>запрос “купить телефон”:</p>
+
+<p><img src="http://s.overmind.ws.s3.amazonaws.com/darkspotlight/buy-phone.png" alt="http://s.overmind.ws.s3.amazonaws.com/darkspotlight/buy-phone.png" /></p>
+
+<p>еще какой-то запрос как видно запрашивает также запрашиывает по HTTP
+какой-то адрес, как удалось выяснить этот сайт из хистори.</p>
+
+<p><img src="http://s.overmind.ws.s3.amazonaws.com/darkspotlight/sleep-packet.png" alt="http://s.overmind.ws.s3.amazonaws.com/darkspotlight/sleep-packet.png" /></p>
+
+<p>Самое интересное это то что при всех этих скрытых http запросах <strong>spotlight</strong> никак непоказывает какие либо связанные с этими запросами результаты поиска. То есть для чего он ходит на эти сайты не ясно, вероятно задумывался какой-то парсер который бы показывал результаты найденного, но их нет.</p>
+
+<h2 id="последствия-">Последствия ?</h2>
+
+<p>Подобные запросы могут спровоцировать утечку данных, и очевидно эта
+утечка данных может оказаться довольно серьозной. Как минимум
+отдаете свой IP адрес и поисковый запрос сторонним ресурсам. Неговоря уже о том, что все это происходит в скрытом режиме через safari, и может привести к тому
+что случайно вы откроете взломанный сайт на котором будет размещен
+вредоносный код который в свою очередь воспользуется уязвимостью браузера.</p>
+
+<h2 id="как-избавится-от-скрытых-запросов-и-настроить-spotlight">Как избавится от скрытых запросов и настроить spotlight</h2>
+
+<p>По умолчанию картина выглядит так (на скриншоте не отражен полный
+список настроек):</p>
+
+<p><img src="http://s.overmind.ws.s3.amazonaws.com/darkspotlight/spotlight-settings.png" alt="http://s.overmind.ws.s3.amazonaws.com/darkspotlight/spotlight-settings.png" /></p>
+
+<p>Обратие внимание на пункт “Other” остается только догадываться что скрывается под этим пунктом.</p>
+
+<p><img src="http://s.overmind.ws.s3.amazonaws.com/darkspotlight/spotlight-settings-other.png" alt="http://s.overmind.ws.s3.amazonaws.com/darkspotlight/spotlight-settings.png" /></p>
+
+<p>Я отключил все что хоть как-то потенциально могло использовать
+внешние сервисы: Bing Web Searches, Spotlight suggestions,
+Bookmarks &amp; History, Other.</p>
+
+<p>И второй экран настроек с исключениями:</p>
+
+<p><strong>ВАЖНО: При обновлении на Yosemite настройки исключений сбрасываются! (FUCK APPLE)</strong></p>
+
+<p>Очень показательно что вкладка называется Privacy, и там пусто, и даже если вы настраивали это нет гарантий что после очередного обновления настройки сохранятся</p>
+
+<p><img src="http://s.overmind.ws.s3.amazonaws.com/darkspotlight/spotlight-empty-exception.png" alt="http://s.overmind.ws.s3.amazonaws.com/darkspotlight/spotlight-empty-exception.png" /></p>
+
+<p>В исключения добавьте все ваши директории с “чувствительными данными”</p>
+
+<p>Есть даже такой проект <a href="http://fix-macosx.com">https://fix-macosx.com/</a> который позволяет исключать из Spotlight не желательные элементы более автоматзированно, проект представляет из себя python скрипт, который выключает определенные свойства “настройках” spotlight.</p>
+
+<p>Моя немного изменненая версия которая убирает дополнительные значения по умолчанию.
+<a href="https://github.com/noroot/fix-macosx">https://github.com/noroot/fix-macosx</a></p>
+
+<p>Ну а полностью избавиться от Spotlight можно таким способом:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo su
+  
+chmod 0000 /Library/Spotlight
+
+chmod 0000 /System/Library/Spotlight
+
+chmod 0000 /System/Library/CoreServices/Search.bundle
+
+chmod 0000 /System/Library/PreferencePanes/Spotlight.prefPane
+
+chmod 0000 /System/Library/Services/Spotlight.service
+
+chmod 0000 /System/Library/Contextual Menu Items/SpotlightCM.plugin
+
+chmod 0000 /System/Library/StartupItems/Metadata
+
+chmod 0000 /usr/bin/mdimport
+
+chmod 0000 /usr/bin/mdcheckschema
+
+chmod 0000 /usr/bin/mdfind
+
+chmod 0000 /usr/bin/mdls
+
+chmod 0000 /usr/bin/mdutil
+
+chmod 0000 /usr/bin/md
+</code></pre></div></div>
+
+<p>chmod в этом “хаке” используется для того чтобы  если вам захотелось
+вернуть spotlight в рабочее состоянии то достаточно будет сменить права.</p>
+
+<p>После перезагрузки запустить в терминале следующие команды, - это удалит текущий индекс и временные файлы:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rm -r /.Spotlight-V100
+
+rm -r /private/var/tmp/mds
+
+exit
+</code></pre></div></div>
+
+<p>Скриншот с описанием соглашения о приватности Spotlight:</p>
+
+<p><img src="http://s.overmind.ws.s3.amazonaws.com/darkspotlight/apple-spotlight-license.png" alt="http://s.overmind.ws.s3.amazonaws.com/darkspotlight/apple-spotlight-license.png" /></p>
+
+<p><a href="http://support.apple.com/kb/PH18827?viewlocale=en_US">http://support.apple.com/kb/PH18827?viewlocale=en_US</a></p>
+
+<p>На этом все, остальное можно обсудить в комментариях.</p>
+
+
+</article>
+
+<div class="my-8 ">
+    <h2 class="text-2xl mb-2">Comments</h2>
+
+    <script data-isso="https://comments.falsetrue.io/"
+            src="https://comments.falsetrue.io/js/embed.min.js"></script>
+
+    <section id="isso-thread">
+        <noscript>Javascript needs to be activated to view comments.</noscript>
+    </section>
+
+</div>
+
+    </main>
+
+    <!-- <footer class="mt-8">
+     Contact me at <a href="mailto:public@falsetrue.io">public@falsetrue.io</a>
+     </footer>
+-->
+<footer class="text-xs mt-8 px-8">
+    <div class="">
+        <div>
+            Dmitry Ro © 2003 - 2024<br>
+            Копирование и распрастранение страницы разрешено только в оригинальном не изменном виде, включая это сообщение.
+            Verbatim copying and redistribution of this entire page are permitted provided this notice is preserved.
+            Verbatim copying and redistribution of any of the photos in the photos subdirectory is permitted under the <a href="http://creativecommons.org/licenses/by-nd/3.0/" rel="nofollow"> Creative Commons Noderivs license version 3.0</a> or later.
+            <div><a href="/pgp.key.txt" rel="pgpkey authn">PGP Key</a></div>
+        </div>
+        <div class="flex mx-auto my-3 items-center justify-center gap-1">
+            <div><a href="https://webmentions.io" target="_blank" class="inline"><img src="/images/webmention.png" alt="Webmentions"></a></div>
+            <div><a href="https://indieweb.org" target="_blank"><img src="/images/indieweb.png" alt="indieweb"></a></div>
+            <div><a href="https://microformats.org" target="_blank"><img src="/images/microformats.png" alt="microformats"></a></div>
+            <div><a href="https://creativecommons.org/licenses/by/3.0/" target="_blank"><img src="/images/cc-commons.png" alt="cc-commons"></a></div>
+            <div><img src="/images/w3c-valid-html.png" alt="valid w3c"></div>
+        </div>
+        <div class="mt-1">
+            <a href="https://xn--sr8hvo.ws/previous">←</a>
+            An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
+            <a href="https://xn--sr8hvo.ws/next">→</a>
+        </div>
+    </div>
+</footer>
+
+  </body>
+</html>
