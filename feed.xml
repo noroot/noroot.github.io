@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://bridgetownrb.com/" version="1.3.4">Bridgetown</generator><link href="https://falsetrue.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://falsetrue.io/" rel="alternate" type="text/html" /><updated>2024-08-10T14:29:38+02:00</updated><id>https://falsetrue.io/feed.xml</id><title type="html">FalseTrue</title><subtitle>Scripts of cyberdaemon</subtitle><entry><title type="html">WARNING: Scam attempt</title><link href="https://falsetrue.io/share/note/2024/08/09/scam-attempt/" rel="alternate" type="text/html" title="WARNING: Scam attempt" /><published>2024-08-09T09:00:00+02:00</published><updated>2024-08-09T09:00:00+02:00</updated><id>repo://posts.collection/_posts/2024-08-09-scam-attempt.markdown</id><content type="html" xml:base="https://falsetrue.io/share/note/2024/08/09/scam-attempt/">&lt;p&gt;Be aware of this chinese domain scam attempt. They want you to pay for their zone domains within same name.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://bridgetownrb.com/" version="1.3.4">Bridgetown</generator><link href="https://falsetrue.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://falsetrue.io/" rel="alternate" type="text/html" /><updated>2024-08-11T12:43:22+02:00</updated><id>https://falsetrue.io/feed.xml</id><title type="html">FalseTrue</title><subtitle>Scripts of cyberdaemon</subtitle><entry><title type="html">Sleepy Black cat</title><link href="https://falsetrue.io/share/photo/2024/08/10/photo-blackcat/" rel="alternate" type="text/html" title="Sleepy Black cat" /><published>2024-08-10T11:00:00+02:00</published><updated>2024-08-10T11:00:00+02:00</updated><id>repo://posts.collection/_posts/2024-08-10-photo-blackcat.markdown</id><content type="html" xml:base="https://falsetrue.io/share/photo/2024/08/10/photo-blackcat/">&lt;div class=&quot;ft-picture-block&quot;&gt;
+    &lt;img src=&quot;/images/photography_copyrighted/Animals/IMG_0925.jpg&quot; class=&quot;ft-img&quot; /&gt;
+    &lt;p&gt;&quot;Sleepy Black cat&quot; // 2024-08-10 &amp;copy; Dmitry Ro.&lt;/p&gt;
+    &lt;p class=&quot;ft-picture-info&quot;&gt;FUJIFILM XT-4 | XF16-80mmF4 R OIS WR | F/4 | 1/120s&lt;/p&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="photo" /><category term="animals" /><category term="bw" /></entry><entry><title type="html">WARNING: Scam attempt</title><link href="https://falsetrue.io/share/note/2024/08/09/scam-attempt/" rel="alternate" type="text/html" title="WARNING: Scam attempt" /><published>2024-08-09T09:00:00+02:00</published><updated>2024-08-09T09:00:00+02:00</updated><id>repo://posts.collection/_posts/2024-08-09-scam-attempt.markdown</id><content type="html" xml:base="https://falsetrue.io/share/note/2024/08/09/scam-attempt/">&lt;p&gt;Be aware of this chinese domain scam attempt. They want you to pay for their zone domains within same name.
 &lt;img src=&quot;/assets/images/scam-attempt.jpeg&quot; class=&quot;ft-img-warning&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;how-the-scam-works&quot;&gt;How the Scam Works:&lt;/h3&gt;
@@ -299,28 +303,4 @@ I had &lt;a href=&quot;https://github.com/noroot/jekyll-mail-comments&quot;&gt;j
   &lt;li&gt;&lt;a href=&quot;https://bridgetownrb.com&quot;&gt;Bridgetown.rb&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://jekyllrb.com/docs/front-matter/&quot;&gt;https://jekyllrb.com/docs/front-matter/&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://gohugo.io/content-management/front-matter/&quot;&gt;https://gohugo.io/content-management/front-matter/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="dev" /><category term="tools" /></entry><entry><title type="html">Baseus H1 headphones reset</title><link href="https://falsetrue.io/howto/2024/05/10/baseus-h1-bug-reset/" rel="alternate" type="text/html" title="Baseus H1 headphones reset" /><published>2024-05-10T20:00:00+02:00</published><updated>2024-05-10T20:00:00+02:00</updated><id>repo://posts.collection/_posts/2024-05-11-baseus-h1-bug-reset.markdown</id><content type="html" xml:base="https://falsetrue.io/howto/2024/05/10/baseus-h1-bug-reset/">&lt;p&gt;If you happen to acquire one of these headphones as a spare (there is no other reason to acquire these poor-quality headphones), you might encounter one of the following problems:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Only one ear is playing sound.&lt;/li&gt;
-  &lt;li&gt;One ear is playing sound from one device, while the other is playing from another (sounds crazy, but that’s the reality; you can hear YouTube from one ear and a podcast from the other if your brain can handle it).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;To fix this behavior, you need to reset the headphones. My pair of these headphones ended up somewhere on a shelf, and occasionally I came across them wondering how to fix them because it’s obviously a software problem, and there must be a way to perform a hard reset.&lt;/p&gt;
-
-&lt;h4 id=&quot;the-solution&quot;&gt;The Solution:&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Connect the USB-C power cable.
-    &lt;ul&gt;
-      &lt;li&gt;Ensure that it is charging, indicated by a steady red LED light.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Rapidly press the three-dotted button five times.
-    &lt;ul&gt;
-      &lt;li&gt;Make sure that the LED switches to a steady white light.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;DONE. After this reset, the headphones will work normally.&lt;/p&gt;</content><author><name></name></author><category term="device" /></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><category term="dev" /><category term="tools" /></entry></feed>
