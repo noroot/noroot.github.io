@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://bridgetownrb.com/" version="1.3.4">Bridgetown</generator><link href="https://falsetrue.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://falsetrue.io/" rel="alternate" type="text/html" /><updated>2024-08-11T12:46:54+02:00</updated><id>https://falsetrue.io/feed.xml</id><title type="html">FalseTrue</title><subtitle>Scripts of cyberdaemon</subtitle><entry><title type="html">Sleepy Black cat</title><link href="https://falsetrue.io/photo/2024/08/10/photo-blackcat/" rel="alternate" type="text/html" title="Sleepy Black cat" /><published>2024-08-10T11:00:00+02:00</published><updated>2024-08-10T11:00:00+02:00</updated><id>repo://posts.collection/_posts/2024-08-10-photo-blackcat.markdown</id><content type="html" xml:base="https://falsetrue.io/photo/2024/08/10/photo-blackcat/">&lt;div class=&quot;ft-picture-block&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://bridgetownrb.com/" version="1.3.4">Bridgetown</generator><link href="https://falsetrue.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://falsetrue.io/" rel="alternate" type="text/html" /><updated>2024-08-11T17:38:40+02:00</updated><id>https://falsetrue.io/feed.xml</id><title type="html">FalseTrue</title><subtitle>Scripts of cyberdaemon</subtitle><entry><title type="html">Triumph T4R</title><link href="https://falsetrue.io/photo/2024/08/11/tripump-t4r/" rel="alternate" type="text/html" title="Triumph T4R" /><published>2024-08-11T11:00:00+02:00</published><updated>2024-08-11T11:00:00+02:00</updated><id>repo://posts.collection/_posts/2024-08-11-tripump-t4r.markdown</id><content type="html" xml:base="https://falsetrue.io/photo/2024/08/11/tripump-t4r/">&lt;div class=&quot;ft-picture-block&quot;&gt;
+    &lt;img src=&quot;/images/photography_copyrighted/Cars/TriumphT4R.jpg&quot; class=&quot;ft-img&quot; /&gt;
+    &lt;p&gt;&quot;Triumph T4R&quot; // 2024-08-11 &amp;copy; Dmitry Ro.&lt;/p&gt;
+    &lt;p class=&quot;ft-picture-info&quot;&gt;FUJIFILM XT-4 | XF16-80mmF4 R OIS WR | 33m | F/5.6 | 1/140 | ISO 160 &lt;/p&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="photo" /><category term="car" /></entry><entry><title type="html">Sleepy Black cat</title><link href="https://falsetrue.io/photo/2024/08/10/photo-blackcat/" rel="alternate" type="text/html" title="Sleepy Black cat" /><published>2024-08-10T11:00:00+02:00</published><updated>2024-08-10T11:00:00+02:00</updated><id>repo://posts.collection/_posts/2024-08-10-photo-blackcat.markdown</id><content type="html" xml:base="https://falsetrue.io/photo/2024/08/10/photo-blackcat/">&lt;div class=&quot;ft-picture-block&quot;&gt;
     &lt;img src=&quot;/images/photography_copyrighted/Animals/IMG_0925.jpg&quot; class=&quot;ft-img&quot; /&gt;
     &lt;p&gt;&quot;Sleepy Black cat&quot; // 2024-08-10 &amp;copy; Dmitry Ro.&lt;/p&gt;
     &lt;p class=&quot;ft-picture-info&quot;&gt;FUJIFILM XT-4 | XF16-80mmF4 R OIS WR | F/4 | 1/120s&lt;/p&gt;
@@ -248,59 +252,4 @@ Once you have updated the ingress configuration file, apply the changes. If you 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Julian_Assange&quot;&gt;https://en.wikipedia.org/wiki/Julian_Assange&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.theguardian.com/media/live/2024/jun/26/julian-assange-live-news-wikileaks-founder-lands-on-us-island-of-saipan-for-district-court-sentencing&quot;&gt;https://www.theguardian.com/media/live/2024/jun/26/julian-assange-live-news-wikileaks-founder-lands-on-us-island-of-saipan-for-district-court-sentencing&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="person" /><category term="hacker" /><category term="scene" /></entry><entry><title type="html">Humor: Add comma’s to your passwords</title><link href="https://falsetrue.io/share/pic/2024/06/23/csv-breach/" rel="alternate" type="text/html" title="Humor: Add comma&apos;s to your passwords" /><published>2024-06-23T14:00:00+02:00</published><updated>2024-06-23T14:00:00+02:00</updated><id>repo://posts.collection/_posts/2024-06-23-csv-breach.markdown</id><content type="html" xml:base="https://falsetrue.io/share/pic/2024/06/23/csv-breach/">&lt;p&gt;&lt;img src=&quot;/images/posts/csv-breach.jpg&quot; class=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="sec" /><category term="humor" /><category term="meme" /></entry><entry><title type="html">Switched from Jekyll to Bridgetown</title><link href="https://falsetrue.io/updates/2024/06/22/switched-to-bridgetown/" rel="alternate" type="text/html" title="Switched from Jekyll to Bridgetown" /><published>2024-06-22T14:00:00+02:00</published><updated>2024-06-22T14:00:00+02:00</updated><id>repo://posts.collection/_posts/2024-06-22-switched-to-bridgetown.markdown</id><content type="html" xml:base="https://falsetrue.io/updates/2024/06/22/switched-to-bridgetown/">&lt;p&gt;Long story short, - I’ve decided to switch from Jekyll to Bridgetown. 
-First of all I have enough with Jekyll, I am using it for about 10 years, and its became stiff to change. 
-Last time I’ve tried to do something new with Jekyll I got struggle with simple tasks, maybe I do something wrongway (highly unlikely) but I have no patience to continue with Jekyll and research too much to solve simple things which can be written from scratch in about hour.&lt;/p&gt;
-
-&lt;p&gt;I’ve started to looking for substituion and came across &lt;strong&gt;Bridgetown.rb&lt;/strong&gt; in about 2 minutes of searching.&lt;/p&gt;
-
-&lt;p&gt;So here it is &lt;a href=&quot;https://bridgetownrb.com&quot;&gt;Bridgetown.rb&lt;/a&gt; - So it is not only static site generator, its feature rich lightweight framework, which allow you to generate your site statically. It uses Puma as sever, Roda as main routing library. It is also utilizes tools like Rake, and it has integrated deployment feature. All of it makes bridgetownrb highly customizable, friendly to programmers solution for “fast and hacky” projects.&lt;/p&gt;
-
-&lt;p&gt;Features:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Template engine (erb, liquid, serbea)&lt;/li&gt;
-  &lt;li&gt;FrontMatter&lt;/li&gt;
-  &lt;li&gt;Layouts&lt;/li&gt;
-  &lt;li&gt;Components&lt;/li&gt;
-  &lt;li&gt;Collections&lt;/li&gt;
-  &lt;li&gt;Categories&lt;/li&gt;
-  &lt;li&gt;Tags&lt;/li&gt;
-  &lt;li&gt;Assets building&lt;/li&gt;
-  &lt;li&gt;Dynamic sites&lt;/li&gt;
-  &lt;li&gt;Static generated sites&lt;/li&gt;
-  &lt;li&gt;Deployment&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;how-to-migrate-from-jekyll&quot;&gt;How to migrate from Jekyll&lt;/h2&gt;
-
-&lt;p&gt;So how to migrate ? &lt;strong&gt;FrontMatter&lt;/strong&gt; is a small YAML snippet with metadata for each post on top of the post. It is the same format as Jekyll, Hugo, and many others. All you need to do is copy all posts into the &lt;strong&gt;_posts&lt;/strong&gt; directory.&lt;/p&gt;
-
-&lt;p&gt;And because of this YAML snippet on top of the post file, Bridgetown generator will understand everthing and generate same structure as I have in Jekyll&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;---
-layout: post
-title: &quot;Switched from Jekyll to Bridgetown&quot;
-categories: howto
-tags: [dev]
-date:   2024-06-22 12:00:00 +0000
----
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;As you might have noticed earlier, I have a &lt;a href=&quot;/photography/&quot;&gt;photography&lt;/a&gt; gallery on the site, so I have to migrate it from Jekyll too. Previously, I utilized gallery generation code that I wrote (which I may share if you want to). Migrating the gallery to Bridgetown took about an hour to implement using plain Ruby, similar to what I had in Jekyll.&lt;/p&gt;
-
-&lt;p&gt;Bridgetown even have &lt;a href=&quot;https://www.bridgetownrb.com/docs/migrating/jekyll&quot;&gt;more detailed guide to migraion from Jekyll&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;For the comments I am still using &lt;a href=&quot;https://github.com/isso-comments/isso&quot;&gt;isso-comments&lt;/a&gt;. 
-I had &lt;a href=&quot;https://github.com/noroot/jekyll-mail-comments&quot;&gt;jekyll-mail-comments&lt;/a&gt;, but didn’t migrate it yet, will rewrite it for &lt;strong&gt;bridgetownrb&lt;/strong&gt; soon.&lt;/p&gt;
-
-&lt;p&gt;I also love Makefile so I do a little file for working with &lt;code class=&quot;highlighter-rouge&quot;&gt;bridgetown&lt;/code&gt; commands and deployment to gh-pages without github actions as it offers official Bridgetown way of deployment to gh-pages.&lt;/p&gt;
-
-&lt;p&gt;Thats it for now, if you’re interested in details let me know in the comment section below.&lt;/p&gt;
-
-&lt;h3 id=&quot;references&quot;&gt;References&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://bridgetownrb.com&quot;&gt;Bridgetown.rb&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://jekyllrb.com/docs/front-matter/&quot;&gt;https://jekyllrb.com/docs/front-matter/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://gohugo.io/content-management/front-matter/&quot;&gt;https://gohugo.io/content-management/front-matter/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="dev" /><category term="tools" /></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><category term="person" /><category term="hacker" /><category term="scene" /></entry><entry><title type="html">Humor: Add comma’s to your passwords</title><link href="https://falsetrue.io/share/pic/2024/06/23/csv-breach/" rel="alternate" type="text/html" title="Humor: Add comma&apos;s to your passwords" /><published>2024-06-23T14:00:00+02:00</published><updated>2024-06-23T14:00:00+02:00</updated><id>repo://posts.collection/_posts/2024-06-23-csv-breach.markdown</id><content type="html" xml:base="https://falsetrue.io/share/pic/2024/06/23/csv-breach/">&lt;p&gt;&lt;img src=&quot;/images/posts/csv-breach.jpg&quot; class=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="sec" /><category term="humor" /><category term="meme" /></entry></feed>
