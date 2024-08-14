@@ -1,4 +1,62 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://bridgetownrb.com/" version="1.3.4">Bridgetown</generator><link href="https://falsetrue.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://falsetrue.io/" rel="alternate" type="text/html" /><updated>2024-08-12T15:51:07+02:00</updated><id>https://falsetrue.io/feed.xml</id><title type="html">FalseTrue</title><subtitle>Scripts of cyberdaemon</subtitle><entry><title type="html">Triumph T4R</title><link href="https://falsetrue.io/photo/2024/08/11/tripump-t4r/" rel="alternate" type="text/html" title="Triumph T4R" /><published>2024-08-11T11:00:00+02:00</published><updated>2024-08-11T11:00:00+02:00</updated><id>repo://posts.collection/_posts/2024-08-11-tripump-t4r.markdown</id><content type="html" xml:base="https://falsetrue.io/photo/2024/08/11/tripump-t4r/">&lt;div class=&quot;ft-picture-block&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://bridgetownrb.com/" version="1.3.4">Bridgetown</generator><link href="https://falsetrue.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://falsetrue.io/" rel="alternate" type="text/html" /><updated>2024-08-14T18:16:57+02:00</updated><id>https://falsetrue.io/feed.xml</id><title type="html">FalseTrue</title><subtitle>Scripts of cyberdaemon</subtitle><entry xml:lang="en"><title type="html">In the memory of Terry Davis</title><link href="https://falsetrue.io/person/2024/08/14/terry-davis/" rel="alternate" type="text/html" title="In the memory of Terry Davis" /><published>2024-08-14T12:00:00+02:00</published><updated>2024-08-14T12:00:00+02:00</updated><id>repo://posts.collection/_posts/2024-08-14-terry-davis.markdown</id><content type="html" xml:base="https://falsetrue.io/person/2024/08/14/terry-davis/">&lt;p&gt;In the memory of &lt;b&gt;Terry Davis&lt;/b&gt; &lt;em&gt;(December 15, 1969 – August 11, 2018)&lt;/em&gt;&lt;/p&gt;
+
+&lt;div class=&quot;ft-persona-block&quot;&gt;
+    &lt;div class=&quot;&quot;&gt;
+        &lt;img src=&quot;/assets/images/TerryDavisPortrait.jpg&quot; class=&quot;ft-persona&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;&quot;&gt;
+        Terry Davis - &quot;Smartest programmer that ever lived&quot;
+        &lt;div&gt;
+            &lt;a href=&quot;https://www.youtube.com/@terrydavisoldarchive5371/videos&quot;&gt;YouTube&lt;/a&gt;
+            &lt;a href=&quot;https://templeos.org/&quot;&gt;TempleOS&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/TerryDavis.jpg&quot; /&gt;
+&lt;img src=&quot;/assets/images/TerryDavisWithMonitor.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Terry A. Davis was a singular figure in the world of software development, known for creating TempleOS, a highly unconventional operating system that he developed entirely by himself. Davis was both a brilliant programmer and a deeply troubled individual, battling schizophrenia throughout much of his life, which heavily influenced both his work and his worldview.&lt;/p&gt;
+
+&lt;p&gt;TempleOS was Davis’ magnum opus, a 64-bit operating system with a unique vision. Designed to be a modern-day temple where God could communicate with humans, it featured a deliberately limited resolution of 640x480 and a text-based interface with a custom programming language, HolyC, which Davis also wrote from scratch. The system was lightweight, with its design focused on simplicity, speed, and direct communication with hardware, breaking away from modern OS standards. Despite being rough around the edges, TempleOS was a testament to Davis’ raw talent and determination.&lt;/p&gt;
+
+&lt;p&gt;Davis’ creation, however, was deeply intertwined with his mental health struggles. His schizophrenia led him to believe that God was directly guiding his work, and much of TempleOS’s structure and aesthetic choices reflected his religious visions. Although many in the tech community found his work difficult to categorize, it was impossible not to recognize the genius behind it.&lt;/p&gt;
+
+&lt;p&gt;Terry Davis’ life and work have sparked conversations about mental health in the tech world. He demonstrated the vast potential of a lone programmer driven by passion and belief, yet his story also highlighted the profound challenges of working with untreated mental illness.&lt;/p&gt;
+
+&lt;p&gt;He passed away on 11 of August in 2018 (was hit by train), but his legacy continues to resonate with programmers and creators, serving as a reminder of the complexity of human genius and the fine line between creativity and struggle. TempleOS, though niche, remains a fascinating relic of one man’s uncompromising vision.&lt;/p&gt;
+
+&lt;h2 id=&quot;materials&quot;&gt;Materials&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://templeos.org/&quot;&gt;TempleOS&lt;/a&gt; - The TempleOS&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/cia-foundation/TempleOS&quot;&gt;TempleOS source code&lt;/a&gt; - The TempleOS source code&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://holyc-lang.com/&quot;&gt;HolyC programming language&lt;/a&gt; - programming language that Terry Davis invented to write TempleOS&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/minexew/Shrine&quot;&gt;Srine&lt;/a&gt; - fork of TemplateOS with Networking, and other stuff&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Zeal-Operating-System/ZealOS&quot;&gt;ZealOS&lt;/a&gt; - Another work with enchancements&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/tinkeros/TinkerOS&quot;&gt;TinkerOS&lt;/a&gt; - another fork&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://bbrfoundation.donordrive.com/index.cfm?fuseaction=donorDrive.personalCampaign&amp;amp;participantID=8191&quot;&gt;A personal campaign sponsored by Family and Friends of Terry Donations to Research&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.findagrave.com/memorial/192900656/terrence_andrew-davis&quot;&gt;Find a Grave&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.linkedin.com/in/terry-a-davis/&quot;&gt;Terry Davis Linkedin Tribute&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;good-videos-with-covering-his-story&quot;&gt;Good videos with covering his story&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=YMUhbIAA9-8&quot;&gt;The Schizophrenic Genius - Terry A. Davis Story&lt;/a&gt; - the good coverage of Terrys story&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Cyz08j7EchY&quot;&gt;The Apostles Keeping TEMPLEOS Alive…&lt;/a&gt; - talks about the details and forks of the Temple OS&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;iframe width=&quot;100%&quot; height=&quot;540&quot; src=&quot;https://www.youtube.com/embed/oY33uoBSw3w?si=AF6ZfxJvHGi3cBto&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;In the memory of Terry Davis&lt;/p&gt;
+
+&lt;iframe width=&quot;100%&quot; height=&quot;540&quot; src=&quot;https://www.youtube.com/embed/hmjU-6tkEc8?si=e0Gjtrja2AR7-TkR&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name></name></author><category term="person" /><category term="famouse" /><category term="hacker" /><category term="scene" /><category term="legacy" /></entry><entry><title type="html">Triumph T4R</title><link href="https://falsetrue.io/photo/2024/08/11/tripump-t4r/" rel="alternate" type="text/html" title="Triumph T4R" /><published>2024-08-11T11:00:00+02:00</published><updated>2024-08-11T11:00:00+02:00</updated><id>repo://posts.collection/_posts/2024-08-11-tripump-t4r.markdown</id><content type="html" xml:base="https://falsetrue.io/photo/2024/08/11/tripump-t4r/">&lt;div class=&quot;ft-picture-block&quot;&gt;
     &lt;img src=&quot;/images/photography_copyrighted/Cars/TriumphT4R.jpg&quot; class=&quot;ft-img&quot; /&gt;
     &lt;p&gt;&quot;Triumph T4R&quot; // 2024-08-11 &amp;copy; Dmitry Ro.&lt;/p&gt;
     &lt;p class=&quot;ft-picture-info&quot;&gt;FUJIFILM XT-4 | XF16-80mmF4 R OIS WR | 33m | F/5.6 | 1/140 | ISO 160 &lt;/p&gt;
@@ -252,4 +310,4 @@ Once you have updated the ingress configuration file, apply the changes. If you 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Julian_Assange&quot;&gt;https://en.wikipedia.org/wiki/Julian_Assange&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.theguardian.com/media/live/2024/jun/26/julian-assange-live-news-wikileaks-founder-lands-on-us-island-of-saipan-for-district-court-sentencing&quot;&gt;https://www.theguardian.com/media/live/2024/jun/26/julian-assange-live-news-wikileaks-founder-lands-on-us-island-of-saipan-for-district-court-sentencing&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="person" /><category term="hacker" /><category term="scene" /></entry><entry><title type="html">Humor: Add comma’s to your passwords</title><link href="https://falsetrue.io/share/pic/2024/06/23/csv-breach/" rel="alternate" type="text/html" title="Humor: Add comma&apos;s to your passwords" /><published>2024-06-23T14:00:00+02:00</published><updated>2024-06-23T14:00:00+02:00</updated><id>repo://posts.collection/_posts/2024-06-23-csv-breach.markdown</id><content type="html" xml:base="https://falsetrue.io/share/pic/2024/06/23/csv-breach/">&lt;p&gt;&lt;img src=&quot;/images/posts/csv-breach.jpg&quot; class=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="sec" /><category term="humor" /><category term="meme" /></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><category term="person" /><category term="hacker" /><category term="scene" /></entry></feed>
