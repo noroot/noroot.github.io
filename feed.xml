@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://bridgetownrb.com/" version="1.3.4">Bridgetown</generator><link href="https://falsetrue.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://falsetrue.io/" rel="alternate" type="text/html" /><updated>2024-08-18T18:07:54+02:00</updated><id>https://falsetrue.io/feed.xml</id><title type="html">FalseTrue</title><subtitle>Scripts of cyberdaemon</subtitle><entry xml:lang="en"><title type="html">Debian turned 31 years old</title><link href="https://falsetrue.io/share/2024/08/18/debian-31/" rel="alternate" type="text/html" title="Debian turned 31 years old" /><published>2024-08-18T12:00:00+02:00</published><updated>2024-08-18T12:00:00+02:00</updated><id>repo://posts.collection/_posts/2024-08-18-debian-31.markdown</id><content type="html" xml:base="https://falsetrue.io/share/2024/08/18/debian-31/">&lt;div class=&quot;flex&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://bridgetownrb.com/" version="1.3.4">Bridgetown</generator><link href="https://falsetrue.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://falsetrue.io/" rel="alternate" type="text/html" /><updated>2024-08-31T18:56:06+02:00</updated><id>https://falsetrue.io/feed.xml</id><title type="html">FalseTrue</title><subtitle>Scripts of cyberdaemon</subtitle><entry><title type="html">Why big company experience doesn’t always translate to practical skills</title><link href="https://falsetrue.io/share/comment/2024/08/31/big-companies-hoax/" rel="alternate" type="text/html" title="Why big company experience doesn&apos;t always translate to practical skills" /><published>2024-08-31T14:00:00+02:00</published><updated>2024-08-31T14:00:00+02:00</updated><id>repo://posts.collection/_posts/2024-08-31-big-companies-hoax.markdown</id><content type="html" xml:base="https://falsetrue.io/share/comment/2024/08/31/big-companies-hoax/">&lt;blockquote&gt;
+Many think they will work for big companies to gain experience, but they don’t realize that this experience involves solving problems that don’t exist outside of the big company. That experience will not help you do real work &quot;in the field&quot;. This is also a pattern that brings various technologies into smaller businesses that have no clue why they need them. They propose using these technologies without understanding that they were designed to solve specific problems that only exist at certain scales.
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/feed/update/urn:li:activity:7235182991822499840?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7235182991822499840%2C7235188155887300608%29&amp;amp;dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287235188155887300608%2Curn%3Ali%3Aactivity%3A7235182991822499840%29&quot;&gt;Discussion on LinkedIn&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Got a recommendation on this subject in this thread, the book “Siliconned” by &lt;a href=&quot;https://emaggiori.com/&quot;&gt;Emmanuel Maggori&lt;/a&gt;.
+Will be on my bookshelf soon.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/books/siliconned.jpg&quot; class=&quot;ft-img&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="humanity" /><category term="modernity" /><category term="books" /><category term="linkedin" /></entry><entry xml:lang="en"><title type="html">Debian turned 31 years old</title><link href="https://falsetrue.io/share/2024/08/18/debian-31/" rel="alternate" type="text/html" title="Debian turned 31 years old" /><published>2024-08-18T12:00:00+02:00</published><updated>2024-08-18T12:00:00+02:00</updated><id>repo://posts.collection/_posts/2024-08-18-debian-31.markdown</id><content type="html" xml:base="https://falsetrue.io/share/2024/08/18/debian-31/">&lt;div class=&quot;flex&quot;&gt;
 &lt;div class=&quot;justify-middle&quot;&gt;
     &lt;img src=&quot;/assets/images/debian-31th_DLenharo_300x350.png&quot; /&gt;
 &lt;/div&gt;
@@ -204,113 +213,4 @@
     technê, the art of technology
 &lt;/div&gt;
 
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/CFMZECRgOVk?si=e63zhMuT8PqBbkm9&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name></name></author><category term="linux" /><category term="legacy" /><category term="hardware" /></entry><entry><title type="html">Resolving 502 Errors in Third-Party Authorization with Nginx Buffer Size Adjustment</title><link href="https://falsetrue.io/howto/2024/07/16/kubernetes-nginx-502/" rel="alternate" type="text/html" title="Resolving 502 Errors in Third-Party Authorization with Nginx Buffer Size Adjustment" /><published>2024-07-16T14:00:00+02:00</published><updated>2024-07-16T14:00:00+02:00</updated><id>repo://posts.collection/_posts/2024-07-16-kubernetes-nginx-502.markdown</id><content type="html" xml:base="https://falsetrue.io/howto/2024/07/16/kubernetes-nginx-502/">&lt;p&gt;If you’ve recently encountered a 502 error while using third-party authorization, such as OAuth, you’re not alone. This issue can be particularly frustrating, but understanding the root cause and how to fix it can save a lot of headaches. I’ve discovered this error randomly while implementing third party authentication within Ruby On Rails project.&lt;/p&gt;
-
-&lt;h2 id=&quot;understanding-the-issue&quot;&gt;Understanding the Issue&lt;/h2&gt;
-
-&lt;p&gt;Third-party authentication requests often involve long hashed tokens in the query string. When these tokens are too large, they can exceed the default buffer size limits set by Nginx. As a result, Nginx is unable to route the requests properly, leading to a 502 Bad Gateway error.&lt;/p&gt;
-
-&lt;p&gt;Here’s an example of what the logs might look like when this issue occurs:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;2024/07/18 12:34:56 [error] 12345#0: *123456 upstream sent too big header while reading response header from upstream, client: 192.0.2.1, server: example.com, request: &quot;GET /auth?token=very-long-hashed-token HTTP/1.1&quot;, upstream: &quot;http://127.0.0.1:8080/auth&quot;, host: &quot;example.com&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;As seen in the logs, the error occurs because the upstream server (Nginx in this case) sent a response header that was too large to handle due to the extensive query string.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-solution&quot;&gt;The Solution&lt;/h2&gt;
-
-&lt;p&gt;To fix this issue, you need to increase the buffer sizes in your Nginx ingress configuration. This can be done by setting appropriate annotations in your ingress configuration file. Here’s how you can do it:&lt;/p&gt;
-
-&lt;h3 id=&quot;step-by-step-guide&quot;&gt;Step-by-Step Guide&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Locate Your Ingress Configuration File:&lt;/strong&gt;
-Find the ingress configuration file for your project.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Edit the Configuration File:&lt;/strong&gt;
-Add or update the annotations to increase the buffer size. Here’s an example of what you should add:&lt;/p&gt;
-
-    &lt;p&gt;If using nginx-ingress&lt;/p&gt;
-
-    &lt;p&gt;&lt;strong&gt;Kubernetes Nginx ingress variant&lt;/strong&gt;&lt;/p&gt;
-
-    &lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;apiVersion&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;networking.k8s.io/v1&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;kind&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Ingress&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;metadata&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;web-production-ingress&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;namespace&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;default&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;annotations&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;cert-manager.io/cluster-issuer&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;letsencrypt-prod&quot;&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;nginx.ingress.kubernetes.io/backend-protocol&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;HTTP&quot;&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;nginx.ingress.kubernetes.io/proxy-body-size&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;4G&quot;&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;nginx.ingress.kubernetes.io/proxy-read-timeout&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;3600&quot;&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;nginx.ingress.kubernetes.io/proxy-send-timeout&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;3600&quot;&lt;/span&gt;
-       
-    &lt;span class=&quot;c1&quot;&gt;# Following options increasing buffer size&lt;/span&gt;
-       
-    &lt;span class=&quot;na&quot;&gt;nginx.ingress.kubernetes.io/proxy-buffers-number&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;4&quot;&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;nginx.ingress.kubernetes.io/proxy-buffer-size&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;16k&quot;&lt;/span&gt;
-
-&lt;span class=&quot;err&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;...&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;p&gt;In this example, the &lt;code class=&quot;highlighter-rouge&quot;&gt;proxy-buffer-size&lt;/code&gt; is set to 16k and &lt;code class=&quot;highlighter-rouge&quot;&gt;proxy-buffers-number&lt;/code&gt; to 8. These values can be adjusted based on your specific requirements.&lt;/p&gt;
-
-    &lt;p&gt;If using standalone Nginx&lt;/p&gt;
-
-    &lt;p&gt;&lt;strong&gt;Nginx&lt;/strong&gt;&lt;/p&gt;
-
-    &lt;p&gt;Global configuration&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;http {
- ...
- proxy_buffer_size   16k;
- proxy_buffers       4 16k;
- proxy_busy_buffers_size   32k;
- ...
-}
-   
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;p&gt;Per server configuration&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;server {
- ...
- location / {
-     ...
-     proxy_buffer_size   16k;
-     proxy_buffers       4 16k;
-     proxy_busy_buffers_size   32k;
-     ...
- }
- ...
-}
-   
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;Reference to &lt;strong&gt;nginx&lt;/strong&gt; configuration parameters &lt;a href=&quot;https://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_buffer_size&quot;&gt;https://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_buffer_size&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Apply the Configuration:&lt;/strong&gt;
-Once you have updated the ingress configuration file, apply the changes. If you are using Kubernetes, you can apply the configuration using the following command:&lt;/p&gt;
-
-    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;kubectl apply &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; your-ingress-config.yaml
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;p&gt;&lt;strong&gt;Restart Nginx: (if using standalone Nginx)&lt;/strong&gt;&lt;/p&gt;
-
-    &lt;p&gt;After applying the new configuration, restart Nginx to ensure the changes take effect. This can typically be done with a command like:&lt;/p&gt;
-
-    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;systemctl restart nginx
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;p&gt;Or, if you are using Kubernetes, ensure your pods are restarted to pick up the new configuration.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Done.&lt;/p&gt;</content><author><name></name></author><category term="dev" /><category term="kubernetes" /><category term="nginx" /></entry></feed>
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/CFMZECRgOVk?si=e63zhMuT8PqBbkm9&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name></name></author><category term="linux" /><category term="legacy" /><category term="hardware" /></entry></feed>
