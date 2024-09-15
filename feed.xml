@@ -1,4 +1,66 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://bridgetownrb.com/" version="1.3.4">Bridgetown</generator><link href="https://falsetrue.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://falsetrue.io/" rel="alternate" type="text/html" /><updated>2024-09-13T21:59:06+02:00</updated><id>https://falsetrue.io/feed.xml</id><title type="html">FalseTrue</title><subtitle>Scripts of cyberdaemon</subtitle><entry><title type="html">Agile manifesto failure</title><link href="https://falsetrue.io/share/comment/2024/09/10/agile-manifesto-failure/" rel="alternate" type="text/html" title="Agile manifesto failure" /><published>2024-09-10T14:00:00+02:00</published><updated>2024-09-10T14:00:00+02:00</updated><id>repo://posts.collection/_posts/2024-09-10-agile-manifesto-failure.markdown</id><content type="html" xml:base="https://falsetrue.io/share/comment/2024/09/10/agile-manifesto-failure/">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://bridgetownrb.com/" version="1.3.4">Bridgetown</generator><link href="https://falsetrue.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://falsetrue.io/" rel="alternate" type="text/html" /><updated>2024-09-15T20:05:14+02:00</updated><id>https://falsetrue.io/feed.xml</id><title type="html">FalseTrue</title><subtitle>Scripts of cyberdaemon</subtitle><entry><title type="html">EuRuKo 2024 Review</title><link href="https://falsetrue.io/share/note/2024/09/15/euruko2024-review/" rel="alternate" type="text/html" title="EuRuKo 2024 Review" /><published>2024-09-15T12:00:00+02:00</published><updated>2024-09-15T12:00:00+02:00</updated><id>repo://posts.collection/_posts/2024-09-15-euruko2024-review.markdown</id><content type="html" xml:base="https://falsetrue.io/share/note/2024/09/15/euruko2024-review/">&lt;p&gt;EuRuKo 2024 reivew.&lt;/p&gt;
+
+&lt;p&gt;What it is EuRuKo ? It is the conference about programming language&lt;/p&gt;
+
+&lt;blockquote&gt;
+EuRuKo is a Ruby conference organised annually, each year in a different European city chosen by the participants.
+
+Every year the Ruby community from Europe and beyond come to EuRuKo to meet and share their love of Ruby. This is is the longest running and biggest Ruby conference anywhere in Europe and one of the biggest in the world.
+
+It’s up to the participants to pick the next city where the conference will be held. Attendees will pitch their own cities to be the hosts of the next year’s conference which are then voted on by the audience. This also means that the conference organisers will change every year.
+
+&lt;/blockquote&gt;
+
+&lt;p&gt;https://euruko.org/&lt;/p&gt;
+
+&lt;p&gt;So here it is EuRuKo 2024. This year it Was set in Sarajevo, Bosnia and Herzegovina.&lt;/p&gt;
+
+&lt;h3 id=&quot;pros&quot;&gt;Pros:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Positioned as greatest ruby conference&lt;/li&gt;
+  &lt;li&gt;Participation of ruby creators and contributors - Yukihiro “Matz” Matsumoto, Xavier Noria, Koichi Sasada, Dave Thomas, Samuel Giddins, and many more&lt;/li&gt;
+  &lt;li&gt;Location with a good food.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;cons&quot;&gt;Cons:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Splitted to 3 tracks (first time for this conference), but its obvious better to have 1 strong sequences of speaches&lt;/li&gt;
+  &lt;li&gt;Lack of variety of sponsorships signifies that conference has no marketing interest among software development market.&lt;/li&gt;
+  &lt;li&gt;No drinking water supply (reminder: conference was paid)&lt;/li&gt;
+  &lt;li&gt;Feels like speeches was not correlate with the majority of audience professional experiences&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;plot&quot;&gt;Plot&lt;/h3&gt;
+
+&lt;p&gt;IT conferences nowadays are becoming more and more like casual, recreational, entertainment events rather than events where you can gain knowledge.&lt;/p&gt;
+
+&lt;h3 id=&quot;overall&quot;&gt;Overall&lt;/h3&gt;
+
+&lt;p&gt;My score for this conference is 3/5.&lt;/p&gt;
+
+&lt;div class=&quot;flex gap-4&quot;&gt;
+&lt;div&gt;
+    &lt;img src=&quot;/images/EuRuKo2024/EuRuKo2024-1.jpeg&quot; /&gt;
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;img src=&quot;/images/EuRuKo2024/EuRuKo2024-2.jpeg&quot; /&gt;
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;img src=&quot;/images/EuRuKo2024/EuRuKo2024-3.jpeg&quot; /&gt;
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;img src=&quot;/images/EuRuKo2024/EuRuKo2024-4.jpeg&quot; /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://euruko.org&quot;&gt;https://euruko.org&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://2024.euruko.org&quot;&gt;https://2024.euruko.org&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.linkedin.com/company/euruko/posts/?feedView=all&quot;&gt;https://www.linkedin.com/company/euruko/posts/?feedView=all&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="review" /><category term="event" /><category term="ruby" /></entry><entry><title type="html">Agile manifesto failure</title><link href="https://falsetrue.io/share/comment/2024/09/10/agile-manifesto-failure/" rel="alternate" type="text/html" title="Agile manifesto failure" /><published>2024-09-10T14:00:00+02:00</published><updated>2024-09-10T14:00:00+02:00</updated><id>repo://posts.collection/_posts/2024-09-10-agile-manifesto-failure.markdown</id><content type="html" xml:base="https://falsetrue.io/share/comment/2024/09/10/agile-manifesto-failure/">&lt;blockquote&gt;
 My favourite part here is: “Working software over comprehensive documentation.” People often interpret this as “We don’t need documentation, we need working software,” which can lead to a situation where they end up with neither documentation nor working software. When a new developer comes along and asks, “Where’s the documentation I can quickly review?” they are usually pointed back to that initial quote, with the added comment, “We are agile”. This demonstrates how the meaning of highly compressed quotes can be blindly extracted, often leading to a completely different, almost opposite interpretation.
 &lt;/blockquote&gt;
 
@@ -141,39 +203,4 @@ Will be on my bookshelf soon.&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://steigerlegal.ch/2019/06/14/warnung-china-schwindel-domainnamen-2019/&quot;&gt;https://steigerlegal.ch/2019/06/14/warnung-china-schwindel-domainnamen-2019/&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://community.cloudflare.com/t/a-chinese-company-is-trying-to-register-my-website-domain-name-for-their-client/583416&quot;&gt;https://community.cloudflare.com/t/a-chinese-company-is-trying-to-register-my-website-domain-name-for-their-client/583416&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="security" /><category term="scam" /><category term="expose" /></entry><entry><title type="html">Lion’s gate</title><link href="https://falsetrue.io/share/note/2024/08/08/lions-gate/" rel="alternate" type="text/html" title="Lion&apos;s gate" /><published>2024-08-08T14:00:00+02:00</published><updated>2024-08-08T14:00:00+02:00</updated><id>repo://posts.collection/_posts/2024-08-08-lions-gate.markdown</id><content type="html" xml:base="https://falsetrue.io/share/note/2024/08/08/lions-gate/">&lt;p&gt;“Lion’s Gate” typically refers to an astrological event that occurs every year around August 8th. It is believed to be a time of heightened cosmic energy, with its origins rooted in ancient Egyptian and cosmic symbolism.&lt;/p&gt;
-
-&lt;h3 id=&quot;key-aspects-of-the-lions-gate&quot;&gt;Key Aspects of the Lion’s Gate:&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Timing&lt;/strong&gt;:
-    &lt;ul&gt;
-      &lt;li&gt;The Lion’s Gate portal opens between July 26th and August 12th, peaking on August 8th.&lt;/li&gt;
-      &lt;li&gt;This period coincides with the astrological sign of Leo, symbolized by the lion, which is known for its association with strength, courage, and power.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Cosmic Alignment&lt;/strong&gt;:
-    &lt;ul&gt;
-      &lt;li&gt;The Lion’s Gate is marked by the alignment of the Earth, the star Sirius, and the Sun. Sirius, the brightest star in the sky, is often associated with abundance, prosperity, and spiritual growth.&lt;/li&gt;
-      &lt;li&gt;As Sirius rises in the sky (in alignment with the Sun), it is believed to be a time when powerful energies flow between the physical and spiritual realms.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Spiritual Significance&lt;/strong&gt;:
-    &lt;ul&gt;
-      &lt;li&gt;The Lion’s Gate is seen as a powerful time for spiritual awakening, transformation, and manifestation.&lt;/li&gt;
-      &lt;li&gt;It’s a period when individuals are encouraged to focus on their goals, release past negativity, and embrace new beginnings. The energy is said to support personal and collective growth, helping to manifest dreams and desires into reality.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Numerology&lt;/strong&gt;:
-    &lt;ul&gt;
-      &lt;li&gt;August 8th (8/8) is significant in numerology. The number 8 is associated with infinity, balance, and the manifestation of material and spiritual wealth. The repetition of the number on this date is believed to amplify these energies.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Meditation and Rituals&lt;/strong&gt;:
-    &lt;ul&gt;
-      &lt;li&gt;Many people engage in meditation, rituals, and spiritual practices during the Lion’s Gate to harness the energy for personal growth, healing, and manifestation. This may include setting intentions, visualizing goals, or simply being open to receiving guidance and inspiration.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;In essence, the Lion’s Gate is a period of cosmic alignment and spiritual opportunity, offering a potent time for transformation and empowerment.&lt;/p&gt;</content><author><name></name></author><category term="research" /><category term="esoteric" /></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><category term="security" /><category term="scam" /><category term="expose" /></entry></feed>
