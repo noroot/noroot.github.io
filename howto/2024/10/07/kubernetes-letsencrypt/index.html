@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Installing LetsEncrypt with Kubernetes on Digital Ocean | FalseTrue</title>
+
+<!-- Begin Bridgetown SEO tag v6.0.0 -->
+<title>Installing LetsEncrypt with Kubernetes on Digital Ocean | FalseTrue</title>
+<meta property="og:title" content="Installing LetsEncrypt with Kubernetes on Digital Ocean" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Scripts of cyberdaemon" />
+<meta property="og:description" content="Scripts of cyberdaemon" />
+<link rel="canonical" href="https://falsetrue.io/howto/2024/10/07/kubernetes-letsencrypt/" />
+<meta property="og:url" content="https://falsetrue.io/howto/2024/10/07/kubernetes-letsencrypt/" />
+<meta property="og:site_name" content="FalseTrue" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-10-07T08:00:00+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Installing LetsEncrypt with Kubernetes on Digital Ocean" />
+<!-- End Bridgetown SEO tag -->
+
+
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/_bridgetown/static/index.IG7GAGEV.css" />
+<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+<script src="/_bridgetown/static/index.42K5JGTD.js" defer></script>
+
+<link type="application/atom+xml" rel="alternate" href="https://falsetrue.io/feed.xml" title="FalseTrue" />
+
+  </head>
+  <body class="post ">
+    <!-- <header>
+     <img src="/images/logo.svg" alt="Logo" />
+     </header>
+-->
+<nav>
+  <ul>
+    <li><a href="/"><span class="text-green-400">False!</span><span class="text-cyan-300">True</span></a></li>
+    <li><a href="/">Home</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/feed">Feed</a></li>
+    <li><a href="/archive">Archive</a></li>
+    <li><a href="/bookshelf">Bookshelf</a></li>
+    <li><a href="/photography">Photography</a></li>
+    <li><a href="/halloffame">Hall of fame</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/feed.xml"><i class="fa fa-rss text-[orange]"></i>&nbsp;RSS</a></li>
+  </ul>
+</nav>
+
+
+    <main>
+      <article class="prose prose-slate prose-pre:bg-gray-100 prose-pre:text-gray-500 max-w-full prose-h1:leading-relaxed">
+    <span>07 Oct 2024</span>
+    <div class="mb-8">
+        <h1 class="leading-relaxed">Installing LetsEncrypt with Kubernetes on Digital Ocean</h1>
+        <div class="category-block">
+            <span>Category</span>
+            
+                
+                    <a href="/categories/howto" class="badge-category badge-howto">howto</a>
+                
+            
+        </div>
+        <div class="tags-block mt-8">
+            <span>Tags</span>
+            
+                <a href="/tags/software" class="badge-tag">#software</a>
+            
+                <a href="/tags/kubernetes" class="badge-tag">#kubernetes</a>
+            
+                <a href="/tags/linux" class="badge-tag">#linux</a>
+            
+                <a href="/tags/security" class="badge-tag">#security</a>
+            
+        </div>
+    </div>
+    <p>If expeirience working with Kubernetes on Digital Ocean and you need to install or renew LetsEncrypt certificate you might be struggled with in update.</p>
+
+<p>To manage certificate there is a special tool called <strong>cert-manager</strong> <a href="https://cert-manager.io">https://cert-manager.io</a></p>
+
+<h2 id="how-it-works-">How it works ?</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    +----------------+           +---------------------+           +--------------------+           +---------------------------+
+    | Let's Encrypt  |           |  cert-manager       |           | Ingress Controller |           |   cert-manager            |
+    |    (ACME)      |           |  (k8s)              |           |     (Nginx)        |           |   k8s:cm-acme-http-solver |
+    +----------------+           +---------------------+           +--------------------+           +---------------------------+
+          |                             |                               |                            |
+          | 1. Create CertificateRequest|                               |                            |
+          |&lt;--------------------------- |                               |                            |
+          |                             |                               |                            |
+          |                             | 2. Request HTTP-01 Challenge  |                            |
+          |                             |------------------------------&gt;|                            |
+          |                             |                               |                            |
+          |                             |                               |                            |
+          |                             |                               |                            |
+          |                             |                               |  3. Serve challenge file   |
+          |                             |&lt;------------------------------|----------------------------|
+          |                             |                               |                            |
+          |                             |                               |                            |
+          |                             |                               |                            |
+          |                             |                               |                            |
+          | 4. Validate Challenge       |                               |                            |
+          |&lt;----------------------------|                               |                            |
+          |                             |                               |                            |
+          | 5. Issue Certificate        | cert-manager                  |                            |
+          |----------------------------&gt;| Stores certificate in Secrets |                            |
+          |                             | allowing access it for Nginx  |                            |
+
+</code></pre></div></div>
+
+<p>Cert-Manager requesting letsencrypt to issue new ceritificate, LetsEncrypt verify generated certificate using various types of challenges</p>
+
+<p>Let’s Encrypt supports several challenge types that allow it to verify ownership of a domain before issuing SSL/TLS certificates. These challenges are part of the ACME (Automated Certificate Management Environment) protocol, which is used by Let’s Encrypt and other ACME-compatible certificate authorities.</p>
+
+<p>Here are the three main types of Let’s Encrypt challenges:</p>
+
+<h3 id="http-01-challenge">HTTP-01 Challenge</h3>
+
+<p>The HTTP-01 challenge requires the web server that serves your domain to respond to an HTTP request at a specific path. The cert-manager or your ACME client will provision a file at the path .well-known/acme-challenge/ on your server that contains a token.</p>
+
+<p>How it works:</p>
+<ul>
+  <li>Let’s Encrypt asks you to serve a token from http://your-domain/.well-known/acme-challenge/<token>.</token></li>
+  <li>The ACME client (e.g., cert-manager) responds to this request by provisioning the token on your web server (usually through an Ingress controller or a pod).</li>
+  <li>Let’s Encrypt validates the challenge by making an HTTP GET request to the token URL.</li>
+  <li>Best for: Domains with direct access to HTTP traffic. This is commonly used with Kubernetes Ingress controllers like NGINX.</li>
+  <li>Requirements: Port 80 must be open and reachable on your server.</li>
+</ul>
+
+<h3 id="dns-01-challenge">DNS-01 Challenge</h3>
+
+<p>The DNS-01 challenge requires you to prove domain ownership by creating a DNS TXT record with a specific token. The cert-manager or your ACME client will automate this by updating your DNS provider’s records.</p>
+
+<p>How it works:</p>
+
+<ul>
+  <li>Let’s Encrypt asks you to create a DNS TXT record _acme-challenge.your-domain with a specific value.</li>
+  <li>The ACME client (e.g., cert-manager) interacts with your DNS provider’s API to create this record automatically.</li>
+  <li>Let’s Encrypt queries your domain’s DNS TXT record to verify that it contains the correct value.</li>
+  <li>Best for: Wildcard certificates (e.g., *.example.com), internal services, and domains where direct HTTP access is not possible.</li>
+  <li>Requirements: You must have control over the domain’s DNS records, and your DNS provider must support automation via an API that the ACME client can use.</li>
+</ul>
+
+<h3 id="tls-alpn-01-challenge">TLS-ALPN-01 Challenge</h3>
+
+<p>The TLS-ALPN-01 challenge allows validation over a custom TLS extension called ALPN (Application-Layer Protocol Negotiation). This challenge type is specifically for cases where you have control over the server’s TLS configuration and don’t want to use HTTP or DNS-based validation.</p>
+
+<p>How it works:</p>
+
+<ul>
+  <li>The ACME client (e.g., cert-manager) configures your web server to respond to TLS connections with a special ALPN protocol (acme-tls/1) and a certificate containing the challenge token.</li>
+  <li>Let’s Encrypt connects to your server over HTTPS and validates the challenge by verifying the presence of this certificate using the ALPN protocol.</li>
+  <li>Best for: Environments with strict security policies where serving files over HTTP is not an option or where DNS automation is not available.</li>
+  <li>Requirements: You must have control over the TLS configuration and be able to install the custom certificate temporarily.</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Challenge</th>
+      <th>Description</th>
+      <th>Best Use Case</th>
+      <th>Requirements</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>HTTP-01</strong></td>
+      <td>Serve a token over HTTP on port 80.</td>
+      <td>Simple web domains with HTTP access.</td>
+      <td>Port 80 open and accessible.</td>
+    </tr>
+    <tr>
+      <td><strong>DNS-01</strong></td>
+      <td>Create a DNS TXT record with the token.</td>
+      <td>Wildcard certificates and internal domains.</td>
+      <td>DNS provider with API for automation.</td>
+    </tr>
+    <tr>
+      <td><strong>TLS-ALPN-01</strong></td>
+      <td>Respond to a TLS connection with a token via ALPN.</td>
+      <td>Strict security environments.</td>
+      <td>Control over TLS configuration.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="summary-of-the-process">Summary of the Process:</h3>
+
+<ul>
+  <li>Ingress Resource: You define an Ingress resource that cert-manager observes.</li>
+  <li>Certificate Request: cert-manager issues a request to Let’s Encrypt.</li>
+  <li>ACME Challenge: cert-manager fulfills the HTTP-01 or DNS-01 challenge to prove domain ownership.</li>
+  <li>Challenge Validation: Let’s Encrypt validates the challenge.</li>
+  <li>Certificate Issuance: Let’s Encrypt issues the certificate, and cert-manager stores it as a Kubernetes Secret.</li>
+  <li>Ingress Controller: The Ingress controller terminates TLS for incoming HTTPS traffic using the issued certificate.</li>
+  <li>Automated Renewal: cert-manager automatically renews certificates before they expire.</li>
+</ul>
+
+<p><code class="highlighter-rouge">DNS-01</code> requires api access to change DNS configuration, which is why everybody uses HTTP-01 challenge which is just a request of a created file on server.</p>
+
+<h2 id="install">Install</h2>
+
+<p>There is a few ways to install <strong>cert-manager</strong>, one of them is directly with <code class="highlighter-rouge">kubectl apply -f ...</code> command.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.16.0/cert-manager.yaml`
+</code></pre></div></div>
+
+<p>Install <strong>JetStack</strong></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>helm repo add jetstack https://charts.jetstack.io --force-update
+</code></pre></div></div>
+
+<p>Install <strong>cert-manager</strong></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>helm install cert-manager jetstack/cert-manager \ 
+    --namespace cert-manager \ 
+    --create-namespace \ 
+    -version v1.16.0 \ 
+    --set crds.enabled=true
+</code></pre></div></div>
+
+<p>Verify installation</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get pods -n cert-manager
+</code></pre></div></div>
+
+<h2 id="the-issue">The Issue</h2>
+
+<p>The problem starts here:</p>
+
+<p>Cmd:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl logs -l app=cert-manager -n cert-manager -f
+</code></pre></div></div>
+
+<p>Output:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>E1006 23:14:38.1433441 sync.go:208] "propagation check failed" err="failed to perform self check GET request 'http://example.com/.well-known/acme-challenge/&lt;token&gt;': Get \"http://example.com/.well-known/acme-challenge/&lt;token&gt;\": EOF" logger="cert-manager.controller" resource_name="example-com-tls-1-622117757-218251542" resource_namespace="default" resource_kind="Challenge" resource_version="v1" dnsName="example.com" type="HTTP-01"
+</code></pre></div></div>
+
+<p>As you can see, the cert-manager cannot access the challenge file to verify, at the same time if I go to **http://example.com/.well-known/acme-challenge/<token>** with the browser it will be open without a problem.</token></p>
+
+<h4 id="why-is-that-">Why is that ?</h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+
+In this case, Kubernetes networking is too smart for its own good. See upstream Kubernetes issue
+
+An ingress controller service deploys a LoadBalancer, which is provisioned by your cloud provider. 
+Kubernetes notices the LoadBalancer's external IP address. As an "optimization", kube-proxy on 
+each node writes iptables rules that rewrite all outbound traffic to the LoadBalancer's external 
+IP address to instead be redirected to the cluster-internal Service ClusterIP address. If your 
+cloud load balancer doesn't modify the traffic, then indeed this is a helpful optimization.
+
+However, when you have the PROXY protocol enabled, the external load balancer does modify the 
+traffic, prepending the PROXY line before each TCP connection. If you connect directly to the 
+web server internally, bypassing the external load balancer, then it will receive traffic 
+without the PROXY line. In the case of ingress-nginx with use-proxy-protocol: "true", you'll 
+find that NGINX fails when receiving a bare GET request. As a result, 
+accessing http://subdomain.example.com/ from inside the cluster fails!
+
+This is particularly a problem when using cert-manager for provisioning SSL certificates. 
+Cert-manager uses HTTP01 validation, and before asking LetsEncrypt to hit 
+http://subdomain.example.com/.well-known/acme-challenge/some-special-code, 
+it tries to access this URL itself as a self-check. This fails. Cert-manager does not 
+allow you to skip the self-check. 
+As a result, your certificate is never provisioned, even though the verification URL would 
+be perfectly accessible externally. See upstream cert-manager issues: proxy_protocol 
+mode breaks HTTP01 challenge Check stage, http-01 self check failed for domain, Self check always fail
+
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>There are several ways to solve this problem:
+
+    Modify Kubernetes to not rewrite the external IP address of a LoadBalancer.
+    Modify nginx to treat the PROXY line as optional.
+    Modify cert-manager to add the PROXY line on its self-check.
+    Modify cert-manager to bypass the self-check.
+</code></pre></div></div>
+
+<p>Thankfully to <a href="@compumike">https://github.com/compumike/</a> there is a tool called <a href="hairpin-proxy">https://github.com/compumike/hairpin-proxy</a>.</p>
+
+<p>All you need to do in case of such problem is to installed into your k8s.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl apply -f https://raw.githubusercontent.com/compumike/hairpin-proxy/v0.2.1/deploy.yml 
+</code></pre></div></div>
+
+<p>It will setup bypass access for ACME challenge, and certificates will be validated properly.</p>
+
+<h2 id="references">References</h2>
+
+<ul>
+  <li><a href="https://cert-manager.io">https://cert-manager.io</a></li>
+  <li><a href="https://github.com/compumike/hairpin-proxy">https://github.com/compumike/hairpin-proxy</a></li>
+  <li><a href="https://letsencrypt.org/">https://letsencrypt.org/</a></li>
+</ul>
+
+</article>
+
+<div class="my-8 ">
+    <h2 class="text-2xl mb-2">Comments</h2>
+
+    <script data-isso="https://comments.falsetrue.io/"
+            src="https://comments.falsetrue.io/js/embed.min.js"></script>
+
+    <section id="isso-thread">
+        <noscript>Javascript needs to be activated to view comments.</noscript>
+    </section>
+
+</div>
+
+    </main>
+
+    <!-- <footer class="mt-8">
+     Contact me at <a href="mailto:public@falsetrue.io">public@falsetrue.io</a>
+     </footer>
+-->
+<footer class="text-xs mt-8 px-8">
+    <div class="">
+        <div>
+            Dmitry Ro © 2003 - 2024. All rights reserved.<br>
+            Копирование и распрастранение страницы разрешено только в оригинальном не изменном виде, включая это сообщение.
+            Verbatim copying and redistribution of this entire page are permitted provided this notice is preserved.
+            Verbatim copying and redistribution of any of the photos in the photos subdirectory is permitted under the <a href="http://creativecommons.org/licenses/by-nd/3.0/" rel="nofollow"> Creative Commons Noderivs license version 3.0</a> or later.
+            <div><a href="/pgp.key.txt" rel="pgpkey authn">PGP Key</a></div>
+        </div>
+        <div class="flex mx-auto my-3 items-center justify-center gap-1">
+            <div><a href="https://webmentions.io" target="_blank" class="inline"><img src="/images/webmention.png" alt="Webmentions"></a></div>
+            <div><a href="https://indieweb.org" target="_blank"><img src="/images/indieweb.png" alt="indieweb"></a></div>
+            <div><a href="https://microformats.org" target="_blank"><img src="/images/microformats.png" alt="microformats"></a></div>
+            <div><a href="https://creativecommons.org/licenses/by/3.0/" target="_blank"><img src="/images/cc-commons.png" alt="cc-commons"></a></div>
+            <div><img src="/images/w3c-valid-html.png" alt="valid w3c"></div>
+        </div>
+        <div class="mt-1">
+            <a href="https://xn--sr8hvo.ws/previous">←</a>
+            An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
+            <a href="https://xn--sr8hvo.ws/next">→</a>
+        </div>
+    </div>
+</footer>
+
+  </body>
+</html>
