@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://bridgetownrb.com/" version="1.3.4">Bridgetown</generator><link href="https://falsetrue.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://falsetrue.io/" rel="alternate" type="text/html" /><updated>2024-11-11T09:21:15+01:00</updated><id>https://falsetrue.io/feed.xml</id><title type="html">FalseTrue</title><subtitle>Scripts of cyberdaemon</subtitle><entry><title type="html">Zastava Jugo 45</title><link href="https://falsetrue.io/photo/2024/11/11/zastava-jugo/" rel="alternate" type="text/html" title="Zastava Jugo 45" /><published>2024-11-11T08:00:00+01:00</published><updated>2024-11-11T08:00:00+01:00</updated><id>repo://posts.collection/_posts/2024-11-11-zastava-jugo.markdown</id><content type="html" xml:base="https://falsetrue.io/photo/2024/11/11/zastava-jugo/">&lt;div class=&quot;ft-picture-block&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://bridgetownrb.com/" version="1.3.4">Bridgetown</generator><link href="https://falsetrue.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://falsetrue.io/" rel="alternate" type="text/html" /><updated>2024-12-10T09:52:11+01:00</updated><id>https://falsetrue.io/feed.xml</id><title type="html">FalseTrue</title><subtitle>Scripts of cyberdaemon</subtitle><entry><title type="html">Zastava Jugo 45</title><link href="https://falsetrue.io/photo/2024/11/11/zastava-jugo/" rel="alternate" type="text/html" title="Zastava Jugo 45" /><published>2024-11-11T08:00:00+01:00</published><updated>2024-11-11T08:00:00+01:00</updated><id>repo://posts.collection/_posts/2024-11-11-zastava-jugo.markdown</id><content type="html" xml:base="https://falsetrue.io/photo/2024/11/11/zastava-jugo/">&lt;div class=&quot;ft-picture-block&quot;&gt;
     &lt;img src=&quot;/images/photography_copyrighted/Cars/ZastavaJugo45.jpg&quot; class=&quot;ft-img&quot; /&gt;
     &lt;p&gt;&quot;Zastava Jugo 45&quot; // 2024-11-09 &amp;copy; Dmitry Ro.&lt;/p&gt;
     &lt;p class=&quot;ft-picture-info&quot;&gt;FUJIFILM XT-4 | XF16-80mmF4 R OIS WR | 52mm | F/4 | 1/80 | ISO 1600 &lt;/p&gt;
@@ -6,7 +6,85 @@
     &lt;img src=&quot;/images/photography_copyrighted/Landscape/FruskaGora.jpg&quot; class=&quot;ft-img&quot; /&gt;
     &lt;p&gt;&quot;Fruška Gora Forest&quot; // 2024-11-09 &amp;copy; Dmitry Ro.&lt;/p&gt;
     &lt;p class=&quot;ft-picture-info&quot;&gt;FUJIFILM XT-4 | XF16-80mmF4 R OIS WR | 49mm | F/4 | 1/80 | ISO 160 &lt;/p&gt;
-&lt;/div&gt;</content><author><name></name></author><category term="photo" /><category term="landscape" /><category term="forest" /></entry><entry><title type="html">Рассказ - “Нужно продолжать работать”</title><link href="https://falsetrue.io/share/tales/2024/10/11/crysis-tale/" rel="alternate" type="text/html" title="Рассказ - &quot;Нужно продолжать работать&quot;" /><published>2024-10-11T08:00:00+02:00</published><updated>2024-10-11T08:00:00+02:00</updated><id>repo://posts.collection/_posts/2024-10-10-crysis-tale.markdown</id><content type="html" xml:base="https://falsetrue.io/share/tales/2024/10/11/crysis-tale/">&lt;p&gt;Он сидел у тусклого экрана, голова низко опущена, руки безвольно лежали на клавиатуре. Весь код — бесконечные строки цифр и символов, олицетворение порядка и логики, — сегодня казался ему каким-то особенным издевательством. Андрей Павлович, программист с десятилетним стажем, давно разучился испытывать что-то иное, кроме глубокой, неизбывной усталости. Не физической — нет, это была усталость иного рода, тягучая, тяжелая, словно гиря, привязанная к его мыслям и чувствам. Эта усталость прорастала в его душе как сорняк, поглощая все вокруг.&lt;/p&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="photo" /><category term="landscape" /><category term="forest" /></entry><entry xml:lang="en"><title type="html">EP-18 FalseTrue Digest</title><link href="https://falsetrue.io/newsletter/2024/10/25/ep18/" rel="alternate" type="text/html" title="EP-18 FalseTrue Digest" /><published>2024-10-25T02:00:00+02:00</published><updated>2024-10-25T02:00:00+02:00</updated><id>repo://posts.collection/_posts/2024-10-25-ep18.markdown</id><content type="html" xml:base="https://falsetrue.io/newsletter/2024/10/25/ep18/">&lt;h1 id=&quot;intro&quot;&gt;Intro&lt;/h1&gt;
+
+&lt;p&gt;Hello everybody. This is episode 18 of FalseTrue Digest.&lt;/p&gt;
+
+&lt;h2 id=&quot;stories&quot;&gt;Stories&lt;/h2&gt;
+&lt;p&gt;We have two major recent stories for this month&lt;/p&gt;
+
+&lt;h3 id=&quot;the-main-story-of-this-week-is-linux-foundation-banning-russian-maintainers-due-to-sanctions&quot;&gt;The main story of this week is Linux foundation banning Russian maintainers due to sanctions.&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/torvalds/linux/commit/6e90b675cf942e50c70e8394dfb5862975c3b3b2&quot;&gt;Removing Russian developers from Linux MAINTAINERS file&lt;/a&gt; - This is the commit itself.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lore.kernel.org/all/CAHk-=whNGNVnYHHSXUAsWds_MoZ-iEgRMQMxZZ0z-jY4uHT+Gg@mail.gmail.com/&quot;&gt;Linux Torvalds replied&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lkml.org/lkml/2024/10/24/1118&quot;&gt;Explanation of the case&lt;/a&gt; - Explanation of the case from one of the community member.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.phoronix.com/news/Linux-STMAC-Russian-Sanctions&quot;&gt;Article from Phoronix long time ago &lt;/a&gt; - precedent of everything long before&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lore.kernel.org/lkml/2m53bmuzemamzc4jzk2bj7tli22ruaaqqe34a2shtdtqrd52hp@alifh66en3rj/&quot;&gt;Developers are leaving Linux kernel development&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://typeblog.net/55833/getting-called-paid-actor-by-linus-torvalds&quot;&gt;Getting called “Paid Actor” by Linus Torvalds&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Nobody explained situation better than Bryan Lunduke so I recommend to watch whole set of his videos on subject&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=L5Ec5jrpLVk&quot;&gt;Sanctions Hit Linux Kernel, Russian Programmers Banned&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=AUSJ3ZozLMQ&quot;&gt;Why Were Russian Programmers Banned From Linux, But Not Huawei Employees?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=GUldfuiuRkI&quot;&gt;Remembering When Obama Declared Linux Users “Extremists”&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;internet-archive-is-dying&quot;&gt;Internet Archive is dying&lt;/h3&gt;
+
+&lt;p&gt;Our beloved Internet Archive was hacked, multiple times, and didn’t get up properly, its broken, and nobody understands what is happening.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.reddit.com/r/DataHoarder/comments/15qdjam/the_internet_archive_will_die_any_serious/&quot;&gt;The Internet Archive will die - any serious attempts at archiving it? &lt;/a&gt; - Reasoning behind that started long time ago&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.bleepingcomputer.com/news/security/internet-archive-hacked-data-breach-impacts-31-million-users/&quot;&gt;Internet Archive Data Breach affected 31 million users &lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;development&quot;&gt;Development&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/open-feature&quot;&gt;Open Feature&lt;/a&gt; -  OpenFeature is an open specification that provides a vendor-agnostic, community-driven API for feature flagging that works with your favorite feature flag management tool or in-house solution.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/openobserve/openobserve&quot;&gt;Open Observe&lt;/a&gt; - OpenObserve (O2 for short) is a cloud-native observability platform built specifically for logs, metrics, traces, analytics, RUM (Real User Monitoring - Performance, Errors, Session Replay) designed to work at petabyte scale.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://freshql.ai/blog_fast_storage.html&quot;&gt;Fast Storage&lt;/a&gt; - Ultra fast key value store (in C btw)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://tokio.rs/blog/2024-10-23-announcing-toasty&quot;&gt;Toasty async ORM for Rust&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.iso.org/standard/83626.html&quot;&gt;ISO/IEC 14882:2024 Programming languages — C++&lt;/a&gt;
+    &lt;h2 id=&quot;hard-core&quot;&gt;Hard core&lt;/h2&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/aartaka/pretty.c&quot;&gt;Pretty C&lt;/a&gt; - Pretty C is a new scripting language compatible with C.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.copetti.org/writings/consoles/playstation-vita/&quot;&gt;Playstation Vita Architecture&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jarv.org/posts/cat-without-cat/&quot;&gt;Cat without cat&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/MilesCranmer/rip2&quot;&gt;Rust based rm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;emacs&quot;&gt;Emacs&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://mgmarlow.com/words/2024-07-28-emacs-30-news/&quot;&gt;News in Emacs 30&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Native compilation enabled by default&lt;/li&gt;
+  &lt;li&gt;Native (and faster) JSON support&lt;/li&gt;
+  &lt;li&gt;use-package :vc keyword&lt;/li&gt;
+  &lt;li&gt;Tree-sitter modes are declared as submodes&lt;/li&gt;
+  &lt;li&gt;Minibuffer QOL improvements&lt;/li&gt;
+  &lt;li&gt;Customize interface for dir-locals&lt;/li&gt;
+  &lt;li&gt;New mode: visual-wrap-prefix-mode&lt;/li&gt;
+  &lt;li&gt;New command: replace-regexp-as-diff&lt;/li&gt;
+  &lt;li&gt;New package: which-key&lt;/li&gt;
+  &lt;li&gt;New customizations&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;A few ELisp changes&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://emacs-apac.gitlab.io/announcements/october-2024/&quot;&gt;Announcing Emacs Asia-Pacific (APAC) virtual meetup, Saturday, October 26, 2024&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://irreal.org/blog/?p=12524&quot;&gt;Drawing tools for Emacs&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.reddit.com/r/emacs/comments/1g6dauf/that_lightbulb_moment_with_emacs/&quot;&gt;That Lightbulb Moment with Emacs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;upd&quot;&gt;UPD&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;BTW, I am launching Remoters.Club, please take a look at &lt;a href=&quot;https://remoters.club/&quot;&gt;Remoters.Club&lt;/a&gt; - its supposed to be a community place for people who are working remotely and looking for a job.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;That’s it for this episode. Comment and share. EOF&lt;/p&gt;</content><author><name></name></author><category term="news" /><category term="linux" /><category term="personal" /></entry><entry><title type="html">Рассказ - “Нужно продолжать работать”</title><link href="https://falsetrue.io/share/tales/2024/10/11/crysis-tale/" rel="alternate" type="text/html" title="Рассказ - &quot;Нужно продолжать работать&quot;" /><published>2024-10-11T08:00:00+02:00</published><updated>2024-10-11T08:00:00+02:00</updated><id>repo://posts.collection/_posts/2024-10-10-crysis-tale.markdown</id><content type="html" xml:base="https://falsetrue.io/share/tales/2024/10/11/crysis-tale/">&lt;p&gt;Он сидел у тусклого экрана, голова низко опущена, руки безвольно лежали на клавиатуре. Весь код — бесконечные строки цифр и символов, олицетворение порядка и логики, — сегодня казался ему каким-то особенным издевательством. Андрей Павлович, программист с десятилетним стажем, давно разучился испытывать что-то иное, кроме глубокой, неизбывной усталости. Не физической — нет, это была усталость иного рода, тягучая, тяжелая, словно гиря, привязанная к его мыслям и чувствам. Эта усталость прорастала в его душе как сорняк, поглощая все вокруг.&lt;/p&gt;
 
 &lt;p&gt;Тупость процессов, с которой он сталкивался день за днем, словно темный туман окружала его со всех сторон. “Кто это придумал? Кто сделал так, что мы погружаемся в этот бесконечный хаос, когда каждый правит по своему, но ничего не работает?” — думал он, глядя на свое отражение в мониторе. Не отражение человека, а отражение усталого существа, измученного непрерывной борьбой с бессмысленностью.&lt;/p&gt;
 
@@ -330,13 +408,4 @@ My favourite part here is: “Working software over comprehensive documentation.
     &lt;img src=&quot;/images/photography_copyrighted/Cars/Ferrari308GTBCockpit.jpg&quot; class=&quot;ft-img&quot; /&gt;
     &lt;p&gt;&quot;Ferrari 308 GTB Cockpit&quot; // 2024-09-01 &amp;copy; Dmitry Ro.&lt;/p&gt;
     &lt;p class=&quot;ft-picture-info&quot;&gt;FUJIFILM XT-4 | XF16-80mmF4 R OIS WR | 29m | F/5.6 | 1/250 | ISO 160 &lt;/p&gt;
-&lt;/div&gt;</content><author><name></name></author><category term="photo" /><category term="car" /></entry><entry><title type="html">Why big company experience doesn’t always translate to practical skills</title><link href="https://falsetrue.io/share/comment/2024/08/31/big-companies-hoax/" rel="alternate" type="text/html" title="Why big company experience doesn&apos;t always translate to practical skills" /><published>2024-08-31T14:00:00+02:00</published><updated>2024-08-31T14:00:00+02:00</updated><id>repo://posts.collection/_posts/2024-08-31-big-companies-hoax.markdown</id><content type="html" xml:base="https://falsetrue.io/share/comment/2024/08/31/big-companies-hoax/">&lt;blockquote&gt;
-Many think they will work for big companies to gain experience, but they don’t realize that this experience involves solving problems that don’t exist outside of the big company. That experience will not help you do real work &quot;in the field&quot;. This is also a pattern that brings various technologies into smaller businesses that have no clue why they need them. They propose using these technologies without understanding that they were designed to solve specific problems that only exist at certain scales.
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/feed/update/urn:li:activity:7235182991822499840?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7235182991822499840%2C7235188155887300608%29&amp;amp;dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287235188155887300608%2Curn%3Ali%3Aactivity%3A7235182991822499840%29&quot;&gt;Discussion on LinkedIn&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Got a recommendation on this subject in this thread, the book “Siliconned” by &lt;a href=&quot;https://emaggiori.com/&quot;&gt;Emmanuel Maggori&lt;/a&gt;.
-Will be on my bookshelf soon.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/books/siliconned.jpg&quot; class=&quot;ft-img&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="humanity" /><category term="modernity" /><category term="books" /><category term="linkedin" /></entry></feed>
+&lt;/div&gt;</content><author><name></name></author><category term="photo" /><category term="car" /></entry></feed>
