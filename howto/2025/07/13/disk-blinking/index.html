@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Prevent disk from being indexed by system | FalseTrue</title>
+
+<!-- Begin Bridgetown SEO tag v6.0.0 -->
+<title>Prevent disk from being indexed by system | FalseTrue</title>
+<meta property="og:title" content="Prevent disk from being indexed by system" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Scripts of cyberdaemon" />
+<meta property="og:description" content="Scripts of cyberdaemon" />
+<link rel="canonical" href="https://falsetrue.io/howto/2025/07/13/disk-blinking/" />
+<meta property="og:url" content="https://falsetrue.io/howto/2025/07/13/disk-blinking/" />
+<meta property="og:site_name" content="FalseTrue" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-07-13T12:00:00+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Prevent disk from being indexed by system" />
+<!-- End Bridgetown SEO tag -->
+
+
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/_bridgetown/static/index.HHCMKHAO.css" />
+<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+<script src="/_bridgetown/static/index.42K5JGTD.js" defer></script>
+
+<link type="application/atom+xml" rel="alternate" href="https://falsetrue.io/feed.xml" title="FalseTrue" />
+
+  </head>
+  <body class="post ">
+    <!-- <header>
+     <img src="/images/logo.svg" alt="Logo" />
+     </header>
+-->
+<nav>
+  <ul>
+    <li><a href="/"><span class="text-green-400">False!</span><span class="text-cyan-300">True</span></a></li>
+    <li><a href="/">Home</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/feed">Feed</a></li>
+    <li><a href="/archive">Archive</a></li>
+    <li><a href="/bookshelf">Bookshelf</a></li>
+    <li><a href="/photography">Photography</a></li>
+    <li><a href="/halloffame">Hall of fame</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/feed.xml"><i class="fa fa-rss text-[orange]"></i>&nbsp;RSS</a></li>
+  </ul>
+</nav>
+
+
+    <main>
+      <article class="prose prose-slate prose-pre:bg-gray-100 prose-pre:text-gray-500 max-w-full prose-h1:leading-relaxed">
+    <span>13 Jul 2025</span>
+    <div class="mb-8">
+        <h1 class="leading-relaxed">Prevent disk from being indexed by system</h1>
+        <div class="category-block">
+            <span>Category</span>
+            
+                
+                    <a href="/categories/howto" class="badge-category badge-howto">howto</a>
+                
+            
+        </div>
+        <div class="tags-block mt-8">
+            <span>Tags</span>
+            
+                <a href="/tags/linux" class="badge-tag">#linux</a>
+            
+                <a href="/tags/tools" class="badge-tag">#tools</a>
+            
+        </div>
+    </div>
+    <p>When prepping a new backup disk, especially after securely wiping, formatting, and mounting it, you might be surprised to see the disk <strong>still blinking</strong> — indicating activity.</p>
+
+<p>It most probably GNOME indexer, which prepresented by this <code class="highlighter-rouge">tracker-miner-fs-3</code>, so check process list for its presence.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ps aux | grep -E 'tracker|baloo|mlocate|plocate'
+</code></pre></div></div>
+
+<h2 id="what-is-tracker-miner-fs-3">What is <code class="highlighter-rouge">tracker-miner-fs-3</code>?</h2>
+
+<p><code class="highlighter-rouge">tracker-miner-fs-3</code> is part of the <strong>Tracker 3 framework</strong>, a background service used by GNOME to scan filesystems and build a searchable metadata database. It powers features like:</p>
+
+<ul>
+  <li>GNOME Shell search</li>
+  <li>Nautilus file search</li>
+  <li>File indexing for content, tags, metadata</li>
+</ul>
+
+<p>By default, <strong>Tracker watches all mounted volumes</strong>, including your freshly-prepared backup disk.</p>
+
+<h2 id="why-this-matters-for-backups">Why This Matters for Backups</h2>
+
+<p>If you’re like me, using a clean <code class="highlighter-rouge">ext4</code>-formatted HDD for <strong>photo backups</strong>, Tracker is:</p>
+
+<ul>
+  <li>📈 Consuming disk I/O</li>
+  <li>💾 Creating hidden files like <code class="highlighter-rouge">.tracker3/</code></li>
+  <li>🌀 Interfering with a clean, controlled backup workflow</li>
+</ul>
+
+<p>You probably don’t want your backup volume scanned, tagged, and written to by an automated desktop daemon.</p>
+
+<h2 id="how-to-stop-tracker-from-indexing-your-disk">How to Stop Tracker from Indexing Your Disk</h2>
+
+<h3 id="prevent-tracker-from-touching-a-mount">Prevent Tracker from Touching a Mount</h3>
+
+<p>Create a <code class="highlighter-rouge">.trackerignore</code> file at the root of the mount point:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">touch</span> /mnt/photos/.trackerignore
+</code></pre></div></div>
+
+<p>Alternatively, <code class="highlighter-rouge">.nomedia</code> is also respected by some services:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">touch</span> /mnt/photos/.nomedia
+</code></pre></div></div>
+
+<p>This tells Tracker (and sometimes other indexers) to <strong>ignore the folder entirely</strong>.</p>
+
+<h3 id="kill-it-temporarily">Kill It Temporarily</h3>
+
+<p>To immediately stop Tracker:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pkill tracker-miner-fs-3
+</code></pre></div></div>
+
+<p>It may restart automatically unless disabled via systemd.</p>
+
+<h3 id="disable-tracker-permanently-if-you-dont-use-it">Disable Tracker Permanently (if you don’t use it)</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tracker3 reset <span class="nt">--hard</span>
+systemctl <span class="nt">--user</span> mask tracker-miner-fs-3.service
+systemctl <span class="nt">--user</span> mask tracker-store.service
+</code></pre></div></div>
+
+<p>You can also stop all Tracker daemons:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tracker3 daemon <span class="nt">-t</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p>This will disable GNOME file search features system-wide.</p>
+</blockquote>
+
+<h3 id="remove-tracker-index-database">Remove tracker index database</h3>
+
+<p>The tracker3 database storage is here: $HOME/.cache/tracker3
+The log is here: $HOME/.local/share/tracker/data</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rm -rvf ~/.cache/tracker3
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rm -rvf ~/.local/share/tracker
+</code></pre></div></div>
+
+<h2 id="how-to-see-whats-accessing-the-disk">How to See What’s Accessing the Disk</h2>
+
+<p>To confirm Tracker (or anything else) is touching your disk:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>iotop
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>lsof +D /mnt/photos
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>fuser <span class="nt">-vm</span> /mnt/photos
+</code></pre></div></div>
+
+<p>These tools let you observe file-level access and identify persistent background activity.</p>
+
+<h2 id="thoughts">Thoughts</h2>
+
+<p>If you’re using GNOME and preparing a backup volume — especially for photos — make sure <code class="highlighter-rouge">tracker-miner-fs</code> isn’t working against you. A simple <code class="highlighter-rouge">.trackerignore</code> file can prevent unintended indexing, I/O, or metadata writes.</p>
+
+<p>There is an option to setup <strong>udev</strong> to create .trackerignore automatically.</p>
+
+<h3 id="references">References</h3>
+<ul>
+  <li><a href="https://tracker.gnome.org/overview/">https://tracker.gnome.org/overview/</a></li>
+  <li><a href="https://r4ven.fr/en/blog/gnome-nautilus-indexation-tracker-miner/">https://r4ven.fr/en/blog/gnome-nautilus-indexation-tracker-miner/</a></li>
+  <li>
+    <p><a href="https://discourse.gnome.org/t/configure-tracker-to-always-index-certain-file-extensions/17199/3">https://discourse.gnome.org/t/configure-tracker-to-always-index-certain-file-extensions/17199/3</a></p>
+  </li>
+  <li><a href="https://github.com/Tomas-M/iotop">https://github.com/Tomas-M/iotop</a></li>
+</ul>
+
+</article>
+
+<div class="my-8 ">
+    <h2 class="text-2xl mb-2">Comments</h2>
+
+    <script data-isso="https://comments.falsetrue.io/"
+            src="https://comments.falsetrue.io/js/embed.min.js"></script>
+
+    <section id="isso-thread">
+        <noscript>Javascript needs to be activated to view comments.</noscript>
+    </section>
+
+</div>
+
+    </main>
+
+    <footer class="text-xs pt-8 my-8 px-8">
+    <div>
+        <div>
+            Dmitry Ro © 2003 - 2024. All rights reserved.<br>
+            Копирование и распрастранение страницы разрешено только в оригинальном не изменном виде, включая это сообщение.
+            Verbatim copying and redistribution of this entire page are permitted provided this notice is preserved.
+            Verbatim copying and redistribution of any of the photos in the photos subdirectory is permitted under the <a href="http://creativecommons.org/licenses/by-nd/3.0/" rel="nofollow"> Creative Commons Noderivs license version 3.0</a> or later.
+            <div><a href="/pgp.key.txt" rel="pgpkey authn">PGP Key</a></div>
+        </div>
+        <div class="flex mx-auto my-3 items-center justify-center gap-1">
+            <div><a href="https://webmentions.io" target="_blank" class="inline"><img src="/images/webmention.png" alt="Webmentions"></a></div>
+            <div><a href="https://indieweb.org" target="_blank"><img src="/images/indieweb.png" alt="indieweb"></a></div>
+            <div><a href="https://microformats.org" target="_blank"><img src="/images/microformats.png" alt="microformats"></a></div>
+            <div><a href="https://creativecommons.org/licenses/by/3.0/" target="_blank"><img src="/images/cc-commons.png" alt="cc-commons"></a></div>
+            <div><img src="/images/w3c-valid-html.png" alt="valid w3c"></div>
+        </div>
+        <div class="mt-1">
+            <a href="https://xn--sr8hvo.ws/previous">←</a>
+            An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
+            <a href="https://xn--sr8hvo.ws/next">→</a>
+        </div>
+    </div>
+</footer>
+
+  </body>
+</html>
