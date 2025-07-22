@@ -1,0 +1,47 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# Bundle could not verify the SSL certificate
+
+Если при
+
+bundle install
+
+bundle неможет верифицтировать сертификат и выдает ошибку
+
+```
+
+Fetching source index from https://rubygems.org/
+
+Could not verify the SSL certificate for https://rubygems.org/.
+
+There is a chance you are experiencing a man-in-the-middle attack, but most likely your system doesn't have the CA
+
+certificates needed for verification. For information about OpenSSL certificates, see bit.ly/ruby-ssl. To connect without
+
+using SSL, edit your Gemfile sources and change 'https' to 'http'.
+
+```
+
+Необходимо выполнить
+
+```
+
+rvm osx-ssl-certs update
+
+```
+
+Подробнее
+
+=> https://rvm.io/support/fixing-broken-ssl-certificates тут
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

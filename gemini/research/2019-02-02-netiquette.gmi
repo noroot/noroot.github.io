@@ -1,0 +1,49 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# Netiquette RFC1855
+
+Netiquette is a series of paragraphs which was written faraway October 1996y by man named Sally Hambridge. Document describes principles of network conversations using emails and other aspects of messaging. For one hand is nothing special for today that this rfc document is not even mentioned on github, on other hand, in this new network which was significantly changed since 96 or even 2005 very few people may effective utilize email conversation, not to mention various instant messaging systems. This document can help to improve not only your skill, but can make you and your recipients be more professinal and effective.
+
+That’s why I’ve just created repo with this RFC1855
+
+=> https://github.com/noroot/netiquette/ netiquette
+
+and I literally
+
+Request your For Comments
+
+(which is RFC stands for.)
+
+If you prefer more entertained path, you may first want to look at this detailed videoreview of netiquette by Bryan Lunduke. (go more for it)
+
+RU:
+
+Netiquette это написанный в 1996 году
+
+=> https://tools.ietf.org/html/rfc1855 документ
+
+мистером Sally Hambridge. Документ описывает принципы общения в сети по email, и разные другие аспекты обмена сообщениями. С одной стороны удивительно что сегодня этот документ не упомянут даже на github, с другой в этом новой сети которая сильно отличатеся того того что было в 96 и даже 2005 году, мало кто стремится быть эффективным в общении, это особенно касается instant messenge’ров, а про email сегодня можно констатировать что единицы могут корректно и эффективно общаться по нему.
+
+Поэтому сделал копию нетикета на гитхабе
+
+=> https://github.com/noroot/netiquette/ netiquette
+
+и призываю ее покоментировать, чтобы создать новый документ актуальный в современной сети.
+
+Другие документы Sally Hambridge:
+
+=> https://tools.ietf.org/html/rfc3098 A Set of Guidelines for Mass Unsolicited Mailings and Postings (spam*)
+
+=> https://tools.ietf.org/html/rfc2635 How to Advertise Responsibly Using E-Mail and Newsgroups
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

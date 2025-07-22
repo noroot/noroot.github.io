@@ -1,0 +1,35 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# Baseus H1 headphones reset
+
+If you happen to acquire one of these headphones as a spare (there is no other reason to acquire these poor-quality headphones), you might encounter one of the following problems:
+
+Only one ear is playing sound.
+
+One ear is playing sound from one device, while the other is playing from another (sounds crazy, but that’s the reality; you can hear YouTube from one ear and a podcast from the other if your brain can handle it).
+
+To fix this behavior, you need to reset the headphones. My pair of these headphones ended up somewhere on a shelf, and occasionally I came across them wondering how to fix them because it’s obviously a software problem, and there must be a way to perform a hard reset.
+
+#### The Solution:
+
+Connect the USB-C power cable.
+
+Ensure that it is charging, indicated by a steady red LED light.
+
+Rapidly press the three-dotted button five times.
+
+Make sure that the LED switches to a steady white light.
+
+DONE. After this reset, the headphones will work normally.
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

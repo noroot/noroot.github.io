@@ -1,0 +1,134 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# 📚 Bookshelf
+
+=> /images/books/andrea-morua-open-letter.jpg Image
+
+=> /books/books/andrew-morua-openletter/ Андрея Моруа - Открытое письмо молодому человеку о науке жить. Искусство беседы
+
+=> /images/books/malcev-maestro-posledni-prorok-evropi.png Image
+
+=> /books/books/malcev-mastero-posledni-prorok-evropi/ Олег Мальцев: Маестро Последний Пророк Европы
+
+=> https://m.media-amazon.com/images/I/61Kr-0lwIrL._SL500_.jpg Image
+
+=> /books/books/four-agreements/ Book: The Four Agreements
+
+=> /images/books/12rulesoflife.jpg Image
+
+=> /books/books/12-rules-of-life/ Книга: 12 Rules of Life: An Antidote to Chaos
+
+=> /images/books/nietzsche-ecce-homo.jpg Image
+
+=> /books/books/nietzsche-ecce-homo/ Ницше: Ecce Homo
+
+=> /images/books/marcus-aurelius-meditation.jpg Image
+
+=> /books/books/marcus-aurelius-meditations/ Marcus Aurelius: Meditations
+
+=> /images/books/марк-аврелий-на-едине-с-собой.webp Image
+
+=> /books/books/marcus-aurelius-alone-withmyself/ Марк Аврелий: На едине с собой
+
+=> /images/books/bullshitjobs.jpg Image
+
+=> /books/books/bullshit-jobs/ Книга: Bullshit Jobs: A Theory
+
+=> /images/books/unfucktyourself.jpg Image
+
+=> /books/books/unfuck-yourself/ Книга: Unfuck yourself
+
+=> /images/books/robert-green-33-strategies-of-war.jpeg Image
+
+=> /books/books/robert-green-33-strategies-of-war/ Robert Green: 33 Strategies of War
+
+=> /images/books/robertgreen-48lawsofpower.jpg Image
+
+=> /books/books/rober-green-48-laws-of-power/ Robert Green: 48 Laws of Power
+
+=> /images/books/extremeownership.jpg Image
+
+=> /books/books/extreme-ownership/ Книга: Extreme Ownership: How U.S. Navy SEALs Lead and Win
+
+=> /images/books/subtleartnotgivingafuck.jpeg Image
+
+=> /books/books/not-giving-a-fuck/ Книга: The Subtle Art of Not Giving A Fuck
+
+=> /images/books/ruiz-master-of-self.jpg Image
+
+=> /books/books/ruiz-mastery-of-self/ Don Miguel Ruiz: Master of Self
+
+=> /images/books/raydalio-principles.jpg Image
+
+=> /books/books/raydalio-principles/ Ray Dalio: Principles
+
+=> /images/books/leanstartup.jpeg Image
+
+=> /books/books/lean-startup/ Книга: Lean Startup
+
+=> /images/books/castaneda-wheeloftime.jpeg Image
+
+=> /books/books/castaneda-wheeloftime/ Carlos Castaneda: Wheel of Time
+
+=> /images/books/castaneda-teachings-of-don-juan.jpg Image
+
+=> /books/books/castaneda-teachings-of-don-juan/ Carlos Castaneda: Teachings of Don Juan
+
+=> /images/books/castaneda-teaching-of-don-juan-yaqi.jpg Image
+
+=> /books/books/castaneda-teaching-of-don-juan-yaqi/ Carlos Castaneda: Teaching of Yaqi
+
+=> /images/books/castaneda-separate-reality.jpeg Image
+
+=> /books/books/castaneda-separate-reality/ Carlons Castaneda: A Separate Reality
+
+=> /images/books/castaneda-secondringofpower.jpeg Image
+
+=> /books/books/castaneda-second-ring-of-power/ Carlos Castaneda: Second Ring of Power
+
+=> /images/books/castaneda-power-of-silence.jpg Image
+
+=> /books/books/castaneda-power-of-silence/ Carlos Castaneda: Power of Silence
+
+=> /images/books/castaneda-journey-to-ixtlan.jpg Image
+
+=> /books/books/castaneda-journey-to-ixtlan/ Carlons Castaneda: Journey To Ixtlan
+
+=> /images/books/castaneda-fire-from-within.jpeg Image
+
+=> /books/books/castaneda-fire-within/ Carlos Castaneda: Fire Form Within
+
+=> /images/books/jean-baudrillard-la-societe-de-consommation.jpeg Image
+
+=> /books/books/jean-baudrillard-la-societe-de-consomation/ Jean Baudrillard: La Societe de Consomation
+
+=> /images/books/jean-baudrillard-simulacra-et-simulation.jpg Image
+
+=> /books/books/jean-baudrillard-simulacra-et-simulation/ Jean Baudrillard: Simulacra et Simulation
+
+=> /images/books/jordan-peterson-maps-of-meaning.jpg Image
+
+=> /books/books/jordan-peterson-maps-of-meaning/ Jordan B. Peterson: Maps of Meaning: The Architecture of Belief
+
+=> /images/books/red-dragon-book.jpg Image
+
+=> /books/books/red-dragon-book/ Compilers: Principles, Techniques, and Tools
+
+=> /images/books/gibson-neuromancer.jpeg Image
+
+=> /books/books/gibson-neuromancer/ W.Gibson - Neuromancer
+
+=> /images/books/gibson-burning-chrome.jpeg Image
+
+=> /books/books/gibson-burning-chrome/ W.Gibson - Burning Chrome
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

@@ -1,0 +1,153 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# Antitrust - спецэффекты в фильмах про программистов
+
+Все наверно смотрели этот фильм Antitrust, в русской локализации "Программист", дык вот в этом фильме главный герой Майло Хоффман (Milo Hoffman) со своими друзьями по сюжету весь фильм пытается скомпилировать пример из документации по Java на сайте Sun :
+
+WebServer.java
+
+именно этот файл фигурирует в сценах с монитором. Снимки и продолжение под катом...
+
+Скриншоты кода - три разных сцены
+
+```
+
+void listDirectory(File dir, PrintStream ps) throws IOException {
+
+ps.println("
+
+\n");
+
+ps.println("Parent Directory
+
+\n");
+
+String[] list = dir.list();
+
+for (int i = 0; list != null &amp;&amp; i &lt; list.length; i++) {
+
+File f = new File(dir, list[i]);
+
+if (f.isDirectory()) {
+
+ps.println(""+list[i]+"/
+
+");
+
+} else {
+
+ps.println(""+list[i]+"
+
+" + (new Date()) + "");
+
+}
+
+/* are we doing a GET or just a HEAD */
+
+boolean doingGet;
+
+/* beginning of file name */
+
+int index;
+
+if (buf[0] == (byte)'G' &amp;&amp;
+
+buf[1] == (byte)'E' &amp;&amp;
+
+buf[2] == (byte)'T' &amp;&amp;
+
+buf[3] == (byte)' ') {
+
+doingGet = true;
+
+index = 4;
+
+} else if (buf[0] == (byte)'H' &amp;&amp;
+
+buf[1] == (byte)'E' &amp;&amp;
+
+buf[2] == (byte)'A' &amp;&amp;
+
+buf[3] == (byte)'D' &amp;&amp;
+
+buf[4] == (byte)' ') {
+
+doingGet = false;
+
+index = 5;
+
+} else {
+
+/* we don't support this method */
+
+ps.print("HTTP/1.0 " + HTTP_BAD_METHOD +
+
+" unsupported method type: ");
+
+ps.write(buf, 0, 5);
+
+ps.write(EOL);
+
+ps.flush();
+
+s.close();
+
+return;
+
+}
+
+```
+
+Обьяснения под катом
+
+Как мы видим это именно тот файл разработчики фильма позаботились только о том чтобы убрать комментарии На этом кадре где товарищь Майло пробрался в какую детскую психо комнату мы видим бешенно настроенный GDM/XDM ?
+
+По скольку Майло изрядно обкурен и в упор не видит надписи Touch Screen, он за долю секунды подбирает пароль в самое секретное место компании, и тутже перед ним открывается нечто вроде Xterm Далее в этом терминале он наберает Что вызывает видео проигрыватель судя по всему show это symlink на mplayer.
+
+Далее ближе к концу фильма сцена где два сотрудника компании NURV следят за какими то фрилансерами и копипастят их код себе, вот что было на их экранах:
+
+а это нечто иное как Lnx4Win - позволяет ставить linux в раздел Windows, и вот этот кусок кода:
+
+```
+
+ available = (long) free.avail_clusters * (long) free.bytes_per_sector * (long)
+
+free.sectors_per_cluster;
+
+GetDlgItemText(hDlg, IDC_LINUXSIZE , buf, 5);
+
+size = atoi(buf);
+
+GetDlgItemText(hDlg, IDC_SWAPSIZE , buf, 5);
+
+swapsize = atoi(buf);
+
+if((size + swapsize) &gt; (available/1000000))
+
+{ MessageBox(hDlg, "You've not enough space on disk", "Invalid size", MB_APPLMODAL|MB_ICONEXCLAMATION|MB_OK); return 0;
+
+}
+
+sprintf(path, "%c:\\lnx4win\\size.txt", hd[getdisk()]); if((f = fopen(path, "w")) == NULL)
+
+{ MessageBox(hDlg, "Can't save configuration file.", "File error!",
+
+MB_APPLMODAL|MB_ICONEXCLAMATION|MB_OK); return 0;
+
+}
+
+```
+
+Непонятно каким образом это связано с системой спутникового обмена сообщениями Synapse, а директор компании Nurv сюда по всему очень сильно не любил java и заставлял подчинённых убивать людей и отнимать у них код причём код как оказалось из примеров документации по функциям. Если конечно всего этого не знать то фильм может показаться интересным.
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

@@ -1,0 +1,23 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# Notes
+
+=> https://www.get-notes.com/ https://www.get-notes.com/
+
+Notes is a note taking app, feature wise it is not that rich, but as an example of what can be done without javascript, -  is excellent.
+
+=> https://github.com/nuttyartist/notes https://github.com/nuttyartist/notes
+
+P.S. Of course Emacs is still better and always will be.
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

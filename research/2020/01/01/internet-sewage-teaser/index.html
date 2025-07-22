@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Internet sewage: Teaser | FalseTrue</title>
+
+<!-- Begin Bridgetown SEO tag v6.0.0 -->
+<title>Internet sewage: Teaser | FalseTrue</title>
+<meta property="og:title" content="Internet sewage: Teaser" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Scripts of cyberdaemon" />
+<meta property="og:description" content="Scripts of cyberdaemon" />
+<link rel="canonical" href="https://falsetrue.io/research/2020/01/01/internet-sewage-teaser/" />
+<meta property="og:url" content="https://falsetrue.io/research/2020/01/01/internet-sewage-teaser/" />
+<meta property="og:site_name" content="FalseTrue" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-01-01T21:00:00+01:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Internet sewage: Teaser" />
+<!-- End Bridgetown SEO tag -->
+
+
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/_bridgetown/static/index.ZSROYMEN.css" />
+<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+<script src="/_bridgetown/static/index.42K5JGTD.js" defer></script>
+
+<link type="application/atom+xml" rel="alternate" href="https://falsetrue.io/feed.xml" title="FalseTrue" />
+
+  </head>
+  <body class="post ">
+    <!-- <header>
+     <img src="/images/logo.svg" alt="Logo" />
+     </header>
+-->
+<nav>
+  <ul>
+    <li><a href="/"><span class="text-green-400">False!</span><span class="text-cyan-300">True</span></a></li>
+    <li><a href="/">Home</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/feed">Feed</a></li>
+    <li><a href="/archive">Archive</a></li>
+    <li><a href="/bookshelf">Bookshelf</a></li>
+    <li><a href="/photography">Photography</a></li>
+    <li><a href="/halloffame">Hall of fame</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/feed.xml"><i class="fa fa-rss text-[orange]"></i>&nbsp;RSS</a></li>
+  </ul>
+</nav>
+
+
+    <main>
+      <article class="prose prose-slate prose-pre:bg-gray-100 prose-pre:text-gray-500 max-w-full prose-h1:leading-relaxed">
+    <span>01 Jan 2020</span>
+    <div class="mb-8">
+        <h1 class="leading-relaxed">Internet sewage: Teaser</h1>
+        <div class="category-block">
+            <span>Category</span>
+            
+                
+                    <a href="/categories/research" class="badge-category badge-research">research</a>
+                
+            
+        </div>
+        <div class="tags-block mt-8">
+            <span>Tags</span>
+            
+                <a href="/tags/internet" class="badge-tag">#internet</a>
+            
+                <a href="/tags/modernity" class="badge-tag">#modernity</a>
+            
+        </div>
+    </div>
+    <p>Modern internet is full of various marketing telemetry and user identificiation. When you open web page with your favourite browser, it is not only loading page you are supposed to open, but everything else, and that “everthing else” sometimes weight more than original content you’re requested for.
+Javascript code is a big part of each site you’re loading from internet, and the same time javascript code is top consumer of your CPU time. Not only it uses your cpu to show some graphics and effects and loading content dynamically, it’s also execute telemetry and advertismenet identification code.</p>
+
+<!-- more -->
+
+<p>Lets do some example with index Reddit page:</p>
+
+<p><img src="/images/pihole/reddit-1.png" alt="" /></p>
+
+<p>As you can see here, dozens of javascript code got loaded from 3rd party domains, and it will be executed on your CPU, slowing down your computer.
+Do you need this ? I don’t think so, but is this a tradeoff between your CPU usage and content you will get for “free” ? I don’t think so.</p>
+
+<p>Let’s see how to deal with it at first glance.
+There are many tools, one of them is <a href="https://pi-hole.net/?from=falsetrue">Pi-hole</a>, it is a raspberry-pi solution, - special kind filtered DNS resolver, it filters a lot of dirt from internet, using comminity based blacklists of advertising and other tracking scripts domains. You can always whitelist or blacklist anything you want.</p>
+
+<p>Lets see an example again, this is my Pi-hole dashboard screenshot:</p>
+
+<p><img src="/images/pihole/pi-hole.png" alt="Pi-hole graphs" /></p>
+
+<p>As you can see here, almost 20% percent of DNS requests are blocked, so 20% of my network traffic is pure garbage. I’ll not covering setup and features of Pi-Hole, my goal is to get your attention on whats going on in your browser when you’re surfing. Pi-Hole is just one of great instrument to filter, like filter for tap water it prevents your from large amount of unwanted scripts loaded to your computer and executed. And moreover it’s not even question of privacy and anonymity, it is question of efficient computer usage, if those scripts loaded you’re just wasting your CPU time. Did you pay for that ? Or vice versa did they pay to you for renting your CPU to accomplish their dirty advertisement stuff ? I don’t think so.</p>
+
+<p>This is list of top blocked domains for average internet consumer:</p>
+
+<p><img src="/images/pihole/pi-hole-domains.png" alt="Pi-hole top blocked domains" /></p>
+
+<p>Other dilemma is that you get their content for free and this is tradeoff for you to load their scripts in exchange to content, but this is tricky, even if you’re using paid services, they are loading 3d party scripts anyway. So problem definelty exists and its hidden so to say “between the bytes”, solutions are exists too, Pi-Hole, NoScript, uMatrix … or just disabling javascript in browser.</p>
+
+<p>At first I didn’t intent this post to be about Internet filtering under wide angle, but after I decide it should be series of notes about how to reduce internet clutter.
+Next series will be more technical. Tell me in comments, does you feel your CPU drowning while melting those garbage your browser got from internet ?. Stay tuned it will be continued.</p>
+
+</article>
+
+<div class="my-8 ">
+    <h2 class="text-2xl mb-2">Comments</h2>
+
+    <script data-isso="https://comments.falsetrue.io/"
+            src="https://comments.falsetrue.io/js/embed.min.js"></script>
+
+    <section id="isso-thread">
+        <noscript>Javascript needs to be activated to view comments.</noscript>
+    </section>
+
+</div>
+
+    </main>
+
+    <footer class="text-xs pt-8 my-8 px-8">
+    <div>
+        <div>
+            Dmitry Ro © 2003 - 2024. All rights reserved.<br>
+            Копирование и распрастранение страницы разрешено только в оригинальном не изменном виде, включая это сообщение.
+            Verbatim copying and redistribution of this entire page are permitted provided this notice is preserved.
+            Verbatim copying and redistribution of any of the photos in the photos subdirectory is permitted under the <a href="http://creativecommons.org/licenses/by-nd/3.0/" rel="nofollow"> Creative Commons Noderivs license version 3.0</a> or later.
+            <div><a href="/pgp.key.txt" rel="pgpkey authn">PGP Key</a></div>
+        </div>
+        <div class="flex mx-auto my-3 items-center justify-center gap-1">
+            <div><a href="https://webmentions.io" target="_blank" class="inline"><img src="/images/webmention.png" alt="Webmentions"></a></div>
+            <div><a href="https://indieweb.org" target="_blank"><img src="/images/indieweb.png" alt="indieweb"></a></div>
+            <div><a href="https://microformats.org" target="_blank"><img src="/images/microformats.png" alt="microformats"></a></div>
+            <div><a href="https://creativecommons.org/licenses/by/3.0/" target="_blank"><img src="/images/cc-commons.png" alt="cc-commons"></a></div>
+            <div><img src="/images/w3c-valid-html.png" alt="valid w3c"></div>
+        </div>
+        <div class="mt-1">
+            <a href="https://xn--sr8hvo.ws/previous">←</a>
+            An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
+            <a href="https://xn--sr8hvo.ws/next">→</a>
+        </div>
+    </div>
+</footer>
+
+  </body>
+</html>

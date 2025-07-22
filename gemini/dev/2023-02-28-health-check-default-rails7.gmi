@@ -1,0 +1,63 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# Rails 7 introduce default healthcheck controller
+
+=> https://github.com/dhh DHH
+
+introduce default HealthCheckController for Rails 7 ♦
+
+Which is just this piece of code
+
+```
+
+# frozen_string_literal: true
+
+class Rails::HealthController < ActionController::Base # :nodoc:
+
+rescue_from(Exception) { render_down }
+
+def show
+
+render_up
+
+end
+
+private
+
+def render_up
+
+render html: html_status(color: "green")
+
+end
+
+def render_down
+
+render html: html_status(color: "red"), status: 500
+
+end
+
+def html_status(color:)
+
+%(<html><body style="background-color: #{color}"></body></html>).html_safe
+
+end
+
+end
+
+```
+
+PR
+
+=> https://github.com/rails/rails/pull/46936 https://github.com/rails/rails/pull/46936
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

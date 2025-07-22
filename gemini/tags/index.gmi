@@ -1,0 +1,264 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# Tags
+
+=> /tags/cyberpunk #cyberpunk
+
+=> /tags/dev #dev
+
+=> /tags/hardcore #hardcore
+
+=> /tags/mental #mental
+
+=> /tags/esoteric #esoteric
+
+=> /tags/paypal #paypal
+
+=> /tags/python #python
+
+=> /tags/terminal #terminal
+
+=> /tags/console #console
+
+=> /tags/tools #tools
+
+=> /tags/photo #photo
+
+=> /tags/moto #moto
+
+=> /tags/street #street
+
+=> /tags/rust #rust
+
+=> /tags/news #news
+
+=> /tags/journal #journal
+
+=> /tags/car #car
+
+=> /tags/landscape #landscape
+
+=> /tags/forest #forest
+
+=> /tags/linux #linux
+
+=> /tags/personal #personal
+
+=> /tags/tale #tale
+
+=> /tags/ru #ru
+
+=> /tags/software #software
+
+=> /tags/kubernetes #kubernetes
+
+=> /tags/security #security
+
+=> /tags/linkedin #linkedin
+
+=> /tags/review #review
+
+=> /tags/event #event
+
+=> /tags/ruby #ruby
+
+=> /tags/agile #agile
+
+=> /tags/animals #animals
+
+=> /tags/insects #insects
+
+=> /tags/humanity #humanity
+
+=> /tags/modernity #modernity
+
+=> /tags/books #books
+
+=> /tags/scene #scene
+
+=> /tags/history #history
+
+=> /tags/debian #debian
+
+=> /tags/person #person
+
+=> /tags/famouse #famouse
+
+=> /tags/hacker #hacker
+
+=> /tags/legacy #legacy
+
+=> /tags/bw #bw
+
+=> /tags/hardware #hardware
+
+=> /tags/scam #scam
+
+=> /tags/expose #expose
+
+=> /tags/research #research
+
+=> /tags/foss #foss
+
+=> /tags/drama #drama
+
+=> /tags/nginx #nginx
+
+=> /tags/sec #sec
+
+=> /tags/humor #humor
+
+=> /tags/meme #meme
+
+=> /tags/device #device
+
+=> /tags/emacs #emacs
+
+=> /tags/latex #latex
+
+=> /tags/pdf #pdf
+
+=> /tags/resume #resume
+
+=> /tags/screenshot #screenshot
+
+=> /tags/ai #ai
+
+=> /tags/gaming #gaming
+
+=> /tags/sci #sci
+
+=> /tags/baudrillard #baudrillard
+
+=> /tags/link #link
+
+=> /tags/video #video
+
+=> /tags/utils #utils
+
+=> /tags/code #code
+
+=> /tags/rip #rip
+
+=> /tags/github #github
+
+=> /tags/javascript #javascript
+
+=> /tags/algorithms #algorithms
+
+=> /tags/persona #persona
+
+=> /tags/stallman #stallman
+
+=> /tags/rant #rant
+
+=> /tags/vm #vm
+
+=> /tags/virtualbox #virtualbox
+
+=> /tags/kernel #kernel
+
+=> /tags/slack #slack
+
+=> /tags/teams #teams
+
+=> /tags/rails #rails
+
+=> /tags/mainframe #mainframe
+
+=> /tags/cobol #cobol
+
+=> /tags/podcast #podcast
+
+=> /tags/management #management
+
+=> /tags/cars #cars
+
+=> /tags/linux, #linux,
+
+=> /tags/tools, #tools,
+
+=> /tags/crypto #crypto
+
+=> /tags/fedora #fedora
+
+=> /tags/bsd #bsd
+
+=> /tags/report #report
+
+=> /tags/git #git
+
+=> /tags/algo #algo
+
+=> /tags/games #games
+
+=> /tags/predictions #predictions
+
+=> /tags/privacy #privacy
+
+=> /tags/bloatware #bloatware
+
+=> /tags/internet #internet
+
+=> /tags/webmentions #webmentions
+
+=> /tags/microformat #microformat
+
+=> /tags/suckless #suckless
+
+=> /tags/rss #rss
+
+=> /tags/jekyll #jekyll
+
+=> /tags/projects #projects
+
+=> /tags/network #network
+
+=> /tags/tips #tips
+
+=> /tags/php #php
+
+=> /tags/mac #mac
+
+=> /tags/productivity #productivity
+
+=> /tags/osx #osx
+
+=> /tags/admin #admin
+
+=> /tags/dev, #dev,
+
+=> /tags/zf2 #zf2
+
+=> /tags/nodejs #nodejs
+
+=> /tags/frontend #frontend
+
+=> /tags/pgp #pgp
+
+=> /tags/ubuntu #ubuntu
+
+=> /tags/wifi #wifi
+
+=> /tags/perl #perl
+
+=> /tags/sql #sql
+
+=> /tags/postgresql #postgresql
+
+=> /tags/math #math
+
+=> /tags/hack #hack
+
+=> /tags/palm #palm
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

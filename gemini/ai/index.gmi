@@ -1,0 +1,92 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# Clown In The Shell
+
+.ai-avatar {
+     display: inline-block;
+     position: relative;
+     width: 15rem;
+     height: 15rem;
+     border: #dee2e6;
+     border-radius: 50%;
+     background: #fff;
+     box-shadow: 0 0 1rem rgba(0,0,0,0.15);
+     line-height: 3rem;
+     -o-object-fit: cover;
+     object-fit: cover;
+     padding: 10px;
+     margin: 20px;
+ }
+
+=> /assets/images/AiBandLogo.png Image
+
+"Clown in the Shell" is a groundbreaking AI musician, seamlessly blending the worlds of meaningwave, metal, hip-hop, and rap into a unique auditory experience. This AI artist is a digital virtuoso, crafting sonic landscapes that delve into the realms of coding, cyberpunk, and gaming-related themes with unparalleled creativity and precision.
+
+### Album Zero
+
+Click on a song title to get lyrics
+
+Pic
+
+Title
+
+Player
+
+=> /assets/aiband/DystopianWorld.png Image
+
+=> /ai/DystopianWorld/ DystopianWorld
+
+Your browser does not support the audio element.
+
+=> /assets/aiband/DystopianWorld2.png Image
+
+=> /ai/DystopianWorld2/ DystopianWorld2
+
+Your browser does not support the audio element.
+
+=> /assets/aiband/Assembler.png Image
+
+=> /ai/Assembler/ Assembler
+
+Your browser does not support the audio element.
+
+=> /assets/aiband/NeonLitStreets1.png Image
+
+=> /ai/NeonLitStreets1/ NeonLitStreets1
+
+Your browser does not support the audio element.
+
+=> /assets/aiband/NeonLitStreets2.png Image
+
+=> /ai/NeonLitStreets2/ NeonLitStreets2
+
+Your browser does not support the audio element.
+
+=> /assets/aiband/Codebreaker.png Image
+
+=> /ai/Codebreaker/ Codebreaker
+
+Your browser does not support the audio element.
+
+=> /assets/aiband/RubyLanguage.png Image
+
+=> /ai/RubyLanguage/ RubyLanguage
+
+Your browser does not support the audio element.
+
+=> /assets/aiband/BackInTheDayGaming.png Image
+
+=> /ai/BackInTheDayGaming/ BackInTheDayGaming
+
+Your browser does not support the audio element.
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

@@ -1,0 +1,85 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# Что делать на если нехватает памяти для git
+
+Однажды случилась такая история, на слабом инстансе Digital Ocean и большом количестве файлов запушенном в одном коммите, git’у нехватило свободной памяти при git pull, и автоматизированный деплой с помошью capistrano отвалился с ошибкой о том что нехватает памяти
+
+```
+
+fatal: Out of memory, malloc failed (tried to allocate 493791736 bytes)
+
+fatal: index-pack failed
+
+error: Could not fetch origin
+
+git stderr: Nothing written
+
+```
+
+И простой способо обойти ограничение по памяти это уменьшить размеры буферов, добавив в рабочую директорию в конфиг
+
+.git/config
+
+следующие настройки:
+
+```
+
+[pack]
+
+windowMemory = 1m
+
+packSizeLimit = 1m
+
+deltaCacheSize = 1m
+
+deltaCacheLimit = 10
+
+packSizeLimit = 1m
+
+threads = 1
+
+[core]
+
+packedGitWindowSize = 1m
+
+packedGitLimit = 1m
+
+deltaBaseCacheLimit = 1m
+
+compression = 0
+
+loosecompression = 0
+
+bigFileThreshold = 10m
+
+[http]
+
+sslVerify = false ;; !!!
+
+[transfer]
+
+unpackLimit = 10
+
+```
+
+После этого все будет работать. Незаюывайте что это нужно прописывать в конфиг той машины на которой происходить запуск
+
+git pull
+
+, в случае capistrano это будет диреткория
+
+repo/.git
+
+EOF
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

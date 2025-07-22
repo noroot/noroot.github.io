@@ -1,0 +1,75 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# Zend framework 2 preDispatch
+
+Как сделать preDispatch и postDispatch actions в Zend Framework 2 ? код ниже
+
+```
+
+<?php
+
+namespace Application\Controller;
+
+use Zend\Mvc\Controller\ActionController
+
+Zend\Mvc\MvcEvent;
+
+class IndexController extends ActionController
+
+{
+
+public function indexAction()
+
+{
+
+return array();
+
+}
+
+protected function attachDefaultListeners()
+
+{
+
+parent::attachDefaultListeners();
+
+$events = $this->events();
+
+$events->attach('dispatch', array($this, 'preDispatch'), 100);
+
+$events->attach('dispatch', array($this, 'postDispatch'), -100);
+
+}
+
+public function preDispatch (MvcEvent $e)
+
+{
+
+// Called before self::indexAction()
+
+}
+
+public function postDispatch (MvcEvent $e)
+
+{
+
+// Called after self::indexAction()
+
+}
+
+}
+
+```
+
+“100” и “-100” это порядок запуска действий.
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

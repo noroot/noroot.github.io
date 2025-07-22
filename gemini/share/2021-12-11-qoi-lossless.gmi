@@ -1,0 +1,63 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# QOI lossless image comperession proposal
+
+=> https://phoboslab.org/log/2021/11/qoi-fast-lossless-image-compression Dominic Szablewski
+
+предложил алгоритм сжатия изображений за O(n) время
+
+В кратце:
+
+Сжатие 20-50 раз быстрее
+
+Декомпрессия 3-4 раза быстрее
+
+Размер на выходе больше на 20%
+
+300 строк на C
+
+## Benchmark
+
+```
+
+images/screenshots/news.ycombinator.com.png: 1325x1450
+
+decode ms   encode ms   decode mpps   encode mpps   size kb
+
+libpng:       8.6        79.9        223.22         24.03       289
+
+stbi:         6.0       157.4        319.14         12.21       333
+
+qoi:          3.0         3.8        649.95        502.49       288
+
+```
+
+```
+
+images/wallpaper/Hy23XKX.png: 3440x1440
+
+decode ms   encode ms   decode mpps   encode mpps   size kb
+
+libpng:      81.7      2126.3         60.63          2.33      7378
+
+stbi:        91.8      1060.9         53.94          4.67     11093
+
+qoi:         35.4        54.6        140.00         90.77      7653
+
+```
+
+=> https://phoboslab.org/files/qoibench/ Full benchmark list
+
+=> /images/qoi-sample.png QOI SAMPLE
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

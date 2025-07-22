@@ -1,0 +1,93 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# Rails + Webpack + Stimulus + Bootstrap 4
+
+Сделал сборку
+
+Rails
+
+со
+
+StimluluJS
+
+, последней версией любимым мной frontend фреймворком
+
+bootstrap4
+
+и чтобы все это собиралось Webpack’ом.
+
+Turbolinks в комплекте, подключается отдельно в
+
+packs/application.js
+
+. Стоит обратить внимание что рельсовые rails-ujs и turoblinks ставяться через
+
+yarn
+
+.
+
+## Что это такое ?
+
+=> https://stimulusjs.org StimulusJS
+
+- это такой javascript фреймворк, мини Angular если хотите, позволяющий быстро встраивать себя в приложение.
+
+Основные постулаты StimulusJS описаны тут https://stimulusjs.org/handbook/origin
+
+=> https://getbootstrap.com/docs/4.2/ Bootstrap 4.2
+
+- CSS framework главная особенность которого это набор базовых компоненто и grid который позволяет быстро делать адаптивную верстку, поддерживает flexbox.
+
+=> https://webpack.js.org/ Webpack
+
+- Сборщик frontend стека, без которого сегодня необходиться ни один вебпроект.
+
+## Как пользоваться ?
+
+```
+
+git clone
+
+```
+
+```
+
+yarn
+
+```
+
+```
+
+bundle
+
+```
+
+```
+
+rails s
+
+```
+
+и в соседнем терминале
+
+```
+
+./bin/webpack-dev-server
+
+```
+
+Github
+
+=> https://github.com/noroot/rails-stimulus-bootstrap-starter-pack https://github.com/noroot/rails-stimulus-bootstrap-starter-pack
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

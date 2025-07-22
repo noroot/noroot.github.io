@@ -1,0 +1,51 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# Internet sewage: Teaser
+
+Modern internet is full of various marketing telemetry and user identificiation. When you open web page with your favourite browser, it is not only loading page you are supposed to open, but everything else, and that “everthing else” sometimes weight more than original content you’re requested for.
+
+Javascript code is a big part of each site you’re loading from internet, and the same time javascript code is top consumer of your CPU time. Not only it uses your cpu to show some graphics and effects and loading content dynamically, it’s also execute telemetry and advertismenet identification code.
+
+Lets do some example with index Reddit page:
+
+=> /images/pihole/reddit-1.png 
+
+As you can see here, dozens of javascript code got loaded from 3rd party domains, and it will be executed on your CPU, slowing down your computer.
+
+Do you need this ? I don’t think so, but is this a tradeoff between your CPU usage and content you will get for “free” ? I don’t think so.
+
+Let’s see how to deal with it at first glance.
+
+There are many tools, one of them is
+
+=> https://pi-hole.net/?from=falsetrue Pi-hole
+
+, it is a raspberry-pi solution, - special kind filtered DNS resolver, it filters a lot of dirt from internet, using comminity based blacklists of advertising and other tracking scripts domains. You can always whitelist or blacklist anything you want.
+
+Lets see an example again, this is my Pi-hole dashboard screenshot:
+
+=> /images/pihole/pi-hole.png Pi-hole graphs
+
+As you can see here, almost 20% percent of DNS requests are blocked, so 20% of my network traffic is pure garbage. I’ll not covering setup and features of Pi-Hole, my goal is to get your attention on whats going on in your browser when you’re surfing. Pi-Hole is just one of great instrument to filter, like filter for tap water it prevents your from large amount of unwanted scripts loaded to your computer and executed. And moreover it’s not even question of privacy and anonymity, it is question of efficient computer usage, if those scripts loaded you’re just wasting your CPU time. Did you pay for that ? Or vice versa did they pay to you for renting your CPU to accomplish their dirty advertisement stuff ? I don’t think so.
+
+This is list of top blocked domains for average internet consumer:
+
+=> /images/pihole/pi-hole-domains.png Pi-hole top blocked domains
+
+Other dilemma is that you get their content for free and this is tradeoff for you to load their scripts in exchange to content, but this is tricky, even if you’re using paid services, they are loading 3d party scripts anyway. So problem definelty exists and its hidden so to say “between the bytes”, solutions are exists too, Pi-Hole, NoScript, uMatrix … or just disabling javascript in browser.
+
+At first I didn’t intent this post to be about Internet filtering under wide angle, but after I decide it should be series of notes about how to reduce internet clutter.
+
+Next series will be more technical. Tell me in comments, does you feel your CPU drowning while melting those garbage your browser got from internet ?. Stay tuned it will be continued.
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

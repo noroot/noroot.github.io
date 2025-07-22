@@ -1,139 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://bridgetownrb.com/" version="1.3.4">Bridgetown</generator><link href="https://falsetrue.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://falsetrue.io/" rel="alternate" type="text/html" /><updated>2025-07-13T14:51:16+02:00</updated><id>https://falsetrue.io/feed.xml</id><title type="html">FalseTrue</title><subtitle>Scripts of cyberdaemon</subtitle><entry><title type="html">Prevent disk from being indexed by system</title><link href="https://falsetrue.io/howto/2025/07/13/disk-blinking/" rel="alternate" type="text/html" title="Prevent disk from being indexed by system" /><published>2025-07-13T12:00:00+02:00</published><updated>2025-07-13T12:00:00+02:00</updated><id>repo://posts.collection/_posts/2025-07-13-disk-blinking.markdown</id><content type="html" xml:base="https://falsetrue.io/howto/2025/07/13/disk-blinking/">&lt;p&gt;When prepping a new backup disk, especially after securely wiping, formatting, and mounting it, you might be surprised to see the disk &lt;strong&gt;still blinking&lt;/strong&gt; — indicating activity.&lt;/p&gt;
-
-&lt;p&gt;It most probably GNOME indexer, which prepresented by this &lt;code class=&quot;highlighter-rouge&quot;&gt;tracker-miner-fs-3&lt;/code&gt;, so check process list for its presence.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ps aux | grep -E &apos;tracker|baloo|mlocate|plocate&apos;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;what-is-tracker-miner-fs-3&quot;&gt;What is &lt;code class=&quot;highlighter-rouge&quot;&gt;tracker-miner-fs-3&lt;/code&gt;?&lt;/h2&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;tracker-miner-fs-3&lt;/code&gt; is part of the &lt;strong&gt;Tracker 3 framework&lt;/strong&gt;, a background service used by GNOME to scan filesystems and build a searchable metadata database. It powers features like:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;GNOME Shell search&lt;/li&gt;
-  &lt;li&gt;Nautilus file search&lt;/li&gt;
-  &lt;li&gt;File indexing for content, tags, metadata&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;By default, &lt;strong&gt;Tracker watches all mounted volumes&lt;/strong&gt;, including your freshly-prepared backup disk.&lt;/p&gt;
-
-&lt;h2 id=&quot;why-this-matters-for-backups&quot;&gt;Why This Matters for Backups&lt;/h2&gt;
-
-&lt;p&gt;If you’re like me, using a clean &lt;code class=&quot;highlighter-rouge&quot;&gt;ext4&lt;/code&gt;-formatted HDD for &lt;strong&gt;photo backups&lt;/strong&gt;, Tracker is:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;📈 Consuming disk I/O&lt;/li&gt;
-  &lt;li&gt;💾 Creating hidden files like &lt;code class=&quot;highlighter-rouge&quot;&gt;.tracker3/&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;🌀 Interfering with a clean, controlled backup workflow&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;You probably don’t want your backup volume scanned, tagged, and written to by an automated desktop daemon.&lt;/p&gt;
-
-&lt;h2 id=&quot;how-to-stop-tracker-from-indexing-your-disk&quot;&gt;How to Stop Tracker from Indexing Your Disk&lt;/h2&gt;
-
-&lt;h3 id=&quot;prevent-tracker-from-touching-a-mount&quot;&gt;Prevent Tracker from Touching a Mount&lt;/h3&gt;
-
-&lt;p&gt;Create a &lt;code class=&quot;highlighter-rouge&quot;&gt;.trackerignore&lt;/code&gt; file at the root of the mount point:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;touch&lt;/span&gt; /mnt/photos/.trackerignore
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Alternatively, &lt;code class=&quot;highlighter-rouge&quot;&gt;.nomedia&lt;/code&gt; is also respected by some services:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;touch&lt;/span&gt; /mnt/photos/.nomedia
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;This tells Tracker (and sometimes other indexers) to &lt;strong&gt;ignore the folder entirely&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;kill-it-temporarily&quot;&gt;Kill It Temporarily&lt;/h3&gt;
-
-&lt;p&gt;To immediately stop Tracker:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pkill tracker-miner-fs-3
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;It may restart automatically unless disabled via systemd.&lt;/p&gt;
-
-&lt;h3 id=&quot;disable-tracker-permanently-if-you-dont-use-it&quot;&gt;Disable Tracker Permanently (if you don’t use it)&lt;/h3&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;tracker3 reset &lt;span class=&quot;nt&quot;&gt;--hard&lt;/span&gt;
-systemctl &lt;span class=&quot;nt&quot;&gt;--user&lt;/span&gt; mask tracker-miner-fs-3.service
-systemctl &lt;span class=&quot;nt&quot;&gt;--user&lt;/span&gt; mask tracker-store.service
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;You can also stop all Tracker daemons:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;tracker3 daemon &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;This will disable GNOME file search features system-wide.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;remove-tracker-index-database&quot;&gt;Remove tracker index database&lt;/h3&gt;
-
-&lt;p&gt;The tracker3 database storage is here: $HOME/.cache/tracker3
-The log is here: $HOME/.local/share/tracker/data&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;rm -rvf ~/.cache/tracker3
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;rm -rvf ~/.local/share/tracker
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;how-to-see-whats-accessing-the-disk&quot;&gt;How to See What’s Accessing the Disk&lt;/h2&gt;
-
-&lt;p&gt;To confirm Tracker (or anything else) is touching your disk:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;iotop
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;lsof +D /mnt/photos
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;fuser &lt;span class=&quot;nt&quot;&gt;-vm&lt;/span&gt; /mnt/photos
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;These tools let you observe file-level access and identify persistent background activity.&lt;/p&gt;
-
-&lt;h2 id=&quot;thoughts&quot;&gt;Thoughts&lt;/h2&gt;
-
-&lt;p&gt;If you’re using GNOME and preparing a backup volume — especially for photos — make sure &lt;code class=&quot;highlighter-rouge&quot;&gt;tracker-miner-fs&lt;/code&gt; isn’t working against you. A simple &lt;code class=&quot;highlighter-rouge&quot;&gt;.trackerignore&lt;/code&gt; file can prevent unintended indexing, I/O, or metadata writes.&lt;/p&gt;
-
-&lt;p&gt;There is an option to setup &lt;strong&gt;udev&lt;/strong&gt; to create .trackerignore automatically.&lt;/p&gt;
-
-&lt;h3 id=&quot;references&quot;&gt;References&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://tracker.gnome.org/overview/&quot;&gt;https://tracker.gnome.org/overview/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://r4ven.fr/en/blog/gnome-nautilus-indexation-tracker-miner/&quot;&gt;https://r4ven.fr/en/blog/gnome-nautilus-indexation-tracker-miner/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://discourse.gnome.org/t/configure-tracker-to-always-index-certain-file-extensions/17199/3&quot;&gt;https://discourse.gnome.org/t/configure-tracker-to-always-index-certain-file-extensions/17199/3&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/Tomas-M/iotop&quot;&gt;https://github.com/Tomas-M/iotop&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="linux" /><category term="tools" /></entry><entry><title type="html">PiePAL - Terminal Tool for PayPal Observability</title><link href="https://falsetrue.io/projects/2025/04/27/piepal-tool/" rel="alternate" type="text/html" title="PiePAL - Terminal Tool for PayPal Observability" /><published>2025-04-27T21:00:00+02:00</published><updated>2025-04-27T21:00:00+02:00</updated><id>repo://posts.collection/_posts/2025-04-27-piepal-tool.markdown</id><content type="html" xml:base="https://falsetrue.io/projects/2025/04/27/piepal-tool/">&lt;p&gt;A Python program to fetch and display PayPal transactions and subscription details. The script uses the PayPal REST API to retrieve transactions related to a specific &lt;strong&gt;Subscription ID&lt;/strong&gt; and can display them in a terminal using the &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;rich&lt;/code&gt;&lt;/strong&gt; library for a formatted and clean output.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://bridgetownrb.com/" version="1.3.4">Bridgetown</generator><link href="https://falsetrue.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://falsetrue.io/" rel="alternate" type="text/html" /><updated>2025-07-22T16:02:46+02:00</updated><id>https://falsetrue.io/feed.xml</id><title type="html">FalseTrue</title><subtitle>Scripts of cyberdaemon</subtitle><entry><title type="html">PiePAL - Terminal Tool for PayPal Observability</title><link href="https://falsetrue.io/projects/2025/04/27/piepal-tool/" rel="alternate" type="text/html" title="PiePAL - Terminal Tool for PayPal Observability" /><published>2025-04-27T21:00:00+02:00</published><updated>2025-04-27T21:00:00+02:00</updated><id>repo://posts.collection/_posts/2025-04-27-piepal-tool.markdown</id><content type="html" xml:base="https://falsetrue.io/projects/2025/04/27/piepal-tool/">&lt;p&gt;A Python program to fetch and display PayPal transactions and subscription details. The script uses the PayPal REST API to retrieve transactions related to a specific Subscription ID and can display them in a terminal using the rich, - library for a formatted and clean output.&lt;/p&gt;
 
 &lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Fetch &lt;strong&gt;Subscription&lt;/strong&gt; details&lt;/li&gt;
-  &lt;li&gt;Fetch &lt;strong&gt;all transactions&lt;/strong&gt; for a given &lt;strong&gt;subscription ID&lt;/strong&gt;.&lt;/li&gt;
-  &lt;li&gt;Display transaction details such as &lt;strong&gt;Transaction ID&lt;/strong&gt;, &lt;strong&gt;Amount&lt;/strong&gt;, &lt;strong&gt;Payer Email&lt;/strong&gt;, and &lt;strong&gt;Payer Name&lt;/strong&gt;.&lt;/li&gt;
-  &lt;li&gt;Fetch &lt;strong&gt;Subscription Plan&lt;/strong&gt; details&lt;/li&gt;
-  &lt;li&gt;Use the &lt;strong&gt;PayPal Sandbox API&lt;/strong&gt; for testing by using &lt;code class=&quot;highlighter-rouge&quot;&gt;--sandbox&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Use &lt;code class=&quot;highlighter-rouge&quot;&gt;--verbose&lt;/code&gt; output to understand API calls&lt;/li&gt;
+  &lt;li&gt;Fetch Subscription details&lt;/li&gt;
+  &lt;li&gt;Fetch all transactions for a given subscription ID.&lt;/li&gt;
+  &lt;li&gt;Display transaction details such as Transaction ID, Amount, Payer Email, and Payer Name.&lt;/li&gt;
+  &lt;li&gt;Fetch Subscription Plan details&lt;/li&gt;
+  &lt;li&gt;Use the PayPal Sandbox APIx for testing by using --sandbox&lt;/li&gt;
+  &lt;li&gt;Use --verbose output to understand API calls&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;setup-for-usage&quot;&gt;Setup for usage&lt;/h2&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Install with pip - &lt;code class=&quot;highlighter-rouge&quot;&gt;pip install piepal&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Set env variables
+  &lt;li&gt;Install with pip - pip install piepal&lt;/li&gt;
+  &lt;li&gt;Set env variables:
     &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;export PAYPAL_CLIENT_ID=&quot;...&quot;&lt;/code&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;export PAYPAL_CLIENT_SECRET=&quot;...&quot;&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;export PAYPAL_CLIENT_ID=”…”&lt;/li&gt;
+      &lt;li&gt;export PAYPAL_CLIENT_SECRET=”…”&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;Run &lt;code class=&quot;highlighter-rouge&quot;&gt;piepal&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Run piepal&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;setup-for-development&quot;&gt;Setup for development&lt;/h2&gt;
@@ -141,10 +29,10 @@ The log is here: $HOME/.local/share/tracker/data&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;Git clone repository&lt;/li&gt;
   &lt;li&gt;cd ./src&lt;/li&gt;
-  &lt;li&gt;Setup credentials with env variables
+  &lt;li&gt;Setup credentials with env variables:
     &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;export PAYPAL_CLIENT_ID=&quot;...&quot;&lt;/code&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;export PAYPAL_CLIENT_SECRET=&quot;...&quot;&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;export PAYPAL_CLIENT_ID=”…”&lt;/li&gt;
+      &lt;li&gt;export PAYPAL_CLIENT_SECRET=”…”&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
@@ -253,7 +141,7 @@ Transactions for this Subscription
     &lt;img src=&quot;/images/photography_copyrighted/Cars/HondaCBR900RRFireblade.jpg&quot; class=&quot;ft-img&quot; /&gt;
     &lt;p&gt;&quot;Honda 900RR Fireblade&quot; // 2025-04-15 &amp;copy; Dmitry Ro.&lt;/p&gt;
     &lt;p class=&quot;ft-picture-info&quot;&gt;26 mm | ƒ1.5 | ISO 50 &lt;/p&gt;
-&lt;/div&gt;</content><author><name></name></author><category term="photo" /><category term="moto" /><category term="street" /></entry><entry><title type="html">HTTOP - A real-time HTTP log monitor similar to ApacheTop</title><link href="https://falsetrue.io/2025/04/06/httop/" rel="alternate" type="text/html" title="HTTOP - A real-time HTTP log monitor similar to ApacheTop" /><published>2025-04-06T14:00:00+02:00</published><updated>2025-04-06T14:00:00+02:00</updated><id>repo://posts.collection/_posts/2025-04-06-httop.markdown</id><content type="html" xml:base="https://falsetrue.io/2025/04/06/httop/">&lt;p&gt;A real-time HTTP log monitor similar to ApacheTop, written in Rust. This tool allows you to watch incoming http requests in real-time. Purpose - research on web crawlers.&lt;/p&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="photo" /><category term="moto" /><category term="street" /></entry><entry><title type="html">HTTOP - A real-time HTTP log monitor similar to ApacheTop</title><link href="https://falsetrue.io/projects/2025/04/06/httop/" rel="alternate" type="text/html" title="HTTOP - A real-time HTTP log monitor similar to ApacheTop" /><published>2025-04-06T14:00:00+02:00</published><updated>2025-04-06T14:00:00+02:00</updated><id>repo://posts.collection/_posts/2025-04-06-httop.markdown</id><content type="html" xml:base="https://falsetrue.io/projects/2025/04/06/httop/">&lt;p&gt;A real-time HTTP log monitor similar to ApacheTop, written in Rust. This tool allows you to watch incoming http requests in real-time. Purpose - research on web crawlers.&lt;/p&gt;
 
 &lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
 
@@ -369,9 +257,9 @@ COUNT    IP              STATUS     PATH                                    USER
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/noroot/httop&quot;&gt;https://github.com/noroot/httop&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content><author><name></name></author><category term="rust" /><category term="terminal" /><category term="console" /><category term="tools" /></entry><entry><title type="html">Zastava Jugo 45</title><link href="https://falsetrue.io/photo/2024/11/11/zastava-jugo/" rel="alternate" type="text/html" title="Zastava Jugo 45" /><published>2024-11-11T08:00:00+01:00</published><updated>2024-11-11T08:00:00+01:00</updated><id>repo://posts.collection/_posts/2024-11-11-zastava-jugo.markdown</id><content type="html" xml:base="https://falsetrue.io/photo/2024/11/11/zastava-jugo/">&lt;div class=&quot;ft-picture-block&quot;&gt;
-    &lt;img src=&quot;/images/photography_copyrighted/Cars/ZastavaJugo45.jpg&quot; class=&quot;ft-img&quot; /&gt;
-    &lt;p&gt;&quot;Zastava Jugo 45&quot; // 2024-11-09 &amp;copy; Dmitry Ro.&lt;/p&gt;
-    &lt;p class=&quot;ft-picture-info&quot;&gt;FUJIFILM XT-4 | XF16-80mmF4 R OIS WR | 52mm | F/4 | 1/80 | ISO 1600 &lt;/p&gt;
+&lt;img src=&quot;/images/photography_copyrighted/Cars/ZastavaJugo45.jpg&quot; class=&quot;ft-img&quot; alt=&quot;Zastava Jugo 45&quot; /&gt;
+&lt;p&gt;&quot;Zastava Jugo 45&quot; // 2024-11-09 &amp;copy; Dmitry Ro.&lt;/p&gt;
+&lt;p class=&quot;ft-picture-info&quot;&gt;FUJIFILM XT-4 | XF16-80mmF4 R OIS WR | 52mm | F/4 | 1/80 | ISO 1600 &lt;/p&gt;
 &lt;/div&gt;</content><author><name></name></author><category term="photo" /><category term="car" /><category term="street" /></entry><entry><title type="html">Fruška Gora Forest</title><link href="https://falsetrue.io/photo/2024/11/11/fruska-gora/" rel="alternate" type="text/html" title="Fruška Gora Forest" /><published>2024-11-11T08:00:00+01:00</published><updated>2024-11-11T08:00:00+01:00</updated><id>repo://posts.collection/_posts/2024-11-11-fruska-gora.markdown</id><content type="html" xml:base="https://falsetrue.io/photo/2024/11/11/fruska-gora/">&lt;div class=&quot;ft-picture-block&quot;&gt;
     &lt;img src=&quot;/images/photography_copyrighted/Landscape/FruskaGora.jpg&quot; class=&quot;ft-img&quot; /&gt;
     &lt;p&gt;&quot;Fruška Gora Forest&quot; // 2024-11-09 &amp;copy; Dmitry Ro.&lt;/p&gt;
@@ -637,9 +525,7 @@ COUNT    IP              STATUS     PATH                                    USER
 
 &lt;h4 id=&quot;why-is-that-&quot;&gt;Why is that ?&lt;/h4&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-
-In this case, Kubernetes networking is too smart for its own good. See upstream Kubernetes issue
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;In this case, Kubernetes networking is too smart for its own good. See upstream Kubernetes issue
 
 An ingress controller service deploys a LoadBalancer, which is provisioned by your cloud provider. 
 Kubernetes notices the LoadBalancer&apos;s external IP address. As an &quot;optimization&quot;, kube-proxy on 
@@ -662,7 +548,6 @@ allow you to skip the self-check.
 As a result, your certificate is never provisioned, even though the verification URL would 
 be perfectly accessible externally. See upstream cert-manager issues: proxy_protocol 
 mode breaks HTTP01 challenge Check stage, http-01 self check failed for domain, Self check always fail
-
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;There are several ways to solve this problem:
@@ -673,7 +558,8 @@ mode breaks HTTP01 challenge Check stage, http-01 self check failed for domain, 
     Modify cert-manager to bypass the self-check.
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Thankfully to &lt;a href=&quot;@compumike&quot;&gt;https://github.com/compumike/&lt;/a&gt; there is a tool called &lt;a href=&quot;hairpin-proxy&quot;&gt;https://github.com/compumike/hairpin-proxy&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Thankfully to 
+&lt;a href=&quot;@compumike&quot;&gt;https://github.com/compumike/&lt;/a&gt; there is a tool called &lt;a href=&quot;hairpin-proxy&quot;&gt;https://github.com/compumike/hairpin-proxy&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;All you need to do in case of such problem is to installed into your k8s.&lt;/p&gt;
 
@@ -692,4 +578,66 @@ mode breaks HTTP01 challenge Check stage, http-01 self check failed for domain, 
 
 &lt;p&gt;&lt;img src=&quot;/images/linkedin-1000-likes.png&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/feed/update/urn:li:activity:7243514747634040832?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7243514747634040832%2C7243527220693000193%29&amp;amp;dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287243527220693000193%2Curn%3Ali%3Aactivity%3A7243514747634040832%29&quot;&gt;Thread on LinkedIn&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="software" /><category term="linkedin" /></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/feed/update/urn:li:activity:7243514747634040832?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7243514747634040832%2C7243527220693000193%29&amp;amp;dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287243527220693000193%2Curn%3Ali%3Aactivity%3A7243514747634040832%29&quot;&gt;Thread on LinkedIn&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="software" /><category term="linkedin" /></entry><entry><title type="html">EuRuKo 2024 Review</title><link href="https://falsetrue.io/share/note/2024/09/15/euruko2024-review/" rel="alternate" type="text/html" title="EuRuKo 2024 Review" /><published>2024-09-15T12:00:00+02:00</published><updated>2024-09-15T12:00:00+02:00</updated><id>repo://posts.collection/_posts/2024-09-15-euruko2024-review.markdown</id><content type="html" xml:base="https://falsetrue.io/share/note/2024/09/15/euruko2024-review/">&lt;p&gt;EuRuKo 2024 reivew.&lt;/p&gt;
+
+&lt;p&gt;What it is EuRuKo ? It is the conference about programming language&lt;/p&gt;
+
+&lt;blockquote&gt;
+EuRuKo is a Ruby conference organised annually, each year in a different European city chosen by the participants.
+
+Every year the Ruby community from Europe and beyond come to EuRuKo to meet and share their love of Ruby. This is is the longest running and biggest Ruby conference anywhere in Europe and one of the biggest in the world.
+
+It’s up to the participants to pick the next city where the conference will be held. Attendees will pitch their own cities to be the hosts of the next year’s conference which are then voted on by the audience. This also means that the conference organisers will change every year.
+
+&lt;/blockquote&gt;
+
+&lt;p&gt;https://euruko.org/&lt;/p&gt;
+
+&lt;p&gt;So here it is EuRuKo 2024. This year it Was set in Sarajevo, Bosnia and Herzegovina.&lt;/p&gt;
+
+&lt;h3 id=&quot;pros&quot;&gt;Pros:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Positioned as greatest ruby conference&lt;/li&gt;
+  &lt;li&gt;Participation of ruby creators and contributors - Yukihiro “Matz” Matsumoto, Xavier Noria, Koichi Sasada, Dave Thomas, Samuel Giddins, and many more&lt;/li&gt;
+  &lt;li&gt;Location with a good food.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;cons&quot;&gt;Cons:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Splitted to 3 tracks (first time for this conference), but its obvious better to have 1 strong sequences of speaches&lt;/li&gt;
+  &lt;li&gt;Lack of variety of sponsorships signifies that conference has no marketing interest among software development market.&lt;/li&gt;
+  &lt;li&gt;No drinking water supply (reminder: conference was paid)&lt;/li&gt;
+  &lt;li&gt;Feels like speeches was not correlate with the majority of audience professional experiences&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;plot&quot;&gt;Plot&lt;/h3&gt;
+
+&lt;p&gt;IT conferences nowadays are becoming more and more like casual, recreational, entertainment events rather than events where you can gain knowledge.&lt;/p&gt;
+
+&lt;h3 id=&quot;overall&quot;&gt;Overall&lt;/h3&gt;
+
+&lt;p&gt;My score for this conference is 3/5.&lt;/p&gt;
+
+&lt;div class=&quot;flex gap-4&quot;&gt;
+&lt;div&gt;
+    &lt;img src=&quot;/images/EuRuKo2024/EuRuKo2024-1.jpeg&quot; /&gt;
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;img src=&quot;/images/EuRuKo2024/EuRuKo2024-2.jpeg&quot; /&gt;
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;img src=&quot;/images/EuRuKo2024/EuRuKo2024-3.jpeg&quot; /&gt;
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;img src=&quot;/images/EuRuKo2024/EuRuKo2024-4.jpeg&quot; /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://euruko.org&quot;&gt;https://euruko.org&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://2024.euruko.org&quot;&gt;https://2024.euruko.org&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.linkedin.com/company/euruko/posts/?feedView=all&quot;&gt;https://www.linkedin.com/company/euruko/posts/?feedView=all&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="review" /><category term="event" /><category term="ruby" /></entry></feed>

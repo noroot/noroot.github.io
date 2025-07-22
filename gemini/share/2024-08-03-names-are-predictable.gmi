@@ -1,0 +1,27 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# Research: We Look Like Our Names: The Manifestation of Name Stereotypes in Facial Appearance
+
+I always try to predict people’s names, and here it is: research says that facial appearance affects social perceptions. Long story short, certain faces usually have certain names.
+
+=> /assets/images/NameResearchTeaser.jpeg /assets/images/NameResearchTeaser.jpeg
+
+DOI: 10.1037/pspa0000076
+
+## Abstract
+
+Research demonstrates that facial appearance affects social perceptions. The current research investigates the reverse possibility: Can social perceptions influence facial appearance? We examine a social tag that is associated with us early in life-our given name. The hypothesis is that name stereotypes can be manifested in facial appearance, producing a face-name matching effect, whereby both a social perceiver and a computer are able to accurately match a person’s name to his or her face. In 8 studies we demonstrate the existence of this effect, as participants examining an unfamiliar face accurately select the person’s true name from a list of several names, significantly above chance level. We replicate the effect in 2 countries and find that it extends beyond the limits of socioeconomic cues. We also find the effect using a computer-based paradigm and 94,000 faces. In our exploration of the underlying mechanism, we show that existing name stereotypes produce the effect, as its occurrence is culture-dependent. A self-fulfilling prophecy seems to be at work, as initial evidence shows that facial appearance regions that are controlled by the individual (e.g., hairstyle) are sufficient to produce the effect, and socially using one’s given name is necessary to generate the effect. Together, these studies suggest that facial appearance represents social expectations of how a person with a specific name should look. In this way a social tag may influence one’s facial appearance.
+
+=> https://www.apa.org/pubs/journals/releases/psp-pspa0000076.pdf https://www.apa.org/pubs/journals/releases/psp-pspa0000076.pdf
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

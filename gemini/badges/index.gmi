@@ -1,0 +1,340 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# Badges
+
+=> / ← Back
+
+# Conferences and meetups
+
+Events I have participated in, maybe not all of them, this is just for fun to exercise css animation coding
+
+Highload #1
+
+=> /images/dmitry.it.com.jpg Profile
+
+## 2007
+
+Russia
+
+Moscow
+
+Attendee
+
+First big IT conference in Russia
+
+=> https://highload.ru/ Link
+
+NNRUG #1
+
+=> /images/dmitry.it.com.jpg Profile
+
+## 2013
+
+Russia
+
+Nizhniy Novgorod
+
+Speaker
+
+Our local Ruby community first meetup My topic was ExtJS 5 introduction
+
+=>  Link
+
+RANNTS #1
+
+=> /images/dmitry.it.com.jpg Profile
+
+## 2013
+
+Russia
+
+Nizhniy Novgorod
+
+Attendee
+
+Our local Python community first meetup
+
+=>  Link
+
+RANNTS #2
+
+=> /images/dmitry.it.com.jpg Profile
+
+## 2014
+
+Russia
+
+Nizhniy Novgorod
+
+Attendee
+
+Local Python community meetup
+
+=>  Link
+
+RANNTS #3
+
+=> /images/dmitry.it.com.jpg Profile
+
+## 2014
+
+Russia
+
+Nizhniy Novgorod
+
+Attendee
+
+Local Python community meetup
+
+=>  Link
+
+Yandex Frontend Party
+
+=> /images/dmitry.it.com.jpg Profile
+
+## 2014
+
+Russia
+
+Nizhniy Novgorod
+
+Attendee
+
+Yandex talks about frontend development
+
+=>  Link
+
+Я.Субботник
+
+=> /images/dmitry.it.com.jpg Profile
+
+## 2014
+
+Russia
+
+Nizhniy Novgorod
+
+Attendee
+
+Big conference from Yandex
+
+=>  Link
+
+MeteorJS Meetup #1
+
+=> /images/dmitry.it.com.jpg Profile
+
+## 2014
+
+Russia
+
+Nizhniy Novgorod
+
+Attendee
+
+Первый митап по MeterJS
+
+=>  Link
+
+NNRUG #5
+
+=> /images/dmitry.it.com.jpg Profile
+
+## 2015
+
+Russia
+
+Nizhniy Novgorod
+
+Attendee
+
+Local Ruby community meetup
+
+=>  Link
+
+JS NN #1
+
+=> /images/dmitry.it.com.jpg Profile
+
+## 2015
+
+Russia
+
+Nizhniy Novgorod
+
+Speaker
+
+Local JavaScript community meetup, my talk was about loopback.io framework
+
+=> https://jsnn.ru/events/1/ Link
+
+JS NN #2
+
+=> /images/dmitry.it.com.jpg Profile
+
+## 2016
+
+Russia
+
+Nizhniy Novgorod
+
+Attendee
+
+Local JavaScript community meetup
+
+=> https://jsnn.ru/events/2/ Link
+
+JS NN #3
+
+=> /images/dmitry.it.com.jpg Profile
+
+## 2016
+
+Russia
+
+Nizhniy Novgorod
+
+Attendee
+
+Local JavaScript community meetup
+
+=> https://jsnn.ru/events/3/ Link
+
+JS NN #4
+
+=> /images/dmitry.it.com.jpg Profile
+
+## 2016
+
+Russia
+
+Nizhniy Novgorod
+
+Attendee
+
+Local JavaScript community meetup
+
+=> https://jsnn.ru/events/4/ Link
+
+RANNTS #10
+
+=> /images/dmitry.it.com.jpg Profile
+
+## 2017
+
+Russia
+
+Nizhniy Novgorod
+
+Attendee
+
+10th python meetup
+
+=>  Link
+
+JS NN #5
+
+=> /images/dmitry.it.com.jpg Profile
+
+## 2017
+
+Russia
+
+Nizhniy Novgorod
+
+Speaker
+
+Local JavaScript community meetup, LoopBack.io — фреймворк Node.js для быстрого и правильного создания API
+
+=> https://jsnn.ru/events/5/ Link
+
+JS NN #6
+
+=> /images/dmitry.it.com.jpg Profile
+
+## 2017
+
+Russia
+
+Nizhniy Novgorod
+
+Attendee
+
+Local JavaScript community meetup
+
+=> https://jsnn.ru/events/6/ Link
+
+JS NN #12
+
+=> /images/dmitry.it.com.jpg Profile
+
+## 2019
+
+Russia
+
+Nizhniy Novgorod
+
+Attendee
+
+Local JavaScript community meetup
+
+=> http://jsnn.ru Link
+
+TechTrain
+
+=> /images/dmitry.it.com.jpg Profile
+
+## 2019
+
+Russia
+
+Saint-Petersburg
+
+Attendee
+
+Big event, RMS was there.
+
+=> http://techtrain.ru Link
+
+Agile Days 2021
+
+=> /images/dmitry.it.com.jpg Profile
+
+## 2021
+
+Russia
+
+Moscow
+
+Attendee
+
+Conference about "Agile"
+
+=>  Link
+
+EuRuKo 2024
+
+=> /images/dmitry.it.com.jpg Profile
+
+## 2024
+
+Bosnia i Herzegovnia
+
+Sarajevo
+
+Attendee
+
+Oldeset Ruby conference, meet with Matz (Ruby creator) and many others.
+
+=> https://2024.euruko.org Link
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

@@ -1,0 +1,195 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# Darkside of the Spotlight
+
+Одно из новшеств которое вы получили вместе со своей новой OSX это
+
+улучшеный
+
+Spotlight
+
+, - универсальный поисквый движок и поисквая
+
+строка с дополнительным функционалом.
+
+Что делает Spotlight ? Индескирует ваш контент, - весь если вы не
+
+указали исключения в настройках. А еще Apple говорит “Safety. Built right in.” Так ли это на самом деле ?
+
+Также spotlight Периодически переиндексирует контент.
+
+Spotlight всегда знает о ваших новых файлах в системе, и spotlight
+
+всегда знает о всех файлах в вашей системе, если вы не указали
+
+исключения в настройках.
+
+Он индексирует не только файлы, но и записи в календаре, закладки,
+
+историю и ваши поисковы фразы, контакты и письма из почты.
+
+Таким образом Spotlight пожалуй самая информированная о вас программа.
+
+Что происходит когда вы что-то набираете в строке поиска,
+
+spotlight ищет везде и всё и даже заходит на ваши закладки или записи из хистори браузера, не верите ? смотрите сами:
+
+Я взял wireshark, выключил все что может слать трафик и начал смотреть
+
+что происходит при вводе различных поисковых фраз, читайте далее что
+
+из этого вышло.
+
+Начнем с простого примера, я ввел “weather” в поисковую строку
+
+spotlight:
+
+=> http://s.overmind.ws.s3.amazonaws.com/darkspotlight/weather-packet.png http://s.overmind.ws.s3.amazonaws.com/darkspotlight/weather-packet.png
+
+запрос “porn”:
+
+=> http://s.overmind.ws.s3.amazonaws.com/darkspotlight/porno-packet.png http://s.overmind.ws.s3.amazonaws.com/darkspotlight/porno-packet.png
+
+Для более удобного просмотра оставил только DNS запросы:
+
+=> http://s.overmind.ws.s3.amazonaws.com/darkspotlight/dns-requests-packet.png http://s.overmind.ws.s3.amazonaws.com/darkspotlight/dns-requests-packet.png
+
+Spotlight полностью загружает сайты в background’е
+
+=> http://s.overmind.ws.s3.amazonaws.com/darkspotlight/porno-packet-full-site-loading.png http://s.overmind.ws.s3.amazonaws.com/darkspotlight/porno-packet-full-site-loading.png
+
+запрос “купить телефон”:
+
+=> http://s.overmind.ws.s3.amazonaws.com/darkspotlight/buy-phone.png http://s.overmind.ws.s3.amazonaws.com/darkspotlight/buy-phone.png
+
+еще какой-то запрос как видно запрашивает также запрашиывает по HTTP
+
+какой-то адрес, как удалось выяснить этот сайт из хистори.
+
+=> http://s.overmind.ws.s3.amazonaws.com/darkspotlight/sleep-packet.png http://s.overmind.ws.s3.amazonaws.com/darkspotlight/sleep-packet.png
+
+Самое интересное это то что при всех этих скрытых http запросах
+
+spotlight
+
+никак непоказывает какие либо связанные с этими запросами результаты поиска. То есть для чего он ходит на эти сайты не ясно, вероятно задумывался какой-то парсер который бы показывал результаты найденного, но их нет.
+
+## Последствия ?
+
+Подобные запросы могут спровоцировать утечку данных, и очевидно эта
+
+утечка данных может оказаться довольно серьозной. Как минимум
+
+отдаете свой IP адрес и поисковый запрос сторонним ресурсам. Неговоря уже о том, что все это происходит в скрытом режиме через safari, и может привести к тому
+
+что случайно вы откроете взломанный сайт на котором будет размещен
+
+вредоносный код который в свою очередь воспользуется уязвимостью браузера.
+
+## Как избавится от скрытых запросов и настроить spotlight
+
+По умолчанию картина выглядит так (на скриншоте не отражен полный
+
+список настроек):
+
+=> http://s.overmind.ws.s3.amazonaws.com/darkspotlight/spotlight-settings.png http://s.overmind.ws.s3.amazonaws.com/darkspotlight/spotlight-settings.png
+
+Обратие внимание на пункт “Other” остается только догадываться что скрывается под этим пунктом.
+
+=> http://s.overmind.ws.s3.amazonaws.com/darkspotlight/spotlight-settings-other.png http://s.overmind.ws.s3.amazonaws.com/darkspotlight/spotlight-settings.png
+
+Я отключил все что хоть как-то потенциально могло использовать
+
+внешние сервисы: Bing Web Searches, Spotlight suggestions,
+
+Bookmarks & History, Other.
+
+И второй экран настроек с исключениями:
+
+ВАЖНО: При обновлении на Yosemite настройки исключений сбрасываются! (FUCK APPLE)
+
+Очень показательно что вкладка называется Privacy, и там пусто, и даже если вы настраивали это нет гарантий что после очередного обновления настройки сохранятся
+
+=> http://s.overmind.ws.s3.amazonaws.com/darkspotlight/spotlight-empty-exception.png http://s.overmind.ws.s3.amazonaws.com/darkspotlight/spotlight-empty-exception.png
+
+В исключения добавьте все ваши директории с “чувствительными данными”
+
+Есть даже такой проект
+
+=> http://fix-macosx.com https://fix-macosx.com/
+
+который позволяет исключать из Spotlight не желательные элементы более автоматзированно, проект представляет из себя python скрипт, который выключает определенные свойства “настройках” spotlight.
+
+Моя немного изменненая версия которая убирает дополнительные значения по умолчанию.
+
+=> https://github.com/noroot/fix-macosx https://github.com/noroot/fix-macosx
+
+Ну а полностью избавиться от Spotlight можно таким способом:
+
+```
+
+sudo su
+
+chmod 0000 /Library/Spotlight
+
+chmod 0000 /System/Library/Spotlight
+
+chmod 0000 /System/Library/CoreServices/Search.bundle
+
+chmod 0000 /System/Library/PreferencePanes/Spotlight.prefPane
+
+chmod 0000 /System/Library/Services/Spotlight.service
+
+chmod 0000 /System/Library/Contextual Menu Items/SpotlightCM.plugin
+
+chmod 0000 /System/Library/StartupItems/Metadata
+
+chmod 0000 /usr/bin/mdimport
+
+chmod 0000 /usr/bin/mdcheckschema
+
+chmod 0000 /usr/bin/mdfind
+
+chmod 0000 /usr/bin/mdls
+
+chmod 0000 /usr/bin/mdutil
+
+chmod 0000 /usr/bin/md
+
+```
+
+chmod в этом “хаке” используется для того чтобы  если вам захотелось
+
+вернуть spotlight в рабочее состоянии то достаточно будет сменить права.
+
+После перезагрузки запустить в терминале следующие команды, - это удалит текущий индекс и временные файлы:
+
+```
+
+rm -r /.Spotlight-V100
+
+rm -r /private/var/tmp/mds
+
+exit
+
+```
+
+Скриншот с описанием соглашения о приватности Spotlight:
+
+=> http://s.overmind.ws.s3.amazonaws.com/darkspotlight/apple-spotlight-license.png http://s.overmind.ws.s3.amazonaws.com/darkspotlight/apple-spotlight-license.png
+
+=> http://support.apple.com/kb/PH18827?viewlocale=en_US http://support.apple.com/kb/PH18827?viewlocale=en_US
+
+На этом все, остальное можно обсудить в комментариях.
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

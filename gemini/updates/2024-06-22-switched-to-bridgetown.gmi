@@ -1,0 +1,135 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# Switched from Jekyll to Bridgetown
+
+Long story short, - I’ve decided to switch from Jekyll to Bridgetown.
+
+First of all I have enough with Jekyll, I am using it for about 10 years, and its became stiff to change.
+
+Last time I’ve tried to do something new with Jekyll I got struggle with simple tasks, maybe I do something wrongway (highly unlikely) but I have no patience to continue with Jekyll and research too much to solve simple things which can be written from scratch in about hour.
+
+I’ve started to looking for substituion and came across
+
+Bridgetown.rb
+
+in about 2 minutes of searching.
+
+So here it is
+
+=> https://bridgetownrb.com Bridgetown.rb
+
+- So it is not only static site generator, its feature rich lightweight framework, which allow you to generate your site statically. It uses Puma as sever, Roda as main routing library. It is also utilizes tools like Rake, and it has integrated deployment feature. All of it makes bridgetownrb highly customizable, friendly to programmers solution for “fast and hacky” projects.
+
+Features:
+
+Template engine (erb, liquid, serbea)
+
+FrontMatter
+
+Layouts
+
+Components
+
+Collections
+
+Categories
+
+Tags
+
+Assets building
+
+Dynamic sites
+
+Static generated sites
+
+Deployment
+
+## How to migrate from Jekyll
+
+So how to migrate ?
+
+FrontMatter
+
+is a small YAML snippet with metadata for each post on top of the post. It is the same format as Jekyll, Hugo, and many others. All you need to do is copy all posts into the
+
+_posts
+
+directory.
+
+And because of this YAML snippet on top of the post file, Bridgetown generator will understand everthing and generate same structure as I have in Jekyll
+
+```
+
+---
+
+layout: post
+
+title: "Switched from Jekyll to Bridgetown"
+
+categories: howto
+
+tags: [dev]
+
+date:   2024-06-22 12:00:00 +0000
+
+---
+
+```
+
+As you might have noticed earlier, I have a
+
+=> /photography/ photography
+
+gallery on the site, so I have to migrate it from Jekyll too. Previously, I utilized gallery generation code that I wrote (which I may share if you want to). Migrating the gallery to Bridgetown took about an hour to implement using plain Ruby, similar to what I had in Jekyll.
+
+Bridgetown even have
+
+=> https://www.bridgetownrb.com/docs/migrating/jekyll more detailed guide to migraion from Jekyll
+
+For the comments I am still using
+
+=> https://github.com/isso-comments/isso isso-comments
+
+.
+
+I had
+
+=> https://github.com/noroot/jekyll-mail-comments jekyll-mail-comments
+
+, but didn’t migrate it yet, will rewrite it for
+
+bridgetownrb
+
+soon.
+
+I also love Makefile so I do a little file for working with
+
+```
+
+bridgetown
+
+```
+
+commands and deployment to gh-pages without github actions as it offers official Bridgetown way of deployment to gh-pages.
+
+Thats it for now, if you’re interested in details let me know in the comment section below.
+
+### References
+
+=> https://bridgetownrb.com Bridgetown.rb
+
+=> https://jekyllrb.com/docs/front-matter/ https://jekyllrb.com/docs/front-matter/
+
+=> https://gohugo.io/content-management/front-matter/ https://gohugo.io/content-management/front-matter/
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

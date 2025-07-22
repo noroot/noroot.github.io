@@ -1,0 +1,117 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# Brief look into WowCube SDK
+
+Very brief look into WowCube software SDK.
+
+What is WowCube ? Gaming or kind of puzzle platform, based on Rubik’s cube principle.
+
+It uses 8 mini cubes conntected to each other with special magnet locks.
+
+Each of mini cube is STM32 bit microcontroller with firmware written with Pawn
+
+=> https://github.com/compuphase/pawn https://github.com/compuphase/pawn
+
+There are 8 micro computers connected to each other. Imagine how to develop any kind of program to interact between them, its complicated.
+
+=> https://wowcube.com/sdk Official SDK
+
+is very weak, only what they offer is small repository
+
+=> https://github.com/wowcube/WOWCube_Emulator_MacOS https://github.com/wowcube/WOWCube_Emulator_MacOS
+
+which contains everthing even commited VCcode and Processing inside for some reason, so I decide to make new one clean version to make simplier.
+
+Lets go step by step:
+
+You need to have installed:
+
+Pawn language compiler
+
+Processing language compiler (they uses it as an cube emulator during development process)
+
+Additional UDP library
+
+=> http://ubaa.net/shared/processing/udp/udp.zip http://ubaa.net/shared/processing/udp/udp.zip
+
+can be also found inside data directory in repository.
+
+Since firmware used to be launched on each of 8 microcomputers we need toolchain to do it automatically, Makefile will suits here perfectly.
+
+```
+
+compile:
+
+pawncc pipes.pwn -ogame
+
+dev:
+
+for i in 0 1 2 3 4 5 6 7 8 ; do \
+
+pawnrun game.amx $$i & ; \
+
+done
+
+```
+
+Next step is you have to open ProcessingUI, and start Cube Emulator. Cube emulator interacts with firmware via UDP proto, so you will have to see results of interaction inside emulator, like this:
+
+=> /images/wowcube/1.png /images/wowcube/1.png
+
+In dynamic:
+
+Main disadvantage is that you have to write on two langauges, one for developer emulator and graphics interactions, and another for hardware interactions itself. WowCube uses Pawn as a scripting language for microcontrollers, I believe they do something like this inside their core loader:
+
+```
+
+#include "pawn.h"
+
+
+
+int main() {
+
+FATFS Fatfs;
+
+... // here you need to do a platform initialization
+
+//Mount filesystem
+
+f_mount(0, &Fatfs);
+
+// Execute test script
+
+PawnExec("GAME.AMX");
+
+// Endless loop
+
+while(1) {
+
+}
+
+}
+
+```
+
+Summary.
+
+WowCube is definitely interesting prototype, and worth to look into it, but until it have more simple to start SDK it will be hard to attract developers. SDK it self contains Pipes game demo. You can start it with Processing and ofcourse you don’t need WowCube it self, to understand development process.
+
+My unofficial SDK package,
+
+=> https://github.com/noroot/wowcube-sdk-unofficial https://github.com/noroot/wowcube-sdk-unofficial
+
+Official Site:
+
+=> http://wowcube.com/ http://wowcube.com/
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

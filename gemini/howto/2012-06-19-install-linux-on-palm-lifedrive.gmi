@@ -1,0 +1,137 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# Установка linux на Palm LD(Life Drive)
+
+# Необходимые файлы
+
+Загрузчик
+
+=> http://web.archive.org/web/20080915045039/http://git.hackndev.com/releases/20061002-insomnia/cocoboot/cocoboot.prc CocoBoot
+
+=> http://web.archive.org/web/20080915045039/http://git.hackndev.com/releases/20061002-insomnia/palmld-familiar/opie-image-v0.8.4-palmld.rootfs.ext2.gz Образ rootfs с OPIE
+
+# Замечание
+
+На выбор предлагается ещё GPE - будет медленно работать на LifeDrive и устройствами с небольшой помятью, а также просто загружаемая система без оболочки
+
+=> http://web.archive.org/web/20080915045039/http://git.hackndev.com/releases/20061002-insomnia/swap.gz Swap file
+
+Важно
+
+Чтобы не качать пустой swap файл размером 90 мегобайт, почему бы не сделать его самомy
+
+```
+
+# dd if=/dev/zero of=swap bs=1k count=96k
+
+# mkswap swap
+
+```
+
+### Конфиг ядра
+
+Там две строчки:
+
+```
+
+SWAP_DEV=$FILES_MNT/swap
+
+ROOT_DEV=$FILES_MNT/opie-image-v0.8.4-palmld.rootfs.ext2
+
+```
+
+Расположение swap файла и rootfs соответсвенно, от корневой директории.
+
+## Процесс установки
+
+1)Включаем на Palm’e Drive Mode, и монтируем диск,
+
+```
+
+# mount /dev/sda1 /mnt/palm
+
+```
+
+Копируем файлы swap, linux.boot.cfg, и opie-image-v0.8.4-palmld.rootfs.ext2 в корень palm диска, демонтируем
+
+устройство и запускаем CocoBoot на palm’e.
+
+Жмём естественно Boot.
+
+=> /images/palm/toaol.png 
+
+Получаем следущую картину:
+
+=> /images/palm/raVLm.png 
+
+Загружается ядро… и далее графическая оболочка OPIE:
+
+=> /images/palm/gbsUB.png 
+
+Всё установлено и готово к использованию, на момент написания статьи доступна новая сборка linux для Palm LD
+
+=> http://builds.hackndev.com/builds/Marex/TP1-20070717.tar.bz2 http://builds.hackndev.com/builds/Marex/TP1-20070717.tar.bz2
+
+=> http://opie.handhelds.org/cgi-bin/moin.cgi/News Подробнее о OPIE http://opie.handhelds.org/cgi-bin/moin.cgi/News
+
+cat /proc/cpuinfo
+
+=> /images/palm/luALh.png 
+
+Модули ядра
+
+=> /images/palm/kQ2FN.png 
+
+PIM
+
+=> /images/palm/ligOW.png 
+
+Тесты системы
+
+=> /images/palm/WlJsE.png 
+
+Рабочий стол настроек
+
+=> /images/palm/483Xp.png 
+
+OpieMediaPlayer
+
+- музыка так и незаиграла
+
+=> /images/palm/d0df3.png 
+
+root shell
+
+=> /images/palm/CFmLi.png 
+
+### Итоги
+
+Итоги видны
+
+табличке номер один на в начале статьи
+
+Система работает стабильно - непадает, segfault’ов ненаблюдалось. Собственно есть всё тоже самое что
+
+и в стандартной PalmOS, единственную проблему которую я вижу это мало софта, во остальном всё готово к
+
+употреблению.
+
+Ссылки по теме:
+
+=> http://web.archive.org/web/20080915045039/http://www.handhelds.org/moin/moin.cgi/PalmLifeDriveHowTo Handhelds.org LifeDrive HowTo
+
+=> http://web.archive.org/web/20080915045039/http://hackndev.com/node/852 Hackndev Palm Life Drive
+
+=> http://web.archive.org/web/20080915045039/http://www.access-company.com/products/linux/alp.html Access Linux Platform
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

@@ -1,0 +1,71 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# EuRuKo 2024 Review
+
+EuRuKo 2024 reivew.
+
+What it is EuRuKo ? It is the conference about programming language
+
+> EuRuKo is a Ruby conference organised annually, each year in a different European city chosen by the participants.
+
+Every year the Ruby community from Europe and beyond come to EuRuKo to meet and share their love of Ruby. This is is the longest running and biggest Ruby conference anywhere in Europe and one of the biggest in the world.
+
+It’s up to the participants to pick the next city where the conference will be held. Attendees will pitch their own cities to be the hosts of the next year’s conference which are then voted on by the audience. This also means that the conference organisers will change every year.
+
+https://euruko.org/
+
+So here it is EuRuKo 2024. This year it Was set in Sarajevo, Bosnia and Herzegovina.
+
+### Pros:
+
+Positioned as greatest ruby conference
+
+Participation of ruby creators and contributors - Yukihiro “Matz” Matsumoto, Xavier Noria, Koichi Sasada, Dave Thomas, Samuel Giddins, and many more
+
+Location with a good food.
+
+### Cons:
+
+Splitted to 3 tracks (first time for this conference), but its obvious better to have 1 strong sequences of speaches
+
+Lack of variety of sponsorships signifies that conference has no marketing interest among software development market.
+
+No drinking water supply (reminder: conference was paid)
+
+Feels like speeches was not correlate with the majority of audience professional experiences
+
+### Plot
+
+IT conferences nowadays are becoming more and more like casual, recreational, entertainment events rather than events where you can gain knowledge.
+
+### Overall
+
+My score for this conference is 3/5.
+
+=> /images/EuRuKo2024/EuRuKo2024-1.jpeg Image
+
+=> /images/EuRuKo2024/EuRuKo2024-2.jpeg Image
+
+=> /images/EuRuKo2024/EuRuKo2024-3.jpeg Image
+
+=> /images/EuRuKo2024/EuRuKo2024-4.jpeg Image
+
+## References
+
+=> https://euruko.org https://euruko.org
+
+=> https://2024.euruko.org https://2024.euruko.org
+
+=> https://www.linkedin.com/company/euruko/posts/?feedView=all https://www.linkedin.com/company/euruko/posts/?feedView=all
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

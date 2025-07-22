@@ -1,0 +1,29 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# Why big company experience doesn't always translate to practical skills
+
+> Many think they will work for big companies to gain experience, but they don’t realize that this experience involves solving problems that don’t exist outside of the big company. That experience will not help you do real work "in the field". This is also a pattern that brings various technologies into smaller businesses that have no clue why they need them. They propose using these technologies without understanding that they were designed to solve specific problems that only exist at certain scales.
+
+=> https://www.linkedin.com/feed/update/urn:li:activity:7235182991822499840?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7235182991822499840%2C7235188155887300608%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287235188155887300608%2Curn%3Ali%3Aactivity%3A7235182991822499840%29 Discussion on LinkedIn
+
+Got a recommendation on this subject in this thread, the book “Siliconned” by
+
+=> https://emaggiori.com/ Emmanuel Maggori
+
+.
+
+Will be on my bookshelf soon.
+
+=> /images/books/siliconned.jpg Image
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

@@ -1,0 +1,39 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# Your router may be already hacked
+
+if you get the same like on the screenshot below
+
+=> /images/router-hack/dns-spoofing-0.png Image
+
+you should know, you are powned, at least router which throw you to internet, was hacked, and works for person who hacked it. See explanation and cure below. On this screen you can see banners with ADs over the page opened in Mobile Safari on iPhone 5, it can happen when all your http traffic goes through enemy router, and can be modified in anyway.
+
+Read next for more explanations
+
+First of all, it’s all about default passwords, never ever leave default setings and passwords.
+
+So let’s go to router network settings:
+
+=> /images/router-hack/router-hack-dns-all.png hacked router screenshot
+
+The 188.93.211.116 is the enemy dns server address which route your connections to special proxy server which modified your http traffic.
+
+After that your must check startup commands that execute when your router switches on:
+
+=> /images/router-hack/router-hack-dns.png hacked router startup command screenshot
+
+As you see here, this is same IP address in this textarea with linux commands, this commands are dynamically setup dns servers on the router, and if you’re not clean it up from this place, your router will change addreses after reboot. Delete all comands, or better is change IP address on your trusted DNS server IP. If you don’t remember anything suitable address you always can set 8.8.8.8 it is The Google dns servers, and also you can use
+
+=> http://www.opennicproject.org/ this opensource dns.
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

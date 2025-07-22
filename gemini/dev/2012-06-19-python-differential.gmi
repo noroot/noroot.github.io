@@ -1,0 +1,137 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# Python differential
+
+```
+
+#!/usr/bin/python
+
+
+
+from scipy import linspace, array
+
+from scipy.integrate import odeint,ode
+
+from pylab import plot, show
+
+import matplotlib.pyplot as plt
+
+from numpy import arange
+
+import random as rand
+
+def dotu(r,t0):
+
+x,y = r
+
+d = [0,1]
+
+d[0] = y
+
+d[1] = x-x**2-y
+
+return d
+
+def dplot(s, color="green"):
+
+t = linspace(0,55, 700)
+
+print t
+
+u=odeint(dotu,s,t)
+
+u=array(u).transpose()
+
+plot(u[0], u[1], color)
+
+for x in arange(-1.52,2, 0.25):
+
+print x
+
+dplot([x,3])
+
+plt.grid(True)
+
+show()
+
+```
+
+## UPD 2024, Python 3 update
+
+```
+
+#from scipy import array
+
+from scipy.integrate import odeint,ode
+
+from pylab import plot, show
+
+import matplotlib.pyplot as plt
+
+from numpy import arange, linspace, array
+
+import random as rand
+
+def dotu(r,t0):
+
+x,y = r
+
+d = [0,1]
+
+d[0] = y
+
+d[1] = x-x**2-y
+
+return d
+
+def dplot(s, color="green"):
+
+t = linspace(0,55, 700)
+
+u=odeint(dotu,s,t)
+
+u=array(u).transpose()
+
+plot(u[0], u[1], color)
+
+for x in arange(-1.52,2, 0.25):
+
+dplot([x,3])
+
+plt.grid(True)
+
+show()
+
+```
+
+## Дифференциальные исчесления в python реализовываются с помощью библиотек:
+
+=> http://www.scipy.org/ http://www.scipy.org/
+
+=> http://ru.wikipedia.org/wiki/SciPy http://ru.wikipedia.org/wiki/SciPy
+
+=> http://numpy.scipy.org/ http://numpy.scipy.org/
+
+=> http://ru.wikipedia.org/wiki/NumPy http://ru.wikipedia.org/wiki/NumPy
+
+Графки рисуются с помощью
+
+http://matplotlib.sourceforge.net/
+
+Но не всё так гладко, возможно в новых версиях уже поправлены выявленные баги, но в том ч то использовалось в примере были ошибки вычисления ODE решателей которые приводили к остановке программы и соотвественно нелзя было нарисовать график, из за этого пришлось использовать другие платформы.
+
+Все баги к этому моменту починили все работает:
+
+=> /images/python-diff.png Image
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

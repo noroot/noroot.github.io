@@ -1,0 +1,153 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# How I manage files v1 DRAFT
+
+There is a long story of copying files between disks and flash dongles. Behind more than 15 years of computing experience, I’ve finally found the way.
+
+## The Root Cause
+
+What do we do in the past? We have an external USB flash drive which was carried around with us if needed. Usually was used only for certain files to be moved from one to another computer. We have full control of our files and have to manually check what we sync and often do mistakes and overwrite some stuff.
+
+There are many solutions on market offering you some kind of synchronizations platforms for all of your stuff, - Calendars, Documents, Photographies I may say it all started with Dropbox and Google Disk, which was later complemented by Evernote, Google Docs, Simple Note, and many others such Notion (very popular these days), and the root cause of it is that you are not own your files, and have no access to it if you have no internet, losing functional control of interface without connection.
+
+All products have nothing to offer as common standards to store and operate with files and this is a big problem, as a marketing feature they usually offer some kind of import from one system to another to make users agree easier to step into the platform.
+
+What are they usually offer?
+
+Synchronization (most people these days have at least 2 devices, iPhone + laptop )
+
+Interface (web application working in browser)
+
+All of these services do offer not standardised formats and structures which even differ from computer structure and usually cannot be exported/imported as just files and directories. How you can rely on a system that can be off at any time, or if you are off the internet you need to access your files and can’t do it?
+
+Then I concluded with the question: Why do I have to use those products if I already have my own computer with an existing filesystem?
+
+## Approach
+
+I started with formulating problems and requirements:
+
+The list of problems to be solved:
+
+Namespacing, because you need separate files from work, to personal, and also by types, e.g. photos from code
+
+Synchronization, there are many solutions on the free and proprietary market which are offers something, but all of it is not convenient for my way for various reasons
+
+Between different OS
+
+Backup
+
+### Requirements:
+
+Full control and offline access
+
+Easy syncing
+
+Access from 3rd party devices on demand
+
+First, we need structure and here I came with:
+
+```
+
+Projects/ - this is the root of the Structure
+
+Personal/ - this is for personal use files and projects, personal means it's your own
+
+Business/ - this is for business-related files and projects
+
+Shared/ - this is for sharing with other ppl files and projects, not which are not related to business, so for Friends, and family
+
+Knowledge/
+
+Applications/
+
+Library/
+
+```
+
+## Structure and Namespacing
+
+Lets deep dive into Personal and see some examples in detail
+
+```
+
+- Personal
+
+- ProjectName1
+
+- Artifacts
+
+- Documents
+
+- src
+
+- README.org
+
+...
+
+- ProjectNameN
+
+- Artifacts
+
+- Documents
+
+- src
+
+- README.org
+
+```
+
+This is the template I am using to configure the new project Convention is simple, every name starts with a Capital letter and uses CamelCase notation, which is easily viewable and maintainable later.
+
+Documents used for documents files, by documents I mean real life documents, files which have jural meaning.
+
+Artifacts are used for everything which is not a jural document file, so it goes for everything else.
+
+src is started with a small letter for Unix-way, it’s better to handle in repositories and comply with wide community
+
+standards as the directory contains source code.
+
+README.org - readme file describing the project
+
+Each other type of directory (e.g. Namespaces) has the same structure.
+
+## Synchronization
+
+For synchronization there is a good solution called
+
+=> https://syncthing.org “Syncthing”
+
+(Will be another article about the Syncthing and how it works) You have to install it on every device which your planning to use with this structure. You simply set which directory to Sync between devices, cross-add each device to one another and you are good to go.
+
+=> /images/howistoremyfiles.png Image
+
+=> /images/hismf-flow.png Image
+
+## Backup
+
+As a backup here I mean carbon copy of everything you have inside Projects, there are many solutions to do it. The first solution is since we already using Synching you just set up a device or directory with read-only access, and only sync in one way, and this is will be your backup. The second solution is to draw an external drive and copy it with various tools, from rsync for unix-way or Deja Dup backups if you are a gui-like person.
+
+## Caveats
+
+Big files may be a corner case, but if you edit it very rarely or nether since it is usually binary, there should be no problem except first sync.
+
+All devices consume their own hard drive space because each device has its own copy
+
+## Result
+
+You now have a strong directory structure, no hesitation about what goes where, and have synced copy across devices for any operating system. Enjoy, I’ll update the article with details later.
+
+The next step is to set free the Calendar and the Mail.
+
+For now, tell me what you think and how you deal with managing files. Feel free to comment in the section below
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

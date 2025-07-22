@@ -1,0 +1,21 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# Ancient english helps closing PRs // Github
+
+I’ve tried to use this ancient english message as a comment for PR review to bring attention
+
+> I bid thee good tidings. I beseech thee to take heed, for lo, several moons have waxed and waned since this comment hath been inscribed, yet it remaineth unresolved. I humbly beseech thee to attend to this matter forthwith, that we may advance the pull request without further delay.
+
+After this message PR was closed, and even branch was deleted due to its obsolete.
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

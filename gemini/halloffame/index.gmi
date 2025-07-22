@@ -1,0 +1,111 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# Hall of Fame
+
+## Modern
+
+=> https://lukesmith.xyz Luke Smith
+
+- Yes it's him.
+
+=> https://jordanbpeterson.com Dr. Jordan Peterson
+
+- is a professor of psychology at the University of Toronto, a clinical psychologist and the author of the multi-million copy bestseller 12 Rules for Life: An Antidote to Chaos, #1 for nonfiction in 2018 in the US, Canada, the UK, Australia, New Zealand, Sweden, the Netherlands, Brazil and Norway, and now slated for translation into 50 languages. His books changed my life, and helps to overcome my struggles.
+
+=> https://www.youtube.com/@JonathanPageau Jonathan Pageau
+
+- Jonathan Pageau is a French Canadian icon carver, public speaker and YouTuber exploring the symbolic patterns that underlie our experience of the world, how these patterns emerge and come together, manifesting in religion, art and in popular culture.
+
+=> http://www.levity.com/eschaton/tm.html Terence McKenna
+
+was an American ethnobotanist, mystic, psychonaut, lecturer, author, and an advocate for the responsible use of naturally occurring psychedelic plants. He spoke and wrote about a variety of subjects, including psychedelic drugs, plant-based entheogens, shamanism, metaphysics, alchemy, language, philosophy, culture, technology, environmentalism, and the theoretical origins of human consciousness. He was called the "Timothy Leary of the '90s", "one of the leading authorities on the ontological foundations of shamanism", and the "intellectual voice of rave culture". He is also an author of TimeWave Zero theory about historical time compression and singularity of Novelty.
+
+=> https://en.wikipedia.org/wiki/Jean_Baudrillard Jean Baudrillard
+
+- Best known for Simulacrum work. (You all know that)
+
+=> http://www.timothylearyarchives.org/learycom/ Timothy Leary
+
+was an American psychologist and writer known for advocating the exploration of the therapeutic potential of psychedelic drugs under controlled conditions.
+
+=> https://stallman.org Richard Stallman
+
+Richard Matthew Stallman leads the Free Software Movement, which shows how the usual non-free software subjects users to the unjust power of its developers, plus their spying and manipulation, and campaigns to replace it with free (freedom-respecting) software. He is author of Emacs editor, GPL licenses, and many other things you're using on daily basis. Today he is advocating Free Software all over the world against privacy survilance on internet.
+
+=> https://templeos.org/ Terry Davis
+
+was an American programmer who created and designed the operating system TempleOS. Its development was a complex and unusual undertaking for one person. Davis also posted video blogs to social media, and by the time of his death, had established a small online following. He often referred to himself as "the smartest programmer that's ever lived". You have to take a look into TempleOS, this is absolutley state of the art programming creature, it writting with variation of C language, called HolyС. Operating system is fully worked on virtual machine and available with a source code which you can study not only for educational purposes, but as an art object too.
+
+=> https://aantonop.com/ Andreas Antonopolous
+
+is one of the greatest cryptoprofessinal and advocate of all time, take a look on his
+
+=> https://www.youtube.com/user/aantonop videos and lections
+
+.
+
+=> https://bitcoin.org Satoshi Nakamoto
+
+he wrote
+
+=> https://bitcoin.org/en/bitcoin-paper Bitcoin White paper
+
+=> https://joerogan.com Joe Rogan
+
+- is an American stand-up comedian, mixed martial arts color commentator, podcast host, and former actor and television host.
+
+=> https://davidgoggins.com David Goggins
+
+is an American ultramarathon runner, ultra-distance cyclist, triathlete, motivational speaker and author. He is a retired United States Navy SEAL and former United States Air Force Tactical Air Control Party member who served in the War in Afghanistan and the Iraq War. He is a former world record holder for the most pull-ups done in 24 hours. His self-help memoir, Can't Hurt Me, was released in 2018.
+
+=> https://en.wikipedia.org/wiki/Jacob_Appelbaum Jacob Appelbaum
+
+is an American doctoral candidate in cryptography, independent journalist, computer security researcher, artist, and hacker. He studies at the Eindhoven University of Technology, and was formerly a core member of the Tor project,[5] a free software network designed to provide online anonymity.
+
+=> https://www.thevenusproject.com/ Jacque Fresco
+
+was an American futurist and self-described social engineer. Self-taught, he worked in a variety of positions related to industrial design.
+            Fresco wrote and lectured his views on sustainable cities, energy efficiency, natural-resource management, cybernetic technology, automation, and the role of science in society. He directed the Venus Project and advocated global implementation of a socioeconomic system which he referred to as a "resource-based economy".
+
+=> https://universaltruthschool.com/ Santos Bonacci
+
+is an Astrologist and Hermetic philosopher.
+
+=> http://www.michaeltsarion.com/ Michael Tsarion
+
+is one of the greates modern esoteric explorer, hermetic philosopher and astrologist, Tarot researcher.
+
+=> https://en.wikipedia.org/wiki/John_C._Lilly John C. Lilly
+
+- Remember those Johnny Mnemonic dolphin ? Take a look at this man. He was an American physician, neuroscientist, psychoanalyst, psychonaut, philosopher, writer and inventor. He was a member of a generation of counterculture scientists and thinkers that included Ram Dass, Werner Erhard and Timothy Leary, all frequent visitors to the Lilly home. He often stirred controversy, especially among mainstream scientists.
+
+## Classic
+
+=> https://en.wikipedia.org/wiki/Socrates Socrates
+
+- Socrates (/ˈsɒkrətiːz/; Greek: Σωκράτης; c. 470–399 BC) was a Greek philosopher from Athens who is credited as the founder of Western philosophy and among the first moral philosophers of the ethical tradition of thought.
+
+=> https://en.wikipedia.org/wiki/Friedrich_Nietzsche Friedrich Nietzsche
+
+-  was a German philosopher, prose poet, cultural critic, philologist, and composer whose work has exerted a profound influence on contemporary philosophy. You need to read his work.
+
+=> https://en.wikipedia.org/wiki/Johann_Sebastian_Bach Johann Sebastian Bach
+
+- Johann Sebastian Bach (1685–1750) was a German composer and musician of the Baroque period. He is renowned for his mastery of counterpoint, harmonic organization, and complex compositions that include works like the Brandenburg Concertos, The Well-Tempered Clavier, and the Mass in B minor. Bach’s music is celebrated for its intellectual depth, technical command, and artistic beauty, making him one of the greatest composers in Western classical music. Despite his extensive output, much of his work was not widely recognized until after his death, influencing later composers such as Mozart and Beethoven.
+
+=> https://en.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Chopin Frédéric Chopin
+
+- (1810–1849) was a Polish composer and virtuoso pianist of the Romantic era, known for his expressive and technically challenging piano compositions. Born in Warsaw, he spent much of his life in Paris, where he became a central figure in the city's musical life. Chopin's works, including his nocturnes, preludes, etudes, and ballades, are celebrated for their lyrical beauty, innovative use of harmony, and deep emotional intensity. His music remains a cornerstone of the piano repertoire, and he is regarded as one of the greatest composers in the history of Western classical music. Despite his short life, Chopin's influence on piano music is profound and enduring.
+
+This list is endless, keep up to the updates ;-)
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

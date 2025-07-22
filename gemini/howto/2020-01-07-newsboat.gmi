@@ -1,0 +1,49 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# How I read RSS/Atom
+
+How do you read modern internet ? Dunno, but I do it with
+
+=> https://newsboat.org/?from=falsetrue.io Newsboat
+
+, - is a RSS/Atom reader for text console and
+
+=> https://github.com/newsboat/newsboat It’s written with C++
+
+so you can have a lot of fun to learn.
+
+Main features:
+
+Simple feed list stored in textfile
+
+Tagging
+
+Support for ATOM
+
+Support for 3dparty RSS systems authentication and password for external APIs
+
+Take a look below to understand how it looks
+
+=> https://newsboat.org/releases/2.18/docs/newsboat.html#_first_steps Step here into documentation
+
+UI looks like this:
+
+Main screen
+
+=> /images/newsboat/newsboat-article-list.png Main screen
+
+=> /images/newsboat/newsboat-article.png Item screen
+
+=> /images/newsboat/newsboat-hotkeys.png Help screen
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

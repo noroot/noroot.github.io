@@ -1,0 +1,171 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# Capistrano 3 & Rails 4
+
+Hello, today i am tell you about
+
+=> http://capistranorb.com/ Capistrano 3
+
+and Rails 4 setup.
+
+For those who never heard about Capistrano, this is deployment library which can be scripted on ruby, in any ways.
+
+First of all Gemfile:
+
+```
+
+gem 'unicorn'
+
+gem 'capistrano'
+
+gem 'capistrano-rvm'
+
+gem 'capistrano-bundler'
+
+gem 'capistrano-rails'
+
+```
+
+After that add into Capfile some require string to previous install gems:
+
+```
+
+require 'capistrano/rvm'
+
+require 'capistrano/bundler'
+
+require 'capistrano/rails'
+
+```
+
+Next to deploy.rb:
+
+```
+
+set :application "your_app_name"
+
+set :repo_url "your repository url"
+
+set :branch
+
+```
+
+Also you need to edit
+
+deploy/production.rb
+
+to setup production server hostname . Read full article to understain the key problem and solution for it …
+
+Some rude code for task to unicorn managemnt in
+
+deploy.rb
+
+:
+
+```
+
+ desc 'Start application'
+
+task :start do
+
+on roles(:app), in: :sequence, wait: 5 do
+
+within release_path do
+
+execute :bundle, "exec unicorn_rails -p 8801 -E production -D"
+
+end
+
+end
+
+end
+
+desc 'Stop application'
+
+task :stop do
+
+on roles(:app) , in: :sequence, wait: 5 do
+
+within release_path do
+
+execute "cd #{fetch(:deploy_to)}/current && cat tmp/pids/unicorn.pid | xargs kill "
+
+end
+
+end
+
+end
+
+```
+
+After that you probably think that everything should go nice and smooth, but something goes painfull…
+
+After trying to
+
+make cap production deploy:start
+
+your likely get message that says you don’t set
+
+SECRET_KEY_BASE
+
+into environment variable. And if you add it to .bashrc .bash_profile or .profile files everything goes the same way with message.
+
+After several tests i am explain that
+
+SSHKit
+
+starts shell with
+
+non-interactive
+
+and
+
+non-login
+
+options. That is exaclty the reason why nothing goes load with dotfiles. The thing is that when shell starts with non-interactive and non-login options, no one dotfiles is going to load, and everyting you have is
+
+$BASH_ENV
+
+.
+
+To more expose this situation you must see this picture:
+
+=> http://capistranorb.com/images/BashStartupFiles1.png bash strartup scheme
+
+So what should you do next ?
+
+sshd
+
+have a special option for this situation, -
+
+PermitUserEnvironment yes
+
+, you must set it in /etc/ssh/sshd_config
+
+After that you can create ~/.ssh/environment and put into:
+
+```
+
+SECRET_KEY_BASE=66a2caf0d57e376cae89a297656c1ff68a7d9abac9ee61b13652e97a4983ac00c2cb468e30181ae224e5951609591374f9ba0a31a77ba36c4f6587c2afcafd2f
+
+```
+
+After that when you run
+
+cap production deploy:start
+
+to strart unicorn server, everything will be fine because SECRET_KEY_BASE will be loaded from ~/.ssh/environment file
+
+Have fun with it.
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

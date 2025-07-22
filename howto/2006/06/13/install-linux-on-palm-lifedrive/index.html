@@ -4,11 +4,11 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>Установока linux на Palm LD(Life Drive) | FalseTrue</title>
+<title>Установка linux на Palm LD(Life Drive) | FalseTrue</title>
 
 <!-- Begin Bridgetown SEO tag v6.0.0 -->
-<title>Установока linux на Palm LD(Life Drive) | FalseTrue</title>
-<meta property="og:title" content="Установока linux на Palm LD(Life Drive)" />
+<title>Установка linux на Palm LD(Life Drive) | FalseTrue</title>
+<meta property="og:title" content="Установка linux на Palm LD(Life Drive)" />
 <meta property="og:locale" content="ru" />
 <meta name="description" content="Scripts of cyberdaemon" />
 <meta property="og:description" content="Scripts of cyberdaemon" />
@@ -18,7 +18,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2006-06-13T16:36:00+02:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Установока linux на Palm LD(Life Drive)" />
+<meta property="twitter:title" content="Установка linux на Palm LD(Life Drive)" />
 <!-- End Bridgetown SEO tag -->
 
 
@@ -26,7 +26,7 @@
  @import url('https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
-<link rel="stylesheet" href="/_bridgetown/static/index.HHCMKHAO.css" />
+<link rel="stylesheet" href="/_bridgetown/static/index.ZSROYMEN.css" />
 <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
 <link rel="authorization_endpoint" href="https://indieauth.com/auth">
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
@@ -60,7 +60,7 @@
       <article class="prose prose-slate prose-pre:bg-gray-100 prose-pre:text-gray-500 max-w-full prose-h1:leading-relaxed">
     <span>13 Jun 2006</span>
     <div class="mb-8">
-        <h1 class="leading-relaxed">Установока linux на Palm LD(Life Drive)</h1>
+        <h1 class="leading-relaxed">Установка linux на Palm LD(Life Drive)</h1>
         <div class="category-block">
             <span>Category</span>
             
@@ -82,36 +82,37 @@
             
         </div>
     </div>
-    <h2 id="необходимые-файлы">Необходимые файлы</h2>
+    <h1 id="необходимые-файлы">Необходимые файлы</h1>
 
-<p>Загрузчик <a href="http://web.archive.org/web/20080915045039/http://git.hackndev.com/releases/20061002-insomnia/cocoboot/cocoboot.prc">CocoBoot</a></p>
+<ul>
+  <li>
+    <p>Загрузчик <a href="http://web.archive.org/web/20080915045039/http://git.hackndev.com/releases/20061002-insomnia/cocoboot/cocoboot.prc">CocoBoot</a></p>
+  </li>
+  <li>
+    <p><a href="http://web.archive.org/web/20080915045039/http://git.hackndev.com/releases/20061002-insomnia/palmld-familiar/opie-image-v0.8.4-palmld.rootfs.ext2.gz">Образ rootfs с OPIE</a></p>
+  </li>
+</ul>
 
-<p><a href="http://web.archive.org/web/20080915045039/http://git.hackndev.com/releases/20061002-insomnia/palmld-familiar/opie-image-v0.8.4-palmld.rootfs.ext2.gz">Образ rootfs с OPIE</a></p>
+<h1 id="замечание">Замечание</h1>
 
-<h3 id="замечание">Замечание</h3>
-<p>
-На выбор предлагается ещё GPE - будет медленно работать на LifeDrive и устройствами с небольшой помятью, а также просто загружаемая система без оболочки
-</p>
+<p>На выбор предлагается ещё GPE - будет медленно работать на LifeDrive и устройствами с небольшой помятью, а также просто загружаемая система без оболочки</p>
 
 <p><a href="http://web.archive.org/web/20080915045039/http://git.hackndev.com/releases/20061002-insomnia/swap.gz">Swap file</a></p>
-<p>
-Важно
-Чтобы не качать пустой swap файл размером 90 мегобайт, почему бы не сделать его самомy
+
+<p>Важно
+Чтобы не качать пустой swap файл размером 90 мегобайт, почему бы не сделать его самомy</p>
 
 <figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># dd if=/dev/zero of=swap bs=1k count=96k</span>
 <span class="c"># mkswap swap</span></code></pre></figure>
-</p>
 
 <h3 id="конфиг-ядра">Конфиг ядра</h3>
 
-<p>
-Там две строчки:
+<p>Там две строчки:</p>
 
 <figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">SWAP_DEV</span><span class="o">=</span><span class="nv">$FILES_MNT</span>/swap
 <span class="nv">ROOT_DEV</span><span class="o">=</span><span class="nv">$FILES_MNT</span>/opie-image-v0.8.4-palmld.rootfs.ext2</code></pre></figure>
 
-Расположение swap файла и rootfs соответсвенно, от корневой директории.
-</p>
+<p>Расположение swap файла и rootfs соответсвенно, от корневой директории.</p>
 
 <h2 id="процесс-установки">Процесс установки</h2>
 <p>1)Включаем на Palm’e Drive Mode, и монтируем диск,</p>
@@ -124,59 +125,53 @@
 
 <p><img src="/images/palm/toaol.png" alt="" /></p>
 
-<p>Получаем следущую картину:
-<br />
-<img src="/images/palm/raVLm.png" alt="" /></p>
+<p>Получаем следущую картину:</p>
 
-<p><br />
-Загружается ядро… и далее графическая оболочка OPIE:<br />
-<img src="/images/palm/gbsUB.png" alt="" />
-<br />
-Всё установлено и готово к использованию, на момент написания статьи доступна новая сборка linux для Palm LD</p>
+<p><img src="/images/palm/raVLm.png" alt="" /></p>
 
-<p><a href="http://builds.hackndev.com/builds/Marex/TP1-20070717.tar.bz2">http://builds.hackndev.com/builds/Marex/TP1-20070717.tar.bz2</a>
-<br />
-<a href="http://opie.handhelds.org/cgi-bin/moin.cgi/News">Подробнее о OPIE http://opie.handhelds.org/cgi-bin/moin.cgi/News</a></p>
+<p>Загружается ядро… и далее графическая оболочка OPIE:
+<img src="/images/palm/gbsUB.png" alt="" /></p>
 
-<p><br />
-<b>cat /proc/cpuinfo</b><br />
-<img src="/images/palm/luALh.png" alt="" />
-<br />
-<b>Модули ядра</b><br />
+<p>Всё установлено и готово к использованию, на момент написания статьи доступна новая сборка linux для Palm LD</p>
+
+<p><a href="http://builds.hackndev.com/builds/Marex/TP1-20070717.tar.bz2">http://builds.hackndev.com/builds/Marex/TP1-20070717.tar.bz2</a></p>
+
+<p><a href="http://opie.handhelds.org/cgi-bin/moin.cgi/News">Подробнее о OPIE http://opie.handhelds.org/cgi-bin/moin.cgi/News</a></p>
+
+<p><strong>cat /proc/cpuinfo</strong>
+<img src="/images/palm/luALh.png" alt="" /></p>
+
+<p><strong>Модули ядра</strong>
 <img src="/images/palm/kQ2FN.png" alt="" /></p>
 
-<p><b>PIM</b><br />
+<p><strong>PIM</strong>
 <img src="/images/palm/ligOW.png" alt="" /></p>
 
-<p><b>Тесты системы</b><br />
+<p><strong>Тесты системы</strong>
 <img src="/images/palm/WlJsE.png" alt="" /></p>
 
-<p><b>Рабочий стол настроек</b><br />
+<p><strong>Рабочий стол настроек</strong>
 <img src="/images/palm/483Xp.png" alt="" /></p>
 
-<p><b>OpieMediaPlayer</b><br /> - музыка так и незаиграла
-<br />
-<img src="/images/palm/d0df3.png" alt="" /></p>
+<p><strong>OpieMediaPlayer</strong> - музыка так и незаиграла</p>
 
-<p><b>root shell</b><br />
-<img src="/images/palm/CFmLi.png" alt="" />
-<br /></p>
+<p><img src="/images/palm/d0df3.png" alt="" /></p>
 
-<h2 id="итоги">Итоги</h2>
+<p><strong>root shell</strong>
+<img src="/images/palm/CFmLi.png" alt="" /></p>
 
-<p>
-Итоги видны
+<h3 id="итоги">Итоги</h3>
+
+<p>Итоги видны
 табличке номер один на в начале статьи
-Система работает стабильно - непадает, segfault'ов ненаблюдалось. Собственно есть всё тоже самое что
+Система работает стабильно - непадает, segfault’ов ненаблюдалось. Собственно есть всё тоже самое что
 и в стандартной PalmOS, единственную проблему которую я вижу это мало софта, во остальном всё готово к
-употреблению.
-</p>
-<p><br /></p>
+употреблению.</p>
 
-<p>Ссылки по теме:<br />
-<a href="http://web.archive.org/web/20080915045039/http://www.handhelds.org/moin/moin.cgi/PalmLifeDriveHowTo">Handhelds.org LifeDrive HowTo</a><br />
-<a href="http://web.archive.org/web/20080915045039/http://hackndev.com/node/852">Hackndev Palm Life Drive</a><br />
-<a href="http://web.archive.org/web/20080915045039/http://www.access-company.com/products/linux/alp.html">Access Linux Platform</a><br /></p>
+<p>Ссылки по теме:
+<a href="http://web.archive.org/web/20080915045039/http://www.handhelds.org/moin/moin.cgi/PalmLifeDriveHowTo">Handhelds.org LifeDrive HowTo</a>
+<a href="http://web.archive.org/web/20080915045039/http://hackndev.com/node/852">Hackndev Palm Life Drive</a>
+<a href="http://web.archive.org/web/20080915045039/http://www.access-company.com/products/linux/alp.html">Access Linux Platform</a></p>
 
 
 </article>

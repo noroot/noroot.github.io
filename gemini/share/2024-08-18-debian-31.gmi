@@ -1,0 +1,27 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# Debian turned 31 years old
+
+=> /assets/images/debian-31th_DLenharo_300x350.png Image
+
+=> https://bits.debian.org/2024/08/debian-turns-31.html https://bits.debian.org/2024/08/debian-turns-31.html
+
+Debian is my favourite Linux distrubution, I am using it since version 2.2 Potato, and now it turns 31 years.
+
+=> https://www.debian.org/releases/ https://www.debian.org/releases/
+
+=> /assets/images/DebianLogo.jpg /assets/images/DebianLogo.jpg
+
+=> https://falsetrue.io/link/2023/08/16/debian-30/ https://falsetrue.io/link/2023/08/16/debian-30/
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

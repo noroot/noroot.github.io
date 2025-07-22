@@ -1,0 +1,87 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# In memory of Terry Davis
+
+In memory of
+
+Terry Davis
+
+(December 15, 1969 – August 11, 2018)
+
+=> /assets/images/TerryDavisPortrait.jpg Image
+
+Terry Davis - "Smartest programmer that ever lived"
+
+=> https://www.youtube.com/@terrydavisoldarchive5371/videos YouTube
+
+=> https://templeos.org/ TempleOS
+
+=> /assets/images/TerryDavis.jpg Image
+
+=> /assets/images/TerryDavisWithMonitor.jpg Image
+
+Terry A. Davis was a singular figure in the world of software development, known for creating TempleOS, a highly unconventional operating system that he developed entirely by himself. Davis was both a brilliant programmer and a deeply troubled individual, battling schizophrenia throughout much of his life, which heavily influenced both his work and his worldview.
+
+TempleOS was Davis’ magnum opus, a 64-bit operating system with a unique vision. Designed to be a modern-day temple where God could communicate with humans, it featured a deliberately limited resolution of 640x480 and a text-based interface with a custom programming language, HolyC, which Davis also wrote from scratch. The system was lightweight, with its design focused on simplicity, speed, and direct communication with hardware, breaking away from modern OS standards. Despite being rough around the edges, TempleOS was a testament to Davis’ raw talent and determination.
+
+Davis’ creation, however, was deeply intertwined with his mental health struggles. His schizophrenia led him to believe that God was directly guiding his work, and much of TempleOS’s structure and aesthetic choices reflected his religious visions. Although many in the tech community found his work difficult to categorize, it was impossible not to recognize the genius behind it.
+
+Terry Davis’ life and work have sparked conversations about mental health in the tech world. He demonstrated the vast potential of a lone programmer driven by passion and belief, yet his story also highlighted the profound challenges of working with untreated mental illness.
+
+He passed away on 11 of August in 2018 (was hit by train), but his legacy continues to resonate with programmers and creators, serving as a reminder of the complexity of human genius and the fine line between creativity and struggle. TempleOS, though niche, remains a fascinating relic of one man’s uncompromising vision.
+
+## Materials
+
+=> https://templeos.org/ TempleOS
+
+- The TempleOS
+
+=> https://github.com/cia-foundation/TempleOS TempleOS source code
+
+- The TempleOS source code
+
+=> https://holyc-lang.com/ HolyC programming language
+
+- programming language that Terry Davis invented to write TempleOS
+
+=> https://github.com/minexew/Shrine Srine
+
+- fork of TemplateOS with Networking, and other stuff
+
+=> https://github.com/Zeal-Operating-System/ZealOS ZealOS
+
+- Another work with enchancements
+
+=> https://github.com/tinkeros/TinkerOS TinkerOS
+
+- another fork
+
+=> https://bbrfoundation.donordrive.com/index.cfm?fuseaction=donorDrive.personalCampaign&participantID=8191 A personal campaign sponsored by Family and Friends of Terry Donations to Research
+
+=> https://www.findagrave.com/memorial/192900656/terrence_andrew-davis Find a Grave
+
+=> https://www.linkedin.com/in/terry-a-davis/ Terry Davis Linkedin Tribute
+
+## Good videos with covering his story
+
+=> https://www.youtube.com/watch?v=YMUhbIAA9-8 The Schizophrenic Genius - Terry A. Davis Story
+
+- the good coverage of Terrys story
+
+=> https://www.youtube.com/watch?v=Cyz08j7EchY The Apostles Keeping TEMPLEOS Alive…
+
+- talks about the details and forks of the Temple OS
+
+In the memory of Terry Davis
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

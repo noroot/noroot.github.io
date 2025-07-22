@@ -1,0 +1,59 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# Решение проблемы медленого wifi на Ubuntu
+
+Симптомы проблемы: в 11.04 При подключении к инетернету медленно или вообше не работает соединение, при этом выделяется IP и с виду все должно быть нормально и без ошибок.
+
+Решение: Убрать режим 11n
+
+```
+
+sudo modprobe iwlagn 11n_disable=1
+
+gksudo gedit /etc/modprobe.d/iwlagn-disable11n.conf
+
+options iwlagn 11n_disable=1
+
+```
+
+в 12.04 после обновления модуль стал называтся iwlwifi соотвественно решение будет выглядить так
+
+```
+
+sudo modprobe iwlwifi 11n_disable=1
+
+gksudo gedit /etc/modprobe.d/iwlagn-disable11n.conf
+
+options iwlwifi 11n_disable=1
+
+```
+
+Кроме того для некоторых срабатывает решение:
+
+в файле /etc/nsswitch.conf
+
+```
+
+hosts:          files mdns4_minimal [NOTFOUND=return] dns mdns4
+
+```
+
+заменить на
+
+```
+
+hosts:          files dns
+
+```
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

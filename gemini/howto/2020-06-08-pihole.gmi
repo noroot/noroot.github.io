@@ -1,0 +1,101 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# PiHole + dnscrypt-proxy = internet sewage filter
+
+Modern Internet is bloated. But it is possible to make it less bloated. You have to install those programs:
+
+=> https://pi-hole.net PiHole
+
+- will be your dns manager with black and white lists;
+
+=> https://github.com/DNSCrypt/dnscrypt-proxy dnscrypt-proxy
+
+- will be your safe dnsscrypt proxy to encrypted dns servers;
+
+Setup suitable for GNU/Linux and MacOS
+
+Installing PiHole
+
+Run
+
+```
+
+curl -sSL https://install.pi-hole.net | bash
+
+```
+
+Installing dnscrypt-proxy
+
+Follow this https://github.com/dnscrypt/dnscrypt-proxy/wiki/Installation-linux
+
+After that you have to say to PiHole to use your
+
+```
+
+dnscrypt-proxy
+
+```
+
+Setup your DNS server to the address which you’re install PiHole
+
+Go To https://pi.hole (only resolves if you’re setup your dns IP properly)
+
+```
+
+Settings -> DNS (Tab) -> Upstream DSN Servers
+
+```
+
+uncheck everything here
+
+```
+
+Settings -> DNS (Tab) -> Upstream DNS Servers -> Custom 1
+
+```
+
+, put here your dnsscrypt-proxy
+
+```
+
+address#port
+
+```
+
+string
+
+Next, goto to your current computer and other devices network connection settings, and set DNS to your
+
+```
+
+pi.hole
+
+```
+
+IP address, (127.0.0.1 if you did it locally).
+
+Done. You’re now using much safer and less bloated internet.
+
+Hints:
+
+Your daily dns traffic will be cleaner from 10% to 25%
+
+Very rare some sites or rich web applications may not working, be aware of that.
+
+Better to install it on seprate raspberry-pi.
+
+Your daily status will look like this (20%! percent of garbage)
+
+=> /images/pihole/pi-hole-stats-example.png Pi-hole daily example
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

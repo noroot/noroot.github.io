@@ -1,0 +1,359 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# Installing LetsEncrypt with Kubernetes on Digital Ocean
+
+If expeirience working with Kubernetes on Digital Ocean and you need to install or renew LetsEncrypt certificate you might be struggled with in update.
+
+To manage certificate there is a special tool called
+
+cert-manager
+
+=> https://cert-manager.io https://cert-manager.io
+
+## How it works ?
+
+```
+
+    +----------------+           +---------------------+           +--------------------+           +---------------------------+
+
+| Let's Encrypt  |           |  cert-manager       |           | Ingress Controller |           |   cert-manager            |
+
+|    (ACME)      |           |  (k8s)              |           |     (Nginx)        |           |   k8s:cm-acme-http-solver |
+
++----------------+           +---------------------+           +--------------------+           +---------------------------+
+
+|                             |                               |                            |
+
+| 1. Create CertificateRequest|                               |                            |
+
+|<--------------------------- |                               |                            |
+
+|                             |                               |                            |
+
+|                             | 2. Request HTTP-01 Challenge  |                            |
+
+|                             |------------------------------>|                            |
+
+|                             |                               |                            |
+
+|                             |                               |                            |
+
+|                             |                               |                            |
+
+|                             |                               |  3. Serve challenge file   |
+
+|                             |<------------------------------|----------------------------|
+
+|                             |                               |                            |
+
+|                             |                               |                            |
+
+|                             |                               |                            |
+
+|                             |                               |                            |
+
+| 4. Validate Challenge       |                               |                            |
+
+|<----------------------------|                               |                            |
+
+|                             |                               |                            |
+
+| 5. Issue Certificate        | cert-manager                  |                            |
+
+|---------------------------->| Stores certificate in Secrets |                            |
+
+|                             | allowing access it for Nginx  |                            |
+
+```
+
+Cert-Manager requesting letsencrypt to issue new ceritificate, LetsEncrypt verify generated certificate using various types of challenges
+
+Let’s Encrypt supports several challenge types that allow it to verify ownership of a domain before issuing SSL/TLS certificates. These challenges are part of the ACME (Automated Certificate Management Environment) protocol, which is used by Let’s Encrypt and other ACME-compatible certificate authorities.
+
+Here are the three main types of Let’s Encrypt challenges:
+
+### HTTP-01 Challenge
+
+The HTTP-01 challenge requires the web server that serves your domain to respond to an HTTP request at a specific path. The cert-manager or your ACME client will provision a file at the path .well-known/acme-challenge/ on your server that contains a token.
+
+How it works:
+
+Let’s Encrypt asks you to serve a token from http://your-domain/.well-known/acme-challenge/
+
+.
+
+The ACME client (e.g., cert-manager) responds to this request by provisioning the token on your web server (usually through an Ingress controller or a pod).
+
+Let’s Encrypt validates the challenge by making an HTTP GET request to the token URL.
+
+Best for: Domains with direct access to HTTP traffic. This is commonly used with Kubernetes Ingress controllers like NGINX.
+
+Requirements: Port 80 must be open and reachable on your server.
+
+### DNS-01 Challenge
+
+The DNS-01 challenge requires you to prove domain ownership by creating a DNS TXT record with a specific token. The cert-manager or your ACME client will automate this by updating your DNS provider’s records.
+
+How it works:
+
+Let’s Encrypt asks you to create a DNS TXT record _acme-challenge.your-domain with a specific value.
+
+The ACME client (e.g., cert-manager) interacts with your DNS provider’s API to create this record automatically.
+
+Let’s Encrypt queries your domain’s DNS TXT record to verify that it contains the correct value.
+
+Best for: Wildcard certificates (e.g., *.example.com), internal services, and domains where direct HTTP access is not possible.
+
+Requirements: You must have control over the domain’s DNS records, and your DNS provider must support automation via an API that the ACME client can use.
+
+### TLS-ALPN-01 Challenge
+
+The TLS-ALPN-01 challenge allows validation over a custom TLS extension called ALPN (Application-Layer Protocol Negotiation). This challenge type is specifically for cases where you have control over the server’s TLS configuration and don’t want to use HTTP or DNS-based validation.
+
+How it works:
+
+The ACME client (e.g., cert-manager) configures your web server to respond to TLS connections with a special ALPN protocol (acme-tls/1) and a certificate containing the challenge token.
+
+Let’s Encrypt connects to your server over HTTPS and validates the challenge by verifying the presence of this certificate using the ALPN protocol.
+
+Best for: Environments with strict security policies where serving files over HTTP is not an option or where DNS automation is not available.
+
+Requirements: You must have control over the TLS configuration and be able to install the custom certificate temporarily.
+
+Challenge
+
+Description
+
+Best Use Case
+
+Requirements
+
+HTTP-01
+
+Serve a token over HTTP on port 80.
+
+Simple web domains with HTTP access.
+
+Port 80 open and accessible.
+
+DNS-01
+
+Create a DNS TXT record with the token.
+
+Wildcard certificates and internal domains.
+
+DNS provider with API for automation.
+
+TLS-ALPN-01
+
+Respond to a TLS connection with a token via ALPN.
+
+Strict security environments.
+
+Control over TLS configuration.
+
+### Summary of the Process:
+
+Ingress Resource: You define an Ingress resource that cert-manager observes.
+
+Certificate Request: cert-manager issues a request to Let’s Encrypt.
+
+ACME Challenge: cert-manager fulfills the HTTP-01 or DNS-01 challenge to prove domain ownership.
+
+Challenge Validation: Let’s Encrypt validates the challenge.
+
+Certificate Issuance: Let’s Encrypt issues the certificate, and cert-manager stores it as a Kubernetes Secret.
+
+Ingress Controller: The Ingress controller terminates TLS for incoming HTTPS traffic using the issued certificate.
+
+Automated Renewal: cert-manager automatically renews certificates before they expire.
+
+```
+
+DNS-01
+
+```
+
+requires api access to change DNS configuration, which is why everybody uses HTTP-01 challenge which is just a request of a created file on server.
+
+## Install
+
+There is a few ways to install
+
+cert-manager
+
+, one of them is directly with
+
+```
+
+kubectl apply -f ...
+
+```
+
+command.
+
+```
+
+kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.16.0/cert-manager.yaml`
+
+```
+
+Install
+
+JetStack
+
+```
+
+helm repo add jetstack https://charts.jetstack.io --force-update
+
+```
+
+Install
+
+cert-manager
+
+```
+
+helm install cert-manager jetstack/cert-manager \
+
+--namespace cert-manager \
+
+--create-namespace \
+
+-version v1.16.0 \
+
+--set crds.enabled=true
+
+```
+
+Verify installation
+
+```
+
+kubectl get pods -n cert-manager
+
+```
+
+## The Issue
+
+The problem starts here:
+
+Cmd:
+
+```
+
+kubectl logs -l app=cert-manager -n cert-manager -f
+
+```
+
+Output:
+
+```
+
+E1006 23:14:38.1433441 sync.go:208] "propagation check failed" err="failed to perform self check GET request 'http://example.com/.well-known/acme-challenge/<token>': Get \"http://example.com/.well-known/acme-challenge/<token>\": EOF" logger="cert-manager.controller" resource_name="example-com-tls-1-622117757-218251542" resource_namespace="default" resource_kind="Challenge" resource_version="v1" dnsName="example.com" type="HTTP-01"
+
+```
+
+As you can see, the cert-manager cannot access the challenge file to verify, at the same time if I go to **http://example.com/.well-known/acme-challenge/
+
+** with the browser it will be open without a problem.
+
+#### Why is that ?
+
+```
+
+In this case, Kubernetes networking is too smart for its own good. See upstream Kubernetes issue
+
+An ingress controller service deploys a LoadBalancer, which is provisioned by your cloud provider.
+
+Kubernetes notices the LoadBalancer's external IP address. As an "optimization", kube-proxy on
+
+each node writes iptables rules that rewrite all outbound traffic to the LoadBalancer's external
+
+IP address to instead be redirected to the cluster-internal Service ClusterIP address. If your
+
+cloud load balancer doesn't modify the traffic, then indeed this is a helpful optimization.
+
+However, when you have the PROXY protocol enabled, the external load balancer does modify the
+
+traffic, prepending the PROXY line before each TCP connection. If you connect directly to the
+
+web server internally, bypassing the external load balancer, then it will receive traffic
+
+without the PROXY line. In the case of ingress-nginx with use-proxy-protocol: "true", you'll
+
+find that NGINX fails when receiving a bare GET request. As a result,
+
+accessing http://subdomain.example.com/ from inside the cluster fails!
+
+This is particularly a problem when using cert-manager for provisioning SSL certificates.
+
+Cert-manager uses HTTP01 validation, and before asking LetsEncrypt to hit
+
+http://subdomain.example.com/.well-known/acme-challenge/some-special-code,
+
+it tries to access this URL itself as a self-check. This fails. Cert-manager does not
+
+allow you to skip the self-check.
+
+As a result, your certificate is never provisioned, even though the verification URL would
+
+be perfectly accessible externally. See upstream cert-manager issues: proxy_protocol
+
+mode breaks HTTP01 challenge Check stage, http-01 self check failed for domain, Self check always fail
+
+```
+
+```
+
+There are several ways to solve this problem:
+
+Modify Kubernetes to not rewrite the external IP address of a LoadBalancer.
+
+Modify nginx to treat the PROXY line as optional.
+
+Modify cert-manager to add the PROXY line on its self-check.
+
+Modify cert-manager to bypass the self-check.
+
+```
+
+Thankfully to
+
+=> @compumike https://github.com/compumike/
+
+there is a tool called
+
+=> hairpin-proxy https://github.com/compumike/hairpin-proxy
+
+.
+
+All you need to do in case of such problem is to installed into your k8s.
+
+```
+
+kubectl apply -f https://raw.githubusercontent.com/compumike/hairpin-proxy/v0.2.1/deploy.yml
+
+```
+
+It will setup bypass access for ACME challenge, and certificates will be validated properly.
+
+## References
+
+=> https://cert-manager.io https://cert-manager.io
+
+=> https://github.com/compumike/hairpin-proxy https://github.com/compumike/hairpin-proxy
+
+=> https://letsencrypt.org/ https://letsencrypt.org/
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

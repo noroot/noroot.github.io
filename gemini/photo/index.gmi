@@ -1,0 +1,22 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# Photo
+=> 2025-04-15-honda-900rr-fireblade.gmi 2025-04-15 Honda 900RR Fireblade
+=> 2024-11-11-zastava-jugo.gmi 2024-11-11 Zastava Jugo 45
+=> 2024-11-11-fruska-gora.gmi 2024-11-11 Fruška Gora Forest
+=> 2024-09-08-mantis.gmi 2024-09-08 Mantis
+=> 2024-09-01-ferrari-308GTB.gmi 2024-09-01 Ferrari 308 GTB
+=> 2024-08-11-tripump-t4r.gmi 2024-08-11 Triumph T4R
+=> 2024-08-10-photo-blackcat.gmi 2024-08-10 Sleepy Black cat
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

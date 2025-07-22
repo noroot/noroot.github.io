@@ -1,0 +1,151 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# Darkside of the Spotlight (English version)
+
+One of the new features you can get with new OSX Yosemite is enhanced spotlight.
+
+What exactly Spotlight doing ? Indexing all of your content, except you’re not excluded something in settings.
+
+Also Apple tell us “Safety. Built right in.” So does it true ?
+
+Spotlight always knows everything about your old and new files, it indexing not only files,
+
+but calendar records, bookmarks, browser history, contacts and emails.
+
+Spotlight knows everything about your files and you.
+
+What it does when you’re typing something in a search field
+
+Spotlight search everywhere and everything and even loading webpages from your bookmarks and history, questions ?, follow next:
+
+I am take Wireshark sniffer, turn off all other programs and start to watch what exactly Spotlight did when i am type something.
+
+Let’s start with simple query “weather”, take a look at this:
+
+=> https://s.overmind.ws.s3.amazonaws.com/darkspotlight/weather-packet.png https://s.overmind.ws.s3.amazonaws.com/darkspotlight/weather-packet.png
+
+another one more interesting “porn”:
+
+=> https://s.overmind.ws.s3.amazonaws.com/darkspotlight/porno-packet.png https://s.overmind.ws.s3.amazonaws.com/darkspotlight/porno-packet.png
+
+For more handy view leave only DNS queries
+
+=> https://s.overmind.ws.s3.amazonaws.com/darkspotlight/dns-requests-packet.png https://s.overmind.ws.s3.amazonaws.com/darkspotlight/dns-requests-packet.png
+
+Spotlight fully load web page with safari in background
+
+=> https://s.overmind.ws.s3.amazonaws.com/darkspotlight/porno-packet-full-site-loading.png https://s.overmind.ws.s3.amazonaws.com/darkspotlight/porno-packet-full-site-loading.png
+
+query “buy phone”
+
+=> https://s.overmind.ws.s3.amazonaws.com/darkspotlight/buy-phone.png https://s.overmind.ws.s3.amazonaws.com/darkspotlight/buy-phone.png
+
+another one query and spotlight load page from browser history
+
+=> https://s.overmind.ws.s3.amazonaws.com/darkspotlight/sleep-packet.png https://s.overmind.ws.s3.amazonaws.com/darkspotlight/sleep-packet.png
+
+Very intersting that even if those pages are loaded they haven’t any effect on spotlight search results, nothing related at all. That is very suspicious fact.
+
+## Aftermath ?
+
+Such hidden queries and behavior can provoke sensitive data leak, and obviously that kind of leak can be very dangerous.
+
+At least you’re send your IP address to 3d party resources, furthermore query related web pages will be opened in hidden mode, and suddenly spotlight can open some exploit that use some vulnerability of safar engine.
+
+## How to avoid hidden and dangerous Spotlight queries
+
+By default Spotlight settings looks like this:
+
+=> https://s.overmind.ws.s3.amazonaws.com/darkspotlight/spotlight-settings.png https://s.overmind.ws.s3.amazonaws.com/darkspotlight/spotlight-settings.png
+
+Take a look at “Other” item what can it be ? I don’t known maybe you know ?
+
+=> https://s.overmind.ws.s3.amazonaws.com/darkspotlight/spotlight-settings-other.png https://s.overmind.ws.s3.amazonaws.com/darkspotlight/spotlight-settings.png
+
+I am turn off all that potentially can uses 3d party services: Bing Web Searches, Spotlight suggestions, Bookamarks & History and of course Other.
+
+Second screen of settings with exceptions:
+
+WARNING: When you’re updating operating system for example to Yosemite, settings of exception will be restored to default values (YES FUCK APPLE)
+
+Very intersting that tab which called “Privacy” contains nothing! And even if you’re setup something here there is no warranty that after next operating system update settings will be there.
+
+=> https://s.overmind.ws.s3.amazonaws.com/darkspotlight/spotlight-empty-exception.png https://s.overmind.ws.s3.amazonaws.com/darkspotlight/spotlight-empty-exception.png
+
+Also I am recommend you to add all of your sensitive data to exception for indexing by Spotlight.
+
+By the way there are project called
+
+=> http://fix-macosx.com https://fix-macosx.com/
+
+which allows you disable all bad things in Spotlight by launch small python program in a terminal. (Also this is my version of it, with a bit more disabled items
+
+=> https://github.com/noroot/fix-macosx https://github.com/noroot/fix-macosx
+
+)
+
+If you’re want to completly disable Spotlight from your OSX you can do it like this:
+
+```
+
+sudo su
+
+chmod 0000 /Library/Spotlight
+
+chmod 0000 /System/Library/Spotlight
+
+chmod 0000 /System/Library/CoreServices/Search.bundle
+
+chmod 0000 /System/Library/PreferencePanes/Spotlight.prefPane
+
+chmod 0000 /System/Library/Services/Spotlight.service
+
+chmod 0000 /System/Library/Contextual Menu Items/SpotlightCM.plugin
+
+chmod 0000 /System/Library/StartupItems/Metadata
+
+chmod 0000 /usr/bin/mdimport
+
+chmod 0000 /usr/bin/mdcheckschema
+
+chmod 0000 /usr/bin/mdfind
+
+chmod 0000 /usr/bin/mdls
+
+chmod 0000 /usr/bin/mdutil
+
+chmod 0000 /usr/bin/md
+
+```
+
+chmod using in this hack for backup puproses, if you want to turn on spotlight just chmod files to normal permissions.
+
+After reboot you should run this commands to completly remove old index files.
+
+```
+
+rm -r /.Spotlight-V100
+
+rm -r /private/var/tmp/mds
+
+exit
+
+```
+
+Another one screenshot with apple spotlight terms of use:
+
+=> https://s.overmind.ws.s3.amazonaws.com/darkspotlight/apple-spotlight-license.png https://s.overmind.ws.s3.amazonaws.com/darkspotlight/apple-spotlight-license.png
+
+That’s all. Welcome to comments and discus this weird stuff.
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

@@ -1,0 +1,190 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# Newsletter
+
+=> /categories/newsletter ✉️ newsletter
+
+10-DEC-2024 -
+
+=> /newsletter/2024/12/10/ep19/ EP-19 FalseTrue Digest
+
+=> /tags/news #news
+
+=> /tags/journal #journal
+
+=> /categories/newsletter ✉️ newsletter
+
+25-OCT-2024 -
+
+=> /newsletter/2024/10/25/ep18/ EP-18 FalseTrue Digest
+
+=> /tags/news #news
+
+=> /tags/linux #linux
+
+=> /tags/personal #personal
+
+=> /categories/newsletter ✉️ newsletter
+
+23-SEP-2024 -
+
+=> /newsletter/2024/09/23/ep17/ EP-17 FalseTrue Digest
+
+=> /tags/news #news
+
+=> /tags/linux #linux
+
+=> /tags/personal #personal
+
+=> /categories/newsletter ✉️ newsletter
+
+10-AUG-2024 -
+
+=> /newsletter/2024/08/10/ep16/ EP-16 FalseTrue Digest
+
+=> /tags/linux #linux
+
+=> /tags/hardware #hardware
+
+=> /tags/event #event
+
+=> /categories/newsletter ✉️ newsletter
+
+31-MAR-2024 -
+
+=> /newsletter/2024/03/31/ep15/ EP15 FalseTrue Digest
+
+=> /tags/linux #linux
+
+=> /tags/tools #tools
+
+=> /tags/emacs #emacs
+
+=> /categories/newsletter ✉️ newsletter
+
+29-FEB-2024 -
+
+=> /newsletter/2024/02/29/ep14/ EP14 FalseTrue Digest
+
+=> /tags/ai #ai
+
+=> /tags/emacs #emacs
+
+=> /tags/tools #tools
+
+=> /categories/newsletter ✉️ newsletter
+
+30-JAN-2024 -
+
+=> /newsletter/2024/01/30/ep13/ EP13 FalseTrue Digest
+
+=> /tags/linux #linux
+
+=> /tags/emacs #emacs
+
+=> /tags/ai #ai
+
+=> /tags/dev #dev
+
+=> /categories/newsletter ✉️ newsletter
+
+31-DEC-2023 -
+
+=> /newsletter/2023/12/31/ep12/ EP12 FalseTrue Digest
+
+=> /tags/linux #linux
+
+=> /tags/emacs #emacs
+
+=> /tags/tools #tools
+
+=> /categories/newsletter ✉️ newsletter
+
+5-DEC-2023 -
+
+=> /newsletter/2023/12/05/ep11/ EP11 FalseTrue Digest
+
+=> /tags/linux #linux
+
+=> /categories/newsletter ✉️ newsletter
+
+5-NOV-2023 -
+
+=> /newsletter/2023/11/05/ep10/ EP10 FalseTrue Digest
+
+=> /tags/linux #linux
+
+=> /categories/newsletter ✉️ newsletter
+
+5-OCT-2023 -
+
+=> /newsletter/2023/10/05/ep9/ EP9 FalseTrue Digest
+
+=> /tags/linux #linux
+
+=> /categories/newsletter ✉️ newsletter
+
+20-JUN-2023 -
+
+=> /newsletter/2023/06/20/ep6/ EP6 FalseTrue Digest
+
+=> /tags/linux #linux
+
+=> /categories/newsletter ✉️ newsletter
+
+29-MAY-2023 -
+
+=> /newsletter/2023/05/29/ep5/ EP5 FalseTrue Digest
+
+=> /tags/linux #linux
+
+=> /categories/newsletter ✉️ newsletter
+
+22-MAY-2023 -
+
+=> /newsletter/2023/05/22/ep4/ EP4 FalseTrue Digest
+
+=> /tags/linux #linux
+
+=> /categories/newsletter ✉️ newsletter
+
+15-MAY-2023 -
+
+=> /newsletter/2023/05/15/ep3/ EP3 FalseTrue Digest
+
+=> /tags/linux #linux
+
+=> /tags/persona #persona
+
+=> /categories/newsletter ✉️ newsletter
+
+8-MAY-2023 -
+
+=> /newsletter/2023/05/08/ep2/ EP2 FalseTrue Digest
+
+=> /tags/linux #linux
+
+=> /tags/stallman #stallman
+
+=> /tags/code #code
+
+=> /tags/tools #tools
+
+=> /categories/newsletter ✉️ newsletter
+
+1-MAY-2023 -
+
+=> /newsletter/2023/05/01/ep1/ EP1 FalseTrue Digest
+
+=> /tags/linux #linux
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

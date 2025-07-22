@@ -1,0 +1,153 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# How to manage your dotfiles with git
+
+How to manage your [dot] files with git. First of all what is dotfiles ?
+
+For those who don’t konw dotfiles is configuration files inside your home directory file names and directories starts with a “.” thats why it’s called dotfiles.
+
+### The problem ?
+
+I want to manage it with a git repositry
+
+I don’t want to mess with all files inside home directory as untracked git files
+
+### Solution
+
+I’ve started search for solution and it gets me to
+
+=> https://www.atlassian.com/git/tutorials/dotfiles this article
+
+Method it self as it mention in article has been proposed on
+
+=> https://news.ycombinator.com/item?id=11070797 hacker news
+
+it was simple and plain in terms of linux way
+
+#### Step 1
+
+Choose directory where your repository will be stored for instance
+
+~/Dotfiles
+
+#### Step 2
+
+Got inside and make git bare repostory
+
+```
+
+cd ~/Dotfiles
+
+```
+
+```
+
+git init --bare .
+
+```
+
+Bare repository is repository without a working directory so it’s contains of git internals structure itself to store objects added to repostory
+
+You better know what is bare git repository
+
+=> https://git-scm.com/book/en/v2/Git-on-the-Server-Getting-Git-on-a-Server here
+
+#### Step 3
+
+Setup special alias for git command to work with ~/Dotfiles
+
+```
+
+alias dotfiles='/usr/bin/git --git-dir=$HOME/Projects/Personal/Dotfiles/ --work-tree=$HOME'
+
+```
+
+Make this alias permanent by adding it to your .bashrc or .zshrc configuraton
+
+#### Step 4
+
+Make git stop showing untracked files
+
+```
+
+dotfiles config status.showUntrackedFiles no
+
+```
+
+#### Step 5 Finally
+
+```
+
+dotfiles add ~/.zshrc
+
+```
+
+```
+
+dotfiles -m "Add zsh configuraton"
+
+```
+
+That’s it. If you want to push to remote add origin before and push it same way
+
+```
+
+dotfiles add origin URL
+
+```
+
+```
+
+dotfiles push origin master
+
+```
+
+Since
+
+dotfiles
+
+is special alias for git you can do
+
+```
+
+dotfiles status
+
+```
+
+when editing your configs to see what files have been changed.
+
+#### Why this is good solution ?
+
+If you’re mind to store configs as usual and just create simple directory to store it, you have to deal with setup process to actually update files on their location in system, using this method you don’t need to think about install and deploy.
+
+When you do
+
+```
+
+dotilfes ls
+
+```
+
+you don’t have to deal with other files which is not been added to repository and are not dot files you’re interested in.
+
+#### Credits and links
+
+=> https://www.youtube.com/watch?v=tBoLDpTWVOM Derek Tailor or DistroTube
+
+=> https://www.atlassian.com/git/tutorials/dotfiles Atlassian guy
+
+=> https://news.ycombinator.com/item?id=11070797 HackerNews origin
+
+=> https://github.com/noroot/dotfiles My dotfiles
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

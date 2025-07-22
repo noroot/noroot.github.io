@@ -1,0 +1,174 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+# Photo Archive
+
+## Animals
+=> /images/photography_copyrighted/Animals/Mantis.jpg Mantis.jpg
+=> /images/photography_copyrighted/Animals/IMG_0925.jpg IMG_0925.jpg
+=> /images/photography_copyrighted/Animals/IMG_0904.jpg IMG_0904.jpg
+=> /images/photography_copyrighted/Animals/2022-08-03_20-21-31_UTC.jpg 2022-08-03_20-21-31_UTC.jpg
+=> /images/photography_copyrighted/Animals/2022-08-01_19-36-08_UTC.jpg 2022-08-01_19-36-08_UTC.jpg
+=> /images/photography_copyrighted/Animals/DSF3986.jpg DSF3986.jpg
+=> /images/photography_copyrighted/Animals/DSF3143.jpg DSF3143.jpg
+=> /images/photography_copyrighted/Animals/DSF0448.jpg DSF0448.jpg
+=> /images/photography_copyrighted/Animals/DSF6984.jpg DSF6984.jpg
+=> /images/photography_copyrighted/Animals/2022-06-10_21-52-09_UTC.jpg 2022-06-10_21-52-09_UTC.jpg
+=> /images/photography_copyrighted/Animals/DSCN4698.jpg DSCN4698.jpg
+=> /images/photography_copyrighted/Animals/2021-12-22_12-50-45_UTC.jpg 2021-12-22_12-50-45_UTC.jpg
+=> /images/photography_copyrighted/Animals/2021-12-05_22-34-19_UTC.jpg 2021-12-05_22-34-19_UTC.jpg
+=> /images/photography_copyrighted/Animals/2021-12-01_12-47-02_UTC.jpg 2021-12-01_12-47-02_UTC.jpg
+=> /images/photography_copyrighted/Animals/2021-11-24_07-38-53_UTC.jpg 2021-11-24_07-38-53_UTC.jpg
+=> /images/photography_copyrighted/Animals/2021-11-18_18-05-12_UTC.jpg 2021-11-18_18-05-12_UTC.jpg
+=> /images/photography_copyrighted/Animals/2021-11-10_10-11-41_UTC.jpg 2021-11-10_10-11-41_UTC.jpg
+=> /images/photography_copyrighted/Animals/2021-11-01_22-32-50_UTC.jpg 2021-11-01_22-32-50_UTC.jpg
+=> /images/photography_copyrighted/Animals/2021-09-23_15-48-55_UTC.jpg 2021-09-23_15-48-55_UTC.jpg
+=> /images/photography_copyrighted/Animals/2021-09-21_08-19-31_UTC.jpg 2021-09-21_08-19-31_UTC.jpg
+
+## Architecture
+=> /images/photography_copyrighted/Architecture/Subotica.jpg Subotica.jpg
+=> /images/photography_copyrighted/Architecture/NoviSadChina.jpg NoviSadChina.jpg
+=> /images/photography_copyrighted/Architecture/NoviSadCastle.jpg NoviSadCastle.jpg
+=> /images/photography_copyrighted/Architecture/NoviSadKnightHouse.jpg NoviSadKnightHouse.jpg
+=> /images/photography_copyrighted/Architecture/NoviSadCastleSquare.jpg NoviSadCastleSquare.jpg
+=> /images/photography_copyrighted/Architecture/NoviSadRose.jpg NoviSadRose.jpg
+=> /images/photography_copyrighted/Architecture/NoviSadCastleBw.jpg NoviSadCastleBw.jpg
+=> /images/photography_copyrighted/Architecture/IMG_0897.jpg IMG_0897.jpg
+=> /images/photography_copyrighted/Architecture/IMG_0909.jpg IMG_0909.jpg
+=> /images/photography_copyrighted/Architecture/IMG_0908.jpg IMG_0908.jpg
+=> /images/photography_copyrighted/Architecture/IMG_0907.jpg IMG_0907.jpg
+=> /images/photography_copyrighted/Architecture/IMG_0901.jpg IMG_0901.jpg
+=> /images/photography_copyrighted/Architecture/DSF8068.jpg DSF8068.jpg
+=> /images/photography_copyrighted/Architecture/2022-10-09_07-33-34_UTC.jpg 2022-10-09_07-33-34_UTC.jpg
+=> /images/photography_copyrighted/Architecture/2022-10-08_19-28-59_UTC.jpg 2022-10-08_19-28-59_UTC.jpg
+=> /images/photography_copyrighted/Architecture/2022-10-08_18-35-00_UTC.jpg 2022-10-08_18-35-00_UTC.jpg
+=> /images/photography_copyrighted/Architecture/DSF7838.jpg DSF7838.jpg
+=> /images/photography_copyrighted/Architecture/DSF6630.jpg DSF6630.jpg
+=> /images/photography_copyrighted/Architecture/DSF7074.jpg DSF7074.jpg
+=> /images/photography_copyrighted/Architecture/tata.jpg tata.jpg
+=> /images/photography_copyrighted/Architecture/2021-12-20_12-12-05_UTC.jpg 2021-12-20_12-12-05_UTC.jpg
+=> /images/photography_copyrighted/Architecture/2021-12-19_17-26-16_UTC.jpg 2021-12-19_17-26-16_UTC.jpg
+=> /images/photography_copyrighted/Architecture/2021-12-13_11-20-56_UTC.jpg 2021-12-13_11-20-56_UTC.jpg
+=> /images/photography_copyrighted/Architecture/2021-12-12_10-52-54_UTC.jpg 2021-12-12_10-52-54_UTC.jpg
+=> /images/photography_copyrighted/Architecture/2021-12-05_18-50-41_UTC.jpg 2021-12-05_18-50-41_UTC.jpg
+=> /images/photography_copyrighted/Architecture/2021-12-05_16-56-31_UTC.jpg 2021-12-05_16-56-31_UTC.jpg
+=> /images/photography_copyrighted/Architecture/2021-11-30_03-19-56_UTC.jpg 2021-11-30_03-19-56_UTC.jpg
+=> /images/photography_copyrighted/Architecture/2021-11-22_15-12-47_UTC.jpg 2021-11-22_15-12-47_UTC.jpg
+
+## Cars
+=> /images/photography_copyrighted/Cars/Rover.jpg Rover.jpg
+=> /images/photography_copyrighted/Cars/OldBMW.jpg OldBMW.jpg
+=> /images/photography_copyrighted/Cars/HondaCBR900RRFireblade.jpg HondaCBR900RRFireblade.jpg
+=> /images/photography_copyrighted/Cars/SuboticaRenault2.jpg SuboticaRenault2.jpg
+=> /images/photography_copyrighted/Cars/ZastavaJugo45.jpg ZastavaJugo45.jpg
+=> /images/photography_copyrighted/Cars/Ferrari308GTBRear.jpg Ferrari308GTBRear.jpg
+=> /images/photography_copyrighted/Cars/Ferrari308GTBFront.jpg Ferrari308GTBFront.jpg
+=> /images/photography_copyrighted/Cars/Ferrari308GTBCockpit.jpg Ferrari308GTBCockpit.jpg
+=> /images/photography_copyrighted/Cars/TriumphT4R.jpg TriumphT4R.jpg
+=> /images/photography_copyrighted/Cars/IMG_0896.jpg IMG_0896.jpg
+=> /images/photography_copyrighted/Cars/IMG_0900.jpg IMG_0900.jpg
+=> /images/photography_copyrighted/Cars/2022-10-26_03-04-45_UTC.jpg 2022-10-26_03-04-45_UTC.jpg
+=> /images/photography_copyrighted/Cars/DSF6474.jpg DSF6474.jpg
+=> /images/photography_copyrighted/Cars/DSF7170.jpg DSF7170.jpg
+=> /images/photography_copyrighted/Cars/2022-07-04_13-05-07_UTC.jpg 2022-07-04_13-05-07_UTC.jpg
+=> /images/photography_copyrighted/Cars/2022-07-03_20-13-15_UTC.jpg 2022-07-03_20-13-15_UTC.jpg
+=> /images/photography_copyrighted/Cars/DSF7082.jpg DSF7082.jpg
+=> /images/photography_copyrighted/Cars/2022-06-19_12-37-37_UTC.jpg 2022-06-19_12-37-37_UTC.jpg
+=> /images/photography_copyrighted/Cars/2022-06-15_10-59-27_UTC.jpg 2022-06-15_10-59-27_UTC.jpg
+=> /images/photography_copyrighted/Cars/2021-11-21_18-49-49_UTC.jpg 2021-11-21_18-49-49_UTC.jpg
+
+## HongKong
+=> /images/photography_copyrighted/HongKong/HKG-32.jpg HKG-32.jpg
+=> /images/photography_copyrighted/HongKong/HKG-33.jpg HKG-33.jpg
+=> /images/photography_copyrighted/HongKong/HKG-31.jpg HKG-31.jpg
+=> /images/photography_copyrighted/HongKong/HKG-29.jpg HKG-29.jpg
+=> /images/photography_copyrighted/HongKong/HKG-30.jpg HKG-30.jpg
+=> /images/photography_copyrighted/HongKong/HKG-28.jpg HKG-28.jpg
+=> /images/photography_copyrighted/HongKong/HKG-27.jpg HKG-27.jpg
+=> /images/photography_copyrighted/HongKong/HKG-26.jpg HKG-26.jpg
+=> /images/photography_copyrighted/HongKong/HKG-18.jpg HKG-18.jpg
+=> /images/photography_copyrighted/HongKong/HKG-19.jpg HKG-19.jpg
+=> /images/photography_copyrighted/HongKong/HKG-22.jpg HKG-22.jpg
+=> /images/photography_copyrighted/HongKong/HKG-21.jpg HKG-21.jpg
+=> /images/photography_copyrighted/HongKong/HKG-20.jpg HKG-20.jpg
+=> /images/photography_copyrighted/HongKong/HKG-17.jpg HKG-17.jpg
+=> /images/photography_copyrighted/HongKong/HKG-16.jpg HKG-16.jpg
+=> /images/photography_copyrighted/HongKong/HKG-15.jpg HKG-15.jpg
+=> /images/photography_copyrighted/HongKong/HKG-11.jpg HKG-11.jpg
+=> /images/photography_copyrighted/HongKong/HKG-14.jpg HKG-14.jpg
+=> /images/photography_copyrighted/HongKong/HKG-12.jpg HKG-12.jpg
+=> /images/photography_copyrighted/HongKong/HKG-13.jpg HKG-13.jpg
+=> /images/photography_copyrighted/HongKong/HKG-10.jpg HKG-10.jpg
+=> /images/photography_copyrighted/HongKong/HKG-09.jpg HKG-09.jpg
+=> /images/photography_copyrighted/HongKong/HKG-08.jpg HKG-08.jpg
+
+## Landscape
+=> /images/photography_copyrighted/Landscape/FruskaGora.jpg FruskaGora.jpg
+=> /images/photography_copyrighted/Landscape/DSF2426.jpg DSF2426.jpg
+=> /images/photography_copyrighted/Landscape/DSF2496.jpg DSF2496.jpg
+=> /images/photography_copyrighted/Landscape/DSF2472.jpg DSF2472.jpg
+=> /images/photography_copyrighted/Landscape/DSF2437.jpg DSF2437.jpg
+=> /images/photography_copyrighted/Landscape/DSF2432.jpg DSF2432.jpg
+=> /images/photography_copyrighted/Landscape/IMG_0905.jpg IMG_0905.jpg
+=> /images/photography_copyrighted/Landscape/IMG_0906.jpg IMG_0906.jpg
+=> /images/photography_copyrighted/Landscape/DSF7706.jpg DSF7706.jpg
+=> /images/photography_copyrighted/Landscape/DSF7838.jpg DSF7838.jpg
+=> /images/photography_copyrighted/Landscape/2022-08-30_20-57-27_UTC.jpg 2022-08-30_20-57-27_UTC.jpg
+=> /images/photography_copyrighted/Landscape/2022-08-02_08-48-40_UTC.jpg 2022-08-02_08-48-40_UTC.jpg
+=> /images/photography_copyrighted/Landscape/DSF3546.jpg DSF3546.jpg
+=> /images/photography_copyrighted/Landscape/DSCN3369.JPG DSCN3369.JPG
+=> /images/photography_copyrighted/Landscape/2022-06-01_04-54-37_UTC.jpg 2022-06-01_04-54-37_UTC.jpg
+=> /images/photography_copyrighted/Landscape/2022-05-26_17-24-59_UTC.jpg 2022-05-26_17-24-59_UTC.jpg
+=> /images/photography_copyrighted/Landscape/2022-05-25_06-00-42_UTC.jpg 2022-05-25_06-00-42_UTC.jpg
+=> /images/photography_copyrighted/Landscape/2021-12-04_18-56-09_UTC.jpg 2021-12-04_18-56-09_UTC.jpg
+=> /images/photography_copyrighted/Landscape/2021-12-03_12-15-06_UTC.jpg 2021-12-03_12-15-06_UTC.jpg
+=> /images/photography_copyrighted/Landscape/2021-12-03_11-26-13_UTC.jpg 2021-12-03_11-26-13_UTC.jpg
+=> /images/photography_copyrighted/Landscape/2021-11-15_14-53-46_UTC.jpg 2021-11-15_14-53-46_UTC.jpg
+=> /images/photography_copyrighted/Landscape/2021-11-08_13-37-40_UTC.jpg 2021-11-08_13-37-40_UTC.jpg
+=> /images/photography_copyrighted/Landscape/2021-10-28_15-13-27_UTC.jpg 2021-10-28_15-13-27_UTC.jpg
+=> /images/photography_copyrighted/Landscape/2021-10-15_12-04-39_UTC.jpg 2021-10-15_12-04-39_UTC.jpg
+=> /images/photography_copyrighted/Landscape/2021-10-13_20-11-35_UTC.jpg 2021-10-13_20-11-35_UTC.jpg
+=> /images/photography_copyrighted/Landscape/2021-09-29_08-09-01_UTC.jpg 2021-09-29_08-09-01_UTC.jpg
+=> /images/photography_copyrighted/Landscape/2021-09-23_14-36-32_UTC.jpg 2021-09-23_14-36-32_UTC.jpg
+=> /images/photography_copyrighted/Landscape/2021-09-22_12-42-53_UTC.jpg 2021-09-22_12-42-53_UTC.jpg
+
+## Other
+=> /images/photography_copyrighted/Other/2022-06-14_19-29-31_UTC.jpg 2022-06-14_19-29-31_UTC.jpg
+=> /images/photography_copyrighted/Other/2022-06-05_19-05-21_UTC.jpg 2022-06-05_19-05-21_UTC.jpg
+=> /images/photography_copyrighted/Other/2021-12-22_19-44-59_UTC.jpg 2021-12-22_19-44-59_UTC.jpg
+=> /images/photography_copyrighted/Other/2021-12-16_11-03-06_UTC.jpg 2021-12-16_11-03-06_UTC.jpg
+=> /images/photography_copyrighted/Other/2021-12-11_11-04-21_UTC.jpg 2021-12-11_11-04-21_UTC.jpg
+=> /images/photography_copyrighted/Other/2021-12-11_10-40-42_UTC.jpg 2021-12-11_10-40-42_UTC.jpg
+=> /images/photography_copyrighted/Other/2021-12-11_10-33-22_UTC.jpg 2021-12-11_10-33-22_UTC.jpg
+=> /images/photography_copyrighted/Other/2021-12-11_08-01-40_UTC.jpg 2021-12-11_08-01-40_UTC.jpg
+=> /images/photography_copyrighted/Other/2021-12-03_10-09-09_UTC.jpg 2021-12-03_10-09-09_UTC.jpg
+=> /images/photography_copyrighted/Other/2021-11-21_21-03-29_UTC.jpg 2021-11-21_21-03-29_UTC.jpg
+=> /images/photography_copyrighted/Other/2021-11-21_18-45-24_UTC.jpg 2021-11-21_18-45-24_UTC.jpg
+=> /images/photography_copyrighted/Other/2021-11-21_18-40-38_UTC.jpg 2021-11-21_18-40-38_UTC.jpg
+=> /images/photography_copyrighted/Other/2021-11-02_03-09-45_UTC.jpg 2021-11-02_03-09-45_UTC.jpg
+=> /images/photography_copyrighted/Other/2021-11-02_03-07-48_UTC.jpg 2021-11-02_03-07-48_UTC.jpg
+=> /images/photography_copyrighted/Other/2021-10-18_16-26-45_UTC.jpg 2021-10-18_16-26-45_UTC.jpg
+=> /images/photography_copyrighted/Other/2021-09-28_19-48-27_UTC.jpg 2021-09-28_19-48-27_UTC.jpg
+=> /images/photography_copyrighted/Other/2021-07-31_08-14-45_UTC.jpg 2021-07-31_08-14-45_UTC.jpg
+
+## Still
+=> /images/photography_copyrighted/Still/IMG_0902.jpg IMG_0902.jpg
+=> /images/photography_copyrighted/Still/apples.jpg apples.jpg
+=> /images/photography_copyrighted/Still/2021-09-17_21-28-25_UTC.jpg 2021-09-17_21-28-25_UTC.jpg
+
+## Street
+=> /images/photography_copyrighted/Street/DSF3874.jpg DSF3874.jpg
+=> /images/photography_copyrighted/Street/DSF4691.jpg DSF4691.jpg
+=> /images/photography_copyrighted/Street/DSF6631.RAF.jpg DSF6631.RAF.jpg
+=> /images/photography_copyrighted/Street/2022-06-07_08-24-15_UTC.jpg 2022-06-07_08-24-15_UTC.jpg
+=> /images/photography_copyrighted/Street/2022-06-06_10-01-17_UTC.jpg 2022-06-06_10-01-17_UTC.jpg
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

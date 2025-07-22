@@ -1,0 +1,123 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# Opensource Fortinet client for Linux
+
+There is a services called Fortinet, it is usually been used inside corporate networks and projects who needs private VPN for employees
+
+## Problem
+
+There is now good GUI client for Linux, official client is trial based and will stop work after trial period.
+
+Official terminal based client is no good too, very unusable
+
+Cannot see connection status
+
+## Solution
+
+Here is a project called
+
+=> https://github.com/theinvisible/openfortigui OpenfortGUI
+
+QT based
+
+Terminal based
+
+=> https://github.com/adrienverge/openfortivpn openfortvpn
+
+## Compile from source code
+
+```
+
+git clone https://github.com/theinvisible/openfortigui
+
+```
+
+```
+
+git submodule init && git submodule update
+
+```
+
+```
+
+cd openfortigui
+
+```
+
+```
+
+git submodule init && git submodule update
+
+```
+
+```
+
+qmake openfortigui-project.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug && /usr/bin/make -j4
+
+```
+
+```
+
+sudo dnf install qt5-qtbase-devel openssl-devel qtkeychain-qt5-devel -y
+
+```
+
+```
+
+qmake && make -j4
+
+```
+
+```
+
+/usr/lib64/qt5/bin/qmake && make -j4
+
+```
+
+## Install
+
+```
+
+sudo cp openfortigui/app-entry/openfortigui.png /usr/share/pixmaps
+
+```
+
+```
+
+sudo cp openfortigui/app-entry/openfortigui.desktop /usr/share/applications
+
+```
+
+```
+
+sudo cp openfortigui/openfortigui /usr/bin/
+
+```
+
+## Usage
+
+```
+
+sudo openfortigui
+
+```
+
+## References
+
+=> https://github.com/theinvisible/openfortigui https://github.com/theinvisible/openfortigui
+
+=> https://github.com/adrienverge/openfortivpn https://github.com/adrienverge/openfortivpn
+
+=> https://hadler.me/linux/openfortigui/ https://hadler.me/linux/openfortigui/
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

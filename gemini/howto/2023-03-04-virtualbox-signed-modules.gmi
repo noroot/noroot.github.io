@@ -1,0 +1,61 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# How to sign VirtualBox kernel modules when you're on secure boot
+
+When you’re installing VirtualBox on a system with Secure Boot enabled, the installation process requires kernel modules to be loaded that are not signed by the system’s Secure Boot key. In this situation, you have two options:
+
+Disable Secure Boot in BIOS: This option involves going into the system’s BIOS settings and disabling Secure Boot. This will allow the installation process to proceed without any further intervention.
+
+Sign the kernel modules: If you prefer to keep Secure Boot enabled, you can sign the required kernel modules with a key that is trusted by the system’s Secure Boot infrastructure. This involves generating a new key pair, importing the public key into the system’s key store, and using the private key to sign the kernel modules.
+
+Create new key and enroll it with MOK
+
+```
+
+sudo mkdir -p /var/lib/shim-signed/mok
+
+sudo openssl req -nodes -new -x509 -newkey rsa:2048 -outform DER -addext "extendedKeyUsage=codeSigning" -keyout /var/lib/shim-signed/mok/MOK.priv -out /var/lib/shim-signed/mok/MOK.der
+
+sudo mokutil --import /var/lib/shim-signed/mok/MOK.der
+
+sudo reboot
+
+```
+
+Sign modules with new Key
+
+```
+
+#!/bin/bash 
+
+for modfile in $(dirname $(modinfo -n vboxdrv))/*.ko.xz; do
+
+echo "Signing $modfile"
+
+/usr/src/kernels/$(uname -r)/scripts/sign-file sha256 \
+
+/root/signed-modules/MOK.priv \
+
+/root/signed-modules/MOK.der "$modfile"
+
+done
+
+```
+
+The steps you’ve outlined above describe how to perform the second option. The script you’ve provided will sign all the VirtualBox kernel modules that are present on the system. Once the modules have been signed, they will be allowed to load by the system’s Secure Boot infrastructure.
+
+It’s worth noting that signing kernel modules is a security-sensitive operation, and you should take appropriate precautions to protect the key material. Also, the exact steps for signing kernel modules may vary depending on the distribution and version of Linux you’re using.
+
+Done.
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

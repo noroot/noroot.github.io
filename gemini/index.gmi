@@ -1,0 +1,51 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+# FalseTrue - dmth's capsule
+
+Collection of dmth's life notes
+
+=> /about/ About
+=> /photography/ Photography
+=> /bookshelf/ Bookshelf
+=> /projects/ Projects
+=> /halloffame/ Hall of Fame
+=> /archive/ Archive
+## Categories
+=> /dev/ Dev
+=> /forecasts/ Forecasts
+=> /games/ Games
+=> /howto/ Howto
+=> /newsletter/ Newsletter
+=> /person/ Person
+=> /photo/ Photo
+=> /projects/ Projects
+=> /research/ Research
+=> /review/ Review
+=> /security/ Security
+=> /share/ Share
+=> /story/ Story
+=> /tools/ Tools
+=> /updates/ Updates
+## Recent posts
+=> projects/2025-04-27-piepal-tool.gmi 2025-04-27 PiePAL - Terminal Tool for PayPal Observability
+=> photo/2025-04-15-honda-900rr-fireblade.gmi 2025-04-15 Honda 900RR Fireblade
+=> projects/2025-04-06-httop.gmi 2025-04-06 HTTOP - A real-time HTTP log monitor similar to ApacheTop
+=> newsletter/2024-11-17-ep19.gmi 2024-12-10 EP-19 FalseTrue Digest
+=> photo/2024-11-11-zastava-jugo.gmi 2024-11-11 Zastava Jugo 45
+=> photo/2024-11-11-fruska-gora.gmi 2024-11-11 Fruška Gora Forest
+=> newsletter/2024-10-25-ep18.gmi 2024-10-25 EP-18 FalseTrue Digest
+=> share/2024-10-10-crysis-tale.gmi 2024-10-11 Рассказ - "Нужно продолжать работать"
+=> howto/2024-10-07-kubernetes-letsencrypt.gmi 2024-10-07 Installing LetsEncrypt with Kubernetes on Digital Ocean
+=> share/2024-09-30-linked-comment-rush.gmi 2024-09-30 My comment on linkedin collected almost thousand of likes
+=> newsletter/2024-09-23-ep17.gmi 2024-09-23 EP-17 FalseTrue Digest
+=> /archive/ Archive
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

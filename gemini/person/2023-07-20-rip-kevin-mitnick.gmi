@@ -1,0 +1,39 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# RIP Kevin Mitnick
+
+=> https://www.dignitymemorial.com/obituaries/las-vegas-nv/kevin-mitnick-11371668 Kevin Mitnick
+
+died at age of 59 on July 16 after a 14-month battle with pancreatic cancer.
+
+Kevin Mitnick was famous (Legend actually) hacker from 90’s, and still active with
+
+=> https://www.mitnicksecurity.com/ his own cybersecurity company
+
+Some quote from Wikipedia
+
+> Mitnick served five years in prison—four-and-a-half years' pre-trial and eight months in according to Mitnick, law enforcement officials convinced a judge that he had the ability to "start a nuclear war by whistling into a pay phone", implying that law enforcement told the judge that he could somehow dial into the https://en.wikipedia.org/wiki/NORAD modem via a payphone from prison and communicate with the modem by whistling to launch.
+
+=> /images/Kevin_Mitnick.jpg Kevin_Mitnick.jpg
+
+=> https://www.youtube.com/watch?v=77ILA5Cso3w2600 Films: Freedom Downtime (Complete) 2600 Films: Freedom Downtime (Complete)
+
+=> https://www.imdb.com/title/tt0159784/ Movie: “Operation Takedown”
+
+=> https://github.com/gregorysholl/mitnick-attack-simulation Github: Mitnick Attack Simulation
+
+=> https://github.com/giuliafrascaria/mitnick-attack Github: Another Mitnick Attack Simulation
+
+=> /images/Kevin-Mitnick-Fugitive.jpg Image
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

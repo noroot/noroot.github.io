@@ -1,0 +1,107 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# About
+
+This blog is about programming, internet, computer science and modern
+technologies. Some records made in English. If you're interested in translation message me.
+
+Blogs posts are divided by context, section called "Blog" is for main articles and posts, and section called "Feed" is for small posts, such as sharing links, and mentions
+
+### What about me ?
+
+I am full-stack developer with 15+ years experience in software development.
+
+Today: AI/ML, Rust, Blockchain
+
+Tomorrow:  Quantum, IoT
+
+Always: PHP, Ruby, Python, C
+
+Experienced in modern system architectures and development
+
+Fluent with linux automation
+
+Security researcher
+
+### Projects
+
+=> /images/remoters.png Image
+
+=> https://remoters.club?utm_source=ft RemotersClub
+
+- Community site/aggregator for people who work remote, digital nomads
+
+=> /images/teamsport.png Image
+
+=> https://teamsport.io Teamsport
+
+- Welcome to TeamSport β, your ultimate platform for physical activities, including a detailed directory of local gyms complete with user reviews. Dive into a thriving community where you can organize, join, and enjoy a variety of sports and fitness routines.
+
+=> /images/cyberalmanac.png Image
+
+=> https://cyberalmanac.com CyberAlmanac
+
+- News aggregator from different sources by topics.
+
+=> /images/cwd.png Image
+
+=> https://catwatchdog.com CatWatchDog
+
+- Software development / Expert project management / Fraction CTO business.
+
+=> https://rubygems.org/gems/jekyll-mail-comments Jekyll Email Comments
+
+- Comments engine based on email for Jekyll.
+
+📷 I do photography, you can check it out
+
+=> /photography/ Here 📷
+
+## Contacts
+
+I use email primarily
+
+=>  email
+
+Use GPG to read signed message from Me
+
+```
+
+ curl -sL http://falsetrue.io/pgp.key.txt | gpg --import
+
+```
+
+=> https://github.com/noroot/  Github
+
+=> https://patreon.com/falsetrue  Patreon
+
+=> https://www.linkedin.com/in/noroot/  Linkedin
+
+=> https://falsetrue.substack.com  Substack
+
+### Support
+
+=> https://liberapay.com/ov_mi/donate 
+
+  ETH: 0x01596bd5a9cF4B1c8f77f08E338a599c4f10AfFD
+
+### Posts
+
+Look at
+
+=> /archive/ Archives page
+
+and
+
+=> /categories/ Categories page
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

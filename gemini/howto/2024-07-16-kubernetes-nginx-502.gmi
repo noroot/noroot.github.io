@@ -1,0 +1,185 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# Resolving 502 Errors in Third-Party Authorization with Nginx Buffer Size Adjustment
+
+If you’ve recently encountered a 502 error while using third-party authorization, such as OAuth, you’re not alone. This issue can be particularly frustrating, but understanding the root cause and how to fix it can save a lot of headaches. I’ve discovered this error randomly while implementing third party authentication within Ruby On Rails project.
+
+## Understanding the Issue
+
+Third-party authentication requests often involve long hashed tokens in the query string. When these tokens are too large, they can exceed the default buffer size limits set by Nginx. As a result, Nginx is unable to route the requests properly, leading to a 502 Bad Gateway error.
+
+Here’s an example of what the logs might look like when this issue occurs:
+
+```
+
+2024/07/18 12:34:56 [error] 12345#0: *123456 upstream sent too big header while reading response header from upstream, client: 192.0.2.1, server: example.com, request: "GET /auth?token=very-long-hashed-token HTTP/1.1", upstream: "http://127.0.0.1:8080/auth", host: "example.com"
+
+```
+
+As seen in the logs, the error occurs because the upstream server (Nginx in this case) sent a response header that was too large to handle due to the extensive query string.
+
+## The Solution
+
+To fix this issue, you need to increase the buffer sizes in your Nginx ingress configuration. This can be done by setting appropriate annotations in your ingress configuration file. Here’s how you can do it:
+
+### Step-by-Step Guide
+
+Locate Your Ingress Configuration File:
+
+Find the ingress configuration file for your project.
+
+Edit the Configuration File:
+
+Add or update the annotations to increase the buffer size. Here’s an example of what you should add:
+
+If using nginx-ingress
+
+Kubernetes Nginx ingress variant
+
+```
+
+apiVersion: networking.k8s.io/v1
+
+kind: Ingress
+
+metadata:
+
+name: web-production-ingress
+
+namespace: default
+
+annotations:
+
+cert-manager.io/cluster-issuer: "letsencrypt-prod"
+
+nginx.ingress.kubernetes.io/backend-protocol: "HTTP"
+
+nginx.ingress.kubernetes.io/proxy-body-size: "4G"
+
+nginx.ingress.kubernetes.io/proxy-read-timeout: "3600"
+
+nginx.ingress.kubernetes.io/proxy-send-timeout: "3600"
+
+# Following options increasing buffer size
+
+nginx.ingress.kubernetes.io/proxy-buffers-number: "4"
+
+nginx.ingress.kubernetes.io/proxy-buffer-size: "16k"
+
+ ...
+
+```
+
+In this example, the
+
+```
+
+proxy-buffer-size
+
+```
+
+is set to 16k and
+
+```
+
+proxy-buffers-number
+
+```
+
+to 8. These values can be adjusted based on your specific requirements.
+
+If using standalone Nginx
+
+Nginx
+
+Global configuration
+
+```
+
+http {
+
+...
+
+proxy_buffer_size   16k;
+
+proxy_buffers       4 16k;
+
+proxy_busy_buffers_size   32k;
+
+...
+
+}
+
+```
+
+Per server configuration
+
+```
+
+server {
+
+...
+
+location / {
+
+...
+
+proxy_buffer_size   16k;
+
+proxy_buffers       4 16k;
+
+proxy_busy_buffers_size   32k;
+
+...
+
+}
+
+...
+
+}
+
+```
+
+Reference to
+
+nginx
+
+configuration parameters
+
+=> https://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_buffer_size https://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_buffer_size
+
+Apply the Configuration:
+
+Once you have updated the ingress configuration file, apply the changes. If you are using Kubernetes, you can apply the configuration using the following command:
+
+```
+
+kubectl apply -f your-ingress-config.yaml
+
+```
+
+Restart Nginx: (if using standalone Nginx)
+
+After applying the new configuration, restart Nginx to ensure the changes take effect. This can typically be done with a command like:
+
+```
+
+sudo systemctl restart nginx
+
+```
+
+Or, if you are using Kubernetes, ensure your pods are restarted to pick up the new configuration.
+
+Done.
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

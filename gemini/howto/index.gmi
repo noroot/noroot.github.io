@@ -1,0 +1,53 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# Howto
+=> 2024-10-07-kubernetes-letsencrypt.gmi 2024-10-07 Installing LetsEncrypt with Kubernetes on Digital Ocean
+=> 2024-07-16-kubernetes-nginx-502.gmi 2024-07-16 Resolving 502 Errors in Third-Party Authorization with Nginx Buffer Size Adjustment
+=> 2024-05-11-baseus-h1-bug-reset.gmi 2024-05-10 Baseus H1 headphones reset
+=> 2023-06-04-life-simulation.gmi 2023-06-04 Life simulation
+=> 2023-03-04-virtualbox-signed-modules.gmi 2023-03-04 How to sign VirtualBox kernel modules when you're on secure boot
+=> 2023-01-14-how-i-manage-files.gmi 2023-01-14 How I manage files v1 DRAFT
+=> 2022-10-23-pipewire-restart.gmi 2022-10-23 Fedora restart sound system
+=> 2022-08-31-openfortinetgui.gmi 2022-08-31 Opensource Fortinet client for Linux
+=> 2022-06-05-dotfiles.gmi 2022-06-05 How to manage your dotfiles with git
+=> 2021-12-21-camunda-modeler.gmi 2021-12-21 Where a draw my diagrams ? (Camunda Modeler)
+=> 2020-06-08-pihole.gmi 2020-06-08 PiHole + dnscrypt-proxy = internet sewage filter
+=> 2020-01-07-newsboat.gmi 2020-01-07 How I read RSS/Atom
+=> 2018-11-27-mknod-network.gmi 2018-11-27 Сеть с помощью mknod
+=> 2017-11-02-git-out-of-memory.gmi 2017-11-01 Что делать на если нехватает памяти для git
+=> 2017-10-19-sudoers-syntax-error.gmi 2017-10-20 Что делать если в /etc/sudoers syntax error
+=> 2017-05-31-keychain-broken.gmi 2017-05-31 What to do if OSX Keychain broken
+=> 2016-11-09-brew-git.gmi 2016-11-09 Brew update OSX 10.12
+=> 2016-10-31-bundle-ssl.gmi 2016-10-30 Bundle could not verify the SSL certificate
+=> 2016-09-29-mac-smc-controller-util.gmi 2016-09-28 Macbook без батареи и управление кулером
+=> 2014-09-18-battery-service.gmi 2014-09-18 Замена батареи для macbook pro
+=> 2014-04-23-capistrano-3.gmi 2014-04-27 Capistrano 3 & Rails 4
+=> 2014-04-05-2048gamebot.gmi 2014-04-05 2048 game bot
+=> 2013-10-17-mail-dot-app-productivity-issue.gmi 2013-10-17 Продуктивное использование Mail.app
+=> 2013-09-25-apache-2-dot-2-to-2-dot-4-migration.gmi 2013-09-25 Apache 2.2 to 2.4 migration и remoteip модуль
+=> 2013-09-05-arduino-music.gmi 2013-09-05 Arduino music - проигрывание музыки на платформе Ардиуно
+=> 2013-06-18-how-to-render-template-into-variable.gmi 2013-06-18 how to render template into variable in ZF2
+=> 2013-06-09-how-to-define-console-object.gmi 2013-06-09 How to define console object
+=> 2013-06-09-is-touchscreen-on-javascript.gmi 2013-06-09 Is touchscreen on javascript
+=> 2013-05-30-php-strftime-month-name.gmi 2013-05-30 Php strftime month name
+=> 2013-05-20-zend-framework-2-predispatch.gmi 2013-05-20 Zend framework 2 preDispatch
+=> 2012-12-16-simple-environment-dependency-config-with-node-dot-js.gmi 2012-12-16 Simple environment dependency config with Node.js
+=> 2012-11-18-upgrade-macbook-pro-to-16gb-ram.gmi 2012-11-18 Upgrade macbook pro to 16GB RAM
+=> 2012-10-22-html-5-fakepath.gmi 2012-10-22 html5 input file fakepath
+=> 2012-08-28-hudons-git-ssh-keys.gmi 2012-08-28 Hudson Git and SSH keys
+=> 2012-06-27-reset-smc.gmi 2012-06-23 Reset SMC
+=> 2012-06-02-fix-slow-wifi-in-ubuntu.gmi 2012-06-02 Решение проблемы медленого wifi на Ubuntu
+=> 2012-06-19-postgresql.gmi 2011-11-19 PostgreSQL recursive procedure
+=> 2012-06-19-install-linux-on-palm-lifedrive.gmi 2006-06-13 Установка linux на Palm LD(Life Drive)
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

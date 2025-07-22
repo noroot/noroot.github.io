@@ -1,0 +1,45 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# Share
+=> 2024-10-10-crysis-tale.gmi 2024-10-11 Рассказ - "Нужно продолжать работать"
+=> 2024-09-30-linked-comment-rush.gmi 2024-09-30 My comment on linkedin collected almost thousand of likes
+=> 2024-09-15-euruko2024-review.gmi 2024-09-15 EuRuKo 2024 Review
+=> 2024-09-10-agile-manifesto-failure.gmi 2024-09-10 Agile manifesto failure
+=> 2024-08-31-big-companies-hoax.gmi 2024-08-31 Why big company experience doesn't always translate to practical skills
+=> 2024-08-18-debian-31.gmi 2024-08-18 Debian turned 31 years old
+=> 2024-08-09-scam-attempt.gmi 2024-08-09 WARNING: Scam attempt
+=> 2024-08-08-lions-gate.gmi 2024-08-08 Lion's gate
+=> 2024-08-03-names-are-predictable.gmi 2024-08-03 Research: We Look Like Our Names: The Manifestation of Name Stereotypes in Facial Appearance
+=> 2024-08-02-lunduke-gnome-drama.gmi 2024-08-02 GNOME bans Bryan Lunduke drama
+=> 2024-08-01-sharp-zaurus.gmi 2024-08-01 Sharp Zaurus SL-C1000 by Janus Cycle
+=> 2024-06-24-assange-is-free.gmi 2024-06-24 Julian Assange is free
+=> 2024-06-23-csv-breach.gmi 2024-06-23 Humor: Add comma's to your passwords
+=> 2024-01-06-baudrillard-now-vol5-1.gmi 2024-01-06 Baudrillard Now Volume 5 Issue 1
+=> 2023-12-07-google-gemini.gmi 2023-12-07 Google's new AI
+=> 2023-12-07-always-goggins.gmi 2023-12-07 David Goggins - How To Master Your Life (4K) | Modern Wisdom Podcast 577
+=> 2023-08-28-benchmarks.gmi 2023-08-26 Benchmarks code for CPU testing
+=> 2023-08-16-debian-30.gmi 2023-08-16 Debian 30 years behind
+=> 2023-06-28-ancient-english-to-pr.gmi 2023-06-28 Ancient english helps closing PRs // Github
+=> 2023-03-05-agileclownshow.gmi 2023-03-05 Agile clown show // Linkedin
+=> 2023-01-28-changelog-mainframe.gmi 2023-01-28 ChangeLog #524 Good explanation of mainframe is
+=> 2023-01-18-ruby-yjit-3.2.gmi 2023-01-18 Ruby 3.2’s YJIT is Production-Ready
+=> 2023-01-17-brave-new-trusted-kernel.gmi 2023-01-17 Unified Kernel Image explanation
+=> 2023-01-08-Ken-Block-RIP.gmi 2023-01-08 Ken Block(43) R.I.P.
+=> 2022-10-30-lex-fridman-333.gmi 2022-10-30 Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333
+=> 2022-10-25-lex-fridman-balaji-srinivasan.gmi 2022-10-25 Balaji Srinivasan: How to Fix Government, Twitter, Science, and the FDA | Lex Fridman Podcast #331
+=> 2022-10-23-devoops90days.gmi 2022-10-22 90DaysOfDevOps
+=> 2022-10-22-freebsd-third-quarter-status-report.gmi 2022-10-22 FreeBSD Quarterly Status Report Third Quarter 2022
+=> 2021-12-11-qoi-lossless.gmi 2021-12-11 QOI lossless image comperession proposal
+=> 2020-03-21-webmention-test.gmi 2020-03-21 Webmention is POSSE compliant mechanism for commenting
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

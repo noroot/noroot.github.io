@@ -1,0 +1,257 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# Life simulation
+
+How to make a little life simulation in javascript in browser, found easy to learn repo with various life patterns by
+
+=> https://github.com/hunar4321/particle-life @brainxyz
+
+This kind of code is ideal for education of javascript canvas using, its easy to understands and works in browser.
+
+I’ve modified code a little, and achieve some stability with virus like structures which consume other particles.
+
+Here is a gist for that code:
+
+=> https://gist.github.com/noroot/a3a5d4ae2d367530c8d5a0c13ca2ee75 https://gist.github.com/noroot/a3a5d4ae2d367530c8d5a0c13ca2ee75
+
+How it works:
+
+There is a js canvas where all drawing is happening
+
+There is an atom entity which is structure of position(x,y), velocity(x,y), color
+
+Threr is a
+
+rule
+
+function which defines relations between particles
+
+There is a configuration object that defines relation between particles using
+
+rule
+
+method
+
+There is infinity loop of animation
+
+Before animation starts it creates arrays of different types of particles
+
+References:
+
+=> https://playgameoflife.com/ https://playgameoflife.com/
+
+=> https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
+
+=> https://github.com/hunar4321/particle-life https://github.com/hunar4321/particle-life
+
+=> https://particles.js.org/ https://particles.js.org/
+
+Interactive example in details below
+
+Reset
+
+Pause
+
+Resume
+
+Add Random
+
+m = document.getElementById("life").getContext("2d");
+
+draw = (x, y, c, s) => {
+
+m.fillStyle = c;
+
+m.fillRect(x, y, s, s);
+
+};
+
+function pageReload() {
+
+window.location.reload(true);
+
+};
+
+atoms = [];
+
+atom = (x, y, c) => {
+
+return { x: x, y: y, vx: 0, vy: 0, color: c };
+
+};
+
+random = () => {
+
+return Math.random() * 750 + 50;
+
+};
+
+create = (number, color) => {
+
+group = [];
+
+for (let i = 0; i < number; i++) {
+
+a = atom(random(), random(), color);
+
+group.push(a);
+
+atoms.push(group[i]);
+
+}
+
+return group;
+
+};
+
+rule = (atoms1, atoms2, g) => {
+
+for (let i = 0; i < atoms1.length; i++) {
+
+fx = 0;
+
+fy = 0;
+
+for (let j = 0; j < atoms2.length; j++) {
+
+a = atoms1[i];
+
+b = atoms2[j];
+
+dx = a.x - b.x;
+
+dy = a.y - b.y;
+
+d = Math.sqrt(dx * dx + dy * dy);
+
+if (d > 0 && d < 80) {
+
+F = (g * 1) / d;
+
+fx += F * dx;
+
+fy += F * dy;
+
+}
+
+}
+
+a.vx = (a.vx + fx) * 0.5;
+
+a.vy = (a.vy + fy) * 0.5;
+
+a.x += a.vx;
+
+a.y += a.vy;
+
+if (a.x <= 0 || a.x >= 750) { a.vx *= -1; }
+
+if (a.y <= 0 || a.y >= 750) { a.vy *= -1; }
+
+}
+
+};
+
+reset = () => {
+
+m.clearRect(0, 0, 750, 750);
+
+};
+
+addRandom = () => {
+
+create(300, "purple");
+
+};
+
+yellow = create(300, "yellow");
+
+green = create(150, "green");
+
+white = create(100, "white");
+
+red = create(150, "red");
+
+blue = create(250, "blue");
+
+let matrix = [
+
+["white", "white", 1],
+
+["blue", "blue", -1],
+
+["blue", "red", -0.5],
+
+["blue", "white", -0.4],
+
+["red", "red", -5],
+
+["red", "white", 0.5],
+
+["red", "blue", -0.3],
+
+["white", "yellow", 1],
+
+["yellow", "white", 1],
+
+["blue", "yellow", 1],
+
+["yellow", "blue", 1]
+
+];
+
+var paused = false;
+
+pause = () => {
+
+paused = true;
+
+};
+
+unpause = () => {
+
+paused = false;
+
+requestAnimationFrame(update);
+
+};
+
+update = () => {
+
+if(paused){return;}
+
+for (i = 0; i < matrix.length; i++) {
+
+c = matrix[i];
+
+rule(eval(c[0]), eval(c[1]), c[2]);
+
+}
+
+m.clearRect(0, 0, 750, 750);
+
+draw(0, 0, "black", 750);
+
+for (i = 0; i < atoms.length; i++) {
+
+draw(atoms[i].x, atoms[i].y, atoms[i].color, 5);
+
+}
+
+requestAnimationFrame(update);
+
+};
+
+update();
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

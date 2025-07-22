@@ -1,0 +1,59 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# WARNING: Scam attempt
+
+Be aware of this chinese domain scam attempt. They want you to pay for their zone domains within same name.
+
+=> /assets/images/scam-attempt.jpeg Image
+
+### How the Scam Works:
+
+Initial Contact:
+
+Scammers send an email to a company, claiming to be from a domain registration service in China. They state that another company is attempting to register a domain name that matches the recipient’s business name.
+
+Urgency and Fear:
+
+The email usually creates a sense of urgency by implying that if the recipient doesn’t act quickly, they might lose control over their brand name or trademarks in China.
+
+Domain Registration Offer:
+
+To resolve the issue, the scammer offers to help the recipient register the domain names themselves, often at inflated prices. Sometimes, they suggest that by paying a fee, the recipient can prevent the other company from registering the domain.
+
+No Real Threat:
+
+In reality, there is no company attempting to register these domains, and the whole situation is fabricated. The goal is to trick the recipient into paying for unnecessary domain registrations.
+
+### What to Do:
+
+Ignore the Email:
+
+If you receive such an email, it’s best to ignore it and not respond. Engaging with the scammers can lead to more persistent attempts to deceive you.
+
+Report It:
+
+You can report the email to your IT department or a relevant authority to help raise awareness about the scam.
+
+Educate Your Team:
+
+Make sure that your colleagues, especially those in decision-making roles, are aware of this scam to prevent them from falling for it.
+
+If you’re ever in doubt about a domain-related issue, it’s always a good idea to consult with a trusted domain registrar or legal professional before taking any action.
+
+## References:
+
+=> https://steigerlegal.ch/2019/06/14/warnung-china-schwindel-domainnamen-2019/ https://steigerlegal.ch/2019/06/14/warnung-china-schwindel-domainnamen-2019/
+
+=> https://community.cloudflare.com/t/a-chinese-company-is-trying-to-register-my-website-domain-name-for-their-client/583416 https://community.cloudflare.com/t/a-chinese-company-is-trying-to-register-my-website-domain-name-for-their-client/583416
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

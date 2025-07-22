@@ -1,0 +1,127 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# Jekyll mail comments
+
+This blog is made with Jekyll. Jekyll is static site generator. It never have good commenting mechanism, there are few options like integration of 3dparty javascript code, or write some logic with database, or search for plugin. I wrote my own with ruby, without any javascript code nor database invovled. Program take your emails from IMAP directory and generate tree based comments page for Jekyll. User can reply by answering to my email with specific subject.This is a good old way for full-fledged conversations without so called “likes” and “reactions”. It is also premoderated by design, - until you run fetch procedure no comments will be added to your Jekyll site. Comments stored in special json formatted data files, which are compatible with the Jekyll’s Data files mechanism.
+
+I made it as a ruby Gem package option, check it out here
+
+=> https://github.com/noroot/jekyll-mail-comments https://github.com/noroot/jekyll-mail-comments
+
+Undercut contains README file from repository, and comments.
+
+Feel free to comment, I’ve already installed it onto this blog, go ahead to try.
+
+## How it works ?
+
+You’ve to setup mailbox, on Jekyll pages you will have mailto link which opens native system mail client with pre filled subject.
+
+Person who wants to comment message write message to your specific email address.
+
+Fetch program watch for special subject suffix to distinct comments from other emails
+
+Fetch program generate json based data files which perfectly fits to Jekyll data system
+
+=> https://jekyllrb.com/docs/datafiles/ https://jekyllrb.com/docs/datafiles/
+
+## What is the purpose ?
+
+Jekyll static site generator has no comments system
+
+Don’t want to inject 3rdparty javascript code to work with SaSS comments system
+
+Any RDBS for static site generator is overhead
+
+## How-to Setup
+
+Go to your jekyll site
+
+```
+
+cd ~/jekull_site
+
+```
+
+Install gem
+
+```
+
+gem install mail_comments
+
+```
+
+Setup credentials
+
+There few credentials your have to setup before run:
+
+** MC_LOGIN - Login to imap server
+
+** MC_PASSWORD - Password for imap server
+
+** MC_HOST - IMAP server hostname
+
+** MC_PORT - IMAP server port
+
+** MC_SUBJECT_SUFFIX - Suffix to filter comments
+
+You have put this as environment variables
+
+```
+
+see .env.dist
+
+```
+
+```
+
+jekyll-mail-comments-fetch
+
+```
+
+After that you will get comments data files inside Jekyll data directory -
+
+_data
+
+After that if new comments are present it will generate data files with comments which you can process with Jekyll with data tag.
+
+See here.
+
+=> https://jekyllrb.com/docs/datafiles/ https://jekyllrb.com/docs/datafiles/
+
+_ or below.
+
+Templates for Jekyll can be found inside
+
+templates
+
+directory of this gem.
+
+## Credits
+
+Inspiration while searching for already existing gem for email comments
+
+=> https://stevescott.ca/2017-04-03-static-site-comments-via-email.html https://stevescott.ca/2017-04-03-static-site-comments-via-email.html
+
+=> https://github.com/aioobe/dead-simple-jekyll-comments/ https://github.com/aioobe/dead-simple-jekyll-comments/
+
+## ROADMAP
+
+Inplace form to post comment
+
+PGP signing for messages
+
+## Example
+
+Here, below ↓↓↓
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

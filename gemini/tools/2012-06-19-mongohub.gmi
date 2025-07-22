@@ -1,0 +1,41 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# Mongohub клиент для mongodb
+
+Клиент под OSX для MongoDB -
+
+=> http://mongohub.todayclose.com/ MongoHub
+
+=> http://mongohub.todayclose.com/media/img/icon.png MongoHub logo
+
+MongoHub
+
+это менеджер mongo баз данных. Он позволяет полностью управлять базами и структурами
+
+mongo.
+
+Нативное приложение на Cocoa
+
+Прямой доступ как к локальным так и удаленным узлам mongo
+
+Открытй код можно найти на github
+
+Ниже немного скринов, ну и ссылка на офф сайт чуть выше
+
+=> http://mongohub.todayclose.com/media/img/database-window.png Image
+
+=> http://mongohub.todayclose.com/media/img/jsoneditor-window.png Image
+
+=> http://mongohub.todayclose.com/media/img/connection-window.png Image
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

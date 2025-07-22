@@ -1,0 +1,39 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# LogSeq - notes taking application
+
+Found this interesting project called LogSeq.
+
+Its hardcore, privacy-first notes taking app, knowledge base, might be even compared to org-roam.
+
+## Features
+
+Markdown,  Wiki-alike, Plain text format
+
+Local first which means it saves everything locally, and if you want it can synchronize
+
+Mobile App for both platforms iOS/Android
+
+Obsidian like intrerface with interlinking and visual graph
+
+It’s org-mode inspired, supports org-mode formatting
+
+Plugins market place with various plugins
+
+Probably will be most popular tool after Obsidian for average ppl very soon.
+
+=> https://hub.logseq.com/getting-started/uQdEHALJo7RWnDLLLP7uux/an-overview-of-50-logseq-features/jn3RC9eBF3ofpjaLtxXrDe https://hub.logseq.com/getting-started/uQdEHALJo7RWnDLLLP7uux/an-overview-of-50-logseq-features/jn3RC9eBF3ofpjaLtxXrDe
+
+=> https://logseq.com/ https://logseq.com/
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

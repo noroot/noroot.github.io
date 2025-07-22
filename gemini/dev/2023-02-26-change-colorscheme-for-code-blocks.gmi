@@ -1,0 +1,79 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# Change colorscheme for code blocks highlighting
+
+Code here is highlighted with
+
+=> https://github.com/mzlogin/rouge-themes1 https://github.com/mzlogin/rouge-themes1
+
+, I changed scheme a bit, now it looks brighter.
+
+Here is the Python method example
+
+```
+
+def python():
+
+puts("Python method example")
+
+```
+
+Thats for Javascript
+
+```
+
+function test() {
+
+let sh = 1;
+
+console.log(sh);
+
+}
+
+```
+
+PHP
+
+```
+
+class Testing {
+
+function __constructor() {
+
+$this->a = date('r');
+
+}
+
+}
+
+```
+
+Rust
+
+```
+
+
+
+fn main() {
+
+// Statements here are executed when the compiled binary is called
+
+// Print text to the console
+
+println!("Hello World!");
+
+}
+
+```
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

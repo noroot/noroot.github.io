@@ -1,0 +1,25 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# html5 input file fakepath
+
+Если у вас возникла проблема с тем что в поле input type=file, вместо нормального значения выставляется c:\fakepath\your_kewl_filename , вы должны помнить следующее
+
+> According to the specifications of HTML5, a file upload control should not reveal the real local path to the file you have selected, if you manipulate its value string with JavaScript. Instead, the string that is returned by the script, which handles the file information is C:\fakepath.
+
+> This requirement is already implemented in Internet Explorer 8 – the real path to the file will be shown only if the page that contains the control is added to the trusted sites collection of the browser.
+
+Обращая внимание на спецификацию ХТМЛ5 инпут загрузки файлов недолжен указывать на реальный путь к файлу в системе который вы выбрали, вместо этого в javascript будет попадать значение C:\fakepath.
+
+Это обязательство уже реализовано в IE8, но кому какое дело, главное чтоб в Chrome точно такая же история.
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

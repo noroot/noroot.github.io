@@ -1,0 +1,25 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# Where a draw my diagrams ? (Camunda Modeler)
+
+People asked me ofthe what I use to draw diagrams and schemes ?
+
+=> /images/camunda.png /images/camunda.png
+
+Answer is Camunda Modeler, - it is a tool for drawing BPMN notation, but it is also fits good for fast drawing and prototyping anything
+
+Can be downloaded
+
+=> https://camunda.com/download/modeler/ Here
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

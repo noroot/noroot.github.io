@@ -1,0 +1,67 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ==============================
+```
+=> / ← Back
+# PostgreSQL recursive procedure
+
+```
+
+WITH RECURSIVE supplytree AS
+
+(SELECT id, username, parent_user_id, CAST(username AS VARCHAR(1000)) AS username_fullname
+
+FROM users
+
+WHERE parent_user_id =1
+
+UNION ALL
+
+SELECT si.id, si.username,
+
+si.parent_user_id,
+
+CAST(sp.username_fullname || '->' || si.username AS VARCHAR(1000)) AS username_fullname
+
+FROM users AS si
+
+INNER JOIN supplytree AS sp
+
+ON (si.parent_user_id = sp.id)
+
+)
+
+SELECT id, username_fullname
+
+FROM supplytree
+
+ORDER BY username_fullname;
+
+```
+
+На выходе получим:
+
+```
+
+
+
+id | username
+
+1  | user1
+
+2  | user1->user2
+
+3  | user1->user2->user3
+
+4  | user1->user2
+
+```
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```
