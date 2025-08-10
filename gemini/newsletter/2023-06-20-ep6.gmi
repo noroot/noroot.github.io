@@ -1,0 +1,69 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ============ [ 2023-06-20 ] ==
+```
+=> / ← Back
+# EP6 FalseTrue Digest
+
+Welcome to EP-6 of
+
+FalseTrue Digest
+
+, - newsletter or journal, or maybe even e-zine, but right now let’s stick to the name digest. I’ll write weekly based summaries about software development, programming world and software itself.
+
+## News
+
+* Emacs 29.0.91 pretest is available https://lists.gnu.org/archive/html/emacs-devel/2023-05/msg00379.html
+
+* Debian 12 “Bookwork” https://www.debian.org/releases/bookworm/amd64/release-notes/
+
+* BattleBit Remastered is a low-poly, massive multiplayer FPS, supporting 254 players per server. https://store.steampowered.com/app/671860/BattleBitRemastered/
+
+I'd like to mention the game BattleBit because it demonstrates how a small team can shake up the game industry titans. Many of you may remember Battlefield, one of the first massively popular online shooters with diverse game mechanics. It was the golden age of classic online gaming. However, Electronic Arts has progressively made the game worse over time.
+
+Then 2023 arrived, and the BattleBit team created something simple yet remarkable: low-poly graphics and classic Battlefield mechanics with vehicles and various game modes. This success has earned them recognition within the gaming community, even in its early access stage. In fact, many consider it the best early access launch ever, thanks to the absence of critical bugs.
+
+Let me know in the comments, are you’re playing games or not anymore ?
+
+## Repositories and projects
+
+* Emacs minimalistic dashboard https://www.reddit.com/r/emacs/comments/139jy6t/newminimalisticdashboard/
+
+* Emacs Tao theme https://github.com/11111000000/tao-theme-emacs
+
+* Emacs Modus Theme https://github.com/protesilaos/modus-themes
+
+* Nyxt the hacker’s browser https://github.com/atlas-engineer/nyxt
+
+* Low cost robotic dog DingoQuadruped https://github.com/Yerbert/DingoQuadruped
+
+## How-to’s and guides
+
+* Querying Data Structures in Lisp https://howardism.org/Technical/Emacs/query-data-structures.html
+
+## Weekly Linux desktop
+
+* Cider player, for those who want Apple Music on Linux machine, it connects to Apple Music via API https://cider.sh/
+
+## Mentions and utils
+
+* I don’t know about you infosec related interests, but you’re probably heard of NMAP, and here is “Fyodor” the author of NMAP
+
+=> https://insecure.org/fyodor/ https://insecure.org/fyodor/
+
+### Authors note
+
+Will be more Emacs info here soon.
+
+If you like what you see here please comment and share, this helps me gain some consistency on this.
+
+=> https://falsetrue.substack.com/ Subscribe on Substack
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

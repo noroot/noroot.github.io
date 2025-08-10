@@ -5,18 +5,16 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ==============================
+== [Gemini capsule] * ============ [ 2006-06-13 ] ==
 ```
 => / ← Back
 # Установка linux на Palm LD(Life Drive)
 
 # Необходимые файлы
 
-Загрузчик
+* Загрузчик CocoBoot
 
-=> http://web.archive.org/web/20080915045039/http://git.hackndev.com/releases/20061002-insomnia/cocoboot/cocoboot.prc CocoBoot
-
-=> http://web.archive.org/web/20080915045039/http://git.hackndev.com/releases/20061002-insomnia/palmld-familiar/opie-image-v0.8.4-palmld.rootfs.ext2.gz Образ rootfs с OPIE
+* Образ rootfs с OPIE
 
 # Замечание
 
@@ -42,9 +40,9 @@
 
 ```
 
-SWAP_DEV=$FILES_MNT/swap
+SWAPDEV=$FILESMNT/swap
 
-ROOT_DEV=$FILES_MNT/opie-image-v0.8.4-palmld.rootfs.ext2
+ROOTDEV=$FILESMNT/opie-image-v0.8.4-palmld.rootfs.ext2
 
 ```
 

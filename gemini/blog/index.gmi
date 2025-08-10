@@ -5,1412 +5,850 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ==============================
+== [Gemini capsule] * ============ [ 2025-08-10 ] ==
 ```
 => / ← Back
 # Blog
 
-=> /categories/projects projects
+* howto
+ 2-AUG-2025 - How and why to disable Spotlight
 
-27-APR-2025 -
+    #sec
+    #mac
+    #debloat
 
-=> /projects/2025/04/27/piepal-tool/ PiePAL - Terminal Tool for PayPal Observability
+* notes
+22-JUL-2025 - Gemini, Gopher and and SmolNet
 
-=> /tags/paypal #paypal
+    #tools
+    #selfhosted
+    #smolnet
 
-=> /tags/python #python
+* howto
+13-JUL-2025 - Prevent disk from being indexed by system
 
-=> /tags/terminal #terminal
+    #linux
+    #tools
 
-=> /tags/console #console
+* projects
+27-APR-2025 - PiePAL - Terminal Tool for PayPal Observability
 
-=> /tags/tools #tools
+    #paypal
+    #python
+    #terminal
+    #console
+    #tools
 
-=> /categories/photo 📷 photo
+* 📷 photo
+15-APR-2025 - Honda 900RR Fireblade
 
-15-APR-2025 -
+    #photo
+    #moto
+    #street
 
-=> /photo/2025/04/15/honda-900rr-fireblade/ Honda 900RR Fireblade
+* projects
+ 6-APR-2025 - HTTOP - A real-time HTTP log monitor similar to ApacheTop
 
-=> /tags/photo #photo
+    #rust
+    #terminal
+    #console
+    #tools
 
-=> /tags/moto #moto
+* ✉️ newsletter
+10-DEC-2024 - EP-19 FalseTrue Digest
 
-=> /tags/street #street
+    #news
+    #journal
 
-=> /categories/projects projects
+* 📷 photo
+11-NOV-2024 - Zastava Jugo 45
 
-6-APR-2025 -
+    #photo
+    #car
+    #street
 
-=> /projects/2025/04/06/httop/ HTTOP - A real-time HTTP log monitor similar to ApacheTop
+* 📷 photo
+11-NOV-2024 - Fruška Gora Forest
 
-=> /tags/rust #rust
+    #photo
+    #landscape
+    #forest
 
-=> /tags/terminal #terminal
+* ✉️ newsletter
+25-OCT-2024 - EP-18 FalseTrue Digest
 
-=> /tags/console #console
+    #news
+    #linux
+    #personal
 
-=> /tags/tools #tools
+* share
+        tales
+11-OCT-2024 - Рассказ - "Нужно продолжать работать"
 
-=> /categories/newsletter ✉️ newsletter
+    #tale
+    #ru
 
-10-DEC-2024 -
+* howto
+ 7-OCT-2024 - Installing LetsEncrypt with Kubernetes on Digital Ocean
 
-=> /newsletter/2024/12/10/ep19/ EP-19 FalseTrue Digest
+    #software
+    #kubernetes
+    #linux
+    #security
 
-=> /tags/news #news
+* share
+        comment
+30-SEP-2024 - My comment on linkedin collected almost thousand of likes
 
-=> /tags/journal #journal
+    #software
+    #linkedin
 
-=> /categories/photo 📷 photo
+* ✉️ newsletter
+23-SEP-2024 - EP-17 FalseTrue Digest
 
-11-NOV-2024 -
+    #news
+    #linux
+    #personal
 
-=> /photo/2024/11/11/zastava-jugo/ Zastava Jugo 45
+* share
+        note
+15-SEP-2024 - EuRuKo 2024 Review
 
-=> /tags/photo #photo
+    #review
+    #event
+    #ruby
 
-=> /tags/car #car
+* share
+        comment
+10-SEP-2024 - Agile manifesto failure
 
-=> /tags/street #street
+    #agile
+    #linkedin
 
-=> /categories/photo 📷 photo
+* 📷 photo
+ 8-SEP-2024 - Mantis
 
-11-NOV-2024 -
+    #photo
+    #animals
+    #insects
 
-=> /photo/2024/11/11/fruska-gora/ Fruška Gora Forest
+* 📷 photo
+ 1-SEP-2024 - Ferrari 308 GTB
 
-=> /tags/photo #photo
+    #photo
+    #car
 
-=> /tags/landscape #landscape
+* share
+        comment
+31-AUG-2024 - Why big company experience doesn't always translate to practical skills
 
-=> /tags/forest #forest
+    #humanity
+    #modernity
+    #books
+    #linkedin
 
-=> /categories/newsletter ✉️ newsletter
+* share
+18-AUG-2024 - Debian turned 31 years old
 
-25-OCT-2024 -
+    #linux
+    #scene
+    #history
+    #debian
 
-=> /newsletter/2024/10/25/ep18/ EP-18 FalseTrue Digest
+* person
+14-AUG-2024 - In memory of Terry Davis
 
-=> /tags/news #news
+    #person
+    #famouse
+    #hacker
+    #scene
+    #legacy
 
-=> /tags/linux #linux
+* 📷 photo
+11-AUG-2024 - Triumph T4R
 
-=> /tags/personal #personal
+    #photo
+    #car
 
-=> /categories/share share
+* 📷 photo
+10-AUG-2024 - Sleepy Black cat
 
-=> /categories/tales tales
+    #photo
+    #animals
+    #bw
 
-11-OCT-2024 -
+* ✉️ newsletter
+10-AUG-2024 - EP-16 FalseTrue Digest
 
-=> /share/tales/2024/10/11/crysis-tale/ Рассказ - "Нужно продолжать работать"
+    #linux
+    #hardware
+    #event
 
-=> /tags/tale #tale
+* share
+        note
+ 9-AUG-2024 - WARNING: Scam attempt
 
-=> /tags/ru #ru
+    #security
+    #scam
+    #expose
 
-=> /categories/howto howto
+* share
+        note
+ 8-AUG-2024 - Lion's gate
 
-7-OCT-2024 -
+    #research
+    #esoteric
 
-=> /howto/2024/10/07/kubernetes-letsencrypt/ Installing LetsEncrypt with Kubernetes on Digital Ocean
+* share
+        link
+ 3-AUG-2024 - Research: We Look Like Our Names: The Manifestation of Name Stereotypes in Facial Appearance
 
-=> /tags/software #software
+    #research
+    #esoteric
 
-=> /tags/kubernetes #kubernetes
+* share
+        video
+ 2-AUG-2024 - GNOME bans Bryan Lunduke drama
 
-=> /tags/linux #linux
+    #linux
+    #foss
+    #scene
+    #drama
 
-=> /tags/security #security
+* share
+        video
+ 1-AUG-2024 - Sharp Zaurus SL-C1000 by Janus Cycle
 
-=> /categories/share share
+    #linux
+    #legacy
+    #hardware
 
-=> /categories/comment comment
+* howto
+16-JUL-2024 - Resolving 502 Errors in Third-Party Authorization with Nginx Buffer Size Adjustment
 
-30-SEP-2024 -
+    #dev
+    #kubernetes
+    #nginx
 
-=> /share/comment/2024/09/30/linked-comment-rush/ My comment on linkedin collected almost thousand of likes
+* share
+        news
+24-JUN-2024 - Julian Assange is free
 
-=> /tags/software #software
+    #person
+    #hacker
+    #scene
 
-=> /tags/linkedin #linkedin
+* share
+        pic
+23-JUN-2024 - Humor: Add comma's to your passwords
 
-=> /categories/newsletter ✉️ newsletter
+    #sec
+    #humor
+    #meme
 
-23-SEP-2024 -
+* updates
+22-JUN-2024 - Switched from Jekyll to Bridgetown
 
-=> /newsletter/2024/09/23/ep17/ EP-17 FalseTrue Digest
+    #dev
+    #tools
 
-=> /tags/news #news
+* howto
+10-MAY-2024 - Baseus H1 headphones reset
 
-=> /tags/linux #linux
+    #device
 
-=> /tags/personal #personal
+* ✉️ newsletter
+31-MAR-2024 - EP15 FalseTrue Digest
 
-=> /categories/share share
+    #linux
+    #tools
+    #emacs
 
-=> /categories/note note
+* projects
+ 8-MAR-2024 - Released LaResume - LaTex resume building framework
 
-15-SEP-2024 -
+    #latex
+    #pdf
+    #resume
+    #emacs
+    #screenshot
 
-=> /share/note/2024/09/15/euruko2024-review/ EuRuKo 2024 Review
+* ✉️ newsletter
+29-FEB-2024 - EP14 FalseTrue Digest
 
-=> /tags/review #review
+    #ai
+    #emacs
+    #tools
 
-=> /tags/event #event
+* ✉️ newsletter
+30-JAN-2024 - EP13 FalseTrue Digest
 
-=> /tags/ruby #ruby
+    #linux
+    #emacs
+    #ai
+    #dev
 
-=> /categories/share share
+* games
+ 9-JAN-2024 - LHX Attack Chopper- sim game from 1990
 
-=> /categories/comment comment
+    #gaming
+    #legacy
+    #review
 
-10-SEP-2024 -
+* share
+        link
+ 6-JAN-2024 - Baudrillard Now Volume 5 Issue 1
 
-=> /share/comment/2024/09/10/agile-manifesto-failure/ Agile manifesto failure
+    #person
+    #journal
+    #sci
+    #baudrillard
 
-=> /tags/agile #agile
+* ✉️ newsletter
+31-DEC-2023 - EP12 FalseTrue Digest
 
-=> /tags/linkedin #linkedin
+    #linux
+    #emacs
+    #tools
 
-=> /categories/photo 📷 photo
+* share
+        link
+ 7-DEC-2023 - Google's new AI
 
-8-SEP-2024 -
+    #ai
+    #link
 
-=> /photo/2024/09/08/mantis/ Mantis
+* share
+        video
+ 7-DEC-2023 - David Goggins - How To Master Your Life (4K) | Modern Wisdom Podcast 577
 
-=> /tags/photo #photo
+    #person
+    #video
 
-=> /tags/animals #animals
+* ✉️ newsletter
+ 5-DEC-2023 - EP11 FalseTrue Digest
 
-=> /tags/insects #insects
+    #linux
 
-=> /categories/photo 📷 photo
+* tools
+26-NOV-2023 - LogSeq - notes taking application
 
-1-SEP-2024 -
+    #tools
+    #linux
 
-=> /photo/2024/09/01/ferrari-308gtb/ Ferrari 308 GTB
+* ✉️ newsletter
+ 5-NOV-2023 - EP10 FalseTrue Digest
 
-=> /tags/photo #photo
+    #linux
 
-=> /tags/car #car
+* ✉️ newsletter
+ 5-OCT-2023 - EP9 FalseTrue Digest
 
-=> /categories/share share
+    #linux
 
-=> /categories/comment comment
+* share
+        link
+26-AUG-2023 - Benchmarks code for CPU testing
 
-31-AUG-2024 -
+    #dev
+    #utils
+    #code
 
-=> /share/comment/2024/08/31/big-companies-hoax/ Why big company experience doesn't always translate to practical skills
+* share
+16-AUG-2023 - Debian 30 years behind
 
-=> /tags/humanity #humanity
+    #linux
+    #scene
+    #history
+    #debian
 
-=> /tags/modernity #modernity
+* person
+21-JUL-2023 - RIP Kevin Mitnick
 
-=> /tags/books #books
+    #person
+    #rip
+    #famouse
+    #hacker
+    #scene
 
-=> /tags/linkedin #linkedin
+* share
+        note
+28-JUN-2023 - Ancient english helps closing PRs // Github
 
-=> /categories/share share
+    #github
 
-18-AUG-2024 -
+* ✉️ newsletter
+20-JUN-2023 - EP6 FalseTrue Digest
 
-=> /share/2024/08/18/debian-31/ Debian turned 31 years old
+    #linux
 
-=> /tags/linux #linux
+* howto
+ 4-JUN-2023 - Life simulation
 
-=> /tags/scene #scene
+    #javascript
+    #algorithms
 
-=> /tags/history #history
+* ✉️ newsletter
+29-MAY-2023 - EP5 FalseTrue Digest
 
-=> /tags/debian #debian
+    #linux
 
-=> /categories/person person
+* ✉️ newsletter
+22-MAY-2023 - EP4 FalseTrue Digest
 
-14-AUG-2024 -
+    #linux
 
-=> /person/2024/08/14/terry-davis/ In memory of Terry Davis
+* ✉️ newsletter
+15-MAY-2023 - EP3 FalseTrue Digest
 
-=> /tags/person #person
+    #linux
+    #persona
 
-=> /tags/famouse #famouse
+* ✉️ newsletter
+ 8-MAY-2023 - EP2 FalseTrue Digest
 
-=> /tags/hacker #hacker
+    #linux
+    #stallman
+    #code
+    #tools
 
-=> /tags/scene #scene
+* ✉️ newsletter
+ 1-MAY-2023 - EP1 FalseTrue Digest
 
-=> /tags/legacy #legacy
+    #linux
 
-=> /categories/photo 📷 photo
+* share
+        comment
+ 5-MAR-2023 - Agile clown show // Linkedin
 
-11-AUG-2024 -
+    #linkedin
+    #agile
+    #rant
 
-=> /photo/2024/08/11/tripump-t4r/ Triumph T4R
+* howto
+ 4-MAR-2023 - How to sign VirtualBox kernel modules when you're on secure boot
 
-=> /tags/photo #photo
+    #linux
+    #vm
+    #virtualbox
+    #kernel
 
-=> /tags/car #car
+* tools
+ 3-MAR-2023 - Teams vs Slack
 
-=> /categories/photo 📷 photo
+    #rant
+    #slack
+    #teams
+    #tools
 
-10-AUG-2024 -
+* dev
+28-FEB-2023 - Rails 7 introduce default healthcheck controller
 
-=> /photo/2024/08/10/photo-blackcat/ Sleepy Black cat
+    #rails
+    #dev
 
-=> /tags/photo #photo
+* dev
+26-FEB-2023 - Change colorscheme for code blocks highlighting
 
-=> /tags/animals #animals
+    #code
+    #tools
 
-=> /tags/bw #bw
+* share
+        link
+28-JAN-2023 - ChangeLog #524 Good explanation of mainframe is
 
-=> /categories/newsletter ✉️ newsletter
+    #mainframe
+    #cobol
+    #podcast
 
-10-AUG-2024 -
+* share
+        link
+18-JAN-2023 - Ruby 3.2’s YJIT is Production-Ready
 
-=> /newsletter/2024/08/10/ep16/ EP-16 FalseTrue Digest
+    #dev
+    #ruby
 
-=> /tags/linux #linux
+* share
+        link
+17-JAN-2023 - Unified Kernel Image explanation
 
-=> /tags/hardware #hardware
+    #linux
+    #kernel
+    #link
 
-=> /tags/event #event
+* howto
+14-JAN-2023 - How I manage files v1 DRAFT
 
-=> /categories/share share
+    #linux
+    #tools
+    #management
 
-=> /categories/note note
+* share
+ 8-JAN-2023 - Ken Block(43) R.I.P.
 
-9-AUG-2024 -
+    #person
+    #cars
+    #rip
 
-=> /share/note/2024/08/09/scam-attempt/ WARNING: Scam attempt
+* tools
+ 1-JAN-2023 - ActivityWatch - open source time tracker
 
-=> /tags/security #security
+    #linux,
+    #tools,
+    #management
 
-=> /tags/scam #scam
+* share
+        link
+30-OCT-2022 - Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333
 
-=> /tags/expose #expose
+    #podcast
+    #ai
+    #humanity
 
-=> /categories/share share
+* share
+        link
+25-OCT-2022 - Balaji Srinivasan: How to Fix Government, Twitter, Science, and the FDA | Lex Fridman Podcast #331
 
-=> /categories/note note
+    #podcast
+    #crypto
+    #humanity
 
-8-AUG-2024 -
+* tools
+24-OCT-2022 - Notes
 
-=> /share/note/2024/08/08/lions-gate/ Lion's gate
+    #linux
+    #tools
 
-=> /tags/research #research
+* howto
+23-OCT-2022 - Fedora restart sound system
 
-=> /tags/esoteric #esoteric
+    #linux
+    #fedora
 
-=> /categories/share share
+* share
+        link
+22-OCT-2022 - 90DaysOfDevOps
 
-=> /categories/link link
+    #tools
+    #link
 
-3-AUG-2024 -
+* share
+        link
+22-OCT-2022 - FreeBSD Quarterly Status Report Third Quarter 2022
 
-=> /share/link/2024/08/03/names-are-predictable/ Research: We Look Like Our Names: The Manifestation of Name Stereotypes in Facial Appearance
+    #bsd
+    #report
+    #link
 
-=> /tags/research #research
+* howto
+31-AUG-2022 - Opensource Fortinet client for Linux
 
-=> /tags/esoteric #esoteric
+    #linux
+    #tools
 
-=> /categories/share share
+* howto
+ 5-JUN-2022 - How to manage your dotfiles with git
 
-=> /categories/video video
+    #linux
+    #git
 
-2-AUG-2024 -
+* howto
+21-DEC-2021 - Where a draw my diagrams ? (Camunda Modeler)
 
-=> /share/video/2024/08/02/lunduke-gnome-drama/ GNOME bans Bryan Lunduke drama
+    #tools
+    #management
 
-=> /tags/linux #linux
+* share
+        note
+11-DEC-2021 - QOI lossless image comperession proposal
 
-=> /tags/foss #foss
+    #algo
 
-=> /tags/scene #scene
+* forecasts
+ 1-OCT-2020 - Cartridge game storage for PC
 
-=> /tags/drama #drama
+    #hardware
+    #games
+    #predictions
 
-=> /categories/share share
+* security
+26-AUG-2020 - Fedora browser spyware
 
-=> /categories/video video
+    #privacy
+    #security
+    #bloatware
 
-1-AUG-2024 -
+* howto
+ 8-JUN-2020 - PiHole + dnscrypt-proxy = internet sewage filter
 
-=> /share/video/2024/08/01/sharp-zaurus/ Sharp Zaurus SL-C1000 by Janus Cycle
+    #internet
+    #privacy
+    #security
+    #modernity
+    #tools
+    #device
 
-=> /tags/linux #linux
+* share
+        comment
+21-MAR-2020 - Webmention is POSSE compliant mechanism for commenting
 
-=> /tags/legacy #legacy
+    #webmentions
+    #microformat
 
-=> /tags/hardware #hardware
+* howto
+ 7-JAN-2020 - How I read RSS/Atom
 
-=> /categories/howto howto
+    #linux
+    #suckless
+    #tools
+    #rss
 
-16-JUL-2024 -
+* projects
+ 2-JAN-2020 - Jekyll mail comments
 
-=> /howto/2024/07/16/kubernetes-nginx-502/ Resolving 502 Errors in Third-Party Authorization with Nginx Buffer Size Adjustment
+    #dev
+    #ruby
+    #jekyll
 
-=> /tags/dev #dev
+* research
+ 1-JAN-2020 - Internet sewage: Teaser
 
-=> /tags/kubernetes #kubernetes
+    #internet
+    #modernity
 
-=> /tags/nginx #nginx
+* research
+21-APR-2019 - Память о действиях и результате
 
-=> /categories/share share
+    #report
 
-=> /categories/news news
+* research
+22-FEB-2019 - Brief look into WowCube SDK
 
-24-JUN-2024 -
+    #dev
+    #hardware
+    #projects
 
-=> /share/news/2024/06/24/assange-is-free/ Julian Assange is free
+* research
+ 2-FEB-2019 - Netiquette RFC1855
 
-=> /tags/person #person
+    #legacy
+    #network
 
-=> /tags/hacker #hacker
+* tools
+26-JAN-2019 - Rails + Webpack + Stimulus + Bootstrap 4
 
-=> /tags/scene #scene
+    #dev
+    #ruby
+    #rails
 
-=> /categories/share share
+* howto
+27-NOV-2018 - Сеть с помощью mknod
 
-=> /categories/pic pic
+* security
+24-NOV-2018 - CTF Квест
 
-23-JUN-2024 -
+    #event
+    #report
+    #security
+    #linux
 
-=> /share/pic/2024/06/23/csv-breach/ Humor: Add comma's to your passwords
+* howto
+ 1-NOV-2017 - Что делать на если нехватает памяти для git
 
-=> /tags/sec #sec
+    #tips
+    #git
 
-=> /tags/humor #humor
+* howto
+20-OCT-2017 - Что делать если в /etc/sudoers syntax error
 
-=> /tags/meme #meme
+    #tips
+    #linux
 
-=> /categories/updates updates
+* story
+31-JUL-2017 - Roem на Wordpress
 
-22-JUN-2024 -
+    #dev
+    #php
 
-=> /updates/2024/06/22/switched-to-bridgetown/ Switched from Jekyll to Bridgetown
+* howto
+31-MAY-2017 - What to do if OSX Keychain broken
 
-=> /tags/dev #dev
+    #mac
 
-=> /tags/tools #tools
+* howto
+ 9-NOV-2016 - Brew update OSX 10.12
 
-=> /categories/howto howto
+    #dev
+    #mac
 
-10-MAY-2024 -
+* howto
+30-OCT-2016 - Bundle could not verify the SSL certificate
 
-=> /howto/2024/05/10/baseus-h1-bug-reset/ Baseus H1 headphones reset
+    #dev
+    #ruby
 
-=> /tags/device #device
+* howto
+28-SEP-2016 - Macbook без батареи и управление кулером
 
-=> /categories/newsletter ✉️ newsletter
+    #hardware
+    #mac
 
-31-MAR-2024 -
+* security
+ 5-NOV-2014 - Darkside of the Spotlight (English version)
 
-=> /newsletter/2024/03/31/ep15/ EP15 FalseTrue Digest
+    #sec
+    #mac
 
-=> /tags/linux #linux
+* security
+29-OCT-2014 - Darkside of the Spotlight
 
-=> /tags/tools #tools
+    #mac
+    #sec
 
-=> /tags/emacs #emacs
+* howto
+18-SEP-2014 - Замена батареи для macbook pro
 
-=> /categories/projects projects
+    #hardware
+    #mac
 
-8-MAR-2024 -
+* security
+26-MAY-2014 - Your router may be already hacked
 
-=> /projects/2024/03/08/laresume-project/ Released LaResume - LaTex resume building framework
+    #privacy
+    #sec
 
-=> /tags/latex #latex
+* howto
+27-APR-2014 - Capistrano 3 & Rails 4
 
-=> /tags/pdf #pdf
+    #dev
+    #ruby
 
-=> /tags/resume #resume
+* howto
+ 5-APR-2014 - 2048 game bot
 
-=> /tags/emacs #emacs
+    #dev
+    #javascript
 
-=> /tags/screenshot #screenshot
+* howto
+17-OCT-2013 - Продуктивное использование Mail.app
 
-=> /categories/newsletter ✉️ newsletter
+    #productivity
+    #osx
 
-29-FEB-2024 -
+* howto
+25-SEP-2013 - Apache 2.2 to 2.4 migration и remoteip модуль
 
-=> /newsletter/2024/02/29/ep14/ EP14 FalseTrue Digest
+    #admin
+    #linux
 
-=> /tags/ai #ai
+* howto
+ 5-SEP-2013 - Arduino music - проигрывание музыки на платформе Ардиуно
 
-=> /tags/emacs #emacs
+    #dev
+    #hardware
 
-=> /tags/tools #tools
+* howto
+18-JUN-2013 - how to render template into variable in ZF2
 
-=> /categories/newsletter ✉️ newsletter
+    #dev
+    #php
 
-30-JAN-2024 -
+* howto
+ 9-JUN-2013 - How to define console object
 
-=> /newsletter/2024/01/30/ep13/ EP13 FalseTrue Digest
+    #dev,
+    #javascript
 
-=> /tags/linux #linux
+* howto
+ 9-JUN-2013 - Is touchscreen on javascript
 
-=> /tags/emacs #emacs
+    #dev
+    #javascript
 
-=> /tags/ai #ai
+* howto
+30-MAY-2013 - Php strftime month name
 
-=> /tags/dev #dev
+    #dev
+    #php
 
-=> /categories/games games
+* howto
+20-MAY-2013 - Zend framework 2 preDispatch
 
-9-JAN-2024 -
+    #zf2
+    #dev
 
-=> /games/2024/01/09/lhx-game/ LHX Attack Chopper- sim game from 1990
+* howto
+16-DEC-2012 - Simple environment dependency config with Node.js
 
-=> /tags/gaming #gaming
+    #dev
+    #nodejs
 
-=> /tags/legacy #legacy
+* howto
+18-NOV-2012 - Upgrade macbook pro to 16GB RAM
 
-=> /tags/review #review
+    #hardware
+    #mac
 
-=> /categories/share share
+* howto
+22-OCT-2012 - html5 input file fakepath
 
-=> /categories/link link
+    #dev
+    #frontend
 
-6-JAN-2024 -
+* howto
+28-AUG-2012 - Hudson Git and SSH keys
 
-=> /share/link/2024/01/06/baudrillard-now-vol5-1/ Baudrillard Now Volume 5 Issue 1
+    #dev
+    #pgp
+    #ubuntu
+    #git
 
-=> /tags/person #person
+* howto
+23-JUN-2012 - Reset SMC
 
-=> /tags/journal #journal
+    #mac
 
-=> /tags/sci #sci
+* howto
+ 2-JUN-2012 - Решение проблемы медленого wifi на Ubuntu
 
-=> /tags/baudrillard #baudrillard
+    #linux
+    #wifi
 
-=> /categories/newsletter ✉️ newsletter
+* tools
+25-MAR-2012 - Mongohub клиент для mongodb
 
-31-DEC-2023 -
+* dev
+25-FEB-2012 - Perl one liner
 
-=> /newsletter/2023/12/31/ep12/ EP12 FalseTrue Digest
+    #perl
+    #code
 
-=> /tags/linux #linux
+* howto
+19-NOV-2011 - PostgreSQL recursive procedure
 
-=> /tags/emacs #emacs
+    #code
+    #sql
+    #postgresql
 
-=> /tags/tools #tools
+* dev
+ 1-JUN-2010 - Python differential
 
-=> /categories/share share
+    #python
+    #math
 
-=> /categories/link link
+* review
+12-APR-2008 - Antitrust - спецэффекты в фильмах про программистов
 
-7-DEC-2023 -
+* tools
+ 2-JAN-2008 - Shorewall - фреймворк для построения фаерволла
 
-=> /share/link/2023/12/07/google-gemini/ Google's new AI
+* howto
+13-JUN-2006 - Установка linux на Palm LD(Life Drive)
 
-=> /tags/ai #ai
-
-=> /tags/link #link
-
-=> /categories/share share
-
-=> /categories/video video
-
-7-DEC-2023 -
-
-=> /share/video/2023/12/07/always-goggins/ David Goggins - How To Master Your Life (4K) | Modern Wisdom Podcast 577
-
-=> /tags/person #person
-
-=> /tags/video #video
-
-=> /categories/newsletter ✉️ newsletter
-
-5-DEC-2023 -
-
-=> /newsletter/2023/12/05/ep11/ EP11 FalseTrue Digest
-
-=> /tags/linux #linux
-
-=> /categories/tools tools
-
-26-NOV-2023 -
-
-=> /tools/2023/11/26/logseq/ LogSeq - notes taking application
-
-=> /tags/tools #tools
-
-=> /tags/linux #linux
-
-=> /categories/newsletter ✉️ newsletter
-
-5-NOV-2023 -
-
-=> /newsletter/2023/11/05/ep10/ EP10 FalseTrue Digest
-
-=> /tags/linux #linux
-
-=> /categories/newsletter ✉️ newsletter
-
-5-OCT-2023 -
-
-=> /newsletter/2023/10/05/ep9/ EP9 FalseTrue Digest
-
-=> /tags/linux #linux
-
-=> /categories/share share
-
-=> /categories/link link
-
-26-AUG-2023 -
-
-=> /share/link/2023/08/26/benchmarks/ Benchmarks code for CPU testing
-
-=> /tags/dev #dev
-
-=> /tags/utils #utils
-
-=> /tags/code #code
-
-=> /categories/share share
-
-16-AUG-2023 -
-
-=> /share/2023/08/16/debian-30/ Debian 30 years behind
-
-=> /tags/linux #linux
-
-=> /tags/scene #scene
-
-=> /tags/history #history
-
-=> /tags/debian #debian
-
-=> /categories/person person
-
-21-JUL-2023 -
-
-=> /person/2023/07/21/rip-kevin-mitnick/ RIP Kevin Mitnick
-
-=> /tags/person #person
-
-=> /tags/rip #rip
-
-=> /tags/famouse #famouse
-
-=> /tags/hacker #hacker
-
-=> /tags/scene #scene
-
-=> /categories/share share
-
-=> /categories/note note
-
-28-JUN-2023 -
-
-=> /share/note/2023/06/28/ancient-english-to-pr/ Ancient english helps closing PRs // Github
-
-=> /tags/github #github
-
-=> /categories/newsletter ✉️ newsletter
-
-20-JUN-2023 -
-
-=> /newsletter/2023/06/20/ep6/ EP6 FalseTrue Digest
-
-=> /tags/linux #linux
-
-=> /categories/howto howto
-
-4-JUN-2023 -
-
-=> /howto/2023/06/04/life-simulation/ Life simulation
-
-=> /tags/javascript #javascript
-
-=> /tags/algorithms #algorithms
-
-=> /categories/newsletter ✉️ newsletter
-
-29-MAY-2023 -
-
-=> /newsletter/2023/05/29/ep5/ EP5 FalseTrue Digest
-
-=> /tags/linux #linux
-
-=> /categories/newsletter ✉️ newsletter
-
-22-MAY-2023 -
-
-=> /newsletter/2023/05/22/ep4/ EP4 FalseTrue Digest
-
-=> /tags/linux #linux
-
-=> /categories/newsletter ✉️ newsletter
-
-15-MAY-2023 -
-
-=> /newsletter/2023/05/15/ep3/ EP3 FalseTrue Digest
-
-=> /tags/linux #linux
-
-=> /tags/persona #persona
-
-=> /categories/newsletter ✉️ newsletter
-
-8-MAY-2023 -
-
-=> /newsletter/2023/05/08/ep2/ EP2 FalseTrue Digest
-
-=> /tags/linux #linux
-
-=> /tags/stallman #stallman
-
-=> /tags/code #code
-
-=> /tags/tools #tools
-
-=> /categories/newsletter ✉️ newsletter
-
-1-MAY-2023 -
-
-=> /newsletter/2023/05/01/ep1/ EP1 FalseTrue Digest
-
-=> /tags/linux #linux
-
-=> /categories/share share
-
-=> /categories/comment comment
-
-5-MAR-2023 -
-
-=> /share/comment/2023/03/05/agileclownshow/ Agile clown show // Linkedin
-
-=> /tags/linkedin #linkedin
-
-=> /tags/agile #agile
-
-=> /tags/rant #rant
-
-=> /categories/howto howto
-
-4-MAR-2023 -
-
-=> /howto/2023/03/04/virtualbox-signed-modules/ How to sign VirtualBox kernel modules when you're on secure boot
-
-=> /tags/linux #linux
-
-=> /tags/vm #vm
-
-=> /tags/virtualbox #virtualbox
-
-=> /tags/kernel #kernel
-
-=> /categories/tools tools
-
-3-MAR-2023 -
-
-=> /tools/2023/03/03/teams-vs-slack/ Teams vs Slack
-
-=> /tags/rant #rant
-
-=> /tags/slack #slack
-
-=> /tags/teams #teams
-
-=> /tags/tools #tools
-
-=> /categories/dev dev
-
-28-FEB-2023 -
-
-=> /dev/2023/02/28/health-check-default-rails7/ Rails 7 introduce default healthcheck controller
-
-=> /tags/rails #rails
-
-=> /tags/dev #dev
-
-=> /categories/dev dev
-
-26-FEB-2023 -
-
-=> /dev/2023/02/26/change-colorscheme-for-code-blocks/ Change colorscheme for code blocks highlighting
-
-=> /tags/code #code
-
-=> /tags/tools #tools
-
-=> /categories/share share
-
-=> /categories/link link
-
-28-JAN-2023 -
-
-=> /share/link/2023/01/28/changelog-mainframe/ ChangeLog #524 Good explanation of mainframe is
-
-=> /tags/mainframe #mainframe
-
-=> /tags/cobol #cobol
-
-=> /tags/podcast #podcast
-
-=> /categories/share share
-
-=> /categories/link link
-
-18-JAN-2023 -
-
-=> /share/link/2023/01/18/ruby-yjit-3.2/ Ruby 3.2’s YJIT is Production-Ready
-
-=> /tags/dev #dev
-
-=> /tags/ruby #ruby
-
-=> /categories/share share
-
-=> /categories/link link
-
-17-JAN-2023 -
-
-=> /share/link/2023/01/17/brave-new-trusted-kernel/ Unified Kernel Image explanation
-
-=> /tags/linux #linux
-
-=> /tags/kernel #kernel
-
-=> /tags/link #link
-
-=> /categories/howto howto
-
-14-JAN-2023 -
-
-=> /howto/2023/01/14/how-i-manage-files/ How I manage files v1 DRAFT
-
-=> /tags/linux #linux
-
-=> /tags/tools #tools
-
-=> /tags/management #management
-
-=> /categories/share share
-
-8-JAN-2023 -
-
-=> /share/2023/01/08/ken-block-rip/ Ken Block(43) R.I.P.
-
-=> /tags/person #person
-
-=> /tags/cars #cars
-
-=> /tags/rip #rip
-
-=> /categories/tools tools
-
-1-JAN-2023 -
-
-=> /tools/2023/01/01/activity-watch/ ActivityWatch - open source time tracker
-
-=> /tags/linux, #linux,
-
-=> /tags/tools, #tools,
-
-=> /tags/management #management
-
-=> /categories/share share
-
-=> /categories/link link
-
-30-OCT-2022 -
-
-=> /share/link/2022/10/30/lex-fridman-333/ Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333
-
-=> /tags/podcast #podcast
-
-=> /tags/ai #ai
-
-=> /tags/humanity #humanity
-
-=> /categories/share share
-
-=> /categories/link link
-
-25-OCT-2022 -
-
-=> /share/link/2022/10/25/lex-fridman-balaji-srinivasan/ Balaji Srinivasan: How to Fix Government, Twitter, Science, and the FDA | Lex Fridman Podcast #331
-
-=> /tags/podcast #podcast
-
-=> /tags/crypto #crypto
-
-=> /tags/humanity #humanity
-
-=> /categories/tools tools
-
-24-OCT-2022 -
-
-=> /tools/2022/10/24/notes-app/ Notes
-
-=> /tags/linux #linux
-
-=> /tags/tools #tools
-
-=> /categories/howto howto
-
-23-OCT-2022 -
-
-=> /howto/2022/10/23/pipewire-restart/ Fedora restart sound system
-
-=> /tags/linux #linux
-
-=> /tags/fedora #fedora
-
-=> /categories/share share
-
-=> /categories/link link
-
-22-OCT-2022 -
-
-=> /share/link/2022/10/22/devoops90days/ 90DaysOfDevOps
-
-=> /tags/tools #tools
-
-=> /tags/link #link
-
-=> /categories/share share
-
-=> /categories/link link
-
-22-OCT-2022 -
-
-=> /share/link/2022/10/22/freebsd-third-quarter-status-report/ FreeBSD Quarterly Status Report Third Quarter 2022
-
-=> /tags/bsd #bsd
-
-=> /tags/report #report
-
-=> /tags/link #link
-
-=> /categories/howto howto
-
-31-AUG-2022 -
-
-=> /howto/2022/08/31/openfortinetgui/ Opensource Fortinet client for Linux
-
-=> /tags/linux #linux
-
-=> /tags/tools #tools
-
-=> /categories/howto howto
-
-5-JUN-2022 -
-
-=> /howto/2022/06/05/dotfiles/ How to manage your dotfiles with git
-
-=> /tags/linux #linux
-
-=> /tags/git #git
-
-=> /categories/howto howto
-
-21-DEC-2021 -
-
-=> /howto/2021/12/21/camunda-modeler/ Where a draw my diagrams ? (Camunda Modeler)
-
-=> /tags/tools #tools
-
-=> /tags/management #management
-
-=> /categories/share share
-
-=> /categories/note note
-
-11-DEC-2021 -
-
-=> /share/note/2021/12/11/qoi-lossless/ QOI lossless image comperession proposal
-
-=> /tags/algo #algo
-
-=> /categories/forecasts forecasts
-
-1-OCT-2020 -
-
-=> /forecasts/2020/10/01/pc-to-cartridge/ Cartridge game storage for PC
-
-=> /tags/hardware #hardware
-
-=> /tags/games #games
-
-=> /tags/predictions #predictions
-
-=> /categories/security security
-
-26-AUG-2020 -
-
-=> /security/2020/08/26/fedora-spyware/ Fedora browser spyware
-
-=> /tags/privacy #privacy
-
-=> /tags/security #security
-
-=> /tags/bloatware #bloatware
-
-=> /categories/howto howto
-
-8-JUN-2020 -
-
-=> /howto/2020/06/08/pihole/ PiHole + dnscrypt-proxy = internet sewage filter
-
-=> /tags/internet #internet
-
-=> /tags/privacy #privacy
-
-=> /tags/security #security
-
-=> /tags/modernity #modernity
-
-=> /tags/tools #tools
-
-=> /tags/device #device
-
-=> /categories/share share
-
-=> /categories/comment comment
-
-21-MAR-2020 -
-
-=> /share/comment/2020/03/21/webmention-test/ Webmention is POSSE compliant mechanism for commenting
-
-=> /tags/webmentions #webmentions
-
-=> /tags/microformat #microformat
-
-=> /categories/howto howto
-
-7-JAN-2020 -
-
-=> /howto/2020/01/07/newsboat/ How I read RSS/Atom
-
-=> /tags/linux #linux
-
-=> /tags/suckless #suckless
-
-=> /tags/tools #tools
-
-=> /tags/rss #rss
-
-=> /categories/projects projects
-
-2-JAN-2020 -
-
-=> /projects/2020/01/02/jekyll-email-comments/ Jekyll mail comments
-
-=> /tags/dev #dev
-
-=> /tags/ruby #ruby
-
-=> /tags/jekyll #jekyll
-
-=> /categories/research research
-
-1-JAN-2020 -
-
-=> /research/2020/01/01/internet-sewage-teaser/ Internet sewage: Teaser
-
-=> /tags/internet #internet
-
-=> /tags/modernity #modernity
-
-=> /categories/research research
-
-21-APR-2019 -
-
-=> /research/2019/04/21/memory-result-chart/ Память о действиях и результате
-
-=> /tags/report #report
-
-=> /categories/research research
-
-22-FEB-2019 -
-
-=> /research/2019/02/22/wowcube/ Brief look into WowCube SDK
-
-=> /tags/dev #dev
-
-=> /tags/hardware #hardware
-
-=> /tags/projects #projects
-
-=> /categories/research research
-
-2-FEB-2019 -
-
-=> /research/2019/02/02/netiquette/ Netiquette RFC1855
-
-=> /tags/legacy #legacy
-
-=> /tags/network #network
-
-=> /categories/tools tools
-
-26-JAN-2019 -
-
-=> /tools/2019/01/26/rails-webpack-stimulus/ Rails + Webpack + Stimulus + Bootstrap 4
-
-=> /tags/dev #dev
-
-=> /tags/ruby #ruby
-
-=> /tags/rails #rails
-
-=> /categories/howto howto
-
-27-NOV-2018 -
-
-=> /howto/2018/11/27/mknod-network/ Сеть с помощью mknod
-
-=> /categories/security security
-
-24-NOV-2018 -
-
-=> /security/2018/11/24/wallarm-quest/ CTF Квест
-
-=> /tags/event #event
-
-=> /tags/report #report
-
-=> /tags/security #security
-
-=> /tags/linux #linux
-
-=> /categories/howto howto
-
-1-NOV-2017 -
-
-=> /howto/2017/11/01/git-out-of-memory/ Что делать на если нехватает памяти для git
-
-=> /tags/tips #tips
-
-=> /tags/git #git
-
-=> /categories/howto howto
-
-20-OCT-2017 -
-
-=> /howto/2017/10/20/sudoers-syntax-error/ Что делать если в /etc/sudoers syntax error
-
-=> /tags/tips #tips
-
-=> /tags/linux #linux
-
-=> /categories/story story
-
-31-JUL-2017 -
-
-=> /story/2017/07/31/roem-wordpress/ Roem на Wordpress
-
-=> /tags/dev #dev
-
-=> /tags/php #php
-
-=> /categories/howto howto
-
-31-MAY-2017 -
-
-=> /howto/2017/05/31/keychain-broken/ What to do if OSX Keychain broken
-
-=> /tags/mac #mac
-
-=> /categories/howto howto
-
-9-NOV-2016 -
-
-=> /howto/2016/11/09/brew-git/ Brew update OSX 10.12
-
-=> /tags/dev #dev
-
-=> /tags/mac #mac
-
-=> /categories/howto howto
-
-30-OCT-2016 -
-
-=> /howto/2016/10/30/bundle-ssl/ Bundle could not verify the SSL certificate
-
-=> /tags/dev #dev
-
-=> /tags/ruby #ruby
-
-=> /categories/howto howto
-
-28-SEP-2016 -
-
-=> /howto/2016/09/28/mac-smc-controller-util/ Macbook без батареи и управление кулером
-
-=> /tags/hardware #hardware
-
-=> /tags/mac #mac
-
-=> /categories/security security
-
-5-NOV-2014 -
-
-=> /security/2014/11/05/darkside-of-the-spotlight-en/ Darkside of the Spotlight (English version)
-
-=> /tags/sec #sec
-
-=> /tags/mac #mac
-
-=> /categories/security security
-
-29-OCT-2014 -
-
-=> /security/2014/10/29/darkside-of-spotlight/ Darkside of the Spotlight
-
-=> /tags/mac #mac
-
-=> /tags/sec #sec
-
-=> /categories/howto howto
-
-18-SEP-2014 -
-
-=> /howto/2014/09/18/battery-service/ Замена батареи для macbook pro
-
-=> /tags/hardware #hardware
-
-=> /tags/mac #mac
-
-=> /categories/security security
-
-26-MAY-2014 -
-
-=> /security/2014/05/26/router-hack/ Your router may be already hacked
-
-=> /tags/privacy #privacy
-
-=> /tags/sec #sec
-
-=> /categories/howto howto
-
-27-APR-2014 -
-
-=> /howto/2014/04/27/capistrano-3/ Capistrano 3 & Rails 4
-
-=> /tags/dev #dev
-
-=> /tags/ruby #ruby
-
-=> /categories/howto howto
-
-5-APR-2014 -
-
-=> /howto/2014/04/05/2048gamebot/ 2048 game bot
-
-=> /tags/dev #dev
-
-=> /tags/javascript #javascript
-
-=> /categories/howto howto
-
-17-OCT-2013 -
-
-=> /howto/2013/10/17/mail-dot-app-productivity-issue/ Продуктивное использование Mail.app
-
-=> /tags/productivity #productivity
-
-=> /tags/osx #osx
-
-=> /categories/howto howto
-
-25-SEP-2013 -
-
-=> /howto/2013/09/25/apache-2-dot-2-to-2-dot-4-migration/ Apache 2.2 to 2.4 migration и remoteip модуль
-
-=> /tags/admin #admin
-
-=> /tags/linux #linux
-
-=> /categories/howto howto
-
-5-SEP-2013 -
-
-=> /howto/2013/09/05/arduino-music/ Arduino music - проигрывание музыки на платформе Ардиуно
-
-=> /tags/dev #dev
-
-=> /tags/hardware #hardware
-
-=> /categories/howto howto
-
-18-JUN-2013 -
-
-=> /howto/2013/06/18/how-to-render-template-into-variable/ how to render template into variable in ZF2
-
-=> /tags/dev #dev
-
-=> /tags/php #php
-
-=> /categories/howto howto
-
-9-JUN-2013 -
-
-=> /howto/2013/06/09/how-to-define-console-object/ How to define console object
-
-=> /tags/dev, #dev,
-
-=> /tags/javascript #javascript
-
-=> /categories/howto howto
-
-9-JUN-2013 -
-
-=> /howto/2013/06/09/is-touchscreen-on-javascript/ Is touchscreen on javascript
-
-=> /tags/dev #dev
-
-=> /tags/javascript #javascript
-
-=> /categories/howto howto
-
-30-MAY-2013 -
-
-=> /howto/2013/05/30/php-strftime-month-name/ Php strftime month name
-
-=> /tags/dev #dev
-
-=> /tags/php #php
-
-=> /categories/howto howto
-
-20-MAY-2013 -
-
-=> /howto/2013/05/20/zend-framework-2-predispatch/ Zend framework 2 preDispatch
-
-=> /tags/zf2 #zf2
-
-=> /tags/dev #dev
-
-=> /categories/howto howto
-
-16-DEC-2012 -
-
-=> /howto/2012/12/16/simple-environment-dependency-config-with-node-dot-js/ Simple environment dependency config with Node.js
-
-=> /tags/dev #dev
-
-=> /tags/nodejs #nodejs
-
-=> /categories/howto howto
-
-18-NOV-2012 -
-
-=> /howto/2012/11/18/upgrade-macbook-pro-to-16gb-ram/ Upgrade macbook pro to 16GB RAM
-
-=> /tags/hardware #hardware
-
-=> /tags/mac #mac
-
-=> /categories/howto howto
-
-22-OCT-2012 -
-
-=> /howto/2012/10/22/html-5-fakepath/ html5 input file fakepath
-
-=> /tags/dev #dev
-
-=> /tags/frontend #frontend
-
-=> /categories/howto howto
-
-28-AUG-2012 -
-
-=> /howto/2012/08/28/hudons-git-ssh-keys/ Hudson Git and SSH keys
-
-=> /tags/dev #dev
-
-=> /tags/pgp #pgp
-
-=> /tags/ubuntu #ubuntu
-
-=> /tags/git #git
-
-=> /categories/howto howto
-
-23-JUN-2012 -
-
-=> /howto/2012/06/23/reset-smc/ Reset SMC
-
-=> /tags/mac #mac
-
-=> /categories/howto howto
-
-2-JUN-2012 -
-
-=> /howto/2012/06/02/fix-slow-wifi-in-ubuntu/ Решение проблемы медленого wifi на Ubuntu
-
-=> /tags/linux #linux
-
-=> /tags/wifi #wifi
-
-=> /categories/tools tools
-
-25-MAR-2012 -
-
-=> /tools/2012/03/25/mongohub/ Mongohub клиент для mongodb
-
-=> /categories/dev dev
-
-25-FEB-2012 -
-
-=> /dev/2012/02/25/perl-one-liner/ Perl one liner
-
-=> /tags/perl #perl
-
-=> /tags/code #code
-
-=> /categories/howto howto
-
-19-NOV-2011 -
-
-=> /howto/2011/11/19/postgresql/ PostgreSQL recursive procedure
-
-=> /tags/code #code
-
-=> /tags/sql #sql
-
-=> /tags/postgresql #postgresql
-
-=> /categories/dev dev
-
-1-JUN-2010 -
-
-=> /dev/2010/06/01/python-differential/ Python differential
-
-=> /tags/python #python
-
-=> /tags/math #math
-
-=> /categories/review review
-
-12-APR-2008 -
-
-=> /review/2008/04/12/antitrust/ Antitrust - спецэффекты в фильмах про программистов
-
-=> /categories/tools tools
-
-2-JAN-2008 -
-
-=> /tools/2008/01/02/shorewall/ Shorewall - фреймворк для построения фаерволла
-
-=> /categories/howto howto
-
-13-JUN-2006 -
-
-=> /howto/2006/06/13/install-linux-on-palm-lifedrive/ Установка linux на Palm LD(Life Drive)
-
-=> /tags/linux #linux
-
-=> /tags/hack #hack
-
-=> /tags/palm #palm
-
-=> /tags/legacy #legacy
+    #linux
+    #hack
+    #palm
+    #legacy
 ```
      ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
 ```

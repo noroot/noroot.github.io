@@ -5,12 +5,12 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ==============================
+== [Gemini capsule] * ============ [ 2012-10-22 ] ==
 ```
 => / ← Back
 # html5 input file fakepath
 
-Если у вас возникла проблема с тем что в поле input type=file, вместо нормального значения выставляется c:\fakepath\your_kewl_filename , вы должны помнить следующее
+Если у вас возникла проблема с тем что в поле input type=file, вместо нормального значения выставляется c:\fakepath\yourkewlfilename , вы должны помнить следующее
 
 > According to the specifications of HTML5, a file upload control should not reveal the real local path to the file you have selected, if you manipulate its value string with JavaScript. Instead, the string that is returned by the script, which handles the file information is C:\fakepath.
 

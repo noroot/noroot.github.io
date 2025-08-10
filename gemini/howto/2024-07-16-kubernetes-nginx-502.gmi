@@ -5,7 +5,7 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ==============================
+== [Gemini capsule] * ============ [ 2024-07-16 ] ==
 ```
 => / ← Back
 # Resolving 502 Errors in Third-Party Authorization with Nginx Buffer Size Adjustment
@@ -32,151 +32,121 @@ To fix this issue, you need to increase the buffer sizes in your Nginx ingress c
 
 ### Step-by-Step Guide
 
-Locate Your Ingress Configuration File:
+* Locate Your Ingress Configuration File:
 
 Find the ingress configuration file for your project.
 
-Edit the Configuration File:
+* Edit the Configuration File:
 
 Add or update the annotations to increase the buffer size. Here’s an example of what you should add:
 
-If using nginx-ingress
+    If using nginx-ingress
 
-Kubernetes Nginx ingress variant
+    Kubernetes Nginx ingress variant
 
-```
-
-apiVersion: networking.k8s.io/v1
+    apiVersion: networking.k8s.io/v1
 
 kind: Ingress
 
 metadata:
 
-name: web-production-ingress
+  name: web-production-ingress
 
-namespace: default
+  namespace: default
 
-annotations:
+  annotations:
 
-cert-manager.io/cluster-issuer: "letsencrypt-prod"
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
 
-nginx.ingress.kubernetes.io/backend-protocol: "HTTP"
+    nginx.ingress.kubernetes.io/backend-protocol: "HTTP"
 
-nginx.ingress.kubernetes.io/proxy-body-size: "4G"
+    nginx.ingress.kubernetes.io/proxy-body-size: "4G"
 
-nginx.ingress.kubernetes.io/proxy-read-timeout: "3600"
+    nginx.ingress.kubernetes.io/proxy-read-timeout: "3600"
 
-nginx.ingress.kubernetes.io/proxy-send-timeout: "3600"
+    nginx.ingress.kubernetes.io/proxy-send-timeout: "3600"
 
-# Following options increasing buffer size
+    # Following options increasing buffer size
 
-nginx.ingress.kubernetes.io/proxy-buffers-number: "4"
+    nginx.ingress.kubernetes.io/proxy-buffers-number: "4"
 
-nginx.ingress.kubernetes.io/proxy-buffer-size: "16k"
+    nginx.ingress.kubernetes.io/proxy-buffer-size: "16k"
 
  ...
 
-```
+    
 
-In this example, the
+    In this example, the proxy-buffer-size is set to 16k and proxy-buffers-number to 8. These values can be adjusted based on your specific requirements.
 
-```
+    If using standalone Nginx
 
-proxy-buffer-size
+    Nginx
 
-```
+    Global configuration
 
-is set to 16k and
+    http {
 
-```
+ ...
 
-proxy-buffers-number
+ proxybuffersize   16k;
 
-```
+ proxy_buffers       4 16k;
 
-to 8. These values can be adjusted based on your specific requirements.
+ proxybusybuffers_size   32k;
 
-If using standalone Nginx
-
-Nginx
-
-Global configuration
-
-```
-
-http {
-
-...
-
-proxy_buffer_size   16k;
-
-proxy_buffers       4 16k;
-
-proxy_busy_buffers_size   32k;
-
-...
+ ...
 
 }
 
-```
+    
 
-Per server configuration
+    Per server configuration
 
-```
+    server {
 
-server {
+ ...
 
-...
+ location / {
 
-location / {
+     ...
 
-...
+     proxybuffersize   16k;
 
-proxy_buffer_size   16k;
+     proxy_buffers       4 16k;
 
-proxy_buffers       4 16k;
+     proxybusybuffers_size   32k;
 
-proxy_busy_buffers_size   32k;
+     ...
 
-...
+ }
 
-}
-
-...
+ ...
 
 }
 
-```
+    
 
-Reference to
+    
 
-nginx
+      Reference to nginx configuration parameters https://nginx.org/en/docs/http/ngxhttpproxymodule.html#proxybuffersize
 
-configuration parameters
-
-=> https://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_buffer_size https://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_buffer_size
-
-Apply the Configuration:
+* Apply the Configuration:
 
 Once you have updated the ingress configuration file, apply the changes. If you are using Kubernetes, you can apply the configuration using the following command:
 
-```
+    kubectl apply -f your-ingress-config.yaml
 
-kubectl apply -f your-ingress-config.yaml
+    
 
-```
+    Restart Nginx: (if using standalone Nginx)
 
-Restart Nginx: (if using standalone Nginx)
+    After applying the new configuration, restart Nginx to ensure the changes take effect. This can typically be done with a command like:
 
-After applying the new configuration, restart Nginx to ensure the changes take effect. This can typically be done with a command like:
+    sudo systemctl restart nginx
 
-```
+    
 
-sudo systemctl restart nginx
-
-```
-
-Or, if you are using Kubernetes, ensure your pods are restarted to pick up the new configuration.
+    Or, if you are using Kubernetes, ensure your pods are restarted to pick up the new configuration.
 
 Done.
 

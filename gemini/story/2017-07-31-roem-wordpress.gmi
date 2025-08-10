@@ -5,7 +5,7 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ==============================
+== [Gemini capsule] * ============ [ 2017-07-31 ] ==
 ```
 => / ← Back
 # Roem на Wordpress
@@ -42,7 +42,7 @@
 
 Структутура БД в Bitrix совершенно не информативная, от названия полей и таблиц до самого их содержания. Предстояло понять что, откуда, куда, и как это импортировать в Wordpress. В процессе этого случилось много интересного, множественные повторения текстов, непонятные статусы, и рубрики, а также неуникальные имена ссылок, со всем этим предстояло разобраться. Первый неприятный момент работы с такой структурой, это таблица
 
-b_iblock_element_prop_s42
+biblockelementprops42
 
 которая хранит созданные пользователем структуры и значения, выглядит она вот так:
 
@@ -64,17 +64,17 @@ cp1251
 
 Проблемы которые возникли в процессе переноса данных
 
-Связь данных разных сущностей через одну ненормальную таблицу c свойствами где каждое динамическое свойство созданное пользтвателем задается новым полем, в результате все как на скриншоте выше.
+* Связь данных разных сущностей через одну ненормальную таблицу c свойствами где каждое динамическое свойство созданное пользтвателем задается новым полем, в результате все как на скриншоте выше.
 
-Все данные в базе были в CP1251, а это значит их нужно было конвертировать в UTF
+* Все данные в базе были в CP1251, а это значит их нужно было конвертировать в UTF
 
-Неуникальные slugs, что приводило к дополнительной фильтрации уникальных статей по другим параметрам
+* Неуникальные slugs, что приводило к дополнительной фильтрации уникальных статей по другим параметрам
 
-Лишние пробелы вконце и даже в начале заголовков статей статей
+* Лишние пробелы вконце и даже в начале заголовков статей статей
 
-Непонятные парамтеры с нерепрезентативными названиями для фильтрации актуальный статей котрые были найдены логическом путем (PARAM1 = ‘E’ да это реально в битриксе название поля в базе PARAM1, PARAM2)
+* Непонятные парамтеры с нерепрезентативными названиями для фильтрации актуальный статей котрые были найдены логическом путем (PARAM1 = ‘E’ да это реально в битриксе название поля в базе PARAM1, PARAM2)
 
-Сериализованные данные которые затрудняли визуальный и логический поиск и анализ данных
+* Сериализованные данные которые затрудняли визуальный и логический поиск и анализ данных
 
 В результате чтобы получить один материал по названию в url (slug) со старого Роема на новый был сделан такой SQL запрос.
 
@@ -82,17 +82,17 @@ cp1251
 
 
 
-SELECT bb.*, p42.PROPERTY_142 as news_type, f.SUBDIR, f.FILE_NAME FROM b_iblock_element as bb
+SELECT bb.*, p42.PROPERTY142 as newstype, f.SUBDIR, f.FILENAME FROM biblock_element as bb
 
-LEFT JOIN b_iblock_element_prop_s42 as p42 ON p42.iblock_element_id = bb.id
+LEFT JOIN biblockelementprops42 as p42 ON p42.iblockelementid = bb.id
 
-LEFT JOIN b_file as f ON f.id = bb.PREVIEW_PICTURE
+LEFT JOIN bfile as f ON f.id = bb.PREVIEWPICTURE
 
-WHERE bb.SHOW_COUNTER_START != '' AND bb.IBLOCK_ID = 42
+WHERE bb.SHOWCOUNTERSTART != '' AND bb.IBLOCK_ID = 42
 
 AND bb.CODE = '%s'
 
-ORDER BY SHOW_COUNTER_START DESC
+ORDER BY SHOWCOUNTERSTART DESC
 
 ```
 
@@ -104,89 +104,89 @@ ORDER BY SHOW_COUNTER_START DESC
 
 
 
-CREATE TABLE `b_iblock_element` (
+CREATE TABLE biblockelement (
 
-`ID` int(11) NOT NULL AUTO_INCREMENT,
+  ID int(11) NOT NULL AUTO_INCREMENT,
 
-`TIMESTAMP_X` datetime DEFAULT NULL,
+  TIMESTAMP_X datetime DEFAULT NULL,
 
-`MODIFIED_BY` int(18) DEFAULT NULL,
+  MODIFIED_BY int(18) DEFAULT NULL,
 
-`DATE_CREATE` datetime DEFAULT NULL,
+  DATE_CREATE datetime DEFAULT NULL,
 
-`CREATED_BY` int(18) DEFAULT NULL,
+  CREATED_BY int(18) DEFAULT NULL,
 
-`IBLOCK_ID` int(11) NOT NULL DEFAULT '0',
+  IBLOCK_ID int(11) NOT NULL DEFAULT '0',
 
-`IBLOCK_SECTION_ID` int(11) DEFAULT NULL,
+  IBLOCKSECTIONID int(11) DEFAULT NULL,
 
-`ACTIVE` char(1) NOT NULL DEFAULT 'Y',
+  ACTIVE char(1) NOT NULL DEFAULT 'Y',
 
-`ACTIVE_FROM` datetime DEFAULT NULL,
+  ACTIVE_FROM datetime DEFAULT NULL,
 
-`ACTIVE_TO` datetime DEFAULT NULL,
+  ACTIVE_TO datetime DEFAULT NULL,
 
-`SORT` int(11) NOT NULL DEFAULT '500',
+  SORT int(11) NOT NULL DEFAULT '500',
 
-`NAME` varchar(255) NOT NULL,
+  NAME varchar(255) NOT NULL,
 
-`PREVIEW_PICTURE` int(18) DEFAULT NULL,
+  PREVIEW_PICTURE int(18) DEFAULT NULL,
 
-`PREVIEW_TEXT` text,
+  PREVIEW_TEXT text,
 
-`PREVIEW_TEXT_TYPE` varchar(4) NOT NULL DEFAULT 'text',
+  PREVIEWTEXTTYPE varchar(4) NOT NULL DEFAULT 'text',
 
-`DETAIL_PICTURE` int(18) DEFAULT NULL,
+  DETAIL_PICTURE int(18) DEFAULT NULL,
 
-`DETAIL_TEXT` longtext,
+  DETAIL_TEXT longtext,
 
-`DETAIL_TEXT_TYPE` varchar(4) NOT NULL DEFAULT 'text',
+  DETAILTEXTTYPE varchar(4) NOT NULL DEFAULT 'text',
 
-`SEARCHABLE_CONTENT` text,
+  SEARCHABLE_CONTENT text,
 
-`WF_STATUS_ID` int(18) DEFAULT '1',
+  WFSTATUSID int(18) DEFAULT '1',
 
-`WF_PARENT_ELEMENT_ID` int(11) DEFAULT NULL,
+  WFPARENTELEMENT_ID int(11) DEFAULT NULL,
 
-`WF_NEW` char(1) DEFAULT NULL,
+  WF_NEW char(1) DEFAULT NULL,
 
-`WF_LOCKED_BY` int(18) DEFAULT NULL,
+  WFLOCKEDBY int(18) DEFAULT NULL,
 
-`WF_DATE_LOCK` datetime DEFAULT NULL,
+  WFDATELOCK datetime DEFAULT NULL,
 
-`WF_COMMENTS` text,
+  WF_COMMENTS text,
 
-`IN_SECTIONS` char(1) NOT NULL DEFAULT 'N',
+  IN_SECTIONS char(1) NOT NULL DEFAULT 'N',
 
-`XML_ID` varchar(255) DEFAULT NULL,
+  XML_ID varchar(255) DEFAULT NULL,
 
-`CODE` varchar(255) DEFAULT NULL,
+  CODE varchar(255) DEFAULT NULL,
 
-`TMP_ID` varchar(40) DEFAULT NULL,
+  TMP_ID varchar(40) DEFAULT NULL,
 
-`WF_LAST_HISTORY_ID` int(11) DEFAULT NULL,
+  WFLASTHISTORY_ID int(11) DEFAULT NULL,
 
-`SHOW_COUNTER` int(18) DEFAULT NULL,
+  SHOW_COUNTER int(18) DEFAULT NULL,
 
-`SHOW_COUNTER_START` datetime DEFAULT NULL,
+  SHOWCOUNTERSTART datetime DEFAULT NULL,
 
-`TAGS` varchar(255) DEFAULT NULL,
+  TAGS varchar(255) DEFAULT NULL,
 
-PRIMARY KEY (`ID`),
+  PRIMARY KEY (ID),
 
-KEY `ix_iblock_element_1` (`IBLOCK_ID`,`IBLOCK_SECTION_ID`),
+  KEY ixiblockelement1 (IBLOCKID,IBLOCKSECTIONID),
 
-KEY `ix_iblock_element_4` (`IBLOCK_ID`,`XML_ID`,`WF_PARENT_ELEMENT_ID`),
+  KEY ixiblockelement4 (IBLOCKID,XMLID,WFPARENTELEMENTID),
 
-KEY `ix_iblock_element_3` (`WF_PARENT_ELEMENT_ID`),
+  KEY ixiblockelement3 (WFPARENTELEMENTID),
 
-KEY `ix_code` (`CODE`),
+  KEY ix_code (CODE),
 
-KEY `ix_iblock_element_code` (`IBLOCK_ID`,`CODE`),
+  KEY ixiblockelementcode (IBLOCKID,CODE),
 
-KEY `idx_name` (`NAME`),
+  KEY idx_name (NAME),
 
-KEY `idx_name_date_id` (`DATE_CREATE`,`NAME`)
+  KEY idxnamedateid (DATECREATE,NAME)
 
 ) ENGINE=InnoDB AUTO_INCREMENT=114492 DEFAULT CHARSET=cp1251
 
@@ -202,19 +202,19 @@ PROPERTY_157
 
 
 
-SELECT u.EMAIL, news.NAME AS news_title, m.TOPIC_ID AS TID, m.* FROM b_forum_message AS m
+SELECT u.EMAIL, news.NAME AS newstitle, m.TOPICID AS TID, m.* FROM bforummessage AS m
 
-LEFT JOIN b_iblock_element_prop_s42 AS p ON p.PROPERTY_157 = m.TOPIC_ID
+LEFT JOIN biblockelementprops42 AS p ON p.PROPERTY157 = m.TOPICID
 
-LEFT JOIN b_user AS u ON u.ID = m.AUTHOR_ID
+LEFT JOIN buser AS u ON u.ID = m.AUTHORID
 
-INNER JOIN b_iblock_element AS news ON news.ID = p.IBLOCK_ELEMENT_ID
+INNER JOIN biblockelement AS news ON news.ID = p.IBLOCKELEMENTID
 
 AND news.ID IN (
 
-SELECT e.ID FROM b_iblock_element AS e WHERE
+SELECT e.ID FROM biblockelement AS e WHERE
 
-e.SHOW_COUNTER_START IS NOT NULL
+e.SHOWCOUNTERSTART IS NOT NULL
 
 AND
 
@@ -250,39 +250,39 @@ public function generateRedirectStringByPostId($post_id)
 
 {
 
-$post = get_post($post_id);
+        $post = getpost($postid);
 
-$sql = sprintf("SELECT TRIM(a.NAME) AS title,a.CODE, a.ID
+        $sql = sprintf("SELECT TRIM(a.NAME) AS title,a.CODE, a.ID
 
-FROM b_iblock_element AS a WHERE TRIM(a.NAME) LIKE '%s'
+            FROM biblockelement AS a WHERE TRIM(a.NAME) LIKE '%s'
 
-AND a.SHOW_COUNTER_START IS NOT NULL
+            AND a.SHOWCOUNTERSTART IS NOT NULL
 
-AND a.DATE_CREATE = '%s' ", addslashes($post->post_title), $post->post_date);
+            AND a.DATECREATE = '%s' ", addslashes($post->posttitle), $post->post_date);
 
-$st = $this->dbh->prepare($sql);
+        $st = $this->dbh->prepare($sql);
 
-$st->execute([]);
+        $st->execute([]);
 
-$data = $st->fetchAll();
+        $data = $st->fetchAll();
 
-if (count($data) == 1 || count($data) == 2) {
+        if (count($data) == 1 || count($data) == 2) {
 
-$new_link = sprintf('%s/%s', date('d-m-Y', strtotime($post->post_date)), $post->post_name);
+            $newlink = sprintf('%s/%s', date('d-m-Y', strtotime($post->postdate)), $post->post_name);
 
-if ($data[0]['CODE'] == '') {
+            if ($data[0]['CODE'] == '') {
 
-$data[0]['CODE'] = 'addednews'.$data[0]['ID'];
+                $data[0]['CODE'] = 'addednews'.$data[0]['ID'];
 
-}
+            }
 
-$rule = sprintf("rewrite /%s/%s/ /%s/ permanent;\n", date('Y/m/d', strtotime($post->post_date)), $data[0]['CODE'], $new_link);
+            $rule = sprintf("rewrite /%s/%s/ /%s/ permanent;\n", date('Y/m/d', strtotime($post->postdate)), $data[0]['CODE'], $newlink);
 
-$this->log();
+            $this->log();
 
-$this->log($rule);
+            $this->log($rule);
 
-}
+        }
 
 }
 
@@ -324,19 +324,19 @@ Captistrano
 
 Стек в итоге получился такой:
 
-ubuntu
+* ubuntu
 
-nginx
+* nginx
 
-wordpress
+* wordpress
 
-php 5 в качестве application server был php-fpm
+* php 5 в качестве application server был php-fpm
 
-mysql percona-server
+* mysql percona-server
 
-gulp, coffee, ruby, sass, capistrano
+* gulp, coffee, ruby, sass, capistrano
 
-Mandrill для отправки писем
+* Mandrill для отправки писем
 
 На этом пожалуй все, но надо сказать что после запуска мы обнаружили некоторые проблемы с перенесенными данными, например обнаружилось что мы удалили все embedded вставки, но благодря тому что код миграционные утилиты можно было удобно переиспользовать из консоли, то возникшие проблемы с данными решились без единого дополнительного
 
@@ -346,21 +346,21 @@ SQL
 
 Задача решена, и надо подвести итоги:
 
-Даже плохие системы имеют структуру
+* Даже плохие системы имеют структуру
 
-Даже плохая структура это структура
+* Даже плохая структура это структура
 
-Даже плохую структуру можно конвертировать в хорошую
+* Даже плохую структуру можно конвертировать в хорошую
 
-Пишите консольные утилиты, и пишите код который можно будет запускать несколько раз даже если вам кажется что будуте запускать его только 1 раз.
+* Пишите консольные утилиты, и пишите код который можно будет запускать несколько раз даже если вам кажется что будуте запускать его только 1 раз.
 
-Всегда работайте с копией данных.
+* Всегда работайте с копией данных.
 
-Даже если вы находится в окружении которое вам ненравится, например bitrix или даже php, то стараться сделать задачу правильно нужно все равно, а главное это возможно.
+* Даже если вы находится в окружении которое вам ненравится, например bitrix или даже php, то стараться сделать задачу правильно нужно все равно, а главное это возможно.
 
-“Использовать типовые решения для вашего уникального проекта” …. ну вы поняли ? - Любое типовое решение перестает быть им, как только вы начинаете реализовывать на нем свою уникальную бизнес-логику, поэтому максимально используйте возможности той платформы с который вы работаете, читайте документацию в большинстве случаев в ней будет уже решен ваш вопрос.
+* “Использовать типовые решения для вашего уникального проекта” …. ну вы поняли ? - Любое типовое решение перестает быть им, как только вы начинаете реализовывать на нем свою уникальную бизнес-логику, поэтому максимально используйте возможности той платформы с который вы работаете, читайте документацию в большинстве случаев в ней будет уже решен ваш вопрос.
 
-Не ругайте технологии, ругайте продукты.
+* Не ругайте технологии, ругайте продукты.
 
 Первые минуты после переключения на новый сайт.
 

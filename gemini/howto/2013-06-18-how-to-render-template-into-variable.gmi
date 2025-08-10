@@ -5,7 +5,7 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ==============================
+== [Gemini capsule] * ============ [ 2013-06-18 ] ==
 ```
 => / ← Back
 # how to render template into variable in ZF2
@@ -20,25 +20,25 @@ public function coolAction()
 
 {
 
-$d = array();
+	$d = array();
 
-$r = new PhpRenderer();
+	$r = new PhpRenderer();
 
-$resolver = new \Zend\View\Resolver\TemplateMapResolver();
+	$resolver = new \Zend\View\Resolver\TemplateMapResolver();
 
-$resolver->setMap(array(
+	$resolver->setMap(array(
 
-'confirmation_template' => __DIR__ . '/../../../view/user/mail/confirmation.phtml' // full path to template
+		'confirmationtemplate' => DIR_ . '/../../../view/user/mail/confirmation.phtml' // full path to template
 
-));
+	));
 
-$r->setResolver($resolver);
+	$r->setResolver($resolver);
 
-$model = new ViewModel($d);
+	$model = new ViewModel($d);
 
-$model->setTemplate('confirmation_template');
+	$model->setTemplate('confirmation_template');
 
-$x = $r->render($model);
+	$x = $r->render($model);
 
 }
 

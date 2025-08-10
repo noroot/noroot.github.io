@@ -5,7 +5,7 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ==============================
+== [Gemini capsule] * ============ [ 2013-06-09 ] ==
 ```
 => / ← Back
 # Is touchscreen on javascript
@@ -14,7 +14,7 @@ Some of javascript shortcuts below here:
 
 ```
 
-var is_touch_device = 'ontouchstart' in document.documentElement;
+var istouchdevice = 'ontouchstart' in document.documentElement;
 
 ```
 
@@ -22,11 +22,11 @@ var is_touch_device = 'ontouchstart' in document.documentElement;
 
 function isTouchDevice() {
 
-var el = document.createElement('div');
+    var el = document.createElement('div');
 
-el.setAttribute('ongesturestart', 'return;');
+    el.setAttribute('ongesturestart', 'return;');
 
-return typeof el.ongesturestart === "function";
+    return typeof el.ongesturestart === "function";
 
 }
 

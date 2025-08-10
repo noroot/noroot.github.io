@@ -5,7 +5,7 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ==============================
+== [Gemini capsule] * ============ [ 2024-06-22 ] ==
 ```
 => / ← Back
 # Switched from Jekyll to Bridgetown
@@ -30,27 +30,27 @@ So here it is
 
 Features:
 
-Template engine (erb, liquid, serbea)
+* Template engine (erb, liquid, serbea)
 
-FrontMatter
+* FrontMatter
 
-Layouts
+* Layouts
 
-Components
+* Components
 
-Collections
+* Collections
 
-Categories
+* Categories
 
-Tags
+* Tags
 
-Assets building
+* Assets building
 
-Dynamic sites
+* Dynamic sites
 
-Static generated sites
+* Static generated sites
 
-Deployment
+* Deployment
 
 ## How to migrate from Jekyll
 
@@ -124,11 +124,11 @@ Thats it for now, if you’re interested in details let me know in the comment s
 
 ### References
 
-=> https://bridgetownrb.com Bridgetown.rb
+* Bridgetown.rb
 
-=> https://jekyllrb.com/docs/front-matter/ https://jekyllrb.com/docs/front-matter/
+* https://jekyllrb.com/docs/front-matter/
 
-=> https://gohugo.io/content-management/front-matter/ https://gohugo.io/content-management/front-matter/
+* https://gohugo.io/content-management/front-matter/
 
 ```
      ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░

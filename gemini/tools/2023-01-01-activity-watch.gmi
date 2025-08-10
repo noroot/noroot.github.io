@@ -5,7 +5,7 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ==============================
+== [Gemini capsule] * ============ [ 2023-01-01 ] ==
 ```
 => / ← Back
 # ActivityWatch - open source time tracker
@@ -14,19 +14,19 @@ Recently taken a look on this project for automated timetracking based on window
 
 ## Features
 
-Tracking: Tracks active application and window title out of the box, more with watchers.
+* Tracking: Tracks active application and window title out of the box, more with watchers.
 
-Categories: Get a better overview of your usage by breaking it down into categories.
+* Categories: Get a better overview of your usage by breaking it down into categories.
 
-Browser extensions: Track the active tab using the extensions for Chrome and Firefox.
+* Browser extensions: Track the active tab using the extensions for Chrome and Firefox.
 
-Editor plugins: Track how you spend time writing code with editor watchers.
+* Editor plugins: Track how you spend time writing code with editor watchers.
 
-Privacy: Data is stored locally and doesn’t leave your device, we put local and privacy first.
+* Privacy: Data is stored locally and doesn’t leave your device, we put local and privacy first.
 
-Cross-platform: Runs on Windows, macOS, Linux, and Android.
+* Cross-platform: Runs on Windows, macOS, Linux, and Android.
 
-Synchronization: Sync your activity between your devices. (In Progress)
+* Synchronization: Sync your activity between your devices. (In Progress)
 
 Github:
 

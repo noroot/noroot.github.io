@@ -5,7 +5,7 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ==============================
+== [Gemini capsule] * ============ [ 2011-11-19 ] ==
 ```
 => / ← Back
 # PostgreSQL recursive procedure
@@ -14,25 +14,25 @@
 
 WITH RECURSIVE supplytree AS
 
-(SELECT id, username, parent_user_id, CAST(username AS VARCHAR(1000)) AS username_fullname
+(SELECT id, username, parentuserid, CAST(username AS VARCHAR(1000)) AS username_fullname
 
 FROM users
 
-WHERE parent_user_id =1
+WHERE parentuserid =1
 
 UNION ALL
 
 SELECT si.id, si.username,
 
-si.parent_user_id,
+        si.parentuserid,
 
-CAST(sp.username_fullname || '->' || si.username AS VARCHAR(1000)) AS username_fullname
+        CAST(sp.usernamefullname || '->' || si.username AS VARCHAR(1000)) AS usernamefullname
 
 FROM users AS si
 
-INNER JOIN supplytree AS sp
+        INNER JOIN supplytree AS sp
 
-ON (si.parent_user_id = sp.id)
+        ON (si.parentuserid = sp.id)
 
 )
 
@@ -50,15 +50,15 @@ ORDER BY username_fullname;
 
 
 
-id | username
+ id | username
 
-1  | user1
+ 1  | user1
 
-2  | user1->user2
+ 2  | user1->user2
 
-3  | user1->user2->user3
+ 3  | user1->user2->user3
 
-4  | user1->user2
+ 4  | user1->user2
 
 ```
 

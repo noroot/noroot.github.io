@@ -1,0 +1,83 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ============ [ 2024-01-30 ] ==
+```
+=> / ← Back
+# EP13 FalseTrue Digest
+
+Welcome to EP-13 of
+
+FalseTrue Digest
+
+, - newsletter or journal, or maybe even e-zine, but right now let’s stick to the name digest. I’ll write weekly based summaries about software development, programming world and software itself.
+
+## News
+
+* How a mistakenly published password exposed Mercedes-Benz source code
+
+* Elon Musk Says Neuralink Has Implanted Brain Chip in Human
+
+## Stories
+
+* How I hacked train toliet
+
+* I looked through attacks in my access logs. Here’s what I found
+
+* Npm flooded with 748 packages that store movies
+
+* Inside .git
+
+* Hello IPv6: a minimal tutorial for IPv4 users
+
+* Why do people post on “bad platform” instead of “good platform” ?
+
+## Interesting software
+
+* Flent: The FLExible Network Tester
+
+* Awesome F/OSS
+
+* Rclone syncs your files to cloud storage
+
+## Emacs
+
+* Learning Elisp 17 - a thesaurus mode
+
+* Learn in Emacs - Building Up Vocabulary
+
+## AI
+
+* Brave Leo, the AI browser assistant, now features Mixtral for improved performance
+
+* Not by AI
+
+* Meta AI releases Code Llama 70B
+
+## Development
+
+* 12 Modern CSS One-Line Upgrades
+
+* Ruby’s Exceptional Creatures
+
+* The Big Little Guide to Message Queues
+
+* Svelte Native
+
+## Links
+
+* Harmonics Explorer
+
+* Google Crimes
+
+* Pub400.com – Your public IBM I 7.5 server
+
+Welcome to 2024
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

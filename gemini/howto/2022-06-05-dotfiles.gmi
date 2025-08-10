@@ -5,7 +5,7 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ==============================
+== [Gemini capsule] * ============ [ 2022-06-05 ] ==
 ```
 => / ← Back
 # How to manage your dotfiles with git
@@ -16,9 +16,9 @@ For those who don’t konw dotfiles is configuration files inside your home dire
 
 ### The problem ?
 
-I want to manage it with a git repositry
+* I want to manage it with a git repositry
 
-I don’t want to mess with all files inside home directory as untracked git files
+* I don’t want to mess with all files inside home directory as untracked git files
 
 ### Solution
 
@@ -140,13 +140,13 @@ you don’t have to deal with other files which is not been added to repository 
 
 #### Credits and links
 
-=> https://www.youtube.com/watch?v=tBoLDpTWVOM Derek Tailor or DistroTube
+* Derek Tailor or DistroTube
 
-=> https://www.atlassian.com/git/tutorials/dotfiles Atlassian guy
+* Atlassian guy
 
-=> https://news.ycombinator.com/item?id=11070797 HackerNews origin
+* HackerNews origin
 
-=> https://github.com/noroot/dotfiles My dotfiles
+* My dotfiles
 
 ```
      ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░

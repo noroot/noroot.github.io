@@ -5,7 +5,7 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ==============================
+== [Gemini capsule] * ============ [ 2013-05-30 ] ==
 ```
 => / ← Back
 # Php strftime month name
@@ -22,11 +22,11 @@
 
 
 
-% Initially alt_digits was supposed to hold alternative symbols for _digits_,
+% Initially altdigits was supposed to hold alternative symbols for digits_,
 
 % corresponding to %O modified conversion specification.
 
-% Although in Ukrainian language alternate _names_ are used instead of digits.
+% Although in Ukrainian language alternate names are used instead of digits.
 
 % We'll use this keyword to present a list of month names in proper form for
 
@@ -56,31 +56,31 @@ public function ru_date($format, $date = false)
 
 {
 
-setlocale(LC_ALL, 'ru_RU.utf8');
+	setlocale(LCALL, 'ruRU.utf8');
 
-if ($date === false)
+	if ($date === false)
 
-{
+	{
 
-$date = time();
+		$date = time();
 
-}
+	}
 
-if ($format === '')
+	if ($format === '')
 
-{
+	{
 
-$format = '%e&nbsp;%bg&nbsp;%Y&nbsp;г.';
+		$format = '%e&nbsp;%bg&nbsp;%Y&nbsp;г.';
 
-}
+	}
 
-$months = explode("|", '|января|февраля|марта|апреля|мая|июня|июля|августа|сентября|октября|ноября|декабря');
+	$months = explode("|", '|января|февраля|марта|апреля|мая|июня|июля|августа|сентября|октября|ноября|декабря');
 
-$format = preg_replace("/\%b/", $months[date('n', $date)], $format);
+	$format = preg_replace("/\%b/", $months[date('n', $date)], $format);
 
-$res = strftime($format, $date);
+	$res = strftime($format, $date);
 
-return $res;
+	return $res;
 
 }
 

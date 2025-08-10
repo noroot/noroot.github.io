@@ -5,7 +5,7 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ==============================
+== [Gemini capsule] * ============ [ 2023-02-28 ] ==
 ```
 => / ← Back
 # Rails 7 introduce default healthcheck controller
@@ -18,37 +18,37 @@ Which is just this piece of code
 
 ```
 
-# frozen_string_literal: true
+# frozenstringliteral: true
 
 class Rails::HealthController < ActionController::Base # :nodoc:
 
-rescue_from(Exception) { render_down }
+  rescuefrom(Exception) { renderdown }
 
-def show
+  def show
 
-render_up
+    render_up
 
-end
+  end
 
-private
+  private
 
-def render_up
+    def render_up
 
-render html: html_status(color: "green")
+      render html: html_status(color: "green")
 
-end
+    end
 
-def render_down
+    def render_down
 
-render html: html_status(color: "red"), status: 500
+      render html: html_status(color: "red"), status: 500
 
-end
+    end
 
-def html_status(color:)
+    def html_status(color:)
 
-%(<html><body style="background-color: #{color}"></body></html>).html_safe
+      %(<html><body style="background-color: #{color}"></body></html>).html_safe
 
-end
+    end
 
 end
 

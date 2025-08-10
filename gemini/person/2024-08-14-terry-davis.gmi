@@ -5,7 +5,7 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ==============================
+== [Gemini capsule] * ============ [ 2024-08-14 ] ==
 ```
 => / ← Back
 # In memory of Terry Davis
@@ -40,45 +40,29 @@ He passed away on 11 of August in 2018 (was hit by train), but his legacy contin
 
 ## Materials
 
-=> https://templeos.org/ TempleOS
+* TempleOS - The TempleOS
 
-- The TempleOS
+* TempleOS source code - The TempleOS source code
 
-=> https://github.com/cia-foundation/TempleOS TempleOS source code
+* HolyC programming language - programming language that Terry Davis invented to write TempleOS
 
-- The TempleOS source code
+* Srine - fork of TemplateOS with Networking, and other stuff
 
-=> https://holyc-lang.com/ HolyC programming language
+* ZealOS - Another work with enchancements
 
-- programming language that Terry Davis invented to write TempleOS
+* TinkerOS - another fork
 
-=> https://github.com/minexew/Shrine Srine
+* A personal campaign sponsored by Family and Friends of Terry Donations to Research
 
-- fork of TemplateOS with Networking, and other stuff
+* Find a Grave
 
-=> https://github.com/Zeal-Operating-System/ZealOS ZealOS
-
-- Another work with enchancements
-
-=> https://github.com/tinkeros/TinkerOS TinkerOS
-
-- another fork
-
-=> https://bbrfoundation.donordrive.com/index.cfm?fuseaction=donorDrive.personalCampaign&participantID=8191 A personal campaign sponsored by Family and Friends of Terry Donations to Research
-
-=> https://www.findagrave.com/memorial/192900656/terrence_andrew-davis Find a Grave
-
-=> https://www.linkedin.com/in/terry-a-davis/ Terry Davis Linkedin Tribute
+* Terry Davis Linkedin Tribute
 
 ## Good videos with covering his story
 
-=> https://www.youtube.com/watch?v=YMUhbIAA9-8 The Schizophrenic Genius - Terry A. Davis Story
+* The Schizophrenic Genius - Terry A. Davis Story - the good coverage of Terrys story
 
-- the good coverage of Terrys story
-
-=> https://www.youtube.com/watch?v=Cyz08j7EchY The Apostles Keeping TEMPLEOS Alive…
-
-- talks about the details and forks of the Temple OS
+* The Apostles Keeping TEMPLEOS Alive… - talks about the details and forks of the Temple OS
 
 In the memory of Terry Davis
 

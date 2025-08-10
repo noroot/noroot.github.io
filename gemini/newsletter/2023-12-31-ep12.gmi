@@ -1,0 +1,61 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ============ [ 2023-12-31 ] ==
+```
+=> / ← Back
+# EP12 FalseTrue Digest
+
+Happy new year everybody 🐲 2024
+
+Welcome to EP-12 of
+
+FalseTrue Digest
+
+, - newsletter or journal, or maybe even e-zine, but right now let’s stick to the name digest. I’ll write weekly based summaries about software development, programming world and software itself.
+
+## News
+
+* Kaspersky discloses iPhone hardware feature vital in Operation Triangulation case
+
+* Gentoo Goes Binary!
+
+* Berlin researchers hacked Tesla autopilot to unlock “Elon mode”
+
+## Stories
+
+* The Web is Fantastic
+
+* New macOS Trojan-Proxy piggybacking on cracked software
+
+* CVE-2023-45866: Unauthenticated Bluetooth keystroke-injection in Android, Linux, macOS and iOS
+
+* Why are the elites suddenly so terrified about AI?
+
+## Interesting software
+
+* All my favorite tracing tools: eBPF, QEMU, Perfetto, new ones I built and more
+
+* This is a fake DNS server that allows you to stealthily extract files from a victim machine through DNS requests.
+
+## Emacs
+
+* Telega.el - Telegram mode for Emacs
+
+## Links
+
+* 2024 is Tetrahedral number
+
+* Subscribe on Substack
+
+## Happy New Year
+
+Happy New Year 2024 of 🐲
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

@@ -5,7 +5,7 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ==============================
+== [Gemini capsule] * ============ [ 2014-04-27 ] ==
 ```
 => / ← Back
 # Capistrano 3 & Rails 4
@@ -16,7 +16,7 @@ Hello, today i am tell you about
 
 and Rails 4 setup.
 
-For those who never heard about Capistrano, this is deployment library which can be scripted on ruby, in any ways.
+ For those who never heard about Capistrano, this is deployment library which can be scripted on ruby, in any ways.
 
 First of all Gemfile:
 
@@ -50,7 +50,7 @@ Next to deploy.rb:
 
 ```
 
-set :application "your_app_name"
+set :application "yourappname"
 
 set :repo_url "your repository url"
 
@@ -74,35 +74,35 @@ deploy.rb
 
  desc 'Start application'
 
-task :start do
+  task :start do
 
-on roles(:app), in: :sequence, wait: 5 do
+    on roles(:app), in: :sequence, wait: 5 do
 
-within release_path do
+      within release_path do
 
-execute :bundle, "exec unicorn_rails -p 8801 -E production -D"
+        execute :bundle, "exec unicorn_rails -p 8801 -E production -D"
 
-end
+      end
 
-end
+    end
 
-end
+  end
 
-desc 'Stop application'
+  desc 'Stop application'
 
-task :stop do
+  task :stop do
 
-on roles(:app) , in: :sequence, wait: 5 do
+    on roles(:app) , in: :sequence, wait: 5 do
 
-within release_path do
+       within release_path do
 
-execute "cd #{fetch(:deploy_to)}/current && cat tmp/pids/unicorn.pid | xargs kill "
+         execute "cd #{fetch(:deploy_to)}/current && cat tmp/pids/unicorn.pid | xargs kill "
 
-end
+       end
 
-end
+    end
 
-end
+  end
 
 ```
 
@@ -114,7 +114,7 @@ make cap production deploy:start
 
 your likely get message that says you don’t set
 
-SECRET_KEY_BASE
+SECRETKEYBASE
 
 into environment variable. And if you add it to .bashrc .bash_profile or .profile files everything goes the same way with message.
 
@@ -154,7 +154,7 @@ After that you can create ~/.ssh/environment and put into:
 
 ```
 
-SECRET_KEY_BASE=66a2caf0d57e376cae89a297656c1ff68a7d9abac9ee61b13652e97a4983ac00c2cb468e30181ae224e5951609591374f9ba0a31a77ba36c4f6587c2afcafd2f
+SECRETKEYBASE=66a2caf0d57e376cae89a297656c1ff68a7d9abac9ee61b13652e97a4983ac00c2cb468e30181ae224e5951609591374f9ba0a31a77ba36c4f6587c2afcafd2f
 
 ```
 
@@ -162,7 +162,7 @@ After that when you run
 
 cap production deploy:start
 
-to strart unicorn server, everything will be fine because SECRET_KEY_BASE will be loaded from ~/.ssh/environment file
+to strart unicorn server, everything will be fine because SECRETKEYBASE will be loaded from ~/.ssh/environment file
 
 Have fun with it.
 

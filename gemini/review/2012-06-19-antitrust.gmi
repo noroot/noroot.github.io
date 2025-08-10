@@ -5,7 +5,7 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ==============================
+== [Gemini capsule] * ============ [ 2008-04-12 ] ==
 ```
 => / ← Back
 # Antitrust - спецэффекты в фильмах про программистов
@@ -22,87 +22,87 @@ WebServer.java
 
 void listDirectory(File dir, PrintStream ps) throws IOException {
 
-ps.println("
+        ps.println("
 
 \n");
 
-ps.println("Parent Directory
+        ps.println("Parent Directory
 
 \n");
 
-String[] list = dir.list();
+        String[] list = dir.list();
 
-for (int i = 0; list != null &amp;&amp; i &lt; list.length; i++) {
+        for (int i = 0; list != null &amp;&amp; i &lt; list.length; i++) {
 
-File f = new File(dir, list[i]);
+            File f = new File(dir, list[i]);
 
-if (f.isDirectory()) {
+            if (f.isDirectory()) {
 
-ps.println(""+list[i]+"/
+                ps.println(""+list[i]+"/
 
 ");
 
-} else {
+            } else {
 
-ps.println(""+list[i]+"
+                ps.println(""+list[i]+"
 
 " + (new Date()) + "");
 
-}
+    }
 
-/* are we doing a GET or just a HEAD */
+ /* are we doing a GET or just a HEAD */
 
-boolean doingGet;
+            boolean doingGet;
 
-/* beginning of file name */
+            /* beginning of file name */
 
-int index;
+            int index;
 
-if (buf[0] == (byte)'G' &amp;&amp;
+            if (buf[0] == (byte)'G' &amp;&amp;
 
-buf[1] == (byte)'E' &amp;&amp;
+                buf[1] == (byte)'E' &amp;&amp;
 
-buf[2] == (byte)'T' &amp;&amp;
+                buf[2] == (byte)'T' &amp;&amp;
 
-buf[3] == (byte)' ') {
+                buf[3] == (byte)' ') {
 
-doingGet = true;
+                doingGet = true;
 
-index = 4;
+                index = 4;
 
-} else if (buf[0] == (byte)'H' &amp;&amp;
+            } else if (buf[0] == (byte)'H' &amp;&amp;
 
-buf[1] == (byte)'E' &amp;&amp;
+                       buf[1] == (byte)'E' &amp;&amp;
 
-buf[2] == (byte)'A' &amp;&amp;
+                       buf[2] == (byte)'A' &amp;&amp;
 
-buf[3] == (byte)'D' &amp;&amp;
+                       buf[3] == (byte)'D' &amp;&amp;
 
-buf[4] == (byte)' ') {
+                       buf[4] == (byte)' ') {
 
-doingGet = false;
+                doingGet = false;
 
-index = 5;
+                index = 5;
 
-} else {
+            } else {
 
-/* we don't support this method */
+                /* we don't support this method */
 
-ps.print("HTTP/1.0 " + HTTP_BAD_METHOD +
+                ps.print("HTTP/1.0 " + HTTPBADMETHOD +
 
-" unsupported method type: ");
+                           " unsupported method type: ");
 
-ps.write(buf, 0, 5);
+                ps.write(buf, 0, 5);
 
-ps.write(EOL);
+                ps.write(EOL);
 
-ps.flush();
+                ps.flush();
 
-s.close();
+                s.close();
 
-return;
+                return;
 
-}
+            }
 
 ```
 
@@ -118,31 +118,31 @@ return;
 
 ```
 
- available = (long) free.avail_clusters * (long) free.bytes_per_sector * (long)
+ available = (long) free.availclusters * (long) free.bytesper_sector * (long)
 
-free.sectors_per_cluster;
+  free.sectorspercluster;
 
-GetDlgItemText(hDlg, IDC_LINUXSIZE , buf, 5);
+  GetDlgItemText(hDlg, IDC_LINUXSIZE , buf, 5);
 
-size = atoi(buf);
+  size = atoi(buf);
 
-GetDlgItemText(hDlg, IDC_SWAPSIZE , buf, 5);
+  GetDlgItemText(hDlg, IDC_SWAPSIZE , buf, 5);
 
-swapsize = atoi(buf);
+  swapsize = atoi(buf);
 
-if((size + swapsize) &gt; (available/1000000))
+  if((size + swapsize) &gt; (available/1000000))
 
-{ MessageBox(hDlg, "You've not enough space on disk", "Invalid size", MB_APPLMODAL|MB_ICONEXCLAMATION|MB_OK); return 0;
+  { MessageBox(hDlg, "You've not enough space on disk", "Invalid size", MBAPPLMODAL|MBICONEXCLAMATION|MB_OK); return 0;
 
-}
+  }
 
-sprintf(path, "%c:\\lnx4win\\size.txt", hd[getdisk()]); if((f = fopen(path, "w")) == NULL)
+  sprintf(path, "%c:\\lnx4win\\size.txt", hd[getdisk()]); if((f = fopen(path, "w")) == NULL)
 
-{ MessageBox(hDlg, "Can't save configuration file.", "File error!",
+  { MessageBox(hDlg, "Can't save configuration file.", "File error!",
 
-MB_APPLMODAL|MB_ICONEXCLAMATION|MB_OK); return 0;
+     MBAPPLMODAL|MBICONEXCLAMATION|MB_OK); return 0;
 
-}
+  }
 
 ```
 

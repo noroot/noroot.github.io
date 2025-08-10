@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Gemini, Gopher and and SmolNet | FalseTrue</title>
+
+<!-- Begin Bridgetown SEO tag v6.0.0 -->
+<title>Gemini, Gopher and and SmolNet | FalseTrue</title>
+<meta property="og:title" content="Gemini, Gopher and and SmolNet" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Scripts of cyberdaemon" />
+<meta property="og:description" content="Scripts of cyberdaemon" />
+<link rel="canonical" href="https://falsetrue.io/notes/2025/07/22/gemini-capsule/" />
+<meta property="og:url" content="https://falsetrue.io/notes/2025/07/22/gemini-capsule/" />
+<meta property="og:site_name" content="FalseTrue" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-07-22T22:00:00+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Gemini, Gopher and and SmolNet" />
+<!-- End Bridgetown SEO tag -->
+
+
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/_bridgetown/static/index.ISQIYA65.css" />
+<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+<script src="/_bridgetown/static/index.42K5JGTD.js" defer></script>
+
+<link type="application/atom+xml" rel="alternate" href="https://falsetrue.io/feed.xml" title="FalseTrue" />
+
+  </head>
+  <body class="post ">
+    <!-- <header>
+     <img src="/images/logo.svg" alt="Logo" />
+     </header>
+-->
+<nav>
+  <ul>
+    <li><a href="/"><span class="text-green-400">False!</span><span class="text-cyan-300">True</span></a></li>
+    <li><a href="/">Home</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/feed">Feed</a></li>
+    <li><a href="/archive">Archive</a></li>
+    <li><a href="/bookshelf">Bookshelf</a></li>
+    <li><a href="/photography">Photography</a></li>
+    <li><a href="/halloffame">Hall of fame</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/feed.xml"><i class="fa fa-rss text-[orange]"></i>&nbsp;RSS</a></li>
+  </ul>
+</nav>
+
+
+    <main>
+      <article class="prose prose-slate prose-pre:bg-gray-100 prose-pre:text-gray-500 max-w-full prose-h1:leading-relaxed">
+    <span>22 Jul 2025</span>
+    <div class="mb-8">
+        <h1 class="leading-relaxed">Gemini, Gopher and and SmolNet</h1>
+        <div class="category-block">
+            <span>Category</span>
+            
+                
+                    <a href="/categories/notes" class="badge-category badge-notes">notes</a>
+                
+            
+        </div>
+        <div class="tags-block mt-8">
+            <span>Tags</span>
+            
+                <a href="/tags/tools" class="badge-tag">#tools</a>
+            
+                <a href="/tags/selfhosted" class="badge-tag">#selfhosted</a>
+            
+                <a href="/tags/smolnet" class="badge-tag">#smolnet</a>
+            
+        </div>
+    </div>
+    <p>Perhaps there are no more reason to be on  modern Web internet. It was interesting before it become unusable.</p>
+
+<p>So I’ve to continue journey to alternative so called small Internet (smolnet). If don’t know anything about it then its bad for you. This layer of internet was here before Web. There are a lot of protocols today, but most notable and surived are gopher and gemini protocols.
+I wrote my first Gopher browser in Borland Delphi 4 somewhere in 1999 without even knowing what it is, by just moving components on the Delphi form builder :)</p>
+
+<p>Lets focus on most used smolNet protocols today:</p>
+
+<h2 id="gopher">Gopher</h2>
+
+<blockquote>
+  <p>The Internet Gopher protocol is designed for distributed document search and retrieval.  This document describes the protocol, lists some of the implementations currently available, and has an overview of how to implement new client and server applications.  This document is adapted from the basic Internet Gopher protocol document first issued by the Microcomputer Center at the University of Minnesota in 1991.</p>
+</blockquote>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|---------------|-------------------------|
+| Specification | RFC 1436                |
+|---------------|-------------------------|
+| Scheme        | gopher://               |
+|---------------|-------------------------|
+| Port number   | 70                      |
+|---------------|-------------------------|
+| File format   | Gopher menu, plain text |
+|---------------|-------------------------|
+| TLS           | With gophers://         |
+|---------------|-------------------------|
+| Encoding      | ASCII                   |
+|---------------|-------------------------|
+| Clients       | a lot                   |
+|---------------|-------------------------|
+| Servers       | a lot                   |
+|---------------|-------------------------|
+</code></pre></div></div>
+
+<p>The Gopher protocol is one of the early Internet protocols (released in 1991 at the University of Minnesota) designed for distributing, searching, and retrieving documents over a network. It predates the modern web and was widely used before HTTP/HTML took over.</p>
+
+<p>Unlike the Web, which quickly became graphical and complex, Gopher remains text-centric, hierarchical, and lightweight, which is why it’s still interesting in the context of minimal and alternative networks.</p>
+
+<h3 id="how-gopher-works">How Gopher Works</h3>
+
+<ul>
+  <li>Client–server model: A Gopher client connects to a Gopher server over TCP (default port 70).</li>
+  <li>Menu-based navigation: Instead of free-form hyperlinks like the Web, Gopher content is structured as menus (directory-like listings). Each item has a type and a selector (path to the resource).</li>
+  <li>Plain-text protocol: Communication between client and server is very simple - a request is just a text line (selector string), and the response is either:</li>
+  <li>A menu (list of items)</li>
+  <li>A file (text, binary, image, etc.)</li>
+  <li>A search query response</li>
+</ul>
+
+<p>This makes it extremely low-bandwidth and easy to implement.</p>
+
+<p>Key Features</p>
+
+<ul>
+  <li>Hierarchical structure, - resources are organised into nested menus (like directories).</li>
+  <li>Provides an intuitive way to explore content without a search engine.</li>
+  <li>Typed resources, - each menu item begins with a type code (single character) to indicate the kind of resource (e.g., text, binary, search).</li>
+</ul>
+
+<p>Common types:
+0 – Plain text file
+1 – Menu (directory)
+7 – Search query
+9 – Binary file
+g – GIF image
+I – Generic image</p>
+
+<ul>
+  <li>Search integration, - Gopher supported search services (usually full-text) via type 7 items — you submit a query, and the server returns a list of matching items.</li>
+  <li>Lightweight, simple plain-text requests and responses make it fast and low-resource, even on very old hardware or slow connections.
+Works great over dial-up speeds and on embedded/retro devices.</li>
+  <li>Easy to self-host, - setting up a Gopher server is trivial (many are just a few hundred lines of code).
+Makes it appealing for personal publishing, especially in SmolNet and tildeverse communities.</li>
+  <li>Long lifespan &amp; stability, because it hasn’t changed much since the ’90s, Gopher content remains accessible decades later, unlike modern web apps that quickly break.</li>
+</ul>
+
+<p>Example of Gopher menu:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>TypeCharDisplayName&lt;TAB&gt;Selector&lt;TAB&gt;Host&lt;TAB&gt;Port
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1About This Server    /about    example.org    70
+0Readme.txt           /readme   example.org    70
+</code></pre></div></div>
+
+<p>Why It’s Still Used</p>
+<ul>
+  <li>Retrocomputing &amp; minimalism: Perfect for old computers and text-based interfaces.</li>
+  <li>Decentralisation: No need for heavy infrastructure; one server + one text file = a working site.</li>
+  <li>No ads, no tracking: Pure information sharing.</li>
+  <li>Part of SmolNet: Often used alongside Gemini as a simpler alternative to the Web.</li>
+</ul>
+
+<p>Modern Gopher Clients</p>
+<ul>
+  <li>Lynx (text-mode web browser, still supports Gopher)</li>
+  <li>Bombadillo (modern terminal Gopher/Gemini client)</li>
+  <li>Gopher Client Plugins (for Firefox, Chrome via extensions)</li>
+  <li>Overbite (Gopher-to-HTTP proxy)</li>
+  <li>cURL (supports Gopher links)</li>
+  <li>Lagrange (supports Gemini and Gopher)</li>
+</ul>
+
+<h2 id="gemini-protocol">Gemini Protocol</h2>
+
+<blockquote>
+  <p>Gemini is an application-layer internet communication protocol for accessing remote documents, similar to HTTP and Gopher. It comes with a special document format, commonly referred to as “gemtext”, which allows linking to other documents. Started by a pseudonymous person known as Solderpunk, the protocol is being finalized collaboratively and as of October 2022, has not been submitted to the IETF organization for standardization.</p>
+</blockquote>
+
+<p>Gemini is a lightweight, text-first internet protocol introduced in 2019 by Solderpunk. It was designed as a middle ground between Gopher and the modern Web — more expressive than Gopher but far simpler and less bloated than HTTP.</p>
+
+<p>Its goals are:</p>
+
+<ul>
+  <li>Simplicity: Small, easily implemented protocol.</li>
+  <li>Privacy: No tracking, cookies, or scripts.</li>
+  <li>Readability: Focus on content, not layout.</li>
+  <li>Low overhead: Minimal bandwidth use, great for slow connections and older devices.</li>
+</ul>
+
+<p>Gemini runs over TLS by default (port 1965), ensuring encrypted connections by design.</p>
+
+<h3 id="gemini-key-features">Gemini Key Features</h3>
+<ul>
+  <li>Secure by default</li>
+  <li>All connections use TLS (unlike Gopher). No plaintext option.</li>
+  <li>No cookies, sessions, or tracking — privacy is built-in.</li>
+  <li>Minimalist content format</li>
+  <li>Uses Gemtext (.gmi), a super-simple Markdown-like syntax.</li>
+  <li>Content is mostly text with optional links, preformatted blocks, and basic headings.</li>
+  <li>No JavaScript, CSS, or complex rendering.</li>
+  <li>Small, simple protocol</li>
+  <li>A Gemini request is just a single line:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gemini://example.com/resource\r\n
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>A Gemini response starts with a status code (2-digit) and a MIME type. Example:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>20 text/gemini\r\n
+</code></pre></div></div>
+
+<ul>
+  <li>Human-scale design</li>
+  <li>Pages are lightweight and distraction-free.</li>
+  <li>Designed for reading, not for flashy design or heavy web apps.</li>
+  <li>Easy to self-host</li>
+  <li>Setting up a Gemini capsule (server) is simple. Many implementations fit in &lt;1000 lines of code.</li>
+  <li>Perfect for personal publishing, digital zines, and community spaces.</li>
+</ul>
+
+<p>Gem text example:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># My Gemini Page
+
+Welcome to my capsule!  
+
+=&gt; /about About this site  
+=&gt; gemini://gemini.circumlunar.space Project Gemini
+
+</code></pre></div></div>
+
+<p>Status Codes (like HTTP but simpler):</p>
+
+<p>20 – Success (content follows)
+30 – Redirect
+40 – Temporary failure
+50 – Permanent failure
+60 – Client certificate required (optional authentication)</p>
+
+<h4 id="why-use-gemini-">Why Use Gemini ?</h4>
+
+<ul>
+  <li>Privacy-first: No ads, no analytics, no surveillance.</li>
+  <li>Focused on content: Perfect for blogs, phlogs, manifestos, and small communities.</li>
+  <li>Long-term accessibility: Pages remain usable even decades later, like Gopher.</li>
+  <li>SmolNet-friendly: Runs well on low-power devices, retro machines, or text-based terminals.</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|---------------|------------------------------------------------------------|
+| Name          | Gemini                                                     |
+|---------------|------------------------------------------------------------|
+| Specification | https://geminiprotocol.net/docs/protocol-specification.gmi |
+|---------------|------------------------------------------------------------|
+| Scheme        | gemini://                                                  |
+|---------------|------------------------------------------------------------|
+| Port number   | 1695                                                       |
+|---------------|------------------------------------------------------------|
+| File format   | Gopher menu, plain text                                    |
+|---------------|------------------------------------------------------------|
+| TLS           | Default                                                    |
+|---------------|------------------------------------------------------------|
+| Encoding      | ASCII                                                      |
+|---------------|------------------------------------------------------------|
+| Clients       | a lot                                                      |
+|---------------|------------------------------------------------------------|
+| Servers       | a lot                                                      |
+|---------------|------------------------------------------------------------|
+</code></pre></div></div>
+
+<h3 id="comparison-gemini-and-gopher">Comparison Gemini and Gopher</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|------------|--------------------------------------|-----------------------------------------------|
+| Feature    | Gopher                               | Gemini                                        |
+|------------|--------------------------------------|-----------------------------------------------|
+| Encryption | No                                   | Yes (TLS only)                                |
+| Content    | Plain text + menus                   | Gemtext (Markdown-like)                       |
+| Port       | 70                                   | 1965                                          |
+| Complexity | Very low                             | Low                                           |
+| Multimedia | Minimal (but anything can be served) | Mimimal (picture can be displayed inside gmi) |
+| Use Case   | Directory-style browsing             | Reading focus, makrdown like publishing       |
+|------------|--------------------------------------|-----------------------------------------------|
+</code></pre></div></div>
+
+<p>There are a lot of smolnet protocols, you can find a lot of them via links from this article.</p>
+
+<h2 id="what-to-use-them-for-and-why-">What to use them for and why ?</h2>
+
+<ul>
+  <li>Search for Text and files, - a lot of files and text from pre internet era can be found on Gopher.</li>
+  <li>Have a conversation on gemini boards, - since that text is a main medium people must use text to transfer their thoughts, which makes people who are using textual based network more prone to write proper content.</li>
+  <li>Enjoy smolnet unique sites, smolnet sites and content usualy more full, unique, and enjoyable</li>
+  <li>Minimalistic approach to technology, - you would be surpised who much modern internet is bloated.</li>
+</ul>
+
+<h2 id="references">References</h2>
+
+<p><a href="https://en.wikipedia.org/wiki/Gopher_(protocol)">https://en.wikipedia.org/wiki/Gopher_(protocol)</a></p>
+
+<p><a href="gopher://gopher.floodgap.com/">gopher://gopher.floodgap.com/</a></p>
+
+<p><a href="https://en.wikipedia.org/wiki/Gemini_(protocol)">https://en.wikipedia.org/wiki/Gemini_(protocol)</a></p>
+
+<p><a href="https://geminiprotocol.net/docs/protocol-specification.gmi">https://geminiprotocol.net/docs/protocol-specification.gmi</a></p>
+
+<p><a href="https://github.com/makew0rld/amfora">https://github.com/makew0rld/amfora</a></p>
+
+<p><a href="https://wiki.archiveteam.org/index.php/SmolNet">SmolNet</a></p>
+
+<p><a href="https://github.com/skyjake/lagrange">Lagrange</a></p>
+
+<p><a href="gemini://geminiprotocol.net/docs/faq.gmi">Gemini FAQ</a></p>
+
+<h2 id="hint">Hint</h2>
+
+<p>Donwload Largange because it supports both protocols, and its graphical.</p>
+
+</article>
+
+<div class="my-[100px] ">
+    <h2 class="text-2xl mb-2">Comments</h2>
+
+    <script data-isso="https://comments.falsetrue.io/"
+            src="https://comments.falsetrue.io/js/embed.min.js"></script>
+
+    <section id="isso-thread">
+        <noscript>Javascript needs to be activated to view comments.</noscript>
+    </section>
+
+</div>
+
+    </main>
+
+    <footer class="text-xs pt-8 my-8 px-8">
+    <div>
+        <div>
+            Dmitry Ro © 2003 - 2024. All rights reserved.<br>
+            Копирование и распрастранение страницы разрешено только в оригинальном не изменном виде, включая это сообщение.
+            Verbatim copying and redistribution of this entire page are permitted provided this notice is preserved.
+            Verbatim copying and redistribution of any of the photos in the photos subdirectory is permitted under the <a href="http://creativecommons.org/licenses/by-nd/3.0/" rel="nofollow"> Creative Commons Noderivs license version 3.0</a> or later.
+            <div><a href="/pgp.key.txt" rel="pgpkey authn">PGP Key</a></div>
+        </div>
+        <div class="flex mx-auto my-3 items-center justify-center gap-1">
+            <div><a href="https://webmentions.io" target="_blank" class="inline"><img src="/images/webmention.png" alt="Webmentions"></a></div>
+            <div><a href="https://indieweb.org" target="_blank"><img src="/images/indieweb.png" alt="indieweb"></a></div>
+            <div><a href="https://microformats.org" target="_blank"><img src="/images/microformats.png" alt="microformats"></a></div>
+            <div><a href="https://creativecommons.org/licenses/by/3.0/" target="_blank"><img src="/images/cc-commons.png" alt="cc-commons"></a></div>
+            <div><img src="/images/w3c-valid-html.png" alt="valid w3c"></div>
+        </div>
+        <div class="mt-1">
+            <a href="https://xn--sr8hvo.ws/previous">←</a>
+            An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
+            <a href="https://xn--sr8hvo.ws/next">→</a>
+        </div>
+    </div>
+</footer>
+
+  </body>
+</html>

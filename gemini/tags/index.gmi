@@ -5,7 +5,7 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ==============================
+== [Gemini capsule] * ============ [ 2025-08-10 ] ==
 ```
 => / ← Back
 # Tags
@@ -20,6 +20,20 @@
 
 => /tags/esoteric #esoteric
 
+=> /tags/sec #sec
+
+=> /tags/mac #mac
+
+=> /tags/debloat #debloat
+
+=> /tags/tools #tools
+
+=> /tags/selfhosted #selfhosted
+
+=> /tags/smolnet #smolnet
+
+=> /tags/linux #linux
+
 => /tags/paypal #paypal
 
 => /tags/python #python
@@ -27,8 +41,6 @@
 => /tags/terminal #terminal
 
 => /tags/console #console
-
-=> /tags/tools #tools
 
 => /tags/photo #photo
 
@@ -47,8 +59,6 @@
 => /tags/landscape #landscape
 
 => /tags/forest #forest
-
-=> /tags/linux #linux
 
 => /tags/personal #personal
 
@@ -111,8 +121,6 @@
 => /tags/drama #drama
 
 => /tags/nginx #nginx
-
-=> /tags/sec #sec
 
 => /tags/humor #humor
 
@@ -225,8 +233,6 @@
 => /tags/tips #tips
 
 => /tags/php #php
-
-=> /tags/mac #mac
 
 => /tags/productivity #productivity
 

@@ -1,0 +1,97 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ============ [ 2023-05-22 ] ==
+```
+=> / ← Back
+# EP4 FalseTrue Digest
+
+Welcome to EP-4 of
+
+FalseTrue Digest
+
+, - newsletter or journal, or maybe even e-zine, but right now let’s stick to the name digest. I’ll write weekly based summaries about software development, programming world and software itself.
+
+## News
+
+* VSCode Security: Malicious Extensions Detected- More Than 45,000 Downloads https://blog.checkpoint.com/securing-the-cloud/malicious-vscode-extensions-with-more-than-45k-downloads-steal-pii-and-enable-backdoors/
+
+Very dangerous since every newcomer into programming uses it today
+
+* Apple Patches 3 Zero-Days Possibly Already Exploited https://www.darkreading.com/application-security/apple-patches-3-zero-days-possibly-already-exploited
+
+* Bruce Schneier discuss for .zip and .mov domains  https://www.schneier.com/blog/archives/2023/05/security-risks-of-new-zip-and-mov-domains.html
+
+There is a funny comment on that about .com domains which is executable file extension too and was widely used in 90's
+
+* Bruce Schneier on patching Microsoft Secure Boot Bughttps://www.schneier.com/blog/archives/2023/05/microsoft-secure-boot-bug.html which Microsoft is patching now https://arstechnica.com/information-technology/2023/05/microsoft-patches-secure-boot-flaw-but-wont-enable-fix-by-default-until-early-2024/
+
+* Millions Of Android TVs And Phones Come With Malware
+
+=> https://packetstormsecurity.com/news/view/34636/Millions-Of-Android-TVs-And-Phones-Come-With-Malware.html https://packetstormsecurity.com/news/view/34636/Millions-Of-Android-TVs-And-Phones-Come-With-Malware.html
+
+## Repositories and projects
+
+* PrivateGPT - Ask questions to your documents without an internet connection https://github.com/imartinez/privateGPT
+
+* Github Readme generator - https://gprm.itsvg.in/
+
+* Internet History Podcast - https://www.internethistorypodcast.com/
+
+## How-to’s and guides
+
+* All algorythms implemented in Rust https://github.com/TheAlgorithms/Rust
+
+## Weekly Linux desktop
+
+* GnuCash - one of the great GNU Software for professional Accounting  https://www.gnucash.org/, fresh take on GnuCash https://lwn.net/Articles/731126/
+
+* Mindustry - You probably heard of Factorio, here is a different approach of the same mechanics called Mindustry https://mindustrygame.github.io/ take a look significant amount of game mechanics implemented in Java
+
+## Mentions and utils
+
+Today mention is
+
+Lynx
+
+, - a customizable text-based web browser for use on cursor-addressable character cell terminals. As of 2023, it is the oldest web browser still being maintained,[6] having started in 1992. Each of you GNU/Linux users used it at least ones in a life.
+
+Authors:
+
+=> https://www.internethistorypodcast.com/2014/04/on-the-20th-anniversary-an-oral-history-of-netscapes-founding/ Lou Montulli
+
+,
+
+=> http://condor.cc.ku.edu/~grobe/ Michael Grobe
+
+, Charles Rezac
+
+Links to LyNX:
+
+* https://github.com/ThomasDickey/lynx-snapshots
+
+* https://lynx.invisible-island.net/index.html
+
+While search info for Lynx I’ve found that site https://hiddenheroes.netguru.com/, its a project to basically doing same as this section, mentioning people who shaped technology
+
+### Authors note
+
+This format will be like this,
+
+* I’ll share various links, and experiences on a weekly base.
+
+* Interesting persons on Internet and their stuff.
+
+* Various software which you don’t even know.
+
+If you like what you see here please comment and share, this helps me gain some consistency on this.
+
+=> https://falsetrue.substack.com/ Subscribe on Substack
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

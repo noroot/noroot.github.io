@@ -1,0 +1,65 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ============ [ 2023-10-05 ] ==
+```
+=> / ← Back
+# EP9 FalseTrue Digest
+
+Welcome to EP-9 of
+
+FalseTrue Digest
+
+, - newsletter or journal, or maybe even e-zine, but right now let’s stick to the name digest. I’ll write weekly based summaries about software development, programming world and software itself.
+
+# News
+
+* Richard Stallman reveals he has cancer
+
+He has blood cancer, and he has already cut his beard and hair off. Let’s wish health and freedom to the legend RMS. 🙏🏼
+
+A nearly hairless Stallman pulls down his mask briefly to reveal that his beard has gone, too.
+
+=> /images/digest/Richard-Stallman-without-hair-and-beard.webp Richard Stallman without hair and beard due to cancer treatment
+
+* DHH Wants to get rid of TypeScript from Turbo 8
+
+There is a good PR thread to read here.
+
+Fully recognize that TypeScript offers some people some advantages, but to my eyes, the benefits are evident in this PR. The code not only reads much better, it’s also freed of the type wrangling and gymnastics needed to please the TS compiler. // DHH
+
+* Bun is a new JavaScript runtime
+
+Bun is a new JavaScript runtime written in Zig, a new system language. It’s extremely fast, and beats any other runtime. Despite it existing for years, it only became known in this September.
+
+* Signals goes quantum cryptography
+
+Signal said that it goes to Post Quantum Extended Diffie-Hellman (PQXDH).
+
+* Whitepaper on PQXDH.
+
+* Also, according to Bruce Schneier, Signal might not agree to put a backdoor and would rather leave the UK
+
+* Kamal - New deployment system on Ruby from DHH
+
+# Stories
+
+* UK air traffic control meltdown - an interesting and very detailed article
+
+* More about TypeScript drama
+
+# Links
+
+* Layoffs dataset - data about layoffs, just interesting to know what is happening in the IT industry right now
+
+* Terraform community goes opensource to keep shared effort free.
+
+=> https://falsetrue.substack.com/ Subscribe on Substack
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

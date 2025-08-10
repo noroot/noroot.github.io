@@ -5,7 +5,7 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ==============================
+== [Gemini capsule] * ============ [ 2019-02-22 ] ==
 ```
 => / ← Back
 # Brief look into WowCube SDK
@@ -26,7 +26,7 @@ There are 8 micro computers connected to each other. Imagine how to develop any 
 
 is very weak, only what they offer is small repository
 
-=> https://github.com/wowcube/WOWCube_Emulator_MacOS https://github.com/wowcube/WOWCube_Emulator_MacOS
+=> https://github.com/wowcube/WOWCubeEmulatorMacOS https://github.com/wowcube/WOWCubeEmulatorMacOS
 
 which contains everthing even commited VCcode and Processing inside for some reason, so I decide to make new one clean version to make simplier.
 
@@ -34,15 +34,11 @@ Lets go step by step:
 
 You need to have installed:
 
-Pawn language compiler
+* Pawn language compiler
 
-Processing language compiler (they uses it as an cube emulator during development process)
+* Processing language compiler (they uses it as an cube emulator during development process)
 
-Additional UDP library
-
-=> http://ubaa.net/shared/processing/udp/udp.zip http://ubaa.net/shared/processing/udp/udp.zip
-
-can be also found inside data directory in repository.
+* Additional UDP library http://ubaa.net/shared/processing/udp/udp.zip can be also found inside data directory in repository.
 
 Since firmware used to be launched on each of 8 microcomputers we need toolchain to do it automatically, Makefile will suits here perfectly.
 
@@ -50,15 +46,15 @@ Since firmware used to be launched on each of 8 microcomputers we need toolchain
 
 compile:
 
-pawncc pipes.pwn -ogame
+	pawncc pipes.pwn -ogame
 
 dev:
 
-for i in 0 1 2 3 4 5 6 7 8 ; do \
+	for i in 0 1 2 3 4 5 6 7 8 ; do \
 
-pawnrun game.amx $$i & ; \
+		pawnrun game.amx $$i & ; \
 
-done
+	done
 
 ```
 
@@ -78,23 +74,23 @@ Main disadvantage is that you have to write on two langauges, one for developer 
 
 int main() {
 
-FATFS Fatfs;
+  FATFS Fatfs;
 
-... // here you need to do a platform initialization
+  ... // here you need to do a platform initialization
 
-//Mount filesystem
+  //Mount filesystem
 
-f_mount(0, &Fatfs);
+  f_mount(0, &Fatfs);
 
-// Execute test script
+  // Execute test script
 
-PawnExec("GAME.AMX");
+  PawnExec("GAME.AMX");
 
-// Endless loop
+  // Endless loop
 
-while(1) {
+  while(1) {
 
-}
+  }
 
 }
 

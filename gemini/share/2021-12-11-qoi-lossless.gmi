@@ -5,7 +5,7 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ==============================
+== [Gemini capsule] * ============ [ 2021-12-11 ] ==
 ```
 => / ← Back
 # QOI lossless image comperession proposal
@@ -16,13 +16,13 @@
 
 В кратце:
 
-Сжатие 20-50 раз быстрее
+* Сжатие 20-50 раз быстрее
 
-Декомпрессия 3-4 раза быстрее
+* Декомпрессия 3-4 раза быстрее
 
-Размер на выходе больше на 20%
+* Размер на выходе больше на 20%
 
-300 строк на C
+* 300 строк на C
 
 ## Benchmark
 
@@ -30,7 +30,7 @@
 
 images/screenshots/news.ycombinator.com.png: 1325x1450
 
-decode ms   encode ms   decode mpps   encode mpps   size kb
+        decode ms   encode ms   decode mpps   encode mpps   size kb
 
 libpng:       8.6        79.9        223.22         24.03       289
 
@@ -44,7 +44,7 @@ qoi:          3.0         3.8        649.95        502.49       288
 
 images/wallpaper/Hy23XKX.png: 3440x1440
 
-decode ms   encode ms   decode mpps   encode mpps   size kb
+        decode ms   encode ms   decode mpps   encode mpps   size kb
 
 libpng:      81.7      2126.3         60.63          2.33      7378
 

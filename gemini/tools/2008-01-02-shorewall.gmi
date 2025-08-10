@@ -5,7 +5,7 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ==============================
+== [Gemini capsule] * ============ [ 2008-01-02 ] ==
 ```
 => / ← Back
 # Shorewall - фреймворк для построения фаерволла
@@ -24,81 +24,81 @@ shorewall
 
 	$ ls /etc/shorewall
 
-|-- Makefile
+	|-- Makefile
 
-|-- README.txt
+	|-- README.txt
 
-|-- accounting
+	|-- accounting
 
-|-- actions
+	|-- actions
 
-|-- blacklist
+	|-- blacklist
 
-|-- capabilities
+	|-- capabilities
 
-|-- continue
+	|-- continue
 
-|-- ecn
+	|-- ecn
 
-|-- hosts
+	|-- hosts
 
-|-- init
+	|-- init
 
-|-- initdone
+	|-- initdone
 
-|-- interfaces
+	|-- interfaces
 
-|-- ipsec
+	|-- ipsec
 
-|-- ipsecvpn
+	|-- ipsecvpn
 
-|-- maclist
+	|-- maclist
 
-|-- masq
+	|-- masq
 
-|-- modules
+	|-- modules
 
-|-- nat
+	|-- nat
 
-|-- netmap
+	|-- netmap
 
-|-- params
+	|-- params
 
-|-- policy
+	|-- policy
 
-|-- providers
+	|-- providers
 
-|-- proxyarp
+	|-- proxyarp
 
-|-- route_rules
+	|-- route_rules
 
-|-- routestopped
+	|-- routestopped
 
-|-- rules
+	|-- rules
 
-|-- shorewall.conf
+	|-- shorewall.conf
 
-|-- start
+	|-- start
 
-|-- started
+	|-- started
 
-|-- stop
+	|-- stop
 
-|-- stopped
+	|-- stopped
 
-|-- tcclasses
+	|-- tcclasses
 
-|-- tcdevices
+	|-- tcdevices
 
-|-- tcrules
+	|-- tcrules
 
-|-- tos
+	|-- tos
 
-|-- tunnel
+	|-- tunnel
 
-|-- tunnels
+	|-- tunnels
 
-`-- zones
+	`-- zones
 
 ```
 
@@ -110,13 +110,13 @@ shorewall
 
 
 
-ls /etc/shorewall/providers
+	ls /etc/shorewall/providers
 
-#NAME   NUMBER  MARK    DUPLICATE       INTERFACE       GATEWAY         OPTIONS         COPY
+	#NAME   NUMBER  MARK    DUPLICATE       INTERFACE       GATEWAY         OPTIONS         COPY
 
-skynet     1       1       main            eth0         212.*.*.*   	track,balance   eth1
+	skynet     1       1       main            eth0         212.*.*.*   	track,balance   eth1
 
-okasama    2       2       main            eth2         94.*.*.*   		track,balance   eth1
+	okasama    2       2       main            eth2         94.*.*.*   		track,balance   eth1
 
 ```
 
@@ -160,17 +160,17 @@ COPY
 
 /etc/shorewall/tcrules (http://www.shorewall.net/manpages/shorewall-tcrules.html)
 
-#MARK   SOURCE          DEST            PROTO   DEST    SOURCE  USER    TEST    LENGTH  TOS
+	#MARK   SOURCE          DEST            PROTO   DEST    SOURCE  USER    TEST    LENGTH  TOS
 
-#                                               PORT(S) PORT(S)
+	#                                               PORT(S) PORT(S)
 
-1:P    eth1             0.0.0.0/0       tcp     25
+	1:P    eth1             0.0.0.0/0       tcp     25
 
-1      $FW             0.0.0.0/0       tcp     25
+	1      $FW             0.0.0.0/0       tcp     25
 
-1:P    eth1             0.0.0.0/0       tcp     22
+	1:P    eth1             0.0.0.0/0       tcp     22
 
-1      $FW             0.0.0.0/0       tcp     22
+	1      $FW             0.0.0.0/0       tcp     22
 
 ```
 

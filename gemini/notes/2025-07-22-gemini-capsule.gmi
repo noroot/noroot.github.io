@@ -1,0 +1,357 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ============ [ 2025-07-22 ] ==
+```
+=> / ← Back
+# Gemini, Gopher and and SmolNet
+
+Perhaps there are no more reason to be on  modern Web internet. It was interesting before it become unusable.
+
+So I’ve to continue journey to alternative so called small Internet (smolnet). If don’t know anything about it then its bad for you. This layer of internet was here before Web. There are a lot of protocols today, but most notable and surived are gopher and gemini protocols.
+
+I wrote my first Gopher browser in Borland Delphi 4 somewhere in 1999 without even knowing what it is, by just moving components on the Delphi form builder :)
+
+Lets focus on most used smolNet protocols today:
+
+## Gopher
+
+> The Internet Gopher protocol is designed for distributed document search and retrieval.  This document describes the protocol, lists some of the implementations currently available, and has an overview of how to implement new client and server applications.  This document is adapted from the basic Internet Gopher protocol document first issued by the Microcomputer Center at the University of Minnesota in 1991.
+
+```
+
+|---------------|-------------------------|
+
+| Specification | RFC 1436                |
+
+|---------------|-------------------------|
+
+| Scheme        | gopher://               |
+
+|---------------|-------------------------|
+
+| Port number   | 70                      |
+
+|---------------|-------------------------|
+
+| File format   | Gopher menu, plain text |
+
+|---------------|-------------------------|
+
+| TLS           | With gophers://         |
+
+|---------------|-------------------------|
+
+| Encoding      | ASCII                   |
+
+|---------------|-------------------------|
+
+| Clients       | a lot                   |
+
+|---------------|-------------------------|
+
+| Servers       | a lot                   |
+
+|---------------|-------------------------|
+
+```
+
+The Gopher protocol is one of the early Internet protocols (released in 1991 at the University of Minnesota) designed for distributing, searching, and retrieving documents over a network. It predates the modern web and was widely used before HTTP/HTML took over.
+
+Unlike the Web, which quickly became graphical and complex, Gopher remains text-centric, hierarchical, and lightweight, which is why it’s still interesting in the context of minimal and alternative networks.
+
+### How Gopher Works
+
+* Client–server model: A Gopher client connects to a Gopher server over TCP (default port 70).
+
+* Menu-based navigation: Instead of free-form hyperlinks like the Web, Gopher content is structured as menus (directory-like listings). Each item has a type and a selector (path to the resource).
+
+* Plain-text protocol: Communication between client and server is very simple - a request is just a text line (selector string), and the response is either:
+
+* A menu (list of items)
+
+* A file (text, binary, image, etc.)
+
+* A search query response
+
+This makes it extremely low-bandwidth and easy to implement.
+
+Key Features
+
+* Hierarchical structure, - resources are organised into nested menus (like directories).
+
+* Provides an intuitive way to explore content without a search engine.
+
+* Typed resources, - each menu item begins with a type code (single character) to indicate the kind of resource (e.g., text, binary, search).
+
+Common types:
+
+0 – Plain text file
+
+1 – Menu (directory)
+
+7 – Search query
+
+9 – Binary file
+
+g – GIF image
+
+I – Generic image
+
+* Search integration, - Gopher supported search services (usually full-text) via type 7 items — you submit a query, and the server returns a list of matching items.
+
+* Lightweight, simple plain-text requests and responses make it fast and low-resource, even on very old hardware or slow connections.
+
+Works great over dial-up speeds and on embedded/retro devices.
+
+* Easy to self-host, - setting up a Gopher server is trivial (many are just a few hundred lines of code).
+
+Makes it appealing for personal publishing, especially in SmolNet and tildeverse communities.
+
+* Long lifespan & stability, because it hasn’t changed much since the ’90s, Gopher content remains accessible decades later, unlike modern web apps that quickly break.
+
+Example of Gopher menu:
+
+```
+
+TypeCharDisplayName<TAB>Selector<TAB>Host<TAB>Port
+
+```
+
+```
+
+1About This Server    /about    example.org    70
+
+0Readme.txt           /readme   example.org    70
+
+```
+
+Why It’s Still Used
+
+* Retrocomputing & minimalism: Perfect for old computers and text-based interfaces.
+
+* Decentralisation: No need for heavy infrastructure; one server + one text file = a working site.
+
+* No ads, no tracking: Pure information sharing.
+
+* Part of SmolNet: Often used alongside Gemini as a simpler alternative to the Web.
+
+Modern Gopher Clients
+
+* Lynx (text-mode web browser, still supports Gopher)
+
+* Bombadillo (modern terminal Gopher/Gemini client)
+
+* Gopher Client Plugins (for Firefox, Chrome via extensions)
+
+* Overbite (Gopher-to-HTTP proxy)
+
+* cURL (supports Gopher links)
+
+* Lagrange (supports Gemini and Gopher)
+
+## Gemini Protocol
+
+> Gemini is an application-layer internet communication protocol for accessing remote documents, similar to HTTP and Gopher. It comes with a special document format, commonly referred to as “gemtext”, which allows linking to other documents. Started by a pseudonymous person known as Solderpunk, the protocol is being finalized collaboratively and as of October 2022, has not been submitted to the IETF organization for standardization.
+
+Gemini is a lightweight, text-first internet protocol introduced in 2019 by Solderpunk. It was designed as a middle ground between Gopher and the modern Web — more expressive than Gopher but far simpler and less bloated than HTTP.
+
+Its goals are:
+
+* Simplicity: Small, easily implemented protocol.
+
+* Privacy: No tracking, cookies, or scripts.
+
+* Readability: Focus on content, not layout.
+
+* Low overhead: Minimal bandwidth use, great for slow connections and older devices.
+
+Gemini runs over TLS by default (port 1965), ensuring encrypted connections by design.
+
+### Gemini Key Features
+
+* Secure by default
+
+* All connections use TLS (unlike Gopher). No plaintext option.
+
+* No cookies, sessions, or tracking — privacy is built-in.
+
+* Minimalist content format
+
+* Uses Gemtext (.gmi), a super-simple Markdown-like syntax.
+
+* Content is mostly text with optional links, preformatted blocks, and basic headings.
+
+* No JavaScript, CSS, or complex rendering.
+
+* Small, simple protocol
+
+* A Gemini request is just a single line:
+
+    gemini://example.com/resource\r\n
+
+A Gemini response starts with a status code (2-digit) and a MIME type. Example:
+
+```
+
+20 text/gemini\r\n
+
+```
+
+* Human-scale design
+
+* Pages are lightweight and distraction-free.
+
+* Designed for reading, not for flashy design or heavy web apps.
+
+* Easy to self-host
+
+* Setting up a Gemini capsule (server) is simple. Many implementations fit in <1000 lines of code.
+
+* Perfect for personal publishing, digital zines, and community spaces.
+
+Gem text example:
+
+```
+
+# My Gemini Page
+
+Welcome to my capsule!
+
+=> /about About this site
+
+=> gemini://gemini.circumlunar.space Project Gemini
+
+```
+
+Status Codes (like HTTP but simpler):
+
+20 – Success (content follows)
+
+30 – Redirect
+
+40 – Temporary failure
+
+50 – Permanent failure
+
+60 – Client certificate required (optional authentication)
+
+#### Why Use Gemini ?
+
+* Privacy-first: No ads, no analytics, no surveillance.
+
+* Focused on content: Perfect for blogs, phlogs, manifestos, and small communities.
+
+* Long-term accessibility: Pages remain usable even decades later, like Gopher.
+
+* SmolNet-friendly: Runs well on low-power devices, retro machines, or text-based terminals.
+
+```
+
+|---------------|------------------------------------------------------------|
+
+| Name          | Gemini                                                     |
+
+|---------------|------------------------------------------------------------|
+
+| Specification | https://geminiprotocol.net/docs/protocol-specification.gmi |
+
+|---------------|------------------------------------------------------------|
+
+| Scheme        | gemini://                                                  |
+
+|---------------|------------------------------------------------------------|
+
+| Port number   | 1695                                                       |
+
+|---------------|------------------------------------------------------------|
+
+| File format   | Gopher menu, plain text                                    |
+
+|---------------|------------------------------------------------------------|
+
+| TLS           | Default                                                    |
+
+|---------------|------------------------------------------------------------|
+
+| Encoding      | ASCII                                                      |
+
+|---------------|------------------------------------------------------------|
+
+| Clients       | a lot                                                      |
+
+|---------------|------------------------------------------------------------|
+
+| Servers       | a lot                                                      |
+
+|---------------|------------------------------------------------------------|
+
+```
+
+### Comparison Gemini and Gopher
+
+```
+
+|------------|--------------------------------------|-----------------------------------------------|
+
+| Feature    | Gopher                               | Gemini                                        |
+
+|------------|--------------------------------------|-----------------------------------------------|
+
+| Encryption | No                                   | Yes (TLS only)                                |
+
+| Content    | Plain text + menus                   | Gemtext (Markdown-like)                       |
+
+| Port       | 70                                   | 1965                                          |
+
+| Complexity | Very low                             | Low                                           |
+
+| Multimedia | Minimal (but anything can be served) | Mimimal (picture can be displayed inside gmi) |
+
+| Use Case   | Directory-style browsing             | Reading focus, makrdown like publishing       |
+
+|------------|--------------------------------------|-----------------------------------------------|
+
+```
+
+There are a lot of smolnet protocols, you can find a lot of them via links from this article.
+
+## What to use them for and why ?
+
+* Search for Text and files, - a lot of files and text from pre internet era can be found on Gopher.
+
+* Have a conversation on gemini boards, - since that text is a main medium people must use text to transfer their thoughts, which makes people who are using textual based network more prone to write proper content.
+
+* Enjoy smolnet unique sites, smolnet sites and content usualy more full, unique, and enjoyable
+
+* Minimalistic approach to technology, - you would be surpised who much modern internet is bloated.
+
+## References
+
+=> https://en.wikipedia.org/wiki/Gopher(protocol) https://en.wikipedia.org/wiki/Gopher(protocol)
+
+=> gopher://gopher.floodgap.com/ gopher://gopher.floodgap.com/
+
+=> https://en.wikipedia.org/wiki/Gemini(protocol) https://en.wikipedia.org/wiki/Gemini(protocol)
+
+=> https://geminiprotocol.net/docs/protocol-specification.gmi https://geminiprotocol.net/docs/protocol-specification.gmi
+
+=> https://github.com/makew0rld/amfora https://github.com/makew0rld/amfora
+
+=> https://wiki.archiveteam.org/index.php/SmolNet SmolNet
+
+=> https://github.com/skyjake/lagrange Lagrange
+
+=> gemini://geminiprotocol.net/docs/faq.gmi Gemini FAQ
+
+## Hint
+
+Donwload Largange because it supports both protocols, and its graphical.
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

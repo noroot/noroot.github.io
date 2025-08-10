@@ -5,7 +5,7 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ==============================
+== [Gemini capsule] * ============ [ 2023-01-14 ] ==
 ```
 => / ← Back
 # How I manage files v1 DRAFT
@@ -36,21 +36,21 @@ I started with formulating problems and requirements:
 
 The list of problems to be solved:
 
-Namespacing, because you need separate files from work, to personal, and also by types, e.g. photos from code
+* Namespacing, because you need separate files from work, to personal, and also by types, e.g. photos from code
 
-Synchronization, there are many solutions on the free and proprietary market which are offers something, but all of it is not convenient for my way for various reasons
+* Synchronization, there are many solutions on the free and proprietary market which are offers something, but all of it is not convenient for my way for various reasons
 
 Between different OS
 
-Backup
+* Backup
 
 ### Requirements:
 
-Full control and offline access
+* Full control and offline access
 
-Easy syncing
+* Easy syncing
 
-Access from 3rd party devices on demand
+* Access from 3rd party devices on demand
 
 First, we need structure and here I came with:
 
@@ -58,17 +58,17 @@ First, we need structure and here I came with:
 
 Projects/ - this is the root of the Structure
 
-Personal/ - this is for personal use files and projects, personal means it's your own
+  Personal/ - this is for personal use files and projects, personal means it's your own
 
-Business/ - this is for business-related files and projects
+  Business/ - this is for business-related files and projects
 
-Shared/ - this is for sharing with other ppl files and projects, not which are not related to business, so for Friends, and family
+  Shared/ - this is for sharing with other ppl files and projects, not which are not related to business, so for Friends, and family
 
-Knowledge/
+  Knowledge/
 
-Applications/
+  Applications/
 
-Library/
+  Library/
 
 ```
 
@@ -80,41 +80,41 @@ Lets deep dive into Personal and see some examples in detail
 
 - Personal
 
-- ProjectName1
+  - ProjectName1
 
-- Artifacts
+    - Artifacts
 
-- Documents
+    - Documents
 
-- src
+    - src
 
-- README.org
+    - README.org
 
-...
+  ...
 
-- ProjectNameN
+  - ProjectNameN
 
-- Artifacts
+    - Artifacts
 
-- Documents
+    - Documents
 
-- src
+    - src
 
-- README.org
+    - README.org
 
 ```
 
 This is the template I am using to configure the new project Convention is simple, every name starts with a Capital letter and uses CamelCase notation, which is easily viewable and maintainable later.
 
-Documents used for documents files, by documents I mean real life documents, files which have jural meaning.
+* Documents used for documents files, by documents I mean real life documents, files which have jural meaning.
 
-Artifacts are used for everything which is not a jural document file, so it goes for everything else.
+* Artifacts are used for everything which is not a jural document file, so it goes for everything else.
 
-src is started with a small letter for Unix-way, it’s better to handle in repositories and comply with wide community
+* src is started with a small letter for Unix-way, it’s better to handle in repositories and comply with wide community
 
 standards as the directory contains source code.
 
-README.org - readme file describing the project
+* README.org - readme file describing the project
 
 Each other type of directory (e.g. Namespaces) has the same structure.
 

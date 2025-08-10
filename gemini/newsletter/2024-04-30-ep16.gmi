@@ -1,0 +1,111 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ============ [ 2024-08-10 ] ==
+```
+=> / ← Back
+# EP-16 FalseTrue Digest
+
+## Intro
+
+Hello everybody, I hope you’re doing well, here is an update for in FT episodes, this one is one starts with new updated format, - I’ll share little more personal information, and write intro each time to cover what is happened during week.
+
+Let’s start. First, I switched from Jekyll to Bridgetown. Here’s the note about it:
+
+=> https://falsetrue.io/updates/2024/06/22/switched-to-bridgetown/ https://falsetrue.io/updates/2024/06/22/switched-to-bridgetown
+
+. I had grown tired of
+
+Jekyll’s
+
+complexity in areas that shouldn’t be complicated, so I started looking for a new engine. I didn’t want to switch to Hugo because I wanted to stay with
+
+Ruby
+
+, so I found Bridgetown:
+
+=> http://bridgetownrb.com http://bridgetownrb.com
+
+. The migration itself was very easy; I even managed to rewrite the gallery plugin in about two hours. You can see the gallery results here:
+
+=> https://falsetrue.io/photography/ https://falsetrue.io/photography/
+
+.
+
+I also switched to DigitalOcean and have deployed the blog in multiple places: self-hosted and GitHub Pages ->
+
+=> https://noroot.github.io https://noroot.github.io
+
+As for hardware news, I bought this beautiful keyboard. It’s mechanical, and I’ve modded it with O-rings and silicone grease, so it sounds smooth.
+
+=> /assets/images/keyboard.jpeg Image
+
+ATTACK SHARK K86 Wireless Mechanical Keyboard
+
+If you want to know about other hardware stuff let me know in the comments. and yeah if you see this bearded gentleman hugging keyboard inside this little screen on a photo, let me know if you know who he is.
+
+By the way, I’ve also switched the commenting system from Disqus to a self-hosted solution, so you can leave comments the old-school way.
+
+I continue to work on “Blueprint” — a book about software development, similar to a body of knowledge type of book. If you find it interesting, let me know by subscribing.
+
+=> https://catwatchdog.com/blueprint https://catwatchdog.com/blueprint
+
+=> /images/photographycopyrighted/Animals/IMG0925.jpg Image
+
+Sleepy Black cat
+
+I keep this black cat here so you can safely cross over to the episodes links section as usual
+
+## Stories
+
+* Corporate opensource is dead - It’s done really, because it only relied on pioneer enthusiasts who are rare now.
+
+* Opensourcing DOS 4.0 - This enthusiasts are not done yet. Interesting project about opensourcing the DOS 4.0, who knows why but its interesting to look into source code.
+
+* 24 of April was JS Naked day, and it stands for “The web should work without JavaScript.” - It was a day without JavaScript.
+
+* Notes on privacy and data collection of Matrix.org -
+
+The Matrix protocol and its clients are rotten; you can use them for convenience, but not for privacy—much like Telegram.
+
+* SiliconCompiler Design Gallery - design gallery of various CPU architectures - This is really interesting, CPU architectures blueprints.
+
+## Privacy
+
+* Veilid - framework focused on decentralization and privacy made by CultOfDeadCow (if it rings the bell for you.)
+
+* Startup your own ISP - how to start your own ISP
+
+## AI
+
+* The AI lie - another one arguing about AI and Art. (long read)
+
+* Flux - new AI models which better that StableDiffusion
+
+## Development
+
+* Ruby might be fast than you think - Ruby is fast, if you know how to apply it properly.
+
+* BridgetownRB - the blog engine I’ve switched on.
+
+## IndieWeb
+
+* Fediverse Party - to be aware about federated indie internet
+
+## Software
+
+* Superfile - new terminal filemanager - file manager writting with Go, probably nobody will use it, but it interesting to look into source code.
+
+* Nerdfont - some font substitues - collection of good fonts for terminals and text editors. (I’m still using Terminus btw and found good substituion for it as your may have noticed.)
+
+* docker-phobia - analyzer for docker images - tool to debug docker containers
+
+That’s it for this episode. Comment and share.
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

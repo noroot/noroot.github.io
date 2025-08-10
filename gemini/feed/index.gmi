@@ -5,406 +5,238 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ==============================
+== [Gemini capsule] * ============ [ 2025-08-10 ] ==
 ```
 => / ← Back
 # Feed
 
-=> /categories/share share
+* share
+        tales
+11-OCT-2024 - Рассказ - "Нужно продолжать работать"
 
-=> /categories/tales tales
+    #tale
+    #ru
 
-11-OCT-2024 -
+* share
+        comment
+30-SEP-2024 - My comment on linkedin collected almost thousand of likes
 
-=> /share/tales/2024/10/11/crysis-tale/ Рассказ - "Нужно продолжать работать"
+    #software
+    #linkedin
+
+* share
+        note
+15-SEP-2024 - EuRuKo 2024 Review
 
-=> /tags/tale #tale
+    #review
+    #event
+    #ruby
 
-=> /tags/ru #ru
+* share
+        comment
+10-SEP-2024 - Agile manifesto failure
 
-=> /categories/share share
+    #agile
+    #linkedin
 
-=> /categories/comment comment
+* share
+        comment
+31-AUG-2024 - Why big company experience doesn't always translate to practical skills
 
-30-SEP-2024 -
+    #humanity
+    #modernity
+    #books
+    #linkedin
 
-=> /share/comment/2024/09/30/linked-comment-rush/ My comment on linkedin collected almost thousand of likes
+* share
+18-AUG-2024 - Debian turned 31 years old
 
-=> /tags/software #software
+    #linux
+    #scene
+    #history
+    #debian
 
-=> /tags/linkedin #linkedin
+* share
+        note
+ 9-AUG-2024 - WARNING: Scam attempt
 
-=> /categories/share share
+    #security
+    #scam
+    #expose
 
-=> /categories/note note
+* share
+        note
+ 8-AUG-2024 - Lion's gate
 
-15-SEP-2024 -
+    #research
+    #esoteric
 
-=> /share/note/2024/09/15/euruko2024-review/ EuRuKo 2024 Review
+* share
+        link
+ 3-AUG-2024 - Research: We Look Like Our Names: The Manifestation of Name Stereotypes in Facial Appearance
 
-=> /tags/review #review
+    #research
+    #esoteric
 
-=> /tags/event #event
+* share
+        video
+ 2-AUG-2024 - GNOME bans Bryan Lunduke drama
 
-=> /tags/ruby #ruby
+    #linux
+    #foss
+    #scene
+    #drama
 
-=> /categories/share share
+* share
+        video
+ 1-AUG-2024 - Sharp Zaurus SL-C1000 by Janus Cycle
 
-=> /categories/comment comment
+    #linux
+    #legacy
+    #hardware
 
-10-SEP-2024 -
+* share
+        news
+24-JUN-2024 - Julian Assange is free
 
-=> /share/comment/2024/09/10/agile-manifesto-failure/ Agile manifesto failure
+    #person
+    #hacker
+    #scene
 
-=> /tags/agile #agile
+* share
+        pic
+23-JUN-2024 - Humor: Add comma's to your passwords
 
-=> /tags/linkedin #linkedin
+    #sec
+    #humor
+    #meme
 
-=> /categories/share share
+* share
+        link
+ 6-JAN-2024 - Baudrillard Now Volume 5 Issue 1
 
-=> /categories/comment comment
+    #person
+    #journal
+    #sci
+    #baudrillard
 
-31-AUG-2024 -
+* share
+        link
+ 7-DEC-2023 - Google's new AI
 
-=> /share/comment/2024/08/31/big-companies-hoax/ Why big company experience doesn't always translate to practical skills
+    #ai
+    #link
 
-=> /tags/humanity #humanity
+* share
+        video
+ 7-DEC-2023 - David Goggins - How To Master Your Life (4K) | Modern Wisdom Podcast 577
 
-=> /tags/modernity #modernity
+    #person
+    #video
 
-=> /tags/books #books
+* share
+        link
+26-AUG-2023 - Benchmarks code for CPU testing
 
-=> /tags/linkedin #linkedin
+    #dev
+    #utils
+    #code
 
-=> /categories/share share
+* share
+16-AUG-2023 - Debian 30 years behind
 
-18-AUG-2024 -
+    #linux
+    #scene
+    #history
+    #debian
 
-=> /share/2024/08/18/debian-31/ Debian turned 31 years old
+* share
+        note
+28-JUN-2023 - Ancient english helps closing PRs // Github
 
-=> /tags/linux #linux
+    #github
 
-=> /tags/scene #scene
+* share
+        comment
+ 5-MAR-2023 - Agile clown show // Linkedin
 
-=> /tags/history #history
+    #linkedin
+    #agile
+    #rant
 
-=> /tags/debian #debian
+* share
+        link
+28-JAN-2023 - ChangeLog #524 Good explanation of mainframe is
 
-=> /categories/share share
+    #mainframe
+    #cobol
+    #podcast
 
-=> /categories/note note
+* share
+        link
+18-JAN-2023 - Ruby 3.2’s YJIT is Production-Ready
 
-9-AUG-2024 -
+    #dev
+    #ruby
 
-=> /share/note/2024/08/09/scam-attempt/ WARNING: Scam attempt
+* share
+        link
+17-JAN-2023 - Unified Kernel Image explanation
 
-=> /tags/security #security
+    #linux
+    #kernel
+    #link
 
-=> /tags/scam #scam
+* share
+ 8-JAN-2023 - Ken Block(43) R.I.P.
 
-=> /tags/expose #expose
+    #person
+    #cars
+    #rip
 
-=> /categories/share share
+* share
+        link
+30-OCT-2022 - Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333
 
-=> /categories/note note
+    #podcast
+    #ai
+    #humanity
 
-8-AUG-2024 -
+* share
+        link
+25-OCT-2022 - Balaji Srinivasan: How to Fix Government, Twitter, Science, and the FDA | Lex Fridman Podcast #331
 
-=> /share/note/2024/08/08/lions-gate/ Lion's gate
+    #podcast
+    #crypto
+    #humanity
 
-=> /tags/research #research
+* share
+        link
+22-OCT-2022 - 90DaysOfDevOps
 
-=> /tags/esoteric #esoteric
+    #tools
+    #link
 
-=> /categories/share share
+* share
+        link
+22-OCT-2022 - FreeBSD Quarterly Status Report Third Quarter 2022
 
-=> /categories/link link
+    #bsd
+    #report
+    #link
 
-3-AUG-2024 -
+* share
+        note
+11-DEC-2021 - QOI lossless image comperession proposal
 
-=> /share/link/2024/08/03/names-are-predictable/ Research: We Look Like Our Names: The Manifestation of Name Stereotypes in Facial Appearance
+    #algo
 
-=> /tags/research #research
+* share
+        comment
+21-MAR-2020 - Webmention is POSSE compliant mechanism for commenting
 
-=> /tags/esoteric #esoteric
-
-=> /categories/share share
-
-=> /categories/video video
-
-2-AUG-2024 -
-
-=> /share/video/2024/08/02/lunduke-gnome-drama/ GNOME bans Bryan Lunduke drama
-
-=> /tags/linux #linux
-
-=> /tags/foss #foss
-
-=> /tags/scene #scene
-
-=> /tags/drama #drama
-
-=> /categories/share share
-
-=> /categories/video video
-
-1-AUG-2024 -
-
-=> /share/video/2024/08/01/sharp-zaurus/ Sharp Zaurus SL-C1000 by Janus Cycle
-
-=> /tags/linux #linux
-
-=> /tags/legacy #legacy
-
-=> /tags/hardware #hardware
-
-=> /categories/share share
-
-=> /categories/news news
-
-24-JUN-2024 -
-
-=> /share/news/2024/06/24/assange-is-free/ Julian Assange is free
-
-=> /tags/person #person
-
-=> /tags/hacker #hacker
-
-=> /tags/scene #scene
-
-=> /categories/share share
-
-=> /categories/pic pic
-
-23-JUN-2024 -
-
-=> /share/pic/2024/06/23/csv-breach/ Humor: Add comma's to your passwords
-
-=> /tags/sec #sec
-
-=> /tags/humor #humor
-
-=> /tags/meme #meme
-
-=> /categories/share share
-
-=> /categories/link link
-
-6-JAN-2024 -
-
-=> /share/link/2024/01/06/baudrillard-now-vol5-1/ Baudrillard Now Volume 5 Issue 1
-
-=> /tags/person #person
-
-=> /tags/journal #journal
-
-=> /tags/sci #sci
-
-=> /tags/baudrillard #baudrillard
-
-=> /categories/share share
-
-=> /categories/link link
-
-7-DEC-2023 -
-
-=> /share/link/2023/12/07/google-gemini/ Google's new AI
-
-=> /tags/ai #ai
-
-=> /tags/link #link
-
-=> /categories/share share
-
-=> /categories/video video
-
-7-DEC-2023 -
-
-=> /share/video/2023/12/07/always-goggins/ David Goggins - How To Master Your Life (4K) | Modern Wisdom Podcast 577
-
-=> /tags/person #person
-
-=> /tags/video #video
-
-=> /categories/share share
-
-=> /categories/link link
-
-26-AUG-2023 -
-
-=> /share/link/2023/08/26/benchmarks/ Benchmarks code for CPU testing
-
-=> /tags/dev #dev
-
-=> /tags/utils #utils
-
-=> /tags/code #code
-
-=> /categories/share share
-
-16-AUG-2023 -
-
-=> /share/2023/08/16/debian-30/ Debian 30 years behind
-
-=> /tags/linux #linux
-
-=> /tags/scene #scene
-
-=> /tags/history #history
-
-=> /tags/debian #debian
-
-=> /categories/share share
-
-=> /categories/note note
-
-28-JUN-2023 -
-
-=> /share/note/2023/06/28/ancient-english-to-pr/ Ancient english helps closing PRs // Github
-
-=> /tags/github #github
-
-=> /categories/share share
-
-=> /categories/comment comment
-
-5-MAR-2023 -
-
-=> /share/comment/2023/03/05/agileclownshow/ Agile clown show // Linkedin
-
-=> /tags/linkedin #linkedin
-
-=> /tags/agile #agile
-
-=> /tags/rant #rant
-
-=> /categories/share share
-
-=> /categories/link link
-
-28-JAN-2023 -
-
-=> /share/link/2023/01/28/changelog-mainframe/ ChangeLog #524 Good explanation of mainframe is
-
-=> /tags/mainframe #mainframe
-
-=> /tags/cobol #cobol
-
-=> /tags/podcast #podcast
-
-=> /categories/share share
-
-=> /categories/link link
-
-18-JAN-2023 -
-
-=> /share/link/2023/01/18/ruby-yjit-3.2/ Ruby 3.2’s YJIT is Production-Ready
-
-=> /tags/dev #dev
-
-=> /tags/ruby #ruby
-
-=> /categories/share share
-
-=> /categories/link link
-
-17-JAN-2023 -
-
-=> /share/link/2023/01/17/brave-new-trusted-kernel/ Unified Kernel Image explanation
-
-=> /tags/linux #linux
-
-=> /tags/kernel #kernel
-
-=> /tags/link #link
-
-=> /categories/share share
-
-8-JAN-2023 -
-
-=> /share/2023/01/08/ken-block-rip/ Ken Block(43) R.I.P.
-
-=> /tags/person #person
-
-=> /tags/cars #cars
-
-=> /tags/rip #rip
-
-=> /categories/share share
-
-=> /categories/link link
-
-30-OCT-2022 -
-
-=> /share/link/2022/10/30/lex-fridman-333/ Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333
-
-=> /tags/podcast #podcast
-
-=> /tags/ai #ai
-
-=> /tags/humanity #humanity
-
-=> /categories/share share
-
-=> /categories/link link
-
-25-OCT-2022 -
-
-=> /share/link/2022/10/25/lex-fridman-balaji-srinivasan/ Balaji Srinivasan: How to Fix Government, Twitter, Science, and the FDA | Lex Fridman Podcast #331
-
-=> /tags/podcast #podcast
-
-=> /tags/crypto #crypto
-
-=> /tags/humanity #humanity
-
-=> /categories/share share
-
-=> /categories/link link
-
-22-OCT-2022 -
-
-=> /share/link/2022/10/22/devoops90days/ 90DaysOfDevOps
-
-=> /tags/tools #tools
-
-=> /tags/link #link
-
-=> /categories/share share
-
-=> /categories/link link
-
-22-OCT-2022 -
-
-=> /share/link/2022/10/22/freebsd-third-quarter-status-report/ FreeBSD Quarterly Status Report Third Quarter 2022
-
-=> /tags/bsd #bsd
-
-=> /tags/report #report
-
-=> /tags/link #link
-
-=> /categories/share share
-
-=> /categories/note note
-
-11-DEC-2021 -
-
-=> /share/note/2021/12/11/qoi-lossless/ QOI lossless image comperession proposal
-
-=> /tags/algo #algo
-
-=> /categories/share share
-
-=> /categories/comment comment
-
-21-MAR-2020 -
-
-=> /share/comment/2020/03/21/webmention-test/ Webmention is POSSE compliant mechanism for commenting
-
-=> /tags/webmentions #webmentions
-
-=> /tags/microformat #microformat
+    #webmentions
+    #microformat
 ```
      ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
 ```

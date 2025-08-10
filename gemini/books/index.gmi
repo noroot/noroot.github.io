@@ -1,0 +1,45 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ============ [ 2025-08-10 ] ==
+```
+=> / ← Back
+# Books
+=> 2009-01-01-gibson-burning-chrome.gmi 2009-01-01 W.Gibson - Burning Chrome
+=> 2009-01-01-gibson-neuromancer.gmi 2009-01-01 W.Gibson - Neuromancer
+=> 2009-01-01-red-dragon-book.gmi 2009-01-01 Compilers: Principles, Techniques, and Tools
+=> 2015-01-01-jordan-peterson-maps-of-meaning.gmi 2009-01-01 Jordan B. Peterson: Maps of Meaning: The Architecture of Belief
+=> 2012-03-01-jean-baudrillard-simulacra-et-simulation.gmi 2012-03-01 Jean Baudrillard: Simulacra et Simulation
+=> 2012-04-01-jean-baudrillard-la-societe-de-consomation.gmi 2012-04-01 Jean Baudrillard: La Societe de Consomation
+=> 2014-01-01-castaneda-fire-within.gmi 2014-01-01 Carlos Castaneda: Fire Form Within
+=> 2014-01-01-castaneda-journey-to-ixtlan.gmi 2014-01-01 Carlos Castaneda: Journey To Ixtlan
+=> 2014-01-01-castaneda-power-of-silence.gmi 2014-01-01 Carlos Castaneda: Power of Silence
+=> 2014-01-01-castaneda-second-ring-of-power.gmi 2014-01-01 Carlos Castaneda: Second Ring of Power
+=> 2014-01-01-castaneda-separate-reality.gmi 2014-01-01 Carlons Castaneda: A Separate Reality
+=> 2014-01-01-castaneda-teaching-of-don-juan-yaqi.gmi 2014-01-01 Carlos Castaneda: Teaching of Yaqi
+=> 2014-01-01-castaneda-teachings-of-don-juan.gmi 2014-01-01 Carlos Castaneda: Teachings of Don Juan
+=> 2014-01-01-castaneda-wheeloftime.gmi 2014-01-01 Carlos Castaneda: Wheel of Time
+=> 2016-10-30-lean-startup.gmi 2016-10-30 Книга: Lean Startup
+=> 2017-01-01-raydalio-principles.gmi 2017-01-01 Ray Dalio: Principles
+=> 2017-01-01-ruiz-mastery-of-self.gmi 2017-01-01 Don Miguel Ruiz: Master of Self
+=> 2017-06-05-not-giving-a-fuck.gmi 2017-06-05 Книга: The Subtle Art of Not Giving A Fuck
+=> 2017-09-12-extreme-ownership.gmi 2017-09-12 Книга: Extreme Ownership: How U.S. Navy SEALs Lead and Win
+=> 2018-01-01-rober-green-48-laws-of-power.gmi 2018-01-01 Robert Green: 48 Laws of Power
+=> 2018-06-01-robert-green-33-strategies-of-war.gmi 2018-06-01 Robert Green: 33 Strategies of War
+=> 2018-06-23-unfuck-yourself.gmi 2018-06-23 Книга: Unfuck yourself
+=> 2018-12-21-bullshit-jobs.gmi 2018-12-21 Книга: Bullshit Jobs: A Theory
+=> 2019-01-01-marcus-aurelius-alone-withmyself.gmi 2019-01-01 Марк Аврелий: На едине с собой
+=> 2019-01-01-marcus-aurelius-meditations.gmi 2019-01-01 Marcus Aurelius: Meditations
+=> 2019-02-01-nietzsche-ecce-homo.gmi 2019-02-01 Ницше: Ecce Homo
+=> 2019-07-29-12-rules-of-life.gmi 2019-07-29 Книга: 12 Rules of Life: An Antidote to Chaos
+=> 2019-12-08-four-agreements.gmi 2019-12-08 Book: The Four Agreements
+=> 2022-01-01-malcev-mastero-posledni-prorok-evropi.gmi 2022-01-01 Олег Мальцев: Маестро Последний Пророк Европы
+=> 2024-07-07-andrew-morua-openletter.gmi 2024-07-07 Андрея Моруа - Открытое письмо молодому человеку о науке жить. Искусство беседы
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

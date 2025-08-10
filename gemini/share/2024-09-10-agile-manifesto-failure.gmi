@@ -5,14 +5,14 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ==============================
+== [Gemini capsule] * ============ [ 2024-09-10 ] ==
 ```
 => / ← Back
 # Agile manifesto failure
 
 > My favourite part here is: “Working software over comprehensive documentation.” People often interpret this as “We don’t need documentation, we need working software,” which can lead to a situation where they end up with neither documentation nor working software. When a new developer comes along and asks, “Where’s the documentation I can quickly review?” they are usually pointed back to that initial quote, with the added comment, “We are agile”. This demonstrates how the meaning of highly compressed quotes can be blindly extracted, often leading to a completely different, almost opposite interpretation.
 
-=> https://www.linkedin.com/posts/michaelkuesters_agile-agile-softwaredevelopment-activity-7238922044107558914-iAtv?utm_source=share&utm_medium=member_desktop Discussion on LinkedIn
+=> https://www.linkedin.com/posts/michaelkuestersagile-agile-softwaredevelopment-activity-7238922044107558914-iAtv?utmsource=share&utmmedium=memberdesktop Discussion on LinkedIn
 
 ```
      ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░

@@ -5,7 +5,7 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ==============================
+== [Gemini capsule] * ============ [ 2023-02-26 ] ==
 ```
 => / ← Back
 # Change colorscheme for code blocks highlighting
@@ -22,7 +22,7 @@ Here is the Python method example
 
 def python():
 
-puts("Python method example")
+    puts("Python method example")
 
 ```
 
@@ -32,9 +32,9 @@ Thats for Javascript
 
 function test() {
 
-let sh = 1;
+    let sh = 1;
 
-console.log(sh);
+    console.log(sh);
 
 }
 
@@ -46,11 +46,11 @@ PHP
 
 class Testing {
 
-function __constructor() {
+    function constructor() {
 
-$this->a = date('r');
+        $this->a = date('r');
 
-}
+    }
 
 }
 
@@ -64,11 +64,11 @@ Rust
 
 fn main() {
 
-// Statements here are executed when the compiled binary is called
+    // Statements here are executed when the compiled binary is called
 
-// Print text to the console
+    // Print text to the console
 
-println!("Hello World!");
+    println!("Hello World!");
 
 }
 

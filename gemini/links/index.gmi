@@ -5,32 +5,22 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ==============================
+== [Gemini capsule] * ============ [ 2025-08-10 ] ==
 ```
 => / ← Back
 # 🔗 Links
 
 ## Linux / Unix
 
-=> https://gnu.org GNU
+* GNU - GNU is an operating system that is free software—that is, it respects users freedom.
 
-- GNU is an operating system that is free software—that is, it respects users freedom.
+* Debian GNU/Linux - Debian Linux distribution official site
 
-=> https://debian.org Debian GNU/Linux
+* Gentoo Linux - Gentoo is a free operating system based on Linux that can be automatically optimized and customized for just about any application or need.
 
-- Debian Linux distribution official site
+* FreeBSD - FreeBSD is an operating system used to power modern servers, desktops, and embedded platforms.
 
-=> https://gentoo.org Gentoo Linux
-
-- Gentoo is a free operating system based on Linux that can be automatically optimized and customized for just about any application or need.
-
-=> https://freebsd.org FreeBSD
-
-- FreeBSD is an operating system used to power modern servers, desktops, and embedded platforms.
-
-=> https://openbsd.org OpenBSD
-
-- The OpenBSD project produces a FREE, multi-platform 4.4BSD-based UNIX-like operating system. Our efforts emphasize portability, standardization, correctness, proactive security and integrated cryptography
+* OpenBSD - The OpenBSD project produces a FREE, multi-platform 4.4BSD-based UNIX-like operating system. Our efforts emphasize portability, standardization, correctness, proactive security and integrated cryptography
 ```
      ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
 ```

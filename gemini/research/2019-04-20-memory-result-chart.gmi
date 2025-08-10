@@ -5,7 +5,7 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ==============================
+== [Gemini capsule] * ============ [ 2019-04-21 ] ==
 ```
 => / ← Back
 # Память о действиях и результате
@@ -22,7 +22,7 @@
 
 Ссылки:
 
-=> https://en.wikipedia.org/wiki/Forgetting_curve Forgetting_curve
+=> https://en.wikipedia.org/wiki/Forgettingcurve Forgettingcurve
 
 => https://www.csustan.edu/sites/default/files/groups/Writing%20Program/forgetting_curve.pdf The Forgetting Curve, Dr.John Wittmann, CSU Stanislaus
 
@@ -36,7 +36,7 @@ from matplotlib.pyplot import *
 
 def f(t):
 
-return t**2*exp(t**0.4)
+    return t2*exp(t0.4)
 
 t = linspace(0, 3, 51)
 
@@ -44,7 +44,7 @@ y = zeros(len(t))
 
 for i in xrange(len(t)):
 
-y[i] = f(t[i])
+    y[i] = f(t[i])
 
 y1 = y[::-1]
 

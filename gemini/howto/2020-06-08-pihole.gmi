@@ -5,32 +5,22 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ==============================
+== [Gemini capsule] * ============ [ 2020-06-08 ] ==
 ```
 => / ← Back
 # PiHole + dnscrypt-proxy = internet sewage filter
 
 Modern Internet is bloated. But it is possible to make it less bloated. You have to install those programs:
 
-=> https://pi-hole.net PiHole
+* PiHole - will be your dns manager with black and white lists;
 
-- will be your dns manager with black and white lists;
-
-=> https://github.com/DNSCrypt/dnscrypt-proxy dnscrypt-proxy
-
-- will be your safe dnsscrypt proxy to encrypted dns servers;
+* dnscrypt-proxy - will be your safe dnsscrypt proxy to encrypted dns servers;
 
 Setup suitable for GNU/Linux and MacOS
 
 Installing PiHole
 
-Run
-
-```
-
-curl -sSL https://install.pi-hole.net | bash
-
-```
+* Run curl -sSL https://install.pi-hole.net | bash
 
 Installing dnscrypt-proxy
 
@@ -44,33 +34,13 @@ dnscrypt-proxy
 
 ```
 
-Setup your DNS server to the address which you’re install PiHole
+* Setup your DNS server to the address which you’re install PiHole
 
-Go To https://pi.hole (only resolves if you’re setup your dns IP properly)
+* Go To https://pi.hole (only resolves if you’re setup your dns IP properly)
 
-```
+* Settings -> DNS (Tab) -> Upstream DSN Servers uncheck everything here
 
-Settings -> DNS (Tab) -> Upstream DSN Servers
-
-```
-
-uncheck everything here
-
-```
-
-Settings -> DNS (Tab) -> Upstream DNS Servers -> Custom 1
-
-```
-
-, put here your dnsscrypt-proxy
-
-```
-
-address#port
-
-```
-
-string
+* Settings -> DNS (Tab) -> Upstream DNS Servers -> Custom 1, put here your dnsscrypt-proxy address#port string
 
 Next, goto to your current computer and other devices network connection settings, and set DNS to your
 
@@ -86,11 +56,11 @@ Done. You’re now using much safer and less bloated internet.
 
 Hints:
 
-Your daily dns traffic will be cleaner from 10% to 25%
+* Your daily dns traffic will be cleaner from 10% to 25%
 
-Very rare some sites or rich web applications may not working, be aware of that.
+* Very rare some sites or rich web applications may not working, be aware of that.
 
-Better to install it on seprate raspberry-pi.
+* Better to install it on seprate raspberry-pi.
 
 Your daily status will look like this (20%! percent of garbage)
 

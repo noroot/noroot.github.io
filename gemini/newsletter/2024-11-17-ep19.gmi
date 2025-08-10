@@ -1,0 +1,63 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ============ [ 2024-12-10 ] ==
+```
+=> / ← Back
+# EP-19 FalseTrue Digest
+
+# Intro
+
+Hello everybody. This is Episode-19 of FalseTrue Digest.
+
+## Stories
+
+* C++ standards developer kicked out from ISO WG21 story http://tomazos.com/ubquestionincident.pdf
+
+* Theory-building and why employee churn is lethal to software companies https://www.baldurbjarnason.com/2022/theory-building/
+
+* Keyboard is a computer again https://www.tomshardware.com/raspberry-pi/raspberry-pi-500-review
+
+* Hetzner shutting down Kiwix (the offline wikipedia) https://mastodon.social/@kiwix/113622081750449356
+
+## Development
+
+* How to do distributed locking https://martin.kleppmann.com/2016/02/08/how-to-do-distributed-locking.html
+
+* Does Your Code Pass The Turkey Test? http://www.moserware.com/2008/02/does-your-code-pass-turkey-test.html
+
+## Emacs
+
+* Discovering functions and variables in Elisp files https://mbork.pl/2024-11-18DiscoveringfunctionsandvariablesinElispfiles
+
+* Emacs library for visualizing time data via interactive blocks https://github.com/ichernyshovvv/timeblock.el
+
+* Woodlike color theme for Emacs https://github.com/daut/miasma-theme.el
+
+* Why I like using bitmap fonts in Emacs by Rodrigo Morales https://rodrigo.morales.pe/2024/10/19/why-i-like-using-bitmap-fonts-in-emacs/
+
+* Restore Emacs editing session https://github.com/jamescherti/easysession.el
+
+* Organizing My Life with org-mode https://jlamothe.net/blog/2024-11-15/
+
+* OrgMode capture templates https://rodrigo.morales.pe/2024/09/21/my-configuration-for-org-roam-capture-templates/
+
+* Org Table From Org Headings using a Babel Block  https://emacs.dyerdwelling.family/emacs/20241110085851-emacs–babel-block-generating-org-table-from-org-headings/
+
+## Marginal
+
+* Werc - A sane web anti-framework http://werc.cat-v.org/
+
+* Top 100 PC Games https://www.rockpapershotgun.com/the-rps-100-2024
+
+* Pimalaya is an ambitious project that aims to improve open-source tools related to Personal Information Management (as known as PIM) which includes emails, contacts, calendars, tasks and more. https://pimalaya.org/
+
+That’s it for this episode. Comment and share. EOF
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

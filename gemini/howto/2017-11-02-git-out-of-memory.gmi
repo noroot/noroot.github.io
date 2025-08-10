@@ -5,7 +5,7 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ==============================
+== [Gemini capsule] * ============ [ 2017-11-01 ] ==
 ```
 => / ← Back
 # Что делать на если нехватает памяти для git
@@ -34,39 +34,39 @@ git stderr: Nothing written
 
 [pack]
 
-windowMemory = 1m
+        windowMemory = 1m
 
-packSizeLimit = 1m
+        packSizeLimit = 1m
 
-deltaCacheSize = 1m
+        deltaCacheSize = 1m
 
-deltaCacheLimit = 10
+        deltaCacheLimit = 10
 
-packSizeLimit = 1m
+        packSizeLimit = 1m
 
-threads = 1
+        threads = 1
 
 [core]
 
-packedGitWindowSize = 1m
+        packedGitWindowSize = 1m
 
-packedGitLimit = 1m
+        packedGitLimit = 1m
 
-deltaBaseCacheLimit = 1m
+        deltaBaseCacheLimit = 1m
 
-compression = 0
+        compression = 0
 
-loosecompression = 0
+        loosecompression = 0
 
-bigFileThreshold = 10m
+        bigFileThreshold = 10m
 
 [http]
 
-sslVerify = false ;; !!!
+        sslVerify = false ;; !!!
 
 [transfer]
 
-unpackLimit = 10
+        unpackLimit = 10
 
 ```
 

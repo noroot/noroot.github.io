@@ -5,32 +5,32 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ==============================
+== [Gemini capsule] * ============ [ 2020-10-01 ] ==
 ```
 => / ← Back
 # Cartridge game storage for PC
 
 Modern computer games became very heavyweight these days. Here are the top10 games by size on disk.
 
-Quantum Break – 178GB.
+* Quantum Break – 178GB.
 
-Call of Duty: Modern Warfare – 175GB.
+* Call of Duty: Modern Warfare – 175GB.
 
-Destiny 2: Shadowkeep – 165GB.
+* Destiny 2: Shadowkeep – 165GB.
 
-Red Dead Redemption 2 – 150GB.
+* Red Dead Redemption 2 – 150GB.
 
-Final Fantasy XV – 148GB.
+* Final Fantasy XV – 148GB.
 
-Call of Duty: Black Ops III – 113GB.
+* Call of Duty: Black Ops III – 113GB.
 
-Gears of War 4 – 112.3GB.
+* Gears of War 4 – 112.3GB.
 
-Call of Duty: Infinite Warfare – 101GB.
+* Call of Duty: Infinite Warfare – 101GB.
 
-Middle Earth: Shadow Of War – 95GB
+* Middle Earth: Shadow Of War – 95GB
 
-Deus Ex: Mankind Divided – 77GB
+* Deus Ex: Mankind Divided – 77GB
 
 This is a list of AAA grade games(high-quality graphics and other game assets that weigh more than average).
 

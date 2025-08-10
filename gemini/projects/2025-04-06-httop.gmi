@@ -5,7 +5,7 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ==============================
+== [Gemini capsule] * ============ [ 2025-04-06 ] ==
 ```
 => / ← Back
 # HTTOP - A real-time HTTP log monitor similar to ApacheTop
@@ -14,61 +14,37 @@ A real-time HTTP log monitor similar to ApacheTop, written in Rust. This tool al
 
 ## Features
 
-Processes http log data in real-time through pipe from
+* Processes http log data in real-time through pipe from tail -f
 
-```
-
-tail -f
-
-```
-
-Displays overall statistics (requests per second, total bytes, status code distribution)
+* Displays overall statistics (requests per second, total bytes, status code distribution)
 
 ## Roadmap
 
-Filtering by Crawler bots to research on crawlers
+* Filtering by Crawler bots to research on crawlers
 
-Indicate “bad” crawlers
+* Indicate “bad” crawlers
 
 ## Installation
 
 ### Prerequisites
 
-Rust and Cargo (install from
+* Rust and Cargo (install from rust-lang.org)
 
-=> https://www.rust-lang.org/tools/install rust-lang.org
-
-)
-
-Nginx server with access logs
+* Nginx server with access logs
 
 ### Building from Source
 
-Clone the repository:
+* Clone the repository:
 
-```
-
-git clone https://github.com/yourusername/nginx-top.git
+    git clone https://github.com/yourusername/nginx-top.git
 
 cd nginx-top
 
-```
+* Build the project:
 
-Build the project:
+    cargo build --release
 
-```
-
-cargo build --release
-
-```
-
-The compiled binary will be available at
-
-```
-
-target/release/nginx-top
-
-```
+* The compiled binary will be available at target/release/nginx-top
 
 ## Usage
 
@@ -84,69 +60,21 @@ tail -f /var/log/nginx/access.log | httop
 
 Type the following characters and press Enter to control the display:
 
-```
+* s: Sort by Status Code
 
-s
+* p: Sort by Path
 
-```
+* c: Sort by Count (default)
 
-: Sort by Status Code
+* i: Sort by IP Address
 
-```
+* u: Sort by User Agent
 
-p
+* +: Increase number of displayed entries
 
-```
+* -: Decrease number of displayed entries
 
-: Sort by Path
-
-```
-
-c
-
-```
-
-: Sort by Count (default)
-
-```
-
-i
-
-```
-
-: Sort by IP Address
-
-```
-
-u
-
-```
-
-: Sort by User Agent
-
-```
-
-+
-
-```
-
-: Increase number of displayed entries
-
-```
-
--
-
-```
-
-: Decrease number of displayed entries
-
-```
-
-q
-
-```
-
-: Quit
+* q: Quit
 
 ## Nginx Log Format Compatibility
 
@@ -154,11 +82,11 @@ NginxTop is configured to parse the standard Nginx log format:
 
 ```
 
-log_format main '$remote_addr - $remote_user [$time_local] "$request" '
+logformat main '$remoteaddr - $remoteuser [$timelocal] "$request" '
 
-'$status $body_bytes_sent "$http_referer" '
+                '$status $bodybytessent "$http_referer" '
 
-'"$http_user_agent" $request_time';
+                '"$httpuseragent" $request_time';
 
 ```
 
@@ -166,7 +94,7 @@ If your Nginx uses a different log format, you may need to modify the regex patt
 
 ```
 
-parse_log_line
+parselogline
 
 ```
 
@@ -180,13 +108,13 @@ Total Requests: 1548 | RPS: 32.50 | Total Bytes: 28945213
 
 Status Codes:
 
-200: 1423
+  200: 1423
 
-404: 87
+  404: 87
 
-302: 34
+  302: 34
 
-500: 4
+  500: 4
 
 Top Requests (Sort: Count, Press s/p/c/i/u to change, +/- to adjust count, q to quit):
 
@@ -206,49 +134,25 @@ COUNT    IP              STATUS     PATH                                    USER
 
 ## License
 
-GNU v3
+* GNU v3
 
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-Fork the project
+* Fork the project
 
-Create your feature branch (
+* Create your feature branch (git checkout -b feature/amazing-feature)
 
-```
+* Commit your changes (git commit -m 'Add some amazing feature')
 
-git checkout -b feature/amazing-feature
+* Push to the branch (git push origin feature/amazing-feature)
 
-```
-
-)
-
-Commit your changes (
-
-```
-
-git commit -m 'Add some amazing feature'
-
-```
-
-)
-
-Push to the branch (
-
-```
-
-git push origin feature/amazing-feature
-
-```
-
-)
-
-Open a Pull Request
+* Open a Pull Request
 
 ## Links
 
-=> https://github.com/noroot/httop https://github.com/noroot/httop
+* https://github.com/noroot/httop
 
 ```
      ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░

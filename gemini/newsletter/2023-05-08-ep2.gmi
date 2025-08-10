@@ -1,0 +1,119 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ============ [ 2023-05-08 ] ==
+```
+=> / ← Back
+# EP2 FalseTrue Digest
+
+Welcome to EP-2 of
+
+FalseTrue Digest
+
+, - newsletter or journal, or maybe even e-zine, but right now let’s stick to the name digest. I’ll write weekly based summaries about software development, programming world and software itself.
+
+## News
+
+* OBS 29.1 Released https://github.com/obsproject/obs-studio/releases/tag/29.1.0
+
+* World Password Day https://nationaltoday.com/world-password-day/
+
+* Forty years ago, Richard Stallman announced the plan to develop the GNU operating system, which would be entirely composed of free software. The existence of a free operating system would enable people to operate their computers in freedom, throwing off the power of the developers of nonfree software. https://www.gnu.org/gnu40/
+
+## Repositories and projects
+
+* Example of how beautiful the AwesomeWM can be if setup properly https://github.com/worron/awesome-config
+
+* FreshRSS - is a self-hosted RSS feed aggregator. https://github.com/FreshRSS/FreshRSS
+
+* Mundana - Medium stylized Jekyll theme https://github.com/wowthemesnet/mundana-theme-jekyll
+
+## How-to’s and guides
+
+* MacOS Internals https://gist.github.com/kconner/cff08fe3e0bb857ea33b47d965b3e19f
+
+* Build your own private WireGuard VPN with PiVPN https://www.jeffgeerling.com/blog/2023/build-your-own-private-wireguard-vpn-pivpn
+
+* Update millions of records in Rails https://blog.eq8.eu/til/update-millions-of-records-in-rails.html
+
+## Weekly Linux Desktop
+
+* Nautilus (Gnome Files) -  if you thinking of Finder in MacOS but never knew that its possible on Linux Desktop https://en.wikipedia.org/wiki/GNOMEFiles
+
+* Stellarium - is a free open source planetarium for your computer. It shows a realistic sky in 3D, just like what you see with the naked eye, binoculars or a telescope. https://stellarium.org/
+
+* KeePassXC - Feature-rich password manager https://keepassxc.org/
+
+## Mentions and utils
+
+Previously mentioned
+
+```
+
+ls
+
+```
+
+, now mention
+
+```
+
+cat
+
+```
+
+The very first version was written by Ken Thompson, Dennis Ritchie, and the current one is written by Torbjorn Granlund
+
+=> https://github.com/coreutils/coreutils/blob/master/src/cat.c https://github.com/coreutils/coreutils/blob/master/src/cat.c
+
+```
+
+/* The official name of this program (e.g., no 'g' prefix).  */
+
+#define PROGRAM_NAME "cat"
+
+#define AUTHORS \
+
+  proper_name ("Torbjorn Granlund"), \
+
+  proper_name ("Richard M. Stallman")
+
+```
+
+=> /images/torbjorngranlund.jpg Torbjorn Granlund
+
+=> https://se.linkedin.com/in/torbj%C3%B6rn-granlund-a4630999 Torbjorn Granlund
+
+=> /images/rms.jpg Richard Stallman
+
+=> https://rms.org Richard Stallman
+
+=> /images/DennisRitchie2011.jpg Dennis Ritchie
+
+=> https://www.bell-labs.com/usr/dmr/www/ Dennis Ritchie
+
+=> /images/Ken-Thompson-2019.png Ken Thompson
+
+=> https://en.wikipedia.org/wiki/Ken_Thompson Ken Thompson
+
+### Authors note
+
+This format will be like this,
+
+* I’ll share various links, and experiences on a weekly base.
+
+* Interesting persons on Internet and their stuff.
+
+* Various software which you don’t even know.
+
+If you like what you see here please comment and share, this helps me gain some consistency on this.
+
+=> https://falsetrue.substack.com/p/ep2-falsetrue-digest?sd=pf Subscribe on Substack
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

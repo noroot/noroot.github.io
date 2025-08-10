@@ -5,7 +5,7 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ==============================
+== [Gemini capsule] * ============ [ 2010-06-01 ] ==
 ```
 => / ← Back
 # Python differential
@@ -30,33 +30,33 @@ import random as rand
 
 def dotu(r,t0):
 
-x,y = r
+    x,y = r
 
-d = [0,1]
+    d = [0,1]
 
-d[0] = y
+    d[0] = y
 
-d[1] = x-x**2-y
+    d[1] = x-x**2-y
 
-return d
+    return d
 
 def dplot(s, color="green"):
 
-t = linspace(0,55, 700)
+    t = linspace(0,55, 700)
 
-print t
+    print t
 
-u=odeint(dotu,s,t)
+    u=odeint(dotu,s,t)
 
-u=array(u).transpose()
+    u=array(u).transpose()
 
-plot(u[0], u[1], color)
+    plot(u[0], u[1], color)
 
 for x in arange(-1.52,2, 0.25):
 
-print x
+    print x
 
-dplot([x,3])
+    dplot([x,3])
 
 plt.grid(True)
 
@@ -82,29 +82,29 @@ import random as rand
 
 def dotu(r,t0):
 
-x,y = r
+    x,y = r
 
-d = [0,1]
+    d = [0,1]
 
-d[0] = y
+    d[0] = y
 
-d[1] = x-x**2-y
+    d[1] = x-x**2-y
 
-return d
+    return d
 
 def dplot(s, color="green"):
 
-t = linspace(0,55, 700)
+    t = linspace(0,55, 700)
 
-u=odeint(dotu,s,t)
+    u=odeint(dotu,s,t)
 
-u=array(u).transpose()
+    u=array(u).transpose()
 
-plot(u[0], u[1], color)
+    plot(u[0], u[1], color)
 
 for x in arange(-1.52,2, 0.25):
 
-dplot([x,3])
+    dplot([x,3])
 
 plt.grid(True)
 

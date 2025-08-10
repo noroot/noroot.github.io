@@ -5,12 +5,12 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ==============================
+== [Gemini capsule] * ============ [ 2024-08-10 ] ==
 ```
 => / ← Back
 # Sleepy Black cat
 
-=> /images/photography_copyrighted/Animals/IMG_0925.jpg Image
+=> /images/photographycopyrighted/Animals/IMG0925.jpg Image
 
 "Sleepy Black cat" // 2024-08-10 © Dmitry Ro.
 

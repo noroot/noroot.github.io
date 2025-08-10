@@ -1,0 +1,105 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ============ [ 2023-05-01 ] ==
+```
+=> / ← Back
+# EP1 FalseTrue Digest
+
+Welcome to first episode of
+
+FalseTrue Digest
+
+, - newsletter or journal, or maybe even e-zine, but right now let’s stick to the name digest. I’ll write weekly based summaries about software development, programming world and software itself.
+
+## News
+
+* 30 years ago Most Important Internet decision https://thehistoryoftheweb.com/postscript/the-webs-most-important-decision/
+
+* Debian 11.7 Released: https://www.debian.org/News/2023/20230429
+
+* Ubuntu 23.04 Released: https://canonical.com/blog/canonical-releases-ubuntu-23-04-lunar-lobster
+
+* Ruby 3.2.2 Released: https://www.ruby-lang.org/en/news/2023/03/30/ruby-3-2-2-released/
+
+## Repositories and projects
+
+* OpenAssistant, AI from opensource community https://github.com/LAION-AI/Open-Assistant
+
+* Jira-cli, terminal client for JIRA https://github.com/ankitpokhrel/jira-cli
+
+* A fast Rust-based web bundler https://github.com/web-infra-dev/rspack
+
+* Interesting CSS framework called Bulma (like alternative to Bootstrap) https://bulma.io/
+
+* InputOutput simple calculation tools working without javascript https://inputoutput.dev/
+
+## How-to’s and guides
+
+* CSS GRID mastering manual https://www.builder.io/blog/css-grid-template-areas
+
+* Read Hackernews and Reddit the Emacs way: https://blog.dornea.nu/2023/04/21/read-hackernews-and-reddit-the-emacs-way/
+
+## Weekly Linux Desktop
+
+* Freeplane, - Best mindmapping software for GNU/Linux desktop is Freeplane, its very feature rich and usefull https://docs.freeplane.org/
+
+* Flameshot, - Feature rich screenshot software, sits in a tray works like a charm, feature rich, using it daily though  https://flameshot.org/
+
+* Krita, is a professional FREE and open source painting program. It is made by artists that want to see affordable art tools for everyone. https://krita.org/en/
+
+It’s like ProCreate for and iPad, but free and opensource, can be used on various tablets on any major OS.
+
+## Mentions and utils
+
+I’ll be mention here some frequently used program which you’re using everyday and software person who wrote it in the section,
+
+lets start straight forward with
+
+```
+
+ls
+
+```
+
+is most freqently used command to get list of files guess who wrote it ?
+
+Yes, its Richard Stallman and David MacKenzie,
+
+you can check it here
+
+=> http://git.savannah.gnu.org/cgit/coreutils.git/tree/src/ls.c?h=v9.3 http://git.savannah.gnu.org/cgit/coreutils.git/tree/src/ls.c?h=v9.3
+
+```
+
+/* Written by Richard Stallman and David MacKenzie.  */
+
+```
+
+=> /images/rms.jpg Richard Stallman
+
+=> https://rms.org Richard Stallman
+
+=> /images/davidmckenzie.jpg David MacKenzie
+
+=> https://www.linkedin.com/in/david-mackenzie-14450448 David MacKenzie
+
+### Authors note
+
+This format will be like this,
+
+* I’ll share various links, and experiences on a weekly base.
+
+* Interesting persons on Internet and their stuff.
+
+* Various software which you don’t even know.
+
+If you like what you see here please comment and share, this helps me gain some consistency on this.
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

@@ -5,103 +5,60 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ==============================
+== [Gemini capsule] * ============ [ 2025-08-10 ] ==
 ```
 => / ← Back
 # About
 
 This blog is about programming, internet, computer science and modern
-technologies. Some records made in English. If you're interested in translation message me.
+technologies. Some records made in English. If you’re interested in translation message me.
 
-Blogs posts are divided by context, section called "Blog" is for main articles and posts, and section called "Feed" is for small posts, such as sharing links, and mentions
+Blogs posts are divided by context, section called “Blog” is for main articles and posts, and section called “Feed” is for small posts, such as sharing links, and mentions
 
-### What about me ?
+## What about me ?
 
 I am full-stack developer with 15+ years experience in software development.
 
-Today: AI/ML, Rust, Blockchain
+* Today: AI/ML, Rust, Blockchain
 
-Tomorrow:  Quantum, IoT
+* Tomorrow:  Quantum, IoT
 
-Always: PHP, Ruby, Python, C
+* Always: PHP, Ruby, Python, C
 
-Experienced in modern system architectures and development
+* Experienced in modern system architectures and development
 
-Fluent with linux automation
+* Fluent with linux automation
 
-Security researcher
+* Security researcher
 
-### Projects
+## Projects
 
-=> /images/remoters.png Image
+* RemotersClub - Community site/aggregator for people who work remote, digital nomads
 
-=> https://remoters.club?utm_source=ft RemotersClub
+* Teamsport - Welcome to TeamSport β, your ultimate platform for physical activities, including a detailed directory of local gyms complete with user reviews. Dive into a thriving community where you can organize, join, and enjoy a variety of sports and fitness routines.
 
-- Community site/aggregator for people who work remote, digital nomads
+* CyberAlmanac - News aggregator from different sources by topics.
 
-=> /images/teamsport.png Image
+* CatWatchDog - Software development / Expert project management / Fraction CTO business.
 
-=> https://teamsport.io Teamsport
+* Jekyll Email Comments - Comments engine based on email for Jekyll.
 
-- Welcome to TeamSport β, your ultimate platform for physical activities, including a detailed directory of local gyms complete with user reviews. Dive into a thriving community where you can organize, join, and enjoy a variety of sports and fitness routines.
-
-=> /images/cyberalmanac.png Image
-
-=> https://cyberalmanac.com CyberAlmanac
-
-- News aggregator from different sources by topics.
-
-=> /images/cwd.png Image
-
-=> https://catwatchdog.com CatWatchDog
-
-- Software development / Expert project management / Fraction CTO business.
-
-=> https://rubygems.org/gems/jekyll-mail-comments Jekyll Email Comments
-
-- Comments engine based on email for Jekyll.
-
-📷 I do photography, you can check it out
-
-=> /photography/ Here 📷
+* I do photography, you can check it out Here 📷 Photography
 
 ## Contacts
 
-I use email primarily
-
-=>  email
-
+I use email primarily email
 Use GPG to read signed message from Me
 
 ```
 
- curl -sL http://falsetrue.io/pgp.key.txt | gpg --import
+curl -sL http://falsetrue.io/pgp.key.txt | gpg --import
 
 ```
 
-=> https://github.com/noroot/  Github
+## Links
 
-=> https://patreon.com/falsetrue  Patreon
-
-=> https://www.linkedin.com/in/noroot/  Linkedin
-
-=> https://falsetrue.substack.com  Substack
-
-### Support
-
-=> https://liberapay.com/ov_mi/donate 
-
-  ETH: 0x01596bd5a9cF4B1c8f77f08E338a599c4f10AfFD
-
-### Posts
-
-Look at
-
-=> /archive/ Archives page
-
-and
-
-=> /categories/ Categories page
+* Github
 ```
      ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
 ```

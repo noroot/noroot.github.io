@@ -1,0 +1,99 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ============ [ 2024-09-23 ] ==
+```
+=> / ← Back
+# EP-17 FalseTrue Digest
+
+# Intro
+
+Hello everybody. This is episode 17 of FalseTrue Digest.
+
+I’ve participated in EuRuKo 2024, for those who don’t know this is oldest and biggest Ruby conference since 2003. (
+
+=> https://euruko.org/ https://euruko.org/
+
+).
+
+I’ve already wrote a little review note here
+
+=> https://falsetrue.io/share/note/2024/09/15/euruko2024-review/ https://falsetrue.io/share/note/2024/09/15/euruko2024-review/
+
+=> /images/EuRuKo2024/EuRuKo2024-Matz.jpg /images/EuRuKo2024/EuRuKo2024-Matz.jpg
+
+Photography by
+
+=> https://nidalsaljic.wfolio.pro Nidal Šaljić
+
+.
+
+## Stories
+
+* Cloudflare breaking SVGs - CloudFlare modifing SVG tags makes image visible changed.
+
+* The Age of Software Artisans - Maybe AI won’t replace all developers, maybe it’s just a new FORTRAN.
+
+* What 10,000 Hours of Coding Taught Me: Don’t Ship Fast
+
+* Elite 40th AnniversaryOut - Elite 40th Anniversary – Source code release
+
+* Warning: DNS encryption in Little Snitch 6.1 may occasionally fail (ALREADY FIXED)
+
+* The Real Reason Why Music Is Getting Worse: Rick Beato Explains
+
+* Oracle, it’s time to free JavaScript.
+
+* uBlock Origin is no longer available on Chrome web store
+
+## Development
+
+* Monolith First - This pattern has led many of my colleagues to argue that you shouldn’t start a new project with microservices, even if you’re sure your application will be big enough to make it worthwhile. .
+
+* Dune Shell - Dune is a shell designed for powerful scripting. Think of it as an unholy combination of bash and Lisp.
+
+* Openpilot – Operating system for robotics. 275 supported cars
+
+## Hard core
+
+* A friendly introduction to assembly for high-level programmers — Hello
+
+* Linux/4004 - Slowly booting full Linux on the intel 4004 for fun, art, and absolutely no profit
+
+* Compiling to Assembly from Scratch - book about compiling Assembly from scratch, refer to Red Dragon Book.
+
+* Trachtenberg System of Mental Calculation - literally as it said method to calcalte complex math in mind
+
+* Old computing books
+
+* sndkit is a sonic toolkit for computer music composition
+
+* Balance of Power - In 1966, Chris Crawford, who was then sixteen, was introduced to Avalon Hill style wargames by a school friend. Crawford enjoyed the genre of games, but it wasn’t a primary interest of his.
+
+* Geometric Search Trees
+
+## Emacs
+
+* Emacs 30.0.91 pretest is available
+
+* Combining Mastodon timelines using mastodon.el
+
+* yap - Your Assistant for Prompting LLMs
+
+## News
+
+* FreeBSD 13.4R
+
+* macOS Sequoia is available today, bringing iPhone Mirroring, Apple Intelligence, and more to Mac
+
+* The 6.11 kernel has been released
+
+That’s it for this episode. Comment and share.
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

@@ -5,7 +5,7 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ==============================
+== [Gemini capsule] * ============ [ 2023-06-04 ] ==
 ```
 => / ← Back
 # Life simulation
@@ -24,35 +24,27 @@ Here is a gist for that code:
 
 How it works:
 
-There is a js canvas where all drawing is happening
+* There is a js canvas where all drawing is happening
 
-There is an atom entity which is structure of position(x,y), velocity(x,y), color
+* There is an atom entity which is structure of position(x,y), velocity(x,y), color
 
-Threr is a
+* Threr is a rule function which defines relations between particles
 
-rule
+* There is a configuration object that defines relation between particles using rule method
 
-function which defines relations between particles
+* There is infinity loop of animation
 
-There is a configuration object that defines relation between particles using
-
-rule
-
-method
-
-There is infinity loop of animation
-
-Before animation starts it creates arrays of different types of particles
+* Before animation starts it creates arrays of different types of particles
 
 References:
 
-=> https://playgameoflife.com/ https://playgameoflife.com/
+* https://playgameoflife.com/
 
-=> https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
+* https://en.wikipedia.org/wiki/Conway%27sGameofLife
 
-=> https://github.com/hunar4321/particle-life https://github.com/hunar4321/particle-life
+* https://github.com/hunar4321/particle-life
 
-=> https://particles.js.org/ https://particles.js.org/
+* https://particles.js.org/
 
 Interactive example in details below
 
@@ -66,191 +58,191 @@ Add Random
 
 m = document.getElementById("life").getContext("2d");
 
-draw = (x, y, c, s) => {
+ draw = (x, y, c, s) => {
 
-m.fillStyle = c;
+     m.fillStyle = c;
 
-m.fillRect(x, y, s, s);
+     m.fillRect(x, y, s, s);
 
-};
+ };
 
 function pageReload() {
 
-window.location.reload(true);
+     window.location.reload(true);
 
-};
+ };
 
-atoms = [];
+ atoms = [];
 
-atom = (x, y, c) => {
+ atom = (x, y, c) => {
 
-return { x: x, y: y, vx: 0, vy: 0, color: c };
+     return { x: x, y: y, vx: 0, vy: 0, color: c };
 
-};
+ };
 
-random = () => {
+ random = () => {
 
-return Math.random() * 750 + 50;
+     return Math.random() * 750 + 50;
 
-};
+ };
 
-create = (number, color) => {
+ create = (number, color) => {
 
-group = [];
+     group = [];
 
-for (let i = 0; i < number; i++) {
+     for (let i = 0; i < number; i++) {
 
-a = atom(random(), random(), color);
+         a = atom(random(), random(), color);
 
-group.push(a);
+         group.push(a);
 
-atoms.push(group[i]);
+         atoms.push(group[i]);
 
-}
+     }
 
-return group;
+     return group;
 
-};
+ };
 
-rule = (atoms1, atoms2, g) => {
+ rule = (atoms1, atoms2, g) => {
 
-for (let i = 0; i < atoms1.length; i++) {
+     for (let i = 0; i < atoms1.length; i++) {
 
-fx = 0;
+         fx = 0;
 
-fy = 0;
+         fy = 0;
 
-for (let j = 0; j < atoms2.length; j++) {
+         for (let j = 0; j < atoms2.length; j++) {
 
-a = atoms1[i];
+             a = atoms1[i];
 
-b = atoms2[j];
+             b = atoms2[j];
 
-dx = a.x - b.x;
+             dx = a.x - b.x;
 
-dy = a.y - b.y;
+             dy = a.y - b.y;
 
-d = Math.sqrt(dx * dx + dy * dy);
+             d = Math.sqrt(dx * dx + dy * dy);
 
-if (d > 0 && d < 80) {
+             if (d > 0 && d < 80) {
 
-F = (g * 1) / d;
+                 F = (g * 1) / d;
 
-fx += F * dx;
+                 fx += F * dx;
 
-fy += F * dy;
+                 fy += F * dy;
 
-}
+             }
 
-}
+         }
 
-a.vx = (a.vx + fx) * 0.5;
+         a.vx = (a.vx + fx) * 0.5;
 
-a.vy = (a.vy + fy) * 0.5;
+         a.vy = (a.vy + fy) * 0.5;
 
-a.x += a.vx;
+         a.x += a.vx;
 
-a.y += a.vy;
+         a.y += a.vy;
 
-if (a.x <= 0 || a.x >= 750) { a.vx *= -1; }
+         if (a.x <= 0 || a.x >= 750) { a.vx *= -1; }
 
-if (a.y <= 0 || a.y >= 750) { a.vy *= -1; }
+         if (a.y <= 0 || a.y >= 750) { a.vy *= -1; }
 
-}
+     }
 
-};
+ };
 
-reset = () => {
+ reset = () => {
 
-m.clearRect(0, 0, 750, 750);
+     m.clearRect(0, 0, 750, 750);
 
-};
+ };
 
-addRandom = () => {
+ addRandom = () => {
 
-create(300, "purple");
+     create(300, "purple");
 
-};
+ };
 
-yellow = create(300, "yellow");
+ yellow = create(300, "yellow");
 
-green = create(150, "green");
+ green = create(150, "green");
 
-white = create(100, "white");
+ white = create(100, "white");
 
-red = create(150, "red");
+ red = create(150, "red");
 
-blue = create(250, "blue");
+ blue = create(250, "blue");
 
-let matrix = [
+ let matrix = [
 
-["white", "white", 1],
+     ["white", "white", 1],
 
-["blue", "blue", -1],
+     ["blue", "blue", -1],
 
-["blue", "red", -0.5],
+     ["blue", "red", -0.5],
 
-["blue", "white", -0.4],
+     ["blue", "white", -0.4],
 
-["red", "red", -5],
+     ["red", "red", -5],
 
-["red", "white", 0.5],
+     ["red", "white", 0.5],
 
-["red", "blue", -0.3],
+     ["red", "blue", -0.3],
 
-["white", "yellow", 1],
+     ["white", "yellow", 1],
 
-["yellow", "white", 1],
+     ["yellow", "white", 1],
 
-["blue", "yellow", 1],
+     ["blue", "yellow", 1],
 
-["yellow", "blue", 1]
+     ["yellow", "blue", 1]
 
-];
+ ];
 
-var paused = false;
+ var paused = false;
 
-pause = () => {
+ pause = () => {
 
-paused = true;
+     paused = true;
 
-};
+ };
 
-unpause = () => {
+ unpause = () => {
 
-paused = false;
+     paused = false;
 
-requestAnimationFrame(update);
+     requestAnimationFrame(update);
 
-};
+ };
 
-update = () => {
+ update = () => {
 
-if(paused){return;}
+     if(paused){return;}
 
-for (i = 0; i < matrix.length; i++) {
+     for (i = 0; i < matrix.length; i++) {
 
-c = matrix[i];
+         c = matrix[i];
 
-rule(eval(c[0]), eval(c[1]), c[2]);
+         rule(eval(c[0]), eval(c[1]), c[2]);
 
-}
+     }
 
-m.clearRect(0, 0, 750, 750);
+     m.clearRect(0, 0, 750, 750);
 
-draw(0, 0, "black", 750);
+     draw(0, 0, "black", 750);
 
-for (i = 0; i < atoms.length; i++) {
+     for (i = 0; i < atoms.length; i++) {
 
-draw(atoms[i].x, atoms[i].y, atoms[i].color, 5);
+         draw(atoms[i].x, atoms[i].y, atoms[i].color, 5);
 
-}
+     }
 
-requestAnimationFrame(update);
+     requestAnimationFrame(update);
 
-};
+ };
 
-update();
+ update();
 
 ```
      ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░

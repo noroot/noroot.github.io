@@ -5,7 +5,7 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ==============================
+== [Gemini capsule] * ============ [ 2014-10-29 ] ==
 ```
 => / ← Back
 # Darkside of the Spotlight
@@ -186,7 +186,7 @@ exit
 
 => http://s.overmind.ws.s3.amazonaws.com/darkspotlight/apple-spotlight-license.png http://s.overmind.ws.s3.amazonaws.com/darkspotlight/apple-spotlight-license.png
 
-=> http://support.apple.com/kb/PH18827?viewlocale=en_US http://support.apple.com/kb/PH18827?viewlocale=en_US
+=> http://support.apple.com/kb/PH18827?viewlocale=enUS http://support.apple.com/kb/PH18827?viewlocale=enUS
 
 На этом все, остальное можно обсудить в комментариях.
 

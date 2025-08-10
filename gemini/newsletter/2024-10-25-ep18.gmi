@@ -1,0 +1,113 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ============ [ 2024-10-25 ] ==
+```
+=> / ← Back
+# EP-18 FalseTrue Digest
+
+# Intro
+
+Hello everybody. This is episode 18 of FalseTrue Digest.
+
+## Stories
+
+We have two major recent stories for this month
+
+### The main story of this week is Linux foundation banning Russian maintainers due to sanctions.
+
+* Removing Russian developers from Linux MAINTAINERS file - This is the commit itself.
+
+* Linux Torvalds replied
+
+* Explanation of the case - Explanation of the case from one of the community member.
+
+* Article from Phoronix long time ago  - precedent of everything long before
+
+* Developers are leaving Linux kernel development
+
+* Getting called “Paid Actor” by Linus Torvalds
+
+Nobody explained situation better than Bryan Lunduke so I recommend to watch whole set of his videos on subject
+
+* Sanctions Hit Linux Kernel, Russian Programmers Banned
+
+* Why Were Russian Programmers Banned From Linux, But Not Huawei Employees?
+
+* Remembering When Obama Declared Linux Users “Extremists”
+
+### Internet Archive is dying
+
+Our beloved Internet Archive was hacked, multiple times, and didn’t get up properly, its broken, and nobody understands what is happening.
+
+* The Internet Archive will die - any serious attempts at archiving it?  - Reasoning behind that started long time ago
+
+* Internet Archive Data Breach affected 31 million users
+
+## Development
+
+* Open Feature -  OpenFeature is an open specification that provides a vendor-agnostic, community-driven API for feature flagging that works with your favorite feature flag management tool or in-house solution.
+
+* Open Observe - OpenObserve (O2 for short) is a cloud-native observability platform built specifically for logs, metrics, traces, analytics, RUM (Real User Monitoring - Performance, Errors, Session Replay) designed to work at petabyte scale.
+
+* Fast Storage - Ultra fast key value store (in C btw)
+
+* Toasty async ORM for Rust
+
+* ISO/IEC 14882:2024 Programming languages — C++
+
+    Hard core
+
+* Pretty C - Pretty C is a new scripting language compatible with C.
+
+* Playstation Vita Architecture
+
+* Cat without cat
+
+* Rust based rm
+
+## Emacs
+
+* News in Emacs 30
+
+* Native compilation enabled by default
+
+* Native (and faster) JSON support
+
+* use-package :vc keyword
+
+* Tree-sitter modes are declared as submodes
+
+* Minibuffer QOL improvements
+
+* Customize interface for dir-locals
+
+* New mode: visual-wrap-prefix-mode
+
+* New command: replace-regexp-as-diff
+
+* New package: which-key
+
+* New customizations
+
+* A few ELisp changes
+
+* Announcing Emacs Asia-Pacific (APAC) virtual meetup, Saturday, October 26, 2024
+
+* Drawing tools for Emacs
+
+* That Lightbulb Moment with Emacs
+
+#### UPD
+
+* BTW, I am launching Remoters.Club, please take a look at Remoters.Club - its supposed to be a community place for people who are working remotely and looking for a job.
+
+That’s it for this episode. Comment and share. EOF
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

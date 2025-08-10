@@ -5,7 +5,7 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ==============================
+== [Gemini capsule] * ============ [ 2020-08-26 ] ==
 ```
 => / ← Back
 # Fedora browser spyware
@@ -28,25 +28,11 @@ Firefox
 
 you have to add specific configuration variable, -
 
-go to
+* go to about:config
 
-```
+* add general.useragent.override
 
-about:config
-
-```
-
-add
-
-general.useragent.override
-
-put desired value for your user agent, for instance
-
-```
-
-Mozilla/5.0 (Windows NT 9.0; WOW64; Trident/7.0; rv:11.0) like Gecko
-
-```
+* put desired value for your user agent, for instance Mozilla/5.0 (Windows NT 9.0; WOW64; Trident/7.0; rv:11.0) like Gecko
 
 Why thats an issue ?
 
@@ -62,11 +48,9 @@ Firefox tells you everwhere that they are for Privacy, but the same time they re
 
 Summary
 
-Compile from source code when applicable
+* Compile from source code when applicable
 
-If you want Firefox use only official site version, not distribution version, until it’s
-
-=> https://www.gnu.org/software/gnuzilla/ Icecat
+* If you want Firefox use only official site version, not distribution version, until it’s Icecat
 
 ```
      ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░

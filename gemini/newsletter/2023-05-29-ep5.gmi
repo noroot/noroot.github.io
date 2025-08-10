@@ -1,0 +1,75 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ============ [ 2023-05-29 ] ==
+```
+=> / ← Back
+# EP5 FalseTrue Digest
+
+Welcome to EP-5 of
+
+FalseTrue Digest
+
+, - newsletter or journal, or maybe even e-zine, but right now let’s stick to the name digest. I’ll write weekly based summaries about software development, programming world and software itself.
+
+## News
+
+* Linux 6.4-rc1 https://lkml.org/lkml/2023/5/7/206
+
+* Everything You Always Wanted To Know About Mathematics* https://www.math.cmu.edu/~jmackey/151128/bwsbook.pdf
+
+* Schneier on LLMs https://www.schneier.com/blog/archives/2023/05/on-the-poisoning-of-llms.html
+
+* API Bug in Oauth dev tools https://packetstormsecurity.com/news/view/34657/API-Bug-In-OAuth-Dev-Tool-Opened-Apps-To-Account-Hijacking.html
+
+## Repositories and projects
+
+It mostly GPT related stuff in Github trending repositories for a week, its booming now, any way here is a few interesting to try
+
+* Face Swapper https://github.com/iperov/DeepFaceLive
+
+* Awesome self-hosted https://github.com/awesome-selfhosted/awesome-selfhosted
+
+## How-to’s and guides
+
+* When fullscans better than indexes https://www.jefftk.com/p/you-dont-always-need-indexes
+
+* Interesting article about Deus Ex texture blending https://simonschreibt.de/gat/deus-ex-alpha-terrain/
+
+## Weekly Linux desktop
+
+* OpenSnitch - GUI firewall analog of MacOS littlesnitch with same UI interface https://github.com/evilsocket/opensnitch
+
+## Mentions and utils
+
+* AWK https://en.wikipedia.org/wiki/AWK
+
+    
+
+      Alfred Aho - http://www.cs.columbia.edu/~aho/
+
+      Peter Weinberger - http://spinroot.com/pico/pjw.html
+
+      Brian Kernighan  - https://www.cs.princeton.edu/~bwk/
+
+### Authors note
+
+This format will be like this,
+
+* I’ll share various links, and experiences on a weekly base.
+
+* Interesting persons on Internet and their stuff.
+
+* Various software which you don’t even know.
+
+If you like what you see here please comment and share, this helps me gain some consistency on this.
+
+=> https://falsetrue.substack.com/ Subscribe on Substack
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

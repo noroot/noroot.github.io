@@ -5,7 +5,7 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ==============================
+== [Gemini capsule] * ============ [ 2022-08-31 ] ==
 ```
 => / ← Back
 # Opensource Fortinet client for Linux
@@ -14,11 +14,11 @@ There is a services called Fortinet, it is usually been used inside corporate ne
 
 ## Problem
 
-There is now good GUI client for Linux, official client is trial based and will stop work after trial period.
+* There is now good GUI client for Linux, official client is trial based and will stop work after trial period.
 
-Official terminal based client is no good too, very unusable
+* Official terminal based client is no good too, very unusable
 
-Cannot see connection status
+* Cannot see connection status
 
 ## Solution
 
@@ -26,11 +26,9 @@ Here is a project called
 
 => https://github.com/theinvisible/openfortigui OpenfortGUI
 
-QT based
+* QT based
 
-Terminal based
-
-=> https://github.com/adrienverge/openfortivpn openfortvpn
+* Terminal based openfortvpn
 
 ## Compile from source code
 
@@ -112,11 +110,11 @@ sudo openfortigui
 
 ## References
 
-=> https://github.com/theinvisible/openfortigui https://github.com/theinvisible/openfortigui
+* https://github.com/theinvisible/openfortigui
 
-=> https://github.com/adrienverge/openfortivpn https://github.com/adrienverge/openfortivpn
+* https://github.com/adrienverge/openfortivpn
 
-=> https://hadler.me/linux/openfortigui/ https://hadler.me/linux/openfortigui/
+* https://hadler.me/linux/openfortigui/
 
 ```
      ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░

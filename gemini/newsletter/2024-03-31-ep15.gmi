@@ -1,0 +1,67 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ============ [ 2024-03-31 ] ==
+```
+=> / ← Back
+# EP15 FalseTrue Digest
+
+Welcome to EP-15 of
+
+FalseTrue Digest
+
+, - newsletter or journal, or maybe even e-zine, but right now let’s stick to the name digest. I’ll write weekly based summaries about software development, programming world and software itself.
+
+## Stories
+
+* 40 years of programming
+
+* Own Your Web – Issue 11: Welcome to the IndieWeb
+
+* Are we watching the Internet die
+
+* S3 is not filesystem
+
+* Internet isn’t dying its changing?
+
+* Cloning through NVMe TCP
+
+## Interesting software
+
+* Showing page byte by byte
+
+* MemChess
+
+* Fonts for complex data
+
+* LocalSend
+
+* Rnote - vector base note taking software
+
+## Emacs
+
+* Uncle Dave emacs
+
+* ELisp random color
+
+* Creating a blog with org-mode
+
+* Control your tailnet from Emacs
+
+## AI
+
+* Nvidia is sued by authors
+
+## Development
+
+* Use the index Luke
+
+* Numbers every programmer should now?
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

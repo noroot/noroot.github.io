@@ -1,0 +1,119 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ============ [ 2025-08-02 ] ==
+```
+=> / ← Back
+# How and why to disable Spotlight
+
+Before knowing how, lets argue about why for a bit.
+
+# Why ?
+
+* Unpredictable Spotlight indexer behaviour, it might start reindexing in any moment espcially after MacOS crashes (yes yes that can happen to if you are advanced user)
+
+* Spotlight indexer may slowdown system for unpredictable amount of time.
+
+* Spotlight is indexing everything and constructing some meta database to handle all your files, and if files are private your probably don’t wanna have that behavouir.
+
+* If you’re attaching external drive with documents it will start indexing it, and all meta data will be used for search (Imagine you have external drive with billion of project source code files, it would be a performance disaster.)
+
+* Too many meta leaking to Spotlight, - through it you can search and connect almost everything (which can be fine for average Joe hipster in the cafe).
+
+* If you are a software developer then most probably have a lot of source code repositories, some of the may contain several million files, and you certainly do not want to indexing them. (Imagine indexing all dependencies for each project you have, and then you search for file through Spotlight you will get a lot of clutter)
+
+* Mail, thousands of letters will be scanned, you accidentally will search through it while launching some application with Spotlight.
+
+* You want to save SSD lifetime, because disableing index will reduce amount of operation made with SSD.
+
+# How ?
+
+Check current status of indexing
+
+```
+
+sudo mdutil -s -a
+
+Password:
+
+/:
+
+	Indexing and searching disabled.
+
+/System/Volumes/Data:
+
+	Indexing and searching disabled.
+
+/System/Volumes/Preboot:
+
+	Indexing enabled.
+
+```
+
+Set special file to tell Spotlight not to index. You can put that file to any path and it will be excluded from index
+
+```
+
+sudo touch /Volumes/MyExternalDrive/.metadataneverindex
+
+```
+
+Clean up existing indexes
+
+```
+
+sudo mdutil -E /Volumes/MyExternalDrive
+
+sudo mdutil -i off /Volumes/MyExternalDrive
+
+```
+
+You can uncheck all indexing types in Spotlight settings, you don’t need them if you want to complete disable spotlight indexing.
+
+=> /images/spotlight/spotlight-settings.jpeg Spotlight Settings
+
+As you can see, there are even some telemetry gathered for your private files, via “Help Improve Apple to Search” most probably you do not need that, so toggle it off too.
+
+Oftent times after major and minor updates those settings will be reset by the update, so make sure you check it from time to time until eventually you will decide to disable them all.
+
+Uncheck spotlight hotkey if you want to use another launcher. (
+
+=> https://falsetrue.io/projects/overlauncher/ OverLauncher
+
+for instance.)
+
+=> /images/spotlight/spotlight-hotkey-disable.jpeg Spotlight Hotkey
+
+## Hardcore mode (SIP must be disabled)
+
+* Disable SIP
+
+* Make binary not runnable via chmod
+
+    sudo chmod 000 /System/Library/CoreServices/Search.bundle
+
+* Disable menu spotlight menu icon
+
+    launchctl unload -w /System/Library/LaunchAgents/com.apple.Spotlight.plist
+
+If you can just use Linux/BSD/WhateverNix instead of MacOS, but don’t think
+
+=> https://falsetrue.io/howto/2025/07/13/disk-blinking/ Gnome don’t do similar things
+
+:-)
+
+# References
+
+* Apple Foundation Framework Spotlight reference
+
+* NPM adding noindex to his node_modules folder
+
+* OverLauncher
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

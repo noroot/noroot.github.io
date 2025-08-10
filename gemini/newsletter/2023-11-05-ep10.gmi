@@ -1,0 +1,67 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ============ [ 2023-11-05 ] ==
+```
+=> / ← Back
+# EP10 FalseTrue Digest
+
+Welcome to EP-10 of
+
+FalseTrue Digest
+
+, - newsletter or journal, or maybe even e-zine, but right now let’s stick to the name digest. I’ll write weekly based summaries about software development, programming world and software itself.
+
+# News
+
+* Rails 7.1.1 Released
+
+* Spacedrive - Rust written File manager
+
+* Bruno - API client/explorer, opensource and free Postman alternative
+
+* Introducing pgroll: zero-downtime, reversible, schema migrations for Postgres
+
+# Stories
+
+* Think twice before abandoning Xorg. Wayland breaks everything!
+
+* The Linux Foundation has practically abandoned Linux
+
+* Bitcoin community in a search of Satoshi Nakamoto Hal Finney was not Satoshi Nakamoto
+
+* Capitalism is dead long live technofeudalism
+
+* Choose boring technologies
+
+* 4Chan 20 Years
+
+* The Absolute Minimum Every Software Developer Must Know About Unicode in 2023 (Still No Excuses!)
+
+* Hey, Computer, Make Me a Font
+
+# Privacy / Sec
+
+* How to setup anonymous user flow
+
+* Local First software
+
+* Don’t Let Zombie Zoom Links Drag You Down
+
+# Emacs
+
+* Choosing Emacs as $EDITOR
+
+# Links
+
+* ASCII art facepalm
+
+=> https://falsetrue.substack.com/ Subscribe on Substack
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

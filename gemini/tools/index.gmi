@@ -5,14 +5,14 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ==============================
+== [Gemini capsule] * ============ [ 2025-08-10 ] ==
 ```
 => / ← Back
 # Tools
-=> 2023-11-27-logseq.gmi 2023-11-26 LogSeq - notes taking application
+=> 2023-11-27-logseq.md 2023-11-26 LogSeq - notes taking application
 => 2023-03-03-teams-vs-slack.gmi 2023-03-03 Teams vs Slack
 => 2023-01-01-activity-watch.gmi 2023-01-01 ActivityWatch - open source time tracker
-=> 2022-10-25-notes-app.gmi 2022-10-24 Notes
+=> 2022-10-25-notes-app.md 2022-10-24 Notes
 => 2019-01-26-rails-webpack-stimulus.gmi 2019-01-26 Rails + Webpack + Stimulus + Bootstrap 4
 => 2012-06-19-mongohub.gmi 2012-03-25 Mongohub клиент для mongodb
 => 2008-01-02-shorewall.gmi 2008-01-02 Shorewall - фреймворк для построения фаерволла

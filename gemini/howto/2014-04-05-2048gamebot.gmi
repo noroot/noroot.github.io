@@ -5,7 +5,7 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ==============================
+== [Gemini capsule] * ============ [ 2014-04-05 ] ==
 ```
 => / ← Back
 # 2048 game bot
@@ -42,31 +42,31 @@ function keyDown(evt)
 
 {
 
-var key;
+    var key;
 
-if(!evt)
+    if(!evt)
 
-{
+    {
 
-evt = window.event;
+        evt = window.event;
 
-if(!evt.which)
+        if(!evt.which)
 
-{
+        {
 
-key  =  evt.keyCode;
+            key  =  evt.keyCode;
 
-}
+        }
 
-}
+    }
 
-else if(evt)
+	else if(evt)
 
-{
+    {
 
-key = evt.which;
+        key = evt.which;
 
-}
+    }
 
 }
 
@@ -74,31 +74,31 @@ function fireKey(el, key)
 
 {
 
-if(document.createEventObject)
+    if(document.createEventObject)
 
-{
+    {
 
-var eventObj = document.createEventObject();
+        var eventObj = document.createEventObject();
 
-eventObj.keyCode = key;
+        eventObj.keyCode = key;
 
-el.fireEvent("onkeydown", eventObj);
+        el.fireEvent("onkeydown", eventObj);
 
-}
+    }
 
-else if(document.createEvent)
+	else if(document.createEvent)
 
-{
+    {
 
-var eventObj = document.createEvent("Events");
+        var eventObj = document.createEvent("Events");
 
-eventObj.initEvent("keydown", true, true);
+        eventObj.initEvent("keydown", true, true);
 
-eventObj.which = key;
+        eventObj.which = key;
 
-el.dispatchEvent(eventObj);
+        el.dispatchEvent(eventObj);
 
-}
+    }
 
 }
 
@@ -128,69 +128,69 @@ Github:
 
 /**
 
-* 2048 game bot
+ * 2048 game bot
 
-* usage: startgame and paste code to browser development console
+ * usage: startgame and paste code to browser development console
 
-*/
+ */
 
 function explode( delimiter, string ) {	// Split a string by string
 
-// 
+	// 
 
-// +   original by: Kevin van Zonneveld (http://kevin.vanzonneveld.net)
+	// +   original by: Kevin van Zonneveld (http://kevin.vanzonneveld.net)
 
-// +   improved by: kenneth
+	// +   improved by: kenneth
 
-// +   improved by: Kevin van Zonneveld (http://kevin.vanzonneveld.net)
+	// +   improved by: Kevin van Zonneveld (http://kevin.vanzonneveld.net)
 
-var emptyArray = { 0: '' };
+	var emptyArray = { 0: '' };
 
-if ( arguments.length != 2
+	if ( arguments.length != 2
 
-|| typeof arguments[0] == 'undefined'
+		|| typeof arguments[0] == 'undefined'
 
-|| typeof arguments[1] == 'undefined' )
+		|| typeof arguments[1] == 'undefined' )
 
-{
+	{
 
-return null;
+		return null;
 
-}
+	}
 
-if ( delimiter === ''
+	if ( delimiter === ''
 
-|| delimiter === false
+		|| delimiter === false
 
-|| delimiter === null )
+		|| delimiter === null )
 
-{
+	{
 
-return false;
+		return false;
 
-}
+	}
 
-if ( typeof delimiter == 'function'
+	if ( typeof delimiter == 'function'
 
-|| typeof delimiter == 'object'
+		|| typeof delimiter == 'object'
 
-|| typeof string == 'function'
+		|| typeof string == 'function'
 
-|| typeof string == 'object' )
+		|| typeof string == 'object' )
 
-{
+	{
 
-return emptyArray;
+		return emptyArray;
 
-}
+	}
 
-if ( delimiter === true ) {
+	if ( delimiter === true ) {
 
-delimiter = '1';
+		delimiter = '1';
 
-}
+	}
 
-return string.toString().split ( delimiter.toString() );
+	return string.toString().split ( delimiter.toString() );
 
 }
 
@@ -198,31 +198,31 @@ function keyDown(evt)
 
 {
 
-var key;
+    var key;
 
-if(!evt)
+    if(!evt)
 
-{
+    {
 
-evt = window.event;
+        evt = window.event;
 
-if(!evt.which)
+        if(!evt.which)
 
-{
+        {
 
-key  =  evt.keyCode;
+            key  =  evt.keyCode;
 
-}
+        }
 
-}
+    }
 
-else if(evt)
+	else if(evt)
 
-{
+    {
 
-key = evt.which;
+        key = evt.which;
 
-}
+    }
 
 }
 
@@ -230,31 +230,31 @@ function fireKey(el, key)
 
 {
 
-if(document.createEventObject)
+    if(document.createEventObject)
 
-{
+    {
 
-var eventObj = document.createEventObject();
+        var eventObj = document.createEventObject();
 
-eventObj.keyCode = key;
+        eventObj.keyCode = key;
 
-el.fireEvent("onkeydown", eventObj);
+        el.fireEvent("onkeydown", eventObj);
 
-}
+    }
 
-else if(document.createEvent)
+	else if(document.createEvent)
 
-{
+    {
 
-var eventObj = document.createEvent("Events");
+        var eventObj = document.createEvent("Events");
 
-eventObj.initEvent("keydown", true, true);
+        eventObj.initEvent("keydown", true, true);
 
-eventObj.which = key;
+        eventObj.which = key;
 
-el.dispatchEvent(eventObj);
+        el.dispatchEvent(eventObj);
 
-}
+    }
 
 }
 
@@ -262,33 +262,33 @@ function logscore()
 
 {
 
-var tiles = [128, 256, 512, 1024, 2048];
+	var tiles = [128, 256, 512, 1024, 2048];
 
-var arlen = tiles.length;
+	var arlen = tiles.length;
 
-for(var i = 0; i <= arlen;i++)
+	for(var i = 0; i <= arlen;i++)
 
-{
+	{
 
-score = tiles[i];
+		score = tiles[i];
 
-if (document.getElementsByClassName("tile-" + score).length != 0)
+		if (document.getElementsByClassName("tile-" + score).length != 0)
 
-{
+		{
 
-console.log("MAX SCORE=" + score);
+			console.log("MAX SCORE=" + score);
 
-}
+		}
 
-else
+		else
 
-{
+		{
 
-console.log("FAIL");
+			console.log("FAIL");
 
-}
+		}
 
-}
+	}
 
 }
 
@@ -326,69 +326,69 @@ function calculate_turn()
 
 {
 
-var fired = 0;
+	var fired = 0;
 
-var arr = document.getElementsByClassName('tile');
+	var arr = document.getElementsByClassName('tile');
 
-selected_turn = 0;
+	selected_turn = 0;
 
-prefered_turn = 0;
+	prefered_turn = 0;
 
-var turns = [];
+	var turns = [];
 
-matrix_object = [];
+	matrix_object = [];
 
-// prepare object for more smart solving (not used in future)
+	// prepare object for more smart solving (not used in future)
 
-for(var i=0; i <= arr.length; i++)
+	for(var i=0; i <= arr.length; i++)
 
-{
+	{
 
-var el = arr[i];
+		var el = arr[i];
 
-if (el)
+		if (el)
 
-{
+		{
 
-var t = explode("-", el.classList[1]);
+			var t = explode("-", el.classList[1]);
 
-var tilescore = t[1];
+			var tilescore = t[1];
 
-var t = explode("-", el.classList[2]);
+			var t = explode("-", el.classList[2]);
 
-var tp = {'score': tilescore, 'x':t[2], 'y':t[3]};
+			var tp = {'score': tilescore, 'x':t[2], 'y':t[3]};
 
-if (tp.x!=='undefined')
+			if (tp.x!=='undefined')
 
-{
+			{
 
-matrix_object.push(tp);
+				matrix_object.push(tp);
 
-}
+			}
 
-}
+		}
 
-}
+	}
 
-// TODO:
+	// TODO:
 
-// make clever work here
+	// make clever work here
 
-// until clever work done just go random
+	// until clever work done just go random
 
-if (prefered_turn == 0 || selected_turn == 0)
+	if (preferedturn == 0 || selectedturn == 0)
 
-{
+	{
 
-var keys = [up,right,down]; // tricky turns, without left turn in case of win
+		var keys = [up,right,down]; // tricky turns, without left turn in case of win
 
-var key = keys[Math.floor(Math.random() * keys.length)];
+		var key = keys[Math.floor(Math.random() * keys.length)];
 
-selected_turn = key;
+		selected_turn = key;
 
-}
+	}
 
-return selected_turn;
+	return selected_turn;
 
 }
 
@@ -396,45 +396,45 @@ function make_turn()
 
 {
 
-if (document.getElementsByClassName("game-over").length > 0)
+	if (document.getElementsByClassName("game-over").length > 0)
 
-{
+	{
 
-console.clear();
+		console.clear();
 
-logscore();
+		logscore();
 
-tries++;
+		tries++;
 
-console.log("Restart (" + tries + ", "+clicks+")");
+		console.log("Restart (" + tries + ", "+clicks+")");
 
-clicks = 0;
+		clicks = 0;
 
-document.getElementsByClassName("restart-button")[0].click();
+		document.getElementsByClassName("restart-button")[0].click();
 
-}
+	}
 
-else if (document.getElementsByClassName("game-won").length > 0)
+	else if (document.getElementsByClassName("game-won").length > 0)
 
-{
+	{
 
-clearInterval(interval);
+		clearInterval(interval);
 
-console.log("win");
+		console.log("win");
 
-}
+	}
 
-else
+	else
 
-{
+	{
 
-clicks++;
+		clicks++;
 
-var turn = calculate_turn();
+		var turn = calculate_turn();
 
-fireKey(gamebox, turn);
+		fireKey(gamebox, turn);
 
-}
+	}
 
 }
 

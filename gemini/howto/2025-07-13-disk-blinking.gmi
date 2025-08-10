@@ -1,0 +1,235 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ============ [ 2025-07-13 ] ==
+```
+=> / ← Back
+# Prevent disk from being indexed by system
+
+When prepping a new backup disk, especially after securely wiping, formatting, and mounting it, you might be surprised to see the disk still blinking — indicating activity. It most probably GNOME indexer, which prepresented by this
+
+```
+
+tracker-miner-fs-3
+
+```
+
+, so check process list for its presence.
+
+```
+
+ps aux | grep -E 'tracker|baloo|mlocate|plocate'
+
+```
+
+## What is tracker-miner-fs-3?
+
+```
+
+tracker-miner-fs-3
+
+```
+
+is part of the
+
+Tracker 3 framework
+
+, a background service used by GNOME to scan filesystems and build a searchable metadata database. It powers features like:
+
+* GNOME Shell search
+
+* Nautilus file search
+
+* File indexing for content, tags, metadata
+
+By default,
+
+Tracker watches all mounted volumes
+
+, including your freshly-prepared backup disk.
+
+## Why This Matters for Backups
+
+If you’re like me, using a clean
+
+```
+
+ext4
+
+```
+
+- formatted HDD for
+
+photo backups
+
+, Tracker is:
+
+* 📈 Consuming disk I/O
+
+* 💾 Creating hidden files like .tracker3/
+
+* 🌀 Interfering with a clean, controlled backup workflow
+
+You probably don’t want your backup volume scanned, tagged, and written to by an automated desktop daemon.
+
+## How to Stop Tracker from Indexing Your Disk
+
+### Prevent Tracker from Touching a Mount
+
+Create a
+
+```
+
+.trackerignore
+
+```
+
+file at the root of the mount point:
+
+```
+
+touch /mnt/photos/.trackerignore
+
+```
+
+Alternatively,
+
+```
+
+.nomedia
+
+```
+
+is also respected by some services:
+
+```
+
+touch /mnt/photos/.nomedia
+
+```
+
+This tells Tracker (and sometimes other indexers) to
+
+ignore the folder entirely
+
+.
+
+### Kill It Temporarily
+
+To immediately stop Tracker:
+
+```
+
+pkill tracker-miner-fs-3
+
+```
+
+It may restart automatically unless disabled via systemd.
+
+### Disable Tracker Permanently (if you don’t use it)
+
+```
+
+tracker3 reset --hard
+
+systemctl --user mask tracker-miner-fs-3.service
+
+systemctl --user mask tracker-store.service
+
+```
+
+You can also stop all Tracker daemons:
+
+```
+
+tracker3 daemon -t
+
+```
+
+> This will disable GNOME file search features system-wide.
+
+### Remove tracker index database
+
+The tracker3 database storage is here: $HOME/.cache/tracker3
+
+The log is here: $HOME/.local/share/tracker/data
+
+```
+
+rm -rvf ~/.cache/tracker3
+
+```
+
+```
+
+rm -rvf ~/.local/share/tracker
+
+```
+
+## How to See What’s Accessing the Disk
+
+To confirm Tracker (or anything else) is touching your disk:
+
+```
+
+sudo iotop
+
+```
+
+```
+
+sudo lsof +D /mnt/photos
+
+```
+
+```
+
+sudo fuser -vm /mnt/photos
+
+```
+
+These tools let you observe file-level access and identify persistent background activity.
+
+## Thoughts
+
+If you’re using GNOME and preparing a backup volume — especially for photos — make sure
+
+```
+
+tracker-miner-fs
+
+```
+
+isn’t working against you. A simple
+
+```
+
+.trackerignore
+
+```
+
+file can prevent unintended indexing, I/O, or metadata writes.
+
+There is an option to setup
+
+udev
+
+to create .trackerignore automatically.
+
+### References
+
+* https://tracker.gnome.org/overview/
+
+* https://r4ven.fr/en/blog/gnome-nautilus-indexation-tracker-miner/
+
+* https://discourse.gnome.org/t/configure-tracker-to-always-index-certain-file-extensions/17199/3
+
+* https://github.com/Tomas-M/iotop
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

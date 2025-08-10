@@ -5,7 +5,7 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ==============================
+== [Gemini capsule] * ============ [ 2024-09-15 ] ==
 ```
 => / ← Back
 # EuRuKo 2024 Review
@@ -26,21 +26,21 @@ So here it is EuRuKo 2024. This year it Was set in Sarajevo, Bosnia and Herzegov
 
 ### Pros:
 
-Positioned as greatest ruby conference
+* Positioned as greatest ruby conference
 
-Participation of ruby creators and contributors - Yukihiro “Matz” Matsumoto, Xavier Noria, Koichi Sasada, Dave Thomas, Samuel Giddins, and many more
+* Participation of ruby creators and contributors - Yukihiro “Matz” Matsumoto, Xavier Noria, Koichi Sasada, Dave Thomas, Samuel Giddins, and many more
 
-Location with a good food.
+* Location with a good food.
 
 ### Cons:
 
-Splitted to 3 tracks (first time for this conference), but its obvious better to have 1 strong sequences of speaches
+* Splitted to 3 tracks (first time for this conference), but its obvious better to have 1 strong sequences of speaches
 
-Lack of variety of sponsorships signifies that conference has no marketing interest among software development market.
+* Lack of variety of sponsorships signifies that conference has no marketing interest among software development market.
 
-No drinking water supply (reminder: conference was paid)
+* No drinking water supply (reminder: conference was paid)
 
-Feels like speeches was not correlate with the majority of audience professional experiences
+* Feels like speeches was not correlate with the majority of audience professional experiences
 
 ### Plot
 
@@ -60,11 +60,11 @@ My score for this conference is 3/5.
 
 ## References
 
-=> https://euruko.org https://euruko.org
+* https://euruko.org
 
-=> https://2024.euruko.org https://2024.euruko.org
+* https://2024.euruko.org
 
-=> https://www.linkedin.com/company/euruko/posts/?feedView=all https://www.linkedin.com/company/euruko/posts/?feedView=all
+* https://www.linkedin.com/company/euruko/posts/?feedView=all
 
 ```
      ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░

@@ -5,17 +5,19 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ==============================
+== [Gemini capsule] * ============ [ 2025-08-10 ] ==
 ```
 => / ← Back
 # Howto
+=> 2025-08-02-disable-spotlight.gmi 2025-08-02 How and why to disable Spotlight
+=> 2025-07-13-disk-blinking.gmi 2025-07-13 Prevent disk from being indexed by system
 => 2024-10-07-kubernetes-letsencrypt.gmi 2024-10-07 Installing LetsEncrypt with Kubernetes on Digital Ocean
 => 2024-07-16-kubernetes-nginx-502.gmi 2024-07-16 Resolving 502 Errors in Third-Party Authorization with Nginx Buffer Size Adjustment
 => 2024-05-11-baseus-h1-bug-reset.gmi 2024-05-10 Baseus H1 headphones reset
 => 2023-06-04-life-simulation.gmi 2023-06-04 Life simulation
 => 2023-03-04-virtualbox-signed-modules.gmi 2023-03-04 How to sign VirtualBox kernel modules when you're on secure boot
 => 2023-01-14-how-i-manage-files.gmi 2023-01-14 How I manage files v1 DRAFT
-=> 2022-10-23-pipewire-restart.gmi 2022-10-23 Fedora restart sound system
+=> 2022-10-23-pipewire-restart.md 2022-10-23 Fedora restart sound system
 => 2022-08-31-openfortinetgui.gmi 2022-08-31 Opensource Fortinet client for Linux
 => 2022-06-05-dotfiles.gmi 2022-06-05 How to manage your dotfiles with git
 => 2021-12-21-camunda-modeler.gmi 2021-12-21 Where a draw my diagrams ? (Camunda Modeler)

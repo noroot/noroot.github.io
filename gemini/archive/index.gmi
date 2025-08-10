@@ -5,168 +5,171 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ==============================
+== [Gemini capsule] * ============ [ 2025-08-10 ] ==
 ```
 # Archive
 
 => / ← Back
 
 ## 2025
-=> 2025-04-27-piepal-tool.gmi 2025-04-27 PiePAL - Terminal Tool for PayPal Observability
-=> 2025-04-15-honda-900rr-fireblade.gmi 2025-04-15 Honda 900RR Fireblade
-=> 2025-04-06-httop.gmi 2025-04-06 HTTOP - A real-time HTTP log monitor similar to ApacheTop
+=> /howto/2025-08-02-disable-spotlight.gmi 2025-08-02 How and why to disable Spotlight
+=> /notes/2025-07-22-gemini-capsule.gmi 2025-07-22 Gemini, Gopher and and SmolNet
+=> /howto/2025-07-13-disk-blinking.gmi 2025-07-13 Prevent disk from being indexed by system
+=> /projects/2025-04-27-piepal-tool.gmi 2025-04-27 PiePAL - Terminal Tool for PayPal Observability
+=> /photo/2025-04-15-honda-900rr-fireblade.gmi 2025-04-15 Honda 900RR Fireblade
+=> /projects/2025-04-06-httop.gmi 2025-04-06 HTTOP - A real-time HTTP log monitor similar to ApacheTop
 
 ## 2024
-=> 2024-11-17-ep19.gmi 2024-12-10 EP-19 FalseTrue Digest
-=> 2024-11-11-zastava-jugo.gmi 2024-11-11 Zastava Jugo 45
-=> 2024-11-11-fruska-gora.gmi 2024-11-11 Fruška Gora Forest
-=> 2024-10-25-ep18.gmi 2024-10-25 EP-18 FalseTrue Digest
-=> 2024-10-10-crysis-tale.gmi 2024-10-11 Рассказ - "Нужно продолжать работать"
-=> 2024-10-07-kubernetes-letsencrypt.gmi 2024-10-07 Installing LetsEncrypt with Kubernetes on Digital Ocean
-=> 2024-09-30-linked-comment-rush.gmi 2024-09-30 My comment on linkedin collected almost thousand of likes
-=> 2024-09-23-ep17.gmi 2024-09-23 EP-17 FalseTrue Digest
-=> 2024-09-15-euruko2024-review.gmi 2024-09-15 EuRuKo 2024 Review
-=> 2024-09-10-agile-manifesto-failure.gmi 2024-09-10 Agile manifesto failure
-=> 2024-09-08-mantis.gmi 2024-09-08 Mantis
-=> 2024-09-01-ferrari-308GTB.gmi 2024-09-01 Ferrari 308 GTB
-=> 2024-08-31-big-companies-hoax.gmi 2024-08-31 Why big company experience doesn't always translate to practical skills
-=> 2024-08-18-debian-31.gmi 2024-08-18 Debian turned 31 years old
-=> 2024-08-14-terry-davis.gmi 2024-08-14 In memory of Terry Davis
-=> 2024-08-11-tripump-t4r.gmi 2024-08-11 Triumph T4R
-=> 2024-08-10-photo-blackcat.gmi 2024-08-10 Sleepy Black cat
-=> 2024-04-30-ep16.gmi 2024-08-10 EP-16 FalseTrue Digest
-=> 2024-08-09-scam-attempt.gmi 2024-08-09 WARNING: Scam attempt
-=> 2024-08-08-lions-gate.gmi 2024-08-08 Lion's gate
-=> 2024-08-03-names-are-predictable.gmi 2024-08-03 Research: We Look Like Our Names: The Manifestation of Name Stereotypes in Facial Appearance
-=> 2024-08-02-lunduke-gnome-drama.gmi 2024-08-02 GNOME bans Bryan Lunduke drama
-=> 2024-08-01-sharp-zaurus.gmi 2024-08-01 Sharp Zaurus SL-C1000 by Janus Cycle
-=> 2024-07-16-kubernetes-nginx-502.gmi 2024-07-16 Resolving 502 Errors in Third-Party Authorization with Nginx Buffer Size Adjustment
-=> 2024-06-24-assange-is-free.gmi 2024-06-24 Julian Assange is free
-=> 2024-06-23-csv-breach.gmi 2024-06-23 Humor: Add comma's to your passwords
-=> 2024-06-22-switched-to-bridgetown.gmi 2024-06-22 Switched from Jekyll to Bridgetown
-=> 2024-05-11-baseus-h1-bug-reset.gmi 2024-05-10 Baseus H1 headphones reset
-=> 2024-03-31-ep15.gmi 2024-03-31 EP15 FalseTrue Digest
-=> 2024-03-08-laresume-project.gmi 2024-03-08 Released LaResume - LaTex resume building framework
-=> 2024-02-28-ep14.gmi 2024-02-29 EP14 FalseTrue Digest
-=> 2024-01-30-ep13.gmi 2024-01-30 EP13 FalseTrue Digest
-=> 2024-01-09-lhx-game.gmi 2024-01-09 LHX Attack Chopper- sim game from 1990
-=> 2024-01-06-baudrillard-now-vol5-1.gmi 2024-01-06 Baudrillard Now Volume 5 Issue 1
+=> /newsletter/2024-11-17-ep19.gmi 2024-12-10 EP-19 FalseTrue Digest
+=> /photo/2024-11-11-zastava-jugo.gmi 2024-11-11 Zastava Jugo 45
+=> /photo/2024-11-11-fruska-gora.gmi 2024-11-11 Fruška Gora Forest
+=> /newsletter/2024-10-25-ep18.gmi 2024-10-25 EP-18 FalseTrue Digest
+=> /share/2024-10-10-crysis-tale.gmi 2024-10-11 Рассказ - "Нужно продолжать работать"
+=> /howto/2024-10-07-kubernetes-letsencrypt.gmi 2024-10-07 Installing LetsEncrypt with Kubernetes on Digital Ocean
+=> /share/2024-09-30-linked-comment-rush.gmi 2024-09-30 My comment on linkedin collected almost thousand of likes
+=> /newsletter/2024-09-23-ep17.gmi 2024-09-23 EP-17 FalseTrue Digest
+=> /share/2024-09-15-euruko2024-review.gmi 2024-09-15 EuRuKo 2024 Review
+=> /share/2024-09-10-agile-manifesto-failure.gmi 2024-09-10 Agile manifesto failure
+=> /photo/2024-09-08-mantis.gmi 2024-09-08 Mantis
+=> /photo/2024-09-01-ferrari-308GTB.gmi 2024-09-01 Ferrari 308 GTB
+=> /share/2024-08-31-big-companies-hoax.gmi 2024-08-31 Why big company experience doesn't always translate to practical skills
+=> /share/2024-08-18-debian-31.gmi 2024-08-18 Debian turned 31 years old
+=> /person/2024-08-14-terry-davis.gmi 2024-08-14 In memory of Terry Davis
+=> /photo/2024-08-11-tripump-t4r.gmi 2024-08-11 Triumph T4R
+=> /photo/2024-08-10-photo-blackcat.gmi 2024-08-10 Sleepy Black cat
+=> /newsletter/2024-04-30-ep16.gmi 2024-08-10 EP-16 FalseTrue Digest
+=> /share/2024-08-09-scam-attempt.gmi 2024-08-09 WARNING: Scam attempt
+=> /share/2024-08-08-lions-gate.gmi 2024-08-08 Lion's gate
+=> /share/2024-08-03-names-are-predictable.gmi 2024-08-03 Research: We Look Like Our Names: The Manifestation of Name Stereotypes in Facial Appearance
+=> /share/2024-08-02-lunduke-gnome-drama.gmi 2024-08-02 GNOME bans Bryan Lunduke drama
+=> /share/2024-08-01-sharp-zaurus.gmi 2024-08-01 Sharp Zaurus SL-C1000 by Janus Cycle
+=> /howto/2024-07-16-kubernetes-nginx-502.gmi 2024-07-16 Resolving 502 Errors in Third-Party Authorization with Nginx Buffer Size Adjustment
+=> /share/2024-06-24-assange-is-free.gmi 2024-06-24 Julian Assange is free
+=> /share/2024-06-23-csv-breach.gmi 2024-06-23 Humor: Add comma's to your passwords
+=> /updates/2024-06-22-switched-to-bridgetown.gmi 2024-06-22 Switched from Jekyll to Bridgetown
+=> /howto/2024-05-11-baseus-h1-bug-reset.gmi 2024-05-10 Baseus H1 headphones reset
+=> /newsletter/2024-03-31-ep15.gmi 2024-03-31 EP15 FalseTrue Digest
+=> /projects/2024-03-08-laresume-project.gmi 2024-03-08 Released LaResume - LaTex resume building framework
+=> /newsletter/2024-02-28-ep14.gmi 2024-02-29 EP14 FalseTrue Digest
+=> /newsletter/2024-01-30-ep13.gmi 2024-01-30 EP13 FalseTrue Digest
+=> /games/2024-01-09-lhx-game.gmi 2024-01-09 LHX Attack Chopper- sim game from 1990
+=> /share/2024-01-06-baudrillard-now-vol5-1.gmi 2024-01-06 Baudrillard Now Volume 5 Issue 1
 
 ## 2023
-=> 2023-12-31-ep12.gmi 2023-12-31 EP12 FalseTrue Digest
-=> 2023-12-07-google-gemini.gmi 2023-12-07 Google's new AI
-=> 2023-12-07-always-goggins.gmi 2023-12-07 David Goggins - How To Master Your Life (4K) | Modern Wisdom Podcast 577
-=> 2023-12-05-ep11.gmi 2023-12-05 EP11 FalseTrue Digest
-=> 2023-11-27-logseq.gmi 2023-11-26 LogSeq - notes taking application
-=> 2023-11-05-ep10.gmi 2023-11-05 EP10 FalseTrue Digest
-=> 2023-10-05-ep9.gmi 2023-10-05 EP9 FalseTrue Digest
-=> 2023-08-28-benchmarks.gmi 2023-08-26 Benchmarks code for CPU testing
-=> 2023-08-16-debian-30.gmi 2023-08-16 Debian 30 years behind
-=> 2023-07-20-rip-kevin-mitnick.gmi 2023-07-21 RIP Kevin Mitnick
-=> 2023-06-28-ancient-english-to-pr.gmi 2023-06-28 Ancient english helps closing PRs // Github
-=> 2023-06-20-ep6.gmi 2023-06-20 EP6 FalseTrue Digest
-=> 2023-06-04-life-simulation.gmi 2023-06-04 Life simulation
-=> 2023-05-29-ep5.gmi 2023-05-29 EP5 FalseTrue Digest
-=> 2023-05-22-ep4.gmi 2023-05-22 EP4 FalseTrue Digest
-=> 2023-05-15-ep3.gmi 2023-05-15 EP3 FalseTrue Digest
-=> 2023-05-08-ep2.gmi 2023-05-08 EP2 FalseTrue Digest
-=> 2023-05-01-ep1.gmi 2023-05-01 EP1 FalseTrue Digest
-=> 2023-03-05-agileclownshow.gmi 2023-03-05 Agile clown show // Linkedin
-=> 2023-03-04-virtualbox-signed-modules.gmi 2023-03-04 How to sign VirtualBox kernel modules when you're on secure boot
-=> 2023-03-03-teams-vs-slack.gmi 2023-03-03 Teams vs Slack
-=> 2023-02-28-health-check-default-rails7.gmi 2023-02-28 Rails 7 introduce default healthcheck controller
-=> 2023-02-26-change-colorscheme-for-code-blocks.gmi 2023-02-26 Change colorscheme for code blocks highlighting
-=> 2023-01-28-changelog-mainframe.gmi 2023-01-28 ChangeLog #524 Good explanation of mainframe is
-=> 2023-01-18-ruby-yjit-3.2.gmi 2023-01-18 Ruby 3.2’s YJIT is Production-Ready
-=> 2023-01-17-brave-new-trusted-kernel.gmi 2023-01-17 Unified Kernel Image explanation
-=> 2023-01-14-how-i-manage-files.gmi 2023-01-14 How I manage files v1 DRAFT
-=> 2023-01-08-Ken-Block-RIP.gmi 2023-01-08 Ken Block(43) R.I.P.
-=> 2023-01-01-activity-watch.gmi 2023-01-01 ActivityWatch - open source time tracker
+=> /newsletter/2023-12-31-ep12.gmi 2023-12-31 EP12 FalseTrue Digest
+=> /share/2023-12-07-google-gemini.gmi 2023-12-07 Google's new AI
+=> /share/2023-12-07-always-goggins.gmi 2023-12-07 David Goggins - How To Master Your Life (4K) | Modern Wisdom Podcast 577
+=> /newsletter/2023-12-05-ep11.gmi 2023-12-05 EP11 FalseTrue Digest
+=> /tools/2023-11-27-logseq.md 2023-11-26 LogSeq - notes taking application
+=> /newsletter/2023-11-05-ep10.gmi 2023-11-05 EP10 FalseTrue Digest
+=> /newsletter/2023-10-05-ep9.gmi 2023-10-05 EP9 FalseTrue Digest
+=> /share/2023-08-28-benchmarks.md 2023-08-26 Benchmarks code for CPU testing
+=> /share/2023-08-16-debian-30.gmi 2023-08-16 Debian 30 years behind
+=> /person/2023-07-20-rip-kevin-mitnick.gmi 2023-07-21 RIP Kevin Mitnick
+=> /share/2023-06-28-ancient-english-to-pr.gmi 2023-06-28 Ancient english helps closing PRs // Github
+=> /newsletter/2023-06-20-ep6.gmi 2023-06-20 EP6 FalseTrue Digest
+=> /howto/2023-06-04-life-simulation.gmi 2023-06-04 Life simulation
+=> /newsletter/2023-05-29-ep5.gmi 2023-05-29 EP5 FalseTrue Digest
+=> /newsletter/2023-05-22-ep4.gmi 2023-05-22 EP4 FalseTrue Digest
+=> /newsletter/2023-05-15-ep3.gmi 2023-05-15 EP3 FalseTrue Digest
+=> /newsletter/2023-05-08-ep2.gmi 2023-05-08 EP2 FalseTrue Digest
+=> /newsletter/2023-05-01-ep1.gmi 2023-05-01 EP1 FalseTrue Digest
+=> /share/2023-03-05-agileclownshow.gmi 2023-03-05 Agile clown show // Linkedin
+=> /howto/2023-03-04-virtualbox-signed-modules.gmi 2023-03-04 How to sign VirtualBox kernel modules when you're on secure boot
+=> /tools/2023-03-03-teams-vs-slack.gmi 2023-03-03 Teams vs Slack
+=> /dev/2023-02-28-health-check-default-rails7.gmi 2023-02-28 Rails 7 introduce default healthcheck controller
+=> /dev/2023-02-26-change-colorscheme-for-code-blocks.gmi 2023-02-26 Change colorscheme for code blocks highlighting
+=> /share/2023-01-28-changelog-mainframe.gmi 2023-01-28 ChangeLog #524 Good explanation of mainframe is
+=> /share/2023-01-18-ruby-yjit-3.2.gmi 2023-01-18 Ruby 3.2’s YJIT is Production-Ready
+=> /share/2023-01-17-brave-new-trusted-kernel.gmi 2023-01-17 Unified Kernel Image explanation
+=> /howto/2023-01-14-how-i-manage-files.gmi 2023-01-14 How I manage files v1 DRAFT
+=> /share/2023-01-08-Ken-Block-RIP.gmi 2023-01-08 Ken Block(43) R.I.P.
+=> /tools/2023-01-01-activity-watch.gmi 2023-01-01 ActivityWatch - open source time tracker
 
 ## 2022
-=> 2022-10-30-lex-fridman-333.gmi 2022-10-30 Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333
-=> 2022-10-25-lex-fridman-balaji-srinivasan.gmi 2022-10-25 Balaji Srinivasan: How to Fix Government, Twitter, Science, and the FDA | Lex Fridman Podcast #331
-=> 2022-10-25-notes-app.gmi 2022-10-24 Notes
-=> 2022-10-23-pipewire-restart.gmi 2022-10-23 Fedora restart sound system
-=> 2022-10-23-devoops90days.gmi 2022-10-22 90DaysOfDevOps
-=> 2022-10-22-freebsd-third-quarter-status-report.gmi 2022-10-22 FreeBSD Quarterly Status Report Third Quarter 2022
-=> 2022-08-31-openfortinetgui.gmi 2022-08-31 Opensource Fortinet client for Linux
-=> 2022-06-05-dotfiles.gmi 2022-06-05 How to manage your dotfiles with git
+=> /share/2022-10-30-lex-fridman-333.md 2022-10-30 Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333
+=> /share/2022-10-25-lex-fridman-balaji-srinivasan.md 2022-10-25 Balaji Srinivasan: How to Fix Government, Twitter, Science, and the FDA | Lex Fridman Podcast #331
+=> /tools/2022-10-25-notes-app.md 2022-10-24 Notes
+=> /howto/2022-10-23-pipewire-restart.md 2022-10-23 Fedora restart sound system
+=> /share/2022-10-23-devoops90days.md 2022-10-22 90DaysOfDevOps
+=> /share/2022-10-22-freebsd-third-quarter-status-report.md 2022-10-22 FreeBSD Quarterly Status Report Third Quarter 2022
+=> /howto/2022-08-31-openfortinetgui.gmi 2022-08-31 Opensource Fortinet client for Linux
+=> /howto/2022-06-05-dotfiles.gmi 2022-06-05 How to manage your dotfiles with git
 
 ## 2021
-=> 2021-12-21-camunda-modeler.gmi 2021-12-21 Where a draw my diagrams ? (Camunda Modeler)
-=> 2021-12-11-qoi-lossless.gmi 2021-12-11 QOI lossless image comperession proposal
+=> /howto/2021-12-21-camunda-modeler.gmi 2021-12-21 Where a draw my diagrams ? (Camunda Modeler)
+=> /share/2021-12-11-qoi-lossless.gmi 2021-12-11 QOI lossless image comperession proposal
 
 ## 2020
-=> 2020-11-01-pc-to-cartridge.gmi 2020-10-01 Cartridge game storage for PC
-=> 2020-08-26-fedora-spyware.gmi 2020-08-26 Fedora browser spyware
-=> 2020-06-08-pihole.gmi 2020-06-08 PiHole + dnscrypt-proxy = internet sewage filter
-=> 2020-03-21-webmention-test.gmi 2020-03-21 Webmention is POSSE compliant mechanism for commenting
-=> 2020-01-07-newsboat.gmi 2020-01-07 How I read RSS/Atom
-=> 2020-01-02-jekyll-email-comments.gmi 2020-01-02 Jekyll mail comments
-=> 2020-01-01-internet-sewage-teaser.gmi 2020-01-01 Internet sewage: Teaser
+=> /forecasts/2020-11-01-pc-to-cartridge.gmi 2020-10-01 Cartridge game storage for PC
+=> /security/2020-08-26-fedora-spyware.gmi 2020-08-26 Fedora browser spyware
+=> /howto/2020-06-08-pihole.gmi 2020-06-08 PiHole + dnscrypt-proxy = internet sewage filter
+=> /share/2020-03-21-webmention-test.gmi 2020-03-21 Webmention is POSSE compliant mechanism for commenting
+=> /howto/2020-01-07-newsboat.gmi 2020-01-07 How I read RSS/Atom
+=> /projects/2020-01-02-jekyll-email-comments.gmi 2020-01-02 Jekyll mail comments
+=> /research/2020-01-01-internet-sewage-teaser.gmi 2020-01-01 Internet sewage: Teaser
 
 ## 2019
-=> 2019-04-20-memory-result-chart.gmi 2019-04-21 Память о действиях и результате
-=> 2019-02-22-wowcube.gmi 2019-02-22 Brief look into WowCube SDK
-=> 2019-02-02-netiquette.gmi 2019-02-02 Netiquette RFC1855
-=> 2019-01-26-rails-webpack-stimulus.gmi 2019-01-26 Rails + Webpack + Stimulus + Bootstrap 4
+=> /research/2019-04-20-memory-result-chart.gmi 2019-04-21 Память о действиях и результате
+=> /research/2019-02-22-wowcube.gmi 2019-02-22 Brief look into WowCube SDK
+=> /research/2019-02-02-netiquette.gmi 2019-02-02 Netiquette RFC1855
+=> /tools/2019-01-26-rails-webpack-stimulus.gmi 2019-01-26 Rails + Webpack + Stimulus + Bootstrap 4
 
 ## 2018
-=> 2018-11-27-mknod-network.gmi 2018-11-27 Сеть с помощью mknod
-=> 2018-11-23-wallarm-quest.gmi 2018-11-24 CTF Квест
+=> /howto/2018-11-27-mknod-network.gmi 2018-11-27 Сеть с помощью mknod
+=> /security/2018-11-23-wallarm-quest.gmi 2018-11-24 CTF Квест
 
 ## 2017
-=> 2017-11-02-git-out-of-memory.gmi 2017-11-01 Что делать на если нехватает памяти для git
-=> 2017-10-19-sudoers-syntax-error.gmi 2017-10-20 Что делать если в /etc/sudoers syntax error
-=> 2017-07-31-roem-wordpress.gmi 2017-07-31 Roem на Wordpress
-=> 2017-05-31-keychain-broken.gmi 2017-05-31 What to do if OSX Keychain broken
+=> /howto/2017-11-02-git-out-of-memory.gmi 2017-11-01 Что делать на если нехватает памяти для git
+=> /howto/2017-10-19-sudoers-syntax-error.gmi 2017-10-20 Что делать если в /etc/sudoers syntax error
+=> /story/2017-07-31-roem-wordpress.gmi 2017-07-31 Roem на Wordpress
+=> /howto/2017-05-31-keychain-broken.gmi 2017-05-31 What to do if OSX Keychain broken
 
 ## 2016
-=> 2016-11-09-brew-git.gmi 2016-11-09 Brew update OSX 10.12
-=> 2016-10-31-bundle-ssl.gmi 2016-10-30 Bundle could not verify the SSL certificate
-=> 2016-09-29-mac-smc-controller-util.gmi 2016-09-28 Macbook без батареи и управление кулером
+=> /howto/2016-11-09-brew-git.gmi 2016-11-09 Brew update OSX 10.12
+=> /howto/2016-10-31-bundle-ssl.gmi 2016-10-30 Bundle could not verify the SSL certificate
+=> /howto/2016-09-29-mac-smc-controller-util.gmi 2016-09-28 Macbook без батареи и управление кулером
 
 ## 2014
-=> 2014-11-05-darkside-of-the-spotlight-en.gmi 2014-11-05 Darkside of the Spotlight (English version)
-=> 2014-10-29-darkside-of-spotlight.gmi 2014-10-29 Darkside of the Spotlight
-=> 2014-09-18-battery-service.gmi 2014-09-18 Замена батареи для macbook pro
-=> 2014-05-26-router-hack.gmi 2014-05-26 Your router may be already hacked
-=> 2014-04-23-capistrano-3.gmi 2014-04-27 Capistrano 3 & Rails 4
-=> 2014-04-05-2048gamebot.gmi 2014-04-05 2048 game bot
+=> /security/2014-11-05-darkside-of-the-spotlight-en.gmi 2014-11-05 Darkside of the Spotlight (English version)
+=> /security/2014-10-29-darkside-of-spotlight.gmi 2014-10-29 Darkside of the Spotlight
+=> /howto/2014-09-18-battery-service.gmi 2014-09-18 Замена батареи для macbook pro
+=> /security/2014-05-26-router-hack.gmi 2014-05-26 Your router may be already hacked
+=> /howto/2014-04-23-capistrano-3.gmi 2014-04-27 Capistrano 3 & Rails 4
+=> /howto/2014-04-05-2048gamebot.gmi 2014-04-05 2048 game bot
 
 ## 2013
-=> 2013-10-17-mail-dot-app-productivity-issue.gmi 2013-10-17 Продуктивное использование Mail.app
-=> 2013-09-25-apache-2-dot-2-to-2-dot-4-migration.gmi 2013-09-25 Apache 2.2 to 2.4 migration и remoteip модуль
-=> 2013-09-05-arduino-music.gmi 2013-09-05 Arduino music - проигрывание музыки на платформе Ардиуно
-=> 2013-06-18-how-to-render-template-into-variable.gmi 2013-06-18 how to render template into variable in ZF2
-=> 2013-06-09-how-to-define-console-object.gmi 2013-06-09 How to define console object
-=> 2013-06-09-is-touchscreen-on-javascript.gmi 2013-06-09 Is touchscreen on javascript
-=> 2013-05-30-php-strftime-month-name.gmi 2013-05-30 Php strftime month name
-=> 2013-05-20-zend-framework-2-predispatch.gmi 2013-05-20 Zend framework 2 preDispatch
+=> /howto/2013-10-17-mail-dot-app-productivity-issue.gmi 2013-10-17 Продуктивное использование Mail.app
+=> /howto/2013-09-25-apache-2-dot-2-to-2-dot-4-migration.gmi 2013-09-25 Apache 2.2 to 2.4 migration и remoteip модуль
+=> /howto/2013-09-05-arduino-music.gmi 2013-09-05 Arduino music - проигрывание музыки на платформе Ардиуно
+=> /howto/2013-06-18-how-to-render-template-into-variable.gmi 2013-06-18 how to render template into variable in ZF2
+=> /howto/2013-06-09-how-to-define-console-object.gmi 2013-06-09 How to define console object
+=> /howto/2013-06-09-is-touchscreen-on-javascript.gmi 2013-06-09 Is touchscreen on javascript
+=> /howto/2013-05-30-php-strftime-month-name.gmi 2013-05-30 Php strftime month name
+=> /howto/2013-05-20-zend-framework-2-predispatch.gmi 2013-05-20 Zend framework 2 preDispatch
 
 ## 2012
-=> 2012-12-16-simple-environment-dependency-config-with-node-dot-js.gmi 2012-12-16 Simple environment dependency config with Node.js
-=> 2012-11-18-upgrade-macbook-pro-to-16gb-ram.gmi 2012-11-18 Upgrade macbook pro to 16GB RAM
-=> 2012-10-22-html-5-fakepath.gmi 2012-10-22 html5 input file fakepath
-=> 2012-08-28-hudons-git-ssh-keys.gmi 2012-08-28 Hudson Git and SSH keys
-=> 2012-06-27-reset-smc.gmi 2012-06-23 Reset SMC
-=> 2012-06-02-fix-slow-wifi-in-ubuntu.gmi 2012-06-02 Решение проблемы медленого wifi на Ubuntu
-=> 2012-06-19-mongohub.gmi 2012-03-25 Mongohub клиент для mongodb
-=> 2012-06-19-perl-one-liner.gmi 2012-02-25 Perl one liner
+=> /howto/2012-12-16-simple-environment-dependency-config-with-node-dot-js.gmi 2012-12-16 Simple environment dependency config with Node.js
+=> /howto/2012-11-18-upgrade-macbook-pro-to-16gb-ram.gmi 2012-11-18 Upgrade macbook pro to 16GB RAM
+=> /howto/2012-10-22-html-5-fakepath.gmi 2012-10-22 html5 input file fakepath
+=> /howto/2012-08-28-hudons-git-ssh-keys.gmi 2012-08-28 Hudson Git and SSH keys
+=> /howto/2012-06-27-reset-smc.gmi 2012-06-23 Reset SMC
+=> /howto/2012-06-02-fix-slow-wifi-in-ubuntu.gmi 2012-06-02 Решение проблемы медленого wifi на Ubuntu
+=> /tools/2012-06-19-mongohub.gmi 2012-03-25 Mongohub клиент для mongodb
+=> /dev/2012-06-19-perl-one-liner.gmi 2012-02-25 Perl one liner
 
 ## 2011
-=> 2012-06-19-postgresql.gmi 2011-11-19 PostgreSQL recursive procedure
+=> /howto/2012-06-19-postgresql.gmi 2011-11-19 PostgreSQL recursive procedure
 
 ## 2010
-=> 2012-06-19-python-differential.gmi 2010-06-01 Python differential
+=> /dev/2012-06-19-python-differential.gmi 2010-06-01 Python differential
 
 ## 2008
-=> 2012-06-19-antitrust.gmi 2008-04-12 Antitrust - спецэффекты в фильмах про программистов
-=> 2008-01-02-shorewall.gmi 2008-01-02 Shorewall - фреймворк для построения фаерволла
+=> /review/2012-06-19-antitrust.gmi 2008-04-12 Antitrust - спецэффекты в фильмах про программистов
+=> /tools/2008-01-02-shorewall.gmi 2008-01-02 Shorewall - фреймворк для построения фаерволла
 
 ## 2006
-=> 2012-06-19-install-linux-on-palm-lifedrive.gmi 2006-06-13 Установка linux на Palm LD(Life Drive)
+=> /howto/2012-06-19-install-linux-on-palm-lifedrive.gmi 2006-06-13 Установка linux на Palm LD(Life Drive)
 
 ```
      ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░

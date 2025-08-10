@@ -5,7 +5,7 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ==============================
+== [Gemini capsule] * ============ [ 2025-08-10 ] ==
 ```
 => / ← Back
 # Share
@@ -25,7 +25,7 @@
 => 2024-01-06-baudrillard-now-vol5-1.gmi 2024-01-06 Baudrillard Now Volume 5 Issue 1
 => 2023-12-07-google-gemini.gmi 2023-12-07 Google's new AI
 => 2023-12-07-always-goggins.gmi 2023-12-07 David Goggins - How To Master Your Life (4K) | Modern Wisdom Podcast 577
-=> 2023-08-28-benchmarks.gmi 2023-08-26 Benchmarks code for CPU testing
+=> 2023-08-28-benchmarks.md 2023-08-26 Benchmarks code for CPU testing
 => 2023-08-16-debian-30.gmi 2023-08-16 Debian 30 years behind
 => 2023-06-28-ancient-english-to-pr.gmi 2023-06-28 Ancient english helps closing PRs // Github
 => 2023-03-05-agileclownshow.gmi 2023-03-05 Agile clown show // Linkedin
@@ -33,10 +33,10 @@
 => 2023-01-18-ruby-yjit-3.2.gmi 2023-01-18 Ruby 3.2’s YJIT is Production-Ready
 => 2023-01-17-brave-new-trusted-kernel.gmi 2023-01-17 Unified Kernel Image explanation
 => 2023-01-08-Ken-Block-RIP.gmi 2023-01-08 Ken Block(43) R.I.P.
-=> 2022-10-30-lex-fridman-333.gmi 2022-10-30 Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333
-=> 2022-10-25-lex-fridman-balaji-srinivasan.gmi 2022-10-25 Balaji Srinivasan: How to Fix Government, Twitter, Science, and the FDA | Lex Fridman Podcast #331
-=> 2022-10-23-devoops90days.gmi 2022-10-22 90DaysOfDevOps
-=> 2022-10-22-freebsd-third-quarter-status-report.gmi 2022-10-22 FreeBSD Quarterly Status Report Third Quarter 2022
+=> 2022-10-30-lex-fridman-333.md 2022-10-30 Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI | Lex Fridman Podcast #333
+=> 2022-10-25-lex-fridman-balaji-srinivasan.md 2022-10-25 Balaji Srinivasan: How to Fix Government, Twitter, Science, and the FDA | Lex Fridman Podcast #331
+=> 2022-10-23-devoops90days.md 2022-10-22 90DaysOfDevOps
+=> 2022-10-22-freebsd-third-quarter-status-report.md 2022-10-22 FreeBSD Quarterly Status Report Third Quarter 2022
 => 2021-12-11-qoi-lossless.gmi 2021-12-11 QOI lossless image comperession proposal
 => 2020-03-21-webmention-test.gmi 2020-03-21 Webmention is POSSE compliant mechanism for commenting
 

@@ -5,7 +5,7 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ==============================
+== [Gemini capsule] * ============ [ 2013-05-20 ] ==
 ```
 => / ← Back
 # Zend framework 2 preDispatch
@@ -20,49 +20,49 @@ namespace Application\Controller;
 
 use Zend\Mvc\Controller\ActionController
 
-Zend\Mvc\MvcEvent;
+    Zend\Mvc\MvcEvent;
 
 class IndexController extends ActionController
 
 {
 
-public function indexAction()
+    public function indexAction()
 
-{
+    {
 
-return array();
+        return array();
 
-}
+    }
 
-protected function attachDefaultListeners()
+    protected function attachDefaultListeners()
 
-{
+    {
 
-parent::attachDefaultListeners();
+        parent::attachDefaultListeners();
 
-$events = $this->events();
+        $events = $this->events();
 
-$events->attach('dispatch', array($this, 'preDispatch'), 100);
+        $events->attach('dispatch', array($this, 'preDispatch'), 100);
 
-$events->attach('dispatch', array($this, 'postDispatch'), -100);
+        $events->attach('dispatch', array($this, 'postDispatch'), -100);
 
-}
+    }
 
-public function preDispatch (MvcEvent $e)
+    public function preDispatch (MvcEvent $e)
 
-{
+    {
 
-// Called before self::indexAction()
+        // Called before self::indexAction()
 
-}
+    }
 
-public function postDispatch (MvcEvent $e)
+    public function postDispatch (MvcEvent $e)
 
-{
+    {
 
-// Called after self::indexAction()
+        // Called after self::indexAction()
 
-}
+    }
 
 }
 

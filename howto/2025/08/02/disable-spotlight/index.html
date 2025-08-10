@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>How and why to disable Spotlight | FalseTrue</title>
+
+<!-- Begin Bridgetown SEO tag v6.0.0 -->
+<title>How and why to disable Spotlight | FalseTrue</title>
+<meta property="og:title" content="How and why to disable Spotlight" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="Scripts of cyberdaemon" />
+<meta property="og:description" content="Scripts of cyberdaemon" />
+<link rel="canonical" href="https://falsetrue.io/howto/2025/08/02/disable-spotlight/" />
+<meta property="og:url" content="https://falsetrue.io/howto/2025/08/02/disable-spotlight/" />
+<meta property="og:site_name" content="FalseTrue" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-08-02T12:00:00+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="How and why to disable Spotlight" />
+<!-- End Bridgetown SEO tag -->
+
+
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/_bridgetown/static/index.ISQIYA65.css" />
+<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+<script src="/_bridgetown/static/index.42K5JGTD.js" defer></script>
+
+<link type="application/atom+xml" rel="alternate" href="https://falsetrue.io/feed.xml" title="FalseTrue" />
+
+  </head>
+  <body class="post ">
+    <!-- <header>
+     <img src="/images/logo.svg" alt="Logo" />
+     </header>
+-->
+<nav>
+  <ul>
+    <li><a href="/"><span class="text-green-400">False!</span><span class="text-cyan-300">True</span></a></li>
+    <li><a href="/">Home</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/feed">Feed</a></li>
+    <li><a href="/archive">Archive</a></li>
+    <li><a href="/bookshelf">Bookshelf</a></li>
+    <li><a href="/photography">Photography</a></li>
+    <li><a href="/halloffame">Hall of fame</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/feed.xml"><i class="fa fa-rss text-[orange]"></i>&nbsp;RSS</a></li>
+  </ul>
+</nav>
+
+
+    <main>
+      <article class="prose prose-slate prose-pre:bg-gray-100 prose-pre:text-gray-500 max-w-full prose-h1:leading-relaxed">
+    <span>02 Aug 2025</span>
+    <div class="mb-8">
+        <h1 class="leading-relaxed">How and why to disable Spotlight</h1>
+        <div class="category-block">
+            <span>Category</span>
+            
+                
+                    <a href="/categories/howto" class="badge-category badge-howto">howto</a>
+                
+            
+        </div>
+        <div class="tags-block mt-8">
+            <span>Tags</span>
+            
+                <a href="/tags/sec" class="badge-tag">#sec</a>
+            
+                <a href="/tags/mac" class="badge-tag">#mac</a>
+            
+                <a href="/tags/debloat" class="badge-tag">#debloat</a>
+            
+        </div>
+    </div>
+    <p>Before knowing how, lets argue about why for a bit.</p>
+
+<h1 id="why-">Why ?</h1>
+<ul>
+  <li>Unpredictable Spotlight indexer behaviour, it might start reindexing in any moment espcially after MacOS crashes (yes yes that can happen to if you are advanced user)</li>
+  <li>Spotlight indexer may slowdown system for unpredictable amount of time.</li>
+  <li>Spotlight is indexing everything and constructing some meta database to handle all your files, and if files are private your probably don’t wanna have that behavouir.</li>
+  <li>If you’re attaching external drive with documents it will start indexing it, and all meta data will be used for search (Imagine you have external drive with billion of project source code files, it would be a performance disaster.)</li>
+  <li>Too many meta leaking to Spotlight, - through it you can search and connect almost everything (which can be fine for average Joe hipster in the cafe).</li>
+  <li>If you are a software developer then most probably have a lot of source code repositories, some of the may contain several million files, and you certainly do not want to indexing them. (Imagine indexing all dependencies for each project you have, and then you search for file through Spotlight you will get a lot of clutter)</li>
+  <li>Mail, thousands of letters will be scanned, you accidentally will search through it while launching some application with Spotlight.</li>
+  <li>You want to save SSD lifetime, because disableing index will reduce amount of operation made with SSD.</li>
+</ul>
+
+<h1 id="how-">How ?</h1>
+
+<p>Check current status of indexing</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo mdutil -s -a
+Password:
+/:
+	Indexing and searching disabled.
+/System/Volumes/Data:
+	Indexing and searching disabled.
+/System/Volumes/Preboot:
+	Indexing enabled.
+</code></pre></div></div>
+
+<p>Set special file to tell Spotlight not to index. You can put that file to any path and it will be excluded from index</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo touch /Volumes/MyExternalDrive/.metadata_never_index
+</code></pre></div></div>
+
+<p>Clean up existing indexes</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo mdutil -E /Volumes/MyExternalDrive
+sudo mdutil -i off /Volumes/MyExternalDrive
+</code></pre></div></div>
+
+<p>You can uncheck all indexing types in Spotlight settings, you don’t need them if you want to complete disable spotlight indexing.</p>
+
+<p><img src="/images/spotlight/spotlight-settings.jpeg" alt="Spotlight Settings" /></p>
+
+<p>As you can see, there are even some telemetry gathered for your private files, via “Help Improve Apple to Search” most probably you do not need that, so toggle it off too.</p>
+
+<p>Oftent times after major and minor updates those settings will be reset by the update, so make sure you check it from time to time until eventually you will decide to disable them all.</p>
+
+<p>Uncheck spotlight hotkey if you want to use another launcher. (<a href="https://falsetrue.io/projects/overlauncher/">OverLauncher</a> for instance.)</p>
+
+<p><img src="/images/spotlight/spotlight-hotkey-disable.jpeg" alt="Spotlight Hotkey" /></p>
+
+<h2 id="hardcore-mode-sip-must-be-disabled">Hardcore mode (SIP must be disabled)</h2>
+<ul>
+  <li>Disable SIP</li>
+  <li>Make binary not runnable via chmod
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo chmod 000 /System/Library/CoreServices/Search.bundle
+</code></pre></div>    </div>
+  </li>
+  <li>Disable menu spotlight menu icon
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>launchctl unload -w /System/Library/LaunchAgents/com.apple.Spotlight.plist
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>If you can just use Linux/BSD/WhateverNix instead of MacOS, but don’t think <a href="https://falsetrue.io/howto/2025/07/13/disk-blinking/">Gnome don’t do similar things</a> :-)</p>
+
+<h1 id="references">References</h1>
+
+<ul>
+  <li><a href="https://developer.apple.com/documentation/foundation/spotlight">Apple Foundation Framework Spotlight reference</a></li>
+  <li><a href="https://github.com/npm/cli/issues/549">NPM adding noindex to his node_modules folder</a></li>
+  <li><a href="https://falsetrue.io/projects/overlauncher/">OverLauncher</a></li>
+</ul>
+
+</article>
+
+<div class="my-[100px] ">
+    <h2 class="text-2xl mb-2">Comments</h2>
+
+    <script data-isso="https://comments.falsetrue.io/"
+            src="https://comments.falsetrue.io/js/embed.min.js"></script>
+
+    <section id="isso-thread">
+        <noscript>Javascript needs to be activated to view comments.</noscript>
+    </section>
+
+</div>
+
+    </main>
+
+    <footer class="text-xs pt-8 my-8 px-8">
+    <div>
+        <div>
+            Dmitry Ro © 2003 - 2024. All rights reserved.<br>
+            Копирование и распрастранение страницы разрешено только в оригинальном не изменном виде, включая это сообщение.
+            Verbatim copying and redistribution of this entire page are permitted provided this notice is preserved.
+            Verbatim copying and redistribution of any of the photos in the photos subdirectory is permitted under the <a href="http://creativecommons.org/licenses/by-nd/3.0/" rel="nofollow"> Creative Commons Noderivs license version 3.0</a> or later.
+            <div><a href="/pgp.key.txt" rel="pgpkey authn">PGP Key</a></div>
+        </div>
+        <div class="flex mx-auto my-3 items-center justify-center gap-1">
+            <div><a href="https://webmentions.io" target="_blank" class="inline"><img src="/images/webmention.png" alt="Webmentions"></a></div>
+            <div><a href="https://indieweb.org" target="_blank"><img src="/images/indieweb.png" alt="indieweb"></a></div>
+            <div><a href="https://microformats.org" target="_blank"><img src="/images/microformats.png" alt="microformats"></a></div>
+            <div><a href="https://creativecommons.org/licenses/by/3.0/" target="_blank"><img src="/images/cc-commons.png" alt="cc-commons"></a></div>
+            <div><img src="/images/w3c-valid-html.png" alt="valid w3c"></div>
+        </div>
+        <div class="mt-1">
+            <a href="https://xn--sr8hvo.ws/previous">←</a>
+            An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
+            <a href="https://xn--sr8hvo.ws/next">→</a>
+        </div>
+    </div>
+</footer>
+
+  </body>
+</html>

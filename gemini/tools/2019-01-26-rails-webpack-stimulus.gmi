@@ -5,7 +5,7 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ==============================
+== [Gemini capsule] * ============ [ 2019-01-26 ] ==
 ```
 => / ← Back
 # Rails + Webpack + Stimulus + Bootstrap 4
@@ -52,37 +52,15 @@ yarn
 
 ## Как пользоваться ?
 
-```
+* git clone
 
-git clone
+* yarn
 
-```
+* bundle
 
-```
+* rails s
 
-yarn
-
-```
-
-```
-
-bundle
-
-```
-
-```
-
-rails s
-
-```
-
-и в соседнем терминале
-
-```
-
-./bin/webpack-dev-server
-
-```
+* и в соседнем терминале ./bin/webpack-dev-server
 
 Github
 

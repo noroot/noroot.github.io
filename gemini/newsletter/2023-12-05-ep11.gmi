@@ -1,0 +1,61 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ============ [ 2023-12-05 ] ==
+```
+=> / ← Back
+# EP11 FalseTrue Digest
+
+Welcome to EP-11 of
+
+FalseTrue Digest
+
+, - newsletter or journal, or maybe even e-zine, but right now let’s stick to the name digest. I’ll write weekly based summaries about software development, programming world and software itself.
+
+## News
+
+* Roundcube merges with NextCloud
+
+* Owncloud max severity vulnerability
+
+* PgAdmin 4 v8.0 Released
+
+* Zoom Flaw Enabled Hijacking Of Accounts With Access To Meetings, Team Chat
+
+## Stories
+
+* Before QR codes it was CueCatx
+
+* I Hacked Magic the Gathering: Arena for a 100% Win Rate
+
+* Interview with pipewire creator Wim Tyamans
+
+* Sam Altman fired and hired back in a few days
+
+* Gobs of data
+
+* You don’t need JavaScript for that
+
+## Interesting software
+
+* LogSeq - Interesting project of note taking application
+
+* Jaq – A jq clone focused on correctness, speed, and simplicity
+
+* Show HN: Resume Matcher – An open source, free tool to improve your resume
+
+## Emacs
+
+* lsp-mode - Language Server Protocol Support for Emacs
+
+## Links
+
+=> https://falsetrue.substack.com/ Subscribe on Substack
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

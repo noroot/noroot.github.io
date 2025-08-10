@@ -5,7 +5,7 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ==============================
+== [Gemini capsule] * ============ [ 2024-10-07 ] ==
 ```
 => / ← Back
 # Installing LetsEncrypt with Kubernetes on Digital Ocean
@@ -24,53 +24,53 @@ cert-manager
 
     +----------------+           +---------------------+           +--------------------+           +---------------------------+
 
-| Let's Encrypt  |           |  cert-manager       |           | Ingress Controller |           |   cert-manager            |
+    | Let's Encrypt  |           |  cert-manager       |           | Ingress Controller |           |   cert-manager            |
 
-|    (ACME)      |           |  (k8s)              |           |     (Nginx)        |           |   k8s:cm-acme-http-solver |
+    |    (ACME)      |           |  (k8s)              |           |     (Nginx)        |           |   k8s:cm-acme-http-solver |
 
-+----------------+           +---------------------+           +--------------------+           +---------------------------+
+    +----------------+           +---------------------+           +--------------------+           +---------------------------+
 
-|                             |                               |                            |
+          |                             |                               |                            |
 
-| 1. Create CertificateRequest|                               |                            |
+          | 1. Create CertificateRequest|                               |                            |
 
-|<--------------------------- |                               |                            |
+          |<--------------------------- |                               |                            |
 
-|                             |                               |                            |
+          |                             |                               |                            |
 
-|                             | 2. Request HTTP-01 Challenge  |                            |
+          |                             | 2. Request HTTP-01 Challenge  |                            |
 
-|                             |------------------------------>|                            |
+          |                             |------------------------------>|                            |
 
-|                             |                               |                            |
+          |                             |                               |                            |
 
-|                             |                               |                            |
+          |                             |                               |                            |
 
-|                             |                               |                            |
+          |                             |                               |                            |
 
-|                             |                               |  3. Serve challenge file   |
+          |                             |                               |  3. Serve challenge file   |
 
-|                             |<------------------------------|----------------------------|
+          |                             |<------------------------------|----------------------------|
 
-|                             |                               |                            |
+          |                             |                               |                            |
 
-|                             |                               |                            |
+          |                             |                               |                            |
 
-|                             |                               |                            |
+          |                             |                               |                            |
 
-|                             |                               |                            |
+          |                             |                               |                            |
 
-| 4. Validate Challenge       |                               |                            |
+          | 4. Validate Challenge       |                               |                            |
 
-|<----------------------------|                               |                            |
+          |<----------------------------|                               |                            |
 
-|                             |                               |                            |
+          |                             |                               |                            |
 
-| 5. Issue Certificate        | cert-manager                  |                            |
+          | 5. Issue Certificate        | cert-manager                  |                            |
 
-|---------------------------->| Stores certificate in Secrets |                            |
+          |---------------------------->| Stores certificate in Secrets |                            |
 
-|                             | allowing access it for Nginx  |                            |
+          |                             | allowing access it for Nginx  |                            |
 
 ```
 
@@ -86,17 +86,15 @@ The HTTP-01 challenge requires the web server that serves your domain to respond
 
 How it works:
 
-Let’s Encrypt asks you to serve a token from http://your-domain/.well-known/acme-challenge/
+* Let’s Encrypt asks you to serve a token from http://your-domain/.well-known/acme-challenge/.
 
-.
+* The ACME client (e.g., cert-manager) responds to this request by provisioning the token on your web server (usually through an Ingress controller or a pod).
 
-The ACME client (e.g., cert-manager) responds to this request by provisioning the token on your web server (usually through an Ingress controller or a pod).
+* Let’s Encrypt validates the challenge by making an HTTP GET request to the token URL.
 
-Let’s Encrypt validates the challenge by making an HTTP GET request to the token URL.
+* Best for: Domains with direct access to HTTP traffic. This is commonly used with Kubernetes Ingress controllers like NGINX.
 
-Best for: Domains with direct access to HTTP traffic. This is commonly used with Kubernetes Ingress controllers like NGINX.
-
-Requirements: Port 80 must be open and reachable on your server.
+* Requirements: Port 80 must be open and reachable on your server.
 
 ### DNS-01 Challenge
 
@@ -104,15 +102,15 @@ The DNS-01 challenge requires you to prove domain ownership by creating a DNS TX
 
 How it works:
 
-Let’s Encrypt asks you to create a DNS TXT record _acme-challenge.your-domain with a specific value.
+* Let’s Encrypt asks you to create a DNS TXT record _acme-challenge.your-domain with a specific value.
 
-The ACME client (e.g., cert-manager) interacts with your DNS provider’s API to create this record automatically.
+* The ACME client (e.g., cert-manager) interacts with your DNS provider’s API to create this record automatically.
 
-Let’s Encrypt queries your domain’s DNS TXT record to verify that it contains the correct value.
+* Let’s Encrypt queries your domain’s DNS TXT record to verify that it contains the correct value.
 
-Best for: Wildcard certificates (e.g., *.example.com), internal services, and domains where direct HTTP access is not possible.
+* Best for: Wildcard certificates (e.g., *.example.com), internal services, and domains where direct HTTP access is not possible.
 
-Requirements: You must have control over the domain’s DNS records, and your DNS provider must support automation via an API that the ACME client can use.
+* Requirements: You must have control over the domain’s DNS records, and your DNS provider must support automation via an API that the ACME client can use.
 
 ### TLS-ALPN-01 Challenge
 
@@ -120,13 +118,13 @@ The TLS-ALPN-01 challenge allows validation over a custom TLS extension called A
 
 How it works:
 
-The ACME client (e.g., cert-manager) configures your web server to respond to TLS connections with a special ALPN protocol (acme-tls/1) and a certificate containing the challenge token.
+* The ACME client (e.g., cert-manager) configures your web server to respond to TLS connections with a special ALPN protocol (acme-tls/1) and a certificate containing the challenge token.
 
-Let’s Encrypt connects to your server over HTTPS and validates the challenge by verifying the presence of this certificate using the ALPN protocol.
+* Let’s Encrypt connects to your server over HTTPS and validates the challenge by verifying the presence of this certificate using the ALPN protocol.
 
-Best for: Environments with strict security policies where serving files over HTTP is not an option or where DNS automation is not available.
+* Best for: Environments with strict security policies where serving files over HTTP is not an option or where DNS automation is not available.
 
-Requirements: You must have control over the TLS configuration and be able to install the custom certificate temporarily.
+* Requirements: You must have control over the TLS configuration and be able to install the custom certificate temporarily.
 
 Challenge
 
@@ -162,19 +160,19 @@ Control over TLS configuration.
 
 ### Summary of the Process:
 
-Ingress Resource: You define an Ingress resource that cert-manager observes.
+* Ingress Resource: You define an Ingress resource that cert-manager observes.
 
-Certificate Request: cert-manager issues a request to Let’s Encrypt.
+* Certificate Request: cert-manager issues a request to Let’s Encrypt.
 
-ACME Challenge: cert-manager fulfills the HTTP-01 or DNS-01 challenge to prove domain ownership.
+* ACME Challenge: cert-manager fulfills the HTTP-01 or DNS-01 challenge to prove domain ownership.
 
-Challenge Validation: Let’s Encrypt validates the challenge.
+* Challenge Validation: Let’s Encrypt validates the challenge.
 
-Certificate Issuance: Let’s Encrypt issues the certificate, and cert-manager stores it as a Kubernetes Secret.
+* Certificate Issuance: Let’s Encrypt issues the certificate, and cert-manager stores it as a Kubernetes Secret.
 
-Ingress Controller: The Ingress controller terminates TLS for incoming HTTPS traffic using the issued certificate.
+* Ingress Controller: The Ingress controller terminates TLS for incoming HTTPS traffic using the issued certificate.
 
-Automated Renewal: cert-manager automatically renews certificates before they expire.
+* Automated Renewal: cert-manager automatically renews certificates before they expire.
 
 ```
 
@@ -224,13 +222,13 @@ cert-manager
 
 helm install cert-manager jetstack/cert-manager \
 
---namespace cert-manager \
+    --namespace cert-manager \
 
---create-namespace \
+    --create-namespace \
 
--version v1.16.0 \
+    -version v1.16.0 \
 
---set crds.enabled=true
+    --set crds.enabled=true
 
 ```
 
@@ -258,13 +256,13 @@ Output:
 
 ```
 
-E1006 23:14:38.1433441 sync.go:208] "propagation check failed" err="failed to perform self check GET request 'http://example.com/.well-known/acme-challenge/<token>': Get \"http://example.com/.well-known/acme-challenge/<token>\": EOF" logger="cert-manager.controller" resource_name="example-com-tls-1-622117757-218251542" resource_namespace="default" resource_kind="Challenge" resource_version="v1" dnsName="example.com" type="HTTP-01"
+E1006 23:14:38.1433441 sync.go:208] "propagation check failed" err="failed to perform self check GET request 'http://example.com/.well-known/acme-challenge/<token>': Get \"http://example.com/.well-known/acme-challenge/<token>\": EOF" logger="cert-manager.controller" resourcename="example-com-tls-1-622117757-218251542" resourcenamespace="default" resourcekind="Challenge" resourceversion="v1" dnsName="example.com" type="HTTP-01"
 
 ```
 
-As you can see, the cert-manager cannot access the challenge file to verify, at the same time if I go to **http://example.com/.well-known/acme-challenge/
+As you can see, the cert-manager cannot access the challenge file to verify, at the same time if I go to http://example.com/.well-known/acme-challenge/
 
-** with the browser it will be open without a problem.
+with the browser it will be open without a problem.
 
 #### Why is that ?
 
@@ -316,13 +314,13 @@ mode breaks HTTP01 challenge Check stage, http-01 self check failed for domain, 
 
 There are several ways to solve this problem:
 
-Modify Kubernetes to not rewrite the external IP address of a LoadBalancer.
+    Modify Kubernetes to not rewrite the external IP address of a LoadBalancer.
 
-Modify nginx to treat the PROXY line as optional.
+    Modify nginx to treat the PROXY line as optional.
 
-Modify cert-manager to add the PROXY line on its self-check.
+    Modify cert-manager to add the PROXY line on its self-check.
 
-Modify cert-manager to bypass the self-check.
+    Modify cert-manager to bypass the self-check.
 
 ```
 
@@ -348,11 +346,11 @@ It will setup bypass access for ACME challenge, and certificates will be validat
 
 ## References
 
-=> https://cert-manager.io https://cert-manager.io
+* https://cert-manager.io
 
-=> https://github.com/compumike/hairpin-proxy https://github.com/compumike/hairpin-proxy
+* https://github.com/compumike/hairpin-proxy
 
-=> https://letsencrypt.org/ https://letsencrypt.org/
+* https://letsencrypt.org/
 
 ```
      ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░

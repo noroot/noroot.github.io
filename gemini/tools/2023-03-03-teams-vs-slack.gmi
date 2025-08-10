@@ -5,7 +5,7 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ==============================
+== [Gemini capsule] * ============ [ 2023-03-03 ] ==
 ```
 => / ← Back
 # Teams vs Slack
@@ -18,17 +18,17 @@ Let’s start with the roster, which is a list of available chat entities and us
 
 For instance:
 
-In Slack, finding a chat only requires one click, while in Teams, you need to switch between group chats and private chats, which can be slow.
+* In Slack, finding a chat only requires one click, while in Teams, you need to switch between group chats and private chats, which can be slow.
 
-Slack has a well-designed interface for threads, making them easy to see and use. In contrast, Teams has a bloated and poorly functioning mechanism that is difficult to use.
+* Slack has a well-designed interface for threads, making them easy to see and use. In contrast, Teams has a bloated and poorly functioning mechanism that is difficult to use.
 
-In Slack, there is one roster for all chats, while in Teams, there are several different rosters for everything, which does not aid productivity.
+* In Slack, there is one roster for all chats, while in Teams, there are several different rosters for everything, which does not aid productivity.
 
-The chat window and input area in Slack are simple yet sophisticated, while in Teams, they are overly complex and confusing.
+* The chat window and input area in Slack are simple yet sophisticated, while in Teams, they are overly complex and confusing.
 
-Code pasting is impossible to do smoothly in Teams, whereas Slack allows for seamless pasting by simply inputting standard markdown backticks. Additionally, Teams do not differentiate between one backtick and triple backticks and does not change highlighting styles.
+* Code pasting is impossible to do smoothly in Teams, whereas Slack allows for seamless pasting by simply inputting standard markdown backticks. Additionally, Teams do not differentiate between one backtick and triple backticks and does not change highlighting styles.
 
-After pasting a message in Teams, the interface can cause the message to appear out of order and even before the previous message.
+* After pasting a message in Teams, the interface can cause the message to appear out of order and even before the previous message.
 
 So why is Teams inferior to Slack? The main reason is that Teams has not invested enough in conducting research and designing an interface that is user-friendly and efficient. Slack, on the other hand, has a well-designed interface that is tailored to the needs of developers, making it the preferred choice in the industry.
 
