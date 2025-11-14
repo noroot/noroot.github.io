@@ -1,0 +1,65 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ============ [ 2025-11-10 ] ==
+```
+=> / ← Back
+# Tools I am using
+
+# Tools I am using on daily basis
+
+Tools I am using on daily basis as software developer, CTO, and solution architect.
+
+## OS
+
+* Debian GNU/Linux - My distro of choice for 20 years. Stable, customizable, just works (was’t like that in past).
+
+* MacOS - Since M Silicon introduced, you have to try it because it worth it at least as development machine. Apart from that its bloated, and fully controlled.
+
+## Development
+
+* Emacs - Using emacs for about +15 years, initially it was very hard to adopt, but after 10 years it was essential thing for me.
+
+* Doom Emacs - This particule emacs confiugration set is one of the most popular.
+
+* Org-Mode - Hard to beat tool for information organization, todo lists, and any other text related work, hard to adopt, but worth trying.
+
+* Git - GIT. If you know you know.
+
+* DBeaver - Most feature reach database client, supports pretty much everything
+
+* URXVT - Less bloated terminal
+
+* iTerm2 - Probably best default choice for MacOS
+
+* Make - I use make file for pretty much every project as helper utility to pipline a lot of things.
+
+* PostgreSQL - Database of choice
+
+## Management
+
+* LibreOffice - Spreadsheets are still most usable tool in every project.
+
+* Camunda Modeler - Essential tool for modeling business processes
+
+* PlantUML - Most unix-way and to be honest more conviniet way for me to do any type diagram, even very sophsticated.
+
+* Redmine - Old school Project/Task management tool, - for same work you’re doing with fancy modern tools, if you want self hosted, programmable customizable solution this is a good thing. (Especially if you’re a Ruby programmer)
+
+* Jira - Industry standard, 90% new comers hate it, but this is skill issue. Despite Jira become more bloated, and worse in UX, it still best tools you can use.
+
+## Other
+
+* Firefox - First option for browsing, but it becoming dumber, slower. Still usable though.
+
+* Brave - Good second option, which might become primary.
+
+Lookup for Extended version of this lists on my othe very personal blog.
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

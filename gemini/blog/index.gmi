@@ -5,10 +5,17 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ============ [ 2025-08-10 ] ==
+== [Gemini capsule] * ============ [ 2025-11-14 ] ==
 ```
 => / ← Back
 # Blog
+
+* tools
+10-NOV-2025 - Tools I am using
+
+    #tools
+    #software
+    #howto
 
 * howto
  2-AUG-2025 - How and why to disable Spotlight

@@ -1,0 +1,48 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ============ [ 2025-11-14 ] ==
+```
+=> / ← Back
+# Test
+
+## Features
+
+* Master Toggle: Enable or disable all DebloatWeb features for a site with one click
+
+* Click to Hide: Select any element on a page and hide it with a single click
+
+* Persistent Storage: Hidden elements remain hidden when you reload or revisit the page
+
+* Editable Selectors: Click on any CSS selector to edit it in place for fine-tuning
+
+* Custom CSS Editor: Write and apply custom CSS styles per website with a built-in textarea
+
+* Visual Feedback: Hovering over elements shows a highlight and tooltip
+
+* Easy Management: View and manage all hidden elements through the popup interface
+
+* Unhide Elements: Restore individual elements or clear all hidden elements at once
+
+* Keyboard Shortcut: Press `Alt+Shift+H` to quickly toggle selection mode
+
+* Per-Website Storage: Hidden elements and custom CSS are stored separately for each domain
+
+* Refresh Styles: Manually refresh and reapply all styles when needed
+
+## How it works ?
+
+You click on the start hiding elements button and point to element to be hidden.
+
+## Screenshots
+
+=> /images/projects/debloatweb/debloatweb.jpeg Image
+
+=> /images/projects/debloatweb/debloatweb-1.jpeg Image
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

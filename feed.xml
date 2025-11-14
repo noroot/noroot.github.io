@@ -1,4 +1,49 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://bridgetownrb.com/" version="1.3.4">Bridgetown</generator><link href="https://falsetrue.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://falsetrue.io/" rel="alternate" type="text/html" /><updated>2025-08-10T21:52:02+02:00</updated><id>https://falsetrue.io/feed.xml</id><title type="html">FalseTrue</title><subtitle>Scripts of cyberdaemon</subtitle><entry xml:lang="en"><title type="html">How and why to disable Spotlight</title><link href="https://falsetrue.io/howto/2025/08/02/disable-spotlight/" rel="alternate" type="text/html" title="How and why to disable Spotlight" /><published>2025-08-02T12:00:00+02:00</published><updated>2025-08-02T12:00:00+02:00</updated><id>repo://posts.collection/_posts/2025-08-02-disable-spotlight.markdown</id><content type="html" xml:base="https://falsetrue.io/howto/2025/08/02/disable-spotlight/">&lt;p&gt;Before knowing how, lets argue about why for a bit.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://bridgetownrb.com/" version="1.3.4">Bridgetown</generator><link href="https://falsetrue.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://falsetrue.io/" rel="alternate" type="text/html" /><updated>2025-11-14T16:37:10+01:00</updated><id>https://falsetrue.io/feed.xml</id><title type="html">FalseTrue</title><subtitle>Scripts of cyberdaemon</subtitle><entry><title type="html">Tools I am using</title><link href="https://falsetrue.io/tools/2025/11/10/software-im-using/" rel="alternate" type="text/html" title="Tools I am using" /><published>2025-11-10T00:00:00+01:00</published><updated>2025-11-10T00:00:00+01:00</updated><id>repo://posts.collection/_posts/2025-11-10-software-im-using.markdown</id><content type="html" xml:base="https://falsetrue.io/tools/2025/11/10/software-im-using/">&lt;h1 id=&quot;tools-i-am-using-on-daily-basis&quot;&gt;Tools I am using on daily basis&lt;/h1&gt;
+&lt;p&gt;Tools I am using on daily basis as software developer, CTO, and solution architect.&lt;/p&gt;
+
+&lt;h2 id=&quot;os&quot;&gt;OS&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://debian.org&quot;&gt;Debian GNU/Linux&lt;/a&gt; - My distro of choice for 20 years. Stable, customizable, just works (was’t like that in past).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.apple.com/os/macos/&quot;&gt;MacOS&lt;/a&gt; - Since M Silicon introduced, you have to try it because it worth it at least as development machine. Apart from that its bloated, and fully controlled.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;development&quot;&gt;Development&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gnu.org/software/emacs/&quot;&gt;Emacs&lt;/a&gt; - Using emacs for about +15 years, initially it was very hard to adopt, but after 10 years it was essential thing for me.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/doomemacs/doomemacs&quot;&gt;Doom Emacs&lt;/a&gt; - This particule emacs confiugration set is one of the most popular.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://orgmode.org/&quot;&gt;Org-Mode&lt;/a&gt; - Hard to beat tool for information organization, todo lists, and any other text related work, hard to adopt, but worth trying.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://git-scm.com/&quot;&gt;Git&lt;/a&gt; - GIT. If you know you know.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://dbeaver.io/&quot;&gt;DBeaver&lt;/a&gt; - Most feature reach database client, supports pretty much everything&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://software.schmorp.de/pkg/rxvt-unicode.html&quot;&gt;URXVT&lt;/a&gt; - Less bloated terminal&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://iterm2.com/&quot;&gt;iTerm2&lt;/a&gt; - Probably best default choice for MacOS&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gnu.org/software/make/manual/make.html&quot;&gt;Make&lt;/a&gt; - I use make file for pretty much every project as helper utility to pipline a lot of things.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.postgresql.org/&quot;&gt;PostgreSQL&lt;/a&gt; - Database of choice&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;management&quot;&gt;Management&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.libreoffice.org/&quot;&gt;LibreOffice&lt;/a&gt; - Spreadsheets are still most usable tool in every project.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://camunda.com/platform/modeler/&quot;&gt;Camunda Modeler&lt;/a&gt; - Essential tool for modeling business processes&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://plantuml.com/&quot;&gt;PlantUML&lt;/a&gt; - Most unix-way and to be honest more conviniet way for me to do any type diagram, even very sophsticated.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.redmine.org/&quot;&gt;Redmine&lt;/a&gt; - Old school Project/Task management tool, - for same work you’re doing with fancy modern tools, if you want self hosted, programmable customizable solution this is a good thing. (Especially if you’re a Ruby programmer)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.atlassian.com/software/jira&quot;&gt;Jira&lt;/a&gt; - Industry standard, 90% new comers hate it, but this is skill issue. Despite Jira become more bloated, and worse in UX, it still best tools you can use.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;other&quot;&gt;Other&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://firefox.org&quot;&gt;Firefox&lt;/a&gt; - First option for browsing, but it becoming dumber, slower. Still usable though.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://brave.com/&quot;&gt;Brave&lt;/a&gt; - Good second option, which might become primary.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Lookup for Extended version of this lists on my othe very personal blog.&lt;/p&gt;</content><author><name></name></author><category term="tools" /><category term="software" /><category term="howto" /></entry><entry xml:lang="en"><title type="html">How and why to disable Spotlight</title><link href="https://falsetrue.io/howto/2025/08/02/disable-spotlight/" rel="alternate" type="text/html" title="How and why to disable Spotlight" /><published>2025-08-02T12:00:00+02:00</published><updated>2025-08-02T12:00:00+02:00</updated><id>repo://posts.collection/_posts/2025-08-02-disable-spotlight.markdown</id><content type="html" xml:base="https://falsetrue.io/howto/2025/08/02/disable-spotlight/">&lt;p&gt;Before knowing how, lets argue about why for a bit.&lt;/p&gt;
 
 &lt;h1 id=&quot;why-&quot;&gt;Why ?&lt;/h1&gt;
 &lt;ul&gt;
@@ -767,18 +812,4 @@ COUNT    IP              STATUS     PATH                                    USER
   &lt;li&gt;BTW, I am launching Remoters.Club, please take a look at &lt;a href=&quot;https://remoters.club/&quot;&gt;Remoters.Club&lt;/a&gt; - its supposed to be a community place for people who are working remotely and looking for a job.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;That’s it for this episode. Comment and share. EOF&lt;/p&gt;</content><author><name></name></author><category term="news" /><category term="linux" /><category term="personal" /></entry><entry><title type="html">Рассказ - “Нужно продолжать работать”</title><link href="https://falsetrue.io/share/tales/2024/10/11/crysis-tale/" rel="alternate" type="text/html" title="Рассказ - &quot;Нужно продолжать работать&quot;" /><published>2024-10-11T08:00:00+02:00</published><updated>2024-10-11T08:00:00+02:00</updated><id>repo://posts.collection/_posts/2024-10-10-crysis-tale.markdown</id><content type="html" xml:base="https://falsetrue.io/share/tales/2024/10/11/crysis-tale/">&lt;p&gt;Он сидел у тусклого экрана, голова низко опущена, руки безвольно лежали на клавиатуре. Весь код — бесконечные строки цифр и символов, олицетворение порядка и логики, — сегодня казался ему каким-то особенным издевательством. Андрей Павлович, программист с десятилетним стажем, давно разучился испытывать что-то иное, кроме глубокой, неизбывной усталости. Не физической — нет, это была усталость иного рода, тягучая, тяжелая, словно гиря, привязанная к его мыслям и чувствам. Эта усталость прорастала в его душе как сорняк, поглощая все вокруг.&lt;/p&gt;
-
-&lt;p&gt;Тупость процессов, с которой он сталкивался день за днем, словно темный туман окружала его со всех сторон. “Кто это придумал? Кто сделал так, что мы погружаемся в этот бесконечный хаос, когда каждый правит по своему, но ничего не работает?” — думал он, глядя на свое отражение в мониторе. Не отражение человека, а отражение усталого существа, измученного непрерывной борьбой с бессмысленностью.&lt;/p&gt;
-
-&lt;p&gt;Андрей Павлович знал, что причина его страданий — не код. Код был честным, прямым, логичным. Он создавал иллюзию порядка в этом мире хаоса, но стоило выйти за пределы этой микроскопической вселенной, как начиналась нескончаемая путаница людей, процессов, решений, которые ничего не значат.&lt;/p&gt;
-
-&lt;p&gt;Как он ненавидел эти ежедневные собрания, где решения принимались не теми, кто понимает, а теми, кто просто говорит громче других. Каждый раз, когда кто-то с важным видом предлагал очередную нелепицу, Андрей Павлович с трудом сдерживал горький смех. Они говорили об оптимизации, о новых методологиях, о том, как сделать всё быстрее и проще. Но разве кто-то из них знал, что такое истинная простота? Разве кто-то видел код так, как он?&lt;/p&gt;
-
-&lt;p&gt;«Мы тонем в собственной некомпетентности, и самое страшное — все делают вид, что так и должно быть», — думал он, чувствуя, как отчаяние медленно, но верно, заполняет всё его существо.&lt;/p&gt;
-
-&lt;p&gt;Его взгляд остановился на строчке кода, который он написал сегодня утром. «Какая же это пустота», — подумал он. Это была не просто пустота рабочего процесса, не пустота написанного им кода — это была пустота самого существования, в которой не осталось ни смысла, ни цели. Ведь сколько бы он ни старался, мир всё равно останется таким же глупым и несуразным, полным нелепых решений и бессмысленных процессов.&lt;/p&gt;
-
-&lt;p&gt;Внутри него разгорался тихий огонь протеста, но он знал, что этот огонь никогда не вырвется наружу. Все вокруг него были частью системы, которая никогда не изменится. Этот абсурд, эти тупые процессы были частью жизни, и Андрей Павлович не мог с ними бороться. Он был только свидетелем, беспомощным наблюдателем своей жизни, погруженной в хаос чужой бездумности.&lt;/p&gt;
-
-&lt;p&gt;“Ну что ж”, — подумал он наконец, глядя на черный экран перед собой. “Нужно продолжать работать”.&lt;/p&gt;</content><author><name></name></author><category term="tale" /><category term="ru" /></entry></feed>
+&lt;p&gt;That’s it for this episode. Comment and share. EOF&lt;/p&gt;</content><author><name></name></author><category term="news" /><category term="linux" /><category term="personal" /></entry></feed>

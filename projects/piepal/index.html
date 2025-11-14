@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>PiePal | FalseTrue</title>
+
+<!-- Begin Bridgetown SEO tag v6.0.0 -->
+<title>PiePal | FalseTrue</title>
+<meta property="og:title" content="PiePal" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Scripts of cyberdaemon" />
+<meta property="og:description" content="Scripts of cyberdaemon" />
+<link rel="canonical" href="https://falsetrue.io/projects/piepal/" />
+<meta property="og:url" content="https://falsetrue.io/projects/piepal/" />
+<meta property="og:site_name" content="FalseTrue" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-08-03T02:00:00+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="PiePal" />
+<!-- End Bridgetown SEO tag -->
+
+
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/_bridgetown/static/index.Y3SDRB35.css" />
+<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+<script src="/_bridgetown/static/index.42K5JGTD.js" defer></script>
+
+<link type="application/atom+xml" rel="alternate" href="https://falsetrue.io/feed.xml" title="FalseTrue" />
+
+  </head>
+  <body class="projects ">
+    <nav>
+  <ul>
+    <li><a href="/"><span class="text-green-400">False!</span><span class="text-cyan-300">True</span></a></li>
+    <li><a href="/">Home</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/feed">Feed</a></li>
+    <li><a href="/projects">Projects</a></li>
+    <li><a href="/archive">Archive</a></li>
+    <li><a href="/bookshelf">Bookshelf</a></li>
+    <li><a href="/photography">Photography</a></li>
+    <li><a href="/halloffame">Hall of fame</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/feed.xml"><i class="fa fa-rss text-[orange]"></i>&nbsp;RSS</a></li>
+  </ul>
+</nav>
+
+
+    <main>
+      
+<section class="mb-8">
+    <div class="mb-4 flex flex-row gap-2 items-center">
+           <div>
+               <div class="text-xs text-gray-400">Published at: August 03, 2025</div>
+           </div>
+           <div class="category-block">
+            <span>Category:</span>
+                    <a href="/categories/projects" class="badge-category badge-projects">projects</a>
+        </div>
+        <div class="tags-block">
+            <span>Tags:</span>
+                <a href="/tags/software" class="badge-tag">#software</a>
+                <a href="/tags/projects" class="badge-tag">#projects</a>
+                <a href="/tags/payment" class="badge-tag">#payment</a>
+        </div>
+    </div>
+    <div class="flex gap-2">
+        <div class="w-48">
+            <img src="/images/projects/piepal/piepal-logo.png" >
+        </div>
+        <div class="flex flex-col gap-2">
+            <h1 class="text-4xl">PiePal</h1>
+            <p class="text-sm">A Python program to fetch and display PayPal transactions and subscription details. The script uses the PayPal REST API to retrieve transactions related to a specific Subscription ID and can display them in a terminal using the rich, - library for a formatted and clean output.</p>
+            <div class="text-sm">
+                    Source code: <a href="https://github.com/noroot/piepal" class="text-sm">https://github.com/noroot/piepal</a>
+            </div>
+        </div>
+    </div>
+</section>
+<article class="prose prose-slate prose-pre:bg-gray-100 prose-pre:text-gray-500 max-w-full prose-h1:leading-relaxed">
+    <p>A Python program to fetch and display PayPal transactions and subscription details. The script uses the PayPal REST API to retrieve transactions related to a specific Subscription ID and can display them in a terminal using the rich, - library for a formatted and clean output.</p>
+
+<h2 id="features">Features</h2>
+
+<ul>
+  <li>Fetch Subscription details</li>
+  <li>Fetch all transactions for a given subscription ID.</li>
+  <li>Display transaction details such as Transaction ID, Amount, Payer Email, and Payer Name.</li>
+  <li>Fetch Subscription Plan details</li>
+  <li>Use the PayPal Sandbox APIx for testing by using --sandbox</li>
+  <li>Use --verbose output to understand API calls</li>
+</ul>
+
+<h2 id="setup-for-usage">Setup for usage</h2>
+
+<ul>
+  <li>Install with pip - pip install piepal</li>
+  <li>Set env variables:
+    <ul>
+      <li>export PAYPAL_CLIENT_ID=”…”</li>
+      <li>export PAYPAL_CLIENT_SECRET=”…”</li>
+    </ul>
+  </li>
+  <li>Run piepal</li>
+</ul>
+
+<h2 id="setup-for-development">Setup for development</h2>
+
+<ul>
+  <li>Git clone repository</li>
+  <li>cd ./src</li>
+  <li>Setup credentials with env variables:
+    <ul>
+      <li>export PAYPAL_CLIENT_ID=”…”</li>
+      <li>export PAYPAL_CLIENT_SECRET=”…”</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="options">Options</h2>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>usage: piepal <span class="o">[</span><span class="nt">-h</span><span class="o">]</span> <span class="o">[</span><span class="nt">--transactions</span> | <span class="nt">--no-transactions</span><span class="o">]</span> <span class="o">[</span><span class="nt">--sub</span> SUB] <span class="o">[</span><span class="nt">--txn</span> TXN] <span class="o">[</span><span class="nt">--plan</span> PLAN] <span class="o">[</span><span class="nt">--sandbox</span> | <span class="nt">--no-sandbox</span><span class="o">]</span> <span class="o">[</span><span class="nt">--debug</span> | <span class="nt">--no-debug</span><span class="o">]</span>
+              <span class="o">[</span><span class="nt">--verbose</span> | <span class="nt">--no-verbose</span><span class="o">]</span>
+
+<span class="o">[</span>PyPal] - PayPal API Viewer written with Python
+
+options:
+  <span class="nt">-h</span>, <span class="nt">--help</span>            show this <span class="nb">help </span>message and <span class="nb">exit</span>
+  <span class="nt">--transactions</span>, <span class="nt">--no-transactions</span>
+                        List latest transactions
+  <span class="nt">--sub</span> SUB             Subscription ID to fetch details
+  <span class="nt">--txn</span> TXN             Transaction ID to fetch details
+  <span class="nt">--plan</span> PLAN           Plan ID to fetch
+  <span class="nt">--sandbox</span>, <span class="nt">--no-sandbox</span>
+                        Use SANDBOX environment
+  <span class="nt">--debug</span>, <span class="nt">--no-debug</span>   Debug output
+  <span class="nt">--verbose</span>, <span class="nt">--no-verbose</span>
+                        Verbose output
+</code></pre></div></div>
+
+<h2 id="examples">Examples</h2>
+
+<h3 id="get-latest-subscriptions">Get latest subscriptions</h3>
+
+<p><code class="highlighter-rouge">piepal --transactions</code></p>
+
+<h3 id="get-subscription-details">Get Subscription details</h3>
+
+<p><code class="highlighter-rouge">piepal --sub I-1234567890GG</code></p>
+
+<h3 id="get-transaction-details">Get Transaction details</h3>
+
+<p><code class="highlighter-rouge">piepal --txn T-12345678990F3FG1231</code></p>
+
+<h3 id="get-subscription-plan-details">Get Subscription Plan details</h3>
+
+<p><code class="highlighter-rouge">piepal --plan P-12345678990F3FG1231</code></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>                           Subscription I-1234567890GG
+┏━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Name               ┃ Value                                                     ┃
+┡━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ Subscription ID    │ I-1234567890GG                                            │
+├────────────────────┼───────────────────────────────────────────────────────────┤
+│ Plan ID            │ P-1234567890GG123456789YYA                                │
+├────────────────────┼───────────────────────────────────────────────────────────┤
+│ Status             │ CANCELLED                                                 │
+├────────────────────┼───────────────────────────────────────────────────────────┤
+│ Amount             │ 12.5                                                      │
+├────────────────────┼───────────────────────────────────────────────────────────┤
+│ Currency           │ USD                                                       │
+├────────────────────┼───────────────────────────────────────────────────────────┤
+│ Last Payment Time  │ 2025-04-24T00:00:00Z                                      │
+├────────────────────┼───────────────────────────────────────────────────────────┤
+│ Status Update Time │ 2025-04-25T00:00:00Z                                      │
+├────────────────────┼───────────────────────────────────────────────────────────┤
+│ Next Billing Time  │ N/A                                                       │
+├────────────────────┼───────────────────────────────────────────────────────────┤
+│ Start Time         │ 2025-05-01T00:00:00Z                                      │
+├────────────────────┼───────────────────────────────────────────────────────────┤
+│ Update Time        │ 2025-04-25T00:00:00Z                                      │
+├────────────────────┼───────────────────────────────────────────────────────────┤
+│ Failed CX          │ 0                                                         │
+├────────────────────┼───────────────────────────────────────────────────────────┤
+│ Subscriber Email   │ user_email@example.com                                    │
+├────────────────────┼───────────────────────────────────────────────────────────┤
+│ Subscriber Name    │ {'given_name': 'John', 'surname': Snow'}                  │
+├────────────────────┼───────────────────────────────────────────────────────────┤
+│ Payer ID           │ DB1234567890                                              │
+└────────────────────┴───────────────────────────────────────────────────────────┘
+
+Transactions for this Subscription
+
++-----------------------+-------------------------+--------+----------+-------------------+----------------------+
+| Transaction ID        |  Date                   | Amount | Currency | Payer Email       | Payer Name           | 
++-----------------------+-------------------------+--------+----------+-------------------+----------------------+
+| 5A6789ABC1234567X     | 2025-03-31T12:00:00Z    | $50.00 | USD      | user@example.com  | John Doe             |
++-----------------------+-------------------------+--------+----------+-------------------+----------------------+
+| 5A6789ABC1234567Y     | 2025-04-01T10:30:00Z    | $50.00 | USD      | user@example.com  | John Doe             |
++-----------------------+-------------------------+--------+----------+-------------------+----------------------+
+</code></pre></div></div>
+<h3 id="screenshots">Screenshots</h3>
+
+<p><img src="/images/piepal/TransactionsList.jpeg" alt="" />
+<img src="/images/piepal/TransactionDetails.jpeg" alt="" />
+<img src="/images/piepal/SubscriptionTransactionList.jpeg" alt="" />
+<img src="/images/piepal/SubscriptionReportDetails.jpeg" alt="" /></p>
+
+<h2 id="license">License</h2>
+
+<ul>
+  <li>MIT License</li>
+</ul>
+
+<h1 id="links">Links</h1>
+
+<ul>
+  <li><a href="https://github.com/noroot/piepal">https://github.com/noroot/piepal</a></li>
+  <li><a href="https://pypi.org/project/piepal/0.1.0/">https://pypi.org/project/piepal/0.1.0/</a></li>
+</ul>
+
+</article>
+
+<div class="my-[100px] ">
+    <h2 class="text-2xl mb-2">Comments</h2>
+
+    <script data-isso="https://comments.falsetrue.io/"
+            src="https://comments.falsetrue.io/js/embed.min.js"></script>
+
+    <section id="isso-thread">
+        <noscript>Javascript needs to be activated to view comments.</noscript>
+    </section>
+
+</div>
+
+    </main>
+
+    <footer class="text-xs pt-8 my-8 px-8">
+    <div>
+        <div>
+            Dmitry Ro © 2003 - 2025. All rights reserved.<br>
+            Копирование и распрастранение страницы разрешено только в оригинальном не изменном виде, включая это сообщение.
+            Verbatim copying and redistribution of this entire page are permitted provided this notice is preserved.
+            Verbatim copying and redistribution of any of the photos in the photos subdirectory is permitted under the <a href="http://creativecommons.org/licenses/by-nd/3.0/" rel="nofollow"> Creative Commons Noderivs license version 3.0</a> or later.
+            <div><a href="/pgp.key.txt" rel="pgpkey authn">PGP Key</a></div>
+        </div>
+        <div class="flex mx-auto my-3 items-center justify-center gap-1">
+            <div><a href="https://webmentions.io" target="_blank" class="inline"><img src="/images/webmention.png" alt="Webmentions"></a></div>
+            <div><a href="https://indieweb.org" target="_blank"><img src="/images/indieweb.png" alt="indieweb"></a></div>
+            <div><a href="https://microformats.org" target="_blank"><img src="/images/microformats.png" alt="microformats"></a></div>
+            <div><a href="https://creativecommons.org/licenses/by/3.0/" target="_blank"><img src="/images/cc-commons.png" alt="cc-commons"></a></div>
+            <div><img src="/images/w3c-valid-html.png" alt="valid w3c"></div>
+        </div>
+        <div class="mt-1">
+            <a href="https://xn--sr8hvo.ws/previous">←</a>
+            An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
+            <a href="https://xn--sr8hvo.ws/next">→</a>
+        </div>
+    </div>
+</footer>
+
+  </body>
+</html>
