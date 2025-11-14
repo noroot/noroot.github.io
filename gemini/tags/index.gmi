@@ -20,9 +20,11 @@
 
 => /tags/esoteric #esoteric
 
-=> /tags/tools #tools
-
 => /tags/software #software
+
+=> /tags/3dp #3dp
+
+=> /tags/tools #tools
 
 => /tags/howto #howto
 

@@ -123,6 +123,7 @@
 => security/2014-05-26-router-hack.gmi Your router may be already hacked
 
 ## Share
+=> share/2025-11-14-openprinttag.md OpenPrintTag - NFC standard for 3d printing spools
 => share/2024-10-10-crysis-tale.gmi Рассказ - "Нужно продолжать работать"
 => share/2024-09-30-linked-comment-rush.gmi My comment on linkedin collected almost thousand of likes
 => share/2024-09-15-euruko2024-review.gmi EuRuKo 2024 Review

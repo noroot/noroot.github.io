@@ -10,6 +10,13 @@
 => / ← Back
 # Blog
 
+* share
+        link
+14-NOV-2025 - OpenPrintTag - NFC standard for 3d printing spools
+
+    #software
+    #3dp
+
 * tools
 10-NOV-2025 - Tools I am using
 

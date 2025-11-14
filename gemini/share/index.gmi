@@ -9,6 +9,7 @@
 ```
 => / ← Back
 # Share
+=> 2025-11-14-openprinttag.md 2025-11-14 OpenPrintTag - NFC standard for 3d printing spools
 => 2024-10-10-crysis-tale.gmi 2024-10-11 Рассказ - "Нужно продолжать работать"
 => 2024-09-30-linked-comment-rush.gmi 2024-09-30 My comment on linkedin collected almost thousand of likes
 => 2024-09-15-euruko2024-review.gmi 2024-09-15 EuRuKo 2024 Review

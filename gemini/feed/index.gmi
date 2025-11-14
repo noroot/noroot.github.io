@@ -11,6 +11,13 @@
 # Feed
 
 * share
+        link
+14-NOV-2025 - OpenPrintTag - NFC standard for 3d printing spools
+
+    #software
+    #3dp
+
+* share
         tales
 11-OCT-2024 - Рассказ - "Нужно продолжать работать"
 
