@@ -54,31 +54,30 @@
 
 
     <main>
-      <article class="prose prose-slate prose-pre:bg-gray-100 prose-pre:text-gray-500 max-w-full prose-h1:leading-relaxed">
-    <span>04 Mar 2023</span>
-    <div class="mb-8">
-        <h1 class="leading-relaxed">How to sign VirtualBox kernel modules when you're on secure boot</h1>
-        <div class="category-block">
-            <span>Category</span>
-            
-                
+      <section class="mb-8">
+    <div class="mb-4 flex flex-row gap-2 items-center">
+           <div>
+               <div class="text-xs text-gray-400">Published at: March 04, 2023</div>
+           </div>
+           <div class="category-block">
+            <span>Category:</span>
                     <a href="/categories/howto" class="badge-category badge-howto">howto</a>
-                
-            
         </div>
-        <div class="tags-block mt-8">
-            <span>Tags</span>
-            
+        <div class="tags-block">
+            <span>Tags:</span>
                 <a href="/tags/linux" class="badge-tag">#linux</a>
-            
                 <a href="/tags/vm" class="badge-tag">#vm</a>
-            
                 <a href="/tags/virtualbox" class="badge-tag">#virtualbox</a>
-            
                 <a href="/tags/kernel" class="badge-tag">#kernel</a>
-            
         </div>
     </div>
+    <div class="flex gap-2">
+        <div class="flex flex-col gap-2">
+            <h1 class="text-4xl">How to sign VirtualBox kernel modules when you&#39;re on secure boot</h1>
+        </div>
+    </div>
+</section>
+<article class="prose prose-slate prose-pre:bg-gray-100 prose-pre:text-gray-500 max-w-full prose-h1:leading-relaxed">
     <p>When you’re installing VirtualBox on a system with Secure Boot enabled, the installation process requires kernel modules to be loaded that are not signed by the system’s Secure Boot key. In this situation, you have two options:</p>
 
 <ol>

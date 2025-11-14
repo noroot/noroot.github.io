@@ -159,7 +159,7 @@
 => story/2017-07-31-roem-wordpress.gmi Roem на Wordpress
 
 ## Tools
-=> tools/2025-11-10-software-im-using.gmi Tools I am using
+=> tools/2025-11-10-tools-im-using.gmi Tools I am using
 => tools/2023-11-27-logseq.md LogSeq - notes taking application
 => tools/2023-03-03-teams-vs-slack.gmi Teams vs Slack
 => tools/2023-01-01-activity-watch.gmi ActivityWatch - open source time tracker

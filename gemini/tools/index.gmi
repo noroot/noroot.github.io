@@ -9,7 +9,7 @@
 ```
 => / ← Back
 # Tools
-=> 2025-11-10-software-im-using.gmi 2025-11-10 Tools I am using
+=> 2025-11-10-tools-im-using.gmi 2025-11-10 Tools I am using
 => 2023-11-27-logseq.md 2023-11-26 LogSeq - notes taking application
 => 2023-03-03-teams-vs-slack.gmi 2023-03-03 Teams vs Slack
 => 2023-01-01-activity-watch.gmi 2023-01-01 ActivityWatch - open source time tracker

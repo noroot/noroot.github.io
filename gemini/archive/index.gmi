@@ -13,7 +13,7 @@
 
 ## 2025
 => /share/2025-11-14-openprinttag.md 2025-11-14 OpenPrintTag - NFC standard for 3d printing spools
-=> /tools/2025-11-10-software-im-using.gmi 2025-11-10 Tools I am using
+=> /tools/2025-11-10-tools-im-using.gmi 2025-11-10 Tools I am using
 => /howto/2025-08-02-disable-spotlight.gmi 2025-08-02 How and why to disable Spotlight
 => /notes/2025-07-22-gemini-capsule.gmi 2025-07-22 Gemini, Gopher and and SmolNet
 => /howto/2025-07-13-disk-blinking.gmi 2025-07-13 Prevent disk from being indexed by system
