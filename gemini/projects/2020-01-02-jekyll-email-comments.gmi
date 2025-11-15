@@ -48,12 +48,19 @@ Feel free to comment, I’ve already installed it onto this blog, go ahead to tr
 
 There few credentials your have to setup before run:
 
-** MC_LOGIN - Login to imap server
+```
 
-** MC_PASSWORD - Password for imap server
-** MC_HOST - IMAP server hostname
-** MC_PORT - IMAP server port
-** MCSUBJECTSUFFIX - Suffix to filter comments
+MC_LOGIN - Login to imap server
+
+MC_PASSWORD - Password for imap server
+
+MC_HOST - IMAP server hostname
+
+MC_PORT - IMAP server port
+
+MCSUBJECTSUFFIX - Suffix to filter comments
+
+```
 
 * You have put this as environment variables see .env.dist
 
@@ -91,7 +98,7 @@ Inspiration while searching for already existing gem for email comments
 
 ## Example
 
-* Here, below ↓↓↓
+* Here, below ↓↓↓ (use to be there until I’ve switched to Bridgetown from Jekyll)
 
 ```
      ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░

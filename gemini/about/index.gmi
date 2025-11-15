@@ -13,7 +13,7 @@
 This blog is about programming, internet, computer science and modern
 technologies. Some records made in English. If you’re interested in translation message me.
 
-Blogs posts are divided by context, section called “Blog” is for main articles and posts, and section called “Feed” is for small posts, such as sharing links, and mentions
+Blogs posts are divided by context, section called “Blog” is for main articles and posts, and section called “Feed” is for small posts, such as sharing links, and mentions.
 
 ## What about me ?
 
@@ -42,6 +42,8 @@ I am full-stack developer with 15+ years experience in software development.
 * CatWatchDog - Software development / Expert project management / Fraction CTO business.
 
 * Jekyll Email Comments - Comments engine based on email for Jekyll.
+
+## Art
 
 * I do photography, you can check it out Here 📷 Photography
 

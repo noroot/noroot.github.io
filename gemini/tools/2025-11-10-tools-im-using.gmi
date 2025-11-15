@@ -10,6 +10,14 @@
 => / ← Back
 # Tools I am using
 
+TBU
+
+## Hardware
+
+* Thinkpad x1g8 - Best laptop for Linux, slightly outdated in 2025, still doing good job.
+
+* Macbook Pro M1 Max - power house for heavy duty development.
+
 ## OS
 
 * Debian GNU/Linux - My distro of choice for 20 years. Stable, customizable, just works (was’t like that in past).
@@ -50,11 +58,13 @@
 
 ## Other
 
+* Mail.app - The best option for MacOS, despite a lot of alternative it is still better native option
+
+* Thunderbird - The best open-source option for all platforms.
+
 * Firefox - First option for browsing, but it becoming dumber, slower. Still usable though.
 
 * Brave - Good second option, which might become primary.
-
-Lookup for Extended version of this lists on my othe very personal blog.
 
 ```
      ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
