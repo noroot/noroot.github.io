@@ -22,7 +22,7 @@ I’ve updated projects page on my blog
 
 , I’ve also added recent pet projects I made
 
-* OverLauncher - if you’re tired of Spotlight this is solition for you, its substituion for MacOS spotlight, which is works as app launcher only, and have few additional features like calculations and currency converted. App launcher works completly without the Internet, currency exchange features takes rates from the Internet.
+* OverLauncher - if you’re tired of Spotlight this is solution for you, its substitution for MacOS spotlight, which is works as app launcher only, and have few additional features like calculations and currency converted. App launcher works completly without the Internet, currency exchange features takes rates from the Internet.
 
 * DebloatWeb - Plugin chromium based browsers which allow you to hide elements from any site.
 
