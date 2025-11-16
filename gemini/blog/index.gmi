@@ -5,10 +5,16 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ============ [ 2025-11-15 ] ==
+== [Gemini capsule] * ============ [ 2025-11-16 ] ==
 ```
 => / ← Back
 # Blog
+
+* ✉️ newsletter
+16-NOV-2025 - EP-20 FalseTrue Digest
+
+    #news
+    #journal
 
 * share
         link

@@ -1,0 +1,97 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ============ [ 2025-11-16 ] ==
+```
+=> / ← Back
+# EP-20 FalseTrue Digest
+
+## Intro
+
+Hello everybody. This is Episode-20 of FalseTrue Digest.
+
+Its being a while since I’ve posted last time. This is new set of of interesting articles I’ve found on internet since then.
+
+I’ve updated projects page on my blog
+
+=> https://falsetrue.io/projects/ https://falsetrue.io/projects/
+
+, I’ve also added recent pet projects I made
+
+* OverLauncher - if you’re tired of Spotlight this is solition for you, its substituion for MacOS spotlight, which is works as app launcher only, and have few additional features like calculations and currency converted. App launcher works completly without the Internet, currency exchange features takes rates from the Internet.
+
+* DebloatWeb - Plugin chromium based browsers which allow you to hide elements from any site.
+
+Proceed to the links…
+
+## Stories
+
+* Disrupting the first reported AI-orchestrated cyber espionage campaign - First AI assisted cyber espionage
+
+* Go 16 years old - Go 16 years old
+
+* New Sudo written in Rust failed - seems like zoomers vibe-coded sudo with rust, and failed.
+
+* I think nobody wants AI in Firefox, Mozilla
+
+ - Nobody wants AI in Firefox
+
+## Development
+
+* TOON - Everybody is speaking about TOON new format made specifically for LLM transport, it looks like it is CSV for dumb.
+
+* VisiData - Terminal based CSV data exploration at your fingertips.
+
+* How to use UUIDv7 in Python, Django and PostgreSQL
+
+* Cache-Friendly, Low-Memory Lanczos Algorithm in Rust
+
+### AI && LLM
+
+* GPT 5.1 for Developers
+
+* VibeThinker - Tiny Model, Big Logic: Diversity-Driven Optimization Elicits Large-Model Reasoning Ability in VibeThinker-1.5B
+
+* Claude Skills - repo with a lot of recipes for works with Claude Code
+
+* AI Clock
+
+## Emacs
+
+* IDEmacs - Visual Studio Code based on Emacs
+
+* Emacs for Writers - Emacs for writers
+
+## Essays
+
+* Think in Math. Write in Code
+
+* NetHack4 Philosophy
+
+* How to like everything more, on the skill of enjoyment
+
+* Why Nietzsche Matters in the Age of Artificial Intelligence
+
+## Marginal, Indie, Selfhosted
+
+* PerKeep - Perkeep is your personal storage system for life.
+
+* AsciiMath
+
+* WriterDeck
+
+* How Tube Amplifiers Work
+
+* Network Domain Name Resolution Plan
+
+* stickertop.art - Discover a unique collection of laptops adorned with creative stickers from around the world.
+
+That’s it for this episode. Comment and share. EOF
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

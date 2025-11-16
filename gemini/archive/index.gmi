@@ -5,13 +5,14 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ============ [ 2025-11-15 ] ==
+== [Gemini capsule] * ============ [ 2025-11-16 ] ==
 ```
 # Archive
 
 => / ← Back
 
 ## 2025
+=> /newsletter/2025-11-16-ep20.gmi 2025-11-16 EP-20 FalseTrue Digest
 => /share/2025-11-14-openprinttag.md 2025-11-14 OpenPrintTag - NFC standard for 3d printing spools
 => /tools/2025-11-10-tools-im-using.gmi 2025-11-10 Tools I am using
 => /howto/2025-08-02-disable-spotlight.gmi 2025-08-02 How and why to disable Spotlight

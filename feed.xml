@@ -1,4 +1,75 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://bridgetownrb.com/" version="1.3.4">Bridgetown</generator><link href="https://falsetrue.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://falsetrue.io/" rel="alternate" type="text/html" /><updated>2025-11-15T22:44:38+01:00</updated><id>https://falsetrue.io/feed.xml</id><title type="html">FalseTrue</title><subtitle>Scripts of cyberdaemon</subtitle><entry><title type="html">OpenPrintTag - NFC standard for 3d printing spools</title><link href="https://falsetrue.io/share/link/2025/11/14/openprinttag/" rel="alternate" type="text/html" title="OpenPrintTag - NFC standard for 3d printing spools" /><published>2025-11-14T13:00:00+01:00</published><updated>2025-11-14T13:00:00+01:00</updated><id>repo://posts.collection/_posts/2025-11-14-openprinttag.md</id><content type="html" xml:base="https://falsetrue.io/share/link/2025/11/14/openprinttag/">&lt;p&gt;&lt;a href=&quot;https://openprinttag.org/&quot;&gt;https://openprinttag.org/&lt;/a&gt; - An open-source initiative by Prusa Research creating a single smart spool standard that works across all brands and ecosystems. This allows printers and users to read and write data directly on any spool, making 3D printing more reliable and intuitive for everyone.&lt;/p&gt;</content><author><name></name></author><category term="software" /><category term="3dp" /></entry><entry><title type="html">Tools I am using</title><link href="https://falsetrue.io/tools/2025/11/10/tools-im-using/" rel="alternate" type="text/html" title="Tools I am using" /><published>2025-11-10T00:00:00+01:00</published><updated>2025-11-10T00:00:00+01:00</updated><id>repo://posts.collection/_posts/2025-11-10-tools-im-using.markdown</id><content type="html" xml:base="https://falsetrue.io/tools/2025/11/10/tools-im-using/">&lt;p&gt;TBU&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://bridgetownrb.com/" version="1.3.4">Bridgetown</generator><link href="https://falsetrue.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://falsetrue.io/" rel="alternate" type="text/html" /><updated>2025-11-16T20:39:28+01:00</updated><id>https://falsetrue.io/feed.xml</id><title type="html">FalseTrue</title><subtitle>Scripts of cyberdaemon</subtitle><entry xml:lang="en"><title type="html">EP-20 FalseTrue Digest</title><link href="https://falsetrue.io/newsletter/2025/11/16/ep20/" rel="alternate" type="text/html" title="EP-20 FalseTrue Digest" /><published>2025-11-16T11:00:00+01:00</published><updated>2025-11-16T11:00:00+01:00</updated><id>repo://posts.collection/_posts/2025-11-16-ep20.markdown</id><content type="html" xml:base="https://falsetrue.io/newsletter/2025/11/16/ep20/">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+
+&lt;p&gt;Hello everybody. This is Episode-20 of FalseTrue Digest.&lt;/p&gt;
+
+&lt;p&gt;Its being a while since I’ve posted last time. This is new set of of interesting articles I’ve found on internet since then.
+I’ve updated projects page on my blog &lt;a href=&quot;https://falsetrue.io/projects/&quot;&gt;https://falsetrue.io/projects/&lt;/a&gt;, I’ve also added recent pet projects I made&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://falsetrue.io/projects/overlauncher/&quot;&gt;OverLauncher&lt;/a&gt; - if you’re tired of Spotlight this is solition for you, its substituion for MacOS spotlight, which is works as app launcher only, and have few additional features like calculations and currency converted. App launcher works completly without the Internet, currency exchange features takes rates from the Internet.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://falsetrue.io/projects/overlauncher/&quot;&gt;DebloatWeb&lt;/a&gt; - Plugin chromium based browsers which allow you to hide elements from any site.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Proceed to the links…&lt;/p&gt;
+
+&lt;h2 id=&quot;stories&quot;&gt;Stories&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.anthropic.com/news/disrupting-AI-espionage&quot;&gt;Disrupting the first reported AI-orchestrated cyber espionage campaign&lt;/a&gt; - First AI assisted cyber espionage&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://go.dev/blog/16years&quot;&gt;Go 16 years old&lt;/a&gt; - Go 16 years old&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.phoronix.com/news/sudo-rs-security-ubuntu-25.10&quot;&gt;New Sudo written in Rust failed&lt;/a&gt; - seems like zoomers vibe-coded sudo with rust, and failed.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://manualdousuario.net/en/mozilla-firefox-window-ai/&quot;&gt;I think nobody wants AI in Firefox, Mozilla
+&lt;/a&gt; - Nobody wants AI in Firefox&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;development&quot;&gt;Development&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/toon-format/toon&quot;&gt;TOON&lt;/a&gt; - Everybody is speaking about TOON new format made specifically for LLM transport, it looks like it is CSV for dumb.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.visidata.org/&quot;&gt;VisiData&lt;/a&gt; - Terminal based CSV data exploration at your fingertips.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.paulox.net//2025/11/14/how-to-use-uuidv7-in-python-django-and-postgresql/&quot;&gt;How to use UUIDv7 in Python, Django and PostgreSQL&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lukefleed.xyz/posts/cache-friendly-low-memory-lanczos/&quot;&gt;Cache-Friendly, Low-Memory Lanczos Algorithm in Rust&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;ai--llm&quot;&gt;AI &amp;amp;&amp;amp; LLM&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://openai.com/index/gpt-5-1-for-developers/&quot;&gt;GPT 5.1 for Developers&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/WeiboAI/VibeThinker&quot;&gt;VibeThinker&lt;/a&gt; - Tiny Model, Big Logic: Diversity-Driven Optimization Elicits Large-Model Reasoning Ability in VibeThinker-1.5B&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/ComposioHQ/awesome-claude-skills&quot;&gt;Claude Skills&lt;/a&gt; - repo with a lot of recipes for works with Claude Code&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://clocks.brianmoore.com/&quot;&gt;AI Clock&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;emacs&quot;&gt;Emacs&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://codeberg.org/IDEmacs/IDEmacs&quot;&gt;IDEmacs&lt;/a&gt; - Visual Studio Code based on Emacs&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=ZKesc3eFcxY&quot;&gt;Emacs for Writers&lt;/a&gt; - Emacs for writers&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;essays&quot;&gt;Essays&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.jmeiners.com/think-in-math/&quot;&gt;Think in Math. Write in Code&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://nethack4.org/philosophy.html&quot;&gt;NetHack4 Philosophy&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://sashachapin.substack.com/p/how-to-like-everything-more&quot;&gt;How to like everything more, on the skill of enjoyment&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://cacm.acm.org/blogcacm/why-nietzsche-matters-in-the-age-of-artificial-intelligence/&quot;&gt;Why Nietzsche Matters in the Age of Artificial Intelligence&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;marginal-indie-selfhosted&quot;&gt;Marginal, Indie, Selfhosted&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://perkeep.org/&quot;&gt;PerKeep&lt;/a&gt; - Perkeep is your personal storage system for life.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://asciimath.org/&quot;&gt;AsciiMath&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.writerdeck.org/&quot;&gt;WriterDeck&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://robrobinette.com/How_Amps_Work.htm&quot;&gt;How Tube Amplifiers Work
+&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.l3zc.com/en/2025/02/what-i-have-done-on-my-dns/&quot;&gt;Network Domain Name Resolution Plan
+&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://stickertop.art/main/&quot;&gt;stickertop.art&lt;/a&gt; - Discover a unique collection of laptops adorned with creative stickers from around the world.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;That’s it for this episode. Comment and share. EOF&lt;/p&gt;</content><author><name></name></author><category term="news" /><category term="journal" /></entry><entry><title type="html">OpenPrintTag - NFC standard for 3d printing spools</title><link href="https://falsetrue.io/share/link/2025/11/14/openprinttag/" rel="alternate" type="text/html" title="OpenPrintTag - NFC standard for 3d printing spools" /><published>2025-11-14T13:00:00+01:00</published><updated>2025-11-14T13:00:00+01:00</updated><id>repo://posts.collection/_posts/2025-11-14-openprinttag.md</id><content type="html" xml:base="https://falsetrue.io/share/link/2025/11/14/openprinttag/">&lt;p&gt;&lt;a href=&quot;https://openprinttag.org/&quot;&gt;https://openprinttag.org/&lt;/a&gt; - An open-source initiative by Prusa Research creating a single smart spool standard that works across all brands and ecosystems. This allows printers and users to read and write data directly on any spool, making 3D printing more reliable and intuitive for everyone.&lt;/p&gt;</content><author><name></name></author><category term="software" /><category term="3dp" /></entry><entry><title type="html">Tools I am using</title><link href="https://falsetrue.io/tools/2025/11/10/tools-im-using/" rel="alternate" type="text/html" title="Tools I am using" /><published>2025-11-10T00:00:00+01:00</published><updated>2025-11-10T00:00:00+01:00</updated><id>repo://posts.collection/_posts/2025-11-10-tools-im-using.markdown</id><content type="html" xml:base="https://falsetrue.io/tools/2025/11/10/tools-im-using/">&lt;p&gt;TBU&lt;/p&gt;
 
 &lt;h2 id=&quot;hardware&quot;&gt;Hardware&lt;/h2&gt;
 
@@ -736,8 +807,4 @@ COUNT    IP              STATUS     PATH                                    USER
 &lt;img src=&quot;/images/photography_copyrighted/Cars/ZastavaJugo45.jpg&quot; class=&quot;ft-img&quot; alt=&quot;Zastava Jugo 45&quot; /&gt;
 &lt;p&gt;&quot;Zastava Jugo 45&quot; // 2024-11-09 &amp;copy; Dmitry Ro.&lt;/p&gt;
 &lt;p class=&quot;ft-picture-info&quot;&gt;FUJIFILM XT-4 | XF16-80mmF4 R OIS WR | 52mm | F/4 | 1/80 | ISO 1600 &lt;/p&gt;
-&lt;/div&gt;</content><author><name></name></author><category term="photo" /><category term="car" /><category term="street" /></entry><entry><title type="html">Fruška Gora Forest</title><link href="https://falsetrue.io/photo/2024/11/11/fruska-gora/" rel="alternate" type="text/html" title="Fruška Gora Forest" /><published>2024-11-11T08:00:00+01:00</published><updated>2024-11-11T08:00:00+01:00</updated><id>repo://posts.collection/_posts/2024-11-11-fruska-gora.markdown</id><content type="html" xml:base="https://falsetrue.io/photo/2024/11/11/fruska-gora/">&lt;div class=&quot;ft-picture-block&quot;&gt;
-    &lt;img src=&quot;/images/photography_copyrighted/Landscape/FruskaGora.jpg&quot; class=&quot;ft-img&quot; /&gt;
-    &lt;p&gt;&quot;Fruška Gora Forest&quot; // 2024-11-09 &amp;copy; Dmitry Ro.&lt;/p&gt;
-    &lt;p class=&quot;ft-picture-info&quot;&gt;FUJIFILM XT-4 | XF16-80mmF4 R OIS WR | 49mm | F/4 | 1/80 | ISO 160 &lt;/p&gt;
-&lt;/div&gt;</content><author><name></name></author><category term="photo" /><category term="landscape" /><category term="forest" /></entry></feed>
+&lt;/div&gt;</content><author><name></name></author><category term="photo" /><category term="car" /><category term="street" /></entry></feed>

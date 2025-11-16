@@ -5,10 +5,11 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ============ [ 2025-11-15 ] ==
+== [Gemini capsule] * ============ [ 2025-11-16 ] ==
 ```
 => / ← Back
 # Newsletter
+=> 2025-11-16-ep20.gmi 2025-11-16 EP-20 FalseTrue Digest
 => 2024-11-17-ep19.gmi 2024-12-10 EP-19 FalseTrue Digest
 => 2024-10-25-ep18.gmi 2024-10-25 EP-18 FalseTrue Digest
 => 2024-09-23-ep17.gmi 2024-09-23 EP-17 FalseTrue Digest
