@@ -5,7 +5,7 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ============ [ 2025-11-16 ] ==
+== [Gemini capsule] * ============ [ 2025-12-16 ] ==
 ```
 => / ← Back
 # Tags
@@ -23,6 +23,8 @@
 => /tags/news #news
 
 => /tags/journal #journal
+
+=> /tags/person #person
 
 => /tags/software #software
 
@@ -101,8 +103,6 @@
 => /tags/history #history
 
 => /tags/debian #debian
-
-=> /tags/person #person
 
 => /tags/famouse #famouse
 
