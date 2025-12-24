@@ -1,0 +1,103 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ============ [ 2025-12-24 ] ==
+```
+=> / ← Back
+# EP-21 FalseTrue Digest
+
+## Intro
+
+Hello everybody. This is Episode-21 of FalseTrue Digest.
+
+=> /images/newsletter/ep21.png /images/newsletter/ep21.png
+
+Its being a while since I’ve posted last time. This is new set of of interesting articles I’ve found on internet since then.
+
+I’ve updated projects page on my blog
+
+=> https://falsetrue.io/projects/ https://falsetrue.io/projects/
+
+,
+
+I’ve also added recent pet projects I made
+
+* C-Volley
+
+Proceed to the links…
+
+## Emacs
+
+* EmacsConf 2025: An introduction to the Emacs Reader - Divyá
+
+* Consistent Emacs Key Bindings Across Terminals
+
+* Greg Newman’s Emacs Configuration
+
+* Witchmacs configuration
+
+* Emacs Lisp Elements by protesilaos
+
+* The good side-window side
+
+* Org Calendar Server
+
+* Wisdom - Framework for writing literate Emacs Lisp in Org Mode
+
+## AI
+
+* https://www.creative-tim.com/ui - UI components framework for use with AI agents.
+
+* OpenScouts - Agent that automatically scan web with AI and notify you when find something.
+
+* Opus 4.5
+
+* ChatGPT 5.2
+
+## Hardware
+
+* https://github.com/KaiPereira/Cheetah-MX4-Mini - Motherboard for 3d printer.
+
+* UniHertz - Linux smartphone, haven’t seen that before.
+
+* Lapa ergonomic keyboard - Interesting ergonomic keyboard found on Reddit. https://github.com/lemosbor/lapa
+
+* r/cyberDeck/
+
+## Unix, Linux, BSD
+
+* https://cachyos.org/ - CachyOS, - another bs distro with preconfigured desktop env.
+
+## Security
+
+* The Ultimate iOS Hardening Guide
+
+* https://nextjs.org/blog/CVE-2025-66478
+
+* How we pwned X (Twitter), Vercel, Cursor, Discord, and hundreds of companies through a supply-chain attack
+
+## Marginal, Indie, Selfhosted
+
+* Hashcards: A Plain-Text Spaced Repetition System
+
+* Chafa: Terminal graphics
+
+* UDP7777 - UDP-7777 is a high-availability, low-overhead paging system.
+
+* Timelinize - Organize your exported data from internet corporation
+
+* https://boing.greg.technology/ - just fun
+
+* Screenshots from developers from different epoch
+
+* Introducing Ringspace: A Proposal for the Human Web
+
+* API Mega list
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

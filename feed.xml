@@ -1,4 +1,76 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://bridgetownrb.com/" version="1.3.4">Bridgetown</generator><link href="https://falsetrue.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://falsetrue.io/" rel="alternate" type="text/html" /><updated>2025-12-23T19:14:07+01:00</updated><id>https://falsetrue.io/feed.xml</id><title type="html">FalseTrue</title><subtitle>Scripts of cyberdaemon</subtitle><entry xml:lang="en"><title type="html">EP-20 FalseTrue Digest</title><link href="https://falsetrue.io/newsletter/2025/11/16/ep20/" rel="alternate" type="text/html" title="EP-20 FalseTrue Digest" /><published>2025-11-16T11:00:00+01:00</published><updated>2025-11-16T11:00:00+01:00</updated><id>repo://posts.collection/_posts/2025-11-16-ep20.markdown</id><content type="html" xml:base="https://falsetrue.io/newsletter/2025/11/16/ep20/">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://bridgetownrb.com/" version="1.3.4">Bridgetown</generator><link href="https://falsetrue.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://falsetrue.io/" rel="alternate" type="text/html" /><updated>2025-12-24T08:43:04+01:00</updated><id>https://falsetrue.io/feed.xml</id><title type="html">FalseTrue</title><subtitle>Scripts of cyberdaemon</subtitle><entry xml:lang="en"><title type="html">EP-21 FalseTrue Digest</title><link href="https://falsetrue.io/newsletter/2025/12/24/ep21/" rel="alternate" type="text/html" title="EP-21 FalseTrue Digest" /><published>2025-12-24T01:00:00+01:00</published><updated>2025-12-24T01:00:00+01:00</updated><id>repo://posts.collection/_posts/2025-11-25-ep21.markdown</id><content type="html" xml:base="https://falsetrue.io/newsletter/2025/12/24/ep21/">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+
+&lt;p&gt;Hello everybody. This is Episode-21 of FalseTrue Digest.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/newsletter/ep21.png&quot; alt=&quot;/images/newsletter/ep21.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Its being a while since I’ve posted last time. This is new set of of interesting articles I’ve found on internet since then.
+I’ve updated projects page on my blog &lt;a href=&quot;https://falsetrue.io/projects/&quot;&gt;https://falsetrue.io/projects/&lt;/a&gt;, 
+I’ve also added recent pet projects I made&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://falsetrue.io/projects/c-volley/&quot;&gt;C-Volley&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Proceed to the links…&lt;/p&gt;
+
+&lt;h2 id=&quot;emacs&quot;&gt;Emacs&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=KQBXTSg_Occ&quot;&gt;EmacsConf 2025: An introduction to the Emacs Reader - Divyá&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.adithya.cc/posts/Consistent%20Emacs%20Key%20Bindings%20Across%20Terminals.html&quot;&gt;Consistent Emacs Key Bindings Across Terminals&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gregnewman/gmacs&quot;&gt;Greg Newman’s Emacs Configuration&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gitlab.com/s_witcher/witcharch/-/tree/main/dotfiles/emacs?ref_type=heads&quot;&gt;Witchmacs configuration&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://protesilaos.com/codelog/2025-12-10-emacs-lisp-elements-book-version-2/&quot;&gt;Emacs Lisp Elements by protesilaos&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://einar.codeberg.page/the-good-side-window-side.html&quot;&gt;The good side-window side&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/CSJ7701/org-calendar-server&quot;&gt;Org Calendar Server&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=0Tf1DHdyrbc&quot;&gt;Wisdom - Framework for writing literate Emacs Lisp in Org Mode
+&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;ai&quot;&gt;AI&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.creative-tim.com/ui&quot;&gt;https://www.creative-tim.com/ui&lt;/a&gt; - UI components framework for use with AI agents.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/firecrawl/open-scouts&quot;&gt;OpenScouts&lt;/a&gt; - Agent that automatically scan web with AI and notify you when find something.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.anthropic.com/news/claude-opus-4-5&quot;&gt;Opus 4.5&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://openai.com/index/introducing-gpt-5-2/&quot;&gt;ChatGPT 5.2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;hardware&quot;&gt;Hardware&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/KaiPereira/Cheetah-MX4-Mini&quot;&gt;https://github.com/KaiPereira/Cheetah-MX4-Mini&lt;/a&gt; - Motherboard for 3d printer.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.reddit.com/r/unihertz/&quot;&gt;UniHertz&lt;/a&gt; - Linux smartphone, haven’t seen that before.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.reddit.com/r/ErgoMechKeyboards/comments/1pt7m7c/lapa_keyboardmouse_v25/&quot;&gt;Lapa ergonomic keyboard&lt;/a&gt; - Interesting ergonomic keyboard found on Reddit. &lt;a href=&quot;https://github.com/lemosbor/lapa&quot;&gt;https://github.com/lemosbor/lapa&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.reddit.com/r/cyberDeck/&quot;&gt;r/cyberDeck/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;unix-linux-bsd&quot;&gt;Unix, Linux, BSD&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://cachyos.org/&quot;&gt;https://cachyos.org/&lt;/a&gt; - CachyOS, - another bs distro with preconfigured desktop env.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;security&quot;&gt;Security&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/iAnonymous3000/iOS-Hardening-Guide&quot;&gt;The Ultimate iOS Hardening Guide&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://nextjs.org/blog/CVE-2025-66478&quot;&gt;https://nextjs.org/blog/CVE-2025-66478&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gist.github.com/hackermondev/5e2cdc32849405fff6b46957747a2d28&quot;&gt;How we pwned X (Twitter), Vercel, Cursor, Discord, and hundreds of companies through a supply-chain attack&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;marginal-indie-selfhosted&quot;&gt;Marginal, Indie, Selfhosted&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://borretti.me/article/hashcards-plain-text-spaced-repetition&quot;&gt;Hashcards: A Plain-Text Spaced Repetition System&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://hpjansson.org/chafa/&quot;&gt;Chafa: Terminal graphics&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.udp7777.com/&quot;&gt;UDP7777&lt;/a&gt; - UDP-7777 is a high-availability, low-overhead paging system.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/timelinize/timelinize&quot;&gt;Timelinize&lt;/a&gt; - Organize your exported data from internet corporation&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://boing.greg.technology/&quot;&gt;https://boing.greg.technology/&lt;/a&gt; - just fun&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://anders.unix.se/2015/12/10/screenshots-from-developers--2002-vs.-2015/&quot;&gt;Screenshots from developers from different epoch&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://taggart-tech.com/ringspace/&quot;&gt;Introducing Ringspace: A Proposal for the Human Web&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/cporter202/API-mega-list&quot;&gt;API Mega list&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="news" /><category term="journal" /><category term="digest" /><category term="emacs" /><category term="c" /></entry><entry xml:lang="en"><title type="html">EP-20 FalseTrue Digest</title><link href="https://falsetrue.io/newsletter/2025/11/16/ep20/" rel="alternate" type="text/html" title="EP-20 FalseTrue Digest" /><published>2025-11-16T11:00:00+01:00</published><updated>2025-11-16T11:00:00+01:00</updated><id>repo://posts.collection/_posts/2025-11-16-ep20.markdown</id><content type="html" xml:base="https://falsetrue.io/newsletter/2025/11/16/ep20/">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
 
 &lt;p&gt;Hello everybody. This is Episode-20 of FalseTrue Digest.&lt;/p&gt;
 
@@ -692,119 +764,4 @@ Transactions for this Subscription
     &lt;img src=&quot;/images/photography_copyrighted/Cars/HondaCBR900RRFireblade.jpg&quot; class=&quot;ft-img&quot; /&gt;
     &lt;p&gt;&quot;Honda 900RR Fireblade&quot; // 2025-04-15 &amp;copy; Dmitry Ro.&lt;/p&gt;
     &lt;p class=&quot;ft-picture-info&quot;&gt;26 mm | ƒ1.5 | ISO 50 &lt;/p&gt;
-&lt;/div&gt;</content><author><name></name></author><category term="photo" /><category term="moto" /><category term="street" /></entry><entry><title type="html">HTTOP - A real-time HTTP log monitor similar to ApacheTop</title><link href="https://falsetrue.io/projects/2025/04/06/httop/" rel="alternate" type="text/html" title="HTTOP - A real-time HTTP log monitor similar to ApacheTop" /><published>2025-04-06T14:00:00+02:00</published><updated>2025-04-06T14:00:00+02:00</updated><id>repo://posts.collection/_posts/2025-04-06-httop.markdown</id><content type="html" xml:base="https://falsetrue.io/projects/2025/04/06/httop/">&lt;p&gt;A real-time HTTP log monitor similar to ApacheTop, written in Rust. This tool allows you to watch incoming http requests in real-time. Purpose - research on web crawlers.&lt;/p&gt;
-
-&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Processes http log data in real-time through pipe from &lt;code class=&quot;highlighter-rouge&quot;&gt;tail -f&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Displays overall statistics (requests per second, total bytes, status code distribution)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;roadmap&quot;&gt;Roadmap&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Filtering by Crawler bots to research on crawlers&lt;/li&gt;
-  &lt;li&gt;Indicate “bad” crawlers&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
-
-&lt;h3 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Rust and Cargo (install from &lt;a href=&quot;https://www.rust-lang.org/tools/install&quot;&gt;rust-lang.org&lt;/a&gt;)&lt;/li&gt;
-  &lt;li&gt;Nginx server with access logs&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;building-from-source&quot;&gt;Building from Source&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Clone the repository:
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/yourusername/nginx-top.git
-cd nginx-top
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Build the project:
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cargo build --release
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;The compiled binary will be available at &lt;code class=&quot;highlighter-rouge&quot;&gt;target/release/nginx-top&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
-
-&lt;p&gt;Pipe Nginx log data to NginxTop:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;tail -f /var/log/nginx/access.log | httop
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;interactive-controls&quot;&gt;Interactive Controls&lt;/h3&gt;
-
-&lt;p&gt;Type the following characters and press Enter to control the display:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;s&lt;/code&gt;: Sort by Status Code&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;p&lt;/code&gt;: Sort by Path&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;c&lt;/code&gt;: Sort by Count (default)&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;i&lt;/code&gt;: Sort by IP Address&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;u&lt;/code&gt;: Sort by User Agent&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;+&lt;/code&gt;: Increase number of displayed entries&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-&lt;/code&gt;: Decrease number of displayed entries&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;q&lt;/code&gt;: Quit&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;nginx-log-format-compatibility&quot;&gt;Nginx Log Format Compatibility&lt;/h2&gt;
-
-&lt;p&gt;NginxTop is configured to parse the standard Nginx log format:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;log_format main &apos;$remote_addr - $remote_user [$time_local] &quot;$request&quot; &apos;
-                &apos;$status $body_bytes_sent &quot;$http_referer&quot; &apos;
-                &apos;&quot;$http_user_agent&quot; $request_time&apos;;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;If your Nginx uses a different log format, you may need to modify the regex pattern in the &lt;code class=&quot;highlighter-rouge&quot;&gt;parse_log_line&lt;/code&gt; function.&lt;/p&gt;
-
-&lt;h2 id=&quot;sample-output&quot;&gt;Sample Output&lt;/h2&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Total Requests: 1548 | RPS: 32.50 | Total Bytes: 28945213
-
-Status Codes:
-  200: 1423
-  404: 87
-  302: 34
-  500: 4
-
-Top Requests (Sort: Count, Press s/p/c/i/u to change, +/- to adjust count, q to quit):
-
-COUNT    IP              STATUS     PATH                                    USER AGENT
--------  --------------  ---------  --------------------------------------  -----------------------------------
-183      192.168.1.45    200        /index.html                             Mozilla/5.0 (Windows NT 10.0; Win...
-127      192.168.1.22    200        /assets/css/main.css                    Mozilla/5.0 (Macintosh; Intel Mac...
-98       192.168.1.60    200        /assets/js/app.js                       Mozilla/5.0 (iPhone; CPU iPhone O...
-76       192.168.1.33    200        /api/users                              PostmanRuntime/7.29.0
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;license&quot;&gt;License&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;GNU v3&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;contributing&quot;&gt;Contributing&lt;/h2&gt;
-
-&lt;p&gt;Contributions are welcome! Please feel free to submit a Pull Request.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Fork the project&lt;/li&gt;
-  &lt;li&gt;Create your feature branch (&lt;code class=&quot;highlighter-rouge&quot;&gt;git checkout -b feature/amazing-feature&lt;/code&gt;)&lt;/li&gt;
-  &lt;li&gt;Commit your changes (&lt;code class=&quot;highlighter-rouge&quot;&gt;git commit -m &apos;Add some amazing feature&apos;&lt;/code&gt;)&lt;/li&gt;
-  &lt;li&gt;Push to the branch (&lt;code class=&quot;highlighter-rouge&quot;&gt;git push origin feature/amazing-feature&lt;/code&gt;)&lt;/li&gt;
-  &lt;li&gt;Open a Pull Request&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;links&quot;&gt;Links&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/noroot/httop&quot;&gt;https://github.com/noroot/httop&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="rust" /><category term="terminal" /><category term="console" /><category term="tools" /></entry></feed>
+&lt;/div&gt;</content><author><name></name></author><category term="photo" /><category term="moto" /><category term="street" /></entry></feed>
