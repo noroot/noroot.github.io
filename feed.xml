@@ -1,4 +1,87 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://bridgetownrb.com/" version="1.3.4">Bridgetown</generator><link href="https://falsetrue.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://falsetrue.io/" rel="alternate" type="text/html" /><updated>2025-12-24T08:43:04+01:00</updated><id>https://falsetrue.io/feed.xml</id><title type="html">FalseTrue</title><subtitle>Scripts of cyberdaemon</subtitle><entry xml:lang="en"><title type="html">EP-21 FalseTrue Digest</title><link href="https://falsetrue.io/newsletter/2025/12/24/ep21/" rel="alternate" type="text/html" title="EP-21 FalseTrue Digest" /><published>2025-12-24T01:00:00+01:00</published><updated>2025-12-24T01:00:00+01:00</updated><id>repo://posts.collection/_posts/2025-11-25-ep21.markdown</id><content type="html" xml:base="https://falsetrue.io/newsletter/2025/12/24/ep21/">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://bridgetownrb.com/" version="1.3.4">Bridgetown</generator><link href="https://falsetrue.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://falsetrue.io/" rel="alternate" type="text/html" /><updated>2026-02-01T20:47:44+01:00</updated><id>https://falsetrue.io/feed.xml</id><title type="html">FalseTrue</title><subtitle>Scripts of cyberdaemon</subtitle><entry xml:lang="en"><title type="html">EP-22 FalseTrue Digest</title><link href="https://falsetrue.io/newsletter/2026/02/01/ep22/" rel="alternate" type="text/html" title="EP-22 FalseTrue Digest" /><published>2026-02-01T01:00:00+01:00</published><updated>2026-02-01T01:00:00+01:00</updated><id>repo://posts.collection/_posts/ep22.markdown</id><content type="html" xml:base="https://falsetrue.io/newsletter/2026/02/01/ep22/">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+
+&lt;p&gt;Hello everybody. This is Episode-22 of FalseTrue Digest.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/newsletter/ep22.png&quot; alt=&quot;/images/newsletter/ep22.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Its being a while since I’ve posted last time. This is new set of of interesting articles I’ve found on internet since then.
+I’ve updated projects page on my blog &lt;a href=&quot;https://falsetrue.io/projects/&quot;&gt;https://falsetrue.io/projects/&lt;/a&gt;, 
+I’ve also added recent pet project I made&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://falsetrue.io/projects/c-volley/&quot;&gt;C-Volley&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Proceed to the links…&lt;/p&gt;
+
+&lt;h2 id=&quot;stories&quot;&gt;Stories&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.reddit.com/r/logitech/comments/1q6a3id/fck_you_logitch_for_this_software/&quot;&gt;Logitech mouse failed&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.jim-nielsen.com/2025/icons-in-menus/&quot;&gt;https://blog.jim-nielsen.com/2025/icons-in-menus/&lt;/a&gt; - Icons in Menus&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.404media.co/openai-furious-deepseek-might-have-stolen-all-the-data-openai-stole-from-us/&quot;&gt;https://www.404media.co/openai-furious-deepseek-might-have-stolen-all-the-data-openai-stole-from-us/&lt;/a&gt; - OpenAI Furious DeepSeek Might Have Stolen All the Data OpenAI Stole From Us&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://grantslatton.com/nobody-cares&quot;&gt;https://grantslatton.com/nobody-cares&lt;/a&gt; - Nobody cares&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;programming&quot;&gt;Programming&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/blog/javascript-temporal-is-coming/&quot;&gt;https://developer.mozilla.org/en-US/blog/javascript-temporal-is-coming/&lt;/a&gt; - Javascript Temporal&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=QGm-d5Ch5JM&quot;&gt;Self-Reproducing Programs by Tsoding&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;emacs&quot;&gt;Emacs&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://karthinks.com/software/fringe-matters-finding-the-right-difference/&quot;&gt;https://karthinks.com/software/fringe-matters-finding-the-right-difference/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://batsov.com/articles/2025/01/12/macos-no-longer-ships-with-emacs/&quot;&gt;https://batsov.com/articles/2025/01/12/macos-no-longer-ships-with-emacs/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gamedolphin/system&quot;&gt;https://github.com/gamedolphin/system&lt;/a&gt; - Sandeep’s Literate System Configuration&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=FR3e8e_jv_E&quot;&gt;https://www.youtube.com/watch?v=FR3e8e_jv_E&lt;/a&gt; - Three important distinctions in Emacs: mini buffer and echo, mark and point, window and frame&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/jdtsmith/indent-bars&quot;&gt;indent-bars: fast, configurable indentation guide-bars for Emacs&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/emacs-mirror/emacs/commit/9ba2f13176a756030e4d8476436662d630447f65&quot;&gt;https://github.com/emacs-mirror/emacs/commit/9ba2f13176a756030e4d8476436662d630447f65&lt;/a&gt; - you can now merge tabs in Emacs.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/dharmatech/bsb-usfm&quot;&gt;Bible in org-mode&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://karl-voit.at/2026/01/23/Emacs-vs-vim-Cargo-Folding-Bike/&quot;&gt;Emacs vs. vim Real World Analogy: Cargo Bike Vs. Folding Bike&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;ai&quot;&gt;AI&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/deepseek-ai/DeepSeek-R1&quot;&gt;https://github.com/deepseek-ai/DeepSeek-R1&lt;/a&gt; - DeepSeek R1&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://openclaw.ai/&quot;&gt;https://openclaw.ai/&lt;/a&gt; - Clawdy.bot, MoltBot, and finally OpenClaw&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.moltbook.com/&quot;&gt;https://www.moltbook.com/&lt;/a&gt; - Reddit like board where AI connected agents have conversation on various topics.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;hardware&quot;&gt;Hardware&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://repebble.com&quot;&gt;https://repebble.com&lt;/a&gt; - Pebble rebooting&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://x.com/rabbit_hmi/status/2017082134717223008&quot;&gt;https://x.com/rabbit_hmi/status/2017082134717223008&lt;/a&gt; - Rabbit (previosly know for stupid voice to AI device) announced their cyberdeck.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;unix-linux-bsd&quot;&gt;Unix, Linux, BSD&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://eugene-andrienko.com/it/2024/01/02/life-in-console.html&quot;&gt;I spent 18 years in the Linux console and I don’t regret it&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;security&quot;&gt;Security&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://predictors.fail&quot;&gt;New Apple M-Silicon attack&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gist.github.com/hackermondev/45a3cdfa52246f1d1201c1e8cdef6117&quot;&gt;https://gist.github.com/hackermondev/45a3cdfa52246f1d1201c1e8cdef6117&lt;/a&gt; - Unique 0-click deanonymization attack targeting Signal, Discord and hundreds of platform&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;marginal-indie-selfhosted&quot;&gt;Marginal, Indie, Selfhosted&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/kavishdevar/librepods&quot;&gt;https://github.com/kavishdevar/librepods&lt;/a&gt; - liberated airpods&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Ti-03/remainders&quot;&gt;https://github.com/Ti-03/remainders&lt;/a&gt; - interesting way to update ios wallpaper dynamically&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://doom-captcha.vercel.app&quot;&gt;https://doom-captcha.vercel.app&lt;/a&gt; - Doom Captcha&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://neal.fun/stimulation-clicker/&quot;&gt;https://neal.fun/stimulation-clicker/&lt;/a&gt; - Stimulation clicker&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://th0mas.nl/downloads/pdftris.pdf&quot;&gt;https://th0mas.nl/downloads/pdftris.pdf&lt;/a&gt; - Tetris in PDF&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://linux.doompdf.dev&quot;&gt;https://linux.doompdf.dev&lt;/a&gt; - Linux inside PDF&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Leave your comments below&lt;/p&gt;</content><author><name></name></author><category term="news" /><category term="journal" /><category term="digest" /><category term="emacs" /><category term="c" /></entry><entry xml:lang="en"><title type="html">EP-21 FalseTrue Digest</title><link href="https://falsetrue.io/newsletter/2025/12/24/ep21/" rel="alternate" type="text/html" title="EP-21 FalseTrue Digest" /><published>2025-12-24T01:00:00+01:00</published><updated>2025-12-24T01:00:00+01:00</updated><id>repo://posts.collection/_posts/2025-11-25-ep21.markdown</id><content type="html" xml:base="https://falsetrue.io/newsletter/2025/12/24/ep21/">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
 
 &lt;p&gt;Hello everybody. This is Episode-21 of FalseTrue Digest.&lt;/p&gt;
 
@@ -760,8 +843,4 @@ Transactions for this Subscription
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/noroot/piepal&quot;&gt;https://github.com/noroot/piepal&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://pypi.org/project/piepal/0.1.0/&quot;&gt;https://pypi.org/project/piepal/0.1.0/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="paypal" /><category term="python" /><category term="terminal" /><category term="console" /><category term="tools" /></entry><entry><title type="html">Honda 900RR Fireblade</title><link href="https://falsetrue.io/photo/2025/04/15/honda-900rr-fireblade/" rel="alternate" type="text/html" title="Honda 900RR Fireblade" /><published>2025-04-15T21:00:00+02:00</published><updated>2025-04-15T21:00:00+02:00</updated><id>repo://posts.collection/_posts/2025-04-15-honda-900rr-fireblade.markdown</id><content type="html" xml:base="https://falsetrue.io/photo/2025/04/15/honda-900rr-fireblade/">&lt;div class=&quot;ft-picture-block&quot;&gt;
-    &lt;img src=&quot;/images/photography_copyrighted/Cars/HondaCBR900RRFireblade.jpg&quot; class=&quot;ft-img&quot; /&gt;
-    &lt;p&gt;&quot;Honda 900RR Fireblade&quot; // 2025-04-15 &amp;copy; Dmitry Ro.&lt;/p&gt;
-    &lt;p class=&quot;ft-picture-info&quot;&gt;26 mm | ƒ1.5 | ISO 50 &lt;/p&gt;
-&lt;/div&gt;</content><author><name></name></author><category term="photo" /><category term="moto" /><category term="street" /></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><category term="paypal" /><category term="python" /><category term="terminal" /><category term="console" /><category term="tools" /></entry></feed>

@@ -1,0 +1,109 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ============ [ 2026-02-01 ] ==
+```
+=> / ← Back
+# EP-22 FalseTrue Digest
+
+## Intro
+
+Hello everybody. This is Episode-22 of FalseTrue Digest.
+
+=> /images/newsletter/ep22.png /images/newsletter/ep22.png
+
+Its being a while since I’ve posted last time. This is new set of of interesting articles I’ve found on internet since then.
+
+I’ve updated projects page on my blog
+
+=> https://falsetrue.io/projects/ https://falsetrue.io/projects/
+
+,
+
+I’ve also added recent pet project I made
+
+* C-Volley
+
+Proceed to the links…
+
+## Stories
+
+* Logitech mouse failed
+
+* https://blog.jim-nielsen.com/2025/icons-in-menus/ - Icons in Menus
+
+* https://www.404media.co/openai-furious-deepseek-might-have-stolen-all-the-data-openai-stole-from-us/ - OpenAI Furious DeepSeek Might Have Stolen All the Data OpenAI Stole From Us
+
+* https://grantslatton.com/nobody-cares - Nobody cares
+
+## Programming
+
+* https://developer.mozilla.org/en-US/blog/javascript-temporal-is-coming/ - Javascript Temporal
+
+* Self-Reproducing Programs by Tsoding
+
+## Emacs
+
+* https://karthinks.com/software/fringe-matters-finding-the-right-difference/
+
+* https://batsov.com/articles/2025/01/12/macos-no-longer-ships-with-emacs/
+
+* https://github.com/gamedolphin/system - Sandeep’s Literate System Configuration
+
+* https://www.youtube.com/watch?v=FR3e8ejvE - Three important distinctions in Emacs: mini buffer and echo, mark and point, window and frame
+
+* indent-bars: fast, configurable indentation guide-bars for Emacs
+
+* https://github.com/emacs-mirror/emacs/commit/9ba2f13176a756030e4d8476436662d630447f65 - you can now merge tabs in Emacs.
+
+* Bible in org-mode
+
+* Emacs vs. vim Real World Analogy: Cargo Bike Vs. Folding Bike
+
+## AI
+
+* https://github.com/deepseek-ai/DeepSeek-R1 - DeepSeek R1
+
+* https://openclaw.ai/ - Clawdy.bot, MoltBot, and finally OpenClaw
+
+* https://www.moltbook.com/ - Reddit like board where AI connected agents have conversation on various topics.
+
+## Hardware
+
+* https://repebble.com - Pebble rebooting
+
+* https://x.com/rabbithmi/status/2017082134717223008 - Rabbit (previosly know for stupid voice to AI device) announced their cyberdeck.
+
+## Unix, Linux, BSD
+
+* I spent 18 years in the Linux console and I don’t regret it
+
+## Security
+
+* New Apple M-Silicon attack
+
+* https://gist.github.com/hackermondev/45a3cdfa52246f1d1201c1e8cdef6117 - Unique 0-click deanonymization attack targeting Signal, Discord and hundreds of platform
+
+## Marginal, Indie, Selfhosted
+
+* https://github.com/kavishdevar/librepods - liberated airpods
+
+* https://github.com/Ti-03/remainders - interesting way to update ios wallpaper dynamically
+
+* https://doom-captcha.vercel.app - Doom Captcha
+
+* https://neal.fun/stimulation-clicker/ - Stimulation clicker
+
+* https://th0mas.nl/downloads/pdftris.pdf - Tetris in PDF
+
+* https://linux.doompdf.dev - Linux inside PDF
+
+Leave your comments below
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```
