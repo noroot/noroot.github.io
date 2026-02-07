@@ -5,10 +5,16 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ============ [ 2026-02-01 ] ==
+== [Gemini capsule] * ============ [ 2026-02-07 ] ==
 ```
 => / ← Back
 # Blog
+
+* share
+        note
+ 7-FEB-2026 - Somebody on Reddit shared Emacs rendering built with Rust
+
+    #emacs
 
 * ✉️ newsletter
  1-FEB-2026 - EP-22 FalseTrue Digest

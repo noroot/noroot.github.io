@@ -1,0 +1,97 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ============ [ 2026-02-07 ] ==
+```
+=> / ← Back
+# Somebody on Reddit shared Emacs rendering built with Rust
+
+=> https://www.reddit.com/r/emacs/comments/1qyg0rl/annneomacsuserusttorewritetheemacsdisplay/ https://www.reddit.com/r/emacs/comments/1qyg0rl/annneomacsuserusttorewritetheemacsdisplay/
+
+```
+
+┌─────────────────────────────────────────────────────────────────┐
+
+│                     Emacs Core (C/Lisp)                         │
+
+│  neomacsterm.c ──── neomacs_display.h (C FFI) ──── neomacs-win.el │
+
+└──────────────────────────┬──────────────────────────────────────┘
+
+                           │  C FFI (ffi.rs)
+
+┌──────────────────────────▼──────────────────────────────────────┐
+
+│              Rust Display Engine (neomacs-display)               │
+
+│                                                                  │
+
+│  ┌──────────────────────────────────────────────────────────┐   │
+
+│  │                   Render Thread                           │   │
+
+│  │  render_thread.rs — winit event loop, frame dispatch      │   │
+
+│  │  thread_comm.rs   — command/event channels                │   │
+
+│  └──────────────────────────┬───────────────────────────────┘   │
+
+│                              │                                   │
+
+│  ┌───────────┐  ┌───────────▼──────────┐  ┌─────────────────┐  │
+
+│  │   Core    │  │   wgpu Backend       │  │ Media Backends  │  │
+
+│  │           │  │                      │  │                 │  │
+
+│  │ scene     │  │ renderer (145KB)     │  │ video_cache     │  │
+
+│  │ animation │  │ glyph_atlas          │  │  GStreamer      │  │
+
+│  │ cursor    │  │ image_cache          │  │  VA-API         │  │
+
+│  │ scroll    │  │ vulkan_dmabuf        │  │  DMA-BUF        │  │
+
+│  │ buffer    │  │ 4 WGSL shaders       │  │                 │  │
+
+│  │ transition│  │                      │  │ webkit_cache    │  │
+
+│  │ faces     │  │ cosmic-text          │  │  WPE WebKit     │  │
+
+│  │ grid      │  │  text shaping        │  │                 │  │
+
+│  └───────────┘  └──────────┬───────────┘  └─────────────────┘  │
+
+│                             │                                    │
+
+│                  ┌──────────▼───────────┐                       │
+
+│                  │   winit (Windowing)  │                       │
+
+│                  └──────────────────────┘                       │
+
+└──────────────────────────────────────────────────────────────────┘
+
+                              │
+
+                 ┌────────────┼────────────┐
+
+                 ▼            ▼            ▼
+
+           ┌─────────┐  ┌─────────┐  ┌─────────┐
+
+           │ Vulkan  │  │  Metal  │  │DX12/GL  │
+
+           │ (Linux) │  │ (macOS) │  │(Windows)│
+
+           └─────────┘  └─────────┘  └─────────┘
+
+```
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```

@@ -1,4 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://bridgetownrb.com/" version="1.3.4">Bridgetown</generator><link href="https://falsetrue.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://falsetrue.io/" rel="alternate" type="text/html" /><updated>2026-02-01T20:47:44+01:00</updated><id>https://falsetrue.io/feed.xml</id><title type="html">FalseTrue</title><subtitle>Scripts of cyberdaemon</subtitle><entry xml:lang="en"><title type="html">EP-22 FalseTrue Digest</title><link href="https://falsetrue.io/newsletter/2026/02/01/ep22/" rel="alternate" type="text/html" title="EP-22 FalseTrue Digest" /><published>2026-02-01T01:00:00+01:00</published><updated>2026-02-01T01:00:00+01:00</updated><id>repo://posts.collection/_posts/ep22.markdown</id><content type="html" xml:base="https://falsetrue.io/newsletter/2026/02/01/ep22/">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://bridgetownrb.com/" version="1.3.4">Bridgetown</generator><link href="https://falsetrue.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://falsetrue.io/" rel="alternate" type="text/html" /><updated>2026-02-07T16:35:41+01:00</updated><id>https://falsetrue.io/feed.xml</id><title type="html">FalseTrue</title><subtitle>Scripts of cyberdaemon</subtitle><entry><title type="html">Somebody on Reddit shared Emacs rendering built with Rust</title><link href="https://falsetrue.io/share/note/2026/02/07/neomacs/" rel="alternate" type="text/html" title="Somebody on Reddit shared Emacs rendering built with Rust" /><published>2026-02-07T13:00:00+01:00</published><updated>2026-02-07T13:00:00+01:00</updated><id>repo://posts.collection/_posts/2026-02-07-neomacs.markdown</id><content type="html" xml:base="https://falsetrue.io/share/note/2026/02/07/neomacs/">&lt;p&gt;&lt;a href=&quot;https://www.reddit.com/r/emacs/comments/1qyg0rl/ann_neomacs_use_rust_to_rewrite_the_emacs_display/&quot;&gt;https://www.reddit.com/r/emacs/comments/1qyg0rl/ann_neomacs_use_rust_to_rewrite_the_emacs_display/&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;┌─────────────────────────────────────────────────────────────────┐
+│                     Emacs Core (C/Lisp)                         │
+│  neomacsterm.c ──── neomacs_display.h (C FFI) ──── neomacs-win.el │
+└──────────────────────────┬──────────────────────────────────────┘
+                           │  C FFI (ffi.rs)
+┌──────────────────────────▼──────────────────────────────────────┐
+│              Rust Display Engine (neomacs-display)               │
+│                                                                  │
+│  ┌──────────────────────────────────────────────────────────┐   │
+│  │                   Render Thread                           │   │
+│  │  render_thread.rs — winit event loop, frame dispatch      │   │
+│  │  thread_comm.rs   — command/event channels                │   │
+│  └──────────────────────────┬───────────────────────────────┘   │
+│                              │                                   │
+│  ┌───────────┐  ┌───────────▼──────────┐  ┌─────────────────┐  │
+│  │   Core    │  │   wgpu Backend       │  │ Media Backends  │  │
+│  │           │  │                      │  │                 │  │
+│  │ scene     │  │ renderer (145KB)     │  │ video_cache     │  │
+│  │ animation │  │ glyph_atlas          │  │  GStreamer      │  │
+│  │ cursor    │  │ image_cache          │  │  VA-API         │  │
+│  │ scroll    │  │ vulkan_dmabuf        │  │  DMA-BUF        │  │
+│  │ buffer    │  │ 4 WGSL shaders       │  │                 │  │
+│  │ transition│  │                      │  │ webkit_cache    │  │
+│  │ faces     │  │ cosmic-text          │  │  WPE WebKit     │  │
+│  │ grid      │  │  text shaping        │  │                 │  │
+│  └───────────┘  └──────────┬───────────┘  └─────────────────┘  │
+│                             │                                    │
+│                  ┌──────────▼───────────┐                       │
+│                  │   winit (Windowing)  │                       │
+│                  └──────────────────────┘                       │
+└──────────────────────────────────────────────────────────────────┘
+                              │
+                 ┌────────────┼────────────┐
+                 ▼            ▼            ▼
+           ┌─────────┐  ┌─────────┐  ┌─────────┐
+           │ Vulkan  │  │  Metal  │  │DX12/GL  │
+           │ (Linux) │  │ (macOS) │  │(Windows)│
+           └─────────┘  └─────────┘  └─────────┘
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="emacs" /></entry><entry xml:lang="en"><title type="html">EP-22 FalseTrue Digest</title><link href="https://falsetrue.io/newsletter/2026/02/01/ep22/" rel="alternate" type="text/html" title="EP-22 FalseTrue Digest" /><published>2026-02-01T01:00:00+01:00</published><updated>2026-02-01T01:00:00+01:00</updated><id>repo://posts.collection/_posts/ep22.markdown</id><content type="html" xml:base="https://falsetrue.io/newsletter/2026/02/01/ep22/">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
 
 &lt;p&gt;Hello everybody. This is Episode-22 of FalseTrue Digest.&lt;/p&gt;
 
@@ -704,143 +745,4 @@ The log is here: $HOME/.local/share/tracker/data&lt;/p&gt;
     &lt;p&gt;&lt;a href=&quot;https://discourse.gnome.org/t/configure-tracker-to-always-index-certain-file-extensions/17199/3&quot;&gt;https://discourse.gnome.org/t/configure-tracker-to-always-index-certain-file-extensions/17199/3&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/Tomas-M/iotop&quot;&gt;https://github.com/Tomas-M/iotop&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="linux" /><category term="tools" /></entry><entry><title type="html">PiePAL - Terminal Tool for PayPal Observability</title><link href="https://falsetrue.io/projects/2025/04/27/piepal-tool/" rel="alternate" type="text/html" title="PiePAL - Terminal Tool for PayPal Observability" /><published>2025-04-27T21:00:00+02:00</published><updated>2025-04-27T21:00:00+02:00</updated><id>repo://posts.collection/_posts/2025-04-27-piepal-tool.markdown</id><content type="html" xml:base="https://falsetrue.io/projects/2025/04/27/piepal-tool/">&lt;p&gt;A Python program to fetch and display PayPal transactions and subscription details. The script uses the PayPal REST API to retrieve transactions related to a specific Subscription ID and can display them in a terminal using the rich, - library for a formatted and clean output.&lt;/p&gt;
-
-&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Fetch Subscription details&lt;/li&gt;
-  &lt;li&gt;Fetch all transactions for a given subscription ID.&lt;/li&gt;
-  &lt;li&gt;Display transaction details such as Transaction ID, Amount, Payer Email, and Payer Name.&lt;/li&gt;
-  &lt;li&gt;Fetch Subscription Plan details&lt;/li&gt;
-  &lt;li&gt;Use the PayPal Sandbox APIx for testing by using --sandbox&lt;/li&gt;
-  &lt;li&gt;Use --verbose output to understand API calls&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;setup-for-usage&quot;&gt;Setup for usage&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Install with pip - pip install piepal&lt;/li&gt;
-  &lt;li&gt;Set env variables:
-    &lt;ul&gt;
-      &lt;li&gt;export PAYPAL_CLIENT_ID=”…”&lt;/li&gt;
-      &lt;li&gt;export PAYPAL_CLIENT_SECRET=”…”&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Run piepal&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;setup-for-development&quot;&gt;Setup for development&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Git clone repository&lt;/li&gt;
-  &lt;li&gt;cd ./src&lt;/li&gt;
-  &lt;li&gt;Setup credentials with env variables:
-    &lt;ul&gt;
-      &lt;li&gt;export PAYPAL_CLIENT_ID=”…”&lt;/li&gt;
-      &lt;li&gt;export PAYPAL_CLIENT_SECRET=”…”&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;options&quot;&gt;Options&lt;/h2&gt;
-
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;usage: piepal &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-h&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;--transactions&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;--no-transactions&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;--sub&lt;/span&gt; SUB] &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;--txn&lt;/span&gt; TXN] &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;--plan&lt;/span&gt; PLAN] &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;--sandbox&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;--no-sandbox&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;--debug&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;--no-debug&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
-              &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;--verbose&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;--no-verbose&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
-
-&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;PyPal] - PayPal API Viewer written with Python
-
-options:
-  &lt;span class=&quot;nt&quot;&gt;-h&lt;/span&gt;, &lt;span class=&quot;nt&quot;&gt;--help&lt;/span&gt;            show this &lt;span class=&quot;nb&quot;&gt;help &lt;/span&gt;message and &lt;span class=&quot;nb&quot;&gt;exit&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;--transactions&lt;/span&gt;, &lt;span class=&quot;nt&quot;&gt;--no-transactions&lt;/span&gt;
-                        List latest transactions
-  &lt;span class=&quot;nt&quot;&gt;--sub&lt;/span&gt; SUB             Subscription ID to fetch details
-  &lt;span class=&quot;nt&quot;&gt;--txn&lt;/span&gt; TXN             Transaction ID to fetch details
-  &lt;span class=&quot;nt&quot;&gt;--plan&lt;/span&gt; PLAN           Plan ID to fetch
-  &lt;span class=&quot;nt&quot;&gt;--sandbox&lt;/span&gt;, &lt;span class=&quot;nt&quot;&gt;--no-sandbox&lt;/span&gt;
-                        Use SANDBOX environment
-  &lt;span class=&quot;nt&quot;&gt;--debug&lt;/span&gt;, &lt;span class=&quot;nt&quot;&gt;--no-debug&lt;/span&gt;   Debug output
-  &lt;span class=&quot;nt&quot;&gt;--verbose&lt;/span&gt;, &lt;span class=&quot;nt&quot;&gt;--no-verbose&lt;/span&gt;
-                        Verbose output
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;examples&quot;&gt;Examples&lt;/h2&gt;
-
-&lt;h3 id=&quot;get-latest-subscriptions&quot;&gt;Get latest subscriptions&lt;/h3&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;piepal --transactions&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;get-subscription-details&quot;&gt;Get Subscription details&lt;/h3&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;piepal --sub I-1234567890GG&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;get-transaction-details&quot;&gt;Get Transaction details&lt;/h3&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;piepal --txn T-12345678990F3FG1231&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;get-subscription-plan-details&quot;&gt;Get Subscription Plan details&lt;/h3&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;piepal --plan P-12345678990F3FG1231&lt;/code&gt;&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;                           Subscription I-1234567890GG
-┏━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-┃ Name               ┃ Value                                                     ┃
-┡━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
-│ Subscription ID    │ I-1234567890GG                                            │
-├────────────────────┼───────────────────────────────────────────────────────────┤
-│ Plan ID            │ P-1234567890GG123456789YYA                                │
-├────────────────────┼───────────────────────────────────────────────────────────┤
-│ Status             │ CANCELLED                                                 │
-├────────────────────┼───────────────────────────────────────────────────────────┤
-│ Amount             │ 12.5                                                      │
-├────────────────────┼───────────────────────────────────────────────────────────┤
-│ Currency           │ USD                                                       │
-├────────────────────┼───────────────────────────────────────────────────────────┤
-│ Last Payment Time  │ 2025-04-24T00:00:00Z                                      │
-├────────────────────┼───────────────────────────────────────────────────────────┤
-│ Status Update Time │ 2025-04-25T00:00:00Z                                      │
-├────────────────────┼───────────────────────────────────────────────────────────┤
-│ Next Billing Time  │ N/A                                                       │
-├────────────────────┼───────────────────────────────────────────────────────────┤
-│ Start Time         │ 2025-05-01T00:00:00Z                                      │
-├────────────────────┼───────────────────────────────────────────────────────────┤
-│ Update Time        │ 2025-04-25T00:00:00Z                                      │
-├────────────────────┼───────────────────────────────────────────────────────────┤
-│ Failed CX          │ 0                                                         │
-├────────────────────┼───────────────────────────────────────────────────────────┤
-│ Subscriber Email   │ user_email@example.com                                    │
-├────────────────────┼───────────────────────────────────────────────────────────┤
-│ Subscriber Name    │ {&apos;given_name&apos;: &apos;John&apos;, &apos;surname&apos;: Snow&apos;}                  │
-├────────────────────┼───────────────────────────────────────────────────────────┤
-│ Payer ID           │ DB1234567890                                              │
-└────────────────────┴───────────────────────────────────────────────────────────┘
-
-Transactions for this Subscription
-
-+-----------------------+-------------------------+--------+----------+-------------------+----------------------+
-| Transaction ID        |  Date                   | Amount | Currency | Payer Email       | Payer Name           | 
-+-----------------------+-------------------------+--------+----------+-------------------+----------------------+
-| 5A6789ABC1234567X     | 2025-03-31T12:00:00Z    | $50.00 | USD      | user@example.com  | John Doe             |
-+-----------------------+-------------------------+--------+----------+-------------------+----------------------+
-| 5A6789ABC1234567Y     | 2025-04-01T10:30:00Z    | $50.00 | USD      | user@example.com  | John Doe             |
-+-----------------------+-------------------------+--------+----------+-------------------+----------------------+
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h3 id=&quot;screenshots&quot;&gt;Screenshots&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/piepal/TransactionsList.jpeg&quot; alt=&quot;&quot; /&gt;
-&lt;img src=&quot;/images/piepal/TransactionDetails.jpeg&quot; alt=&quot;&quot; /&gt;
-&lt;img src=&quot;/images/piepal/SubscriptionTransactionList.jpeg&quot; alt=&quot;&quot; /&gt;
-&lt;img src=&quot;/images/piepal/SubscriptionReportDetails.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;license&quot;&gt;License&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;MIT License&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;links&quot;&gt;Links&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/noroot/piepal&quot;&gt;https://github.com/noroot/piepal&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://pypi.org/project/piepal/0.1.0/&quot;&gt;https://pypi.org/project/piepal/0.1.0/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="paypal" /><category term="python" /><category term="terminal" /><category term="console" /><category term="tools" /></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><category term="linux" /><category term="tools" /></entry></feed>
