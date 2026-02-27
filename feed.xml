@@ -1,4 +1,80 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://bridgetownrb.com/" version="1.3.4">Bridgetown</generator><link href="https://falsetrue.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://falsetrue.io/" rel="alternate" type="text/html" /><updated>2026-02-07T16:35:41+01:00</updated><id>https://falsetrue.io/feed.xml</id><title type="html">FalseTrue</title><subtitle>Scripts of cyberdaemon</subtitle><entry><title type="html">Somebody on Reddit shared Emacs rendering built with Rust</title><link href="https://falsetrue.io/share/note/2026/02/07/neomacs/" rel="alternate" type="text/html" title="Somebody on Reddit shared Emacs rendering built with Rust" /><published>2026-02-07T13:00:00+01:00</published><updated>2026-02-07T13:00:00+01:00</updated><id>repo://posts.collection/_posts/2026-02-07-neomacs.markdown</id><content type="html" xml:base="https://falsetrue.io/share/note/2026/02/07/neomacs/">&lt;p&gt;&lt;a href=&quot;https://www.reddit.com/r/emacs/comments/1qyg0rl/ann_neomacs_use_rust_to_rewrite_the_emacs_display/&quot;&gt;https://www.reddit.com/r/emacs/comments/1qyg0rl/ann_neomacs_use_rust_to_rewrite_the_emacs_display/&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://bridgetownrb.com/" version="1.3.4">Bridgetown</generator><link href="https://falsetrue.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://falsetrue.io/" rel="alternate" type="text/html" /><updated>2026-02-27T23:43:35+01:00</updated><id>https://falsetrue.io/feed.xml</id><title type="html">FalseTrue</title><subtitle>Scripts of cyberdaemon</subtitle><entry xml:lang="en"><title type="html">EP-23 FalseTrue Digest</title><link href="https://falsetrue.io/newsletter/2026/02/27/ep23/" rel="alternate" type="text/html" title="EP-23 FalseTrue Digest" /><published>2026-02-27T23:00:00+01:00</published><updated>2026-02-27T23:00:00+01:00</updated><id>repo://posts.collection/_posts/ep23.markdown</id><content type="html" xml:base="https://falsetrue.io/newsletter/2026/02/27/ep23/">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+
+&lt;p&gt;Hello everybody. This is Episode-23 of FalseTrue Digest.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/newsletter/ep23.png&quot; alt=&quot;/images/newsletter/ep23.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Its being a while since I’ve posted last time. This is new set of interesting articles I’ve found on internet since then.
+I’ve updated projects page on my blog &lt;a href=&quot;https://falsetrue.io/projects/&quot;&gt;https://falsetrue.io/projects/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;stories&quot;&gt;Stories&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.nature.com/articles/d41586-026-00502-2&quot;&gt;https://www.nature.com/articles/d41586-026-00502-2&lt;/a&gt; - Microsoft’s Project Silica stores 4.8TB on a piece of kitchen glass across 301 layers, lasting over 10,000 years&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.tomshardware.com/video-games/retro-gaming/you-can-log-into-28-vintage-computer-systems-in-your-browser-for-free-thanks-to-the-interim-computer-museum-and-sdf-org-experience-legendary-oses-architectures-programming-languages-and-games&quot;&gt;https://www.tomshardware.com/video-games/retro-gaming/you-can-log-into-28-vintage-computer-systems-in-your-browser-for-free-thanks-to-the-interim-computer-museum-and-sdf-org-experience-legendary-oses-architectures-programming-languages-and-games&lt;/a&gt; - Interim Computer Museum and SDF.org let you log into 28 vintage systems in your browser including PDP-11/70 running UNIX V7&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.cloudflare.com/cloudflare-outage-february-20-2026/&quot;&gt;https://blog.cloudflare.com/cloudflare-outage-february-20-2026/&lt;/a&gt; - Cloudflare 6-hour global outage post-mortem: a bug interpreted empty string as command to delete all BYOIP prefixes&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://thehackernews.com/2026/02/aisurukimwolf-botnet-launches-record.html&quot;&gt;https://thehackernews.com/2026/02/aisurukimwolf-botnet-launches-record.html&lt;/a&gt; - Aisuru/Kimwolf botnet sets new DDoS world record at 31.4 Tbps using millions of compromised IoT devices&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://thehackernews.com/2026/02/weekly-recap-ai-skill-malware-31tbps.html&quot;&gt;https://thehackernews.com/2026/02/weekly-recap-ai-skill-malware-31tbps.html&lt;/a&gt; - AI coding assistant Cline CLI compromised via stolen npm token, pushing malicious “OpenClaw” update to users&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;programming&quot;&gt;Programming&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://newsletter.pragmaticengineer.com/p/when-ai-writes-almost-all-code-what&quot;&gt;https://newsletter.pragmaticengineer.com/p/when-ai-writes-almost-all-code-what&lt;/a&gt; - Gergely Orosz on what happens to software engineering when AI writes most of the production code&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://benjamincongdon.me/blog/2025/12/29/Software-Engineering-in-2026/&quot;&gt;https://benjamincongdon.me/blog/2025/12/29/Software-Engineering-in-2026/&lt;/a&gt; - How AI-driven drops in the cost of producing code shift bottlenecks toward review, infrastructure, and developing “review taste”&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://medium.com/@tsecretdeveloper/you-probably-dont-need-to-learn-a-new-programming-language-in-2026-64bb546a3fae&quot;&gt;https://medium.com/@tsecretdeveloper/you-probably-dont-need-to-learn-a-new-programming-language-in-2026-64bb546a3fae&lt;/a&gt; - With AI assistants able to help you jump into any codebase, learning a new language may be productive procrastination&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.jetbrains.com/idea/2026/02/java-annotated-monthly-february-2026/&quot;&gt;https://blog.jetbrains.com/idea/2026/02/java-annotated-monthly-february-2026/&lt;/a&gt; - JetBrains Java roundup: structured concurrency with timeout handling, data-oriented programming beyond records, carrier classes&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://news.ycombinator.com/item?id=46857444&quot;&gt;https://news.ycombinator.com/item?id=46857444&lt;/a&gt; - Kernighan on Programming resurfaced on HN, a perennial favorite essay on programming craft and clarity&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;emacs&quot;&gt;Emacs&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://sachachua.com/blog/2026/02/2026-02-16-emacs-news/&quot;&gt;https://sachachua.com/blog/2026/02/2026-02-16-emacs-news/&lt;/a&gt; - Sacha Chua’s weekly Emacs news roundup covering recent package updates, community events, and development highlights&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://sachachua.com/blog/2026/01/emacs-carnival-february-2026-completion/&quot;&gt;https://sachachua.com/blog/2026/01/emacs-carnival-february-2026-completion/&lt;/a&gt; - Emacs Carnival February 2026 on the theme “Completion” exploring how completion frameworks help users work efficiently&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://sachachua.com/blog/2026/01/2026-01-26-emacs-news/&quot;&gt;https://sachachua.com/blog/2026/01/2026-01-26-emacs-news/&lt;/a&gt; - ef-themes 2.1.0, experimental Skia rendering backend as Cairo alternative, Flymake support for yaml-ts-mode&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://sachachua.com/blog/2026/01/2026-01-12-emacs-news/&quot;&gt;https://sachachua.com/blog/2026/01/2026-01-12-emacs-news/&lt;/a&gt; - New packages: sign.el (Signal messenger interface), org-gtd.el 4.0.0, quake-frame.el, and package.el diff review feature&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;ai&quot;&gt;AI&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lwn.net/SubscriberLink/1058643/f7ba3383d584a3ea/&quot;&gt;https://lwn.net/SubscriberLink/1058643/f7ba3383d584a3ea/&lt;/a&gt; - AI agent “Kai Gritun” created a GitHub account and opened 103 PRs across 95 repos in two weeks, landing code in Nx and ESLint Plugin Unicorn&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://allenai.org/blog/open-coding-agents&quot;&gt;https://allenai.org/blog/open-coding-agents&lt;/a&gt; - Allen Institute for AI announces SERA, open coding agent models with a training recipe to specialize agents to any repository&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://whatever.scalzi.com/2026/02/14/10-thoughts-on-ai-february-2026-edition/&quot;&gt;https://whatever.scalzi.com/2026/02/14/10-thoughts-on-ai-february-2026-edition/&lt;/a&gt; - Sci-fi author John Scalzi’s 10 opinionated takes on the current state of AI covering hype, utility, and cultural impact&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://simonw.substack.com/p/llm-predictions-for-2026-shared-with&quot;&gt;https://simonw.substack.com/p/llm-predictions-for-2026-shared-with&lt;/a&gt; - Simon Willison’s LLM predictions for 2026, technical analysis of where large language models are headed&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://radicaldatascience.wordpress.com/2026/02/10/ai-news-briefs-bulletin-board-for-february-2026/&quot;&gt;https://radicaldatascience.wordpress.com/2026/02/10/ai-news-briefs-bulletin-board-for-february-2026/&lt;/a&gt; - Curated bulletin board of AI news briefs for February 2026 from a data science practitioner’s angle&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;security&quot;&gt;Security&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://cyberscoop.com/apple-zero-day-vulnerability-cve-2026-20700/&quot;&gt;https://cyberscoop.com/apple-zero-day-vulnerability-cve-2026-20700/&lt;/a&gt; - Apple’s first actively exploited zero-day of 2026, a memory corruption flaw in dyld enabling arbitrary code execution&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.akamai.com/blog/security-research/inside-the-fix-cve-2026-21513-mshtml-exploit-analysis&quot;&gt;https://www.akamai.com/blog/security-research/inside-the-fix-cve-2026-21513-mshtml-exploit-analysis&lt;/a&gt; - Deep-dive into CVE-2026-21513 MSHTML bypass exploited by Russian APT28, affecting all Windows versions&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://orca.security/resources/blog/cve-2026-1731-beyondtrust-vulnerability/&quot;&gt;https://orca.security/resources/blog/cve-2026-1731-beyondtrust-vulnerability/&lt;/a&gt; - CVE-2026-1731 (CVSS 9.9) in BeyondTrust Remote Support, found via AI-assisted variant analysis, exploited at scale in under two weeks&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://krebsonsecurity.com/2026/02/patch-tuesday-february-2026-edition/&quot;&gt;https://krebsonsecurity.com/2026/02/patch-tuesday-february-2026-edition/&lt;/a&gt; - Krebs on Security covers February 2026 Patch Tuesday including six actively exploited zero-days&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://thehackernews.com/2026/01/microsoft-issues-emergency-patch-for.html&quot;&gt;https://thehackernews.com/2026/01/microsoft-issues-emergency-patch-for.html&lt;/a&gt; - CVE-2026-21509 Microsoft Office zero-day forced an emergency out-of-band patch due to active exploitation&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.penligent.ai/hackinglabs/cve-2026-25142-the-ghost-accessor-rce-deconstructing-the-sandboxjs-escape/&quot;&gt;https://www.penligent.ai/hackinglabs/cve-2026-25142-the-ghost-accessor-rce-deconstructing-the-sandboxjs-escape/&lt;/a&gt; - “Ghost Accessor” RCE in SandboxJS, a clever sandbox escape nullifying the library’s isolation mechanisms&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;unix-linux-bsd-and-free-software-scene&quot;&gt;Unix, Linux, BSD and free software scene&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.helpnetsecurity.com/2026/02/09/linux-kernel-6-19-released/&quot;&gt;https://www.helpnetsecurity.com/2026/02/09/linux-kernel-6-19-released/&lt;/a&gt; - Linux kernel 6.19 released as final 6.x version; Linus confirms next release will be Linux 7.0&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://fosdem.org/2026/&quot;&gt;https://fosdem.org/2026/&lt;/a&gt; - FOSDEM 2026 took place in Brussels with 1216 speakers, 1079 events, and 71 tracks&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://9to5linux.com/arch-linux-kicks-off-2026-with-new-iso-powered-by-linux-kernel-6-18-lts&quot;&gt;https://9to5linux.com/arch-linux-kicks-off-2026-with-new-iso-powered-by-linux-kernel-6-18-lts&lt;/a&gt; - Arch Linux kicks off 2026 with new ISO powered by Linux kernel 6.18 LTS&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://discoverbsd.com/p/9c6056f4b4&quot;&gt;https://discoverbsd.com/p/9c6056f4b4&lt;/a&gt; - HardenedBSD January 2026: infrastructure migration, merging commits from hardened/current to hardened/15-stable&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.linuxtoday.com/blog/best-free-and-open-source-software-january-2026-updates&quot;&gt;https://www.linuxtoday.com/blog/best-free-and-open-source-software-january-2026-updates&lt;/a&gt; - KaOS 2026.02 first to ship Niri Wayland compositor, LibreOffice 25.8.5, and more FOSS updates&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;marginal-indie-selfhosted&quot;&gt;Marginal, Indie, Selfhosted&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://fulghum.io/self-hosting&quot;&gt;https://fulghum.io/self-hosting&lt;/a&gt; - “2026 is the Year of Self-Hosting”: CLI AI agents have made self-hosting on cheap home servers dramatically easier&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://selfh.st/weekly/2026-02-20/&quot;&gt;https://selfh.st/weekly/2026-02-20/&lt;/a&gt; - Self-Host Weekly: Inkheart (PDF library), HabitSync, Hister (browsing history search), Jellyfin on Samsung Tizen Store&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://selfh.st/post/wrapped-new-software-2025/&quot;&gt;https://selfh.st/post/wrapped-new-software-2025/&lt;/a&gt; - 2025 Wrapped: comprehensive roundup of all new self-hosted software launched throughout 2025&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.somethingsblog.com/2026/01/24/real-indie-hacker-success-stories-that-prove-its-still-possible-in-2026/&quot;&gt;https://www.somethingsblog.com/2026/01/24/real-indie-hacker-success-stories-that-prove-its-still-possible-in-2026/&lt;/a&gt; - Indie hacker success stories: solo founders building profitable software products reaching $100k+/year revenue&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="news" /><category term="journal" /><category term="digest" /><category term="emacs" /><category term="c" /></entry><entry><title type="html">Somebody on Reddit shared Emacs rendering built with Rust</title><link href="https://falsetrue.io/share/note/2026/02/07/neomacs/" rel="alternate" type="text/html" title="Somebody on Reddit shared Emacs rendering built with Rust" /><published>2026-02-07T13:00:00+01:00</published><updated>2026-02-07T13:00:00+01:00</updated><id>repo://posts.collection/_posts/2026-02-07-neomacs.markdown</id><content type="html" xml:base="https://falsetrue.io/share/note/2026/02/07/neomacs/">&lt;p&gt;&lt;a href=&quot;https://www.reddit.com/r/emacs/comments/1qyg0rl/ann_neomacs_use_rust_to_rewrite_the_emacs_display/&quot;&gt;https://www.reddit.com/r/emacs/comments/1qyg0rl/ann_neomacs_use_rust_to_rewrite_the_emacs_display/&lt;/a&gt;&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;┌─────────────────────────────────────────────────────────────────┐
 │                     Emacs Core (C/Lisp)                         │
@@ -635,114 +711,4 @@ Welcome to my capsule!
 
 &lt;h2 id=&quot;hint&quot;&gt;Hint&lt;/h2&gt;
 
-&lt;p&gt;Donwload Largange because it supports both protocols, and its graphical.&lt;/p&gt;</content><author><name></name></author><category term="tools" /><category term="selfhosted" /><category term="smolnet" /></entry><entry><title type="html">Prevent disk from being indexed by system</title><link href="https://falsetrue.io/howto/2025/07/13/disk-blinking/" rel="alternate" type="text/html" title="Prevent disk from being indexed by system" /><published>2025-07-13T12:00:00+02:00</published><updated>2025-07-13T12:00:00+02:00</updated><id>repo://posts.collection/_posts/2025-07-13-disk-blinking.markdown</id><content type="html" xml:base="https://falsetrue.io/howto/2025/07/13/disk-blinking/">&lt;p&gt;When prepping a new backup disk, especially after securely wiping, formatting, and mounting it, you might be surprised to see the disk still blinking — indicating activity. It most probably GNOME indexer, which prepresented by this &lt;code class=&quot;highlighter-rouge&quot;&gt;tracker-miner-fs-3&lt;/code&gt;, so check process list for its presence.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ps aux | grep -E &apos;tracker|baloo|mlocate|plocate&apos;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;what-is-tracker-miner-fs-3&quot;&gt;What is &lt;code class=&quot;highlighter-rouge&quot;&gt;tracker-miner-fs-3&lt;/code&gt;?&lt;/h2&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;tracker-miner-fs-3&lt;/code&gt; is part of the &lt;strong&gt;Tracker 3 framework&lt;/strong&gt;, a background service used by GNOME to scan filesystems and build a searchable metadata database. It powers features like:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;GNOME Shell search&lt;/li&gt;
-  &lt;li&gt;Nautilus file search&lt;/li&gt;
-  &lt;li&gt;File indexing for content, tags, metadata&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;By default, &lt;strong&gt;Tracker watches all mounted volumes&lt;/strong&gt;, including your freshly-prepared backup disk.&lt;/p&gt;
-
-&lt;h2 id=&quot;why-this-matters-for-backups&quot;&gt;Why This Matters for Backups&lt;/h2&gt;
-
-&lt;p&gt;If you’re like me, using a clean &lt;code class=&quot;highlighter-rouge&quot;&gt;ext4&lt;/code&gt; - formatted HDD for &lt;strong&gt;photo backups&lt;/strong&gt;, Tracker is:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;📈 Consuming disk I/O&lt;/li&gt;
-  &lt;li&gt;💾 Creating hidden files like &lt;code class=&quot;highlighter-rouge&quot;&gt;.tracker3/&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;🌀 Interfering with a clean, controlled backup workflow&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;You probably don’t want your backup volume scanned, tagged, and written to by an automated desktop daemon.&lt;/p&gt;
-
-&lt;h2 id=&quot;how-to-stop-tracker-from-indexing-your-disk&quot;&gt;How to Stop Tracker from Indexing Your Disk&lt;/h2&gt;
-
-&lt;h3 id=&quot;prevent-tracker-from-touching-a-mount&quot;&gt;Prevent Tracker from Touching a Mount&lt;/h3&gt;
-
-&lt;p&gt;Create a &lt;code class=&quot;highlighter-rouge&quot;&gt;.trackerignore&lt;/code&gt; file at the root of the mount point:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;touch&lt;/span&gt; /mnt/photos/.trackerignore
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Alternatively, &lt;code class=&quot;highlighter-rouge&quot;&gt;.nomedia&lt;/code&gt; is also respected by some services:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;touch&lt;/span&gt; /mnt/photos/.nomedia
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;This tells Tracker (and sometimes other indexers) to &lt;strong&gt;ignore the folder entirely&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;kill-it-temporarily&quot;&gt;Kill It Temporarily&lt;/h3&gt;
-
-&lt;p&gt;To immediately stop Tracker:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pkill tracker-miner-fs-3
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;It may restart automatically unless disabled via systemd.&lt;/p&gt;
-
-&lt;h3 id=&quot;disable-tracker-permanently-if-you-dont-use-it&quot;&gt;Disable Tracker Permanently (if you don’t use it)&lt;/h3&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;tracker3 reset &lt;span class=&quot;nt&quot;&gt;--hard&lt;/span&gt;
-systemctl &lt;span class=&quot;nt&quot;&gt;--user&lt;/span&gt; mask tracker-miner-fs-3.service
-systemctl &lt;span class=&quot;nt&quot;&gt;--user&lt;/span&gt; mask tracker-store.service
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;You can also stop all Tracker daemons:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;tracker3 daemon &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;This will disable GNOME file search features system-wide.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;remove-tracker-index-database&quot;&gt;Remove tracker index database&lt;/h3&gt;
-
-&lt;p&gt;The tracker3 database storage is here: $HOME/.cache/tracker3
-The log is here: $HOME/.local/share/tracker/data&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;rm -rvf ~/.cache/tracker3
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;rm -rvf ~/.local/share/tracker
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;how-to-see-whats-accessing-the-disk&quot;&gt;How to See What’s Accessing the Disk&lt;/h2&gt;
-
-&lt;p&gt;To confirm Tracker (or anything else) is touching your disk:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;iotop
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;lsof +D /mnt/photos
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;fuser &lt;span class=&quot;nt&quot;&gt;-vm&lt;/span&gt; /mnt/photos
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;These tools let you observe file-level access and identify persistent background activity.&lt;/p&gt;
-
-&lt;h2 id=&quot;thoughts&quot;&gt;Thoughts&lt;/h2&gt;
-
-&lt;p&gt;If you’re using GNOME and preparing a backup volume — especially for photos — make sure &lt;code class=&quot;highlighter-rouge&quot;&gt;tracker-miner-fs&lt;/code&gt; isn’t working against you. A simple &lt;code class=&quot;highlighter-rouge&quot;&gt;.trackerignore&lt;/code&gt; file can prevent unintended indexing, I/O, or metadata writes.&lt;/p&gt;
-
-&lt;p&gt;There is an option to setup &lt;strong&gt;udev&lt;/strong&gt; to create .trackerignore automatically.&lt;/p&gt;
-
-&lt;h3 id=&quot;references&quot;&gt;References&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://tracker.gnome.org/overview/&quot;&gt;https://tracker.gnome.org/overview/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://r4ven.fr/en/blog/gnome-nautilus-indexation-tracker-miner/&quot;&gt;https://r4ven.fr/en/blog/gnome-nautilus-indexation-tracker-miner/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://discourse.gnome.org/t/configure-tracker-to-always-index-certain-file-extensions/17199/3&quot;&gt;https://discourse.gnome.org/t/configure-tracker-to-always-index-certain-file-extensions/17199/3&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/Tomas-M/iotop&quot;&gt;https://github.com/Tomas-M/iotop&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="linux" /><category term="tools" /></entry></feed>
+&lt;p&gt;Donwload Largange because it supports both protocols, and its graphical.&lt;/p&gt;</content><author><name></name></author><category term="tools" /><category term="selfhosted" /><category term="smolnet" /></entry></feed>

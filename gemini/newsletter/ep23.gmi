@@ -1,0 +1,109 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ============ [ 2026-02-27 ] ==
+```
+=> / ← Back
+# EP-23 FalseTrue Digest
+
+## Intro
+
+Hello everybody. This is Episode-23 of FalseTrue Digest.
+
+=> /images/newsletter/ep23.png /images/newsletter/ep23.png
+
+Its being a while since I’ve posted last time. This is new set of interesting articles I’ve found on internet since then.
+
+I’ve updated projects page on my blog
+
+=> https://falsetrue.io/projects/ https://falsetrue.io/projects/
+
+## Stories
+
+* https://www.nature.com/articles/d41586-026-00502-2 - Microsoft’s Project Silica stores 4.8TB on a piece of kitchen glass across 301 layers, lasting over 10,000 years
+
+* https://www.tomshardware.com/video-games/retro-gaming/you-can-log-into-28-vintage-computer-systems-in-your-browser-for-free-thanks-to-the-interim-computer-museum-and-sdf-org-experience-legendary-oses-architectures-programming-languages-and-games - Interim Computer Museum and SDF.org let you log into 28 vintage systems in your browser including PDP-11/70 running UNIX V7
+
+* https://blog.cloudflare.com/cloudflare-outage-february-20-2026/ - Cloudflare 6-hour global outage post-mortem: a bug interpreted empty string as command to delete all BYOIP prefixes
+
+* https://thehackernews.com/2026/02/aisurukimwolf-botnet-launches-record.html - Aisuru/Kimwolf botnet sets new DDoS world record at 31.4 Tbps using millions of compromised IoT devices
+
+* https://thehackernews.com/2026/02/weekly-recap-ai-skill-malware-31tbps.html - AI coding assistant Cline CLI compromised via stolen npm token, pushing malicious “OpenClaw” update to users
+
+## Programming
+
+* https://newsletter.pragmaticengineer.com/p/when-ai-writes-almost-all-code-what - Gergely Orosz on what happens to software engineering when AI writes most of the production code
+
+* https://benjamincongdon.me/blog/2025/12/29/Software-Engineering-in-2026/ - How AI-driven drops in the cost of producing code shift bottlenecks toward review, infrastructure, and developing “review taste”
+
+* https://medium.com/@tsecretdeveloper/you-probably-dont-need-to-learn-a-new-programming-language-in-2026-64bb546a3fae - With AI assistants able to help you jump into any codebase, learning a new language may be productive procrastination
+
+* https://blog.jetbrains.com/idea/2026/02/java-annotated-monthly-february-2026/ - JetBrains Java roundup: structured concurrency with timeout handling, data-oriented programming beyond records, carrier classes
+
+* https://news.ycombinator.com/item?id=46857444 - Kernighan on Programming resurfaced on HN, a perennial favorite essay on programming craft and clarity
+
+## Emacs
+
+* https://sachachua.com/blog/2026/02/2026-02-16-emacs-news/ - Sacha Chua’s weekly Emacs news roundup covering recent package updates, community events, and development highlights
+
+* https://sachachua.com/blog/2026/01/emacs-carnival-february-2026-completion/ - Emacs Carnival February 2026 on the theme “Completion” exploring how completion frameworks help users work efficiently
+
+* https://sachachua.com/blog/2026/01/2026-01-26-emacs-news/ - ef-themes 2.1.0, experimental Skia rendering backend as Cairo alternative, Flymake support for yaml-ts-mode
+
+* https://sachachua.com/blog/2026/01/2026-01-12-emacs-news/ - New packages: sign.el (Signal messenger interface), org-gtd.el 4.0.0, quake-frame.el, and package.el diff review feature
+
+## AI
+
+* https://lwn.net/SubscriberLink/1058643/f7ba3383d584a3ea/ - AI agent “Kai Gritun” created a GitHub account and opened 103 PRs across 95 repos in two weeks, landing code in Nx and ESLint Plugin Unicorn
+
+* https://allenai.org/blog/open-coding-agents - Allen Institute for AI announces SERA, open coding agent models with a training recipe to specialize agents to any repository
+
+* https://whatever.scalzi.com/2026/02/14/10-thoughts-on-ai-february-2026-edition/ - Sci-fi author John Scalzi’s 10 opinionated takes on the current state of AI covering hype, utility, and cultural impact
+
+* https://simonw.substack.com/p/llm-predictions-for-2026-shared-with - Simon Willison’s LLM predictions for 2026, technical analysis of where large language models are headed
+
+* https://radicaldatascience.wordpress.com/2026/02/10/ai-news-briefs-bulletin-board-for-february-2026/ - Curated bulletin board of AI news briefs for February 2026 from a data science practitioner’s angle
+
+## Security
+
+* https://cyberscoop.com/apple-zero-day-vulnerability-cve-2026-20700/ - Apple’s first actively exploited zero-day of 2026, a memory corruption flaw in dyld enabling arbitrary code execution
+
+* https://www.akamai.com/blog/security-research/inside-the-fix-cve-2026-21513-mshtml-exploit-analysis - Deep-dive into CVE-2026-21513 MSHTML bypass exploited by Russian APT28, affecting all Windows versions
+
+* https://orca.security/resources/blog/cve-2026-1731-beyondtrust-vulnerability/ - CVE-2026-1731 (CVSS 9.9) in BeyondTrust Remote Support, found via AI-assisted variant analysis, exploited at scale in under two weeks
+
+* https://krebsonsecurity.com/2026/02/patch-tuesday-february-2026-edition/ - Krebs on Security covers February 2026 Patch Tuesday including six actively exploited zero-days
+
+* https://thehackernews.com/2026/01/microsoft-issues-emergency-patch-for.html - CVE-2026-21509 Microsoft Office zero-day forced an emergency out-of-band patch due to active exploitation
+
+* https://www.penligent.ai/hackinglabs/cve-2026-25142-the-ghost-accessor-rce-deconstructing-the-sandboxjs-escape/ - “Ghost Accessor” RCE in SandboxJS, a clever sandbox escape nullifying the library’s isolation mechanisms
+
+## Unix, Linux, BSD and free software scene
+
+* https://www.helpnetsecurity.com/2026/02/09/linux-kernel-6-19-released/ - Linux kernel 6.19 released as final 6.x version; Linus confirms next release will be Linux 7.0
+
+* https://fosdem.org/2026/ - FOSDEM 2026 took place in Brussels with 1216 speakers, 1079 events, and 71 tracks
+
+* https://9to5linux.com/arch-linux-kicks-off-2026-with-new-iso-powered-by-linux-kernel-6-18-lts - Arch Linux kicks off 2026 with new ISO powered by Linux kernel 6.18 LTS
+
+* https://discoverbsd.com/p/9c6056f4b4 - HardenedBSD January 2026: infrastructure migration, merging commits from hardened/current to hardened/15-stable
+
+* https://www.linuxtoday.com/blog/best-free-and-open-source-software-january-2026-updates - KaOS 2026.02 first to ship Niri Wayland compositor, LibreOffice 25.8.5, and more FOSS updates
+
+## Marginal, Indie, Selfhosted
+
+* https://fulghum.io/self-hosting - “2026 is the Year of Self-Hosting”: CLI AI agents have made self-hosting on cheap home servers dramatically easier
+
+* https://selfh.st/weekly/2026-02-20/ - Self-Host Weekly: Inkheart (PDF library), HabitSync, Hister (browsing history search), Jellyfin on Samsung Tizen Store
+
+* https://selfh.st/post/wrapped-new-software-2025/ - 2025 Wrapped: comprehensive roundup of all new self-hosted software launched throughout 2025
+
+* https://www.somethingsblog.com/2026/01/24/real-indie-hacker-success-stories-that-prove-its-still-possible-in-2026/ - Indie hacker success stories: solo founders building profitable software products reaching $100k+/year revenue
+
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```
