@@ -5,10 +5,19 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ============ [ 2026-02-27 ] ==
+== [Gemini capsule] * ============ [ 2026-04-17 ] ==
 ```
 => / ← Back
 # Blog
+
+* ✉️ newsletter
+17-APR-2026 - EP-24 FalseTrue Digest
+
+    #news
+    #journal
+    #digest
+    #emacs
+    #c
 
 * ✉️ newsletter
 27-FEB-2026 - EP-23 FalseTrue Digest

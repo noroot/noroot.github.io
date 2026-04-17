@@ -1,4 +1,97 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://bridgetownrb.com/" version="1.3.4">Bridgetown</generator><link href="https://falsetrue.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://falsetrue.io/" rel="alternate" type="text/html" /><updated>2026-02-27T23:43:35+01:00</updated><id>https://falsetrue.io/feed.xml</id><title type="html">FalseTrue</title><subtitle>Scripts of cyberdaemon</subtitle><entry xml:lang="en"><title type="html">EP-23 FalseTrue Digest</title><link href="https://falsetrue.io/newsletter/2026/02/27/ep23/" rel="alternate" type="text/html" title="EP-23 FalseTrue Digest" /><published>2026-02-27T23:00:00+01:00</published><updated>2026-02-27T23:00:00+01:00</updated><id>repo://posts.collection/_posts/ep23.markdown</id><content type="html" xml:base="https://falsetrue.io/newsletter/2026/02/27/ep23/">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://bridgetownrb.com/" version="1.3.4">Bridgetown</generator><link href="https://falsetrue.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://falsetrue.io/" rel="alternate" type="text/html" /><updated>2026-04-17T20:18:51+02:00</updated><id>https://falsetrue.io/feed.xml</id><title type="html">FalseTrue</title><subtitle>Scripts of cyberdaemon</subtitle><entry xml:lang="en"><title type="html">EP-24 FalseTrue Digest</title><link href="https://falsetrue.io/newsletter/2026/04/17/ep24/" rel="alternate" type="text/html" title="EP-24 FalseTrue Digest" /><published>2026-04-17T02:00:00+02:00</published><updated>2026-04-17T02:00:00+02:00</updated><id>repo://posts.collection/_posts/ep24.md</id><content type="html" xml:base="https://falsetrue.io/newsletter/2026/04/17/ep24/">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+&lt;!--- Introduction paragraph ---&gt;
+
+&lt;p&gt;Hello everybody. This is Episode-24 of FalseTrue Digest.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/newsletter/ep24.png&quot; alt=&quot;/images/newsletter/ep2.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Its being a while since I’ve posted last time. This is new set of of interesting articles I’ve found on internet since then.
+I’ve updated projects page on my blog &lt;a href=&quot;https://falsetrue.io/projects/&quot;&gt;https://falsetrue.io/projects/&lt;/a&gt;,&lt;/p&gt;
+
+&lt;h2 id=&quot;stories&quot;&gt;Stories&lt;/h2&gt;
+&lt;!--- Latest stories related to computer scene ---&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://nolanlawson.com/2026/02/07/we-mourn-our-craft/&quot;&gt;https://nolanlawson.com/2026/02/07/we-mourn-our-craft/&lt;/a&gt; - Blog post lamenting the loss of computing’s openness and agency, sparking wide debate on locked-down devices vs. earlier eras of transparency&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://vcfed.org/events/vintage-computer-festival-east/&quot;&gt;https://vcfed.org/events/vintage-computer-festival-east/&lt;/a&gt; - Vintage Computer Festival East 2026 themed “Dawn of the PC” features Ken and Roberta Williams of Sierra Online as keynote guests&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://computerhistory.org/press-releases/computer-history-museum-names-new-fellows-to-honor-lifetime-achievements-in-computing-3/&quot;&gt;https://computerhistory.org/press-releases/computer-history-museum-names-new-fellows-to-honor-lifetime-achievements-in-computing-3/&lt;/a&gt; - Computer History Museum names 2026 Fellows including the Palm team, FM synthesis inventor John Chowning, and Brewster Kahle&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://gyptazy.com/blog/fosdem-2026-opensource-conference-brussels/&quot;&gt;https://gyptazy.com/blog/fosdem-2026-opensource-conference-brussels/&lt;/a&gt; - FOSDEM 2026 recap highlights open source sovereignty, the Cyber Resilience Act’s impact on maintainers, and Europe’s push for digital independence&lt;/p&gt;
+
+&lt;h2 id=&quot;programming&quot;&gt;Programming&lt;/h2&gt;
+&lt;!--- Latest or interesting articles about programming ---&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.greptile.com/blog/ai-slopware-future&quot;&gt;https://www.greptile.com/blog/ai-slopware-future&lt;/a&gt; - Greptile argues economic incentives will push AI toward writing good maintainable code rather than low-quality slop&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://developers.redhat.com/articles/2026/02/17/uncomfortable-truth-about-vibe-coding&quot;&gt;https://developers.redhat.com/articles/2026/02/17/uncomfortable-truth-about-vibe-coding&lt;/a&gt; - Why vibe coding breaks down at scale and the case for shifting to spec-driven development over conversational prompts&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.infoq.com/news/2026/03/java26-released/&quot;&gt;https://www.infoq.com/news/2026/03/java26-released/&lt;/a&gt; - Java 26 released with 10 JEPs including structured concurrency, HTTP/3 client, and lazy constants&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blog.herlein.com/post/programming-languages-intersection/&quot;&gt;https://blog.herlein.com/post/programming-languages-intersection/&lt;/a&gt; - Evaluating languages across popularity, job demand, LLM code-gen quality, concurrency, and deployment complexity&lt;/p&gt;
+
+&lt;h2 id=&quot;emacs&quot;&gt;Emacs&lt;/h2&gt;
+&lt;!--- Latest news from Emacs scene ---&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://emacsredux.com/blog/2026/04/07/stealing-from-the-best-emacs-configs/&quot;&gt;https://emacsredux.com/blog/2026/04/07/stealing-from-the-best-emacs-configs/&lt;/a&gt; - Survey of the best community Emacs configurations and useful tweaks to borrow from them&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://sachachua.com/blog/2026/04/org-mode-tangle-emacs-config-snippets-to-different-files-and-add-boilerplate/&quot;&gt;https://sachachua.com/blog/2026/04/org-mode-tangle-emacs-config-snippets-to-different-files-and-add-boilerplate/&lt;/a&gt; - Org Mode technique for tangling config snippets to multiple files with automatic boilerplate&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/krvkir/org-mindmap&quot;&gt;https://github.com/krvkir/org-mindmap&lt;/a&gt; - org-mindmap: new package for creating simple inline mind maps directly inside Org buffers&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://emacsredux.com/blog/2026/04/06/the-many-faces-of-flet/&quot;&gt;https://emacsredux.com/blog/2026/04/06/the-many-faces-of-flet/&lt;/a&gt; - Deep dive into cl-flet, cl-labels, and cl-letf for dynamic and lexical function binding in Emacs Lisp&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/CsBigDataHub/popterm.el&quot;&gt;https://github.com/CsBigDataHub/popterm.el&lt;/a&gt; - popterm.el: new package combining posframe with terminal emulator for quick popup shells in Emacs&lt;/p&gt;
+
+&lt;h2 id=&quot;ai&quot;&gt;AI&lt;/h2&gt;
+&lt;!--- Latest news and stories about AI ---&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://huggingface.co/blog/huggingface/state-of-os-hf-spring-2026&quot;&gt;https://huggingface.co/blog/huggingface/state-of-os-hf-spring-2026&lt;/a&gt; - State of Open Source on Hugging Face Spring 2026: users, models, and datasets all close to doubling year-over-year&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://huggingface.co/blog/mlabonne/glm-5&quot;&gt;https://huggingface.co/blog/mlabonne/glm-5&lt;/a&gt; - GLM-5: China’s first public AI company ships a frontier-class open model&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://dev.to/pooyagolchian/local-ai-in-2026-ollama-benchmarks-0-inference-and-the-end-of-per-token-pricing-32e7&quot;&gt;https://dev.to/pooyagolchian/local-ai-in-2026-ollama-benchmarks-0-inference-and-the-end-of-per-token-pricing-32e7&lt;/a&gt; - Local AI in 2026: Ollama hits 52M monthly downloads, benchmarks show local models closing the gap with cloud APIs&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://spectrum.ieee.org/state-of-ai-index-2026&quot;&gt;https://spectrum.ieee.org/state-of-ai-index-2026&lt;/a&gt; - Stanford’s AI Index for 2026 shows the rapidly narrowing gap between open and proprietary models&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://huggingface.co/blog/huggingface/one-year-since-the-deepseek-moment-blog-3&quot;&gt;https://huggingface.co/blog/huggingface/one-year-since-the-deepseek-moment-blog-3&lt;/a&gt; - One year since the DeepSeek moment: the future of the global open-source AI ecosystem&lt;/p&gt;
+
+&lt;h2 id=&quot;security&quot;&gt;Security&lt;/h2&gt;
+&lt;!--- Latest Security ---&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://thehackernews.com/2026/04/critical-nginx-ui-vulnerability-cve.html&quot;&gt;https://thehackernews.com/2026/04/critical-nginx-ui-vulnerability-cve.html&lt;/a&gt; - Critical nginx-ui authentication bypass (CVE-2026-33032, CVSS 9.8) allows unauthenticated full server takeover via exposed MCP endpoint&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://krebsonsecurity.com/2026/03/feds-disrupt-iot-botnets-behind-huge-ddos-attacks/&quot;&gt;https://krebsonsecurity.com/2026/03/feds-disrupt-iot-botnets-behind-huge-ddos-attacks/&lt;/a&gt; - Feds disrupt Kimwolf IoT botnet that spread to over 2 million devices for massive DDoS attacks&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://thehackernews.com/2026/04/adobe-patches-actively-exploited.html&quot;&gt;https://thehackernews.com/2026/04/adobe-patches-actively-exploited.html&lt;/a&gt; - Adobe patches actively exploited Acrobat Reader zero-day allowing malicious JS execution via crafted PDFs&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.picussecurity.com/resource/blog/cve-2026-3055-cve-2026-4368-inside-the-netscaler-citrixbleed-3-memory-overread&quot;&gt;https://www.picussecurity.com/resource/blog/cve-2026-3055-cve-2026-4368-inside-the-netscaler-citrixbleed-3-memory-overread&lt;/a&gt; - Deep dive into CitrixBleed 3, a critical unauthenticated memory overread in Citrix NetScaler ADC and Gateway&lt;/p&gt;
+
+&lt;h2 id=&quot;unix-linux-bsd-and-free-software-scene&quot;&gt;Unix, Linux, BSD and free software scene&lt;/h2&gt;
+&lt;!--- Latest news and stories about Unix, Linux, BSD, and free software scene ---&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.phoronix.com/news/FreeBSD-14.4-Released&quot;&gt;https://www.phoronix.com/news/FreeBSD-14.4-Released&lt;/a&gt; - FreeBSD 14.4 released with OpenSSH 10.0p2 post-quantum key exchange, OpenZFS 2.2.9, and bhyve p9fs sharing&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://undeadly.org/cgi?action=article&amp;amp;sid=20260319125859&quot;&gt;https://undeadly.org/cgi?action=article&amp;amp;sid=20260319125859&lt;/a&gt; - OpenBSD PF queues break the 4 Gbps barrier with 64-bit HFSC scheduler patch enabling traffic shaping up to 999 Gbps&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://linuxiac.com/arch-linux-april-2026-iso-ships-with-kernel-6-19-and-systemd-260/&quot;&gt;https://linuxiac.com/arch-linux-april-2026-iso-ships-with-kernel-6-19-and-systemd-260/&lt;/a&gt; - Arch Linux April 2026 ISO ships with Linux kernel 6.19, systemd 260, and Archinstall 4.1&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.phoronix.com/news/Gentoo-Starts-Codeberg-Use&quot;&gt;https://www.phoronix.com/news/Gentoo-Starts-Codeberg-Use&lt;/a&gt; - Gentoo begins migrating from GitHub to Codeberg over Microsoft Copilot objections&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://discoverbsd.com/p/6d0a33470d&quot;&gt;https://discoverbsd.com/p/6d0a33470d&lt;/a&gt; - NetBSD 11.0 RC2, OpenBSD 7.9-beta with delayed hibernation for amd64, and FreeBSD Linuxator CUDA support&lt;/p&gt;
+
+&lt;h2 id=&quot;marginal-indie-selfhosted&quot;&gt;Marginal, Indie, Selfhosted&lt;/h2&gt;
+&lt;!--- Lates news about margingal software, indie, and selfhosted ---&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://fulghum.io/self-hosting&quot;&gt;https://fulghum.io/self-hosting&lt;/a&gt; - 2026 is the Year of Self-hosting: CLI agents like Claude Code now make self-hosting on home servers practical for regular users&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/rybbit-io/rybbit&quot;&gt;https://github.com/rybbit-io/rybbit&lt;/a&gt; - Rybbit, an open-source privacy-friendly Google Analytics alternative with cookieless tracking, hits 11k GitHub stars&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/karakeep-app/karakeep&quot;&gt;https://github.com/karakeep-app/karakeep&lt;/a&gt; - Karakeep (formerly Hoarder), a self-hosted bookmark-everything app with local LLM integration for auto-tagging&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://osmosetech.com/the-best-new-self-hosted-software-to-try-in-march-2026/&quot;&gt;https://osmosetech.com/the-best-new-self-hosted-software-to-try-in-march-2026/&lt;/a&gt; - New self-hosted software roundup: Docmost (Notion alternative), Beszel (server monitoring), BentoPDF (PDF toolkit)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://houdinimagazine.com/articles/2026-01-21-what-is-the-web-revival-movement&quot;&gt;https://houdinimagazine.com/articles/2026-01-21-what-is-the-web-revival-movement&lt;/a&gt; - The Web Revival Movement: grassroots indie web reviving link lists, 88x31 buttons, and personal shrines as alternative to algorithm-driven social media&lt;/p&gt;</content><author><name></name></author><category term="news" /><category term="journal" /><category term="digest" /><category term="emacs" /><category term="c" /></entry><entry xml:lang="en"><title type="html">EP-23 FalseTrue Digest</title><link href="https://falsetrue.io/newsletter/2026/02/27/ep23/" rel="alternate" type="text/html" title="EP-23 FalseTrue Digest" /><published>2026-02-27T23:00:00+01:00</published><updated>2026-02-27T23:00:00+01:00</updated><id>repo://posts.collection/_posts/ep23.markdown</id><content type="html" xml:base="https://falsetrue.io/newsletter/2026/02/27/ep23/">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
 
 &lt;p&gt;Hello everybody. This is Episode-23 of FalseTrue Digest.&lt;/p&gt;
 
@@ -468,247 +561,4 @@ sudo mdutil -i off /Volumes/MyExternalDrive
   &lt;li&gt;&lt;a href=&quot;https://developer.apple.com/documentation/foundation/spotlight&quot;&gt;Apple Foundation Framework Spotlight reference&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/npm/cli/issues/549&quot;&gt;NPM adding noindex to his node_modules folder&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://falsetrue.io/projects/overlauncher/&quot;&gt;OverLauncher&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="sec" /><category term="mac" /><category term="debloat" /></entry><entry><title type="html">Gemini, Gopher and and SmolNet</title><link href="https://falsetrue.io/notes/2025/07/22/gemini-capsule/" rel="alternate" type="text/html" title="Gemini, Gopher and and SmolNet" /><published>2025-07-22T22:00:00+02:00</published><updated>2025-07-22T22:00:00+02:00</updated><id>repo://posts.collection/_posts/2025-07-22-gemini-capsule.markdown</id><content type="html" xml:base="https://falsetrue.io/notes/2025/07/22/gemini-capsule/">&lt;p&gt;Perhaps there are no more reason to be on  modern Web internet. It was interesting before it become unusable.&lt;/p&gt;
-
-&lt;p&gt;So I’ve to continue journey to alternative so called small Internet (smolnet). If don’t know anything about it then its bad for you. This layer of internet was here before Web. There are a lot of protocols today, but most notable and surived are gopher and gemini protocols.
-I wrote my first Gopher browser in Borland Delphi 4 somewhere in 1999 without even knowing what it is, by just moving components on the Delphi form builder :)&lt;/p&gt;
-
-&lt;p&gt;Lets focus on most used smolNet protocols today:&lt;/p&gt;
-
-&lt;h2 id=&quot;gopher&quot;&gt;Gopher&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;The Internet Gopher protocol is designed for distributed document search and retrieval.  This document describes the protocol, lists some of the implementations currently available, and has an overview of how to implement new client and server applications.  This document is adapted from the basic Internet Gopher protocol document first issued by the Microcomputer Center at the University of Minnesota in 1991.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;|---------------|-------------------------|
-| Specification | RFC 1436                |
-|---------------|-------------------------|
-| Scheme        | gopher://               |
-|---------------|-------------------------|
-| Port number   | 70                      |
-|---------------|-------------------------|
-| File format   | Gopher menu, plain text |
-|---------------|-------------------------|
-| TLS           | With gophers://         |
-|---------------|-------------------------|
-| Encoding      | ASCII                   |
-|---------------|-------------------------|
-| Clients       | a lot                   |
-|---------------|-------------------------|
-| Servers       | a lot                   |
-|---------------|-------------------------|
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;The Gopher protocol is one of the early Internet protocols (released in 1991 at the University of Minnesota) designed for distributing, searching, and retrieving documents over a network. It predates the modern web and was widely used before HTTP/HTML took over.&lt;/p&gt;
-
-&lt;p&gt;Unlike the Web, which quickly became graphical and complex, Gopher remains text-centric, hierarchical, and lightweight, which is why it’s still interesting in the context of minimal and alternative networks.&lt;/p&gt;
-
-&lt;h3 id=&quot;how-gopher-works&quot;&gt;How Gopher Works&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Client–server model: A Gopher client connects to a Gopher server over TCP (default port 70).&lt;/li&gt;
-  &lt;li&gt;Menu-based navigation: Instead of free-form hyperlinks like the Web, Gopher content is structured as menus (directory-like listings). Each item has a type and a selector (path to the resource).&lt;/li&gt;
-  &lt;li&gt;Plain-text protocol: Communication between client and server is very simple - a request is just a text line (selector string), and the response is either:&lt;/li&gt;
-  &lt;li&gt;A menu (list of items)&lt;/li&gt;
-  &lt;li&gt;A file (text, binary, image, etc.)&lt;/li&gt;
-  &lt;li&gt;A search query response&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;This makes it extremely low-bandwidth and easy to implement.&lt;/p&gt;
-
-&lt;p&gt;Key Features&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Hierarchical structure, - resources are organised into nested menus (like directories).&lt;/li&gt;
-  &lt;li&gt;Provides an intuitive way to explore content without a search engine.&lt;/li&gt;
-  &lt;li&gt;Typed resources, - each menu item begins with a type code (single character) to indicate the kind of resource (e.g., text, binary, search).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Common types:
-0 – Plain text file
-1 – Menu (directory)
-7 – Search query
-9 – Binary file
-g – GIF image
-I – Generic image&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Search integration, - Gopher supported search services (usually full-text) via type 7 items — you submit a query, and the server returns a list of matching items.&lt;/li&gt;
-  &lt;li&gt;Lightweight, simple plain-text requests and responses make it fast and low-resource, even on very old hardware or slow connections.
-Works great over dial-up speeds and on embedded/retro devices.&lt;/li&gt;
-  &lt;li&gt;Easy to self-host, - setting up a Gopher server is trivial (many are just a few hundred lines of code).
-Makes it appealing for personal publishing, especially in SmolNet and tildeverse communities.&lt;/li&gt;
-  &lt;li&gt;Long lifespan &amp;amp; stability, because it hasn’t changed much since the ’90s, Gopher content remains accessible decades later, unlike modern web apps that quickly break.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Example of Gopher menu:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;TypeCharDisplayName&amp;lt;TAB&amp;gt;Selector&amp;lt;TAB&amp;gt;Host&amp;lt;TAB&amp;gt;Port
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1About This Server    /about    example.org    70
-0Readme.txt           /readme   example.org    70
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Why It’s Still Used&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Retrocomputing &amp;amp; minimalism: Perfect for old computers and text-based interfaces.&lt;/li&gt;
-  &lt;li&gt;Decentralisation: No need for heavy infrastructure; one server + one text file = a working site.&lt;/li&gt;
-  &lt;li&gt;No ads, no tracking: Pure information sharing.&lt;/li&gt;
-  &lt;li&gt;Part of SmolNet: Often used alongside Gemini as a simpler alternative to the Web.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Modern Gopher Clients&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Lynx (text-mode web browser, still supports Gopher)&lt;/li&gt;
-  &lt;li&gt;Bombadillo (modern terminal Gopher/Gemini client)&lt;/li&gt;
-  &lt;li&gt;Gopher Client Plugins (for Firefox, Chrome via extensions)&lt;/li&gt;
-  &lt;li&gt;Overbite (Gopher-to-HTTP proxy)&lt;/li&gt;
-  &lt;li&gt;cURL (supports Gopher links)&lt;/li&gt;
-  &lt;li&gt;Lagrange (supports Gemini and Gopher)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;gemini-protocol&quot;&gt;Gemini Protocol&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Gemini is an application-layer internet communication protocol for accessing remote documents, similar to HTTP and Gopher. It comes with a special document format, commonly referred to as “gemtext”, which allows linking to other documents. Started by a pseudonymous person known as Solderpunk, the protocol is being finalized collaboratively and as of October 2022, has not been submitted to the IETF organization for standardization.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Gemini is a lightweight, text-first internet protocol introduced in 2019 by Solderpunk. It was designed as a middle ground between Gopher and the modern Web — more expressive than Gopher but far simpler and less bloated than HTTP.&lt;/p&gt;
-
-&lt;p&gt;Its goals are:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Simplicity: Small, easily implemented protocol.&lt;/li&gt;
-  &lt;li&gt;Privacy: No tracking, cookies, or scripts.&lt;/li&gt;
-  &lt;li&gt;Readability: Focus on content, not layout.&lt;/li&gt;
-  &lt;li&gt;Low overhead: Minimal bandwidth use, great for slow connections and older devices.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Gemini runs over TLS by default (port 1965), ensuring encrypted connections by design.&lt;/p&gt;
-
-&lt;h3 id=&quot;gemini-key-features&quot;&gt;Gemini Key Features&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;Secure by default&lt;/li&gt;
-  &lt;li&gt;All connections use TLS (unlike Gopher). No plaintext option.&lt;/li&gt;
-  &lt;li&gt;No cookies, sessions, or tracking — privacy is built-in.&lt;/li&gt;
-  &lt;li&gt;Minimalist content format&lt;/li&gt;
-  &lt;li&gt;Uses Gemtext (.gmi), a super-simple Markdown-like syntax.&lt;/li&gt;
-  &lt;li&gt;Content is mostly text with optional links, preformatted blocks, and basic headings.&lt;/li&gt;
-  &lt;li&gt;No JavaScript, CSS, or complex rendering.&lt;/li&gt;
-  &lt;li&gt;Small, simple protocol&lt;/li&gt;
-  &lt;li&gt;A Gemini request is just a single line:
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gemini://example.com/resource\r\n
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;A Gemini response starts with a status code (2-digit) and a MIME type. Example:&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;20 text/gemini\r\n
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Human-scale design&lt;/li&gt;
-  &lt;li&gt;Pages are lightweight and distraction-free.&lt;/li&gt;
-  &lt;li&gt;Designed for reading, not for flashy design or heavy web apps.&lt;/li&gt;
-  &lt;li&gt;Easy to self-host&lt;/li&gt;
-  &lt;li&gt;Setting up a Gemini capsule (server) is simple. Many implementations fit in &amp;lt;1000 lines of code.&lt;/li&gt;
-  &lt;li&gt;Perfect for personal publishing, digital zines, and community spaces.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Gem text example:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# My Gemini Page
-
-Welcome to my capsule!  
-
-=&amp;gt; /about About this site  
-=&amp;gt; gemini://gemini.circumlunar.space Project Gemini
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Status Codes (like HTTP but simpler):&lt;/p&gt;
-
-&lt;p&gt;20 – Success (content follows)
-30 – Redirect
-40 – Temporary failure
-50 – Permanent failure
-60 – Client certificate required (optional authentication)&lt;/p&gt;
-
-&lt;h4 id=&quot;why-use-gemini-&quot;&gt;Why Use Gemini ?&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Privacy-first: No ads, no analytics, no surveillance.&lt;/li&gt;
-  &lt;li&gt;Focused on content: Perfect for blogs, phlogs, manifestos, and small communities.&lt;/li&gt;
-  &lt;li&gt;Long-term accessibility: Pages remain usable even decades later, like Gopher.&lt;/li&gt;
-  &lt;li&gt;SmolNet-friendly: Runs well on low-power devices, retro machines, or text-based terminals.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;|---------------|------------------------------------------------------------|
-| Name          | Gemini                                                     |
-|---------------|------------------------------------------------------------|
-| Specification | https://geminiprotocol.net/docs/protocol-specification.gmi |
-|---------------|------------------------------------------------------------|
-| Scheme        | gemini://                                                  |
-|---------------|------------------------------------------------------------|
-| Port number   | 1695                                                       |
-|---------------|------------------------------------------------------------|
-| File format   | Gopher menu, plain text                                    |
-|---------------|------------------------------------------------------------|
-| TLS           | Default                                                    |
-|---------------|------------------------------------------------------------|
-| Encoding      | ASCII                                                      |
-|---------------|------------------------------------------------------------|
-| Clients       | a lot                                                      |
-|---------------|------------------------------------------------------------|
-| Servers       | a lot                                                      |
-|---------------|------------------------------------------------------------|
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;comparison-gemini-and-gopher&quot;&gt;Comparison Gemini and Gopher&lt;/h3&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;|------------|--------------------------------------|-----------------------------------------------|
-| Feature    | Gopher                               | Gemini                                        |
-|------------|--------------------------------------|-----------------------------------------------|
-| Encryption | No                                   | Yes (TLS only)                                |
-| Content    | Plain text + menus                   | Gemtext (Markdown-like)                       |
-| Port       | 70                                   | 1965                                          |
-| Complexity | Very low                             | Low                                           |
-| Multimedia | Minimal (but anything can be served) | Mimimal (picture can be displayed inside gmi) |
-| Use Case   | Directory-style browsing             | Reading focus, makrdown like publishing       |
-|------------|--------------------------------------|-----------------------------------------------|
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;There are a lot of smolnet protocols, you can find a lot of them via links from this article.&lt;/p&gt;
-
-&lt;h2 id=&quot;what-to-use-them-for-and-why-&quot;&gt;What to use them for and why ?&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Search for Text and files, - a lot of files and text from pre internet era can be found on Gopher.&lt;/li&gt;
-  &lt;li&gt;Have a conversation on gemini boards, - since that text is a main medium people must use text to transfer their thoughts, which makes people who are using textual based network more prone to write proper content.&lt;/li&gt;
-  &lt;li&gt;Enjoy smolnet unique sites, smolnet sites and content usualy more full, unique, and enjoyable&lt;/li&gt;
-  &lt;li&gt;Minimalistic approach to technology, - you would be surpised who much modern internet is bloated.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Gopher_(protocol)&quot;&gt;https://en.wikipedia.org/wiki/Gopher_(protocol)&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;gopher://gopher.floodgap.com/&quot;&gt;gopher://gopher.floodgap.com/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Gemini_(protocol)&quot;&gt;https://en.wikipedia.org/wiki/Gemini_(protocol)&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://geminiprotocol.net/docs/protocol-specification.gmi&quot;&gt;https://geminiprotocol.net/docs/protocol-specification.gmi&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/makew0rld/amfora&quot;&gt;https://github.com/makew0rld/amfora&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://wiki.archiveteam.org/index.php/SmolNet&quot;&gt;SmolNet&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/skyjake/lagrange&quot;&gt;Lagrange&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;gemini://geminiprotocol.net/docs/faq.gmi&quot;&gt;Gemini FAQ&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;hint&quot;&gt;Hint&lt;/h2&gt;
-
-&lt;p&gt;Donwload Largange because it supports both protocols, and its graphical.&lt;/p&gt;</content><author><name></name></author><category term="tools" /><category term="selfhosted" /><category term="smolnet" /></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><category term="sec" /><category term="mac" /><category term="debloat" /></entry></feed>
