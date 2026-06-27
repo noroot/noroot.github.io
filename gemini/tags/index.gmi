@@ -5,7 +5,7 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ============ [ 2026-04-17 ] ==
+== [Gemini capsule] * ============ [ 2026-06-27 ] ==
 ```
 => / ← Back
 # Tags
@@ -30,19 +30,21 @@
 
 => /tags/c #c
 
+=> /tags/tools #tools
+
+=> /tags/mac #mac
+
+=> /tags/hardware #hardware
+
 => /tags/person #person
 
 => /tags/software #software
 
 => /tags/3dp #3dp
 
-=> /tags/tools #tools
-
 => /tags/howto #howto
 
 => /tags/sec #sec
-
-=> /tags/mac #mac
 
 => /tags/debloat #debloat
 
@@ -117,8 +119,6 @@
 => /tags/legacy #legacy
 
 => /tags/bw #bw
-
-=> /tags/hardware #hardware
 
 => /tags/scam #scam
 
@@ -281,6 +281,8 @@
 => /tags/payment #payment
 
 => /tags/game #game
+
+=> /tags/browser #browser
 ```
      ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
 ```

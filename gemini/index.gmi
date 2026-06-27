@@ -5,7 +5,7 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ============ [ 2026-04-17 ] ==
+== [Gemini capsule] * ============ [ 2026-06-27 ] ==
 ```
 # FalseTrue - dmth's capsule
 
@@ -18,6 +18,8 @@ Computers, Coding, Gaming, Oldschool, On Internet since 90s
 => /halloffame/ Hall of Fame
 => /archive/ Archive
 ## Recent posts
+=> newsletter/ep25.md 2026-06-27 EP-25 FalseTrue Digest
+=> tools/2026-06-07-mac-toggle-mic.md 2026-06-07 MacOS toggle microphone unix-way
 => newsletter/ep24.md 2026-04-17 EP-24 FalseTrue Digest
 => newsletter/ep23.gmi 2026-02-27 EP-23 FalseTrue Digest
 => share/2026-02-07-neomacs.gmi 2026-02-07 Somebody on Reddit shared Emacs rendering built with Rust
@@ -27,8 +29,6 @@ Computers, Coding, Gaming, Oldschool, On Internet since 90s
 => share/2025-11-15-terry-davis-birthday.gmi 2025-11-15 Terry Davis birthday
 => share/2025-11-14-openprinttag.md 2025-11-14 OpenPrintTag - NFC standard for 3d printing spools
 => tools/2025-11-10-tools-im-using.gmi 2025-11-10 Tools I am using
-=> howto/2025-08-02-disable-spotlight.gmi 2025-08-02 How and why to disable Spotlight
-=> notes/2025-07-22-gemini-capsule.gmi 2025-07-22 Gemini, Gopher and and SmolNet
 => /archive/ Archive
 ## Categories
 => /dev/ Dev

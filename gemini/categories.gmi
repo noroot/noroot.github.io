@@ -5,7 +5,7 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ============ [ 2026-04-17 ] ==
+== [Gemini capsule] * ============ [ 2026-06-27 ] ==
 ```
 # Categories
 
@@ -66,6 +66,7 @@
 => howto/2012-06-19-install-linux-on-palm-lifedrive.gmi Установка linux на Palm LD(Life Drive)
 
 ## Newsletter
+=> newsletter/ep25.md EP-25 FalseTrue Digest
 => newsletter/ep24.md EP-24 FalseTrue Digest
 => newsletter/ep23.gmi EP-23 FalseTrue Digest
 => newsletter/ep22.gmi EP-22 FalseTrue Digest
@@ -166,6 +167,7 @@
 => story/2017-07-31-roem-wordpress.gmi Roem на Wordpress
 
 ## Tools
+=> tools/2026-06-07-mac-toggle-mic.md MacOS toggle microphone unix-way
 => tools/2025-11-10-tools-im-using.gmi Tools I am using
 => tools/2023-11-27-logseq.md LogSeq - notes taking application
 => tools/2023-03-03-teams-vs-slack.gmi Teams vs Slack

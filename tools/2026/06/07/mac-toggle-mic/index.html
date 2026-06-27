@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>MacOS toggle microphone unix-way | FalseTrue</title>
+
+<!-- Begin Bridgetown SEO tag v6.0.0 -->
+<title>MacOS toggle microphone unix-way | FalseTrue</title>
+<meta property="og:title" content="MacOS toggle microphone unix-way" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Scripts of cyberdaemon" />
+<meta property="og:description" content="Scripts of cyberdaemon" />
+<link rel="canonical" href="https://falsetrue.io/tools/2026/06/07/mac-toggle-mic/" />
+<meta property="og:url" content="https://falsetrue.io/tools/2026/06/07/mac-toggle-mic/" />
+<meta property="og:site_name" content="FalseTrue" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-06-07T14:00:00+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="MacOS toggle microphone unix-way" />
+<!-- End Bridgetown SEO tag -->
+
+
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/_bridgetown/static/index.US7ZTWYZ.css" />
+<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+<script src="/_bridgetown/static/index.42K5JGTD.js" defer></script>
+
+<link type="application/atom+xml" rel="alternate" href="https://falsetrue.io/feed.xml" title="FalseTrue" />
+
+  </head>
+  <body class="post ">
+    <nav>
+  <ul>
+    <li><a href="/"><span class="text-green-400">False!</span><span class="text-cyan-300">True</span></a></li>
+    <li><a href="/">Home</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/feed">Feed</a></li>
+    <li><a href="/projects">Projects</a></li>
+    <li><a href="/archive">Archive</a></li>
+    <li><a href="/bookshelf">Bookshelf</a></li>
+    <li><a href="/photography">Photography</a></li>
+    <li><a href="/halloffame">Hall of fame</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/feed.xml"><i class="fa fa-rss text-[orange]"></i>&nbsp;RSS</a></li>
+  </ul>
+</nav>
+
+
+    <main>
+      <section class="mb-8">
+    <div class="mb-4 flex flex-row gap-2 items-center">
+           <div>
+               <div class="text-xs text-gray-400">Published at: June 07, 2026</div>
+           </div>
+           <div class="category-block">
+            <span>Category:</span>
+                    <a href="/categories/tools" class="badge-category badge-tools">tools</a>
+        </div>
+        <div class="tags-block">
+            <span>Tags:</span>
+                <a href="/tags/tools" class="badge-tag">#tools</a>
+                <a href="/tags/mac" class="badge-tag">#mac</a>
+                <a href="/tags/hardware" class="badge-tag">#hardware</a>
+        </div>
+    </div>
+    <div class="flex gap-2">
+        <div class="flex flex-col gap-2">
+            <h1 class="text-4xl">MacOS toggle microphone unix-way</h1>
+        </div>
+    </div>
+</section>
+<article class="prose prose-slate prose-pre:bg-gray-100 prose-pre:text-gray-500 max-w-full prose-h1:leading-relaxed">
+    <p>I got tired of not having a dedicated mute button on macOS. Most solutions involve installing some Electron-based app that sits in your menu bar, phones home, and asks for accessibility permissions. I just wanted to press a key and have the mic toggle.</p>
+
+<p>I recently picked up a Keychron Q3 HE (80% TKL layout) — a solid mechanical board (HE stands for Hall Effect switches) with a knob and a row of media/function keys at the top right corner, including a dedicated microphone button (at least it is a button with microophone icon on it)</p>
+
+<p><img src="/images/Keychron_Q3_HE_QMK_Wireless_Custom_Keyboard_Carbon_Black.webp" alt="Keychron Q3 HE" /></p>
+
+<p>The mic button looks great on the keyboard, but macOS has no idea what to do with it out of the box. It just sends Siri keycode that nothing listens to in my case. 
+The Keychron web configurator lets you remap any key though — so I remapped the mic button to F19, a keycode that macOS recognizes but nothing uses by default.</p>
+
+<p><img src="/images/keychron-q3-btn.jpeg" alt="Keychron mic button" /></p>
+
+<p><img src="/images/keychron-setup.jpeg" alt="Keychron web configurator — mic key remapped to F19" /></p>
+
+<p>Now I needed something on the macOS side to actually catch F19 and toggle the mic. So I built <a href="https://github.com/noroot/mac-toggle-mic">mac-toggle-mic</a> — a tiny shell script + a Swift OSD overlay, glued together with Automator.</p>
+
+<h3 id="how-it-works">How it works</h3>
+
+<p>The core is a short zsh script that talks to macOS via <code class="highlighter-rouge">osascript</code>:</p>
+
+<div class="language-zsh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/zsh</span>
+
+<span class="nv">current</span><span class="o">=</span><span class="s2">"</span><span class="si">$(</span>osascript <span class="nt">-e</span> <span class="s1">'input volume of (get volume settings)'</span><span class="si">)</span><span class="s2">"</span>
+
+<span class="k">if</span> <span class="o">[</span> <span class="s2">"</span><span class="nv">$current</span><span class="s2">"</span> <span class="nt">-eq</span> 0 <span class="o">]</span><span class="p">;</span> <span class="k">then
+  </span>osascript <span class="nt">-e</span> <span class="s1">'set volume input volume 70'</span>
+  ~/.local/bin/mic-osd <span class="s2">"MIC ON"</span> &amp;
+  afplay /System/Library/Sounds/Pop.aiff <span class="o">&gt;</span>/dev/null 2&gt;&amp;1 &amp;
+<span class="k">else
+  </span>osascript <span class="nt">-e</span> <span class="s1">'set volume input volume 0'</span>
+  ~/.local/bin/mic-osd <span class="s2">"MIC MUTED"</span> &amp;
+  afplay /System/Library/Sounds/Bottle.aiff <span class="o">&gt;</span>/dev/null 2&gt;&amp;1 &amp;
+<span class="k">fi</span>
+</code></pre></div></div>
+
+<p>It reads the current input volume, flips it between 0 and 70, plays a system sound for feedback, and fires off an OSD notification. That’s it. No daemon, no background process, no config files.</p>
+
+<h3 id="the-osd">The OSD</h3>
+
+<p>I wanted a visual indicator too — a brief overlay in the center of the screen, like the built-in brightness/volume HUD. macOS doesn’t expose that API, so I wrote a minimal Swift program that creates a borderless floating window, shows a label for 0.85 seconds, and exits:</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">let</span> <span class="nv">window</span> <span class="o">=</span> <span class="kt">NSWindow</span><span class="p">(</span>
+    <span class="nv">contentRect</span><span class="p">:</span> <span class="n">rect</span><span class="p">,</span>
+    <span class="nv">styleMask</span><span class="p">:</span> <span class="p">[</span><span class="o">.</span><span class="n">borderless</span><span class="p">],</span>
+    <span class="nv">backing</span><span class="p">:</span> <span class="o">.</span><span class="n">buffered</span><span class="p">,</span>
+    <span class="nv">defer</span><span class="p">:</span> <span class="kc">false</span>
+<span class="p">)</span>
+<span class="n">window</span><span class="o">.</span><span class="n">level</span> <span class="o">=</span> <span class="o">.</span><span class="n">floating</span>
+<span class="n">window</span><span class="o">.</span><span class="n">isOpaque</span> <span class="o">=</span> <span class="kc">false</span>
+<span class="n">window</span><span class="o">.</span><span class="n">backgroundColor</span> <span class="o">=</span> <span class="kt">NSColor</span><span class="o">.</span><span class="n">black</span><span class="o">.</span><span class="nf">withAlphaComponent</span><span class="p">(</span><span class="mf">0.78</span><span class="p">)</span>
+<span class="n">window</span><span class="o">.</span><span class="n">ignoresMouseEvents</span> <span class="o">=</span> <span class="kc">true</span>
+</code></pre></div></div>
+
+<p>No XIBs, no storyboards, no SwiftUI — just raw AppKit. The binary compiles with <code class="highlighter-rouge">swiftc</code> and has zero dependencies.</p>
+
+<h3 id="binding-it-to-a-key">Binding it to a key</h3>
+
+<p>This is the slightly annoying part. macOS doesn’t let you bind arbitrary scripts to global hotkeys natively. The workaround:</p>
+
+<ol>
+  <li>Create an Automator <strong>Quick Action</strong> that runs the shell script</li>
+  <li>Set it to receive <strong>no input</strong> in <strong>any application</strong> (important — if you leave the default “text” input, it won’t trigger globally)</li>
+  <li>Go to System Settings → Keyboard → Keyboard Shortcuts → Services and assign your key</li>
+</ol>
+
+<p>I remapped my Keychron’s mic button to F19 using the keyboard’s web configurator, then bound F19 to the Quick Action. Works everywhere — Zoom, Meet, Slack huddles, terminal, whatever.</p>
+
+<h3 id="why-not-just-use-an-app">Why not just use an app?</h3>
+
+<p>Because this is 15 lines of shell and 40 lines of Swift. It does exactly one thing. It doesn’t run in the background. It doesn’t need accessibility permissions. It doesn’t auto-update. It doesn’t have a settings window. The unix way — small, composable, transparent.</p>
+
+<p>One caveat: setting input volume to 0 doesn’t disable the microphone at the hardware level. Apps will still see the mic as available, they just won’t get any audio. For my use case (not even case, I just want to have fun to made it possible) - not accidentally broadcasting while on mute - this is fine.</p>
+
+<p>Source: <a href="https://github.com/noroot/mac-toggle-mic">github.com/noroot/mac-toggle-mic</a></p>
+
+</article>
+
+<div class="my-[100px] ">
+    <h2 class="text-2xl mb-2">Comments</h2>
+
+    <script data-isso="https://comments.falsetrue.io/"
+            src="https://comments.falsetrue.io/js/embed.min.js"></script>
+
+    <section id="isso-thread">
+        <noscript>Javascript needs to be activated to view comments.</noscript>
+    </section>
+
+</div>
+
+    </main>
+
+    <footer class="text-xs pt-8 my-8 px-8">
+    <div>
+        <div>
+            Dmitry Ro © 2003 - 2026. All rights reserved.<br>
+            Копирование и распрастранение страницы разрешено только в оригинальном не изменном виде, включая это сообщение.
+            Verbatim copying and redistribution of this entire page are permitted provided this notice is preserved.
+            Verbatim copying and redistribution of any of the photos in the photos subdirectory is permitted under the <a href="http://creativecommons.org/licenses/by-nd/3.0/" rel="nofollow"> Creative Commons Noderivs license version 3.0</a> or later.
+            <div><a href="/pgp.key.txt" rel="pgpkey authn">PGP Key</a></div>
+        </div>
+        <div class="flex mx-auto my-3 items-center justify-center gap-1">
+            <div><a href="https://webmentions.io" target="_blank" class="inline"><img src="/images/webmention.png" alt="Webmentions"></a></div>
+            <div><a href="https://indieweb.org" target="_blank"><img src="/images/indieweb.png" alt="indieweb"></a></div>
+            <div><a href="https://microformats.org" target="_blank"><img src="/images/microformats.png" alt="microformats"></a></div>
+            <div><a href="https://creativecommons.org/licenses/by/3.0/" target="_blank"><img src="/images/cc-commons.png" alt="cc-commons"></a></div>
+            <div><img src="/images/w3c-valid-html.png" alt="valid w3c"></div>
+        </div>
+        <div class="mt-1">
+            <a href="https://xn--sr8hvo.ws/previous">←</a>
+            An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
+            <a href="https://xn--sr8hvo.ws/next">→</a>
+        </div>
+    </div>
+</footer>
+
+  </body>
+</html>

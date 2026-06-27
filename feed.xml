@@ -1,4 +1,142 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://bridgetownrb.com/" version="1.3.4">Bridgetown</generator><link href="https://falsetrue.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://falsetrue.io/" rel="alternate" type="text/html" /><updated>2026-04-17T20:18:51+02:00</updated><id>https://falsetrue.io/feed.xml</id><title type="html">FalseTrue</title><subtitle>Scripts of cyberdaemon</subtitle><entry xml:lang="en"><title type="html">EP-24 FalseTrue Digest</title><link href="https://falsetrue.io/newsletter/2026/04/17/ep24/" rel="alternate" type="text/html" title="EP-24 FalseTrue Digest" /><published>2026-04-17T02:00:00+02:00</published><updated>2026-04-17T02:00:00+02:00</updated><id>repo://posts.collection/_posts/ep24.md</id><content type="html" xml:base="https://falsetrue.io/newsletter/2026/04/17/ep24/">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://bridgetownrb.com/" version="1.3.4">Bridgetown</generator><link href="https://falsetrue.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://falsetrue.io/" rel="alternate" type="text/html" /><updated>2026-06-27T10:21:51+02:00</updated><id>https://falsetrue.io/feed.xml</id><title type="html">FalseTrue</title><subtitle>Scripts of cyberdaemon</subtitle><entry xml:lang="en"><title type="html">EP-25 FalseTrue Digest</title><link href="https://falsetrue.io/newsletter/2026/06/27/ep25/" rel="alternate" type="text/html" title="EP-25 FalseTrue Digest" /><published>2026-06-27T02:00:00+02:00</published><updated>2026-06-27T02:00:00+02:00</updated><id>repo://posts.collection/_posts/ep25.md</id><content type="html" xml:base="https://falsetrue.io/newsletter/2026/06/27/ep25/">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+&lt;!--- Introduction paragraph ---&gt;
+&lt;p&gt;Hello everybody. This is Episode-25 of FalseTrue Digest.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/newsletter/ep25.png&quot; alt=&quot;/images/newsletter/ep25.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here is a fresh batch of interesting articles from around the internet. Lots happening in the kernel world with AI discussions, and the self-hosting scene keeps growing.&lt;/p&gt;
+
+&lt;h2 id=&quot;stories&quot;&gt;Stories&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://naclcon.com/&quot;&gt;https://naclcon.com/&lt;/a&gt; - NaClCON, the History of Hacking conference, held May 31-June 2 at Carolina Beach — celebrating the people and moments that shaped hacker culture&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://lwn.net/Articles/1073761/&quot;&gt;https://lwn.net/Articles/1073761/&lt;/a&gt; - Dirk Hohndel and Linus Torvalds fireside chat at Open Source Summit NA 2026 discussing AI’s impact on kernel development — Torvalds notes 20% more commits in recent releases&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://vcfed.org/events/vintage-computer-festival-east/&quot;&gt;https://vcfed.org/events/vintage-computer-festival-east/&lt;/a&gt; - VCF East 2026 at InfoAge celebrating the era when computing moved from labs into homes and classrooms&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://selfh.st/weekly/2026-05-22/&quot;&gt;https://selfh.st/weekly/2026-05-22/&lt;/a&gt; - Plex tripling its lifetime pass price to $750 starting July 1 — sparking debate about the value of self-hosted media alternatives&lt;/p&gt;
+
+&lt;h2 id=&quot;programming&quot;&gt;Programming&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blog.herlein.com/post/programming-languages-intersection/&quot;&gt;https://blog.herlein.com/post/programming-languages-intersection/&lt;/a&gt; - Greg Herlein on how five factors now drive language choice: adoption, job market, LLM code gen quality, concurrency, and deployment complexity&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/emacs-elfeed/elfeed/discussions/586&quot;&gt;https://github.com/emacs-elfeed/elfeed/discussions/586&lt;/a&gt; - Elfeed preparing for 4.0 release with renamed hooks, Compat 31 dependency, and groundwork for a new database format&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://news.ycombinator.com/item?id=48085993&quot;&gt;https://news.ycombinator.com/item?id=48085993&lt;/a&gt; - Ask HN: What are you working on? (May 2026) — the usual treasure trove of side projects and experiments&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://forgejo.org/2026-01-release-v14-0/&quot;&gt;https://forgejo.org/2026-01-release-v14-0/&lt;/a&gt; - Forgejo v14.0 released with inline issue filters, CodeMirror replacing the old web editor, and stateless CSRF protection&lt;/p&gt;
+
+&lt;h2 id=&quot;emacs&quot;&gt;Emacs&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://sachachua.com/blog/2026/06/2026-06-01-emacs-news/&quot;&gt;https://sachachua.com/blog/2026/06/2026-06-01-emacs-news/&lt;/a&gt; - Sacha Chua’s Emacs News roundup for June 2026 — Emacs Carnival theme is “Underappreciated Emacs Built-ins”&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://sachachua.com/blog/2026/05/2026-05-25-emacs-news/&quot;&gt;https://sachachua.com/blog/2026/05/2026-05-25-emacs-news/&lt;/a&gt; - May 25 Emacs news featuring ox-skills for managing AI agent skills in Org-mode&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://sachachua.com/blog/2026/05/2026-05-11-emacs-news/&quot;&gt;https://sachachua.com/blog/2026/05/2026-05-11-emacs-news/&lt;/a&gt; - May 11 Emacs news covering Dired, Doom, Elisp, Org-Roam and new packages&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://sachachua.com/blog/2026/04/june-18-emacs-chat-with-ross-a-baker/&quot;&gt;https://sachachua.com/blog/2026/04/june-18-emacs-chat-with-ross-a-baker/&lt;/a&gt; - Upcoming Emacs Chat with Ross A. Baker scheduled for June 18&lt;/p&gt;
+
+&lt;h2 id=&quot;ai&quot;&gt;AI&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://lwn.net/Articles/1073761/&quot;&gt;https://lwn.net/Articles/1073761/&lt;/a&gt; - Linus Torvalds on AI-generated bug reports flooding the kernel security list — “a love-hate relationship with AI”&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.techloy.com/americas-200-ai-coding-tool-just-met-a-3-chinese-rival-glm-4-7/&quot;&gt;https://www.techloy.com/americas-200-ai-coding-tool-just-met-a-3-chinese-rival-glm-4-7/&lt;/a&gt; - Zhipu AI’s GLM-4.7 open-source coding model scores 84.9% on LiveCodeBench, beating Claude Sonnet 4.5, at $3/month&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.devflokers.com/blog/open-source-ai-projects-may-2026-roundup&quot;&gt;https://www.devflokers.com/blog/open-source-ai-projects-may-2026-roundup&lt;/a&gt; - Open-source AI projects roundup for May 2026 including ARIS adversarial research harness from Shanghai Jiao Tong University&lt;/p&gt;
+
+&lt;h2 id=&quot;unix-linux-bsd-and-free-software-scene&quot;&gt;Unix, Linux, BSD and free software scene&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://lwn.net/Articles/1074172/&quot;&gt;https://lwn.net/Articles/1074172/&lt;/a&gt; - Linux kernel 7.1-rc5 released — development marching on after the 7.0 milestone&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://lwn.net/Articles/1075346/&quot;&gt;https://lwn.net/Articles/1075346/&lt;/a&gt; - LWN discussion on hot patching in the kernel&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://news.tuxmachines.org/n/2026/05/23/mdo_on_FreeBSD_15_and_Moving_to_FreeBSD_From_Ubuntu.shtml&quot;&gt;https://news.tuxmachines.org/n/2026/05/23/mdo_on_FreeBSD_15_and_Moving_to_FreeBSD_From_Ubuntu.shtml&lt;/a&gt; - Moving to FreeBSD 15 from Ubuntu — a user experience perspective&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://news.tuxmachines.org/n/2026/06/03/Sharing_Standards_and_Free_Libre_and_Open_Source_Software.shtml&quot;&gt;https://news.tuxmachines.org/n/2026/06/03/Sharing_Standards_and_Free_Libre_and_Open_Source_Software.shtml&lt;/a&gt; - Discussion on sharing, standards, and the state of free/libre/open-source software in 2026&lt;/p&gt;
+
+&lt;h2 id=&quot;marginal-indie-selfhosted&quot;&gt;Marginal, Indie, Selfhosted&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://selfh.st/weekly/2026-06-05/&quot;&gt;https://selfh.st/weekly/2026-06-05/&lt;/a&gt; - Self-Host Weekly covering Home Assistant 2026.6, Mastodon hosting, Jellyfin, and Proxmox updates&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://selfh.st/weekly/2026-05-29/&quot;&gt;https://selfh.st/weekly/2026-05-29/&lt;/a&gt; - Self-Host Weekly on Ansible-HandsOn and community self-hosting projects&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.makeuseof.com/plex-just-tripled-its-lifetime-price-to-750-heres-the-free-alternative-that-actually-works/&quot;&gt;https://www.makeuseof.com/plex-just-tripled-its-lifetime-price-to-750-heres-the-free-alternative-that-actually-works/&lt;/a&gt; - Plex tripled its lifetime price — here’s the free Jellyfin alternative&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://danubedata.ro/blog/self-host-gitea-forgejo-github-alternative-2026&quot;&gt;https://danubedata.ro/blog/self-host-gitea-forgejo-github-alternative-2026&lt;/a&gt; - Self-hosting Gitea or Forgejo as a lightweight GitHub alternative in 2026&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.opensourcealternatives.to/blog/best-self-hosted-apps&quot;&gt;https://www.opensourcealternatives.to/blog/best-self-hosted-apps&lt;/a&gt; - Best self-hosted apps in 2026 — the community tracked over 1,000 new open-source self-hosted projects in 2025 alone&lt;/p&gt;</content><author><name></name></author><category term="news" /><category term="journal" /><category term="digest" /><category term="emacs" /><category term="c" /></entry><entry><title type="html">MacOS toggle microphone unix-way</title><link href="https://falsetrue.io/tools/2026/06/07/mac-toggle-mic/" rel="alternate" type="text/html" title="MacOS toggle microphone unix-way" /><published>2026-06-07T14:00:00+02:00</published><updated>2026-06-07T14:00:00+02:00</updated><id>repo://posts.collection/_posts/2026-06-07-mac-toggle-mic.md</id><content type="html" xml:base="https://falsetrue.io/tools/2026/06/07/mac-toggle-mic/">&lt;p&gt;I got tired of not having a dedicated mute button on macOS. Most solutions involve installing some Electron-based app that sits in your menu bar, phones home, and asks for accessibility permissions. I just wanted to press a key and have the mic toggle.&lt;/p&gt;
+
+&lt;p&gt;I recently picked up a Keychron Q3 HE (80% TKL layout) — a solid mechanical board (HE stands for Hall Effect switches) with a knob and a row of media/function keys at the top right corner, including a dedicated microphone button (at least it is a button with microophone icon on it)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/Keychron_Q3_HE_QMK_Wireless_Custom_Keyboard_Carbon_Black.webp&quot; alt=&quot;Keychron Q3 HE&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The mic button looks great on the keyboard, but macOS has no idea what to do with it out of the box. It just sends Siri keycode that nothing listens to in my case. 
+The Keychron web configurator lets you remap any key though — so I remapped the mic button to F19, a keycode that macOS recognizes but nothing uses by default.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/keychron-q3-btn.jpeg&quot; alt=&quot;Keychron mic button&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/keychron-setup.jpeg&quot; alt=&quot;Keychron web configurator — mic key remapped to F19&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now I needed something on the macOS side to actually catch F19 and toggle the mic. So I built &lt;a href=&quot;https://github.com/noroot/mac-toggle-mic&quot;&gt;mac-toggle-mic&lt;/a&gt; — a tiny shell script + a Swift OSD overlay, glued together with Automator.&lt;/p&gt;
+
+&lt;h3 id=&quot;how-it-works&quot;&gt;How it works&lt;/h3&gt;
+
+&lt;p&gt;The core is a short zsh script that talks to macOS via &lt;code class=&quot;highlighter-rouge&quot;&gt;osascript&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-zsh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/zsh&lt;/span&gt;
+
+&lt;span class=&quot;nv&quot;&gt;current&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;osascript &lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;input volume of (get volume settings)&apos;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$current&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-eq&lt;/span&gt; 0 &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;then
+  &lt;/span&gt;osascript &lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;set volume input volume 70&apos;&lt;/span&gt;
+  ~/.local/bin/mic-osd &lt;span class=&quot;s2&quot;&gt;&quot;MIC ON&quot;&lt;/span&gt; &amp;amp;
+  afplay /System/Library/Sounds/Pop.aiff &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;/dev/null 2&amp;gt;&amp;amp;1 &amp;amp;
+&lt;span class=&quot;k&quot;&gt;else
+  &lt;/span&gt;osascript &lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;set volume input volume 0&apos;&lt;/span&gt;
+  ~/.local/bin/mic-osd &lt;span class=&quot;s2&quot;&gt;&quot;MIC MUTED&quot;&lt;/span&gt; &amp;amp;
+  afplay /System/Library/Sounds/Bottle.aiff &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;/dev/null 2&amp;gt;&amp;amp;1 &amp;amp;
+&lt;span class=&quot;k&quot;&gt;fi&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;It reads the current input volume, flips it between 0 and 70, plays a system sound for feedback, and fires off an OSD notification. That’s it. No daemon, no background process, no config files.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-osd&quot;&gt;The OSD&lt;/h3&gt;
+
+&lt;p&gt;I wanted a visual indicator too — a brief overlay in the center of the screen, like the built-in brightness/volume HUD. macOS doesn’t expose that API, so I wrote a minimal Swift program that creates a borderless floating window, shows a label for 0.85 seconds, and exits:&lt;/p&gt;
+
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;window&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;NSWindow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;contentRect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;styleMask&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;borderless&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;backing&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;buffered&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;defer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;level&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;floating&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;isOpaque&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;backgroundColor&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;NSColor&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;black&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;withAlphaComponent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.78&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ignoresMouseEvents&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;No XIBs, no storyboards, no SwiftUI — just raw AppKit. The binary compiles with &lt;code class=&quot;highlighter-rouge&quot;&gt;swiftc&lt;/code&gt; and has zero dependencies.&lt;/p&gt;
+
+&lt;h3 id=&quot;binding-it-to-a-key&quot;&gt;Binding it to a key&lt;/h3&gt;
+
+&lt;p&gt;This is the slightly annoying part. macOS doesn’t let you bind arbitrary scripts to global hotkeys natively. The workaround:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Create an Automator &lt;strong&gt;Quick Action&lt;/strong&gt; that runs the shell script&lt;/li&gt;
+  &lt;li&gt;Set it to receive &lt;strong&gt;no input&lt;/strong&gt; in &lt;strong&gt;any application&lt;/strong&gt; (important — if you leave the default “text” input, it won’t trigger globally)&lt;/li&gt;
+  &lt;li&gt;Go to System Settings → Keyboard → Keyboard Shortcuts → Services and assign your key&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I remapped my Keychron’s mic button to F19 using the keyboard’s web configurator, then bound F19 to the Quick Action. Works everywhere — Zoom, Meet, Slack huddles, terminal, whatever.&lt;/p&gt;
+
+&lt;h3 id=&quot;why-not-just-use-an-app&quot;&gt;Why not just use an app?&lt;/h3&gt;
+
+&lt;p&gt;Because this is 15 lines of shell and 40 lines of Swift. It does exactly one thing. It doesn’t run in the background. It doesn’t need accessibility permissions. It doesn’t auto-update. It doesn’t have a settings window. The unix way — small, composable, transparent.&lt;/p&gt;
+
+&lt;p&gt;One caveat: setting input volume to 0 doesn’t disable the microphone at the hardware level. Apps will still see the mic as available, they just won’t get any audio. For my use case (not even case, I just want to have fun to made it possible) - not accidentally broadcasting while on mute - this is fine.&lt;/p&gt;
+
+&lt;p&gt;Source: &lt;a href=&quot;https://github.com/noroot/mac-toggle-mic&quot;&gt;github.com/noroot/mac-toggle-mic&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="tools" /><category term="mac" /><category term="hardware" /></entry><entry xml:lang="en"><title type="html">EP-24 FalseTrue Digest</title><link href="https://falsetrue.io/newsletter/2026/04/17/ep24/" rel="alternate" type="text/html" title="EP-24 FalseTrue Digest" /><published>2026-04-17T02:00:00+02:00</published><updated>2026-04-17T02:00:00+02:00</updated><id>repo://posts.collection/_posts/ep24.md</id><content type="html" xml:base="https://falsetrue.io/newsletter/2026/04/17/ep24/">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
 &lt;!--- Introduction paragraph ---&gt;
 
 &lt;p&gt;Hello everybody. This is Episode-24 of FalseTrue Digest.&lt;/p&gt;
@@ -438,127 +576,4 @@ I’ve updated projects page on my blog &lt;a href=&quot;https://falsetrue.io/pr
 
 &lt;p&gt;&lt;a href=&quot;https://falsetrue.io/person/2024/08/14/terry-davis/&quot;&gt;https://falsetrue.io/person/2024/08/14/terry-davis/&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/persons/TerryDavisBirthday.webp&quot; alt=&quot;/images/persons/TerryDavisBirthday.webp&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="person" /></entry><entry><title type="html">OpenPrintTag - NFC standard for 3d printing spools</title><link href="https://falsetrue.io/share/link/2025/11/14/openprinttag/" rel="alternate" type="text/html" title="OpenPrintTag - NFC standard for 3d printing spools" /><published>2025-11-14T13:00:00+01:00</published><updated>2025-11-14T13:00:00+01:00</updated><id>repo://posts.collection/_posts/2025-11-14-openprinttag.md</id><content type="html" xml:base="https://falsetrue.io/share/link/2025/11/14/openprinttag/">&lt;p&gt;&lt;a href=&quot;https://openprinttag.org/&quot;&gt;https://openprinttag.org/&lt;/a&gt; - An open-source initiative by Prusa Research creating a single smart spool standard that works across all brands and ecosystems. This allows printers and users to read and write data directly on any spool, making 3D printing more reliable and intuitive for everyone.&lt;/p&gt;</content><author><name></name></author><category term="software" /><category term="3dp" /></entry><entry><title type="html">Tools I am using</title><link href="https://falsetrue.io/tools/2025/11/10/tools-im-using/" rel="alternate" type="text/html" title="Tools I am using" /><published>2025-11-10T00:00:00+01:00</published><updated>2025-11-10T00:00:00+01:00</updated><id>repo://posts.collection/_posts/2025-11-10-tools-im-using.markdown</id><content type="html" xml:base="https://falsetrue.io/tools/2025/11/10/tools-im-using/">&lt;p&gt;TBU&lt;/p&gt;
-
-&lt;h2 id=&quot;hardware&quot;&gt;Hardware&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.lenovo.com/us/en/p/laptops/thinkpad/thinkpadx1/22tp2x1x1c8/22tp2x1x1c8&quot;&gt;Thinkpad x1g8&lt;/a&gt; - Best laptop for Linux, slightly outdated in 2025, still doing good job.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.apple.com/fi/newsroom/2021/10/introducing-m1-pro-and-m1-max-the-most-powerful-chips-apple-has-ever-built/&quot;&gt;Macbook Pro M1 Max&lt;/a&gt; - power house for heavy duty development.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;os&quot;&gt;OS&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://debian.org&quot;&gt;Debian GNU/Linux&lt;/a&gt; - My distro of choice for 20 years. Stable, customizable, just works (was’t like that in past).&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.apple.com/os/macos/&quot;&gt;MacOS&lt;/a&gt; - Since M Silicon introduced, you have to try it because it worth it at least as development machine. Apart from that its bloated, and fully controlled.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;development&quot;&gt;Development&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.gnu.org/software/emacs/&quot;&gt;Emacs&lt;/a&gt; - Using emacs for about +15 years, initially it was very hard to adopt, but after 10 years it was essential thing for me.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/doomemacs/doomemacs&quot;&gt;Doom Emacs&lt;/a&gt; - This particule emacs confiugration set is one of the most popular.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://orgmode.org/&quot;&gt;Org-Mode&lt;/a&gt; - Hard to beat tool for information organization, todo lists, and any other text related work, hard to adopt, but worth trying.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://git-scm.com/&quot;&gt;Git&lt;/a&gt; - GIT. If you know you know.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://dbeaver.io/&quot;&gt;DBeaver&lt;/a&gt; - Most feature reach database client, supports pretty much everything&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://software.schmorp.de/pkg/rxvt-unicode.html&quot;&gt;URXVT&lt;/a&gt; - Less bloated terminal&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://iterm2.com/&quot;&gt;iTerm2&lt;/a&gt; - Probably best default choice for MacOS&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.gnu.org/software/make/manual/make.html&quot;&gt;Make&lt;/a&gt; - I use make file for pretty much every project as helper utility to pipline a lot of things.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.postgresql.org/&quot;&gt;PostgreSQL&lt;/a&gt; - Database of choice&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;management&quot;&gt;Management&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.libreoffice.org/&quot;&gt;LibreOffice&lt;/a&gt; - Spreadsheets are still most usable tool in every project.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://camunda.com/platform/modeler/&quot;&gt;Camunda Modeler&lt;/a&gt; - Essential tool for modeling business processes&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://plantuml.com/&quot;&gt;PlantUML&lt;/a&gt; - Most unix-way and to be honest more conviniet way for me to do any type diagram, even very sophsticated.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.redmine.org/&quot;&gt;Redmine&lt;/a&gt; - Old school Project/Task management tool, - for same work you’re doing with fancy modern tools, if you want self hosted, programmable customizable solution this is a good thing. (Especially if you’re a Ruby programmer)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.atlassian.com/software/jira&quot;&gt;Jira&lt;/a&gt; - Industry standard, 90% new comers hate it, but this is skill issue. Despite Jira become more bloated, and worse in UX, it still best tools you can use.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;other&quot;&gt;Other&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Apple_Mail&quot;&gt;Mail.app&lt;/a&gt; - The best option for MacOS, despite a lot of alternative it is still better native option&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.thunderbird.net/&quot;&gt;Thunderbird&lt;/a&gt; - The best open-source option for all platforms.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://firefox.org&quot;&gt;Firefox&lt;/a&gt; - First option for browsing, but it becoming dumber, slower. Still usable though.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://brave.com/&quot;&gt;Brave&lt;/a&gt; - Good second option, which might become primary.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="tools" /><category term="software" /><category term="howto" /></entry><entry xml:lang="en"><title type="html">How and why to disable Spotlight</title><link href="https://falsetrue.io/howto/2025/08/02/disable-spotlight/" rel="alternate" type="text/html" title="How and why to disable Spotlight" /><published>2025-08-02T12:00:00+02:00</published><updated>2025-08-02T12:00:00+02:00</updated><id>repo://posts.collection/_posts/2025-08-02-disable-spotlight.markdown</id><content type="html" xml:base="https://falsetrue.io/howto/2025/08/02/disable-spotlight/">&lt;p&gt;Before knowing how, lets argue about why for a bit.&lt;/p&gt;
-
-&lt;h1 id=&quot;why-&quot;&gt;Why ?&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;Unpredictable Spotlight indexer behaviour, it might start reindexing in any moment espcially after MacOS crashes (yes yes that can happen to if you are advanced user)&lt;/li&gt;
-  &lt;li&gt;Spotlight indexer may slowdown system for unpredictable amount of time.&lt;/li&gt;
-  &lt;li&gt;Spotlight is indexing everything and constructing some meta database to handle all your files, and if files are private your probably don’t wanna have that behavouir.&lt;/li&gt;
-  &lt;li&gt;If you’re attaching external drive with documents it will start indexing it, and all meta data will be used for search (Imagine you have external drive with billion of project source code files, it would be a performance disaster.)&lt;/li&gt;
-  &lt;li&gt;Too many meta leaking to Spotlight, - through it you can search and connect almost everything (which can be fine for average Joe hipster in the cafe).&lt;/li&gt;
-  &lt;li&gt;If you are a software developer then most probably have a lot of source code repositories, some of the may contain several million files, and you certainly do not want to indexing them. (Imagine indexing all dependencies for each project you have, and then you search for file through Spotlight you will get a lot of clutter)&lt;/li&gt;
-  &lt;li&gt;Mail, thousands of letters will be scanned, you accidentally will search through it while launching some application with Spotlight.&lt;/li&gt;
-  &lt;li&gt;You want to save SSD lifetime, because disableing index will reduce amount of operation made with SSD.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;how-&quot;&gt;How ?&lt;/h1&gt;
-
-&lt;p&gt;Check current status of indexing&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo mdutil -s -a
-Password:
-/:
-	Indexing and searching disabled.
-/System/Volumes/Data:
-	Indexing and searching disabled.
-/System/Volumes/Preboot:
-	Indexing enabled.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Set special file to tell Spotlight not to index. You can put that file to any path and it will be excluded from index&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo touch /Volumes/MyExternalDrive/.metadata_never_index
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Clean up existing indexes&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo mdutil -E /Volumes/MyExternalDrive
-sudo mdutil -i off /Volumes/MyExternalDrive
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;You can uncheck all indexing types in Spotlight settings, you don’t need them if you want to complete disable spotlight indexing.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/spotlight/spotlight-settings.jpeg&quot; alt=&quot;Spotlight Settings&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;As you can see, there are even some telemetry gathered for your private files, via “Help Improve Apple to Search” most probably you do not need that, so toggle it off too.&lt;/p&gt;
-
-&lt;p&gt;Oftent times after major and minor updates those settings will be reset by the update, so make sure you check it from time to time until eventually you will decide to disable them all.&lt;/p&gt;
-
-&lt;p&gt;Uncheck spotlight hotkey if you want to use another launcher. (&lt;a href=&quot;https://falsetrue.io/projects/overlauncher/&quot;&gt;OverLauncher&lt;/a&gt; for instance.)&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/spotlight/spotlight-hotkey-disable.jpeg&quot; alt=&quot;Spotlight Hotkey&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;hardcore-mode-sip-must-be-disabled&quot;&gt;Hardcore mode (SIP must be disabled)&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Disable SIP&lt;/li&gt;
-  &lt;li&gt;Make binary not runnable via chmod
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo chmod 000 /System/Library/CoreServices/Search.bundle
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Disable menu spotlight menu icon
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;launchctl unload -w /System/Library/LaunchAgents/com.apple.Spotlight.plist
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;If you can just use Linux/BSD/WhateverNix instead of MacOS, but don’t think &lt;a href=&quot;https://falsetrue.io/howto/2025/07/13/disk-blinking/&quot;&gt;Gnome don’t do similar things&lt;/a&gt; :-)&lt;/p&gt;
-
-&lt;h1 id=&quot;references&quot;&gt;References&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://developer.apple.com/documentation/foundation/spotlight&quot;&gt;Apple Foundation Framework Spotlight reference&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/npm/cli/issues/549&quot;&gt;NPM adding noindex to his node_modules folder&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://falsetrue.io/projects/overlauncher/&quot;&gt;OverLauncher&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="sec" /><category term="mac" /><category term="debloat" /></entry></feed>
+&lt;p&gt;&lt;img src=&quot;/images/persons/TerryDavisBirthday.webp&quot; alt=&quot;/images/persons/TerryDavisBirthday.webp&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="person" /></entry><entry><title type="html">OpenPrintTag - NFC standard for 3d printing spools</title><link href="https://falsetrue.io/share/link/2025/11/14/openprinttag/" rel="alternate" type="text/html" title="OpenPrintTag - NFC standard for 3d printing spools" /><published>2025-11-14T13:00:00+01:00</published><updated>2025-11-14T13:00:00+01:00</updated><id>repo://posts.collection/_posts/2025-11-14-openprinttag.md</id><content type="html" xml:base="https://falsetrue.io/share/link/2025/11/14/openprinttag/">&lt;p&gt;&lt;a href=&quot;https://openprinttag.org/&quot;&gt;https://openprinttag.org/&lt;/a&gt; - An open-source initiative by Prusa Research creating a single smart spool standard that works across all brands and ecosystems. This allows printers and users to read and write data directly on any spool, making 3D printing more reliable and intuitive for everyone.&lt;/p&gt;</content><author><name></name></author><category term="software" /><category term="3dp" /></entry></feed>

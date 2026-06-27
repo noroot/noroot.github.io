@@ -5,10 +5,26 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ============ [ 2026-04-17 ] ==
+== [Gemini capsule] * ============ [ 2026-06-27 ] ==
 ```
 => / ← Back
 # Blog
+
+* ✉️ newsletter
+27-JUN-2026 - EP-25 FalseTrue Digest
+
+    #news
+    #journal
+    #digest
+    #emacs
+    #c
+
+* tools
+ 7-JUN-2026 - MacOS toggle microphone unix-way
+
+    #tools
+    #mac
+    #hardware
 
 * ✉️ newsletter
 17-APR-2026 - EP-24 FalseTrue Digest
