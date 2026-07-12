@@ -86,7 +86,10 @@
     </div>
 </section>
 <article class="prose prose-slate prose-pre:bg-gray-100 prose-pre:text-gray-500 max-w-full prose-h1:leading-relaxed">
-    <h2 id="changelog">Changelog</h2>
+    <p>A Chrome browser extension that allows you to select and hide any element on web pages. Hidden elements persist across visits to the same website. Make web less bloated for you.</p>
+
+<h2 id="changelog">Changelog</h2>
+
 <h3 id="2025-11-14">2025-11-14</h3>
 <ul>
   <li>Release</li>
@@ -97,10 +100,19 @@
   <li>FEATURE: Hide images with hover unlock</li>
 </ul>
 
+<h3 id="2026-07-10-v113">2026-07-10 (v1.1.3)</h3>
+<ul>
+  <li><strong>Tab Limit</strong>: Added configurable tab limit setting (0 = unlimited). Pinned tabs are excluded from the count.</li>
+  <li>When the limit is reached, new tabs are automatically prevented from opening (closed immediately).</li>
+  <li>The last unpinned tab is highlighted with a yellow tab group labeled “LIMIT” to indicate the boundary.</li>
+  <li>Setting is accessible from the popup UI and persists via Chrome sync storage.</li>
+</ul>
+
 <h2 id="features">Features</h2>
 
 <ul>
   <li><strong>Master Toggle</strong>: Enable or disable all DebloatWeb features for a site with one click</li>
+  <li><strong>Hide Images Mode</strong>: Hide all images and reveal them only on hover - perfect for reducing clutter</li>
   <li><strong>Click to Hide</strong>: Select any element on a page and hide it with a single click</li>
   <li><strong>Persistent Storage</strong>: Hidden elements remain hidden when you reload or revisit the page</li>
   <li><strong>Editable Selectors</strong>: Click on any CSS selector to edit it in place for fine-tuning</li>
@@ -112,6 +124,185 @@
   <li><strong>Per-Website Storage</strong>: Hidden elements and custom CSS are stored separately for each domain</li>
   <li><strong>Refresh Styles</strong>: Manually refresh and reapply all styles when needed</li>
 </ul>
+
+<h2 id="installation">Installation</h2>
+
+<ol>
+  <li>Open Chrome and navigate to <code class="highlighter-rouge">chrome://extensions/</code></li>
+  <li>Enable “Developer mode” using the toggle in the top-right corner</li>
+  <li>Click “Load unpacked”</li>
+  <li>Select the <code class="highlighter-rouge">./src/debloatweb</code> directory</li>
+  <li>The extension should now appear in your extensions list</li>
+</ol>
+
+<h2 id="usage">Usage</h2>
+
+<h3 id="enabledisable-debloatweb">Enable/Disable DebloatWeb</h3>
+
+<p>At the top of the popup, you’ll find toggle switches for controlling DebloatWeb features:</p>
+
+<p><strong>DebloatWeb Toggle:</strong></p>
+<ul>
+  <li><strong>Enabled</strong> (green toggle): All hidden elements and custom CSS are applied</li>
+  <li><strong>Disabled</strong> (gray toggle): All hidden elements and custom CSS are removed, but settings are preserved</li>
+  <li>This allows you to quickly see the original page without losing your configuration</li>
+</ul>
+
+<p><strong>Hide Images Toggle:</strong></p>
+<ul>
+  <li><strong>On</strong> (green toggle): All images on the page are hidden by default</li>
+  <li>Images become visible when you hover over them</li>
+  <li>Useful for reducing visual clutter and saving bandwidth</li>
+  <li><strong>Off</strong> (gray toggle): All images are visible normally</li>
+  <li>Settings persist per domain</li>
+</ul>
+
+<h3 id="hiding-elements">Hiding Elements</h3>
+
+<p><strong>Method 1: Using the Extension Popup</strong></p>
+<ol>
+  <li>Click the DebloatWeb extension icon in your browser toolbar</li>
+  <li>Click the “Start Hiding Elements” button</li>
+  <li>Hover over any element on the page (it will be highlighted with a blue border)</li>
+  <li>Click the element to hide it</li>
+  <li>Press ESC or click “Stop Hiding Elements” to exit selection mode</li>
+</ol>
+
+<p><strong>Method 2: Using the Keyboard Shortcut</strong></p>
+<ol>
+  <li>Press <code class="highlighter-rouge">Alt+Shift+H</code> to enter selection mode</li>
+  <li>Hover and click elements to hide them</li>
+  <li>Press ESC or <code class="highlighter-rouge">Alt+Shift+H</code> again to exit</li>
+</ol>
+
+<h3 id="managing-hidden-elements">Managing Hidden Elements</h3>
+
+<ol>
+  <li>Click the DebloatWeb extension icon to open the popup</li>
+  <li>You’ll see a list of all hidden elements on the current page</li>
+  <li>Click “Unhide” next to any element to restore it</li>
+  <li>Click “Clear All on This Page” to restore all hidden elements</li>
+</ol>
+
+<h3 id="editing-selectors">Editing Selectors</h3>
+
+<ol>
+  <li>In the popup, click on any CSS selector to edit it</li>
+  <li>Modify the selector text as needed</li>
+  <li>Press Enter to save or ESC to cancel</li>
+  <li>The selector will be validated and applied immediately</li>
+  <li>Invalid selectors will be rejected with an error message</li>
+</ol>
+
+<h3 id="refreshing-styles">Refreshing Styles</h3>
+
+<ol>
+  <li>Click the refresh icon (🔄) next to the element count</li>
+  <li>This will reapply all hidden element styles from storage</li>
+  <li>Useful when page content changes dynamically or after editing selectors</li>
+  <li>The button will animate to confirm the refresh</li>
+</ol>
+
+<h3 id="custom-css">Custom CSS</h3>
+
+<ol>
+  <li>Scroll to the “Custom CSS for This Site” section in the popup</li>
+  <li>Write any valid CSS in the textarea (e.g., <code class="highlighter-rouge">.ads { display: none !important; }</code>)</li>
+  <li>Click “Apply CSS” to inject the styles into the page</li>
+  <li>Custom CSS is saved per domain and persists across visits</li>
+  <li>Click “Clear CSS” to remove all custom styles for the current site</li>
+  <li>The textarea supports standard CSS syntax with autocomplete disabled for better control</li>
+</ol>
+
+<h3 id="visual-indicators">Visual Indicators</h3>
+
+<ul>
+  <li><strong>Blue highlight</strong>: Appears when hovering over an element in selection mode</li>
+  <li><strong>“Click to hide” tooltip</strong>: Shows above the highlighted element</li>
+  <li><strong>Notification messages</strong>: Appear in the top-right corner when hiding/unhiding elements</li>
+  <li><strong>Crosshair cursor</strong>: Indicates selection mode is active</li>
+</ul>
+
+<h2 id="technical-details">Technical Details</h2>
+
+<h3 id="file-structure">File Structure</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>debloatweb/
+├── manifest.json       # Extension configuration
+├── popup.html          # Extension popup interface
+├── popup.css           # Popup styling
+├── popup.js            # Popup functionality
+├── content.js          # Page interaction script
+├── background.js       # Background service worker
+├── styles.css          # Injected page styles
+├── icons/              # Extension icons
+│   ├── icon16.png
+│   ├── icon48.png
+│   └── icon128.png
+└── README.md          # This file
+</code></pre></div></div>
+
+<h3 id="how-it-works">How It Works</h3>
+
+<ol>
+  <li><strong>Content Script</strong> (<code class="highlighter-rouge">content.js</code>): Runs on every page and handles element selection, highlighting, and hiding</li>
+  <li><strong>Popup</strong> (<code class="highlighter-rouge">popup.html/js/css</code>): Provides the user interface for managing hidden elements</li>
+  <li><strong>Background Script</strong> (<code class="highlighter-rouge">background.js</code>): Handles keyboard shortcuts and extension events</li>
+  <li><strong>Storage</strong>: Uses Chrome’s <code class="highlighter-rouge">chrome.storage.sync</code> API to persist hidden elements across devices</li>
+  <li><strong>CSS Injection</strong>: Applies <code class="highlighter-rouge">display: none !important</code> to hidden elements via dynamically injected CSS rules</li>
+</ol>
+
+<h3 id="selector-generation">Selector Generation</h3>
+
+<p>The extension generates CSS selectors for elements in the following priority:</p>
+<ol>
+  <li>ID selector (if element has an ID)</li>
+  <li>Class selector (if unique)</li>
+  <li>nth-child selector (for specific positioning)</li>
+  <li>Tag name (fallback)</li>
+</ol>
+
+<p>This ensures hidden elements can be reliably identified even after page reloads.</p>
+
+<h2 id="limitations">Limitations</h2>
+
+<ul>
+  <li>Some websites use dynamic content loading that may regenerate elements with different selectors</li>
+  <li>Extremely dynamic sites (like single-page apps) may require re-hiding elements after navigation</li>
+  <li>The extension respects Chrome’s storage limits (sync storage has a 100KB quota)</li>
+</ul>
+
+<h2 id="privacy">Privacy</h2>
+
+<ul>
+  <li>All data is stored locally in your Chrome browser</li>
+  <li>No data is sent to external servers</li>
+  <li>If using Chrome sync, your hidden elements list syncs across your Chrome browsers</li>
+</ul>
+
+<h2 id="troubleshooting">Troubleshooting</h2>
+
+<p><strong>Extension not working on a page:</strong></p>
+<ul>
+  <li>Refresh the page after installing the extension</li>
+  <li>Some Chrome internal pages (like chrome://extensions) block content scripts</li>
+</ul>
+
+<p><strong>Hidden elements reappear:</strong></p>
+<ul>
+  <li>Check if the website uses dynamic content loading</li>
+  <li>Try generating a more specific selector by re-hiding the element</li>
+</ul>
+
+<p><strong>Keyboard shortcut not working:</strong></p>
+<ul>
+  <li>Check Chrome’s extension shortcuts at <code class="highlighter-rouge">chrome://extensions/shortcuts</code></li>
+  <li>Ensure no other extension is using the same shortcut</li>
+</ul>
+
+<h2 id="license">License</h2>
+
+<p>This extension is provided as-is for personal use.</p>
 
 <h2 id="screenshots">Screenshots</h2>
 <p><img src="/images/projects/debloatweb/debloatweb.jpeg" alt="" /></p>
