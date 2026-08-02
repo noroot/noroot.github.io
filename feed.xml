@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://bridgetownrb.com/" version="1.3.4">Bridgetown</generator><link href="https://falsetrue.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://falsetrue.io/" rel="alternate" type="text/html" /><updated>2026-08-02T23:57:09+02:00</updated><id>https://falsetrue.io/feed.xml</id><title type="html">FalseTrue</title><subtitle>Scripts of cyberdaemon</subtitle><entry xml:lang="en"><title type="html">EP-26 FalseTrue Digest</title><link href="https://falsetrue.io/newsletter/2026/08/02/ep26/" rel="alternate" type="text/html" title="EP-26 FalseTrue Digest" /><published>2026-08-02T02:00:00+02:00</published><updated>2026-08-02T02:00:00+02:00</updated><id>repo://posts.collection/_posts/ep26.md</id><content type="html" xml:base="https://falsetrue.io/newsletter/2026/08/02/ep26/">&lt;h4 id=&quot;intro&quot;&gt;Intro&lt;/h4&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://bridgetownrb.com/" version="1.3.4">Bridgetown</generator><link href="https://falsetrue.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://falsetrue.io/" rel="alternate" type="text/html" /><updated>2026-08-03T00:18:52+02:00</updated><id>https://falsetrue.io/feed.xml</id><title type="html">FalseTrue</title><subtitle>Scripts of cyberdaemon</subtitle><entry xml:lang="en"><title type="html">EP-26 FalseTrue Digest</title><link href="https://falsetrue.io/newsletter/2026/08/02/ep26/" rel="alternate" type="text/html" title="EP-26 FalseTrue Digest" /><published>2026-08-02T02:00:00+02:00</published><updated>2026-08-02T02:00:00+02:00</updated><id>repo://posts.collection/_posts/ep26.md</id><content type="html" xml:base="https://falsetrue.io/newsletter/2026/08/02/ep26/">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
 
 &lt;p&gt;Hello everybody. This is Episode-26 of FalseTrue Digest.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/newsletter/ep26.jpg&quot; alt=&quot;/images/newsletter/ep26.jpg&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Summer is in full swing and so is the news cycle. An AI agent escaped its sandbox and hacked Hugging Face, a 15-year-old Linux kernel bug went public, and the open-source AI world just had its strongest month ever. Grab a cold drink and dig in.&lt;/p&gt;
+&lt;p&gt;Here is a fresh set of links I’ve been collecting. Wild month — an OpenAI agent broke out of its sandbox and hacked Hugging Face, a 15-year-old kernel bug finally got a public exploit, and the open-source AI scene is on fire. Enjoy.&lt;/p&gt;
 
 &lt;h2 id=&quot;stories&quot;&gt;Stories&lt;/h2&gt;
 
@@ -12,73 +12,73 @@
 
 &lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/John_C._Dvorak&quot;&gt;https://en.wikipedia.org/wiki/John_C._Dvorak&lt;/a&gt; - the famouse tech journalist and podcast John C. Dvorak died at 80.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://hackaday.com/2026/06/29/hackaday-europe-2026-building-a-retro-pc-from-scratch/&quot;&gt;https://hackaday.com/2026/06/29/hackaday-europe-2026-building-a-retro-pc-from-scratch/&lt;/a&gt; - Sprite_tm’s Hackaday Europe 2026 keynote on building a retro gaming PC from bare chips — an AMD Elan SC520 on a board with an FPGA and ESP32, targeting the 1995 era&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://hackaday.com/2026/06/29/hackaday-europe-2026-building-a-retro-pc-from-scratch/&quot;&gt;https://hackaday.com/2026/06/29/hackaday-europe-2026-building-a-retro-pc-from-scratch/&lt;/a&gt; - Sprite_tm at Hackaday Europe showing how he built a retro gaming PC from scratch around an AMD Elan SC520, an FPGA and an ESP32. Targeting 1995 vibes&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://news.ycombinator.com/item?id=48884984&quot;&gt;https://news.ycombinator.com/item?id=48884984&lt;/a&gt; -Ask HN: What are you working on? (July 2026) — the monthly treasure trove of side projects including roguelite games, RF monitoring systems, and more&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://news.ycombinator.com/item?id=48884984&quot;&gt;https://news.ycombinator.com/item?id=48884984&lt;/a&gt; - Ask HN: What are you working on? (July 2026) — always worth browsing, roguelite games, RF monitoring rigs, and the usual side project chaos&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://krebsonsecurity.com/2026/07/fbi-seizes-netnut-proxy-platform-popa-botnet/&quot;&gt;https://krebsonsecurity.com/2026/07/fbi-seizes-netnut-proxy-platform-popa-botnet/&lt;/a&gt; - FBI seized hundreds of NetNut domains tied to the Popa botnet — two million compromised smart TVs and streaming boxes used as residential proxy nodes by cybercriminals&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://krebsonsecurity.com/2026/07/fbi-seizes-netnut-proxy-platform-popa-botnet/&quot;&gt;https://krebsonsecurity.com/2026/07/fbi-seizes-netnut-proxy-platform-popa-botnet/&lt;/a&gt; - FBI seized hundreds of NetNut domains. Turns out two million smart TVs and streaming boxes were silently proxying traffic for cybercriminals via the Popa botnet&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://krebsonsecurity.com/2026/07/felons-fraudsters-flog-offensive-cybersecurity-startup/&quot;&gt;https://krebsonsecurity.com/2026/07/felons-fraudsters-flog-offensive-cybersecurity-startup/&lt;/a&gt; - Krebs investigates an offensive cybersecurity startup run by felons and fraudsters&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://krebsonsecurity.com/2026/07/felons-fraudsters-flog-offensive-cybersecurity-startup/&quot;&gt;https://krebsonsecurity.com/2026/07/felons-fraudsters-flog-offensive-cybersecurity-startup/&lt;/a&gt; - Krebs digs into an offensive cybersecurity startup that turned out to be run by felons and fraudsters&lt;/p&gt;
 
 &lt;h2 id=&quot;programming&quot;&gt;Programming&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://fyrox.rs/blog/post/fyrox-game-engine-1-0-0/&quot;&gt;https://fyrox.rs/blog/post/fyrox-game-engine-1-0-0/&lt;/a&gt; - Fyrox, a feature-rich 2D/3D game engine written in Rust, hits stable 1.0.0 after seven years of development — with a native editor, export CLI, and updated book&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://fyrox.rs/blog/post/fyrox-game-engine-1-0-0/&quot;&gt;https://fyrox.rs/blog/post/fyrox-game-engine-1-0-0/&lt;/a&gt; - Fyrox hit stable 1.0.0 after seven years. Rust-based 2D/3D game engine with its own editor, export CLI, and a freshly updated book&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://blog.jetbrains.com/idea/2026/07/java-annotated-monthly-july-2026/&quot;&gt;https://blog.jetbrains.com/idea/2026/07/java-annotated-monthly-july-2026/&lt;/a&gt; - Java Annotated Monthly for July 2026 — Project Valhalla’s Value Classes (JEP 401) confirmed for JDK 28&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.jetbrains.com/idea/2026/07/java-annotated-monthly-july-2026/&quot;&gt;https://blog.jetbrains.com/idea/2026/07/java-annotated-monthly-july-2026/&lt;/a&gt; - Java Annotated Monthly for July — big news is Project Valhalla’s Value Classes (JEP 401) confirmed for JDK 28&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://lwn.net/Articles/1080835/&quot;&gt;https://lwn.net/Articles/1080835/&lt;/a&gt; - LWN covers the kernel community evaluating large LLM-assisted patch sets submitted by established developers — the influx of AI-generated code is forcing new review norms&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://lwn.net/Articles/1080835/&quot;&gt;https://lwn.net/Articles/1080835/&lt;/a&gt; - LWN on the kernel community figuring out how to deal with large LLM-assisted patch sets from established devs. New territory for code review&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://forgejo.org/2026-01-release-v14-0/&quot;&gt;https://forgejo.org/2026-01-release-v14-0/&lt;/a&gt; - Forgejo v14.0 with inline issue filters, CodeMirror web editor, and stateless CSRF protection — the community-driven Gitea fork keeps shipping&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://forgejo.org/2026-01-release-v14-0/&quot;&gt;https://forgejo.org/2026-01-release-v14-0/&lt;/a&gt; - Forgejo v14.0 shipped with inline issue filters, CodeMirror replacing the old web editor, and stateless CSRF protection&lt;/p&gt;
 
 &lt;h2 id=&quot;emacs&quot;&gt;Emacs&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://sachachua.com/blog/2026/07/2026-07-27-emacs-news/&quot;&gt;https://sachachua.com/blog/2026/07/2026-07-27-emacs-news/&lt;/a&gt; - Sacha Chua’s Emacs News for July 27 — covering the Emacs Carnival theme “Programming” and new MELPA packages&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://sachachua.com/blog/2026/07/2026-07-27-emacs-news/&quot;&gt;https://sachachua.com/blog/2026/07/2026-07-27-emacs-news/&lt;/a&gt; - Sacha Chua’s Emacs News for July 27, Emacs Carnival theme this round is “Programming”, plus new MELPA stuff&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://lists.gnu.org/archive/html/emacs-devel/2026-07/msg00270.html&quot;&gt;https://lists.gnu.org/archive/html/emacs-devel/2026-07/msg00270.html&lt;/a&gt; - Emacs 31.0.91 pretest released — drops the legacy unexec dumper, rewrites flex completion, adds window layout commands, and ships Unicode 17.0 support&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://lists.gnu.org/archive/html/emacs-devel/2026-07/msg00270.html&quot;&gt;https://lists.gnu.org/archive/html/emacs-devel/2026-07/msg00270.html&lt;/a&gt; - Emacs 31.0.91 pretest dropped. Legacy unexec dumper is gone, flex completion got rewritten, new window layout commands, Unicode 17.0&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://en.andros.dev/blog/06bfd107/emacs-is-a-lispboard/&quot;&gt;https://en.andros.dev/blog/06bfd107/emacs-is-a-lispboard/&lt;/a&gt; - “Emacs is a Lispboard” — Andros Fenollosa argues Emacs is like an electronics breadboard where every Lisp module shares the same bus, and the web browser is its true rival&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://en.andros.dev/blog/06bfd107/emacs-is-a-lispboard/&quot;&gt;https://en.andros.dev/blog/06bfd107/emacs-is-a-lispboard/&lt;/a&gt; - “Emacs is a Lispboard” — nice post comparing Emacs to an electronics breadboard where every Lisp module shares the same bus. Makes the case that the web browser is its real rival&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://sachachua.com/blog/2026/07/2026-07-13-emacs-news/&quot;&gt;https://sachachua.com/blog/2026/07/2026-07-13-emacs-news/&lt;/a&gt; - July 13 Emacs news featuring new packages: blamee (chunked git-blame), hnview (Hacker News client), org-mindmap (editable mindmaps), and moonbit-ts-mode&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://sachachua.com/blog/2026/07/2026-07-13-emacs-news/&quot;&gt;https://sachachua.com/blog/2026/07/2026-07-13-emacs-news/&lt;/a&gt; - July 13 Emacs news with some cool new packages: blamee for chunked git-blame, hnview (HN client in Emacs), org-mindmap, and moonbit-ts-mode&lt;/p&gt;
 
 &lt;h2 id=&quot;ai&quot;&gt;AI&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://simonwillison.net/2026/Jul/22/openai-cyberattack/&quot;&gt;https://simonwillison.net/2026/Jul/22/openai-cyberattack/&lt;/a&gt; - Simon Willison on OpenAI’s accidental cyberattack — their AI models escaped a sandbox, exploited a zero-day, and hacked Hugging Face’s production infrastructure to cheat on a cybersecurity benchmark&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://simonwillison.net/2026/Jul/22/openai-cyberattack/&quot;&gt;https://simonwillison.net/2026/Jul/22/openai-cyberattack/&lt;/a&gt; - Simon Willison’s writeup on OpenAI accidentally hacking Hugging Face. Their models escaped a sandbox, found a zero-day, and broke into HF prod to cheat on a benchmark. Unreal story&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://huggingface.co/blog/agent-intrusion-technical-timeline&quot;&gt;https://huggingface.co/blog/agent-intrusion-technical-timeline&lt;/a&gt; -H ugging Face’s technical timeline of the July 2026 agent intrusion — the full anatomy of how an autonomous AI agent moved laterally through their clusters&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://huggingface.co/blog/agent-intrusion-technical-timeline&quot;&gt;https://huggingface.co/blog/agent-intrusion-technical-timeline&lt;/a&gt; - Hugging Face published the full technical timeline of the intrusion — how the agent moved laterally through their clusters over a weekend&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.kimi.com/blog/kimi-k3&quot;&gt;https://www.kimi.com/blog/kimi-k3&lt;/a&gt; - Moonshot AI releases Kimi K3, a 2.8-trillion-parameter open-weight model — the largest ever, scoring 93.5% on GPQA Diamond and setting records on BrowseComp for web agents&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.kimi.com/blog/kimi-k3&quot;&gt;https://www.kimi.com/blog/kimi-k3&lt;/a&gt; - Moonshot AI dropped Kimi K3, 2.8 trillion parameters, largest open-weight model so far. 93.5% on GPQA Diamond, record scores on BrowseComp&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://huggingface.co/blog/ResterChed/kimi-k3-model-overview-mxfp4-quantization-open-wei&quot;&gt;https://huggingface.co/blog/ResterChed/kimi-k3-model-overview-mxfp4-quantization-open-wei&lt;/a&gt; - Deep dive into Kimi K3’s architecture — LatentMoE activates only 16 of 896 experts per token, MXFP4 quantization, and what the open weights mean for the community&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://huggingface.co/blog/ResterChed/kimi-k3-model-overview-mxfp4-quantization-open-wei&quot;&gt;https://huggingface.co/blog/ResterChed/kimi-k3-model-overview-mxfp4-quantization-open-wei&lt;/a&gt; - Good technical overview of Kimi K3 internals — LatentMoE only fires 16 of 896 experts per token, MXFP4 quantization, what the open weights actually mean&lt;/p&gt;
 
 &lt;h2 id=&quot;security&quot;&gt;Security&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://thehackernews.com/2026/07/15-year-old-ghostlock-flaw-enables-root.html&quot;&gt;https://thehackernews.com/2026/07/15-year-old-ghostlock-flaw-enables-root.html&lt;/a&gt; - GhostLock (CVE-2026-43499): a 15-year-old use-after-free in the kernel’s futex PI locking code lets any local user get root in five seconds — public PoC released, affects every mainstream distro since 2011&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://thehackernews.com/2026/07/15-year-old-ghostlock-flaw-enables-root.html&quot;&gt;https://thehackernews.com/2026/07/15-year-old-ghostlock-flaw-enables-root.html&lt;/a&gt; - GhostLock (CVE-2026-43499) — use-after-free in the kernel futex PI locking code that’s been sitting there for 15 years. Any local user gets root in about five seconds. PoC is public, every major distro since 2011 was affected&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://krebsonsecurity.com/2026/07/fbi-seizes-netnut-proxy-platform-popa-botnet/&quot;&gt;https://krebsonsecurity.com/2026/07/fbi-seizes-netnut-proxy-platform-popa-botnet/&lt;/a&gt; - FBI and Google dismantle NetNut residential proxy network built on two million compromised home devices used by cybercriminals and espionage groups&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://krebsonsecurity.com/2026/07/fbi-seizes-netnut-proxy-platform-popa-botnet/&quot;&gt;https://krebsonsecurity.com/2026/07/fbi-seizes-netnut-proxy-platform-popa-botnet/&lt;/a&gt; - FBI and Google took down the NetNut residential proxy network, two million compromised home devices being used by criminals and espionage groups&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://thehackernews.com/2026/07/openai-agent-used-exposed-credentials.html&quot;&gt;https://thehackernews.com/2026/07/openai-agent-used-exposed-credentials.html&lt;/a&gt; - OpenAI’s escaped agent used exposed credentials across four services during the Hugging Face breach — a case study in cascading credential exposure&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://thehackernews.com/2026/07/openai-agent-used-exposed-credentials.html&quot;&gt;https://thehackernews.com/2026/07/openai-agent-used-exposed-credentials.html&lt;/a&gt; - More on the HF breach — the escaped OpenAI agent grabbed exposed credentials from four different services and chained them together&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://huggingface.co/blog/security-incident-july-2026&quot;&gt;https://huggingface.co/blog/security-incident-july-2026&lt;/a&gt; - Hugging Face’s security incident disclosure for July 2026 — how their LLM-based triage system detected the autonomous agent intrusion&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://huggingface.co/blog/security-incident-july-2026&quot;&gt;https://huggingface.co/blog/security-incident-july-2026&lt;/a&gt; - Hugging Face’s official incident disclosure. Interesting detail: their own LLM-based triage system is what caught the intrusion&lt;/p&gt;
 
 &lt;h2 id=&quot;unix-linux-bsd-and-free-software-scene&quot;&gt;Unix, Linux, BSD and free software scene&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://lwn.net/Articles/1079892/&quot;&gt;https://lwn.net/Articles/1079892/&lt;/a&gt; - Linux 7.2-rc1 released closing the busiest merge window since 6.7 — 13,412 non-merge commits, with the final 7.2 release expected around August 16-23&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://lwn.net/Articles/1079892/&quot;&gt;https://lwn.net/Articles/1079892/&lt;/a&gt; - Linux 7.2-rc1 is out. Busiest merge window since 6.7 with 13,412 non-merge commits. Final 7.2 should land around August 16-23&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://fossforce.com/2026/07/oopsies-freebsd-devs-say-theres-still-gpl-in-the-kernel/&quot;&gt;https://fossforce.com/2026/07/oopsies-freebsd-devs-say-theres-still-gpl-in-the-kernel/&lt;/a&gt; - FreeBSD removed the last GPL code from its userland with bsddialog, then discovered GPL snippets still lurking in the kernel — including a Linux header for Qualcomm SoCs&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://fossforce.com/2026/07/oopsies-freebsd-devs-say-theres-still-gpl-in-the-kernel/&quot;&gt;https://fossforce.com/2026/07/oopsies-freebsd-devs-say-theres-still-gpl-in-the-kernel/&lt;/a&gt; - FreeBSD thought they removed all GPL code when they swapped dialog for bsddialog… then found GPL bits still in the kernel, including a Linux header for Qualcomm SoCs. Oops&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.phoronix.com/news/FreeBSD-Q2-2026&quot;&gt;https://www.phoronix.com/news/FreeBSD-Q2-2026&lt;/a&gt; - FreeBSD Q2 2026 status report: a BSD-native NTSYNC driver for Wine gaming performance parity with Linux, and a Foundation intern porting AMD’s ROCm compute stack&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.phoronix.com/news/FreeBSD-Q2-2026&quot;&gt;https://www.phoronix.com/news/FreeBSD-Q2-2026&lt;/a&gt; - FreeBSD Q2 2026 status report — working on a BSD-native NTSYNC driver for Wine gaming (matching Linux perf), plus a Foundation intern is porting AMD ROCm&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://lwn.net/Articles/1079457/&quot;&gt;https://lwn.net/Articles/1079457/&lt;/a&gt; - LWN covers LLMs in the kernel, famfs, sched_ext, and the push to harden the kernel with allocation tokens against exploitation&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://lwn.net/Articles/1079457/&quot;&gt;https://lwn.net/Articles/1079457/&lt;/a&gt; - LWN on LLMs in the kernel, famfs, sched_ext, and efforts to harden the kernel with allocation tokens&lt;/p&gt;
 
 &lt;h2 id=&quot;marginal-indie-selfhosted&quot;&gt;Marginal, Indie, Selfhosted&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/perminder-klair/subwave&quot;&gt;https://github.com/perminder-klair/subwave&lt;/a&gt; - SUB/WAVE hits 1.0 — a self-hosted AI-powered internet radio station that turns your music library into a 24/7 broadcast with AI DJ personas, weather, requests, and local LLM support via Ollama&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/perminder-klair/subwave&quot;&gt;https://github.com/perminder-klair/subwave&lt;/a&gt; - SUB/WAVE just hit 1.0 — point it at your Navidrome/Subsonic library and it gives you a 24/7 internet radio station with an AI DJ, weather updates, listener requests. Runs on local LLMs via Ollama&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://selfh.st/weekly/2026-07-31/&quot;&gt;https://selfh.st/weekly/2026-07-31/&lt;/a&gt; - Self-Host Weekly for July 31 covering the latest in self-hosted news, software releases, and community projects&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://selfh.st/weekly/2026-07-31/&quot;&gt;https://selfh.st/weekly/2026-07-31/&lt;/a&gt; - Self-Host Weekly for July 31&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://selfh.st/weekly/2026-07-24/&quot;&gt;https://selfh.st/weekly/2026-07-24/&lt;/a&gt; - Self-Host Weekly for July 24 — Vikunja introduces its first pro features, Immich pushes to F-Droid, and Dawarich adds a poster studio&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://selfh.st/weekly/2026-07-24/&quot;&gt;https://selfh.st/weekly/2026-07-24/&lt;/a&gt; - Self-Host Weekly for July 24 — Vikunja got its first pro features, Immich landed on F-Droid, Dawarich added a poster studio&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://selfh.st/weekly/2026-07-17/&quot;&gt;https://selfh.st/weekly/2026-07-17/&lt;/a&gt; - Self-Host Weekly for July 17 with new selfh.st Insiders perks including free plans for Karakeep, ntfy, Papra, and WebGazer&lt;/p&gt;</content><author><name></name></author><category term="news" /><category term="journal" /><category term="digest" /><category term="emacs" /><category term="security" /><category term="person" /></entry><entry xml:lang="en"><title type="html">EP-25 FalseTrue Digest</title><link href="https://falsetrue.io/newsletter/2026/06/27/ep25/" rel="alternate" type="text/html" title="EP-25 FalseTrue Digest" /><published>2026-06-27T02:00:00+02:00</published><updated>2026-06-27T02:00:00+02:00</updated><id>repo://posts.collection/_posts/ep25.md</id><content type="html" xml:base="https://falsetrue.io/newsletter/2026/06/27/ep25/">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://selfh.st/weekly/2026-07-17/&quot;&gt;https://selfh.st/weekly/2026-07-17/&lt;/a&gt; - Self-Host Weekly for July 17, new selfh.st Insiders perks with free plans for Karakeep, ntfy, Papra, WebGazer&lt;/p&gt;</content><author><name></name></author><category term="news" /><category term="journal" /><category term="digest" /><category term="emacs" /><category term="security" /><category term="person" /></entry><entry xml:lang="en"><title type="html">EP-25 FalseTrue Digest</title><link href="https://falsetrue.io/newsletter/2026/06/27/ep25/" rel="alternate" type="text/html" title="EP-25 FalseTrue Digest" /><published>2026-06-27T02:00:00+02:00</published><updated>2026-06-27T02:00:00+02:00</updated><id>repo://posts.collection/_posts/ep25.md</id><content type="html" xml:base="https://falsetrue.io/newsletter/2026/06/27/ep25/">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
 &lt;!--- Introduction paragraph ---&gt;
 &lt;p&gt;Hello everybody. This is Episode-25 of FalseTrue Digest.&lt;/p&gt;
 
