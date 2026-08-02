@@ -5,7 +5,7 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ============ [ 2026-07-12 ] ==
+== [Gemini capsule] * ============ [ 2026-08-02 ] ==
 ```
 # Categories
 
@@ -66,6 +66,7 @@
 => howto/2012-06-19-install-linux-on-palm-lifedrive.gmi Установка linux на Palm LD(Life Drive)
 
 ## Newsletter
+=> newsletter/ep26.md EP-26 FalseTrue Digest
 => newsletter/ep25.md EP-25 FalseTrue Digest
 => newsletter/ep24.md EP-24 FalseTrue Digest
 => newsletter/ep23.gmi EP-23 FalseTrue Digest

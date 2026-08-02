@@ -5,7 +5,7 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ============ [ 2026-07-12 ] ==
+== [Gemini capsule] * ============ [ 2026-08-02 ] ==
 ```
 => / ← Back
 # Tags
@@ -28,6 +28,10 @@
 
 => /tags/emacs #emacs
 
+=> /tags/security #security
+
+=> /tags/person #person
+
 => /tags/c #c
 
 => /tags/tools #tools
@@ -35,8 +39,6 @@
 => /tags/mac #mac
 
 => /tags/hardware #hardware
-
-=> /tags/person #person
 
 => /tags/software #software
 
@@ -83,8 +85,6 @@
 => /tags/ru #ru
 
 => /tags/kubernetes #kubernetes
-
-=> /tags/security #security
 
 => /tags/linkedin #linkedin
 
