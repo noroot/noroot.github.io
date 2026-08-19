@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Ro-Photo | FalseTrue</title>
+
+<!-- Begin Bridgetown SEO tag v6.0.0 -->
+<title>Ro-Photo | FalseTrue</title>
+<meta property="og:title" content="Ro-Photo" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Scripts of cyberdaemon" />
+<meta property="og:description" content="Scripts of cyberdaemon" />
+<link rel="canonical" href="https://falsetrue.io/projects/ro-photo/" />
+<meta property="og:url" content="https://falsetrue.io/projects/ro-photo/" />
+<meta property="og:site_name" content="FalseTrue" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-08-10T02:00:00+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Ro-Photo" />
+<!-- End Bridgetown SEO tag -->
+
+
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/_bridgetown/static/index.US7ZTWYZ.css" />
+<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+<script src="/_bridgetown/static/index.42K5JGTD.js" defer></script>
+
+<link type="application/atom+xml" rel="alternate" href="https://falsetrue.io/feed.xml" title="FalseTrue" />
+
+  </head>
+  <body class="projects ">
+    <nav>
+  <ul>
+    <li><a href="/"><span class="text-green-400">False!</span><span class="text-cyan-300">True</span></a></li>
+    <li><a href="/">Home</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/feed">Feed</a></li>
+    <li><a href="/projects">Projects</a></li>
+    <li><a href="/archive">Archive</a></li>
+    <li><a href="/bookshelf">Bookshelf</a></li>
+    <li><a href="/photography">Photography</a></li>
+    <li><a href="/halloffame">Hall of fame</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/feed.xml"><i class="fa fa-rss text-[orange]"></i>&nbsp;RSS</a></li>
+  </ul>
+</nav>
+
+
+    <main>
+      
+<section class="mb-8">
+    <div class="mb-4 flex flex-row gap-2 items-center">
+           <div>
+               <div class="text-xs text-gray-400">Published at: August 10, 2026</div>
+           </div>
+           <div class="category-block">
+            <span>Category:</span>
+                    <a href="/categories/projects" class="badge-category badge-projects">projects</a>
+        </div>
+        <div class="tags-block">
+            <span>Tags:</span>
+                <a href="/tags/software" class="badge-tag">#software</a>
+                <a href="/tags/projects" class="badge-tag">#projects</a>
+                <a href="/tags/go" class="badge-tag">#go</a>
+                <a href="/tags/photography" class="badge-tag">#photography</a>
+        </div>
+    </div>
+    <div class="flex gap-2">
+        <div class="w-48">
+            <img src="/images/projects/ro-photo/ro-photo-logo.jpg" >
+        </div>
+        <div class="flex flex-col gap-2">
+            <h1 class="text-4xl">Ro-Photo</h1>
+            <p class="text-sm">Static gallery generator with EXIF data</p>
+            <div class="text-sm">
+                    Source code: <a href="https://github.com/noroot/ro-photo" class="text-sm">https://github.com/noroot/ro-photo</a>
+            </div>
+        </div>
+    </div>
+</section>
+<article class="prose prose-slate prose-pre:bg-gray-100 prose-pre:text-gray-500 max-w-full prose-h1:leading-relaxed">
+    <p align="center">
+  <img src="/images/projects/ro-photo/ro-photo-logo.jpg" alt="Ro-Photo" width="200" />
+</p>
+
+<h1 align="center">Ro-Photo</h1>
+
+<p align="center">
+  Go console application that generates a static photo gallery by scanning source directories, extracting EXIF metadata, and organizing photos into a date-based directory structure.
+</p>
+
+<h2 id="overview">Overview</h2>
+
+<p>Ro-Photo reads from one or more source directories containing photos, parses EXIF data from each image, and produces a structured static gallery. The output is organized into a hierarchical directory layout based on the date each photo was taken:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>output/
+  thumbnails/
+    2024/03/15/IMG_1234.jpg
+  2024/
+    03/
+      15/
+        IMG_1234.JPG
+        IMG_1235.JPG
+      22/
+        DSC_0001.CR2
+    07/
+      01/
+        P1000042.JPG
+  Unsorted/
+    IMG_0001.HEIC
+  cameras/
+  about.html
+  index.html
+</code></pre></div></div>
+
+<h2 id="features">Features</h2>
+
+<ul>
+  <li><strong>YAML configuration</strong> — all settings defined in a single config file</li>
+  <li><strong>Multiple source locations</strong> — scan several directories in one run</li>
+  <li><strong>EXIF-based organization</strong> — photos are sorted by date taken (<code class="highlighter-rouge">DateTimeOriginal</code>), not filesystem timestamps</li>
+  <li><strong>Date-structured output</strong> — files are placed into <code class="highlighter-rouge">/YYYY/MM/DD/FILENAME.EXT</code> directories automatically</li>
+  <li><strong>Unsorted handling</strong> — photos without EXIF data are placed in an <code class="highlighter-rouge">Unsorted/</code> directory</li>
+  <li><strong>Thumbnail generation</strong> — JPEG thumbnails created for all formats (including RAW) with proper EXIF orientation</li>
+  <li><strong>SQLite metadata database</strong> — all photo metadata is aggregated into a local SQLite database for fast querying, filtering, and search</li>
+  <li><strong>Static gallery generation</strong> — responsive Tailwind CSS gallery with dark theme, lightbox, and pagination</li>
+  <li><strong>Gallery-only mode</strong> — regenerate HTML pages from existing database without re-scanning</li>
+</ul>
+
+<h2 id="sqlite-database">SQLite Database</h2>
+
+<p>During scanning, all photo metadata is stored in a SQLite database (<code class="highlighter-rouge">photos.db</code> by default). This provides:</p>
+
+<ul>
+  <li>Fast lookups and filtering by date, camera model, lens, GPS coordinates, etc.</li>
+  <li>Incremental updates — only new or modified files are re-scanned</li>
+  <li>A queryable record of the entire photo library independent of the generated gallery</li>
+</ul>
+
+<p>Schema overview:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Column</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">file_path</code></td>
+      <td>Original source path</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">file_name</code></td>
+      <td>Base filename</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">file_size</code></td>
+      <td>Size in bytes</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">date_taken</code></td>
+      <td><code class="highlighter-rouge">DateTimeOriginal</code> from EXIF</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">camera_make</code></td>
+      <td>Camera manufacturer</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">camera_model</code></td>
+      <td>Camera model</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">lens_model</code></td>
+      <td>Lens identifier</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">focal_length</code></td>
+      <td>Focal length in mm</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">aperture</code></td>
+      <td>F-number</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">shutter_speed</code></td>
+      <td>Exposure time</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">iso</code></td>
+      <td>ISO sensitivity</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">gps_lat</code></td>
+      <td>GPS latitude</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">gps_lon</code></td>
+      <td>GPS longitude</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">width</code></td>
+      <td>Image width in pixels</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">height</code></td>
+      <td>Image height in pixels</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">output_path</code></td>
+      <td>Path in the generated gallery</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">thumbnail_path</code></td>
+      <td>Path to the generated thumbnail</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="supported-formats">Supported Formats</h2>
+
+<h3 id="standard-image-formats">Standard Image Formats</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Format</th>
+      <th>Extensions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>JPEG</td>
+      <td><code class="highlighter-rouge">.jpg</code>, <code class="highlighter-rouge">.jpeg</code></td>
+    </tr>
+    <tr>
+      <td>TIFF</td>
+      <td><code class="highlighter-rouge">.tif</code>, <code class="highlighter-rouge">.tiff</code></td>
+    </tr>
+    <tr>
+      <td>HEIF</td>
+      <td><code class="highlighter-rouge">.heic</code>, <code class="highlighter-rouge">.heif</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="raw-formats">RAW Formats</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Brand</th>
+      <th>Extensions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Canon</td>
+      <td><code class="highlighter-rouge">.cr2</code>, <code class="highlighter-rouge">.cr3</code></td>
+    </tr>
+    <tr>
+      <td>Nikon</td>
+      <td><code class="highlighter-rouge">.nef</code>, <code class="highlighter-rouge">.nrw</code></td>
+    </tr>
+    <tr>
+      <td>Sony</td>
+      <td><code class="highlighter-rouge">.arw</code>, <code class="highlighter-rouge">.srf</code>, <code class="highlighter-rouge">.sr2</code></td>
+    </tr>
+    <tr>
+      <td>Fujifilm</td>
+      <td><code class="highlighter-rouge">.raf</code></td>
+    </tr>
+    <tr>
+      <td>Olympus</td>
+      <td><code class="highlighter-rouge">.orf</code></td>
+    </tr>
+    <tr>
+      <td>Panasonic</td>
+      <td><code class="highlighter-rouge">.rw2</code></td>
+    </tr>
+    <tr>
+      <td>Pentax</td>
+      <td><code class="highlighter-rouge">.pef</code></td>
+    </tr>
+    <tr>
+      <td>Samsung</td>
+      <td><code class="highlighter-rouge">.srw</code></td>
+    </tr>
+    <tr>
+      <td>Sigma</td>
+      <td><code class="highlighter-rouge">.x3f</code></td>
+    </tr>
+    <tr>
+      <td>Leica</td>
+      <td><code class="highlighter-rouge">.rwl</code></td>
+    </tr>
+    <tr>
+      <td>Hasselblad</td>
+      <td><code class="highlighter-rouge">.3fr</code>, <code class="highlighter-rouge">.fff</code></td>
+    </tr>
+    <tr>
+      <td>Phase One</td>
+      <td><code class="highlighter-rouge">.iiq</code></td>
+    </tr>
+    <tr>
+      <td>Kodak</td>
+      <td><code class="highlighter-rouge">.kdc</code>, <code class="highlighter-rouge">.dcr</code></td>
+    </tr>
+    <tr>
+      <td>Epson</td>
+      <td><code class="highlighter-rouge">.erf</code></td>
+    </tr>
+    <tr>
+      <td>Mamiya</td>
+      <td><code class="highlighter-rouge">.mef</code></td>
+    </tr>
+    <tr>
+      <td>Minolta</td>
+      <td><code class="highlighter-rouge">.mrw</code></td>
+    </tr>
+    <tr>
+      <td>Leaf</td>
+      <td><code class="highlighter-rouge">.mos</code></td>
+    </tr>
+    <tr>
+      <td>Adobe / Generic</td>
+      <td><code class="highlighter-rouge">.dng</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="gallery">Gallery</h2>
+
+<p>The static gallery is built with Tailwind CSS, producing a responsive, modern interface that works on desktop and mobile. The generated HTML files reference a bundled Tailwind CSS build, so the gallery can be served from any static file host or opened directly from disk.</p>
+
+<p>Generated pages include:</p>
+
+<ul>
+  <li><strong>Index</strong> — overview with year and camera cards</li>
+  <li><strong>Year / Month / Day</strong> — hierarchical date-based browsing with pagination (50 photos per page)</li>
+  <li><strong>Photo detail</strong> — full-size image with EXIF metadata (camera, lens, exposure, GPS) and prev/next navigation</li>
+  <li><strong>Camera</strong> — photos grouped by camera model with pagination</li>
+  <li><strong>Unsorted</strong> — photos without detectable EXIF data</li>
+  <li><strong>About</strong> — project info, usage manual, author, and gallery stats</li>
+</ul>
+
+<h2 id="configuration">Configuration</h2>
+
+<p>The application is configured via a YAML file:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">title</span><span class="pi">:</span> <span class="s">My Photo Gallery</span>           <span class="c1"># gallery title shown in header, footer, and about page</span>
+<span class="na">author</span><span class="pi">:</span> <span class="s">John Doe</span>                   <span class="c1"># author name shown on the about page</span>
+
+<span class="na">sources</span><span class="pi">:</span>                           <span class="c1"># one or more directories to scan for photos</span>
+  <span class="pi">-</span> <span class="s">/path/to/photos/camera</span>
+  <span class="pi">-</span> <span class="s">/path/to/photos/phone</span>
+  <span class="pi">-</span> <span class="s">/mnt/external/photos</span>
+
+<span class="na">output</span><span class="pi">:</span> <span class="s">/path/to/gallery</span>           <span class="c1"># directory where the gallery and organized photos are written</span>
+<span class="na">database</span><span class="pi">:</span> <span class="s">/path/to/photos.db</span>       <span class="c1"># SQLite database path (default: "photos.db")</span>
+<span class="na">templates</span><span class="pi">:</span> <span class="s">/path/to/templates</span>      <span class="c1"># path to HTML templates directory (default: "./templates")</span>
+</code></pre></div></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Setting</th>
+      <th>Required</th>
+      <th>Default</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">title</code></td>
+      <td>No</td>
+      <td><code class="highlighter-rouge">Photo Gallery</code></td>
+      <td>Gallery name displayed in header, footer, and page titles</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">author</code></td>
+      <td>No</td>
+      <td>—</td>
+      <td>Author name shown on the about page</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">sources</code></td>
+      <td>Yes</td>
+      <td>—</td>
+      <td>List of directories to scan for photos</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">output</code></td>
+      <td>Yes</td>
+      <td>—</td>
+      <td>Output directory for organized photos and gallery</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">database</code></td>
+      <td>No</td>
+      <td><code class="highlighter-rouge">photos.db</code></td>
+      <td>Path to the SQLite metadata database</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">templates</code></td>
+      <td>No</td>
+      <td><code class="highlighter-rouge">./templates</code></td>
+      <td>Path to the HTML template files</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="usage">Usage</h2>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ro-photo <span class="nt">--config</span> config.yaml
+</code></pre></div></div>
+
+<h3 id="command-line-flags">Command-line Flags</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Flag</th>
+      <th>Default</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">--config</code></td>
+      <td><code class="highlighter-rouge">config.yaml</code></td>
+      <td>Path to the YAML configuration file</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">--gallery-only</code></td>
+      <td><code class="highlighter-rouge">false</code></td>
+      <td>Skip scanning/copying, only regenerate gallery from the existing database</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="examples">Examples</h3>
+
+<p>Full run — scan sources, extract EXIF, copy files, generate thumbnails, build gallery:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ro-photo <span class="nt">--config</span> config.yaml
+</code></pre></div></div>
+
+<p>Regenerate gallery only (useful after editing templates):</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ro-photo <span class="nt">--config</span> config.yaml <span class="nt">--gallery-only</span>
+</code></pre></div></div>
+
+<h2 id="building">Building</h2>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>go build <span class="nt">-o</span> ro-photo <span class="nb">.</span>
+</code></pre></div></div>
+
+<h2 id="requirements">Requirements</h2>
+
+<ul>
+  <li>Go 1.21+</li>
+  <li>No CGO required — uses pure Go SQLite driver</li>
+</ul>
+
+</article>
+
+<div class="my-[100px] ">
+    <h2 class="text-2xl mb-2">Comments</h2>
+
+    <script data-isso="https://comments.falsetrue.io/"
+            src="https://comments.falsetrue.io/js/embed.min.js"></script>
+
+    <section id="isso-thread">
+        <noscript>Javascript needs to be activated to view comments.</noscript>
+    </section>
+
+</div>
+
+    </main>
+
+    <footer class="text-xs pt-8 my-8 px-8">
+    <div>
+        <div>
+            Dmitry Ro © 2003 - 2026. All rights reserved.<br>
+            Копирование и распрастранение страницы разрешено только в оригинальном не изменном виде, включая это сообщение.
+            Verbatim copying and redistribution of this entire page are permitted provided this notice is preserved.
+            Verbatim copying and redistribution of any of the photos in the photos subdirectory is permitted under the <a href="http://creativecommons.org/licenses/by-nd/3.0/" rel="nofollow"> Creative Commons Noderivs license version 3.0</a> or later.
+            <div><a href="/pgp.key.txt" rel="pgpkey authn">PGP Key</a></div>
+        </div>
+        <div class="flex mx-auto my-3 items-center justify-center gap-1">
+            <div><a href="https://webmentions.io" target="_blank" class="inline"><img src="/images/webmention.png" alt="Webmentions"></a></div>
+            <div><a href="https://indieweb.org" target="_blank"><img src="/images/indieweb.png" alt="indieweb"></a></div>
+            <div><a href="https://microformats.org" target="_blank"><img src="/images/microformats.png" alt="microformats"></a></div>
+            <div><a href="https://creativecommons.org/licenses/by/3.0/" target="_blank"><img src="/images/cc-commons.png" alt="cc-commons"></a></div>
+            <div><img src="/images/w3c-valid-html.png" alt="valid w3c"></div>
+        </div>
+        <div class="mt-1">
+            <a href="https://xn--sr8hvo.ws/previous">←</a>
+            An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
+            <a href="https://xn--sr8hvo.ws/next">→</a>
+        </div>
+    </div>
+</footer>
+
+  </body>
+</html>
