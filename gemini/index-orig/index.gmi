@@ -1,0 +1,119 @@
+```
+  __       _          _                     _
+ / _| __ _| |___  ___| |_ _ __ _   _  ___  (_) ___
+| |_ / _` | / __|/ _ \ __| '__| | | |/ _ \ | |/ _ \
+|  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
+|_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
+
+== [Gemini capsule] * ============ [ 2026-08-30 ] ==
+```
+=> / ← Back
+# Index Orig
+
+Rd
+
+Dmitry Ro
+
+Computers, Coding, Gaming, Oldschool
+
+On Internet since 90s
+
+* Today: AI/ML, Rust, Blockchain
+
+* Tomorrow: Quantum, IoT
+
+* Always: PHP, Ruby, Python, C
+
+=>  Email
+
+=> https://github.com/noroot/  Github
+
+=> https://www.linkedin.com/in/noroot/  Linkedin
+
+### Subscribe
+
+=> https://falsetrue.substack.com  Substack
+
+=> https://falsetrue.io/rss.xml  RSS
+
+### Hire Me
+
+I do professional software development and expert project management
+                here at
+
+=> https://catwatchdog.com CWD
+
+## FT Newsletter
+
+* EP-26 FalseTrue Digest
+
+* EP-25 FalseTrue Digest
+
+* EP-24 FalseTrue Digest
+
+* EP-23 FalseTrue Digest
+
+* EP-22 FalseTrue Digest
+
+* EP-21 FalseTrue Digest
+
+* EP-20 FalseTrue Digest
+
+* EP-19 FalseTrue Digest
+
+* EP-18 FalseTrue Digest
+
+* EP-17 FalseTrue Digest
+
+=> /newsletter → View all
+
+### Recent feed
+
+* Somebody on Reddit shared Emacs rendering built with Rust
+
+* Terry Davis birthday
+
+* OpenPrintTag - NFC standard for 3d printing spools
+
+* Рассказ - "Нужно продолжать работать"
+
+* My comment on linkedin collected almost thousand of likes
+
+* EuRuKo 2024 Review
+
+* Agile manifesto failure
+
+* Why big company experience doesn't always translate to practical skills
+
+* Debian turned 31 years old
+
+* WARNING: Scam attempt
+
+=> /feed → All notes
+
+## Recent posts
+
+* MacOS toggle microphone unix-way
+
+* Tools I am using
+
+* How and why to disable Spotlight
+
+* Gemini, Gopher and and SmolNet
+
+* Prevent disk from being indexed by system
+
+* PiePAL - Terminal Tool for PayPal Observability
+
+* 📷 Honda 900RR Fireblade
+
+* HTTOP - A real-time HTTP log monitor similar to ApacheTop
+
+* 📷 Zastava Jugo 45
+
+* 📷 Fruška Gora Forest
+
+=> /blog → View all
+```
+     ░▒▓▓▒░  FalseTrue - dmth's notes | Gemini Capsule [-]  ░▒▓▓▒░
+```
