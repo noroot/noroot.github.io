@@ -5,7 +5,7 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ============ [ 2026-08-30 ] ==
+== [Gemini capsule] * ============ [ 2026-11-20 ] ==
 ```
 => / ← Back
 # Tags
@@ -19,6 +19,14 @@
 => /tags/mental #mental
 
 => /tags/esoteric #esoteric
+
+=> /tags/tools #tools
+
+=> /tags/mac #mac
+
+=> /tags/rust #rust
+
+=> /tags/debloat #debloat
 
 => /tags/news #news
 
@@ -34,10 +42,6 @@
 
 => /tags/c #c
 
-=> /tags/tools #tools
-
-=> /tags/mac #mac
-
 => /tags/hardware #hardware
 
 => /tags/software #software
@@ -47,8 +51,6 @@
 => /tags/howto #howto
 
 => /tags/sec #sec
-
-=> /tags/debloat #debloat
 
 => /tags/selfhosted #selfhosted
 
@@ -69,8 +71,6 @@
 => /tags/moto #moto
 
 => /tags/street #street
-
-=> /tags/rust #rust
 
 => /tags/car #car
 

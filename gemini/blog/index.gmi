@@ -5,10 +5,18 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ============ [ 2026-08-30 ] ==
+== [Gemini capsule] * ============ [ 2026-11-20 ] ==
 ```
 => / ← Back
 # Blog
+
+* tools
+20-NOV-2026 - RoLauncher: OverLauncher rewritten in Rust
+
+    #tools
+    #mac
+    #rust
+    #debloat
 
 * ✉️ newsletter
  2-AUG-2026 - EP-26 FalseTrue Digest

@@ -5,7 +5,7 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ============ [ 2026-08-30 ] ==
+== [Gemini capsule] * ============ [ 2026-11-20 ] ==
 ```
 => / ← Back
 # Index Orig
@@ -93,6 +93,8 @@ I do professional software development and expert project management
 
 ## Recent posts
 
+* RoLauncher: OverLauncher rewritten in Rust
+
 * MacOS toggle microphone unix-way
 
 * Tools I am using
@@ -110,8 +112,6 @@ I do professional software development and expert project management
 * HTTOP - A real-time HTTP log monitor similar to ApacheTop
 
 * 📷 Zastava Jugo 45
-
-* 📷 Fruška Gora Forest
 
 => /blog → View all
 ```

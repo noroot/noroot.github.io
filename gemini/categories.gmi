@@ -5,7 +5,7 @@
 |  _| (_| | \__ \  __/ |_| |  | |_| |  __/_| | (_) |
 |_|  \__,_|_|___/\___|\__|_|   \__,_|\___(_)_|\___/
 
-== [Gemini capsule] * ============ [ 2026-08-30 ] ==
+== [Gemini capsule] * ============ [ 2026-11-20 ] ==
 ```
 # Categories
 
@@ -168,6 +168,7 @@
 => story/2017-07-31-roem-wordpress.gmi Roem на Wordpress
 
 ## Tools
+=> tools/2026-11-20-rolauncher.md RoLauncher: OverLauncher rewritten in Rust
 => tools/2026-06-07-mac-toggle-mic.md MacOS toggle microphone unix-way
 => tools/2025-11-10-tools-im-using.gmi Tools I am using
 => tools/2023-11-27-logseq.md LogSeq - notes taking application

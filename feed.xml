@@ -1,4 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://bridgetownrb.com/" version="1.3.4">Bridgetown</generator><link href="https://falsetrue.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://falsetrue.io/" rel="alternate" type="text/html" /><updated>2026-08-30T23:08:15+02:00</updated><id>https://falsetrue.io/feed.xml</id><title type="html">FalseTrue</title><subtitle>Scripts of cyberdaemon</subtitle><entry xml:lang="en"><title type="html">EP-26 FalseTrue Digest</title><link href="https://falsetrue.io/newsletter/2026/08/02/ep26/" rel="alternate" type="text/html" title="EP-26 FalseTrue Digest" /><published>2026-08-02T02:00:00+02:00</published><updated>2026-08-02T02:00:00+02:00</updated><id>repo://posts.collection/_posts/ep26.md</id><content type="html" xml:base="https://falsetrue.io/newsletter/2026/08/02/ep26/">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://bridgetownrb.com/" version="1.3.4">Bridgetown</generator><link href="https://falsetrue.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://falsetrue.io/" rel="alternate" type="text/html" /><updated>2026-11-20T12:22:44+01:00</updated><id>https://falsetrue.io/feed.xml</id><title type="html">FalseTrue</title><subtitle>Scripts of cyberdaemon</subtitle><entry><title type="html">RoLauncher: OverLauncher rewritten in Rust</title><link href="https://falsetrue.io/tools/2026/11/20/rolauncher/" rel="alternate" type="text/html" title="RoLauncher: OverLauncher rewritten in Rust" /><published>2026-11-20T11:00:00+01:00</published><updated>2026-11-20T11:00:00+01:00</updated><id>repo://posts.collection/_posts/2026-11-20-rolauncher.md</id><content type="html" xml:base="https://falsetrue.io/tools/2026/11/20/rolauncher/">&lt;p&gt;Last year I &lt;a href=&quot;/howto/2025/08/02/disable-spotlight/&quot;&gt;disabled Spotlight&lt;/a&gt; and wrote &lt;a href=&quot;/projects/overlauncher/&quot;&gt;OverLauncher&lt;/a&gt;, a small Swift app that replaced the Spotlight search bar so I could still launch apps from the keyboard. It’s now renamed to &lt;strong&gt;&lt;a href=&quot;/projects/rolauncher/&quot;&gt;RoLauncher&lt;/a&gt;&lt;/strong&gt; and rewritten from scratch in Rust, and this time the source code is open: &lt;a href=&quot;https://github.com/noroot/rolauncher&quot;&gt;github.com/noroot/rolauncher&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/projects/rolauncher/rolauncher-launcher.png&quot; alt=&quot;RoLauncher&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;what-it-does&quot;&gt;What it does&lt;/h2&gt;
+
+&lt;p&gt;Same idea as before: press ⌘ Space, type, hit Enter.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Finds apps in &lt;code class=&quot;highlighter-rouge&quot;&gt;/Applications&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;/System/Applications&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;/System/Applications/Utilities&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;/System/Library/CoreServices&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Ranks results by how often you launch them. Most-used apps show up first on an empty query.&lt;/li&gt;
+  &lt;li&gt;Inline calculator: &lt;code class=&quot;highlighter-rouge&quot;&gt;(2+3)*4&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;2^10&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;10%3&lt;/code&gt;. Enter copies the result.&lt;/li&gt;
+  &lt;li&gt;Currency conversion: &lt;code class=&quot;highlighter-rouge&quot;&gt;100 USD to EUR&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;$100 to €&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;1,250.50 GBP = JPY&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Lives in the background, no dock icon, no permissions needed.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/projects/rolauncher/rolauncher-calculator.png&quot; alt=&quot;Calculator&quot; /&gt;
+&lt;img src=&quot;/images/projects/rolauncher/rolauncher-currency.png&quot; alt=&quot;Currency conversion&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;why-rust&quot;&gt;Why Rust&lt;/h2&gt;
+
+&lt;p&gt;RoLauncher talks to AppKit directly through &lt;a href=&quot;https://github.com/madsmtm/objc2&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;objc2&lt;/code&gt;&lt;/a&gt;. No webview, no GUI toolkit, no SwiftUI. The global hotkey goes through Carbon’s &lt;code class=&quot;highlighter-rouge&quot;&gt;RegisterEventHotKey&lt;/code&gt;, so it doesn’t need Accessibility permission. The result is a small native binary that does one thing.&lt;/p&gt;
+
+&lt;p&gt;The code is split into a handful of plain modules: app discovery and ranking, a recursive-descent calculator, currency parsing with a rate cache, and the UI. Calculator and search have unit tests (&lt;code class=&quot;highlighter-rouge&quot;&gt;cargo test&lt;/code&gt;).&lt;/p&gt;
+
+&lt;h2 id=&quot;network-and-data&quot;&gt;Network and data&lt;/h2&gt;
+
+&lt;p&gt;The only network access is fetching currency rates from the free &lt;a href=&quot;https://www.exchangerate-api.com&quot;&gt;Exchange Rate API&lt;/a&gt; endpoint, and only when you actually type a conversion. Rates are cached in &lt;code class=&quot;highlighter-rouge&quot;&gt;~/Library/Application Support/RoLauncher/rates.json&lt;/code&gt;, refreshed when older than 6 hours, and keep working offline. Launch counts are a plain TSV file next to it. No telemetry, no ads.&lt;/p&gt;
+
+&lt;h2 id=&quot;install&quot;&gt;Install&lt;/h2&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/noroot/rolauncher
+&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;rolauncher
+./install.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This builds the app, copies it to &lt;code class=&quot;highlighter-rouge&quot;&gt;/Applications/RoLauncher.app&lt;/code&gt; and launches it. Don’t forget to turn off Spotlight’s ⌘ Space shortcut in System Settings → Keyboard → Shortcuts.&lt;/p&gt;
+
+&lt;p&gt;RoLauncher is GPL-3.0. More details on the &lt;a href=&quot;/projects/rolauncher/&quot;&gt;project page&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="tools" /><category term="mac" /><category term="rust" /><category term="debloat" /></entry><entry xml:lang="en"><title type="html">EP-26 FalseTrue Digest</title><link href="https://falsetrue.io/newsletter/2026/08/02/ep26/" rel="alternate" type="text/html" title="EP-26 FalseTrue Digest" /><published>2026-08-02T02:00:00+02:00</published><updated>2026-08-02T02:00:00+02:00</updated><id>repo://posts.collection/_posts/ep26.md</id><content type="html" xml:base="https://falsetrue.io/newsletter/2026/08/02/ep26/">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
 
 &lt;p&gt;Hello everybody. This is Episode-26 of FalseTrue Digest.&lt;/p&gt;
 
@@ -652,8 +690,4 @@ I’ve updated projects page on my blog &lt;a href=&quot;https://falsetrue.io/pr
   &lt;li&gt;&lt;a href=&quot;https://stickertop.art/main/&quot;&gt;stickertop.art&lt;/a&gt; - Discover a unique collection of laptops adorned with creative stickers from around the world.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;That’s it for this episode. Comment and share. EOF&lt;/p&gt;</content><author><name></name></author><category term="news" /><category term="journal" /></entry><entry><title type="html">Terry Davis birthday</title><link href="https://falsetrue.io/share/note/2025/11/15/terry-davis-birthday/" rel="alternate" type="text/html" title="Terry Davis birthday" /><published>2025-11-15T13:00:00+01:00</published><updated>2025-11-15T13:00:00+01:00</updated><id>repo://posts.collection/_posts/2025-11-15-terry-davis-birthday.markdown</id><content type="html" xml:base="https://falsetrue.io/share/note/2025/11/15/terry-davis-birthday/">&lt;p&gt;Terrence Andrew Davis (December 15, 1969 – August 11, 2018) was an American programmer who created and designed the operating system TempleOS.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://falsetrue.io/person/2024/08/14/terry-davis/&quot;&gt;https://falsetrue.io/person/2024/08/14/terry-davis/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/persons/TerryDavisBirthday.webp&quot; alt=&quot;/images/persons/TerryDavisBirthday.webp&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="person" /></entry></feed>
+&lt;p&gt;That’s it for this episode. Comment and share. EOF&lt;/p&gt;</content><author><name></name></author><category term="news" /><category term="journal" /></entry></feed>

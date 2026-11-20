@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>RoLauncher - lightweight native macOS launcher in Rust | FalseTrue</title>
+
+<!-- Begin Bridgetown SEO tag v6.0.0 -->
+<title>RoLauncher - lightweight native macOS launcher in Rust | FalseTrue</title>
+<meta property="og:title" content="RoLauncher - lightweight native macOS launcher in Rust" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Scripts of cyberdaemon" />
+<meta property="og:description" content="Scripts of cyberdaemon" />
+<link rel="canonical" href="https://falsetrue.io/projects/rolauncher/" />
+<meta property="og:url" content="https://falsetrue.io/projects/rolauncher/" />
+<meta property="og:site_name" content="FalseTrue" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-11-20T01:00:00+01:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="RoLauncher - lightweight native macOS launcher in Rust" />
+<!-- End Bridgetown SEO tag -->
+
+
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/_bridgetown/static/index.MMUCZJKW.css" />
+<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+<script src="/_bridgetown/static/index.42K5JGTD.js" defer></script>
+
+<link type="application/atom+xml" rel="alternate" href="https://falsetrue.io/feed.xml" title="FalseTrue" />
+
+  </head>
+  <body class="projects ">
+    <nav>
+  <ul>
+    <li><a href="/"><span class="text-green-400">False!</span><span class="text-cyan-300">True</span></a></li>
+    <li><a href="/">Home</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/feed">Feed</a></li>
+    <li><a href="/projects">Projects</a></li>
+    <li><a href="/archive">Archive</a></li>
+    <li><a href="/bookshelf">Bookshelf</a></li>
+    <li><a href="/photography">Photography</a></li>
+    <li><a href="/halloffame">Hall of fame</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/feed.xml"><i class="fa fa-rss text-[orange]"></i>&nbsp;RSS</a></li>
+  </ul>
+</nav>
+
+
+    <main>
+      
+<section class="mb-8">
+    <div class="mb-4 flex flex-row gap-2 items-center">
+           <div>
+               <div class="text-xs text-gray-400">Published at: November 20, 2026</div>
+           </div>
+           <div class="category-block">
+            <span>Category:</span>
+                    <a href="/categories/projects" class="badge-category badge-projects">projects</a>
+        </div>
+        <div class="tags-block">
+            <span>Tags:</span>
+                <a href="/tags/software" class="badge-tag">#software</a>
+                <a href="/tags/projects" class="badge-tag">#projects</a>
+                <a href="/tags/mac" class="badge-tag">#mac</a>
+                <a href="/tags/dev" class="badge-tag">#dev</a>
+                <a href="/tags/rust" class="badge-tag">#rust</a>
+        </div>
+    </div>
+    <div class="flex gap-2">
+        <div class="w-48">
+            <img src="/images/projects/rolauncher/rolauncher-logo.png" >
+        </div>
+        <div class="flex flex-col gap-2">
+            <h1 class="text-4xl">RoLauncher</h1>
+            <p class="text-sm">A lightweight, native macOS application launcher written in Rust. Successor of OverLauncher. App search, calculator, currency conversion. No telemetry, no ads.</p>
+            <div class="text-sm">
+                    Source code: <a href="https://github.com/noroot/rolauncher" class="text-sm">https://github.com/noroot/rolauncher</a>
+            </div>
+        </div>
+    </div>
+</section>
+<article class="prose prose-slate prose-pre:bg-gray-100 prose-pre:text-gray-500 max-w-full prose-h1:leading-relaxed">
+    <p align="center">
+  <img src="/images/projects/rolauncher/rolauncher-logo.png" alt="RoLauncher" width="160" />
+</p>
+
+<p>RoLauncher is a lightweight, native macOS application launcher. It’s the same project as <a href="/projects/overlauncher/">OverLauncher</a>, renamed and rewritten from Swift to Rust. It talks to AppKit directly via <a href="https://github.com/madsmtm/objc2"><code class="highlighter-rouge">objc2</code></a>, with no webview and no GUI toolkit.</p>
+
+<ul>
+  <li>Source code: <a href="https://github.com/noroot/rolauncher">github.com/noroot/rolauncher</a></li>
+</ul>
+
+<p><img src="/images/projects/rolauncher/rolauncher-launcher.png" alt="Launcher" /></p>
+
+<h2 id="features">Features</h2>
+
+<ul>
+  <li><strong>Fast Search</strong>: Real-time filtering of applications as you type</li>
+  <li><strong>Global Hotkey</strong>: Toggle with Cmd+Space (Carbon hotkey, no Accessibility permission needed)</li>
+  <li><strong>Usage ranking</strong>: Most-used apps first on an empty query, and as a tiebreak while typing</li>
+  <li><strong>Calculator</strong>: Type arithmetic like <code class="highlighter-rouge">(2+3)*4</code>, <code class="highlighter-rouge">10/4</code>, <code class="highlighter-rouge">2^10</code> or <code class="highlighter-rouge">10%3</code> to get an inline result</li>
+  <li><strong>Currency conversion</strong>: Type <code class="highlighter-rouge">100 USD to EUR</code>, <code class="highlighter-rouge">100usd in eur</code>, <code class="highlighter-rouge">$100 to €</code>, <code class="highlighter-rouge">1,250.50 GBP = JPY</code> or <code class="highlighter-rouge">2*50 CHF -&gt; USD</code></li>
+  <li><strong>Application Discovery</strong>: Automatically finds apps in:
+    <ul>
+      <li>“/Applications”</li>
+      <li>“/System/Applications”</li>
+      <li>“/System/Applications/Utilities”</li>
+      <li>“/System/Library/CoreServices”</li>
+    </ul>
+  </li>
+  <li><strong>Background App</strong>: Runs silently in the background (LSUIElement), not cluttering the dock</li>
+</ul>
+
+<h2 id="usage">Usage</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>⌘ Space</td>
+      <td>Toggle launcher (disable Spotlight’s shortcut in System Settings → Keyboard → Shortcuts)</td>
+    </tr>
+    <tr>
+      <td>↑ ↓</td>
+      <td>Move selection</td>
+    </tr>
+    <tr>
+      <td>Enter</td>
+      <td>Launch app / copy calculation result</td>
+    </tr>
+    <tr>
+      <td>Esc</td>
+      <td>Hide launcher</td>
+    </tr>
+    <tr>
+      <td>⌘ ,</td>
+      <td>About</td>
+    </tr>
+    <tr>
+      <td>⌘ Q</td>
+      <td>Quit</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Currency symbols <code class="highlighter-rouge">$ € £ ¥ ₽ ₴ ₹ ₩ ₺ ₪ ₿</code> map to USD, EUR, GBP, JPY, RUB, UAH, INR, KRW, TRY, ILS, BTC. Enter copies the converted amount.</p>
+
+<p>Rates come from <a href="https://www.exchangerate-api.com">Exchange Rate API</a>’s free endpoint (<code class="highlighter-rouge">open.er-api.com</code>, ~160 currencies, updated daily). They’re downloaded only when you type a conversion, cached in <code class="highlighter-rouge">~/Library/Application Support/RoLauncher/rates.json</code>, refreshed when older than 6 hours, and keep working offline. This is the app’s only network access.</p>
+
+<p>Launch counts live in <code class="highlighter-rouge">~/Library/Application Support/RoLauncher/usage.tsv</code> (delete it to reset).</p>
+
+<h2 id="permissions">Permissions</h2>
+<ul>
+  <li>Not required</li>
+</ul>
+
+<h2 id="build-and-install">Build and install</h2>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/noroot/rolauncher
+<span class="nb">cd </span>rolauncher
+./install.sh               <span class="c"># build, copy to /Applications/RoLauncher.app, launch</span>
+./install.sh <span class="nt">--no-launch</span>   <span class="c"># build and install only</span>
+<span class="nv">INSTALL_DIR</span><span class="o">=</span>~/Applications ./install.sh
+</code></pre></div></div>
+
+<p>The script quits a running copy before replacing it. To start at login, add RoLauncher in System Settings → General → Login Items.</p>
+
+<p>For development:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./bundle.sh                      <span class="c"># -&gt; target/release/RoLauncher.app</span>
+cargo <span class="nb">test</span>                       <span class="c"># calculator + search unit tests</span>
+cargo run <span class="nt">--</span> <span class="nt">--show</span>              <span class="c"># dev run, opens the panel immediately</span>
+</code></pre></div></div>
+
+<h2 id="why-do-you-need-this-">Why do you need this ?</h2>
+<ul>
+  <li>If you’ve switched off Spotlight indexing as I did, you get zero items in search results and can’t even launch an app through it. RoLauncher replaces the Spotlight search bar so you can still run programs from the keyboard.</li>
+  <li><a href="/howto/2025/08/02/disable-spotlight/">Reasons behind switching off Spotlight</a>.</li>
+</ul>
+
+<h2 id="license">License</h2>
+
+<p>GPL-3.0-or-later. Distributed WITHOUT ANY WARRANTY.</p>
+
+<h2 id="screenshots">Screenshots</h2>
+
+<p><img src="/images/projects/rolauncher/rolauncher-search.png" alt="Search" />
+<img src="/images/projects/rolauncher/rolauncher-calculator.png" alt="Calculator" />
+<img src="/images/projects/rolauncher/rolauncher-currency.png" alt="Currency conversion" />
+<img src="/images/projects/rolauncher/rolauncher-about.png" alt="About window" /></p>
+
+</article>
+
+<div class="my-[100px] ">
+    <h2 class="text-2xl mb-2">Comments</h2>
+
+    <script data-isso="https://comments.falsetrue.io/"
+            src="https://comments.falsetrue.io/js/embed.min.js"></script>
+
+    <section id="isso-thread">
+        <noscript>Javascript needs to be activated to view comments.</noscript>
+    </section>
+
+</div>
+
+    </main>
+
+    <footer class="container mx-auto text-xs my-2 py-2">
+    <div>
+        <div class="flex-col">
+            <div>Dmitry Ro © 2003 - 2026. All rights reserved.</div>
+            <div>Копирование и распрастранение страницы разрешено только в оригинальном не изменном виде, включая это сообщение.</div>
+            <div>Verbatim copying and redistribution of this entire page are permitted provided this notice is preserved.</div>
+            <div>Verbatim copying and redistribution of any of the photos in the photos subdirectory is permitted under the <a href="http://creativecommons.org/licenses/by-nd/3.0/" rel="nofollow"> Creative Commons Noderivs license version 3.0</a> or later.</div>
+            <div><a href="/pgp.key.txt" rel="pgpkey authn">PGP Key</a></div>
+        </div>
+        <div class="flex mx-auto my-3 items-center justify-center gap-1 col">
+            <div><a href="https://webmentions.io" target="_blank" class="inline"><img src="/images/webmention.png" alt="Webmentions"></a></div>
+            <div><a href="https://indieweb.org" target="_blank"><img src="/images/indieweb.png" alt="indieweb"></a></div>
+            <div><a href="https://microformats.org" target="_blank"><img src="/images/microformats.png" alt="microformats"></a></div>
+            <div><a href="https://creativecommons.org/licenses/by/3.0/" target="_blank"><img src="/images/cc-commons.png" alt="cc-commons"></a></div>
+            <div><img src="/images/w3c-valid-html.png" alt="valid w3c"></div>
+        </div>
+        
+    </div>
+</footer>
+
+  </body>
+</html>
